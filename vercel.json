@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/ai_search.html",
+      "destination": "/what-is-ai-visibility-practical-guide-local-businesses.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai_local_business.html",
+      "destination": "/how-local-businesses-can-use-ai-improve-online-visibility.html",
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "what-is-ai-visibility-practical-guide-local-businesses",
+  "type": "guide",
+  "status": "published",
+  "metadata": {
+    "title": "What Is AI Visibility? A Practical Guide for Local Businesses",
+    "description": "A clear, no-hype explanation of what AI visibility actually means for a local business, how it differs from traditional SEO, GEO, and AEO, and where to realistically start.",
+    "category": "Guides & Blueprints",
+    "industry": "general",
+    "difficulty": "beginner",
+    "featured": true,
+    "readingTime": 14,
+    "publishedAt": "2026-08-10T16:50:00Z",
+    "updatedAt": "2026-08-10T16:50:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Local Business & AI Systems Specialists"
+  },
+  "seo": {
+    "title": "What Is AI Visibility? A Practical Guide for Local Businesses | Locatria",
+    "description": "A clear, no-hype explanation of what AI visibility actually means for a local business, how it differs from traditional SEO, GEO, and AEO, and where to realistically start.",
+    "canonical": "https://locatria.com/knowledge/what-is-ai-visibility-practical-guide-local-businesses",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "AI Visibility Framework & Definitions",
+    "audience": [
+      "Local Business Owners",
+      "SMB Operators",
+      "Marketing Managers"
+    ],
+    "industries": [
+      "General Local Services",
+      "Dental",
+      "Law",
+      "Real Estate"
+    ],
+    "entities": [
+      "AI Visibility",
+      "Generative Engine Optimization",
+      "Answer Engine Optimization",
+      "Retrieval-Augmented Generation",
+      "Google AI Overviews"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI visibility is about whether accurate, useful information about your business can be found, understood, and represented across AI-powered search and answer experiences — not about 'getting mentioned' by a chatbot.",
+        "AI visibility does not replace SEO or local SEO. It builds on the same foundation — accurate, clear, trustworthy information — and extends that foundation to new discovery environments.",
+        "Terms like GEO and AEO are still used inconsistently across the industry. Locatria treats them as closely related, overlapping ideas rather than fixed, universally agreed categories.",
+        "No current method can guarantee that a specific AI tool will cite, recommend, or mention your business. Anyone promising that outcome is overstating what's actually known.",
+        "The most reliable way to build AI visibility is the same as building any other kind of trust online: clear business information, genuinely useful content, and consistent maintenance — not a one-time technical trick."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Not long ago, discovering a local business almost always meant the same sequence: type a query into a search engine, scan a page of blue links, and click through to a website. That sequence still happens constantly. But it's no longer the only way people find and evaluate a business. Increasingly, people also encounter AI-generated summaries at the top of a search results page, ask a conversational AI assistant a direct question, or use an 'answer engine' that responds with a synthesized answer instead of a list of links."
+    },
+    {
+      "type": "paragraph",
+      "content": "That shift raises a genuinely new question for a local business owner: if AI systems are increasingly involved in how people discover and evaluate information, what does it actually mean for a business to be visible to those systems?"
+    },
+    {
+      "type": "paragraph",
+      "content": "This guide introduces AI visibility — a working concept, not a fixed technical standard — and explains what it means in practice, how it relates to (and differs from) SEO, GEO, and AEO, and where a local business should realistically start."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "what-is-ai-visibility",
+      "title": "What Is AI Visibility?"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Direct Definition",
+      "content": "AI visibility is how easily and accurately a business's information — who it is, what it offers, where it operates, and why it can be trusted — can be discovered, understood, and represented across AI-powered search and answer experiences, such as AI-generated search summaries and conversational AI assistants."
+    },
+    {
+      "type": "paragraph",
+      "content": "In plain English: it's the AI-era extension of an old idea. Businesses have always needed to be findable and understandable to the systems people use to make decisions — first the phone book, then search engines, and now, increasingly, AI systems that summarize or answer questions directly."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI visibility involves more than your name being mentioned somewhere. It's better understood as whether relevant information about your business is: Discoverable, Understandable, Relevant, Accurate, Consistent, Useful, and Contextually connected."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "why-ai-visibility-matters",
+      "title": "Why AI Visibility Matters for Local Businesses"
+    },
+    {
+      "type": "paragraph",
+      "content": "The way people discover local businesses is no longer a single path. It includes traditional search, local search and maps, AI-generated answers layered into search results, standalone conversational AI tools, and recommendation-style discovery."
+    },
+    {
+      "type": "paragraph",
+      "content": "The practical implication for a local business is straightforward: a business increasingly needs information that is useful and trustworthy enough to hold up across more than one kind of discovery experience — not a completely separate strategy for each one."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "seo-vs-ai-visibility",
+      "title": "How AI Visibility Is Different From Traditional SEO"
+    },
+    {
+      "type": "table",
+      "id": "seo-vs-ai-table",
+      "title": "Traditional Search Visibility vs AI Visibility",
+      "headers": [
+        "Dimension",
+        "Traditional Search Visibility",
+        "AI Visibility"
+      ],
+      "rows": [
+        [
+          "Primary discovery experience",
+          "A results page of ranked links a person scans and clicks",
+          "A generated summary, direct answer, or conversational response"
+        ],
+        [
+          "User interaction",
+          "Click through to a website to get the full answer",
+          "Often gets an answer without visiting a website at all"
+        ],
+        [
+          "Information presentation",
+          "Individual pages compete for a ranked position",
+          "Information may be synthesized from multiple sources into one answer"
+        ],
+        [
+          "Role of individual pages",
+          "A specific page is the unit that ranks",
+          "A page is one of potentially several sources an answer draws from"
+        ],
+        [
+          "Importance of entity context",
+          "Useful for rankings, especially local search",
+          "Central — a system needs to understand who you are, not just match keywords"
+        ],
+        [
+          "Relationship with SEO",
+          "Is SEO",
+          "Builds on SEO fundamentals, extended to new discovery surfaces"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "ai-visibility-geo-aeo",
+      "title": "AI Visibility vs. GEO vs. AEO"
+    },
+    {
+      "type": "table",
+      "id": "geo-aeo-table",
+      "title": "Overlapping Terminology Breakdown",
+      "headers": [
+        "Concept",
+        "Primary Purpose",
+        "Typical Discovery Environment",
+        "Relationship to AI Visibility"
+      ],
+      "rows": [
+        [
+          "SEO",
+          "Improve visibility in traditional search rankings",
+          "Search engine results pages",
+          "The foundational practice AI visibility builds on"
+        ],
+        [
+          "Local SEO",
+          "Improve visibility in local, map-based search results",
+          "Local Pack, Google Maps, local organic results",
+          "A specialized application of SEO that also supports AI visibility"
+        ],
+        [
+          "AEO",
+          "Get featured as a direct, structured answer",
+          "Featured snippets, knowledge panels, AI Overviews",
+          "An approach aimed at a specific slice of AI-powered discovery"
+        ],
+        [
+          "GEO",
+          "Get included or cited within AI-generated responses",
+          "Conversational AI tools, generative search features",
+          "An approach aimed at a broader, generative-AI-specific slice of discovery"
+        ],
+        [
+          "AI Visibility",
+          "Be accurately discoverable and understandable across AI-powered discovery generally",
+          "Search engines, AI Overviews, conversational AI, and beyond",
+          "The overall outcome that SEO, AEO, and GEO-style practices all contribute toward"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "five-foundations",
+      "title": "The Five Foundations of AI Visibility"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "The 5 Foundations Framework",
+      "content": "1. Discoverability — Can relevant systems actually find information about your business at all?\n2. Clarity — Is your business and service area described in plain, unambiguous language?\n3. Relevance — Does your available information actually answer real customer questions?\n4. Trust — Is your information accurate, consistent across sources, and supported by reviews?\n5. Context — Can your business be understood in relation to your services, location, and industry?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "what-ai-visibility-is-not",
+      "title": "What AI Visibility Is NOT"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Common Misconceptions",
+      "content": "• NOT a guarantee of AI citations or recommendations.\n• NOT a replacement for traditional SEO.\n• NOT a shortcut to Google rankings.\n• NOT a license to publish unlimited unreviewed AI content.\n• NOT a method for manipulating AI system outputs.\n• NOT a substitute for real customer trust and business reputation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "simple-framework",
+      "title": "A Simple AI Visibility Framework for a Local Business"
+    },
+    {
+      "type": "stepByStep",
+      "title": "8-Step Business Implementation Framework",
+      "steps": [
+        {
+          "title": "1. Define the Business Clearly",
+          "content": "Write a plain-language description of what your business does, who it serves, and where."
+        },
+        {
+          "title": "2. Clarify Services & Locations",
+          "content": "List your specific services and the areas you actually serve."
+        },
+        {
+          "title": "3. Understand Customer Questions",
+          "content": "Gather the real questions your customers actually ask in person or on calls."
+        },
+        {
+          "title": "4. Create Useful Information",
+          "content": "Turn those questions into clear, accurate website content and FAQs."
+        },
+        {
+          "title": "5. Verify & Maintain Information",
+          "content": "Check facts before publishing, and keep information current over time."
+        },
+        {
+          "title": "6. Strengthen Trust & Context",
+          "content": "Encourage genuine reviews and keep info consistent across all profiles."
+        },
+        {
+          "title": "7. Monitor Discovery",
+          "content": "Pay attention to how your business shows up in search and business profile insights."
+        },
+        {
+          "title": "8. Improve",
+          "content": "Update or expand information based on real customer feedback."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "practical-example",
+      "title": "Practical Example"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Hypothetical Business Example",
+      "content": "A local professional service business writes a clear, specific description of its services and location (replacing vague marketing jargon). The team gathers top pre-booking customer questions, creates clear FAQ answers verified by the owner, and fixes minor address format discrepancies across directories.\n\nProcess: Clarify → Verify → Publish → Maintain."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "common-mistakes",
+      "title": "Common AI Visibility Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Top 10 Mistakes to Avoid",
+      "content": "1. Treating AI visibility as a replacement for SEO\n2. Publishing large amounts of low-quality AI content\n3. Trying to manipulate AI answers\n4. Focusing only on keywords rather than context\n5. Ignoring business information consistency (NAP)\n6. Making unsupported marketing claims\n7. Copying competitor content\n8. Ignoring human review before publishing\n9. Forgetting to update outdated information\n10. Expecting immediate guaranteed results"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "items": [
+        {
+          "question": "What is AI visibility?",
+          "answer": "AI visibility is how easily and accurately a business's information can be discovered, understood, and represented across AI-powered search and answer experiences — such as AI-generated search summaries and conversational AI assistants."
+        },
+        {
+          "question": "Is AI visibility the same as SEO?",
+          "answer": "No, but they're closely related. SEO is the established practice of improving visibility in traditional search results. AI visibility builds on the same fundamentals — accurate, clear, trustworthy information — and extends them to newer AI-powered discovery experiences."
+        },
+        {
+          "question": "What is GEO?",
+          "answer": "GEO (Generative Engine Optimization) generally refers to shaping content so generative AI tools are more likely to include or cite it in a generated response."
+        },
+        {
+          "question": "What is AEO?",
+          "answer": "AEO (Answer Engine Optimization) generally refers to optimizing content so that answer-style search features — like featured snippets, knowledge panels, and AI Overviews — are more likely to surface it as a direct answer."
+        },
+        {
+          "question": "Does AI visibility guarantee that ChatGPT will recommend my business?",
+          "answer": "No. No verified technique can guarantee that any specific AI tool will cite, recommend, or mention a particular business in a given response."
+        }
+      ]
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-template",
+      "title": "Required AI Prompt",
+      "prompt": "You are helping a local business owner audit how clearly their business information is represented online.\n\nBusiness details:\n- Business name: [insert]\n- Website: [insert]\n- Location / service area: [insert]\n- Services offered: [insert]\n- Target audience: [insert]\n- Main customer questions: [insert]\n\nPlease review this information and produce an audit covering:\n- Business description clarity: is it specific and easy to understand?\n- Service clarity: are the services described precisely, not vaguely?\n- Location clarity: is the service area unambiguous?\n- Customer-question coverage: which questions does current content clearly answer?\n- Missing information & content opportunities\n- Verification items: which claims need to be checked against a reliable source\n\nInstructions:\n- Do not invent facts about this business not provided above.\n- Flag anything that needs verification.\n- Do not claim that this audit predicts AI search rankings or recommendations."
+    },
+    {
+      "type": "definitions",
+      "id": "key-definitions",
+      "title": "Key Definition Blocks",
+      "items": [
+        {
+          "term": "AI Visibility",
+          "definition": "How easily and accurately a business's information can be discovered, understood, and represented across AI-powered search and answer experiences."
+        },
+        {
+          "term": "Generative Search",
+          "definition": "Search experiences that produce a direct, synthesized answer to a query — drawing on multiple sources — rather than presenting a plain list of links."
+        },
+        {
+          "term": "AI Search",
+          "definition": "A general term for search behavior and experiences that involve AI-generated summaries, answers, or conversational responses."
+        },
+        {
+          "term": "GEO (Generative Engine Optimization)",
+          "definition": "The practice of shaping content so generative AI tools are more likely to include or cite it in a generated response."
+        },
+        {
+          "term": "AEO (Answer Engine Optimization)",
+          "definition": "The practice of optimizing content so that answer-style search features are more likely to surface it as a direct, structured answer."
+        },
+        {
+          "term": "Local SEO",
+          "definition": "The practice of improving a business's visibility in local search results through accurate business information, relevant website content, and reputation signals."
+        }
+      ]
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How Dental Clinics Can Use AI to Improve Local Visibility",
+      "url": "how-dental-clinics-use-ai-local-visibility.html",
+      "description": "Applies general AI Visibility principles to dental practices."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How Law Firms Can Use AI to Improve Local Visibility",
+      "url": "how-law-firms-can-use-ai-improve-local-visibility.html",
+      "description": "Applies general AI Visibility principles to law offices."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How Real Estate Businesses Can Use AI to Improve Local Visibility",
+      "url": "how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html",
+      "description": "Applies general AI Visibility principles to real estate brokerages."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How AI Is Changing Local SEO for Small Businesses",
+      "url": "how-ai-is-changing-local-seo-small-businesses.html",
+      "description": "Provides the underlying search mechanism context for local SEO changes."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How Local Businesses Can Use AI to Improve Online Visibility",
+      "url": "how-local-businesses-can-use-ai-improve-online-visibility.html",
+      "description": "Lays foundational theory for practical online visibility execution."
+    },
+    {
+      "type": "sources",
+      "id": "sources-references",
+      "title": "Sources & References",
+      "items": [
+        "Google for Developers — 'Google's Guide to Optimizing for Generative AI Features on Google Search' (developers.google.com/search/docs/fundamentals/ai-optimization-guide)",
+        "Google Search Central Blog — 'Introducing Search Generative AI performance reports in Search Console' (developers.google.com/search/blog/2026/06/gen-ai-performance-reports)",
+        "Wikipedia — 'Generative engine optimization' (en.wikipedia.org/wiki/Generative_engine_optimization)",
+        "Profound — 'AEO vs. GEO: Why they're the same thing (and why we prefer AEO)' (tryprofound.com/blog/aeo-vs-geo)",
+        "Meltwater — 'GEO vs AEO for Marketing Insights' (meltwater.com/en/blog/geo-vs-aeo)"
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "how-dental-clinics-use-ai-local-visibility.html",
+      "how-law-firms-can-use-ai-improve-local-visibility.html",
+      "how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html",
+      "how-ai-is-changing-local-seo-small-businesses.html",
+      "how-local-businesses-can-use-ai-improve-online-visibility.html"
+    ]
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "how-to-build-simple-ai-content-workflow-local-business",
+  "type": "workflow",
+  "status": "published",
+  "metadata": {
+    "title": "How to Build a Simple AI Content Workflow for a Local Business",
+    "description": "A practical, step-by-step guide to building a simple AI content workflow for a local business — no large team, no complex automation, just a repeatable process from customer question to published content.",
+    "category": "Guides & Blueprints",
+    "industry": "general",
+    "difficulty": "beginner",
+    "featured": true,
+    "readingTime": 15,
+    "publishedAt": "2026-08-10T17:30:00Z",
+    "updatedAt": "2026-08-10T17:30:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Local Business & AI Content Systems Specialists"
+  },
+  "seo": {
+    "title": "How to Build a Simple AI Content Workflow for a Local Business | Locatria",
+    "description": "A practical, step-by-step guide to building a simple AI content workflow for a local business — no large team, no complex automation, just a repeatable process from customer question to published content.",
+    "canonical": "https://locatria.com/knowledge/how-to-build-simple-ai-content-workflow-local-business",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "AI Content Creation Workflow for SMBs",
+    "audience": [
+      "Local Business Owners",
+      "SMB Operators",
+      "Content Creators"
+    ],
+    "industries": [
+      "General Local Businesses",
+      "Dental",
+      "Law",
+      "Real Estate"
+    ],
+    "entities": [
+      "AI Content Workflow",
+      "Content Brief",
+      "Human Verification",
+      "Repurposing Framework",
+      "Question Bank"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "A good AI content workflow starts with real customer questions, not with AI itself — the technology supports the process, it isn't the process.",
+        "AI can genuinely accelerate research, planning, drafting, and repurposing, but every one of those steps still needs a human checkpoint.",
+        "A small, repeatable workflow beats a complicated automation system — especially for a business with limited time and no dedicated marketing team.",
+        "Content should be measured and improved over time, not produced endlessly; more content isn't the goal, more useful content is.",
+        "You can build and test your first version of this workflow in a single day, using nothing more than a document and an AI writing tool."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Most local business owners already know they should be creating useful content — answering common questions, explaining their services clearly, keeping their website current. Knowing this and actually doing it consistently are two different problems. The usual obstacles are familiar: not knowing where to start, not having time, struggling to stay consistent."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can genuinely help solve the workflow problem — the research, drafting, and repurposing that used to take hours can now take much less time. But it's worth being direct: AI is not the strategy. The workflow is the strategy. A business with a simple, repeatable process — where AI accelerates specific steps and a person owns accuracy — builds something that compounds over time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "what-is-workflow",
+      "title": "What Is an AI Content Workflow?"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Direct Definition",
+      "content": "An AI content workflow is a repeatable process where AI assists with specific content tasks — research, drafting, repurposing — while a person remains responsible for business context, accuracy, expertise, quality, and final approval at every stage."
+    },
+    {
+      "type": "paragraph",
+      "content": "It is not fully automated content creation. Nothing in this workflow is designed to run without a human checkpoint. The point is to make the good parts of content creation — asking the right questions, verifying facts, applying real business knowledge — repeatable and efficient."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "nine-step-workflow",
+      "title": "The Simple 9-Step AI Content Workflow"
+    },
+    {
+      "type": "stepByStep",
+      "title": "9-Step Content Production Sequence",
+      "steps": [
+        {
+          "title": "1. Capture Real Customer Questions",
+          "content": "Input: Customer calls, emails, reviews, contact forms. Action: Log question in a simple Question Bank. Output: Prioritized list of real questions. Human role: Select questions customers actually ask."
+        },
+        {
+          "title": "2. Research and Verify",
+          "content": "Input: Customer question. Action: AI suggests related sub-topics and research angles. Output: Approved research notes. Human role: Cross-check AI suggestions against primary business records."
+        },
+        {
+          "title": "3. Create a Content Brief",
+          "content": "Input: Approved research. Action: Fill out a 1-page brief covering audience, answer, and tone. Output: Structured Content Brief. Human role: Prevent AI drafts from becoming generic."
+        },
+        {
+          "title": "4. Draft With AI",
+          "content": "Input: Structured brief. Action: AI generates first draft outline, section text, or FAQ entries. Output: Workable draft. Human role: Treat draft as unfinished material."
+        },
+        {
+          "title": "5. Human Review and Fact-Checking",
+          "content": "Input: AI draft. Action: Verify business facts, pricing, service area, and brand voice. Output: Approved final piece. Human role: Non-negotiable quality & safety check."
+        },
+        {
+          "title": "6. Publish",
+          "content": "Input: Approved piece. Action: Upload to website, check meta tags and internal links. Output: Published page/FAQ. Human role: Confirm completeness before going live."
+        },
+        {
+          "title": "7. Repurpose Content",
+          "content": "Input: Published article. Action: AI adapts content into social posts, email blurbs, or FAQ entries. Output: Multi-channel assets. Human role: Ensure each format serves its specific channel."
+        },
+        {
+          "title": "8. Measure",
+          "content": "Input: Live content performance. Action: Watch efficiency signals and inquiry feedback. Output: Workflow performance report. Human role: Evaluate if workflow is saving time."
+        },
+        {
+          "title": "9. Update and Improve",
+          "content": "Input: Business changes or new customer queries. Action: Refresh outdated sections. Output: Up-to-date knowledge base. Human role: Maintain information accuracy."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "review-checklist",
+      "title": "Human Review and Fact-Checking Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Pre-Publication Mandatory QA Checklist",
+      "items": [
+        "Business facts are correct (services, pricing, hours, policies)",
+        "Service descriptions match real-world operational capabilities",
+        "Location and service area details are unambiguous",
+        "Every claim is something the business can stand behind",
+        "Statistics or quotes are verified against primary sources or removed",
+        "Advice given is appropriate, accurate, and non-overreaching",
+        "Piece reflects genuine business expertise, not filler",
+        "Brand voice and tone are consistent across all channels",
+        "No sensitive customer or business details are disclosed",
+        "AI drafts. Humans verify."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "practical-example",
+      "title": "Practical Workflow Example"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Hypothetical Local Service Business Example",
+      "content": "A local service business notices customers asking 'How long does this service take?'. Workflow: Staff log question → AI structures sub-questions → Brief specifies real business timeframe → AI drafts 'What to Expect' page → Owner removes overpromising language → Page published → Content repurposed into FAQ entry & social post.\n\n*Illustration of process sequence only; no traffic or lead results claimed.*"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "workflow-comparison",
+      "title": "Simple Workflow vs. Complex Automation"
+    },
+    {
+      "type": "table",
+      "id": "workflow-comparison-table",
+      "title": "Simple Workflow vs Complex Automation",
+      "headers": [
+        "Dimension",
+        "Simple Workflow",
+        "Complex Automation"
+      ],
+      "rows": [
+        [
+          "System structure",
+          "Small number of clear, manual steps",
+          "Many interconnected API tools & scripts"
+        ],
+        [
+          "Human checkpoint",
+          "Human approval at every key stage",
+          "Bypassed or reduced human checkpoints"
+        ],
+        [
+          "Maintenance burden",
+          "Easy to run with 1-2 hours per week",
+          "Requires continuous technical debugging"
+        ],
+        [
+          "Technical complexity",
+          "Low — uses basic documents & web tools",
+          "High — requires automation platforms"
+        ],
+        [
+          "SMB suitability",
+          "Ideal fit for small local businesses",
+          "Only justified at enterprise scale"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "common-mistakes",
+      "title": "Common AI Content Workflow Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10 Pitfalls to Avoid",
+      "content": "1. Starting with AI topic ideas instead of real customer questions\n2. Writing without a structured content brief\n3. Publishing unreviewed AI drafts\n4. Creating content only for keyword density\n5. Producing high volume without usefulness\n6. Copying identical text across all channels\n7. Using an overly complex stack of AI tools\n8. Ignoring ongoing content maintenance\n9. Failing to measure workflow efficiency\n10. Automating a process before it is proven"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "one-day-start",
+      "title": "How to Start in One Day"
+    },
+    {
+      "type": "paragraph",
+      "content": "Build and test your first version today: 1. Write down 10 real customer questions. 2. Choose the single most useful one. 3. Verify the facts behind it. 4. Fill out a one-page content brief. 5. Draft with AI. 6. Review manually against the checklist. 7. Publish or save as draft. 8. Document what to improve next time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "items": [
+        {
+          "question": "What is an AI content workflow?",
+          "answer": "A repeatable process where AI assists with specific tasks — research, drafting, repurposing — while a person remains responsible for business context, accuracy, and final approval at every step."
+        },
+        {
+          "question": "Can a small business use AI for content creation?",
+          "answer": "Yes. AI helps a small team move faster through research, drafting, and repurposing — provided human review remains part of the process."
+        },
+        {
+          "question": "Should AI write the entire article?",
+          "answer": "No. AI should produce a first draft based on a structured brief. A person should always review, fact-check, and approve the content before publication."
+        },
+        {
+          "question": "What tools are needed for an AI content workflow?",
+          "answer": "At minimum: a document for your question bank, one AI writing tool, your website CMS, and basic analytics. No expensive stack is required."
+        },
+        {
+          "question": "Where should a small business start?",
+          "answer": "Start with a 1-day exercise: log 10 real customer questions, pick one, verify the facts, draft with AI using a brief, review manually, and publish."
+        }
+      ]
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-template",
+      "title": "Required AI Prompt",
+      "prompt": "You are helping a local business turn a real customer question into a structured content brief.\n\nBusiness context:\n- Business type: [insert]\n- Location / service area: [insert]\n- Customer question: \"[insert the real customer question here]\"\n- Target audience: [insert]\n- Search intent: [informational / practical / comparison / other]\n\nPlease produce a content brief that includes:\n- A restated, clear version of the customer question\n- The main answer this content should deliver, in plain language\n- 4–6 supporting questions the content should also address\n- Facts or claims requiring verification before publishing\n- Suggested business-specific details to include\n- Internal linking opportunities\n- Short human-review checklist specific to this piece\n\nInstructions:\n- Do not invent facts, statistics, or business details.\n- Do not make SEO ranking guarantees.\n- Flag any information needing verification."
+    },
+    {
+      "type": "definitions",
+      "id": "key-definitions",
+      "title": "Key Definition Blocks",
+      "items": [
+        {
+          "term": "AI Content Workflow",
+          "definition": "A repeatable process where AI assists with research, drafting, and repurposing while humans maintain accuracy and oversight."
+        },
+        {
+          "term": "Content Brief",
+          "definition": "A structured document outlining audience, intent, core answer, and facts needed to guide AI drafting effectively."
+        },
+        {
+          "term": "Human Verification",
+          "definition": "The mandatory review step where a qualified person verifies all claims, facts, and business details in an AI draft before publishing."
+        },
+        {
+          "term": "Content Repurposing",
+          "definition": "The process of adapting one verified piece of core content into multiple formats (FAQ, social, email, checklist)."
+        }
+      ]
+    },
+    {
+      "type": "sources",
+      "id": "sources-references",
+      "title": "Sources & References",
+      "items": [
+        "Locatria Editorial System v1.0 — Content Governance Framework",
+        "Locatria Pillar Guide #02 — 'How Local Businesses Can Use AI to Improve Online Visibility'",
+        "Locatria Pillar Guide #03 — 'What Is AI Visibility? A Practical Guide for Local Businesses'",
+        "Locatria Guide #04 — 'How AI Is Changing Local SEO for Small Businesses'"
+      ]
+    }
+  ]
+}

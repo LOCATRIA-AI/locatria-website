@@ -1,0 +1,837 @@
+{
+  "id": "ai-prompt-workflow-local-business-content-creation",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Prompt Workflow for Local Business Content Creation",
+    "subtitle": "A repeatable sequence moving from goal, research, and brief to a fact-checked, reviewed, and integrity-audited draft safe for publication.",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 25,
+    "lastUpdated": "2026-08-15",
+    "audience": [
+      "Local business owners",
+      "Small business owners",
+      "Solopreneurs",
+      "Local marketing teams",
+      "Content managers",
+      "Founders operating with AI"
+    ],
+    "primaryTopic": "AI Prompt Workflow for Local Business Content Creation"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-prompt-workflow-local-business-content-creation.html",
+    "metaDescription": "A step-by-step AI prompt workflow for local businesses — connect research, brief, prompt chaining, fact-checking, and integrity auditing into one system.",
+    "openGraph": {
+      "title": "AI Prompt Workflow for Local Business Content Creation | Locatria",
+      "description": "A step-by-step AI prompt workflow for local businesses — connect research, brief, prompt chaining, fact-checking, and integrity auditing into one system.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Prompt Workflow for Local Business Content Creation",
+    "industryFocus": "general"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "A single prompt is not a content system. A workflow connects research, a brief, context, prompting, drafting, fact-checking, editorial review, and integrity checking into one repeatable sequence.",
+        "Prompt quality depends on more than wording. It depends on the context, evidence, constraints, and verification steps built around the prompt.",
+        "AI should draft, structure, and organize approved information. AI should not invent facts, sources, statistics, testimonials, or professional conclusions.",
+        "Breaking one big request into a chain of smaller, single-purpose prompts (research, brief, draft, fact-check, integrity check, final QA) produces more reliable, more reviewable output than asking AI to 'do it all' in one pass.",
+        "A Content Integrity Audit — comparing the AI draft against the approved source material — is one of the most important and most frequently skipped steps in AI content production.",
+        "The goal is not to accumulate hundreds of prompts. The goal is a small number of tested, versioned, reusable prompts that plug into a repeatable operating system."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. What Is an AI Prompt Workflow?"
+    },
+    {
+      "type": "definitions",
+      "id": "prompt-workflow-definition",
+      "title": "AI Prompt Workflow Definition",
+      "items": [
+        {
+          "term": "AI Prompt Workflow",
+          "definition": "A repeatable sequence that determines what AI receives, what AI is asked to do, what AI produces, how that output is reviewed, and what happens after it is approved — connecting research, briefs, prompt chaining, fact auditing, and integrity checks into one system."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "An AI prompt workflow treats the prompt as one instruction inside a larger, connected chain of steps. The prompt is the instruction; the workflow is everything that has to happen before and after that instruction for it to produce something trustworthy."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-vs-workflow-vs-system",
+      "title": "2. Prompt vs. Workflow vs. Content System"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "system-comparison-table",
+      "columns": [
+        "",
+        "Prompt",
+        "Workflow",
+        "Content System"
+      ],
+      "rows": [
+        [
+          "Purpose",
+          "Give AI one instruction",
+          "Connect research to a finished draft",
+          "Operate content production over time"
+        ],
+        [
+          "Scope",
+          "Single interaction",
+          "One piece of content, multiple steps",
+          "All content, ongoing"
+        ],
+        [
+          "Inputs",
+          "Whatever writer types",
+          "Research, brief, context, voice",
+          "Sources, templates, prompt library"
+        ],
+        [
+          "Governance & Review",
+          "None / Optional",
+          "Required checkpoints",
+          "Built into operating rhythm"
+        ],
+        [
+          "Reusability",
+          "Low unless templated",
+          "Medium — per content type",
+          "High — designed for indefinite use"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-small-businesses-need-workflows",
+      "title": "3. Why Small Businesses Need Prompt Workflows"
+    },
+    {
+      "type": "paragraph",
+      "content": "A workflow gives a small team consistency, speed without chaos, repeatability, easier delegation, improved AI collaboration, discrete quality control checkpoints, lower cognitive load, and reusable knowledge assets."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-quality-framework",
+      "title": "4. The Prompt Quality Framework"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "quality-framework-table",
+      "columns": [
+        "Element",
+        "Purpose",
+        "Example",
+        "Common Mistake"
+      ],
+      "rows": [
+        [
+          "Role",
+          "Frames perspective",
+          "Act as a content quality editor",
+          "Assigning unearned authority ('act as licensed attorney')"
+        ],
+        [
+          "Objective",
+          "Defines the goal",
+          "Explain appointment reminders to new patients",
+          "Leaving goal vague or implied"
+        ],
+        [
+          "Context & Inputs",
+          "Grounds request & supplies material",
+          "Business type, audience, location, brief",
+          "Supplying no source material at all"
+        ],
+        [
+          "Instructions & Constraints",
+          "Directs action & sets boundaries",
+          "Organize notes; do not give legal advice",
+          "Bundling 5 tasks or omitting boundaries"
+        ],
+        [
+          "Output Format & Verification",
+          "Specifies structure & flags checks",
+          "Markdown table; mark claims needing source check",
+          "Treating raw AI output as verified"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-content-goal",
+      "title": "5. Define the Content Goal"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define what the content must achieve: educate readers, answer a recurring FAQ, explain a process step-by-step, assist decision support, provide an actionable checklist, or support local discovery."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-audience",
+      "title": "6. Define the Audience"
+    },
+    {
+      "type": "paragraph",
+      "content": "Specify business type, role (patient, client, buyer, tenant), experience level, problem, search intent, location, and decision stage. Audience specificity is high-leverage input."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "gather-research-evidence",
+      "title": "7. Gather Research and Evidence"
+    },
+    {
+      "type": "paragraph",
+      "content": "Assemble verified research notes, primary sources, business facts, customer questions, review themes, and approved internal knowledge. Connects to Article #21."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "build-content-brief",
+      "title": "8. Build the Content Brief"
+    },
+    {
+      "type": "paragraph",
+      "content": "Translate research into a structured brief before writing drafting prompts. Connects to Article #22."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "build-prompt-context",
+      "title": "9. Build the Prompt Context (Context Pack)"
+    },
+    {
+      "type": "paragraph",
+      "content": "Assemble relevant context: business info, audience definition, topic, research, sources, brand voice, content brief, compliance constraints, and output format. Relevant context > maximum context."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-construction",
+      "title": "10. Prompt Construction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Convert brief and context into an operational prompt defining role, task, context, inputs, requirements, exclusions, format, quality standards, and verification."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-sequencing",
+      "title": "11. Prompt Sequencing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Break complex content generation into a staged sequence: Research → Outline → Draft → Fact Check → Improve → SEO/GEO Review → Final QA."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-chaining",
+      "title": "12. Prompt Chaining"
+    },
+    {
+      "type": "workflow",
+      "title": "6-Stage Prompt Chain Architecture",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Prompt 1: Research Organizer"
+        },
+        {
+          "type": "process",
+          "label": "Prompt 2 & 3: Brief & Draft Writer"
+        },
+        {
+          "type": "process",
+          "label": "Prompt 4 & 5: Fact Checker & Editor"
+        },
+        {
+          "type": "decision",
+          "label": "Prompt 7: Content Integrity Auditor"
+        },
+        {
+          "type": "output",
+          "label": "Prompt 8: Final Publishing QA"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "input-output-contract",
+      "title": "13. The Input / Output Contract"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define explicit contracts for each prompt stage: INPUT (received), PROCESS (action taken), OUTPUT (returned), and QUALITY (evaluation standard)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "eight-reusable-prompts",
+      "title": "14. Eight Reusable Prompts for the Workflow"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-1-block",
+      "title": "Prompt 1: Research Organizer",
+      "prompt": "Role: Research organizer for [BUSINESS NAME], a [BUSINESS TYPE] serving [LOCATION].\nInput: The following research materials — [PASTE RESEARCH / NOTES].\nTask: Organize this research into a table (Key fact, Source, Date, Relevance to [TOPIC], Confidence, Missing info).\nConstraints: Do not invent facts not present in supplied research. Flag outdated items."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-2-block",
+      "title": "Prompt 2: Content Brief Builder",
+      "prompt": "Role: Content brief builder for [BUSINESS NAME].\nInput: Organized research table, Content goal: [GOAL], Audience: [AUDIENCE], Topic: [TOPIC].\nTask: Build a content brief (Objective, Audience, Primary/Secondary questions, Key points with sources, FAQs, Risks).\nConstraints: Every key point must trace to supplied research. Mark unsourced points 'Needs Source'."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-3-block",
+      "title": "Prompt 3: Content Drafting",
+      "prompt": "Role: Content drafter for [BUSINESS NAME], writing in [BRAND VOICE].\nInput: Approved content brief and verified research.\nTask: Write a full Markdown draft following the brief's structure.\nRules: Preserve all qualifications. Do not invent facts, statistics, sources, or testimonials."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-4-block",
+      "title": "Prompt 4: Fact and Source Auditor",
+      "prompt": "Role: Fact and source auditor.\nInput: Draft + verified research.\nTask: Audit every claim, statistic, date, and URL against supplied research. Output table (Claim, Status: PASS/PARTIAL/FAIL, Source, Notes).\nConstraints: Unmatched claims must be marked FAIL, not assumed correct."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-5-block",
+      "title": "Prompt 5: Content Quality Editor",
+      "prompt": "Role: Content quality editor.\nInput: Fact-checked draft.\nTask: Evaluate (do not rewrite) clarity, audience usefulness, structure, specificity, redundancy, and tone. Output issue list with recommendations."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-6-block",
+      "title": "Prompt 6: SEO / GEO Content Auditor",
+      "prompt": "Role: SEO/GEO content auditor.\nInput: Edited draft.\nTask: Evaluate intent alignment, topical coverage, heading structure, internal links, entity clarity, and explicit definitions.\nConstraints: Do not recommend keyword stuffing or claim ranking guarantees."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-7-block",
+      "title": "Prompt 7: Content Integrity Auditor",
+      "prompt": "Role: Content integrity auditor.\nInput: Approved source brief + current AI draft.\nTask: Compare line-by-line for omitted sections, merged paragraphs, missing examples/FAQs/tables, altered meaning, or removed qualifications.\nOutput: PASS / PARTIAL / FAIL report. The draft must never reduce approved meaning."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-8-block",
+      "title": "Prompt 8: Final Publishing QA",
+      "prompt": "Role: Final publishing QA reviewer.\nInput: Fully edited, fact-checked, integrity-checked draft.\nTask: Verify title, headings, lists, tables, links, FAQ section, source citations, and disclaimers. Output publish-readiness checklist."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-prompt-workflow",
+      "title": "15. The Complete AI Prompt Master Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "16-Stage Master Prompt Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Goal, Audience & Research"
+        },
+        {
+          "type": "process",
+          "label": "Brief, Context Pack & Drafting Prompts"
+        },
+        {
+          "type": "process",
+          "label": "Fact Check, Quality Edit & SEO/GEO Audit"
+        },
+        {
+          "type": "decision",
+          "label": "Content Integrity Gate & Human Approval"
+        },
+        {
+          "type": "output",
+          "label": "Publish, Repurpose & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-library-architecture",
+      "title": "16. Prompt Library Architecture"
+    },
+    {
+      "type": "paragraph",
+      "content": "Organize prompts into functional categories: Research, Brief, Writing, Editing, Fact Checking, SEO, GEO, FAQ, Checklist, Workflow, Repurposing, Update, Audit, and Integrity."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-version-control",
+      "title": "17. Prompt Version Control"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track Prompt ID, Name, Version, Purpose, Input, Output, Owner, Last Tested, and Status (Draft, Tested, Approved, Deprecated)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-testing",
+      "title": "18. Prompt Testing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Test prompts against normal, incomplete, ambiguous, high-risk, long, and contradictory inputs to evaluate factuality, consistency, completeness, format compliance, and hallucination risk."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-failure-modes",
+      "title": "19. Prompt Failure Modes"
+    },
+    {
+      "type": "paragraph",
+      "content": "Common failure modes: vague instructions, irrelevant context, missing source material, conflicting rules, unconstrained claims, verbosity, and generic output."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-improvement-workflow",
+      "title": "20. Prompt Improvement Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "Prompt Refinement Cycle",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Test & Observe Failure"
+        },
+        {
+          "type": "process",
+          "label": "Identify Cause & Modify Prompt"
+        },
+        {
+          "type": "output",
+          "label": "Retest, Compare & Approve"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-quality-scorecard",
+      "title": "21. Prompt Quality Scorecard"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "scorecard-table",
+      "columns": [
+        "Dimension",
+        "0 = Poor",
+        "1 = Needs Improvement",
+        "2 = Good"
+      ],
+      "rows": [
+        [
+          "Clarity & Context",
+          "Vague role/task or missing background",
+          "Basic context provided",
+          "Clear role, explicit background & boundaries"
+        ],
+        [
+          "Evidence & Constraints",
+          "No source inputs; unconstrained",
+          "Partial sources; generic constraints",
+          "Verified research inputs; strict boundaries"
+        ],
+        [
+          "Format & Integrity",
+          "Unstructured output; skipped audit",
+          "Basic structure required",
+          "Strict schema; mandatory integrity audit pass"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-workflow-database",
+      "title": "22. Prompt Workflow Database"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "database-table",
+      "columns": [
+        "Prompt ID",
+        "Prompt Name",
+        "Purpose",
+        "Input",
+        "Output",
+        "Status",
+        "Risk Level"
+      ],
+      "rows": [
+        [
+          "P-01",
+          "Research Organizer",
+          "Structure raw research notes",
+          "Raw research",
+          "Fact table",
+          "Approved",
+          "Low"
+        ],
+        [
+          "P-02",
+          "Brief Builder",
+          "Turn research into brief",
+          "Fact table",
+          "Content brief",
+          "Approved",
+          "Low"
+        ],
+        [
+          "P-03",
+          "Draft Writer",
+          "Produce first draft",
+          "Approved brief",
+          "Full draft",
+          "Approved",
+          "Medium"
+        ],
+        [
+          "P-04",
+          "Fact Auditor",
+          "Verify draft claims",
+          "Draft + research",
+          "Fact audit table",
+          "Approved",
+          "High"
+        ],
+        [
+          "P-05",
+          "Quality Editor",
+          "Evaluate clarity/structure",
+          "Fact-checked draft",
+          "Issue list",
+          "Approved",
+          "Low"
+        ],
+        [
+          "P-06",
+          "SEO/GEO Auditor",
+          "Evaluate discoverability",
+          "Edited draft",
+          "Recommendations",
+          "Approved",
+          "Low"
+        ],
+        [
+          "P-07",
+          "Integrity Auditor",
+          "Compare draft to source",
+          "Source + draft",
+          "Integrity report",
+          "Approved",
+          "High"
+        ],
+        [
+          "P-08",
+          "Final QA",
+          "Pre-publish checklist",
+          "Final draft",
+          "Readiness list",
+          "Approved",
+          "Medium"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-to-content-workflow",
+      "title": "23. Prompt → Content Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "Draft-to-Publication Flow",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Prompt Chain Execution"
+        },
+        {
+          "type": "process",
+          "label": "Raw AI Draft Output"
+        },
+        {
+          "type": "process",
+          "label": "Human Review & Approval"
+        },
+        {
+          "type": "output",
+          "label": "Canonical Published Content"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-to-json-governance",
+      "title": "24. Prompt → Article JSON Governance"
+    },
+    {
+      "type": "workflow",
+      "title": "Structured JSON Technical Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Approved Content Draft"
+        },
+        {
+          "type": "process",
+          "label": "JSON Payload Serialization"
+        },
+        {
+          "type": "decision",
+          "label": "Schema & Integrity Validation"
+        },
+        {
+          "type": "output",
+          "label": "Pre-Rendered HTML & Production"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-to-repurposing-workflow",
+      "title": "25. Prompt → Repurposing Workflow"
+    },
+    {
+      "type": "paragraph",
+      "content": "Connects to Article #24. Adapt canonical approved content into FAQs, checklists, newsletters, and social assets without introducing unapproved claims."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-to-update-workflow",
+      "title": "26. Prompt → Content Update Workflow"
+    },
+    {
+      "type": "paragraph",
+      "content": "Connects to Article #27. Preserve accurate existing content; update only verified changes."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-to-competitor-gap-workflow",
+      "title": "27. Prompt → Competitor Gap Workflow"
+    },
+    {
+      "type": "paragraph",
+      "content": "Connects to Article #28. Turn validated market gap opportunities into structured briefs and original content."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-examples",
+      "title": "28. Hypothetical Examples (Dental, Law, Real Estate)"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Dental:</strong> Drafts aftercare educational guides anchored to ADA research; passes clinical review and integrity audit without giving medical diagnoses.<br><strong>Law:</strong> Drafts general small claims process explainer anchored to state court sources; passes attorney review without creating attorney-client relationship.<br><strong>Real Estate:</strong> Drafts local home-buying workflow; passes Fair Housing compliance audit without giving individualized financial/legal advice."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "29. Common Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10 Common Prompt Workflow Mistakes",
+      "content": "1. Treating prompts as magic content creators without human review\n2. Using vague instructions without contextual grounding\n3. Providing no source material and expecting factual accuracy\n4. Asking one prompt to perform research, drafting, and editing simultaneously\n5. Skipping mandatory fact-checking and human editorial review\n6. Allowing AI to invent statistics, sources, or testimonials\n7. Copying competitor structures directly\n8. Trimming drafts for length by removing necessary qualifications or disclaimers\n9. Untested prompts published directly to production\n10. Skipping the Content Integrity Audit"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "30. 30-Day Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Implementation Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Build",
+          "content": "Create 5–10 core prompts (research, brief, draft, fact-check, integrity audit)."
+        },
+        {
+          "title": "Week 2 — Test",
+          "content": "Run prompts against real business content requirements."
+        },
+        {
+          "title": "Week 3 — Document",
+          "content": "Record performance, failures, and updates in database."
+        },
+        {
+          "title": "Week 4 — Standardize",
+          "content": "Establish prompt library and governance workflows."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-performance",
+      "title": "31. Measuring Prompt Workflow Performance"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track prompt success rate, revision passes required, fact error rate, missing-content rate, format compliance, review time, prompt reuse rate, and content integrity error rate."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "32. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Structure information and transform research into drafts",
+        "Generate outlines and structural alternatives",
+        "Classify, organize, and audit content against criteria",
+        "Identify gaps against a brief and adapt formats",
+        "Improve clarity, tone consistency, and readability"
+      ],
+      "cons": [
+        "Cannot guarantee factual accuracy or current information",
+        "Cannot guarantee professional correctness (medical, legal, financial)",
+        "Cannot guarantee search rankings or AI visibility",
+        "Cannot replace human verification of primary regulatory/clinical sources"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "33. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Prompt Workflow Questions & Answers",
+      "items": [
+        {
+          "question": "What is an AI prompt workflow?",
+          "answer": "An AI prompt workflow is a repeatable sequence — research, brief, context, prompt, draft, fact-check, review, and publish — determining what AI receives, what it does, and how output is verified before publication."
+        },
+        {
+          "question": "What is the difference between a prompt and a workflow?",
+          "answer": "A prompt is a single instruction given to AI. A workflow is a connected sequence of steps (research, brief, draft, fact-check, review) moving from goal to verified publication."
+        },
+        {
+          "question": "How can businesses reduce AI hallucinations?",
+          "answer": "Supply verified source material, instruct AI explicitly not to invent facts, and execute a dedicated fact-and-source audit comparing draft claims against supplied research."
+        },
+        {
+          "question": "What is prompt chaining?",
+          "answer": "Prompt chaining connects single-purpose prompts sequentially, where the output of one stage (e.g. Research Organizer) becomes the input for the next (e.g. Brief Builder)."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "34. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "35. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Repurposing Workflow for Local Businesses",
+      "url": "ai-content-repurposing-workflow-local-businesses.html",
+      "description": "Approved content draft is repurposed into secondary formats."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How to Build a Simple AI Marketing System as a Solopreneur",
+      "url": "how-to-build-simple-ai-marketing-system-solopreneur.html",
+      "description": "Prompt workflow powers the content production engine of the marketing system."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Research & Compliance Citations",
+      "items": [
+        "Google Search Central — \"Creating Helpful, Reliable, People-First Content\" — https://developers.google.com/search/docs/fundamentals/creating-helpful-content — Supports quality standards.",
+        "Federal Trade Commission — \"Endorsements, Influencers, and Reviews\" — https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews — Supports endorsement and disclosure compliance.",
+        "U.S. Department of Housing and Urban Development — \"Fair Housing\" — https://www.hud.gov/fairhousing — Supports Fair Housing evaluation criteria.",
+        "Anthropic — \"Prompt Engineering Overview\" — https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview — Supports prompt construction and chaining frameworks."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "36. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Prompt Operating System Cycle",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Research, Brief & Context"
+        },
+        {
+          "type": "process",
+          "label": "Prompt Chain & Draft Generation"
+        },
+        {
+          "type": "decision",
+          "label": "Fact Check & Integrity Audit"
+        },
+        {
+          "type": "output",
+          "label": "Publish, Repurpose & Maintain"
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-content-repurposing-workflow-local-businesses.html",
+      "how-to-build-simple-ai-marketing-system-solopreneur.html"
+    ]
+  }
+}

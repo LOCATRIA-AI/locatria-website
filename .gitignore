@@ -1,0 +1,49 @@
+# ==============================
+# Vercel
+# ==============================
+.vercel/
+
+# ==============================
+# Environment / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Editors
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Internal documentation
+# ==============================
+docs/
+
+# ==============================
+# Development / Scratch
+# ==============================
+scratch/
+scripts/
+learn/
+
+# Development test pages
+component-lab.html
+content-integrity-test.js
+test-article.html
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.temp
+# Development / internal templates
+article.html
+learn.html

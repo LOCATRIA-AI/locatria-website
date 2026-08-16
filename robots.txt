@@ -1,0 +1,6 @@
+# Locatria Robots Directives v1.0
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://locatria.com/sitemap.xml

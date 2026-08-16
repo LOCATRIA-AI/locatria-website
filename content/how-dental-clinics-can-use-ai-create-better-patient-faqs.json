@@ -1,0 +1,275 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "how-dental-clinics-can-use-ai-create-better-patient-faqs",
+  "type": "workflow",
+  "status": "published",
+  "metadata": {
+    "title": "How Dental Clinics Can Use AI to Create Better Patient FAQs",
+    "description": "A practical guide to building a dental patient FAQ system with AI support — real patient questions, clear answers, and professional review at every step.",
+    "category": "Guides & Blueprints",
+    "industry": "dental-clinics",
+    "difficulty": "beginner",
+    "featured": false,
+    "readingTime": 16,
+    "publishedAt": "2026-08-10T20:55:00Z",
+    "updatedAt": "2026-08-10T20:55:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Dental Practice AI & Content Systems Specialists"
+  },
+  "seo": {
+    "title": "How Dental Clinics Can Use AI to Create Better Patient FAQs | Locatria",
+    "description": "A practical guide to building a dental patient FAQ system with AI support — real patient questions, clear answers, and professional review.",
+    "canonical": "https://locatria.com/knowledge/how-dental-clinics-can-use-ai-create-better-patient-faqs",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "AI-Assisted Dental Patient FAQ Creation",
+    "audience": [
+      "Dental Clinic Owners",
+      "Dental Practice Managers",
+      "Dental Front-Desk Leads"
+    ],
+    "industries": [
+      "Dental Clinics",
+      "Healthcare Administration"
+    ],
+    "entities": [
+      "Dental Patient FAQs",
+      "Professional Review",
+      "Patient Privacy & HIPAA",
+      "Google E-E-A-T & YMYL",
+      "ADA AI Guidance"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "A good dental FAQ starts with real patient questions, not with a list AI invents on its own.",
+        "AI can genuinely help organize, cluster, draft, and simplify FAQ content — but it should never be the final source of truth on anything health-related.",
+        "Any answer touching health information needs review by a qualified dental professional before it's published, not just a general proofread.",
+        "FAQs should stay clear and patient-friendly, using plain language over dense clinical terminology, and should point patients toward their dentist for anything requiring individual judgment.",
+        "Patient privacy matters at every stage — general and de-identified information should be used to build FAQ content, never identifiable patient details entered into an AI tool.",
+        "FAQs aren't a one-time project. They need a review schedule, just like any other part of a clinic's website."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Dental clinics field the same handful of questions constantly — through phone calls, front-desk conversations, contact forms, emails, and reviews. A well-built FAQ can answer many of these general questions before or outside a direct conversation, saving staff time and giving patients clearer information up front."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can make building that FAQ system considerably faster — organizing scattered questions, drafting first-pass answers, and simplifying dense language into something a patient can actually read."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Core Safety Boundary",
+      "content": "AI-generated questions are not automatically the questions your patients actually ask, and AI-generated answers are not automatically accurate. Every health-related answer MUST be reviewed by a licensed dental professional before publication."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "what-makes-good-faq",
+      "title": "What Makes a Good Dental FAQ?"
+    },
+    {
+      "type": "paragraph",
+      "content": "A strong dental FAQ is relevant to real patients, clearly written, factually accurate, patient-friendly in tone, specific enough to actually be useful, easy to scan, and kept current over time."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Google YMYL & E-E-A-T Context",
+      "content": "Google's published guidance treats health-related content as a 'Your Money or Your Life' (YMYL) topic. Google's ranking systems give more weight to strong E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) specifically for health content."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "ten-step-process",
+      "title": "10-Step Dental Patient FAQ Workflow"
+    },
+    {
+      "type": "stepByStep",
+      "title": "Dental FAQ Production Sequence",
+      "steps": [
+        {
+          "title": "1. Build a Dental Patient Question Bank",
+          "content": "Gather real questions from calls, emails, front desk, and reviews. Record in a simple question bank table."
+        },
+        {
+          "title": "2. Use AI to Organize and Cluster Questions",
+          "content": "Use AI to group duplicate questions into core themes. Note: AI organizes questions, it doesn't invent clinic policy."
+        },
+        {
+          "title": "3. Prioritize the Most Useful FAQs",
+          "content": "Evaluate questions by frequency, customer importance, risk level, and ease of professional review."
+        },
+        {
+          "title": "4. Research and Verify the Answer",
+          "content": "Separate general health facts (verify against authoritative sources) from clinic-specific details (supplied by staff)."
+        },
+        {
+          "title": "5. Draft the FAQ With AI",
+          "content": "Draft clear, direct answers and short explanations using verified facts as input."
+        },
+        {
+          "title": "6. Make Dental FAQs Patient-Friendly",
+          "content": "Simplify clinical jargon into plain, approachable language. Direct individual cases to a dentist."
+        },
+        {
+          "title": "7. Professional Review",
+          "content": "Mandatory checkpoint: A qualified dental professional signs off on medical accuracy before publishing."
+        },
+        {
+          "title": "8. Protect Patient Privacy",
+          "content": "Never paste Protected Health Information (PHI) or identifiable patient details into AI tools."
+        },
+        {
+          "title": "9. Publish FAQs on the Right Pages",
+          "content": "Place FAQs contextually on service pages, location pages, insurance pages, or general FAQ hub."
+        },
+        {
+          "title": "10. Use FAQs as a Content System",
+          "content": "Repurpose verified FAQ answers into social posts, email blurbs, and staff reference materials."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "review-checklist",
+      "title": "Professional Review & Safety Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Pre-Publication Dental FAQ QA Checklist",
+      "items": [
+        "Question comes from a real or validated customer need",
+        "Question is clearly written",
+        "Answer is direct and upfront",
+        "Answer is easy to understand in plain language",
+        "Facts are verified against authoritative sources",
+        "Clinic-specific details (pricing, scheduling, policies) are accurate",
+        "Medical claims are reviewed by a qualified professional",
+        "No patient-specific diagnosis or treatment advice is given",
+        "No identifiable patient information or PHI is included",
+        "Sources are documented where appropriate",
+        "Internal links are relevant and contextual",
+        "FAQ is placed on the appropriate contextual page",
+        "Content has an assigned review date",
+        "Update trigger is clearly defined (e.g. policy change)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "faq-examples",
+      "title": "Dental FAQ Structure Examples"
+    },
+    {
+      "type": "faq",
+      "id": "faq-examples-block",
+      "items": [
+        {
+          "question": "What should I bring to my first dental appointment?",
+          "answer": "Bring a valid ID, your dental insurance card (if applicable), completed new patient forms, and a list of any current medications. Arriving 15 minutes early helps ensure a smooth check-in."
+        },
+        {
+          "question": "Does your dental clinic accept insurance?",
+          "answer": "We accept a wide range of dental insurance plans and handle claim filing for you. Contact our front desk team to verify coverage for your specific provider before your visit."
+        },
+        {
+          "question": "What is involved in a routine dental cleaning?",
+          "answer": "A routine dental cleaning involves removing plaque and tartar, polishing teeth, and reviewing oral hygiene habits. Talk with your dentist for advice based on your individual oral health situation."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "common-mistakes",
+      "title": "12 Common Dental FAQ Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Pitfalls Dental Practices Must Avoid",
+      "content": "1. Asking AI to invent questions instead of using real patient queries\n2. Publishing AI-generated answers without professional review\n3. Using generic answers that could belong to any clinic\n4. Ignoring front-desk staff input\n5. Using overly dense dental jargon\n6. Making unsupported medical claims\n7. Leaving outdated pricing or policy details online\n8. Publishing sensitive or identifiable patient information\n9. Creating one giant, unorganized FAQ page\n10. Repeating identical answers across multiple pages\n11. Writing FAQs purely for keyword stuffing\n12. Treating FAQs as a one-time project without a review schedule"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "practical-example",
+      "title": "Practical Workflow Example"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Hypothetical Root Canal Consultation FAQ Workflow",
+      "content": "A dental clinic notices patients ask 'What happens during a root canal consultation?'. Workflow: Staff log question → Dentist confirms general non-diagnostic facts → AI drafts plain-language response → Dentist reviews & approves → FAQ published on Endodontics service page & repurposed into patient email.\n\n*Illustration of process sequence only; no clinical or financial outcomes claimed.*"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-template",
+      "title": "Required AI Prompt",
+      "prompt": "You are helping a dental clinic turn a real patient question into a draft FAQ entry.\n\nPlease gather the following:\n- Patient question: \"[insert real patient question]\"\n- Business context: [insert]\n- Target audience: [insert]\n- Clinic-specific details: [insert]\n- Verified sources: [insert]\n\nPlease produce:\n- Restated clear question\n- Direct plain-language answer\n- Short supporting explanation\n- Clear separation between general facts and clinic details\n- Verification checklist for professional review\n\nInstructions:\n- Do not invent facts or clinic policies.\n- Do not diagnose or suggest a medical diagnosis.\n- Do not provide patient-specific medical advice.\n- Do not use identifiable patient information.\n- Flag anything needing professional verification."
+    },
+    {
+      "type": "definitions",
+      "id": "key-definitions",
+      "title": "Key Definition Blocks",
+      "items": [
+        {
+          "term": "Patient Question Bank",
+          "definition": "A centralized, running list of real questions gathered directly from patient calls, emails, reviews, and front-desk interactions."
+        },
+        {
+          "term": "E-E-A-T & YMYL",
+          "definition": "Google's quality guidelines where health content ('Your Money or Your Life') requires heightened Experience, Expertise, Authoritativeness, and Trustworthiness."
+        },
+        {
+          "term": "Professional Verification",
+          "definition": "The mandatory review step where a qualified dental professional verifies all health-related facts in an AI draft before publication."
+        },
+        {
+          "term": "Contextual FAQ Placement",
+          "definition": "Publishing specific FAQs directly on the relevant service, location, or insurance page rather than burying them in a single catch-all list."
+        }
+      ]
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How Dental Clinics Can Use AI to Repurpose Educational Content",
+      "url": "how-dental-clinics-can-use-ai-repurpose-educational-content.html",
+      "description": "Repurposes approved patient FAQ answers into educational content."
+    },
+    {
+      "type": "sources",
+      "id": "sources-references",
+      "title": "Sources & References",
+      "items": [
+        "American Dental Association — 'What are the standards for AI use in dentistry?' (adanews.ada.org/ada-news/2025/february/what-are-the-standards-for-ai-use-in-dentistry)",
+        "Google for Developers — 'Creating Helpful, Reliable, People-First Content' (developers.google.com/search/docs/fundamentals/creating-helpful-content)",
+        "Federal Register — 'HIPAA Security Rule To Strengthen ePHI Cybersecurity' (federalregister.gov/documents/2025/01/06/2024-30983)",
+        "HIPAA Journal — 'When AI Technology and HIPAA Collide' (hipaajournal.com/when-ai-technology-and-hipaa-collide)"
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "how-dental-clinics-can-use-ai-repurpose-educational-content.html"
+    ]
+  }
+}

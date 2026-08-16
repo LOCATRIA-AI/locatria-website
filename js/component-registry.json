@@ -1,0 +1,49 @@
+{
+  "system": "Locatria Content Component System",
+  "version": "1.0.0",
+  "status": "approved",
+  "totalComponents": 36,
+  "components": [
+    { "id": "C01", "type": "paragraph", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    { "id": "C02", "type": "heading", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    { "id": "C03", "type": "orderedList", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    { "id": "C04", "type": "unorderedList", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    { "id": "C05", "type": "link", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    { "id": "C06", "type": "quote", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    { "id": "C07", "type": "divider", "category": "foundation", "status": "approved", "version": "1.0.0" },
+    
+    { "id": "C08", "type": "keyTakeaways", "category": "semantic", "status": "approved", "version": "1.0.0" },
+    { "id": "C09", "type": "callout", "category": "semantic", "status": "approved", "version": "1.0.0", "variants": ["info", "tip", "important", "warning"] },
+    { "id": "C10", "type": "tip", "category": "semantic", "status": "approved", "version": "1.0.0", "aliasFor": "callout:tip" },
+    { "id": "C11", "type": "warning", "category": "semantic", "status": "approved", "version": "1.0.0", "aliasFor": "callout:warning" },
+    { "id": "C12", "type": "importantNote", "category": "semantic", "status": "approved", "version": "1.0.0", "aliasFor": "callout:important" },
+    { "id": "C13", "type": "definition", "category": "semantic", "status": "approved", "version": "1.0.0" },
+    { "id": "C14", "type": "example", "category": "semantic", "status": "approved", "version": "1.0.0" },
+    
+    { "id": "C15", "type": "stepByStep", "category": "process", "status": "approved", "version": "1.0.0" },
+    { "id": "C16", "type": "workflow", "category": "process", "status": "approved", "version": "1.0.0" },
+    { "id": "C17", "type": "checklist", "category": "process", "status": "approved", "version": "1.0.0" },
+    
+    { "id": "C18", "type": "table", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    { "id": "C19", "type": "comparisonTable", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    { "id": "C20", "type": "prosCons", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    { "id": "C21", "type": "promptBlock", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    { "id": "C22", "type": "codeBlock", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    { "id": "C23", "type": "inputOutput", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    { "id": "C24", "type": "workflowDiagram", "category": "data-ai", "status": "approved", "version": "1.0.0" },
+    
+    { "id": "C25", "type": "image", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    { "id": "C26", "type": "screenshot", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    { "id": "C27", "type": "diagram", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    { "id": "C28", "type": "video", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    { "id": "C29", "type": "relatedArticle", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    { "id": "C30", "type": "relatedGuide", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    { "id": "C31", "type": "nextPrevious", "category": "media-nav", "status": "approved", "version": "1.0.0" },
+    
+    { "id": "C32", "type": "resourceBox", "category": "conversion", "status": "approved", "version": "1.0.0" },
+    { "id": "C33", "type": "recommendedTool", "category": "conversion", "status": "approved", "version": "1.0.0" },
+    { "id": "C34", "type": "affiliateRecommendation", "category": "conversion", "status": "approved", "version": "1.0.0" },
+    { "id": "C35", "type": "affiliateDisclosure", "category": "conversion", "status": "approved", "version": "1.0.0" },
+    { "id": "C36", "type": "newsletterCTA", "category": "conversion", "status": "approved", "version": "1.0.0" }
+  ]
+}

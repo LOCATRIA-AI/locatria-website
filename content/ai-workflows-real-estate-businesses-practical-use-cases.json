@@ -1,0 +1,798 @@
+{
+  "id": "ai-workflows-real-estate-businesses-practical-use-cases",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Workflows for Real Estate Businesses: Practical Use Cases",
+    "subtitle": "Sixteen concrete, repeatable workflows showing where AI fits into everyday real estate work while keeping accuracy, professional judgment, and Fair Housing compliance firmly in control.",
+    "industry": "real-estate",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 25,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Real estate agents",
+      "Brokers",
+      "Brokerage owners",
+      "Independent agents",
+      "Small real estate teams",
+      "Real estate marketing and operations professionals"
+    ],
+    "primaryTopic": "AI Workflows for Real Estate Businesses: Practical Use Cases"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-workflows-real-estate-businesses-practical-use-cases.html",
+    "metaDescription": "Sixteen practical AI workflows for real estate brokerages and agents — lead organization, listing content, FAQs, audits, and Fair Housing compliance.",
+    "openGraph": {
+      "title": "AI Workflows for Real Estate Businesses: Practical Use Cases | Locatria",
+      "description": "Sixteen practical AI workflows for real estate brokerages and agents — lead organization, listing content, FAQs, audits, and Fair Housing compliance.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Workflows for Real Estate Businesses: Practical Use Cases",
+    "industryFocus": "real-estate"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI becomes genuinely useful for a real estate business when it's integrated into a repeatable workflow — trigger, input, AI assistance, human review, output — rather than used as an isolated, ad hoc chatbot interaction.",
+        "The goal is not \"use AI everywhere.\" It's \"use AI where it reduces repetitive work while preserving human judgment,\" especially for anything touching property facts, client-specific communication, or Fair Housing-sensitive content.",
+        "AI must never be allowed to invent property features, square footage, price, availability, or any other listing detail — every property fact requires verification against a current, authoritative source before publication.",
+        "Fair Housing obligations apply fully to AI-assisted content, and this guide treats neighborhood-related workflows with particular care, focusing only on objective, verifiable information rather than anything that could be read as steering or discriminatory.",
+        "Confidential client information, financial details, and private transaction specifics should never be entered into a public AI tool — every workflow in this guide is designed to work from sanitized or non-sensitive inputs.",
+        "Start with one or two low-risk, repetitive workflows, prove they work, and only then expand — attempting to implement all sixteen workflows simultaneously undermines the quality control this entire approach depends on."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: AI Is More Useful as a Workflow Than a Tool"
+    },
+    {
+      "type": "paragraph",
+      "content": "A common, unproductive pattern looks like this: open an AI tool, ask a random question, get an answer, copy the result into whatever you're working on, and repeat the next time a similar need comes up — with no consistency, no defined review step, and no way to improve the process over time."
+    },
+    {
+      "type": "paragraph",
+      "content": "A <strong>workflow</strong> changes this by creating consistency, repeatability, quality control, and clear responsibility. Instead of a one-off question, a workflow is a defined process: something specific triggers it, specific information becomes the input, AI performs a bounded task, a person reviews the result, and only then does it become a final output."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-ai-workflow",
+      "title": "2. What Is an AI Workflow?"
+    },
+    {
+      "type": "workflow",
+      "title": "Standard AI Workflow Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Trigger & Input"
+        },
+        {
+          "type": "process",
+          "label": "AI Processing"
+        },
+        {
+          "type": "decision",
+          "label": "Human Review"
+        },
+        {
+          "type": "output",
+          "label": "Output & Next Action"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "where-ai-fits",
+      "title": "3. Where AI Fits in a Real Estate Business"
+    },
+    {
+      "type": "definitions",
+      "id": "business-area-definitions",
+      "title": "9 Key Business Areas for Real Estate AI Workflows",
+      "items": [
+        {
+          "term": "Marketing",
+          "definition": "Content research, listing content assistance, local content planning."
+        },
+        {
+          "term": "Sales / Lead Management",
+          "definition": "Lead inquiry organization, buyer/seller question organization."
+        },
+        {
+          "term": "Client Communication",
+          "definition": "Email drafting, follow-up organization."
+        },
+        {
+          "term": "Content Creation",
+          "definition": "FAQ creation, content repurposing."
+        },
+        {
+          "term": "Research & Strategy",
+          "definition": "Content research, website content audits."
+        },
+        {
+          "term": "Operations",
+          "definition": "Meeting preparation, task summarization."
+        },
+        {
+          "term": "Knowledge Management",
+          "definition": "Property information organization, content freshness monitoring."
+        },
+        {
+          "term": "Reputation",
+          "definition": "Review response assistance."
+        },
+        {
+          "term": "Website Maintenance",
+          "definition": "Local information consistency audits, AI visibility audits."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf1-lead-inquiry",
+      "title": "Workflow #1 — Lead Inquiry Organization"
+    },
+    {
+      "type": "workflow",
+      "title": "Lead Inquiry Processing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Inquiry Received & Sanitized"
+        },
+        {
+          "type": "process",
+          "label": "Classify & Summarize"
+        },
+        {
+          "type": "decision",
+          "label": "Human Review & Bias Check"
+        },
+        {
+          "type": "output",
+          "label": "CRM Entry / Task Assignment"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf2-buyer-questions",
+      "title": "Workflow #2 — Buyer Question Organization"
+    },
+    {
+      "type": "workflow",
+      "title": "Buyer Question Organization Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Collect Sanitized Questions"
+        },
+        {
+          "type": "process",
+          "label": "Normalize & Cluster"
+        },
+        {
+          "type": "process",
+          "label": "Prioritize & Human Verify"
+        },
+        {
+          "type": "output",
+          "label": "Publish FAQ / Communication Brief"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf3-seller-questions",
+      "title": "Workflow #3 — Seller Question Organization"
+    },
+    {
+      "type": "paragraph",
+      "content": "Similarly, seller questions repeat across clients without a system for organizing them into useful content or consistent communication. <strong>Be especially careful with pricing concepts</strong> — general educational content is different from advice about what a specific property should be listed at."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf4-content-research",
+      "title": "Workflow #4 — Real Estate Content Research"
+    },
+    {
+      "type": "workflow",
+      "title": "Content Research & Categorization Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Business Goals & Audience Questions"
+        },
+        {
+          "type": "process",
+          "label": "Topic Clustering"
+        },
+        {
+          "type": "decision",
+          "label": "Human Fact-Check (Known / Research / Unverified)"
+        },
+        {
+          "type": "output",
+          "label": "Prioritized Content Brief"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf5-listing-content",
+      "title": "Workflow #5 — Listing Content Assistance"
+    },
+    {
+      "type": "workflow",
+      "title": "Fair Housing-Compliant Listing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Verified Property Data Only"
+        },
+        {
+          "type": "process",
+          "label": "AI Structural Draft"
+        },
+        {
+          "type": "decision",
+          "label": "Fact-Check & Fair Housing Compliance Review"
+        },
+        {
+          "type": "output",
+          "label": "Published Listing Description"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf6-property-info",
+      "title": "Workflow #6 — Property Information Organization"
+    },
+    {
+      "type": "paragraph",
+      "content": "Organize supplied property information into structured fields: property type, location, size, rooms, features, amenities, status, price, and relevant notes. The source must remain authoritative; AI is the organizer, not the source of truth."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf7-faq-creation",
+      "title": "Workflow #7 — Real Estate FAQ Creation"
+    },
+    {
+      "type": "workflow",
+      "title": "7-Step Real Estate FAQ Creation Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Questions Collected"
+        },
+        {
+          "type": "process",
+          "label": "Normalize, Cluster & Draft"
+        },
+        {
+          "type": "decision",
+          "label": "Human Review for Accuracy"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Maintain FAQ"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf8-review-response",
+      "title": "Workflow #8 — Review Response Assistance"
+    },
+    {
+      "type": "paragraph",
+      "content": "Classify review sentiment, draft response options, maintain tone consistency, and flag potential privacy risks. <strong>Never fabricate reviews. Never confirm private client details. Never publish automatically without human review.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf9-email-drafting",
+      "title": "Workflow #9 — Email Drafting and Follow-Up"
+    },
+    {
+      "type": "paragraph",
+      "content": "Organize notes into a coherent summary, draft follow-up emails, and suggest next steps. Review facts, names, dates, and commitments before sending every time."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf10-meeting-prep",
+      "title": "Workflow #10 — Meeting Preparation"
+    },
+    {
+      "type": "workflow",
+      "title": "Non-Sensitive Meeting Prep Workflow",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Agenda & Non-Sensitive Notes"
+        },
+        {
+          "type": "process",
+          "label": "AI Organization & Questions"
+        },
+        {
+          "type": "decision",
+          "label": "Confidentiality Check"
+        },
+        {
+          "type": "output",
+          "label": "Meeting Prep Notes"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf11-content-repurposing",
+      "title": "Workflow #11 — Content Repurposing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Extract key elements from one approved article to create FAQs, checklists, newsletter sections, short educational posts, video outlines, and glossary entries."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf12-local-planning",
+      "title": "Workflow #12 — Local Content Planning"
+    },
+    {
+      "type": "paragraph",
+      "content": "Help organize local topics around cities, neighborhoods, property types, and public resources. <strong>Avoid Fair Housing-sensitive content</strong> — location content should describe places, never the people who live in them."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf13-website-audit",
+      "title": "Workflow #13 — Website Content Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit public website content for missing information, inconsistent terminology, unclear service descriptions, outdated pages, and missing FAQs."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf14-content-freshness",
+      "title": "Workflow #14 — Content Freshness Monitoring"
+    },
+    {
+      "type": "paragraph",
+      "content": "Identify content that may need review based on old statistics, outdated market references, old property examples, and changed service information."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf15-consistency-audit",
+      "title": "Workflow #15 — Local Information Consistency Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Compare business name, phone, address, website, service areas, and agent information across public profiles and identify discrepancies."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "wf16-visibility-audit",
+      "title": "Workflow #16 — AI Visibility Audit"
+    },
+    {
+      "type": "workflow",
+      "title": "AI Visibility Assessment Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Public Information Collection"
+        },
+        {
+          "type": "process",
+          "label": "AI Gap Identification"
+        },
+        {
+          "type": "decision",
+          "label": "Human Prioritization & Verification"
+        },
+        {
+          "type": "output",
+          "label": "Improvement Plan & Re-Audit"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "workflow-comparison-table",
+      "title": "20. Workflow Comparison Table"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "workflow-comp-table",
+      "columns": [
+        "Workflow",
+        "Primary Problem",
+        "AI Role",
+        "Human Role",
+        "Output",
+        "Risk Level"
+      ],
+      "rows": [
+        [
+          "1. Lead Inquiry Org",
+          "Unstructured inquiries",
+          "Classify & summarize",
+          "Verify classification & bias",
+          "Structured summary",
+          "Low–Medium"
+        ],
+        [
+          "2. Buyer Question Org",
+          "Recurring questions lost",
+          "Normalize & cluster",
+          "Verify & answer",
+          "Question categories",
+          "Low"
+        ],
+        [
+          "3. Seller Question Org",
+          "Seller questions lost",
+          "Normalize & cluster",
+          "Verify & pricing caution",
+          "Question categories",
+          "Low"
+        ],
+        [
+          "4. Content Research",
+          "Guesswork planning",
+          "Cluster topics",
+          "Fact-check known/unverified",
+          "Content brief",
+          "Low–Medium"
+        ],
+        [
+          "5. Listing Content",
+          "Time-consuming drafting",
+          "Draft from verified data",
+          "Fact-check & Fair Housing",
+          "Compliant description",
+          "Medium–High"
+        ],
+        [
+          "6. Property Info Org",
+          "Scattered details",
+          "Organize into fields",
+          "Confirm source authority",
+          "Structured record",
+          "Medium"
+        ],
+        [
+          "7. FAQ Creation",
+          "FAQ rarely built",
+          "Cluster & draft answers",
+          "Review, publish, maintain",
+          "Published FAQ",
+          "Low–Medium"
+        ],
+        [
+          "8. Review Response",
+          "Inconsistent responses",
+          "Classify & draft options",
+          "Review, approve, publish",
+          "Approved response",
+          "Medium"
+        ],
+        [
+          "9. Email Follow-Up",
+          "Drafting takes time",
+          "Draft from notes",
+          "Verify facts & commitments",
+          "Ready email",
+          "Medium"
+        ],
+        [
+          "10. Meeting Prep",
+          "Prep time-consuming",
+          "Organize info",
+          "Confirm no confidential data",
+          "Prep notes",
+          "Low"
+        ],
+        [
+          "11. Repurposing",
+          "Single-use assets",
+          "Draft derivatives",
+          "Review every derivative",
+          "Multiple formats",
+          "Low–Medium"
+        ],
+        [
+          "12. Local Planning",
+          "Local content structure",
+          "Organize topics",
+          "Verify & Fair Housing check",
+          "Local content plan",
+          "Medium–High"
+        ],
+        [
+          "13. Website Audit",
+          "Accumulated errors",
+          "Audit for gaps",
+          "Verify findings",
+          "Prioritized issue list",
+          "Low"
+        ],
+        [
+          "14. Freshness Monitor",
+          "Stale market info",
+          "Flag candidates",
+          "Verify against current sources",
+          "Review list",
+          "Medium"
+        ],
+        [
+          "15. Info Consistency",
+          "NAP drift across web",
+          "Compare profiles",
+          "Correct inconsistent sources",
+          "Consistent info",
+          "Low–Medium"
+        ],
+        [
+          "16. Visibility Audit",
+          "Unclear info ecosystem",
+          "Organize & compare",
+          "Verify & prioritize",
+          "Visibility plan",
+          "Low–Medium"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "which-workflows-first",
+      "title": "21. Which Workflows Should Be Automated First?"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Good early candidates:</strong> content organization, question clustering, summarization of non-sensitive material, content outlines, draft formatting, and duplicate detection — all low-risk, highly repetitive, and easy for a person to review quickly."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "workflow-governance",
+      "title": "22. AI Workflow Governance"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10 Golden Rules of Real Estate AI Workflow Governance",
+      "content": "1. Use verified inputs.\n2. Protect sensitive information.\n3. Keep a human reviewer on every task.\n4. Verify property details and Fair Housing compliance.\n5. Record source information.\n6. Do not invent claims.\n7. Do not automate high-risk decisions blindly.\n8. Maintain review dates.\n9. Define who owns each workflow.\n10. Stop automation when uncertainty is high."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-example",
+      "title": "23. Hypothetical Real Estate Business Example"
+    },
+    {
+      "type": "paragraph",
+      "content": "A small real estate team introduces buyer question organization, content research, and review-response drafting first. Buyer questions are periodically clustered to inform FAQs, blog research starts from real client needs, and review responses are drafted by AI but checked by a team member before posting."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-templates",
+      "title": "24. AI Workflow Prompt Templates"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-template-listing",
+      "title": "AI Prompt Template: Listing Content Assistance (Workflow #5)",
+      "prompt": "ROLE: You are helping a real estate business draft a listing description from verified property data.\n\nINPUT: [insert only confirmed, verified property details — features, measurements, amenities, status, price]\n\nTASK: Draft a clear, accurate listing description using only the supplied information.\n\nCONSTRAINTS:\n- Do not invent any feature, measurement, amenity, view, location claim, school claim, or neighborhood claim not explicitly supplied.\n- Do not use language that could be read as discriminatory or as targeting/excluding any group.\n- Describe the property itself, not who might be a \"good fit\" for it.\n\nOUTPUT FORMAT: A listing description draft, ready for fact-checking and Fair Housing review.\n\nVERIFICATION: List every factual claim in the draft so it can be checked against the source data before publishing."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "25. 30-Day AI Workflow Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week AI Workflow Implementation Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Identify Repetitive Tasks",
+          "content": "Have the team identify tasks that repeat often enough to justify building a workflow around them."
+        },
+        {
+          "title": "Week 2 — Choose 1–3 Low-Risk Workflows",
+          "content": "Select from low-risk, highly repetitive tasks (content organization, question clustering)."
+        },
+        {
+          "title": "Week 3 — Build Prompts & Review Procedures",
+          "content": "Set up specific prompts, define who reviews output, and establish completion criteria."
+        },
+        {
+          "title": "Week 4 — Test, Measure & Document",
+          "content": "Run each workflow on real tasks, measure performance, and document the finalized process."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-performance",
+      "title": "26. Measuring AI Workflow Performance"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Time saved per task",
+        "Processing time vs. review time required",
+        "Rework rate (frequency of significant corrections)",
+        "Error rate (issues caught during review)",
+        "Workflow completion rate",
+        "Human override rate",
+        "Number of tasks processed",
+        "Content turnaround time"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "27. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Organize information and summarize content",
+        "Classify inquiries and reviews",
+        "Draft first-pass content and transform formats",
+        "Research topics from supplied information",
+        "Identify patterns, gaps, or inconsistencies across data",
+        "Support repetitive daily workflows"
+      ],
+      "cons": [
+        "Cannot guarantee accurate property info without verification",
+        "Cannot guarantee market, legal, financial, or tax correctness",
+        "Cannot guarantee Fair Housing compliance without human review",
+        "Cannot guarantee search rankings, AI citations, leads, or revenue"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "28. Common AI Workflow Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "17 Common Real Estate AI Workflow Mistakes",
+      "content": "1. Automating before understanding the process\n2. Using AI without a defined workflow\n3. Giving AI unverified data\n4. Allowing AI to invent property facts\n5. Publishing AI listing content without review\n6. Using confidential information in public AI tools\n7. Automating high-risk decisions\n8. Ignoring Fair Housing considerations\n9. Creating mass-produced local content\n10. Treating AI output as fact\n11. Never recording source information\n12. Failing to define a human reviewer\n13. Automating too many workflows at once\n14. Measuring only speed\n15. Ignoring errors and rework\n16. Never updating prompts\n17. Failing to maintain workflow documentation"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "29. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Disciplined AI Workflow Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Trigger & Input"
+        },
+        {
+          "type": "process",
+          "label": "AI Assistance & Human Review"
+        },
+        {
+          "type": "output",
+          "label": "Output & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "30. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Real Estate AI Workflow Questions & Answers",
+      "items": [
+        {
+          "question": "What is an AI workflow for a real estate business?",
+          "answer": "An AI workflow is a repeatable process with a defined trigger, specific inputs, a bounded AI task, mandatory human review, and a clear output — as opposed to an ad hoc chatbot interaction."
+        },
+        {
+          "question": "What tasks can real estate agents use AI for?",
+          "answer": "Real estate agents can use AI for lead inquiry organization, question clustering, content research, listing content drafting (from verified data), FAQ development, review-response drafting, email drafting, meeting preparation, and content auditing."
+        },
+        {
+          "question": "Can AI automate real estate lead management?",
+          "answer": "AI can help organize and classify incoming leads, but a person must verify the classification, check for bias, and make final follow-up decisions."
+        },
+        {
+          "question": "Can AI write real estate listing descriptions?",
+          "answer": "Yes, when working strictly from verified property data. AI should never invent features or amenities, and every draft needs fact-checking and Fair Housing review."
+        },
+        {
+          "question": "What Fair Housing risks should real estate businesses consider when using AI?",
+          "answer": "HUD's 2024 guidance confirms the Fair Housing Act applies fully to AI-assisted content. Risks include discriminatory neighborhood descriptions, steering language, and protected-characteristic profiling in lead classification."
+        },
+        {
+          "question": "Should confidential client information be entered into AI tools?",
+          "answer": "No. Client names, contact details, financial info, and private transaction details should never be entered into public AI tools."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "31. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "32. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How Real Estate Professionals Can Use AI to Create Local Content",
+      "url": "how-real-estate-professionals-can-use-ai-to-create-local-content.html",
+      "description": "Focuses on creating neighborhood & local listing content."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Housing & Search Citations",
+      "items": [
+        "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports description of HUD's 2024 AI guidance under the Fair Housing Act.",
+        "HUD Office of Fair Housing and Equal Opportunity — \"Guidance on Application of the Fair Housing Act to the Advertising of Housing, Credit, and Other Real Estate-Related Transactions Through Digital Platforms\" — https://archives.hud.gov/news/2024/FHEO_Guidance_on_Advertising_through_Digital_Platforms.pdf — Supports Fair Housing advertising provisions and anti-steering principles.",
+        "Consumer Financial Services Law Monitor — \"HUD Issues Guidance on Applicability of the Fair Housing Act to Tenant Screening and Housing-Related Advertising That Relies Upon Algorithms and AI\" — https://www.consumerfinancialserviceslawmonitor.com/2024/05/hud-issues-guidance-on-applicability-of-the-fair-housing-act-to-tenant-screening-and-housing-related-advertising-that-relies-upon-algorithms-and-ai/ — Supports analysis of Fair Housing compliance in AI advertising."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "how-real-estate-professionals-can-use-ai-to-create-local-content.html"
+    ]
+  }
+}

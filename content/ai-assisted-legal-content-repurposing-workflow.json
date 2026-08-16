@@ -1,0 +1,962 @@
+{
+  "id": "ai-assisted-legal-content-repurposing-workflow",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI-Assisted Legal Content Repurposing Workflow",
+    "subtitle": "A practical workflow for law firms to transform attorney-approved content into multiple derivative formats — FAQs, checklists, newsletters, and social summaries — without sacrificing legal accuracy.",
+    "industry": "law-firms",
+    "difficulty": "beginner",
+    "readingTimeMinutes": 20,
+    "lastUpdated": "2026-08-11",
+    "audience": [
+      "Law firm owners",
+      "Managing partners",
+      "Solo attorneys",
+      "Small and local law firms",
+      "Attorneys responsible for content",
+      "Legal marketing and operations staff"
+    ],
+    "primaryTopic": "AI-Assisted Legal Content Repurposing Workflow"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-assisted-legal-content-repurposing-workflow.html",
+    "metaDescription": "A practical workflow for law firms to transform attorney-approved content into multiple derivative formats without sacrificing legal accuracy.",
+    "openGraph": {
+      "title": "AI-Assisted Legal Content Repurposing Workflow | Locatria",
+      "description": "A practical workflow for law firms to transform attorney-approved content into multiple derivative formats without sacrificing legal accuracy.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI-Assisted Legal Content Repurposing Workflow",
+    "industryFocus": "law-firms"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI is most useful for legal content repurposing when it works from a single, attorney-approved source of truth — not when it's asked to generate new legal content from scratch for every channel.",
+        "The core discipline is: repurpose the knowledge, don't multiply unverified claims. Every derivative piece should trace back to the same approved source, not introduce new facts, statistics, or legal conclusions on its own.",
+        "Any new claim, statistic, citation, or jurisdiction-specific statement that appears in a derivative but wasn't in the original source must be flagged for human verification before publishing — this is a hard rule, not a suggestion.",
+        "Confidential client information, privileged communications, and case files should never be used as repurposing source material entered into a public AI system.",
+        "Repurposing means restructuring for a specific format and audience, not copying identical text across every channel — a FAQ answer, a checklist, and a newsletter section all need different treatment even when built from the same underlying source.",
+        "When the original source content changes, every dependent derivative needs to be reviewed and updated — otherwise a firm ends up with one current article and five quietly outdated derivatives."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: One Good Legal Resource Can Do More"
+    },
+    {
+      "type": "paragraph",
+      "content": "Creating a genuinely useful piece of legal educational content takes real effort — research, attorney time, careful framing, and review. It's common for that investment to produce exactly one artifact: a single article, published once, that then sits largely untouched while the firm moves on to the next content need, starting from zero again."
+    },
+    {
+      "type": "paragraph",
+      "content": "Repurposing offers a more efficient path: <strong>extending the useful life of content the firm has already invested in creating</strong>, rather than treating every new format as a brand-new writing project. AI is particularly well-suited to this work — restructuring information, extracting key elements, summarizing, classifying content by theme, transforming one format into another, and producing first-draft versions quickly."
+    },
+    {
+      "type": "paragraph",
+      "content": "It's worth being direct from the outset about what this guide is not recommending: <strong>AI should accelerate repurposing. It should not replace legal judgment.</strong> Every workflow described here keeps a person — specifically, a qualified attorney for anything touching legal substance — squarely in control of what actually gets published."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-repurposing",
+      "title": "2. What Is Legal Content Repurposing?"
+    },
+    {
+      "type": "paragraph",
+      "content": "It helps to separate two things that sound similar but work very differently:"
+    },
+    {
+      "type": "definitions",
+      "id": "repurposing-definitions",
+      "title": "Reusing vs. Restructuring Knowledge",
+      "items": [
+        {
+          "term": "Reusing the Same Content",
+          "definition": "Placing identical text in multiple locations — the same paragraph copied into an email, a social post, and a webpage, unchanged."
+        },
+        {
+          "term": "Restructuring Approved Knowledge",
+          "definition": "Taking the underlying, verified information from a source and reshaping it to fit a different format, audience, and purpose — while preserving the original meaning, qualifications, and scope."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Example:</strong> one approved educational article on a practice-area topic could reasonably support FAQ questions extracted from content the article already covers, a checklist built from a process the article describes, a newsletter section highlighting one key point, a social post focused on a single useful idea, glossary entries defining terms the article uses, a short video script covering the same general explanation in spoken form, and a presentation outline organizing the article's structure for a talk or webinar."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Purposeful Repurposing",
+      "content": "Each derivative should have a clear, specific purpose. Repurposing for its own sake, without a real reason a particular format serves a particular audience, tends to produce content that technically exists but doesn't actually help anyone."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-repurpose",
+      "title": "3. Why Law Firms Should Repurpose Existing Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "The practical benefits are genuine and worth being specific about: better use of the attorney time and expertise that went into creating the original source, less repetitive content creation from scratch, more consistent messaging across the firm's various content and channels, easier content planning (since the \"hard part\" — the original research and legal review — is already done), broader educational coverage without proportionally more original writing effort, easier long-term maintenance when derivatives are properly tracked, stronger internal organization of the firm's knowledge, and a more efficient overall publishing workflow."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "What This Guide Will Not Promise",
+      "content": "Repurposing content does not guarantee search rankings, AI citations, guaranteed visibility, more leads, more clients, or more revenue. These are reasonable things to hope improve as a byproduct of a stronger, more consistent content presence — but no honest guide can turn any of them into a guaranteed outcome."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "golden-rule",
+      "title": "4. The Golden Rule: Start With Approved Content"
+    },
+    {
+      "type": "workflow",
+      "title": "The Golden Rule of Legal Content Repurposing",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Approved Source"
+        },
+        {
+          "type": "process",
+          "label": "Repurpose"
+        },
+        {
+          "type": "output",
+          "label": "Review & Publish"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Starting from an already-approved, attorney-reviewed source — rather than asking AI to generate legal content directly for each new format — meaningfully reduces several distinct risks: factual drift, inconsistent messaging, unsupported claims, accidental overstatement, and AI hallucination."
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "Human Review Remains Constant Throughout",
+      "content": "Starting from an approved source significantly reduces risk — it does not remove the requirement that every derivative still be checked before publication. The workflow in this guide treats human review as constant throughout, regardless of how strong the starting source is."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "workflow-overview",
+      "title": "5. The Legal Content Repurposing Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "10-Stage End-to-End Repurposing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Source Selection"
+        },
+        {
+          "type": "process",
+          "label": "Audit & Inventory"
+        },
+        {
+          "type": "process",
+          "label": "Repurposing Matrix"
+        },
+        {
+          "type": "process",
+          "label": "AI Transformation"
+        },
+        {
+          "type": "decision",
+          "label": "Human Review & Verification"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step1-select-source",
+      "title": "Step 1 — Select the Source Content"
+    },
+    {
+      "type": "checklist",
+      "id": "source-selection-checklist",
+      "title": "Source Content Selection Checklist",
+      "items": [
+        {
+          "label": "The content has been reviewed and approved by a qualified attorney",
+          "checked": true
+        },
+        {
+          "label": "The content is factually accurate as of the review date",
+          "checked": true
+        },
+        {
+          "label": "The content is current, or has been recently reviewed for currency",
+          "checked": true
+        },
+        {
+          "label": "The content is genuinely useful to a real prospective client",
+          "checked": true
+        },
+        {
+          "label": "The content is substantial enough to support meaningful derivatives",
+          "checked": true
+        },
+        {
+          "label": "The content addresses a real, recurring audience need",
+          "checked": true
+        },
+        {
+          "label": "The content is appropriate for general public education",
+          "checked": true
+        },
+        {
+          "label": "The content does not depend on any confidential client information",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Source Selection Roles & Risks",
+      "content": "AI Role: none at this stage — source selection is a human decision.\nHuman Role: apply the checklist and choose the source.\nOutput: a confirmed source ready for audit.\nRisk: choosing a weak, outdated, or borderline source undermines every derivative built from it."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step2-audit-source",
+      "title": "Step 2 — Audit the Source Before Repurposing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Before AI touches the content at all, check the source for: publication date, last review date, legal accuracy as far as currently verifiable, jurisdiction (does it apply generally, or is it specific to one jurisdiction that needs to be noted?), citations, statistics, terminology, any information that might be outdated, the overall scope of what the piece actually covers, and appropriate disclaimers where relevant."
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "AI Flags Issues — Humans Determine Accuracy",
+      "content": "AI may assist in identifying potential review points — flagging a date reference that looks old, a statistic without a clear source, or language that seems out of date. AI must not independently declare that the source is legally accurate."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step3-content-inventory",
+      "title": "Step 3 — Build a Content Inventory"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once a source passes the audit, AI can help extract its major knowledge elements into an organized inventory: main concepts covered, key questions the content already answers, definitions it provides, process steps it describes, common mistakes it addresses, examples it uses, warnings or cautions it includes, important qualifications (the \"this may vary\" statements), statistics cited, source references used, and points the content specifically clarifies."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Purpose of Content Inventory",
+      "content": "The purpose of this inventory is to understand, concretely, what can safely be repurposed — rather than working from a vague sense of \"the article is about X\" and improvising from there."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step4-repurposing-matrix",
+      "title": "Step 4 — Build a Repurposing Matrix"
+    },
+    {
+      "type": "paragraph",
+      "content": "With the inventory in hand, map specific source elements to specific potential formats: FAQ, checklist, glossary, newsletter section, social educational post, video script, presentation outline, and supporting website section."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Not Every Element Fits Every Format",
+      "content": "A dense legal qualification might work well preserved carefully in a FAQ answer but poorly compressed into a one-line social post where the nuance gets lost. Recognize which elements translate well to which formats safely."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step5-ai-transformation",
+      "title": "Step 5 — Use AI to Transform the Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "This is where AI does the bulk of its actual drafting work — transforming structure while preserving meaning:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Article → FAQ",
+        "Article → Checklist",
+        "Article → Newsletter",
+        "Article → Short Educational Post",
+        "Article → Video Script",
+        "Article → Glossary",
+        "Article → Presentation Outline"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "Transformation Constraints for AI",
+      "content": "1. Use only the supplied source material.\n2. Do not invent facts or citations.\n3. Preserve important qualifications from the source.\n4. Preserve jurisdictional limitations noted in the source.\n5. Flag any statement that seems uncertain.\n6. Do not provide individualized legal advice."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step6-human-review",
+      "title": "Step 6 — Human Review"
+    },
+    {
+      "type": "checklist",
+      "id": "practical-review-checklist",
+      "title": "Practical Derivative Review Checklist",
+      "items": [
+        {
+          "label": "Legal substance matches the approved source",
+          "checked": true
+        },
+        {
+          "label": "No new legal claims were introduced during transformation",
+          "checked": true
+        },
+        {
+          "label": "Important qualifications from the source are preserved",
+          "checked": true
+        },
+        {
+          "label": "Jurisdictional limitations are preserved or appropriately noted",
+          "checked": true
+        },
+        {
+          "label": "Tone is appropriate for the destination format and audience",
+          "checked": true
+        },
+        {
+          "label": "Nothing important was omitted that changes the meaning",
+          "checked": true
+        },
+        {
+          "label": "No overstatement or false certainty has crept in",
+          "checked": true
+        },
+        {
+          "label": "The content is unambiguous",
+          "checked": true
+        },
+        {
+          "label": "No outdated information has been introduced or preserved uncorrected",
+          "checked": true
+        },
+        {
+          "label": "No confidential or sensitive information appears",
+          "checked": true
+        },
+        {
+          "label": "The piece is appropriate under the firm's professional responsibility obligations",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step7-legal-verification",
+      "title": "Step 7 — Legal and Factual Verification"
+    },
+    {
+      "type": "paragraph",
+      "content": "It's worth distinguishing <strong>editorial review</strong> (checking tone, clarity, formatting) from <strong>legal/factual verification</strong> (confirming the substance is actually accurate and appropriately framed)."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Triggers Requiring Legal Verification",
+      "content": "- A new legal claim appears that wasn't clearly in the source\n- Any suggestion the underlying law may have changed\n- A statistic appears\n- A citation appears\n- Jurisdiction-specific information appears\n- A deadline or timeframe is mentioned\n- Procedural requirements are described"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step8-publish-derivatives",
+      "title": "Step 8 — Publish the Derivative Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Each format should be adapted specifically to its destination:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "FAQ — direct and concise.",
+        "Newsletter — contextual and engaging with a brief lead-in.",
+        "Checklist — action-oriented, structured as clear steps.",
+        "Video script — conversational, written as spoken language.",
+        "Glossary — definition-focused, precise and brief.",
+        "Social content — short and immediately useful, stripped to one clear idea."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Do Not Copy-Paste Identical Text Everywhere",
+      "content": "Repurposing means restructuring for purpose — the whole value of the exercise is lost if every derivative just repeats the source's exact wording in a different wrapper."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step9-maintenance",
+      "title": "Step 9 — Maintain the Repurposed Content"
+    },
+    {
+      "type": "workflow",
+      "title": "Source-of-Truth Maintenance Model",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Source Changes"
+        },
+        {
+          "type": "process",
+          "label": "Identify Dependent Content"
+        },
+        {
+          "type": "process",
+          "label": "Review Affected Derivatives"
+        },
+        {
+          "type": "output",
+          "label": "Update & Republish"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "practical-example",
+      "title": "15. Practical Repurposing Example"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Hypothetical Example Note",
+      "content": "The following firm, article, and details are entirely fictional, used only to illustrate the repurposing workflow. No outcome described here is guaranteed or typical for any real firm."
+    },
+    {
+      "type": "paragraph",
+      "content": "A small law firm publishes an attorney-reviewed educational guide on a general practice-area topic. From that single approved source, the firm creates: three FAQ candidates, one checklist, one newsletter section, five short educational posts, one glossary entry, and one short video script."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "repurposing-matrix-table",
+      "title": "16. Example Repurposing Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "repurposing-matrix-table-comp",
+      "columns": [
+        "Source Element",
+        "Format",
+        "Audience",
+        "Purpose",
+        "AI Task",
+        "Human Review",
+        "Destination"
+      ],
+      "rows": [
+        [
+          "General process explanation",
+          "FAQ",
+          "Prospective clients",
+          "Answer specific recurring question",
+          "Extract and reframe as Q&A",
+          "Attorney review of accuracy",
+          "Practice-area FAQ section"
+        ],
+        [
+          "Step-by-step process description",
+          "Checklist",
+          "Clients preparing for next step",
+          "Provide clear guidance",
+          "Restructure into checklist",
+          "Attorney review of completeness",
+          "Standalone checklist resource"
+        ],
+        [
+          "Central takeaway of the guide",
+          "Newsletter",
+          "Subscriber list",
+          "Reinforce key educational point",
+          "Summarize conversationally",
+          "Editorial & attorney review",
+          "Email newsletter"
+        ],
+        [
+          "One specific useful idea",
+          "Social post",
+          "General social audience",
+          "Brief awareness and engagement",
+          "Condense to one clear idea",
+          "Attorney review for oversimplification",
+          "Social media channels"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-inventory",
+      "title": "17. AI Prompt for Content Inventory"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-inventory-block",
+      "title": "AI Prompt Template: Law Firm Content Inventory Generator",
+      "prompt": "You are helping a law firm build a content inventory from an attorney-approved article, in preparation for responsible repurposing.\n\nSOURCE ARTICLE: [insert full approved article text]\n\nPlease extract and organize:\n- Major concepts covered\n- Questions the article already answers, explicitly or implicitly\n- Definitions provided\n- Process steps described\n- Common mistakes or misconceptions addressed\n- Examples used\n- Warnings or cautions included\n- Important qualifications (\"this may vary,\" \"depending on jurisdiction,\" etc.)\n- Any statistics cited\n- Any source references used\n- Points the article specifically clarifies because they're commonly misunderstood\n\nImportant instructions:\n- Use only the information actually present in the supplied source.\n- Do not invent facts, statistics, or claims not present in the source.\n- Do not add legal conclusions beyond what the source states.\n- Flag anything in the source that seems uncertain, incomplete, or potentially outdated.\n- Preserve every qualification exactly as it appears in the source; do not simplify away nuance.\n- Identify which elements may require additional verification before being used in a derivative."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-repurposing",
+      "title": "18. AI Prompt for Repurposing"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-repurposing-block",
+      "title": "AI Prompt Template: Universal Law Firm Content Repurposing Generator",
+      "prompt": "ROLE\nYou are helping a law firm transform an approved source article into a new content format.\n\nSOURCE\n[insert the full approved source article, or the relevant excerpt]\n\nTASK\nTransform the source into the target format specified below, preserving its meaning, qualifications, and scope.\n\nTARGET FORMAT\n[FAQ / Checklist / Newsletter / Short educational post / Video script / Glossary / Presentation outline]\n\nAUDIENCE\n[insert intended audience]\n\nCONSTRAINTS\n- Use only the supplied source material.\n- Do not introduce new legal claims not present in the source.\n- Do not invent facts, statistics, or citations.\n- Preserve important qualifications from the source exactly.\n- Preserve any jurisdictional limitations noted in the source.\n- Do not provide individualized legal advice.\n\nFACTUAL SAFETY\nFlag any statement in your draft that goes beyond what the source explicitly supports, so it can be verified before publication.\n\nLEGAL SAFETY\nDo not resolve legal uncertainty on your own — if the source is unclear or qualified, preserve that same level of uncertainty in the derivative rather than resolving it into false confidence.\n\nOUTPUT FORMAT\nProduce the derivative in the target format specified above, ready for human review.\n\nREVIEW FLAGS\nAt the end of your output, list any statement that:\n- Introduces a claim not clearly present in the source\n- May require attorney verification\n- Involves a jurisdiction-specific detail\n- Involves a statistic, citation, deadline, or procedural requirement"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-faqs",
+      "title": "19. AI Prompt for Repurposing Into FAQs"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-faqs-block",
+      "title": "AI Prompt Template: Article to FAQ Generator",
+      "prompt": "You are helping a law firm transform an approved source article into FAQ candidates.\n\nSOURCE ARTICLE: [insert approved source]\n\nPlease:\n- Identify questions the source already answers, explicitly or implicitly\n- Do not invent questions and present them as though they were real client questions\n- Group similar or overlapping questions together\n- Identify possible duplicates within the set you produce\n- Preserve every qualification from the source in the corresponding answer\n- Flag any question that would require individualized legal advice rather than a general, educational answer\n- Avoid providing individualized legal advice in any answer\n\nPlease produce each FAQ candidate as a question-and-answer pair, using only information from the supplied source."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-checklist",
+      "title": "20. AI Prompt for Repurposing Into a Checklist"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-checklist-block",
+      "title": "AI Prompt Template: Article to Checklist Generator",
+      "prompt": "You are helping a law firm transform an approved source article into a checklist.\n\nSOURCE ARTICLE: [insert approved source]\n\nPlease:\n- Identify the concrete steps, actions, or considerations described in the source\n- Preserve every important step described in the source\n- Preserve every warning or caution described in the source\n- Do not invent requirements, steps, or warnings not present in the source\n- Clearly distinguish general educational guidance from anything that could be read as legal advice\n- Flag any checklist item that may need attorney verification before publishing\n\nPlease produce the checklist as a clear, ordered list of actionable items."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-short-content",
+      "title": "21. AI Prompt for Repurposing Into Short Educational Content"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-short-content-block",
+      "title": "AI Prompt Template: Short Educational Content Generator",
+      "prompt": "You are helping a law firm transform an approved source article into short-form educational content (e.g., a social post or brief summary).\n\nSOURCE ARTICLE: [insert approved source]\nTARGET LENGTH: [insert desired length]\nPLATFORM/CHANNEL: [insert]\n\nPlease:\n- Use only the approved source material\n- Preserve the meaning of the source despite the shorter length\n- Avoid sensationalism or exaggerated language\n- Avoid any language suggesting a legal guarantee or certain outcome\n- Avoid case-specific advice\n- Avoid unsupported claims\n- Keep the content clearly educational, not promotional\n- Flag any new assertion in your draft that isn't clearly supported by the source\n\nPlease produce the short-form content ready for human review."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quality-checklist",
+      "title": "22. Content Repurposing Quality Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "repurposing-quality-checklist",
+      "title": "Law Firm Content Repurposing Master Quality Checklist",
+      "items": [
+        {
+          "label": "Source is approved by a qualified attorney",
+          "checked": true
+        },
+        {
+          "label": "Source is current",
+          "checked": true
+        },
+        {
+          "label": "Source has a known, documented reviewer",
+          "checked": true
+        },
+        {
+          "label": "Jurisdiction covered by the source is understood",
+          "checked": true
+        },
+        {
+          "label": "Citations in the source are verified",
+          "checked": true
+        },
+        {
+          "label": "Original meaning is preserved in every derivative",
+          "checked": true
+        },
+        {
+          "label": "Important qualifications are preserved",
+          "checked": true
+        },
+        {
+          "label": "No major concepts were dropped without reason",
+          "checked": true
+        },
+        {
+          "label": "No unsupported claims were added during transformation",
+          "checked": true
+        },
+        {
+          "label": "No citations were invented",
+          "checked": true
+        },
+        {
+          "label": "No individualized legal advice appears in any derivative",
+          "checked": true
+        },
+        {
+          "label": "No confidential information appears anywhere",
+          "checked": true
+        },
+        {
+          "label": "No misleading certainty has been introduced",
+          "checked": true
+        },
+        {
+          "label": "Jurisdictional limitations are preserved",
+          "checked": true
+        },
+        {
+          "label": "Professional review has been completed where needed",
+          "checked": true
+        },
+        {
+          "label": "Format is correct for the destination",
+          "checked": true
+        },
+        {
+          "label": "Audience is appropriate for the format chosen",
+          "checked": true
+        },
+        {
+          "label": "Purpose of the derivative is clear",
+          "checked": true
+        },
+        {
+          "label": "Content is genuinely readable",
+          "checked": true
+        },
+        {
+          "label": "Content is genuinely useful, not filler",
+          "checked": true
+        },
+        {
+          "label": "No unnecessary duplication exists across derivatives",
+          "checked": true
+        },
+        {
+          "label": "Relationship to the source is documented",
+          "checked": true
+        },
+        {
+          "label": "Last-reviewed date is recorded",
+          "checked": true
+        },
+        {
+          "label": "Derivative owner/reviewer is recorded",
+          "checked": true
+        },
+        {
+          "label": "An update process is defined for when the source changes",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "23. Common Legal Content Repurposing Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "14 Common Mistakes in Legal Content Repurposing",
+      "content": "1. Repurposing outdated legal content\n2. Treating AI output as legally verified\n3. Removing important qualifications\n4. Creating new claims during repurposing\n5. Inventing citations\n6. Copying the same content into every channel\n7. Publishing without human review\n8. Feeding confidential information into public AI systems\n9. Losing track of derivative content\n10. Failing to update derivative content when the source changes\n11. Creating large volumes of low-value content\n12. Optimizing for quantity instead of usefulness\n13. Treating social content as a substitute for authoritative website content\n14. Allowing AI to introduce unsupported legal certainty"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "simple-system",
+      "title": "24. Build a Simple Content Repurposing System"
+    },
+    {
+      "type": "paragraph",
+      "content": "A small law firm can manage this entire system without specialized software — a simple spreadsheet with tracking fields is enough:"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "tracking-system-table",
+      "columns": [
+        "Content ID",
+        "Source Title",
+        "Source URL",
+        "Derivative Format",
+        "Derivative Title",
+        "Status",
+        "Reviewer",
+        "Source Dependency"
+      ],
+      "rows": [
+        [
+          "DER-001",
+          "Guide to Personal Injury",
+          "/injury-guide",
+          "FAQ",
+          "\"What to bring to consultation?\"",
+          "Published",
+          "Attorney A",
+          "PI-GUIDE-01"
+        ],
+        [
+          "DER-002",
+          "Guide to Personal Injury",
+          "/injury-guide",
+          "Checklist",
+          "\"Accident Documentation Checklist\"",
+          "Drafted",
+          "Attorney B",
+          "PI-GUIDE-01"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "25. 30-Day Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Implementation Roadmap for Law Firms",
+      "steps": [
+        {
+          "title": "Week 1 — Select One Approved Source",
+          "content": "Choose a single, strong, attorney-approved piece of existing content using the source-selection checklist."
+        },
+        {
+          "title": "Week 2 — Build Content Inventory & Matrix",
+          "content": "Extract the source's key elements and map them to appropriate derivative formats and audiences."
+        },
+        {
+          "title": "Week 3 — Create 2–4 Derivative Formats",
+          "content": "Use AI to draft chosen derivatives, then complete human review and legal verification for each one."
+        },
+        {
+          "title": "Week 4 — Review, Publish, & Establish Maintenance",
+          "content": "Finalize and publish reviewed derivatives, log everything in tracking system, and set review schedule."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-workflow",
+      "title": "26. Measuring the Repurposing Workflow"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Time required per derivative",
+        "Review time per derivative",
+        "Rework needed after initial drafts",
+        "Number of derivatives that actually completed the full review and verification process",
+        "Content reuse rate (how much content comes from repurposed sources versus starting from scratch)",
+        "Percentage of derivatives successfully updated after their source changed",
+        "Duplicate content identified and resolved",
+        "Overall workflow completion rate",
+        "The size of the content maintenance backlog at any given time"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "27. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Extract key elements from an approved source",
+        "Organize content into a structured inventory",
+        "Classify content by theme or format opportunity",
+        "Transform structure while working to preserve meaning",
+        "Summarize longer content into shorter formats",
+        "Restructure content for a different audience",
+        "Generate format-specific first drafts",
+        "Identify potential gaps in coverage",
+        "Identify potential inconsistencies across derivatives",
+        "Support ongoing maintenance identification"
+      ],
+      "cons": [
+        "Cannot guarantee legal accuracy",
+        "Cannot guarantee legal compliance",
+        "Cannot guarantee professional responsibility compliance",
+        "Cannot guarantee that the underlying law remains current",
+        "Cannot guarantee correct jurisdictional interpretation",
+        "Cannot guarantee search rankings",
+        "Cannot guarantee AI citations",
+        "Cannot guarantee visibility in any specific platform",
+        "Cannot guarantee leads, clients, or revenue"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "28. Final Takeaway"
+    },
+    {
+      "type": "paragraph",
+      "content": "A strong legal content system does not require creating everything from scratch. It starts with one approved source of knowledge, and then follows a disciplined process:"
+    },
+    {
+      "type": "workflow",
+      "title": "Disciplined Content Repurposing Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Understand & Structure"
+        },
+        {
+          "type": "process",
+          "label": "Repurpose & Review"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "29. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Legal Content Repurposing Questions & Answers",
+      "items": [
+        {
+          "question": "What is legal content repurposing?",
+          "answer": "Legal content repurposing is the practice of transforming a single, attorney-approved piece of educational content into multiple formats — such as FAQs, checklists, or newsletter sections — while preserving its original meaning, qualifications, and scope, rather than creating entirely new content from scratch for each format."
+        },
+        {
+          "question": "Can AI repurpose law firm content?",
+          "answer": "Yes. AI is genuinely useful for extracting key elements from an approved source, organizing them, and drafting format-specific derivatives. It should always work from an approved source rather than generating new legal content independently, and every derivative still requires human review before publication."
+        },
+        {
+          "question": "Should attorneys review AI-repurposed content?",
+          "answer": "Yes, every single derivative, not just the original source. The transformation process itself can introduce subtle inaccuracies, drop important qualifications, or overstate certainty — each of these risks requires a qualified attorney's review specific to that derivative."
+        },
+        {
+          "question": "Can one legal article become multiple content formats?",
+          "answer": "Yes. A single well-researched, attorney-approved article can reasonably support several derivatives — FAQs, a checklist, a newsletter section, short social posts, a glossary entry, or a video script — as long as each one is properly reviewed and adapted to its specific format and audience."
+        },
+        {
+          "question": "How can law firms repurpose content safely?",
+          "answer": "Start only from approved, current, accurate source content; build a clear inventory of what the source actually says; use AI transformation prompts that explicitly forbid inventing facts or claims; and require human review and legal/factual verification for every derivative before it's published."
+        },
+        {
+          "question": "Can confidential client information be used for content repurposing?",
+          "answer": "No. Repurposing source material should be limited to approved, non-confidential, public-appropriate content. Confidential client information, privileged communications, and case files have no place in this workflow and should never be entered into a public AI system for this purpose."
+        },
+        {
+          "question": "How do you prevent AI from changing the meaning of legal content?",
+          "answer": "Provide AI with explicit constraints in every prompt — use only the supplied source, don't invent facts or claims, preserve qualifications exactly, and flag any statement that goes beyond what the source supports — and then verify the output against the original source during human review, every time."
+        },
+        {
+          "question": "Can AI create FAQs from an attorney-approved article?",
+          "answer": "Yes. AI can identify questions the article already answers and reframe them as FAQ entries, as long as it's instructed not to invent questions presented as real client questions and every answer is reviewed for accuracy and appropriate framing before publishing."
+        },
+        {
+          "question": "Can AI turn legal articles into checklists?",
+          "answer": "Yes. AI can extract concrete steps and warnings from an approved article and restructure them into an actionable checklist format, provided no new requirements are invented and the result is reviewed against the source before publication."
+        },
+        {
+          "question": "How should law firms maintain repurposed content?",
+          "answer": "Track every derivative's relationship to its source content using a simple system (a spreadsheet is sufficient), and whenever the source changes, identify and review every dependent derivative — updating and republishing as needed rather than leaving outdated versions live."
+        },
+        {
+          "question": "Can content repurposing improve local visibility?",
+          "answer": "Consistent, well-organized educational content across multiple formats can support a broader visibility strategy, similar to the effect described in Locatria's guide on local visibility for law firms. It is one contributing factor among many, not a standalone mechanism."
+        },
+        {
+          "question": "Does repurposing content guarantee AI visibility?",
+          "answer": "No. No honest guide can promise that any specific content strategy, including repurposing, guarantees inclusion in AI-generated answers or citations from any specific AI system. Clear, consistent, accurate content supports visibility as part of a broader picture, without any guaranteed outcome."
+        },
+        {
+          "question": "How many derivative pieces should a law firm create from one article?",
+          "answer": "There's no fixed number. The right count depends on how substantial the source is, how many genuinely distinct audience needs it can support, and how much review capacity the firm has — quality and accuracy should always take priority over maximizing the number of derivatives."
+        },
+        {
+          "question": "What should a law firm do if the original legal content becomes outdated?",
+          "answer": "Update the source first, complete attorney review and verification of the update, then identify every derivative that depends on that source using the firm's tracking system, and review and update each dependent derivative before leaving it published, rather than allowing outdated versions to remain live."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "30. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "31. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Visibility Checklist for Law Firms",
+      "url": "ai-visibility-checklist-law-firms.html",
+      "description": "Completes legal practice content & visibility audit."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Legal & Industry Citations",
+      "items": [
+        "American Bar Association — \"ABA issues first ethics guidance on a lawyer's use of AI tools\" — https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/ — Supports description of ABA Formal Opinion 512 (July 2024).",
+        "Florida Bar News — \"ABA issues first ethics guidance on a lawyer's use of AI tools\" — https://www.floridabar.org/the-florida-bar-news/aba-issues-first-ethics-guidance-on-a-lawyers-use-of-ai-tools/ — Supports legal ethics & confidentiality requirements.",
+        "LaFleur Marketing — \"Navigating State Bar rules on AI-generated ads (+ a 50-state overview)\" — https://lafleur.marketing/blog/navigating-state-bar-rules-on-ai-generated-ads-a-50-state-overview/ — Supports Model Rule 7.1 and 1.6 compliance.",
+        "Wikipedia — \"Mata v. Avianca, Inc.\" — https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc. — Reinforces risks of AI fabrication in legal content."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-visibility-checklist-law-firms.html"
+    ]
+  }
+}

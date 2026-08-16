@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locatria — Learn Practical AI to Grow Your Local Business | AI-First Knowledge Hub</title>
+  <meta name="description" content="Discover practical guides, tutorials, workflows and proven strategies that help local business owners use AI to improve marketing, operations and customer experience.">
+  <meta name="google-site-verification" content="PiIUvUIMXlzdGOlhlDVtjn1AOa199hyJjtlnXSwORxk">
+  
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS Files (With v4.0 Cache-Busting Query) -->
+  <link rel="stylesheet" href="css/variables.css?v=4.0">
+  <link rel="stylesheet" href="css/global.css?v=4.0">
+  <link rel="stylesheet" href="css/header.css?v=4.0">
+  <link rel="stylesheet" href="css/components.css?v=4.0">
+  <link rel="stylesheet" href="css/sidebar.css?v=4.0">
+  <link rel="stylesheet" href="css/footer.css?v=4.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.locatria.com/index.html">
+
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:title" content="Locatria — Learn Practical AI to Grow Your Local Business | AI-First Knowledge Hub">
+  <meta property="og:description" content="Discover practical guides, tutorials, workflows and proven strategies that help local business owners use AI to improve marketing, operations and customer experience.">
+  <meta property="og:url" content="https://www.locatria.com/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.locatria.com/assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Locatria — Learn Practical AI to Grow Your Local Business">
+  <meta name="twitter:description" content="Discover practical guides, tutorials, workflows and proven strategies that help local business owners use AI to improve marketing, operations and customer experience.">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.locatria.com/#website",
+        "url": "https://www.locatria.com/index.html",
+        "name": "Locatria",
+        "description": "AI-first Knowledge Hub for Local Business",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.locatria.com/#organization",
+        "name": "Locatria",
+        "url": "https://www.locatria.com/index.html",
+        "logo": "https://www.locatria.com/assets/logo.png",
+        "description": "Helping Local Businesses Grow with AI"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- WCAG Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ==========================================
+       GLOBAL HEADER (Matches Spec 2. AFTER (DESIRED))
+       ========================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Brand Identity -->
+      <a href="index.html" class="brand-link" aria-label="Locatria Home">
+        <div class="logo-icon" aria-hidden="true">L</div>
+        <div class="brand-text-wrapper">
+          <span class="brand-name">Locatria</span>
+          <span class="brand-badge">AI Knowledge Hub</span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link is-active">Home</a>
+        <a href="knowledge.html" class="nav-link">Knowledge Hub</a>
+        
+        <!-- Learn Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Learn
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?type=guides" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Guides & Blueprints</strong>
+                  <span class="dropdown-item-desc">Evergreen operational AI guides</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=tutorials" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Step-by-Step Tutorials</strong>
+                  <span class="dropdown-item-desc">Actionable zero-code tutorials</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="knowledge.html#learning-paths" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Learning Paths</strong>
+                  <span class="dropdown-item-desc">Structured step-by-step tracks</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Industries Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html#industry-solutions" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Industries
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?industry=real-estate" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Real Estate</strong>
+                  <span class="dropdown-item-desc">Lead capture & listing AI workflows</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=law-firms" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Law Firms</strong>
+                  <span class="dropdown-item-desc">Client intake & document triage</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=dental-clinics" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Dental Clinics</strong>
+                  <span class="dropdown-item-desc">Patient scheduling & FAQ assistants</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="category.html?type=resources" class="nav-link">Resources</a>
+        <a href="#why-locatria" class="nav-link">About</a>
+      </nav>
+
+      <!-- Header Actions (Search Icon & CTA Button) -->
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn js-search-trigger" aria-label="Search">
+          <svg class="search-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="search-trigger-text">
+            <span class="placeholder-desktop">Search articles, guides, workflows...</span>
+            <span class="placeholder-mobile">Search articles...</span>
+          </span>
+          <span class="search-shortcut-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+        </button>
+
+        <a href="knowledge.html" class="btn btn-primary" style="height: 40px; padding: 0 16px;">Start Learning</a>
+
+        <button type="button" class="mobile-menu-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu & Overlay -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-link">
+        <div class="logo-icon">L</div>
+        <span class="brand-name">Locatria</span>
+      </div>
+      <button type="button" class="mobile-drawer-close" aria-label="Close Mobile Menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link is-active">Home</a></li>
+      <li><a href="knowledge.html" class="mobile-nav-link">Knowledge Hub</a></li>
+      <li><a href="learn.html" class="mobile-nav-link">Learning Paths</a></li>
+      <li><a href="category.html?type=guides" class="mobile-nav-link">Guides & Blueprints</a></li>
+      <li><a href="category.html?type=tutorials" class="mobile-nav-link">Tutorials</a></li>
+      <li><a href="category.html?type=resources" class="mobile-nav-link">Resources</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="knowledge.html" class="btn btn-primary btn-full" style="height: 40px;">
+        <span>Start Learning</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Global Search Modal (Strictly Hidden by Default via display: none !important) -->
+  <div class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search Knowledge Base">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg class="search-icon-modal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" class="search-modal-input" placeholder="Search guides, workflows, prompt packs..." aria-label="Search Input">
+        <button type="button" class="search-modal-close-btn">ESC</button>
+      </div>
+
+      <div class="search-modal-filters">
+        <button type="button" class="search-filter-tab is-active" data-category="All">All Results</button>
+        <button type="button" class="search-filter-tab" data-category="Guides">Guides</button>
+        <button type="button" class="search-filter-tab" data-category="Tutorials">Tutorials</button>
+        <button type="button" class="search-filter-tab" data-category="Resources">Resources</button>
+        <button type="button" class="search-filter-tab" data-category="Real Estate">Real Estate</button>
+        <button type="button" class="search-filter-tab" data-category="Law Firms">Law Firms</button>
+        <button type="button" class="search-filter-tab" data-category="Dental Clinics">Dental Clinics</button>
+      </div>
+
+      <div class="search-results-list" role="listbox">
+        <!-- Rendered via JS -->
+      </div>
+
+      <div class="search-modal-footer">
+        <span>Use <strong>↑ ↓</strong> to navigate • <strong>Enter</strong> to select • <strong>ESC</strong> to close</span>
+        <span>Locatria AI Hub</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HOMEPAGE CONTENT WRAPPER -->
+  <div id="main-content" class="page-wrapper">
+
+    <!-- 1. REDESIGNED HERO SECTION -->
+    <section class="hero-knowledge-section" role="region" aria-label="Introduction & Overview">
+      <div class="container">
+        
+        <div class="hero-editorial-grid">
+          
+          <!-- Left Column -->
+          <div>
+            <div class="hero-trust-badge">
+              <svg class="trust-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+              <span>AI-First Knowledge Hub for Local Businesses</span>
+            </div>
+
+            <h1 class="hero-headline">
+              Learn Practical AI to Grow Your Local Business
+            </h1>
+
+            <p class="hero-description">
+              Discover practical guides, tutorials, workflows and proven strategies that help local business owners use AI to improve marketing, operations and customer experience.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="knowledge.html" class="btn btn-primary btn-lg">
+                <span>Start Learning</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="category.html?type=guides" class="btn btn-secondary btn-lg">Browse Guides</a>
+            </div>
+
+            <div class="hero-trust-highlights">
+              
+              <div class="hero-trust-point">
+                <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span>Evergreen Guides</span>
+              </div>
+
+              <div class="hero-trust-point">
+                <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+                <span>Practical Workflows</span>
+              </div>
+
+              <div class="hero-trust-point">
+                <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2"/>
+                  <path d="M9 9h6M9 12h6M9 15h4"/>
+                </svg>
+                <span>AI-first Learning</span>
+              </div>
+
+              <div class="hero-trust-point">
+                <svg class="hero-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 12 20 22 4 22 4 12"/>
+                  <rect x="2" y="7" width="20" height="5"/>
+                  <line x1="12" y1="22" x2="12" y2="7"/>
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+                </svg>
+                <span>Free Knowledge</span>
+              </div>
+
+            </div>
+
+            <div class="hero-chips-container">
+              <div class="hero-chips-group">
+                <a href="what-is-ai-visibility-practical-guide-local-businesses.html" class="topic-chip">AI Visibility</a>
+                <a href="how-ai-is-changing-local-seo-small-businesses.html" class="topic-chip">Local SEO</a>
+                <a href="category.html?type=workflows" class="topic-chip">AI Workflows</a>
+                <a href="ai-content-research-workflow-local-businesses.html" class="topic-chip">Content Research</a>
+                <a href="ai-content-repurposing-workflow-local-businesses.html" class="topic-chip">Content Repurposing</a>
+                <a href="how-to-build-simple-ai-marketing-system-solopreneur.html" class="topic-chip">Solopreneur AI</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column -->
+          <div class="hero-illustration-box" aria-hidden="true">
+            <svg class="hero-svg-diagram" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M200 65 L100 215 M200 65 L300 215 M100 215 L300 215" stroke="#CBD5E1" stroke-width="1.2" stroke-dasharray="4 4"/>
+              <g transform="translate(200, 65)">
+                <circle r="30" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.5"/>
+                <circle r="20" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1"/>
+                <path d="M-7 -2 L0 -9 L7 -2 V7 H-7 Z M-2 7 V2 H2 V7" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <text y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Local Business</text>
+              </g>
+              <g transform="translate(100, 215)">
+                <circle r="30" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.5"/>
+                <circle r="20" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1"/>
+                <rect x="-7" y="-5" width="14" height="11" rx="2" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="-3" cy="0" r="1" fill="#0284C7"/>
+                <circle cx="3" cy="0" r="1" fill="#0284C7"/>
+                <line x1="0" y1="-9" x2="0" y2="-5" stroke="#0284C7" stroke-width="1.5"/>
+                <circle cx="0" cy="-10" r="1" fill="#0284C7"/>
+                <text y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#0F172A">AI Workflows</text>
+              </g>
+              <g transform="translate(300, 215)">
+                <circle r="30" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.5"/>
+                <circle r="20" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1"/>
+                <path d="M-6 6 V1 M-1 6 V-4 M4 6 V-8" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round"/>
+                <text y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Business Growth</text>
+              </g>
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. WHY LOCATRIA SECTION -->
+    <section id="why-locatria" class="section-block section-block-alt">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Why Locatria Exists</span>
+          <h2 class="section-title">Built for Practical Implementation, Not Marketing Hype</h2>
+          <p class="section-subtitle">
+            Most AI content is written for developers or enterprise tech companies. Locatria translates artificial intelligence into straightforward, actionable workflows for everyday local business operations.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Why AI Matters for Local Businesses</h3>
+            <p class="feature-desc">
+              Local business inquiries often arrive after business hours. Practical AI workflows help capture leads, manage FAQs, and automate repetitive tasks without adding staff payroll.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Zero-Code & Evergreen Blueprints</h3>
+            <p class="feature-desc">
+              Every guide on Locatria avoids complex coding or ephemeral software trends. We focus on practical, widely available AI tools like ChatGPT, Claude, and standard business formats.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Compliance & High Trust</h3>
+            <p class="feature-desc">
+              We address privacy, HIPAA, and legal compliance considerations upfront so local business owners can implement AI tools safely.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. FEATURED LEARNING PATHS SECTION -->
+    <section id="learning-paths" class="section-block">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Structured Learning Paths</span>
+          <h2 class="section-title">Master AI Step-by-Step</h2>
+          <p class="section-subtitle">
+            Follow curated learning paths designed to take you from foundational understanding to full operational automation.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6);">
+          
+          <div class="card-learning-path">
+            <div class="path-header">
+              <div class="path-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <span class="badge badge-blue">Path 01 • Beginner</span>
+            </div>
+            <h3 class="path-title">Getting Started with AI for Business</h3>
+            <p class="path-desc">
+              Understand core LLM concepts, privacy settings, and how to write effective prompts for daily office management.
+            </p>
+            <div class="path-curriculum-preview">
+              <div class="path-curriculum-item">✓ Mapped from 30 Production Articles</div>
+              <div class="path-curriculum-item">✓ AI Visibility & Prompt Workflows</div>
+              <div class="path-curriculum-item">✓ Evergreen Local Business Frameworks</div>
+            </div>
+            <div class="path-footer">
+              <span>3 Modules • 45 Mins</span>
+              <a href="category.html?type=guides" class="btn btn-text btn-sm">Start Path →</a>
+            </div>
+          </div>
+
+          <div class="card-learning-path">
+            <div class="path-header">
+              <div class="path-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <span class="badge badge-teal">Path 02 • Growth</span>
+            </div>
+            <h3 class="path-title">AI for Local Marketing & Voice SEO</h3>
+            <p class="path-desc">
+              Optimize Google Business Profiles, respond to reviews automatically, and capture local search traffic driven by AI engines.
+            </p>
+            <div class="path-curriculum-preview">
+              <div class="path-curriculum-item">✓ Local SEO & GEO Foundations</div>
+              <div class="path-curriculum-item">✓ AI Review Response Workflows</div>
+              <div class="path-curriculum-item">✓ Content Research & Brief Blueprints</div>
+            </div>
+            <div class="path-footer">
+              <span>4 Modules • 60 Mins</span>
+              <a href="category.html?type=tutorials" class="btn btn-text btn-sm">Start Path →</a>
+            </div>
+          </div>
+
+          <div class="card-learning-path">
+            <div class="path-header">
+              <div class="path-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4"/></svg>
+              </div>
+              <span class="badge badge-slate">Path 03 • Operations</span>
+            </div>
+            <h3 class="path-title">AI for 24/7 Client Intake & Booking</h3>
+            <p class="path-desc">
+              Build zero-code intake workflows that qualify incoming leads and schedule consultations automatically.
+            </p>
+            <div class="path-curriculum-preview">
+              <div class="path-curriculum-item">✓ Operational FAQ & Audit Workflows</div>
+              <div class="path-curriculum-item">✓ Practice-Specific AI Blueprints</div>
+              <div class="path-curriculum-item">✓ Multi-Channel Repurposing Systems</div>
+            </div>
+            <div class="path-footer">
+              <span>4 Modules • 75 Mins</span>
+              <a href="category.html?type=workflows" class="btn btn-text btn-sm">Start Path →</a>
+            </div>
+          </div>
+
+          <div class="card-learning-path">
+            <div class="path-header">
+              <div class="path-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813a2 2 0 001.275 1.275L21 12l-5.813 1.912a2 2 0 00-1.275 1.275L12 21l-1.912-5.813a2 2 0 00-1.275-1.275L3 12l5.813-1.912a2 2 0 001.275-1.275L12 3z"/></svg>
+              </div>
+              <span class="badge badge-amber">Path 04 • Solopreneur</span>
+            </div>
+            <h3 class="path-title">Solopreneur AI Productivity Stack</h3>
+            <p class="path-desc">
+              Run a lean one-person business using custom AI assistants for contract summaries, invoicing, and email management.
+            </p>
+            <div class="path-curriculum-preview">
+              <div class="path-curriculum-item">✓ Minimal AI Marketing System (#30)</div>
+              <div class="path-curriculum-item">✓ Content Brief & Prompt Workflows</div>
+              <div class="path-curriculum-item">✓ Competitor Gap Analysis Framework</div>
+            </div>
+            <div class="path-footer">
+              <span>3 Modules • 50 Mins</span>
+              <a href="category.html?type=resources" class="btn btn-text btn-sm">Start Path →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. INDUSTRY SOLUTIONS SECTION -->
+    <section id="industry-solutions" class="section-block section-block-alt">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">Industry Solutions</span>
+          <h2 class="section-title">Tailored Guides for Your Specific Industry</h2>
+          <p class="section-subtitle">
+            Explore dedicated knowledge hubs customized for the unique workflow, regulatory, and client intake needs of your profession.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
+          
+          <div id="real-estate-solution" class="card card-category" style="padding: var(--space-8);">
+            <div class="card-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="card-category-title">Real Estate Agencies & Brokerages</h3>
+            <p class="card-category-desc">
+              AI visibility strategies, local content creation, repurposing workflows, and checklists for real estate professionals.
+            </p>
+            <div class="card-category-footer">
+              <span class="badge badge-blue">5 Articles</span>
+              <a href="category.html?industry=real-estate" class="btn btn-secondary btn-sm">Explore Real Estate Hub →</a>
+            </div>
+          </div>
+
+          <div id="law-firms-solution" class="card card-category" style="padding: var(--space-8);">
+            <div class="card-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 8l9-5 9 5M6 13l-3 6h6l-3-6zm12 0l-3 6h6l-3-6z"/></svg>
+            </div>
+            <h3 class="card-category-title">Law Offices & Legal Practices</h3>
+            <p class="card-category-desc">
+              AI local visibility, client FAQ organization, legal content repurposing, and practice checklists.
+            </p>
+            <div class="card-category-footer">
+              <span class="badge badge-slate">5 Articles</span>
+              <a href="category.html?industry=law-firms" class="btn btn-secondary btn-sm">Explore Legal Hub →</a>
+            </div>
+          </div>
+
+          <div id="dental-clinics-solution" class="card card-category" style="padding: var(--space-8);">
+            <div class="card-category-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="card-category-title">Dental Clinics & Practice Owners</h3>
+            <p class="card-category-desc">
+              AI local visibility, patient FAQ organization, educational content repurposing, and review response workflows.
+            </p>
+            <div class="card-category-footer">
+              <span class="badge badge-teal">6 Articles</span>
+              <a href="category.html?industry=dental-clinics" class="btn btn-secondary btn-sm">Explore Dental Hub →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. FEATURED EVERGREEN GUIDES SECTION -->
+    <section id="featured-guides" class="section-block">
+      <div class="container">
+        
+        <div class="section-header" style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); max-width: 100%;">
+          <div>
+            <span class="section-eyebrow">Evergreen Knowledge</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Essential Guides for Local Businesses</h2>
+          </div>
+          <a href="category.html?type=guides" class="btn btn-secondary btn-sm">View All Guides →</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-8);">
+          
+          <article class="card card-article">
+            <div class="card-article-media">
+              <span class="badge badge-blue">AI Visibility Framework</span>
+            </div>
+            <div class="card-article-meta">
+              <span class="badge badge-slate">14 Min Read</span>
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Foundational Guide</span>
+            </div>
+            <h3 class="card-article-title">
+              <a href="what-is-ai-visibility-practical-guide-local-businesses.html">What Is AI Visibility? A Practical Guide for Local Businesses</a>
+            </h3>
+            <p class="card-article-excerpt">
+              A clear, no-hype explanation of what AI visibility actually means for a local business, how it differs from traditional SEO, GEO, and AEO.
+            </p>
+            <div class="card-article-author">
+              <div class="author-avatar-sm">LET</div>
+              <div class="author-info-sm">
+                <div class="author-name-sm">Locatria Editorial Team</div>
+                <div>Updated August 2026</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-article">
+            <div class="card-article-media">
+              <span class="badge badge-slate">Law Practice</span>
+            </div>
+            <div class="card-article-meta">
+              <span class="badge badge-slate">10 Min Read</span>
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Legal AI Guide</span>
+            </div>
+            <h3 class="card-article-title">
+              <a href="how-law-firms-can-use-ai-improve-local-visibility.html">How Law Firms Can Use AI to Improve Local Visibility</a>
+            </h3>
+            <p class="card-article-excerpt">
+              How law firms can use AI to build local search visibility, organize client content, and maintain professional compliance.
+            </p>
+            <div class="card-article-author">
+              <div class="author-avatar-sm">LET</div>
+              <div class="author-info-sm">
+                <div class="author-name-sm">Locatria Editorial Team</div>
+                <div>Updated August 2026</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-article">
+            <div class="card-article-media">
+              <span class="badge badge-teal">Dental Clinics</span>
+            </div>
+            <div class="card-article-meta">
+              <span class="badge badge-slate">12 Min Read</span>
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Dental SEO Guide</span>
+            </div>
+            <h3 class="card-article-title">
+              <a href="how-dental-clinics-use-ai-local-visibility.html">How Dental Clinics Can Use AI to Improve Local Visibility</a>
+            </h3>
+            <p class="card-article-excerpt">
+              A practical, evidence-based guide showing dental clinic owners where AI genuinely helps with local visibility — content, FAQs, review responses.
+            </p>
+            <div class="card-article-author">
+              <div class="author-avatar-sm">LET</div>
+              <div class="author-info-sm">
+                <div class="author-name-sm">Locatria Editorial Team</div>
+                <div>Updated August 2026</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. NEWSLETTER SECTION -->
+    <section id="newsletter" class="section-block">
+      <div class="container">
+        
+        <div class="card card-cta" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-primary-50) 100%);">
+          <span class="badge badge-blue" style="margin: 0 auto var(--space-3) auto;">Weekly Knowledge Briefing</span>
+          <h2 class="card-cta-title">Stay Ahead with Practical AI Workflows</h2>
+          <p class="card-cta-desc">
+            Join local business owners across the US. Every Tuesday, we send one practical, zero-code AI workflow directly to your inbox.
+          </p>
+          <form class="js-newsletter-form" style="max-width: 440px; margin: 0 auto; width: 100%;">
+            <div class="newsletter-input-group" style="margin-bottom: var(--space-2);">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <p style="font-size: 0.6875rem; color: var(--color-text-muted); margin: 0;">We respect your inbox. Unsubscribe easily at any time.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ==========================================
+       GLOBAL FOOTER
+       ========================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Locatria Home Footer">
+            <div class="footer-logo-icon">L</div>
+            <span class="footer-brand-name">Locatria</span>
+          </a>
+          <p class="footer-brand-desc">
+            Locatria is an educational knowledge platform empowering local businesses, small business owners, and solopreneurs to grow using practical, trustworthy AI tools.
+          </p>
+          <div style="font-size: var(--text-xs); color: #cbd5e1;">
+            Target Market: <strong>United States</strong>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="knowledge.html" class="footer-link">Knowledge Hub</a></li>
+            <li><a href="category.html?type=guides" class="footer-link">Guides & Blueprints</a></li>
+            <li><a href="category.html?type=tutorials" class="footer-link">Step-by-Step Tutorials</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">Resource Library</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?industry=real-estate" class="footer-link">Real Estate AI</a></li>
+            <li><a href="category.html?industry=law-firms" class="footer-link">Law Firm Automation</a></li>
+            <li><a href="category.html?industry=dental-clinics" class="footer-link">Dental Practice AI</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?type=prompts" class="footer-link">AI Prompt Packs</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">ROI Savings Calculators</a></li>
+            <li><a href="category.html?type=checklists" class="footer-link">Workflow Checklists</a></li>
+            <li><a href="category.html?type=glossary" class="footer-link">AI Terms Glossary</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Weekly AI Briefing</h4>
+          <p style="font-size: var(--text-xs); color: #cbd5e1; margin-bottom: var(--space-2);">
+            Get actionable AI workflows for local business owners every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" class="newsletter-input" placeholder="you@business.com" required aria-label="Email address for newsletter">
+              <button type="submit" class="btn btn-primary btn-sm">Join</button>
+            </div>
+            <span class="newsletter-privacy-text">Strictly no spam. Respecting your inbox.</span>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Locatria. All rights reserved. Helping Local Businesses Grow with AI.
+        </div>
+        
+        <ul class="footer-legal-links">
+          <li><a href="#privacy" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="#terms" class="footer-legal-link">Terms of Use</a></li>
+          <li><a href="#affiliate" class="footer-legal-link">Affiliate Disclosure</a></li>
+        </ul>
+
+        <div class="social-links-group" aria-label="Social Media Links">
+          <a href="#linkedin" class="social-icon-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a href="#twitter" class="social-icon-link" aria-label="Twitter X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#youtube" class="social-icon-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Modules -->
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/learning-paths-db.js"></script>
+  <script src="js/learning-paths-engine.js"></script>
+  <script src="js/content-counts-engine.js"></script>
+</body>
+</html>

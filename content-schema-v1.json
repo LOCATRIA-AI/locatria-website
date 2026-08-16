@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Locatria Content Schema v1.0",
+  "description": "Canonical data contract between Claude Content Engine and Locatria Website Renderer System",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "type",
+    "status",
+    "metadata",
+    "author",
+    "seo",
+    "geo",
+    "content",
+    "relationships"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "enum": ["1.0.0"],
+      "description": "Semantic schema version"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique, lowercase kebab-case content ID"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "guide",
+        "tutorial",
+        "workflow",
+        "sop",
+        "checklist",
+        "review",
+        "comparison",
+        "faq",
+        "glossary",
+        "case-study",
+        "resource"
+      ],
+      "description": "Approved Locatria content type"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "published",
+        "archived"
+      ],
+      "description": "Article publication status"
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "title",
+        "description",
+        "category",
+        "difficulty",
+        "readingTime",
+        "updatedAt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "industry": {
+          "type": "string",
+          "enum": ["general", "real-estate", "law", "law-firms", "dental", "dental-clinics"]
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced"]
+        },
+        "readingTime": { "type": "integer", "minimum": 1 },
+        "publishedAt": { "type": ["string", "null"], "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "required": ["title", "description", "canonical", "robots"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "canonical": { "type": "string" },
+        "robots": {
+          "type": "string",
+          "enum": ["index,follow", "noindex,nofollow"]
+        }
+      }
+    },
+    "geo": {
+      "type": "object",
+      "required": ["primaryTopic", "audience", "industries", "entities"],
+      "additionalProperties": false,
+      "properties": {
+        "primaryTopic": { "type": "string" },
+        "audience": { "type": "array", "items": { "type": "string" } },
+        "industries": { "type": "array", "items": { "type": "string" } },
+        "entities": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "content": {
+      "type": "array",
+      "description": "Array of approved content component blocks (C01 - C36)",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": { "type": "string" }
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "required": ["relatedArticles", "relatedGuides", "previous", "next"],
+      "additionalProperties": false,
+      "properties": {
+        "relatedArticles": { "type": "array", "items": { "type": "string" } },
+        "relatedGuides": { "type": "array", "items": { "type": "string" } },
+        "previous": { "type": ["string", "null"] },
+        "next": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

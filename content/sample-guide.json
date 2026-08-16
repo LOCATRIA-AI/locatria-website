@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-local-seo-real-estate-guide",
+  "type": "guide",
+  "status": "draft",
+  "metadata": {
+    "title": "AI Local SEO & Google Business Profile Blueprint for Real Estate Agents",
+    "description": "A comprehensive operational blueprint for real estate brokerages to automate review responses, local keyword optimization, and property Q&A triage.",
+    "category": "Guides & Blueprints",
+    "industry": "real-estate",
+    "difficulty": "intermediate",
+    "readingTime": 10,
+    "publishedAt": null,
+    "updatedAt": "2026-08-10T10:00:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Local Business AI Specialist"
+  },
+  "seo": {
+    "title": "AI Local SEO Blueprint for Real Estate Agents | Locatria",
+    "description": "Step-by-step guide for real estate agents to automate Google Business Profile review replies and local SEO keyword optimization.",
+    "canonical": "https://locatria.com/knowledge/ai-local-seo-real-estate-guide",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "Real Estate Local SEO Automation",
+    "audience": [
+      "Real Estate Agents",
+      "Managing Brokers",
+      "Real Estate Marketing Managers"
+    ],
+    "industries": [
+      "Real Estate",
+      "Local Services"
+    ],
+    "entities": [
+      "Google Business Profile",
+      "Local Search Engine Optimization",
+      "Generative Engine Optimization"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways for Real Estate Teams",
+      "items": [
+        "Automated review responses improve Google Local Pack ranking signals when keywords are included naturally.",
+        "Generative Engine Optimization (GEO) ensures AI search tools like Perplexity cite your local listings.",
+        "Human agents must review property pricing promises before client-facing responses are published."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "local-seo-baseline",
+      "title": "1. Establishing Your Local Search Baseline"
+    },
+    {
+      "type": "paragraph",
+      "content": "Homebuyers search for hyper-local terms such as 'top buyer agent in West Austin' or 'commercial property broker near me'. Structuring your Google Business Profile with AI ensures immediate local visibility."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Local Ranking Metric",
+      "content": "Businesses that respond to 100% of reviews within 24 hours receive 20% higher conversion from map pack views."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "id": "geo-definition",
+      "title": "Understanding Generative Engine Optimization"
+    },
+    {
+      "type": "definition",
+      "term": "Generative Engine Optimization (GEO)",
+      "definition": "The practice of structuring website content and business profile data so AI search engines cite your brand directly.",
+      "example": "Perplexity recommending your brokerage when a user asks for Austin luxury realtors."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "implementation-steps",
+      "title": "2. Step-by-Step Optimization Workflow"
+    },
+    {
+      "type": "stepByStep",
+      "title": "3-Phase Local AI Setup",
+      steps": [
+        {
+          "title": "Extract Local Neighborhood Keywords",
+          "content": "Compile top zip codes, school districts, and neighborhood names served by your brokerage."
+        },
+        {
+          "title": "Build Review Response System Prompt",
+          "content": "Configure your AI assistant to generate personalized 5-star review replies incorporating local landmarks."
+        },
+        {
+          "title": "Publish Weekly Local Q&A Updates",
+          "content": "Post 2 answers per week to frequent buyer questions on your Google Business Profile."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Example: Review Response Prompt Result",
+      "context": "Client leaves 5-star review mentioning quick home sale",
+      "content": "AI Output: 'Thank you for trusting us with your home sale in Travis Heights! We are thrilled to get your property sold above asking price within 5 days.'"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "prompt-template",
+      "title": "3. Review Response AI System Prompt"
+    },
+    {
+      "type": "promptBlock",
+      "title": "System Prompt • Real Estate Review Replier",
+      "prompt": "You are a professional marketing coordinator for [Brokerage Name] in [City, State].\n1. Thank the reviewer warmly by name.\n2. Mention the specific neighborhood or property service referenced.\n3. Keep responses concise (under 75 words).\n4. Include a polite invitation to connect again."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "audit-table",
+      "title": "4. Optimization Performance Matrix"
+    },
+    {
+      "type": "table",
+      "caption": "Manual vs AI Local SEO Performance",
+      "headers": [
+        "Task",
+        "Manual Execution",
+        "AI Workflow"
+      ],
+      "rows": [
+        [
+          "Review Reply Speed",
+          "24 - 48 Hours",
+          "< 5 Minutes"
+        ],
+        [
+          "Local Q&A Coverage",
+          "Monthly",
+          "Weekly"
+        ],
+        [
+          "Keyword Consistency",
+          "Variable",
+          "100% Standardized"
+        ]
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Real Estate Local SEO Launch Checklist",
+      "items": [
+        {
+          "label": "Google Business Profile primary category set to Real Estate Agency",
+          "checked": true
+        },
+        {
+          "label": "Review reply prompt tested with 5 past reviews",
+          "checked": true
+        },
+        {
+          "label": "Broker approval policy established for negative review handling",
+          "checked": false
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedArticles": [
+      "ai-patient-intake-dental-clinics",
+      "local-seo-basics"
+    ],
+    "relatedGuides": [
+      "real-estate-ai-automation-track"
+    ],
+    "previous": null,
+    "next": "ai-lead-nurture-real-estate"
+  }
+}

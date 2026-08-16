@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "dental-clinic-ai-visibility-checklist",
+  "type": "checklist",
+  "status": "published",
+  "metadata": {
+    "title": "Dental Clinic AI Visibility Checklist",
+    "description": "A practical, no-hype checklist for auditing whether your dental clinic's online information is clear, consistent, and easy for search and AI systems to understand.",
+    "category": "Guides & Blueprints",
+    "industry": "dental-clinics",
+    "difficulty": "beginner",
+    "featured": false,
+    "readingTime": 20,
+    "publishedAt": "2026-08-10T21:55:00Z",
+    "updatedAt": "2026-08-10T21:55:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Dental Practice AI & Online Visibility Specialists"
+  },
+  "seo": {
+    "title": "Dental Clinic AI Visibility Checklist | Locatria",
+    "description": "A practical checklist for auditing whether your dental clinic's online information is clear, consistent, and easy for search and AI systems to understand.",
+    "canonical": "https://locatria.com/knowledge/dental-clinic-ai-visibility-checklist",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "Dental Clinic AI Visibility",
+    "audience": [
+      "Dental Clinic Owners",
+      "Dental Practice Managers",
+      "Local Dental Marketing Teams"
+    ],
+    "industries": [
+      "Dental Clinics",
+      "Healthcare Marketing & SEO"
+    ],
+    "entities": [
+      "Dental Clinic AI Visibility",
+      "LocalBusiness Structured Data",
+      "Google Business Profile Consistency",
+      "Topical Relevance & Patient FAQs",
+      "Trust & Credibility Signals"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI visibility starts with clear, accurate, and consistent business information — not with a technical trick or a single optimization.",
+        "Your website should clearly explain who the clinic is, where it operates, and what it offers, in language both patients and machines can understand.",
+        "Local business profiles and directory listings should match exactly — inconsistent names, addresses, or phone numbers actively undermine visibility.",
+        "Useful, well-organized patient-facing content (like FAQs) helps establish topical relevance beyond just ranking for keywords.",
+        "Structured data (schema markup) can help systems understand key business facts, but only when it's accurate and matches what's actually visible on the page.",
+        "AI visibility is an ongoing system to maintain, not a one-time project you finish and forget."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "introduction",
+      "title": "Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Patients increasingly discover dental clinics through search engines, Google Maps, AI-powered search summaries, conversational assistants, local directories, and healthcare review sites. A clinic can have a good website and still have an unclear overall digital presence due to inconsistent business details, incomplete service pages, missing location data, or conflicting directory references."
+    },
+    {
+      "type": "paragraph",
+      "content": "This checklist is a practical operational audit tool for finding and fixing exactly those gaps. It won't tell you how to 'hack' an AI system — what it does is make information about your clinic clearer, more consistent, and easier for both people and search/AI engines to verify."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "traditional-vs-ai-visibility",
+      "title": "Traditional vs. AI Visibility"
+    },
+    {
+      "type": "comparisonTable",
+      "headers": [
+        "Dimension",
+        "Traditional Visibility",
+        "AI Visibility"
+      ],
+      "rows": [
+        [
+          "Primary concern",
+          "Ranking position in search results",
+          "Whether information can be accurately understood and represented"
+        ],
+        [
+          "Unit of evaluation",
+          "Individual pages competing for a position",
+          "The business as a whole 'entity', understood in context"
+        ],
+        [
+          "What matters most",
+          "Keywords, backlinks, on-page SEO",
+          "Clarity, consistency, and completeness of business information across sources"
+        ],
+        [
+          "Content role",
+          "Rank for specific queries",
+          "Serve as a reliable source a system can draw from or reference"
+        ],
+        [
+          "Consistency requirement",
+          "Helpful but not always critical",
+          "Central — conflicting information across sources undermines trust"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "how-to-use",
+      "title": "How to Use This Checklist"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Operational Audit Workflow",
+      "content": "Work through each category and mark items as PASS, NEEDS ATTENTION, NOT STARTED, or N/A. Assign priority (HIGH, MEDIUM, LOW) to any gap before implementing fixes."
+    },
+    {
+      "type": "stepByStep",
+      "title": "Audit Execution Steps",
+      "steps": [
+        {
+          "title": "1. Audit Current Presence",
+          "content": "Review website pages, Google Business Profile, directories, and structured data against the checklist categories."
+        },
+        {
+          "title": "2. Record Gaps & Inconsistencies",
+          "content": "Log conflicting business names, addresses, missing service pages, or missing schema markup."
+        },
+        {
+          "title": "3. Prioritize Fixes",
+          "content": "Tag critical NAP (Name, Address, Phone) errors as HIGH priority; structural and content gaps as MEDIUM."
+        },
+        {
+          "title": "4. Implement & Recheck",
+          "content": "Standardize info across all profiles, add missing content/schema, and re-audit quarterly."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "category-checklists",
+      "title": "12 Category Dental AI Visibility Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Categories 1–4: Core Identity & Site Structure",
+      "items": [
+        "Business Identity: Official clinic name is clearly stated and consistent across profiles",
+        "Business Identity: Physical location, service area, phone number, and business email are easy to find",
+        "Location & Local Signals: Full address, city, state, location page, and map are present and consistent",
+        "Location & Local Signals: Google Business Profile and major healthcare directories are claimed and accurate",
+        "Dental Services: Core services listed clearly in plain language without exaggerated claims",
+        "Website Structure: Homepage, About, Contact, Service pages, FAQ, and clear navigation hierarchy exist",
+        "Website Structure: Mobile-friendly, fast loading, and text is crawlable (not embedded in images)"
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Categories 5–8: Content, Relevance, Schema & Reviews",
+      "items": [
+        "Patient Education: Service-specific FAQs answer real patient questions directly with factual support",
+        "Topical Relevance: Logical topic structure connecting general dentistry to preventive care & FAQs",
+        "Structured Data: Dentist / LocalBusiness schema markup implemented matching visible page content exactly",
+        "Reviews & Reputation: Google reviews monitored with professional, privacy-conscious human-approved replies",
+        "Trust & Credibility: Genuine team credentials, practice details, and verified educational sources shown"
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Categories 9–12: Trust, Freshness & AI Search Readiness",
+      "items": [
+        "Content Maintenance: Hours, services, team info, and links reviewed periodically on a schedule",
+        "External Consistency: Business Name, Address, Phone (NAP) match 100% across GBP, directories, and site",
+        "AI Search Readiness: Business identity, locations, services, and trust signals easy to parse site-wide",
+        "Ongoing System: Audit repeated quarterly to catch data drift before it affects visibility"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "hypothetical-audit",
+      "title": "Practical Audit Case: Fictional Clinic Audit"
+    },
+    {
+      "type": "comparisonTable",
+      "headers": [
+        "Audit Finding",
+        "Priority",
+        "Recommended Action"
+      ],
+      "rows": [
+        [
+          "Inconsistent clinic name on Google Business Profile",
+          "HIGH",
+          "Standardize name exactly matching website"
+        ],
+        [
+          "Outdated phone number on directory listing",
+          "HIGH",
+          "Correct directory contact info immediately"
+        ],
+        [
+          "Missing dedicated FAQ section",
+          "MEDIUM",
+          "Build topic-organized patient FAQ pages"
+        ],
+        [
+          "Missing LocalBusiness / Dentist schema",
+          "MEDIUM",
+          "Implement schema markup matching page text"
+        ],
+        [
+          "Vague superlative claims ('best care in town')",
+          "HIGH",
+          "Remove exaggerated claims; use factual descriptions"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "common-mistakes",
+      "title": "14 Common Dental AI Visibility Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Pitfalls Dental Practices Must Avoid",
+      "content": "1. Inconsistent business name across directories\n2. Incorrect physical address or phone details\n3. Outdated holiday or practice hours\n4. Missing dedicated pages for core services\n5. Thin, one-sentence service explanations\n6. Lacking clear patient FAQ content\n7. Poor internal linking between services and FAQs\n8. Misleading structured data that doesn't match page text\n9. Unnatural keyword stuffing\n10. Fake reviews or review manipulation\n11. Unsupported or exaggerated medical claims\n12. Outdated team or service content left live online\n13. Ignoring directory inconsistency outside the main site\n14. Treating AI visibility as a one-time project instead of an ongoing system"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-template",
+      "title": "Required AI Prompt",
+      "prompt": "You are helping a dental clinic audit its online AI visibility.\n\nCLINIC INFORMATION:\n- Clinic Name: [insert]\n- Website: [insert]\n- Location / City / State: [insert]\n- Primary Services: [insert]\n- Google Business Profile details: [insert]\n- Directory listing details: [insert]\n- Structured Data status: [insert]\n\nPlease review this information and produce an audit that:\n- Organizes findings by category (business identity, location, services, website structure, content, schema, reviews, trust)\n- Identifies inconsistencies across sources\n- Prioritizes issues as HIGH, MEDIUM, or LOW\n- Recommends practical next actions for each issue\n- Flags items needing human verification before implementation\n\nInstructions:\n- Do not invent facts or statistics.\n- Clearly separate confirmed facts from assumptions.\n- Do not claim that fixing these issues guarantees #1 rankings or AI recommendations."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "items": [
+        {
+          "question": "What is AI visibility for a dental clinic?",
+          "answer": "AI visibility is how easily and accurately a clinic's information — identity, location, services, and trustworthiness — can be discovered, understood, and represented across search engines and AI-powered discovery experiences."
+        },
+        {
+          "question": "How can a dental clinic improve AI visibility?",
+          "answer": "By keeping business information accurate and consistent everywhere it appears, publishing clear and genuinely useful content, implementing accurate structured data, and maintaining all of this over time."
+        },
+        {
+          "question": "Does local SEO affect AI visibility?",
+          "answer": "Yes. Local SEO fundamentals — accurate business information, relevant content, and reputation signals — form the foundation AI visibility builds on."
+        },
+        {
+          "question": "Does structured data help AI systems understand a dental clinic?",
+          "answer": "It can help when implemented accurately and matched to real, visible page content. Structured data makes already-accurate information easier for systems to parse."
+        },
+        {
+          "question": "Should a dental clinic create FAQ content?",
+          "answer": "Yes. Well-organized FAQ content addressing real patient questions helps establish topical relevance and gives both patients and systems clear, direct answers."
+        },
+        {
+          "question": "How important is Google Business Profile information?",
+          "answer": "Very. It is one of the primary places patients and search systems check for accurate business details, and inconsistencies here undermine trust everywhere else."
+        },
+        {
+          "question": "Do online reviews affect dental clinic AI visibility?",
+          "answer": "Reviews and privacy-conscious responses are part of the broader trust and reputation picture — one signal among many, not a standalone ranking guarantee."
+        },
+        {
+          "question": "How often should a dental clinic audit its online information?",
+          "answer": "At minimum, on a recurring quarterly schedule and immediately after any significant business change (address, hours, services, or team updates)."
+        },
+        {
+          "question": "Can AI perform a dental clinic visibility audit?",
+          "answer": "AI can organize information, compare sources, and identify inconsistencies quickly. A person still needs to verify facts and approve any changes before implementation."
+        },
+        {
+          "question": "Does completing an AI visibility checklist guarantee better rankings?",
+          "answer": "No. No honest guide can promise that. Completing this checklist improves the clarity, consistency, and trustworthiness of your clinic's information, supporting visibility as part of a broader strategy."
+        }
+      ]
+    },
+    {
+      "type": "definitions",
+      "id": "key-definitions",
+      "title": "Key Definition Blocks",
+      "items": [
+        {
+          "term": "Dental Clinic AI Visibility",
+          "definition": "The degree to which accurate information about a dental clinic is discoverable, understandable, consistent, and contextually relevant to search and AI systems."
+        },
+        {
+          "term": "Dentist Schema Markup",
+          "definition": "A recognized subtype of LocalBusiness structured data used by search engines to parse a dental practice's name, address, hours, and services directly."
+        },
+        {
+          "term": "NAP Consistency",
+          "definition": "Matching exact Business Name, Physical Address, and Primary Phone number across your website, Google Business Profile, and major directory listings."
+        },
+        {
+          "term": "Topical Relevance",
+          "definition": "Organizing patient educational content and service pages into a clear, logical hierarchy that demonstrates expertise in general and specialized dentistry."
+        }
+      ]
+    },
+    {
+      "type": "relatedGuide",
+      "title": "What Is AI Visibility? A Practical Guide for Local Businesses",
+      "url": "what-is-ai-visibility-practical-guide-local-businesses.html",
+      "description": "Links back to core foundational AI visibility concepts."
+    },
+    {
+      "type": "sources",
+      "id": "sources-references",
+      "title": "Sources & References",
+      "items": [
+        "Google for Developers — 'Local Business (LocalBusiness) Structured Data' (developers.google.com/search/docs/appearance/structured-data/local-business)",
+        "Google Business Profile Help — 'Tips to improve your local ranking on Google' (support.google.com/business/answer/7091)",
+        "Schema.org — 'Dentist & LocalBusiness Type Definitions' (schema.org/Dentist)",
+        "American Dental Association — 'What are the standards for AI use in dentistry?' (adanews.ada.org/ada-news/2025/february/what-are-the-standards-for-ai-use-in-dentistry)"
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "what-is-ai-visibility-practical-guide-local-businesses.html"
+    ]
+  }
+}

@@ -1,0 +1,909 @@
+{
+  "id": "ai-visibility-checklist-real-estate-businesses",
+  "type": "checklist",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Visibility Checklist for Real Estate Businesses",
+    "subtitle": "A diagnostic checklist for auditing real estate business information clarity, agent/brokerage consistency, local signals, structured data, and AI search readiness.",
+    "industry": "real-estate",
+    "difficulty": "beginner",
+    "readingTimeMinutes": 26,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Real estate agents",
+      "Brokers",
+      "Brokerage owners",
+      "Independent real estate professionals",
+      "Small real estate teams",
+      "Real estate marketing professionals"
+    ],
+    "primaryTopic": "AI Visibility Checklist for Real Estate Businesses"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-visibility-checklist-real-estate-businesses.html",
+    "metaDescription": "Audit your real estate business AI visibility across 21 core categories — agent consistency, location signals, Fair Housing compliance, and structured data.",
+    "openGraph": {
+      "title": "AI Visibility Checklist for Real Estate Businesses | Locatria",
+      "description": "Audit your real estate business AI visibility across 21 core categories — agent consistency, location signals, Fair Housing compliance, and structured data.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Visibility Checklist for Real Estate Businesses",
+    "industryFocus": "real-estate"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI Visibility is not something a real estate business can simply \"turn on\" — it's the ongoing result of making agent, brokerage, location, service, and property-type information clear, consistent, and easy to verify.",
+        "No business, tool, or checklist can guarantee that any AI system will recommend, cite, rank, or display a real estate business — AI systems control their own retrieval and ranking mechanisms, entirely outside any individual business's control.",
+        "This checklist evaluates 21 categories, from business identity to Fair Housing-conscious content, and should be worked through using observable evidence, not assumptions about what's \"probably\" already in place.",
+        "Fair Housing obligations apply fully to every category touching neighborhoods, buyer/seller targeting, or content framing — this checklist includes a dedicated category for this, and it deserves particular care throughout.",
+        "Dynamic real estate information — market statistics, prices, inventory, mortgage rates — must always be sourced, verified, and dated; AI should never be treated as the source of truth for any of it.",
+        "The practical sequence for using this checklist is: audit, score, identify gaps, prioritize, improve, verify, and re-audit — a recurring discipline, not a one-time project."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Prospective buyers and sellers increasingly discover real estate businesses through more than one channel — search engines, Google Maps, directories, reviews, personal websites, and AI-powered search tools. <strong>The goal is not to \"hack AI.\"</strong> It's to make the business's public information genuinely useful, clear, accurate, and understandable for both people and search systems."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-ai-visibility",
+      "title": "2. What Is AI Visibility for a Real Estate Business?"
+    },
+    {
+      "type": "definitions",
+      "id": "ai-visibility-definition",
+      "title": "AI Visibility Definition for Real Estate",
+      "items": [
+        {
+          "term": "AI Visibility",
+          "definition": "The degree to which a real estate business's publicly available information is clear, consistent, useful, structured, trustworthy, and discoverable enough for search engines and AI-powered systems to potentially understand the business correctly."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-to-use",
+      "title": "3. How to Use This Checklist"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit each category in turn, marking items as PASS, PARTIAL, FAIL, or N/A based on observable evidence. Score your audit, prioritize gaps, execute improvements, and re-audit."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "evidence-auditing",
+      "title": "4. Evidence-First Auditing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Do not mark an item \"Pass\" based on assumptions. Record observable evidence — specific URLs, screenshots, date checked, and source documents."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "business-identity",
+      "title": "5. Business Identity Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Agent name is clearly and consistently stated",
+        "Business name is clearly and consistently stated",
+        "Brokerage name is clearly stated where applicable",
+        "The business relationship (independent agent, team, brokerage) is clear",
+        "Official website is easy to find and clearly represents the business",
+        "Official domain is used consistently across marketing materials",
+        "Phone number is easy to find",
+        "Email or contact method is easy to find",
+        "Office information is clear, where applicable",
+        "A clear, plain-language business description exists",
+        "Service descriptions are clear",
+        "Identity is consistent across all major public sources",
+        "Professional information is consistent across sources",
+        "Clear distinction between agent, team, brokerage, and business entity"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "agent-brokerage-identity",
+      "title": "6. Agent and Brokerage Identity Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Agent name is consistent everywhere it appears",
+        "Brokerage relationship is clearly stated",
+        "Team identity, if applicable, is clearly explained",
+        "Office information is consistent",
+        "Professional profile and bio exist and are current",
+        "Relevant credentials are accurately presented",
+        "Service areas are clearly stated for the agent or team",
+        "Contact information is consistent",
+        "Relationship between agent site and brokerage site is clear",
+        "Agent and brokerage pages present consistent information"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "location-signals",
+      "title": "7. Location and Local Signals Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Primary city and state are clearly stated",
+        "Office location is clearly stated, where applicable",
+        "Service area is explicitly described, separate from office location",
+        "Cities and neighborhoods served are clearly listed",
+        "Geographic terminology is used consistently",
+        "Address and phone are consistent across sources",
+        "Local business profiles are claimed and complete",
+        "Map information is available where appropriate",
+        "Local references and geographic scope are clear and unambiguous"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "services-checklist",
+      "title": "8. Services Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Buyer representation is clearly described, if offered",
+        "Seller representation is clearly described, if offered",
+        "Relocation services are clearly described, if offered",
+        "Property management is clearly described, if offered",
+        "Commercial services are clearly described, if offered",
+        "Investment services are clearly described, if offered",
+        "Each service includes audience, geographic scope, and general process",
+        "Each service has relevant supporting FAQs or content",
+        "Services are consistently described across every page"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "property-type-checklist",
+      "title": "9. Property Type Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Single-family homes are clearly addressed, if handled",
+        "Condominiums are clearly addressed, if handled",
+        "Townhomes are clearly addressed, if handled",
+        "Multifamily properties are clearly addressed, if handled",
+        "Commercial properties are clearly addressed, if handled",
+        "Terminology for each property type is consistent",
+        "Dedicated content exists for major property types handled",
+        "Property-type coverage aligns with services actually offered"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "website-structure",
+      "title": "10. Website Structure Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Homepage clearly identifies business and services",
+        "Navigation is clear and logically organized",
+        "Service pages and location info are easy to find",
+        "URLs are readable and descriptive",
+        "Page titles and headings are used hierarchically",
+        "Internal links connect related pages",
+        "Site is mobile-usable, crawlable, and important pages indexable",
+        "Content is accessible as real, readable text"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "buyer-content",
+      "title": "11. Buyer Content Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "General buying process is clearly explained",
+        "Preparation questions are addressed",
+        "Financing concepts are addressed generally (no individual advice)",
+        "Inspection and closing questions are explained generally",
+        "Relevant property types connect to buyer content",
+        "Local buyer questions and moving considerations are addressed",
+        "General homeownership education exists"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "seller-content",
+      "title": "12. Seller Content Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Seller preparation guidance is clearly explained",
+        "General listing process and marketing considerations are addressed",
+        "Showing preparation guidance exists",
+        "General transaction education exists",
+        "Common seller questions are addressed",
+        "Local selling considerations are addressed"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-neighborhood-content",
+      "title": "13. Local and Neighborhood Content Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Useful local guides exist for actual service area",
+        "City-level content exists where genuinely useful",
+        "Neighborhood content exists where appropriate and researched",
+        "Transportation, public resources, and local characteristics are addressed",
+        "Local questions and terminology are explained",
+        "Local service information is included"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-content-quality",
+      "title": "14. Local Content Quality Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Local content answers real, genuine questions",
+        "Local content contains verified, sourced information",
+        "Authoritative sources are used and documented",
+        "Appropriate context is provided (not isolated facts)",
+        "Dynamic information is dated",
+        "Content avoids generic filler and keyword stuffing",
+        "Content provides real utility to the reader"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audience-questions",
+      "title": "15. Client / Audience Questions Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Buyer FAQs exist and reflect real questions",
+        "Seller FAQs exist and reflect real questions",
+        "Homeowner and relocation questions are addressed",
+        "Property-type-specific questions are addressed",
+        "Local and process questions are addressed",
+        "Questions genuinely come from actual inquiries, not assumptions"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "topical-relevance",
+      "title": "16. Topical Relevance Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Core topics connected to services are covered",
+        "Supporting/adjacent topics are addressed",
+        "Buyer, seller, property-type, and local topics are covered coherently",
+        "Educational depth is proportionate to topic importance",
+        "Internal links connect topically related content"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "structured-data",
+      "title": "17. Structured Data Checklist"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "FAQ Rich Results Fully Deprecated as of 2026",
+      "content": "Google no longer displays FAQ rich results for any site as of May 2026. FAQPage markup remains valid schema.org vocabulary for general context, but produces no visible search result features."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Structured data implemented where appropriate (RealEstateAgent, Organization)",
+        "Markup matches visible page content exactly",
+        "Required properties present and validated with testing tools",
+        "Markup reviewed and updated after business changes"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "reviews-reputation",
+      "title": "18. Reviews and Reputation Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Active, monitored public review presence exists",
+        "Review info is consistent across sources",
+        "Review response process exists and is followed",
+        "Responses are professional and privacy-conscious",
+        "No fabricated or manipulated reviews exist",
+        "Responses never disclose private transaction details"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "trust-credibility",
+      "title": "19. Trust and Credibility Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Agent bio is genuine, complete, and current",
+        "Brokerage info and credentials presented clearly and accurately",
+        "Contact info is clear and current",
+        "Sources cited for educational content",
+        "Authoritative references used where appropriate",
+        "Business ownership and identity transparent"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-freshness",
+      "title": "20. Content Freshness Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Publication and updated dates shown where appropriate",
+        "Market statistics referenced are current",
+        "Property examples are current or clearly historical",
+        "Service, agent, and office info are current",
+        "Local resources referenced are accurate and links working",
+        "Legal or regulatory information is current"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "market-info",
+      "title": "21. Market Information Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Market information is sourced and dated",
+        "Market information is current as of stated date",
+        "Market info is clearly qualified (not permanent)",
+        "Market info is written in an understandable way",
+        "Market info is not presented as guaranteed prediction"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "external-consistency",
+      "title": "22. External Information Consistency Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Business and brokerage names consistent across website & directories",
+        "Address and phone number consistent across all sources",
+        "Website URL and service areas consistent across sources",
+        "Services and property types consistent across sources",
+        "Agent info consistent across website and external profiles"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "technical-discoverability",
+      "title": "23. Technical Discoverability Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Site uses HTTPS, is crawlable and indexable",
+        "Canonical URLs used appropriately for duplicate content",
+        "Site is mobile-usable with reasonable performance",
+        "Page titles descriptive and headings used correctly",
+        "Internal links connect related content",
+        "XML sitemap exists and robots directives intentional"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-relationships",
+      "title": "24. Content Relationship Checklist"
+    },
+    {
+      "type": "workflow",
+      "title": "Content Relationship Hierarchy",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Service Page"
+        },
+        {
+          "type": "process",
+          "label": "Buyer / Seller FAQ"
+        },
+        {
+          "type": "process",
+          "label": "Local Guide"
+        },
+        {
+          "type": "output",
+          "label": "Property-Type & Resource Guide"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-search-readiness",
+      "title": "25. AI Search Readiness Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Business, agent, brokerage, location, service, and property-type info clear",
+        "Buyer and seller content useful, not filler",
+        "Local content genuine and researched",
+        "FAQs reflect real questions",
+        "Educational resources substantive and structured",
+        "Authoritative sources referenced",
+        "External info consistent and content kept current",
+        "Trust signals present and website structure clear"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "fair-housing-checklist",
+      "title": "26. Fair Housing and Responsible Local Content Checklist"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Mandatory Fair Housing Compliance Criteria",
+      "content": "Content must avoid steering toward/away from neighborhoods based on protected characteristics, avoid protected-class targeting or demographic assumptions, avoid unsupported safety claims, and ensure neighborhood facts are objective and sourced."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Content avoids steering based on protected characteristics",
+        "Content avoids protected-class targeting of any kind",
+        "Content avoids demographic assumptions",
+        "Content avoids unsupported safety claims",
+        "Content avoids discriminatory neighborhood descriptions",
+        "Neighborhood facts are objective and verifiable",
+        "Sources for local claims are documented",
+        "Subjective claims are minimized",
+        "Potentially sensitive content specifically reviewed for Fair Housing"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-checklist",
+      "title": "27. Complete Master Checklist"
+    },
+    {
+      "type": "paragraph",
+      "content": "The 21 individual category checklists above form the Complete Master Checklist. Review each section methodically against real, observable evidence from your public website and external profiles."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "scorecard",
+      "title": "28. AI Visibility Scorecard"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "scorecard-table",
+      "columns": [
+        "Category",
+        "Max Points",
+        "Status"
+      ],
+      "rows": [
+        [
+          "1. Business Identity",
+          "28",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "2. Agent & Brokerage Identity",
+          "22",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "3. Location & Local Signals",
+          "26",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "4. Services",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "5. Property Types",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "6. Website Structure",
+          "28",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "7. Buyer Content",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "8. Seller Content",
+          "14",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "9. Local & Neighborhood Content",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "10. Audience Questions",
+          "16",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "11. Topical Relevance",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "12. Structured Data",
+          "14",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "13. Reviews & Reputation",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "14. Trust & Credibility",
+          "22",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "15. Content Freshness",
+          "22",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "16. Market Information",
+          "12",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "17. External Information Consistency",
+          "20",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "18. Technical Discoverability",
+          "24",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "19. Content Relationships",
+          "10",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "20. AI Search Readiness",
+          "36",
+          "PASS / PARTIAL / FAIL"
+        ],
+        [
+          "21. Fair Housing & Responsible Content",
+          "18",
+          "PASS / PARTIAL / FAIL"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "score-interpretation",
+      "title": "29. Score Interpretation"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>High Readiness (85%+):</strong> Information is clear, consistent, and well-maintained. <strong>Moderate Readiness (65%–84%):</strong> Core foundation present with room for improvement. <strong>Needs Improvement (45%–64%):</strong> Inconsistencies weaken machine/human understanding. <strong>Foundational Gaps (<45%):</strong> Major identity, location, or Fair Housing issues require immediate resolution."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prioritization-matrix",
+      "title": "30. Prioritization Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "prio-table",
+      "columns": [
+        "Priority",
+        "Impact / Effort",
+        "Focus Area"
+      ],
+      "rows": [
+        [
+          "P1 — Critical",
+          "High Impact / Low-Med Effort",
+          "Business Identity, NAP Consistency, Fair Housing Compliance"
+        ],
+        [
+          "P2 — High",
+          "High Impact / Med Effort",
+          "Core Service Pages, Property Type Coverage, Buyer/Seller FAQs"
+        ],
+        [
+          "P3 — Medium",
+          "Med Impact / Med Effort",
+          "Structured Data, Local Resource Guides, Review Workflows"
+        ],
+        [
+          "P4 — Low",
+          "Low Impact / High Effort",
+          "Advanced Internal Linking, Historical Market Archives"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "31. 30-Day AI Visibility Improvement Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Improvement Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Foundation",
+          "content": "Fix NAP inconsistencies, claim business profiles, and verify business/brokerage identity."
+        },
+        {
+          "title": "Week 2 — Core Content",
+          "content": "Expand buyer/seller FAQs, clarify property types handled, and build dedicated service pages."
+        },
+        {
+          "title": "Week 3 — Local Depth & Trust",
+          "content": "Build verified, objective local resources, complete Fair Housing audit, and add bios."
+        },
+        {
+          "title": "Week 4 — Technical & Structured Data",
+          "content": "Implement clean schema, verify mobile usability, audit internal links, and re-score."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-example",
+      "title": "32. Hypothetical Audit Example"
+    },
+    {
+      "type": "paragraph",
+      "content": "A small residential team audits its online presence, finds inconsistent phone numbers across directories, thin buyer FAQ coverage, and an outdated market statistics page, and systematically resolves P1/P2 items to raise its readiness score."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-workflow",
+      "title": "33. AI-Assisted Visibility Audit Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "AI Audit Diagnostic Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Collect Public Data"
+        },
+        {
+          "type": "process",
+          "label": "AI Diagnostic Prompt"
+        },
+        {
+          "type": "decision",
+          "label": "Human Evidence Verification"
+        },
+        {
+          "type": "output",
+          "label": "Score & Implement Fixes"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-prompt",
+      "title": "34. AI Visibility Audit Prompt"
+    },
+    {
+      "type": "promptBlock",
+      "id": "audit-prompt-block",
+      "title": "AI Prompt Template: Real Estate AI Visibility Auditor",
+      "prompt": "ROLE: You are an expert AI Visibility auditor for real estate businesses.\n\nINPUT: [insert business name, website URL, brokerage info, NAP details, and content summary]\n\nTASK: Evaluate the provided business information against Locatria's 21 AI Visibility categories.\n\nCONSTRAINTS:\n- Do not invent facts or assume unverified details.\n- Flag any Fair Housing sensitivity (steering, demographic claims).\n- Flag un-dated market statistics or inconsistent NAP details.\n\nOUTPUT FORMAT: Categorized diagnostic findings with assigned P1–P4 priorities."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "gap-prompt",
+      "title": "35. AI-Assisted Local Content Gap Prompt"
+    },
+    {
+      "type": "promptBlock",
+      "id": "gap-prompt-block",
+      "title": "AI Prompt Template: Real Estate Content Gap Analyzer",
+      "prompt": "ROLE: You are analyzing a real estate business website for content gaps.\n\nINPUT: [insert list of existing service pages, location pages, and FAQs]\n\nTASK: Identify unaddressed buyer, seller, location, and property-type topics.\n\nCONSTRAINTS:\n- Keep all location suggestions objective and factual.\n- Do not suggest demographic-based neighborhood descriptions.\n- Flag dynamic facts requiring current source verification.\n\nOUTPUT FORMAT: List of Observed Gaps vs. Potential Content Opportunities."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "36. Common AI Visibility Checklist Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "18 Common AI Visibility Checklist Mistakes",
+      "content": "1. Treating AI Visibility as a ranking guarantee\n2. Focusing only on keywords\n3. Ignoring agent identity consistency\n4. Ignoring brokerage identity alignment\n5. Ignoring NAP consistency across directories\n6. Creating generic local content using city-name substitution\n7. Mass-producing thin neighborhood pages\n8. Publishing unverified or un-dated market statistics\n9. Treating AI as an authoritative source of truth\n10. Ignoring Fair Housing compliance in neighborhood content\n11. Publishing steering-related language\n12. Making unsupported safety or school claims\n13. Neglecting content freshness and broken links\n14. Ignoring external profile inconsistencies\n15. Manipulating or fabricating reviews\n16. Over-relying on structured data for search shortcuts\n17. Entering confidential client data into public AI tools\n18. Never performing recurring re-audits"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-checklist-can-cannot-do",
+      "title": "37. What the Checklist Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Identify information gaps and inconsistencies",
+        "Highlight Fair Housing and compliance risks",
+        "Structure ongoing content maintenance",
+        "Provide a clear baseline score for improvement"
+      ],
+      "cons": [
+        "Cannot guarantee search rankings, ChatGPT citations, or leads",
+        "Cannot control third-party AI search retrieval algorithms",
+        "Cannot replace professional legal, broker, or financial counsel"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "38. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Continuous Information Quality Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Audit & Evidence Check"
+        },
+        {
+          "type": "process",
+          "label": "Score & Prioritize Gaps"
+        },
+        {
+          "type": "output",
+          "label": "Improve & Re-Audit"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "39. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Real Estate AI Visibility Checklist Questions & Answers",
+      "items": [
+        {
+          "question": "What is AI Visibility for a real estate business?",
+          "answer": "AI Visibility is how easily and accurately a real estate business's information — identity, location, services, property types, and local expertise — can be discovered and understood across search engines and AI discovery tools."
+        },
+        {
+          "question": "Can this checklist guarantee ChatGPT or Google AI visibility?",
+          "answer": "No. AI systems control their own retrieval mechanisms. This checklist optimizes what a business can control: information clarity, consistency, and structure."
+        },
+        {
+          "question": "How often should a real estate business perform an audit?",
+          "answer": "At minimum on a recurring quarterly schedule, and immediately following major changes like office relocation, team expansion, or website redesign."
+        },
+        {
+          "question": "What Fair Housing risks should be audited?",
+          "answer": "Content must avoid steering, protected-class demographic descriptions, unsupported safety claims, and any language conveying limitation or preference."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "40. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "41. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "What Is AI Visibility? A Practical Guide for Local Businesses",
+      "url": "what-is-ai-visibility-practical-guide-local-businesses.html",
+      "description": "Links back to core foundational AI visibility concepts."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Housing & Search Citations",
+      "items": [
+        "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports description of HUD's 2024 AI guidance under the Fair Housing Act.",
+        "HUD Office of Fair Housing and Equal Opportunity — \"Guidance on Application of the Fair Housing Act to the Advertising of Housing, Credit, and Other Real Estate-Related Transactions Through Digital Platforms\" — https://archives.hud.gov/news/2024/FHEO_Guidance_on_Advertising_through_Digital_Platforms.pdf — Supports Fair Housing advertising provisions and anti-steering principles.",
+        "Schema.org — RealEstateAgent, Organization, LocalBusiness, Person type definitions — https://schema.org/RealEstateAgent — Supports RealEstateAgent schema definitions.",
+        "Google Search Central Blog — \"Changes to HowTo and FAQ rich results\" (August 8, 2023) — https://developers.google.com/search/blog/2023/08/howto-faq-changes — Supports description of FAQ rich results deprecation."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "what-is-ai-visibility-practical-guide-local-businesses.html"
+    ]
+  }
+}

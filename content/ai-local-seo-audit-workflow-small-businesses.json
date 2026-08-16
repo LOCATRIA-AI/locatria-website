@@ -1,0 +1,754 @@
+{
+  "id": "ai-local-seo-audit-workflow-small-businesses",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Local SEO Audit Workflow for Small Businesses",
+    "subtitle": "A structured, AI-assisted diagnosis answering what's working, what's inconsistent, and what to fix first based on evidence.",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 24,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Small business owners",
+      "Local business owners",
+      "Solopreneurs",
+      "Local marketing managers",
+      "Small marketing teams",
+      "Business founders",
+      "Local SEO practitioners"
+    ],
+    "primaryTopic": "AI Local SEO Audit Workflow for Small Businesses"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-local-seo-audit-workflow-small-businesses.html",
+    "metaDescription": "A step-by-step AI Local SEO audit workflow for small businesses — audit identity, GBP, content, reviews, and structured data with evidence-first scoring.",
+    "openGraph": {
+      "title": "AI Local SEO Audit Workflow for Small Businesses | Locatria",
+      "description": "A step-by-step AI Local SEO audit workflow for small businesses — audit identity, GBP, content, reviews, and structured data with evidence-first scoring.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Local SEO Audit Workflow for Small Businesses",
+    "industryFocus": "general"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "A Local SEO audit is a structured diagnosis, not a ranking guarantee or an automatic optimization — it produces findings, and findings require human judgment to act on.",
+        "Every important finding should follow the Observation → Evidence → Source → Impact → Recommendation model — never simply \"AI says this is a problem.\"",
+        "UNKNOWN and NEEDS VERIFICATION are legitimate audit statuses, distinct from FAIL — forcing a conclusion when evidence is genuinely insufficient produces false confidence, not useful findings.",
+        "Local SEO audits and AI Visibility audits overlap significantly but are not identical — traditional Local SEO factors do not automatically guarantee that a business is easy for AI systems to understand and represent.",
+        "Do not claim causation between a specific fix and a ranking change without real evidence — an audit identifies problems and reasonable priorities, it does not prove why any particular ranking outcome occurred.",
+        "Do not audit for the sake of auditing. The point of running this workflow is to make better decisions about what to fix first — not to produce the longest possible checklist."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Small businesses commonly run into a familiar set of Local SEO problems: incomplete business information, inconsistent details across different platforms, unclear service descriptions, thin or outdated content, a review process that's inconsistent or nonexistent, technical issues nobody's noticed, missing structured data, unclear location signals, and business information that's scattered across too many disconnected sources to track. Running a structured audit creates a genuine baseline before making changes."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-local-seo-audit",
+      "title": "2. What Is a Local SEO Audit?"
+    },
+    {
+      "type": "definitions",
+      "id": "local-seo-audit-definition",
+      "title": "Local SEO Audit Definition",
+      "items": [
+        {
+          "term": "Local SEO Audit",
+          "definition": "A structured review of the information, content, technical elements, reputation signals, and local relevance factors that help a business be discoverable and understandable in local search."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Audit ≠ guarantee. Audit ≠ ranking report. Audit ≠ automatic optimization.</strong> An audit produces findings and a prioritized list of what to address — it does not itself change anything, and it cannot promise a specific ranking result once changes are made."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-ai-audit",
+      "title": "3. What Is an AI-Assisted Local SEO Audit?"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI supports collecting and organizing information, comparing details across multiple sources, classifying issues, summarizing findings, and documenting the process. Human review controls factual accuracy, source quality, business-specific context, and final recommendations."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "seo-vs-ai-visibility-audit",
+      "title": "4. Local SEO Audit vs. AI Visibility Audit"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "seo-vs-ai-vis-table",
+      "columns": [
+        "",
+        "Local SEO Audit",
+        "AI Visibility Audit"
+      ],
+      "rows": [
+        [
+          "Purpose",
+          "Assess discoverability in local search specifically",
+          "Assess clarity across search and AI discovery generally"
+        ],
+        [
+          "Data",
+          "Business info, GBP, website signals, reviews, citations",
+          "All + entity clarity, content coherence, cross-source consistency"
+        ],
+        [
+          "Business Identity",
+          "Checked for accuracy and consistency",
+          "Checked for accuracy, consistency, and entity clarity"
+        ],
+        [
+          "AI Understanding",
+          "Not a primary focus",
+          "Central focus — is entity easy to parse?"
+        ],
+        [
+          "Output",
+          "Local search findings and priorities",
+          "Information-clarity findings and priorities"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "when-to-audit",
+      "title": "5. When Should a Small Business Run a Local SEO Audit?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Reasonable triggers: new website launch, new physical location, rebrand, service expansion, website redesign, discovering inconsistent info, visibility decline, poor conversions, major search changes, or scheduled quarterly review."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-audit-scope",
+      "title": "6. Define the Audit Scope"
+    },
+    {
+      "type": "paragraph",
+      "content": "Before starting, define: business, industry, location, service area, primary services, website, Business Profile, target audience, audit date, and specific objective."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "data-collection-plan",
+      "title": "7. Audit Data Collection Plan"
+    },
+    {
+      "type": "paragraph",
+      "content": "Collect business information, website content, Google Business Profile details, service info, location info, reviews, external listings, structured data, technical observations, competitor info, and authoritative local sources. Record source, date, observation, status, and evidence for every item."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "business-identity-audit",
+      "title": "8. Business Identity Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit business name, address, phone, website, hours, category, services, locations, and description for accuracy, consistency, and completeness across sources."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "google-business-profile-audit",
+      "title": "9. Google Business Profile Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit profile completeness, primary category, additional categories, listed services, business description, hours, photos, review activity, attributes, website link, and service area configuration per official Google guidelines."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "nap-consistency-audit",
+      "title": "10. NAP and Business Information Consistency"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit Name, Address, Phone, website URL, hours, and services across directories. Differentiate minor formatting differences from meaningful identity conflicts."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "website-local-seo-audit",
+      "title": "11. Website Local SEO Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit homepage identity clarity, location information, service pages, contact page, title tags, meta descriptions, headings, internal links, mobile usability, page speed, and trust signals."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-service-page-audit",
+      "title": "12. Local Service Page Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check whether each service page communicates the service, audience, location, process, benefits, FAQs, trust info, and clear next steps without creating thin location pages."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-content-audit",
+      "title": "13. Local Content Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Evaluate content for local relevance, genuine usefulness, question coverage, topical authority, freshness, source quality, and internal linking."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "customer-faq-audit",
+      "title": "14. Customer Question / FAQ Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check whether the website answers real customer questions across service, process, preparation, timing, pricing, location, trust, and aftercare categories."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "review-reputation-audit",
+      "title": "15. Review and Reputation Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Audit review presence, recency, response consistency, and quality. Ensure responses respect privacy (no PHI, no client status confirmation, no legal conclusions)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "external-consistency-audit",
+      "title": "16. External Information Consistency Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Review important external sources: business directories, professional profiles, industry organizations, and local business listings for core factual agreement."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-link-citation-audit",
+      "title": "17. Local Link and Citation Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Review relevant local citations, authoritative directories, professional associations, and local community relationships."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "structured-data-audit",
+      "title": "18. Structured Data Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check Organization, LocalBusiness, PostalAddress, ContactPoint, and BreadcrumbList markup against official Google structured data guidelines."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "technical-seo-audit",
+      "title": "19. Technical SEO Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Review crawlability, indexability, robots.txt, XML sitemaps, canonicals, redirects, broken links, HTTPS, page speed, and mobile responsiveness."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "mobile-ux-audit",
+      "title": "20. Mobile and User Experience Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check mobile readability, navigation, tap targets, contact accessibility, booking flows, content hierarchy, and trust signals on mobile devices."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-competitor-audit",
+      "title": "21. Local Competitor Audit"
+    },
+    {
+      "type": "paragraph",
+      "content": "Review competitors' business details, service coverage, content, FAQs, reviews, and website structure to identify observed differences (not proven ranking causes)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-audit-workflow",
+      "title": "22. AI-Assisted Audit Master Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "17-Stage Master Audit Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Scope & Data Collection"
+        },
+        {
+          "type": "process",
+          "label": "Identity, GBP, Website & Content Audit"
+        },
+        {
+          "type": "process",
+          "label": "Reviews, Citations, Schema & Tech Audit"
+        },
+        {
+          "type": "decision",
+          "label": "AI Analysis & Human Verification"
+        },
+        {
+          "type": "output",
+          "label": "Action Plan & Re-Audit"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-scorecard",
+      "title": "23. Local SEO Audit Scorecard"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "scorecard-table",
+      "columns": [
+        "Audit Category",
+        "Evaluated Status",
+        "Evidence Signal",
+        "Verification Need"
+      ],
+      "rows": [
+        [
+          "Business Identity",
+          "PASS",
+          "Match across website & main profiles",
+          "Low"
+        ],
+        [
+          "Google Business Profile",
+          "PARTIAL",
+          "Hours & categories set; service list thin",
+          "Medium"
+        ],
+        [
+          "Website Local Signals",
+          "PASS",
+          "Location & contact details clear",
+          "Low"
+        ],
+        [
+          "Local Content & FAQ",
+          "FAIL",
+          "No FAQ section addressing process questions",
+          "High"
+        ],
+        [
+          "Structured Data",
+          "PARTIAL",
+          "Organization schema present; LocalBusiness missing",
+          "Medium"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-database",
+      "title": "24. Local SEO Audit Database"
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintain a spreadsheet database tracking Audit ID, Category, Check, Observation, Evidence, Source, Status, Impact, Confidence, Effort, Risk, Priority, Recommendation, Owner, and Dates."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-audit-assistant",
+      "title": "25. AI Prompt — Local SEO Audit Assistant"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-assistant-block",
+      "title": "AI Prompt Template: Local SEO Audit Assistant",
+      "prompt": "You are helping a small business organize and analyze Local SEO audit data.\n\nDATA INPUTS: [insert GBP, website, reviews, citations, technical observations]\n\nOrganize findings by category, classify issue severity, identify inconsistencies, flag uncertainties as UNKNOWN, and prioritize based strictly on supplied evidence. Do NOT invent rankings or volume."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-consistency-auditor",
+      "title": "26. AI Prompt — Business Information Consistency Auditor"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-consistency-block",
+      "title": "AI Prompt Template: Consistency Auditor",
+      "prompt": "You are checking core business information consistency across multiple sources.\n\nSOURCE A: [insert]\nSOURCE B: [insert]\nSOURCE C: [insert]\n\nCompare name, address, phone, website, hours, services, and categories. Output matrix with Match, Partial, or Conflict statuses. Differentiate formatting from real identity conflicts."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-content-auditor",
+      "title": "27. AI Prompt — Local Content Auditor"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-content-block",
+      "title": "AI Prompt Template: Content Auditor",
+      "prompt": "You are auditing website content for local SEO quality and relevance.\n\nCONTENT INVENTORY: [insert]\n\nEvaluate local relevance, service coverage, customer question coverage, freshness, duplication, and source quality. Output PASS, PARTIAL, FAIL, or UNKNOWN with supporting evidence."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-prioritizer",
+      "title": "28. AI Prompt — Local SEO Audit Prioritizer"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-prio-block",
+      "title": "AI Prompt Template: Audit Prioritizer Engine",
+      "prompt": "You are scoring and prioritizing Local SEO audit findings.\n\nAUDIT FINDINGS: [insert]\n\nScore Impact, Confidence, Effort, and Risk (0-2). Output prioritized queue with clear recommendations and verification requirements. Do NOT invent missing data."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-re-audit-comparator",
+      "title": "29. AI Prompt — Local SEO Re-Audit Comparator"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-comparator-block",
+      "title": "AI Prompt Template: Re-Audit Comparator",
+      "prompt": "You are comparing a before-audit against an after-implementation follow-up audit.\n\nBEFORE AUDIT: [insert]\nAFTER AUDIT: [insert]\n\nIdentify resolved issues, unresolved issues, new issues, and changed facts. Present findings as observed information changes, not proven ranking effects."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-to-action-plan",
+      "title": "30. Audit Findings → Action Plan"
+    },
+    {
+      "type": "workflow",
+      "title": "Audit Action Plan Execution",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Audit Finding & Evidence"
+        },
+        {
+          "type": "process",
+          "label": "Impact & Priority Scoring"
+        },
+        {
+          "type": "process",
+          "label": "Action & Owner Assignment"
+        },
+        {
+          "type": "output",
+          "label": "Re-Audit Verification"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quick-wins-vs-structural",
+      "title": "31. Quick Wins vs. Structural Improvements"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Quick Wins:</strong> NAP corrections, broken links, outdated hours, missing contact info. <strong>Structural Improvements:</strong> Service page architecture, content workflow integration, structured data implementation, review response processes."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-dental-example",
+      "title": "32. Hypothetical Example — Dental"
+    },
+    {
+      "type": "paragraph",
+      "content": "Auditing a single-location dental clinic, identifying directory name variants and pre-appointment FAQ gaps, prioritizing directory fixes (P1) and FAQ briefs (P2), and scheduling a 30-day re-audit."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-law-example",
+      "title": "33. Hypothetical Example — Law"
+    },
+    {
+      "type": "paragraph",
+      "content": "Auditing a law firm's identity, practice-area pages, and review responses; correcting directory name variants (P1), expanding thin practice pages with attorney review (P2), and adding LegalService schema (P2)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-real-estate-example",
+      "title": "34. Hypothetical Example — Real Estate"
+    },
+    {
+      "type": "paragraph",
+      "content": "Auditing a real estate brokerage, correcting misspelled agent names (P1), defining service area cities (P1), rebuilding neighborhood pages with Fair Housing Act compliance reviews (P1), and updating GBP services (P2)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quality-checklist",
+      "title": "35. AI Local SEO Audit Quality Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Audit scope, business facts, and audit date recorded",
+        "Observations supported by recorded sources and evidence",
+        "Incomplete evidence explicitly marked UNKNOWN instead of FAIL",
+        "GBP, website, content, reviews, citations, and schema reviewed",
+        "Privacy boundaries respected in review audit",
+        "Findings prioritized by Impact, Confidence, Effort, and Risk",
+        "Action plan assigned with clear owners and re-audit date"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-maintenance",
+      "title": "36. Audit Maintenance"
+    },
+    {
+      "type": "workflow",
+      "title": "Audit Lifecycle Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Initial Audit"
+        },
+        {
+          "type": "process",
+          "label": "Implement Fixes"
+        },
+        {
+          "type": "decision",
+          "label": "Re-Audit Verification"
+        },
+        {
+          "type": "output",
+          "label": "Ongoing Monitoring"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-quality",
+      "title": "37. Measuring Audit Quality"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track issue detection rate, verified finding rate, unknown rate, false-positive rate, time to complete audit, issue resolution speed, and re-audit completion rate."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "38. Common AI Local SEO Audit Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10 Common Audit Mistakes",
+      "content": "1. Letting AI invent audit findings without evidence\n2. Treating every minor inconsistency as a ranking penalty\n3. Claiming causation between a fix and a ranking change\n4. Using outdated tactics (mass directory submissions)\n5. Auditing without defining clear scope\n6. Treating UNKNOWN as FAIL\n7. Presenting internal scorecards as official Google scores\n8. Treating structured data as a ranking guarantee\n9. Ignoring mobile UX or real customer questions\n10. Failing to record audit sources or dates"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "39. 30-Day Local SEO Audit Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Implementation Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Scope & Baseline Collection",
+          "content": "Define scope and gather baseline data across profiles and website."
+        },
+        {
+          "title": "Week 2 — Complete Core Audit",
+          "content": "Work through identity, GBP, content, reviews, and technical checks."
+        },
+        {
+          "title": "Week 3 — Prioritize & Implement",
+          "content": "Score findings and implement high-value quick wins and fixes."
+        },
+        {
+          "title": "Week 4 — Re-Audit & Document",
+          "content": "Re-audit implemented items and document maintenance workflow."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "40. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Organize collected data and compare sources",
+        "Classify issues and identify inconsistencies",
+        "Summarize audit findings into clear reports",
+        "Prioritize findings based on supplied evidence",
+        "Build action plans and compare before/after states"
+      ],
+      "cons": [
+        "Cannot guarantee search rankings, GBP performance, or citations",
+        "Cannot prove causation behind ranking movements",
+        "Cannot replace human verification of real-world business facts",
+        "Cannot guarantee traffic, leads, or revenue"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "41. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Evidence-Driven Audit Cycle",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Audit"
+        },
+        {
+          "type": "process",
+          "label": "Evidence & Prioritize"
+        },
+        {
+          "type": "decision",
+          "label": "Improve & Verify"
+        },
+        {
+          "type": "output",
+          "label": "Re-Audit & Monitor"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "42. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Local SEO Audit Questions & Answers",
+      "items": [
+        {
+          "question": "What is a Local SEO audit?",
+          "answer": "A Local SEO audit is a structured review of business information, content, technical elements, reputation signals, and local relevance factors affecting local search discoverability and understandability."
+        },
+        {
+          "question": "What is an AI-assisted Local SEO audit?",
+          "answer": "An AI-assisted audit uses AI to help organize, compare, classify, and prioritize collected evidence, while human judgment confirms facts and makes final decisions."
+        },
+        {
+          "question": "How often should a small business conduct a Local SEO audit?",
+          "answer": "Run scheduled reviews (quarterly) plus event-triggered audits following relocations, rebrands, new services, or major website changes."
+        },
+        {
+          "question": "Can structured data guarantee better rankings?",
+          "answer": "No. Structured data helps search engines parse accurate content, but Google's guidance does not treat it as a guaranteed ranking factor."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "43. Related Locatria Knowledge"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "What Is AI Visibility? A Practical Guide for Local Businesses",
+      "url": "what-is-ai-visibility-practical-guide-local-businesses.html",
+      "description": "An foundational practical guide to how AI systems search, extract, and recommend local business information."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Research Workflow for Local Businesses",
+      "url": "ai-content-research-workflow-local-businesses.html",
+      "description": "A complete, repeatable workflow for using AI to accelerate content research while keeping authoritative sources in control."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Brief Workflow for Local Businesses",
+      "url": "ai-content-brief-workflow-local-businesses.html",
+      "description": "A structured, reusable framework defining why content exists, for whom, and within what boundaries."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI FAQ Research Workflow for Local Businesses",
+      "url": "ai-faq-research-workflow-local-businesses.html",
+      "description": "A complete workflow for discovering, validating, classifying, and prioritizing FAQ questions before writing answers."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Repurposing Workflow for Local Businesses",
+      "url": "ai-content-repurposing-workflow-local-businesses.html",
+      "description": "Build one strong source asset, then systematically extract and reuse its knowledge across multiple formats."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "44. Sources / References"
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Research & Compliance Citations",
+      "items": [
+        "Google Business Profile Help — \"Tips to improve your local ranking on Google\" — https://support.google.com/business/answer/7091 — Supports local search ranking factors (relevance, distance, prominence).",
+        "Google Business Profile Help — \"Manage customer reviews\" — https://support.google.com/business/answer/3474050 — Supports review response functionality guidelines.",
+        "Google Business Profile Help — \"Guidelines for representing your business on Google\" — https://support.google.com/business/answer/3038177 — Supports business representation and privacy policies.",
+        "Google for Developers — \"Local Business (LocalBusiness) Structured Data\" — https://developers.google.com/search/docs/appearance/structured-data/local-business — Supports LocalBusiness structured data implementation standards.",
+        "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports Fair Housing considerations in real estate local content audits."
+      ]
+    }
+  ]
+}

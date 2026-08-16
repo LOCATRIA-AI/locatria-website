@@ -1,0 +1,642 @@
+{
+  "id": "how-to-build-simple-ai-marketing-system-solopreneur",
+  "type": "guide",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "How to Build a Simple AI Marketing System as a Solopreneur",
+    "subtitle": "A minimal, practical marketing system combining audience research, content engines, lead paths, AI assistance, and human judgment.",
+    "industry": "general",
+    "difficulty": "beginner",
+    "readingTimeMinutes": 25,
+    "lastUpdated": "2026-08-15",
+    "audience": [
+      "Solopreneurs",
+      "Small business owners",
+      "Local business founders",
+      "Independent professionals",
+      "Small marketing teams"
+    ],
+    "primaryTopic": "How to Build a Simple AI Marketing System as a Solopreneur"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/how-to-build-simple-ai-marketing-system-solopreneur.html",
+    "metaDescription": "A step-by-step guide for solopreneurs to build a simple, repeatable AI marketing system — connect content, distribution, lead paths, and measurement.",
+    "openGraph": {
+      "title": "How to Build a Simple AI Marketing System as a Solopreneur | Locatria",
+      "description": "A step-by-step guide for solopreneurs to build a simple, repeatable AI marketing system — connect content, distribution, lead paths, and measurement.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "How to Build a Simple AI Marketing System as a Solopreneur",
+    "industryFocus": "general"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "A solopreneur does not need dozens of tools, dozens of platforms, or a sophisticated marketing stack. A simple system — one audience, one value proposition, one content engine, a few channels, a simple lead path, a small set of metrics, AI assistance, and human judgment — is enough to start.",
+        "A marketing system is not the same thing as a tool stack. A business can own many tools and still have no real system; a simple system can run on very few tools.",
+        "The founder owns strategy, judgment, relationships, and final approval. AI provides research assistance, drafting, transformation, analysis, organization, and repetition. The system provides the process, templates, workflows, rules, and measurement that make the combination repeatable.",
+        "Start with the customer and the business problem, then choose the process, then choose the tool — never the reverse.",
+        "Simplify before automating, and standardize before scaling.",
+        "AI cannot guarantee rankings, visibility, traffic, leads, customers, engagement, conversions, or revenue. Human judgment remains essential, especially for strategy, sensitive communication, and any claim that could mislead a reader."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. What Is an AI Marketing System?"
+    },
+    {
+      "type": "definitions",
+      "id": "marketing-system-definition",
+      "title": "AI Marketing System Definition",
+      "items": [
+        {
+          "term": "AI Marketing System",
+          "definition": "A repeatable marketing process where AI assists specific tasks while the business owner controls strategy, judgment, and final decisions — connecting audience research, content production, distribution, lead capture, follow-up, and measurement into a single operating environment."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "An AI marketing system is a repeatable marketing process where AI assists specific tasks while the business owner controls strategy, judgment, and final decisions. It is not simply a collection of AI tools — it exists when there is a defined, repeatable path from audience need through content, distribution, lead capture, and follow-up."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "system-vs-tool-stack",
+      "title": "2. AI Marketing System vs. AI Tool Stack"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "stack-vs-system-table",
+      "columns": [
+        "",
+        "Marketing Tool Stack",
+        "Marketing System"
+      ],
+      "rows": [
+        [
+          "Purpose",
+          "Provide capability",
+          "Produce a repeatable business outcome"
+        ],
+        [
+          "Structure",
+          "A collection of software",
+          "A connected sequence of process steps"
+        ],
+        [
+          "Ownership",
+          "Whoever has the login",
+          "The founder, with AI and process support"
+        ],
+        [
+          "Complexity & Cost",
+          "Grows with each tool added; recurring fees",
+          "Stays fixed; tied to actual process needs"
+        ],
+        [
+          "Maintenance & Risk",
+          "Separate upkeep per app; tool sprawl risk",
+          "Process upkeep; risk concentrated in clear checkpoints"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-solopreneurs-need-simplicity",
+      "title": "3. Why Solopreneurs Need Simplicity"
+    },
+    {
+      "type": "paragraph",
+      "content": "Every additional tool creates setup, learning, maintenance, integration, and decision fatigue costs. A solopreneur's scarcest resource is attention and time. Running one core content engine and one lead path consistently outperforms juggling ten half-used platforms."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "start-with-customer-not-ai",
+      "title": "4. Start With the Customer, Not AI"
+    },
+    {
+      "type": "paragraph",
+      "content": "Start by defining: Audience, Problem, Need, Desired outcome, Buying context, Questions, and Objections. Sequence: <strong>Customer → Problem → Value → Content → Offer.</strong> AI enters only after customer, problem, and value are clear."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-marketing-objective",
+      "title": "5. Define the Marketing Objective"
+    },
+    {
+      "type": "paragraph",
+      "content": "Pick one primary objective for a given period (e.g. Local visibility, Audience education, Lead generation, Consultation requests, Appointment bookings). The system is built and measured around this primary objective."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-core-audience",
+      "title": "6. Define the Core Audience"
+    },
+    {
+      "type": "paragraph",
+      "content": "Profile customer type, location, problem, search intent, decision stage, common objections, and preferred information channels. Specificity makes content creation simpler and more effective."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "minimum-viable-marketing-system",
+      "title": "7. Build the Minimum Viable Marketing System"
+    },
+    {
+      "type": "paragraph",
+      "content": "Structure: <strong>ONE WEBSITE + ONE CORE CONTENT ENGINE + ONE PRIMARY DISTRIBUTION CHANNEL + ONE LEAD CAPTURE PATH + ONE FOLLOW-UP PROCESS + ONE MEASUREMENT DASHBOARD.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-marketing-system-workflow",
+      "title": "8. The AI Marketing System Master Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "13-Stage Solopreneur Marketing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Customer Need & Research"
+        },
+        {
+          "type": "process",
+          "label": "Brief, Creation, QA & Publish"
+        },
+        {
+          "type": "process",
+          "label": "Repurpose, Distribute & Engage"
+        },
+        {
+          "type": "decision",
+          "label": "Capture Lead & Follow Up"
+        },
+        {
+          "type": "output",
+          "label": "Measure & Improve System"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audience-research-layer",
+      "title": "9. Audience Research Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI analyzes customer questions, reviews, FAQs, search queries, competitor content, and feedback. Connects directly to Article #21 (Content Research), Article #23 (FAQ Research), and Article #26 (Review Response)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-strategy-layer",
+      "title": "10. Content Strategy Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Combine: Audience Need + Business Relevance + Evidence + Differentiation. Connects to Article #22 (Content Brief) and Article #28 (Competitor Gap Analysis)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-production-layer",
+      "title": "11. AI Content Production Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Follow sequence: Research → Brief → Prompt → Draft → Review → Publish. Connects directly to Article #29 (AI Prompt Workflow)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-repurposing-layer",
+      "title": "12. Content Repurposing Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "One approved core asset becomes FAQs, checklists, workflows, emails, social posts, or video scripts. Connects to Article #24 (Content Repurposing)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "distribution-layer",
+      "title": "13. Distribution Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Choose channels based on where the audience spends attention: website, Google Business Profile, email, or one primary social platform. Focus depth over thin, multi-platform coverage."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "lead-capture-layer",
+      "title": "14. Lead Capture Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Simple lead paths work best: Content → Call-to-Action → Contact → Consultation. Avoid complex multi-stage funnels unless evidence demands them."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "follow-up-layer",
+      "title": "15. Follow-Up Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Implement prompt, reliable follow-up for inquiries, consultation requests, resource downloads, and appointment reminders. AI assists drafting; humans handle sensitive conversations."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "customer-feedback-layer",
+      "title": "16. Customer Feedback Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "The core loop: Customer → Feedback → Research → Content → Marketing → Customer."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measurement-layer",
+      "title": "17. Measurement Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track metrics across Awareness (visits/impressions), Engagement (opens/clicks), Leads (inquiries/calls), Business (qualified leads/conversions), and Efficiency (hours saved/production time)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-marketing-dashboard",
+      "title": "18. AI Marketing Dashboard"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track Activity, Content Output, Traffic, Leads, Conversions, Feedback, and Effort in a simple spreadsheet dashboard."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "weekly-operating-rhythm",
+      "title": "19. Weekly Marketing Operating Rhythm"
+    },
+    {
+      "type": "paragraph",
+      "content": "Monday: Performance review & priorities. Tuesday: Research & evidence gathering. Wednesday: Core content asset creation. Thursday: Content repurposing. Friday: Distribution & engagement."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "monthly-marketing-review",
+      "title": "20. Monthly Marketing Review"
+    },
+    {
+      "type": "paragraph",
+      "content": "Evaluate what worked, what failed, lead performance, and process bottlenecks. Principle: <strong>Stop → Simplify → Improve → Scale.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-task-allocation-framework",
+      "title": "21. AI Task Allocation Framework"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI-First (summarizing, formatting, clustering), AI-Assisted (drafting, research synthesis, email drafts), and Human-First (strategy, positioning, sensitive communications, legal/medical claims)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-task-prioritization-matrix",
+      "title": "22. AI Task Prioritization Matrix"
+    },
+    {
+      "type": "paragraph",
+      "content": "Sort tasks by Frequency, Time Cost, Risk, and Judgment into Automate, AI Assist, Human, or Eliminate."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "automation-vs-ai-assistance",
+      "title": "23. Marketing Automation vs. AI Assistance"
+    },
+    {
+      "type": "paragraph",
+      "content": "Automation is execution without in-the-moment human intervention. AI assistance is AI generating drafts that a human reviews before publication."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "minimum-tool-philosophy",
+      "title": "24. Minimum Tool Philosophy"
+    },
+    {
+      "type": "paragraph",
+      "content": "Sequence: NEED → PROCESS → TOOL. Minimal stack: AI Assistant, Website/CMS, Analytics, Email, Booking/Scheduling, and a Spreadsheet."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "simple-system-blueprint",
+      "title": "25. Simple AI Marketing System Blueprint"
+    },
+    {
+      "type": "workflow",
+      "title": "Solopreneur System Blueprint",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "FOUNDER (Strategy & Judgment)"
+        },
+        {
+          "type": "process",
+          "label": "AI (Assistance & Leverage)"
+        },
+        {
+          "type": "output",
+          "label": "SYSTEM (Repeatability & Measurement)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "seven-reusable-prompts",
+      "title": "26. Seven Reusable Marketing Prompts"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-1-planner",
+      "title": "Prompt 1: Weekly Marketing Planner",
+      "prompt": "Role: Weekly marketing planner for [BUSINESS NAME].\nInput: Goal, Audience, Content in progress, Available hours, Priorities.\nTask: Produce a realistic, prioritized weekly plan (Top priorities, Content, Distribution, Follow-up, Measurement).\nConstraints: Respect capacity; explicitly list what NOT to attempt."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-2-research",
+      "title": "Prompt 2: Marketing Research Assistant",
+      "prompt": "Role: Marketing research assistant for [BUSINESS NAME].\nInput: Business, Audience, Topic, Research sources.\nTask: Identify customer questions, themes, content opportunities, evidence, and research gaps.\nConstraints: Do not invent demand not in sources. Mark uncertain items 'Needs Verification'."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-3-planning",
+      "title": "Prompt 3: Content Planning Assistant",
+      "prompt": "Role: Content planning assistant for [BUSINESS NAME].\nInput: Audience, Goal, Research findings, Existing content.\nTask: Recommend specific content pieces (Topic, Purpose, Need, Format, Priority, CTA, Internal links)."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-4-production",
+      "title": "Prompt 4: Content Production Assistant",
+      "prompt": "Role: Content production assistant for [BUSINESS NAME], writing in [BRAND VOICE].\nInput: Approved brief, verified research, sources, brand notes, constraints.\nTask: Write full Markdown draft following the brief's structure without inventing facts."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-5-repurposing",
+      "title": "Prompt 5: Content Repurposing Assistant",
+      "prompt": "Role: Content repurposing assistant.\nInput: Approved core content.\nTask: Recommend repurposed formats that genuinely fit (FAQ, checklist, email, social) with rationale."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-6-performance",
+      "title": "Prompt 6: Marketing Performance Reviewer",
+      "prompt": "Role: Marketing performance reviewer.\nInput: Monthly metrics, content published, lead data, customer feedback, hours spent.\nTask: Report what worked, what failed, potential causes with evidence, recommended changes, and what to stop."
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-7-simplifier",
+      "title": "Prompt 7: Marketing System Simplifier",
+      "prompt": "Role: Marketing system simplifier.\nInput: Current workflow, tools list, tasks, time spent, results.\nTask: Sort every task/tool into Keep, Simplify, AI Assist, Automate, or Eliminate with rationale."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "marketing-system-database",
+      "title": "27. Simple Marketing System Database"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track: Goal, Audience, Channel, Content Asset, Content Type, Status, Owner, AI Assistance Level, CTA, Lead Path, Primary Metric, Last Updated, and Next Review."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "weekly-operating-checklist",
+      "title": "28. Weekly Marketing Operating Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Confirm primary goal and weekly priority alignment",
+        "Review customer questions, review themes, and content gaps",
+        "Draft and QA core content asset before publishing",
+        "Execute approved repurposing across designated distribution channels",
+        "Verify lead calls-to-action and complete follow-up communications",
+        "Log metrics (traffic, leads, conversions, hours spent) and refine next cycle"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-examples",
+      "title": "29. Hypothetical Examples (Dental, Law, Real Estate)"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Dental Solopreneur:</strong> Focuses on anxious new patients, creates an educational first-visit guide, repurposes into FAQs/checklists, distributes on website & GBP, tracks appointment requests.<br><strong>Law Solopreneur:</strong> Focuses on common procedural legal questions, creates general educational explainers from primary court sources, passes attorney review, distributes via site/email, tracks consultation requests.<br><strong>Real Estate Solopreneur:</strong> Focuses on first-time buyers, creates local step-by-step buyer guides, enforces Fair Housing compliance, distributes via site/GBP, tracks consultation inquiries."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "30. Common AI Marketing System Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10 Common AI Marketing System Mistakes",
+      "content": "1. Buying too many tools and creating tool sprawl\n2. Automating broken or unexamined processes\n3. Spreading thin across too many social channels\n4. Creating generic content without clear audience intent or business goal\n5. Publishing AI drafts without human editorial & fact-check review\n6. Tracking vanity metrics instead of business outcomes\n7. Automating sensitive, high-judgment customer communications\n8. Allowing AI to make strategic positioning decisions\n9. Overproducing content without quality control\n10. Ignoring customer feedback and review themes as research inputs"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "31. 30-Day Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Implementation Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Build",
+          "content": "Define audience, value prop, primary objective, and Minimum Viable System."
+        },
+        {
+          "title": "Week 2 — Test",
+          "content": "Build research, brief, and drafting/review workflows."
+        },
+        {
+          "title": "Week 3 — Standardize",
+          "content": "Select distribution channels, lead paths, and follow-up routines."
+        },
+        {
+          "title": "Week 4 — Scale",
+          "content": "Measure results, simplify bottlenecks, document operating system."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "system-maturity-model",
+      "title": "32. Marketing System Maturity Model"
+    },
+    {
+      "type": "paragraph",
+      "content": "Level 1: Ad Hoc → Level 2: Repeatable → Level 3: AI-Assisted → Level 4: Measured → Level 5: Optimized. Most solopreneurs target Level 3 or 4 for ideal balance of leverage and simplicity."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-the-system",
+      "title": "33. Measuring the System"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track Marketing Output, Leads Generated, Business Outcomes (qualified leads/conversions), Efficiency (hours saved), and System Health (error rate, tool reliability)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "34. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Research, organize information & draft content",
+        "Analyze data patterns & summarize research notes",
+        "Transform & repurpose approved assets into secondary formats",
+        "Identify recurring themes & support performance reporting",
+        "Document workflows & streamline repetitive tasks"
+      ],
+      "cons": [
+        "Cannot guarantee customers, leads, revenue, search rankings, or AI visibility",
+        "Cannot replace human judgment for strategy, positioning, or sensitive communications",
+        "Cannot make medical, legal, or financial determinations without human verification",
+        "Cannot substitute for genuine customer relationships and service delivery"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "35. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "AI Marketing System Questions & Answers",
+      "items": [
+        {
+          "question": "What is an AI marketing system?",
+          "answer": "It is a repeatable process where AI assists specific, well-defined tasks (research, drafting, repurposing, analysis) while the business owner controls strategy, judgment, and final decisions."
+        },
+        {
+          "question": "How is an AI marketing system different from an AI tool stack?",
+          "answer": "A tool stack is just a collection of software apps. A system is a connected, repeatable process that turns audience needs into content, distribution, leads, and revenue."
+        },
+        {
+          "question": "What is a Minimum Viable Marketing System?",
+          "answer": "One Website + One Core Content Engine + One Primary Distribution Channel + One Lead Capture Path + One Follow-Up Process + One Measurement Dashboard."
+        },
+        {
+          "question": "What should remain human-led?",
+          "answer": "Strategy, positioning, sensitive customer communications, legal/medical/financial claims, reputation decisions, and final publication sign-off."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "36. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "37. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Research Workflow for Local Businesses",
+      "url": "ai-content-research-workflow-local-businesses.html",
+      "description": "Research layer supporting the solopreneur marketing system."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Prompt Workflow for Local Business Content Creation",
+      "url": "ai-prompt-workflow-local-business-content-creation.html",
+      "description": "Content production layer supporting the marketing system."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Research & Compliance Citations",
+      "items": [
+        "Google Search Central — \"Creating Helpful, Reliable, People-First Content\" — https://developers.google.com/search/docs/fundamentals/creating-helpful-content — Supports quality standards.",
+        "Federal Trade Commission — \"CAN-SPAM Act: A Compliance Guide for Business\" — https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business — Supports email marketing compliance.",
+        "U.S. Small Business Administration — \"Marketing and Sales Guidance\" — https://www.sba.gov/counseling/manage-your-business/#marketing-and-sales — Supports small business operating frameworks.",
+        "U.S. Department of Housing and Urban Development — \"Fair Housing\" — https://www.hud.gov/fairhousing — Supports Fair Housing evaluation criteria in real estate."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "38. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Solopreneur Operating System Rule",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "FOUNDER (Strategy & Judgment)"
+        },
+        {
+          "type": "process",
+          "label": "AI (Assistance & Leverage)"
+        },
+        {
+          "type": "output",
+          "label": "SYSTEM (Repeatability & Measurement)"
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-content-research-workflow-local-businesses.html",
+      "ai-prompt-workflow-local-business-content-creation.html"
+    ]
+  }
+}

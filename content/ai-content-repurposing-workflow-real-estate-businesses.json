@@ -1,0 +1,715 @@
+{
+  "id": "ai-content-repurposing-workflow-real-estate-businesses",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Content Repurposing Workflow for Real Estate Businesses",
+    "subtitle": "A repeatable system for transforming one approved, verified piece of content into multiple useful formats without losing accuracy, context, or Fair Housing compliance.",
+    "industry": "real-estate",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 24,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Real estate agents",
+      "Brokers",
+      "Brokerage owners",
+      "Independent real estate professionals",
+      "Small real estate teams",
+      "Real estate marketing professionals",
+      "Content and marketing staff supporting real estate businesses"
+    ],
+    "primaryTopic": "AI Content Repurposing Workflow for Real Estate Businesses"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-content-repurposing-workflow-real-estate-businesses.html",
+    "metaDescription": "A step-by-step AI content repurposing workflow for real estate businesses — turn 1 verified guide into FAQs, checklists, newsletters, and video outlines safely.",
+    "openGraph": {
+      "title": "AI Content Repurposing Workflow for Real Estate Businesses | Locatria",
+      "description": "A step-by-step AI content repurposing workflow for real estate businesses — turn 1 verified guide into FAQs, checklists, newsletters, and video outlines safely.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Content Repurposing Workflow for Real Estate Businesses",
+    "industryFocus": "real-estate"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "Real estate businesses often don't need more original ideas — they need to get more value from the useful knowledge they've already created and verified.",
+        "Repurposing means transforming an approved source into a new format while preserving its meaning, facts, dates, qualifications, and sources — it is not the same as rewriting content or simply recycling the same text everywhere.",
+        "The source content is the authority. If the source is weak, outdated, or unverified, every derivative built from it inherits the same problems — AI does not fix a bad source automatically.",
+        "Property information, market statistics, mortgage details, and Fair Housing-sensitive content require particular care during repurposing — dates and sourcing must be preserved, never silently dropped for the sake of a shorter format.",
+        "Every derivative asset — not just the original source — needs human review before publishing, since the transformation process itself can introduce subtle inaccuracies or lose important context.",
+        "The goal is not more content. It's one consistent, well-verified knowledge base extended efficiently into the formats a business actually needs."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: Why Repurposing Matters"
+    },
+    {
+      "type": "paragraph",
+      "content": "A small real estate business might invest real time creating one genuinely useful resource — a comprehensive buyer's guide, a seller preparation checklist, a local market explainer — and then use it exactly once."
+    },
+    {
+      "type": "paragraph",
+      "content": "Content repurposing offers a better path: extending the useful life of knowledge the business has already researched, verified, and approved. This is about <strong>getting more value from existing knowledge, not producing more content for the sake of volume.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-repurposing",
+      "title": "2. What Is AI Content Repurposing?"
+    },
+    {
+      "type": "workflow",
+      "title": "AI Content Repurposing Concept Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Original Source"
+        },
+        {
+          "type": "process",
+          "label": "Knowledge Extraction"
+        },
+        {
+          "type": "process",
+          "label": "Format Transformation"
+        },
+        {
+          "type": "decision",
+          "label": "Human Review"
+        },
+        {
+          "type": "output",
+          "label": "New Derivative Asset"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "repurposing-vs-rewriting",
+      "title": "3. Repurposing vs. Rewriting vs. Recycling"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "repurposing-comp-table",
+      "columns": [
+        "",
+        "Repurposing",
+        "Rewriting",
+        "Content Recycling"
+      ],
+      "rows": [
+        [
+          "What changes",
+          "Format & presentation",
+          "Content facts or conclusions",
+          "Nothing (republished as-is)"
+        ],
+        [
+          "What stays the same",
+          "Core meaning, facts, dates, sources",
+          "Not necessarily anything",
+          "Everything"
+        ],
+        [
+          "Risk level",
+          "Low (when reviewed)",
+          "Higher (new claims introduced)",
+          "Low (limited new value)"
+        ],
+        [
+          "Typical use",
+          "Extending 1 source to formats",
+          "Revising when facts change",
+          "Simple seasonal reposting"
+        ],
+        [
+          "Locatria approach",
+          "Recommended system",
+          "Only when facts change",
+          "Rarely sufficient"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "source-as-truth",
+      "title": "4. The Source Content Should Be the Source of Truth"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Bad source content produces more bad content, not less.</strong> AI does not fix a weak source automatically — if the original guide contains an outdated statistic or unverified claim, every derivative inherits it. Get the source right first."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-atomicization",
+      "title": "5. The Content Atomicization Concept"
+    },
+    {
+      "type": "definitions",
+      "id": "content-atom-definitions",
+      "title": "Core Knowledge Atoms in Real Estate Content",
+      "items": [
+        {
+          "term": "Definition",
+          "definition": "A term and its clear, verified meaning."
+        },
+        {
+          "term": "Question",
+          "definition": "Something the source content answers explicitly or implicitly."
+        },
+        {
+          "term": "Process / Steps",
+          "definition": "An actionable sequence of steps in a transaction or preparation."
+        },
+        {
+          "term": "Fact & Statistic",
+          "definition": "A specific, verifiable claim or number, always preserving date and source."
+        },
+        {
+          "term": "Warning / Caveat",
+          "definition": "An essential qualification that prevents oversimplification or legal risk."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-workflow",
+      "title": "6. The Master Content Repurposing Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "11-Step Master Repurposing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Select & Verify Source"
+        },
+        {
+          "type": "process",
+          "label": "Extract & Map Atoms to Formats"
+        },
+        {
+          "type": "process",
+          "label": "Generate AI Drafts"
+        },
+        {
+          "type": "decision",
+          "label": "Fact-Check & Editorial Review"
+        },
+        {
+          "type": "output",
+          "label": "Publish, Link & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step1-select-source",
+      "title": "Step 1 — Select the Right Source"
+    },
+    {
+      "type": "paragraph",
+      "content": "Good candidates: comprehensive guides, tutorials, local resource guides, FAQ collections, checklists, and workflows. Avoid outdated or unverified content."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step2-verify-source",
+      "title": "Step 2 — Verify the Source"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check facts, statistics, dates, citations, local info, property details, and Fair Housing considerations before repurposing."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step3-extract-atoms",
+      "title": "Step 3 — Extract Knowledge Atoms"
+    },
+    {
+      "type": "paragraph",
+      "content": "Extract definitions, questions, facts, processes, steps, warnings, checklist items, and statistics. Each atom must preserve its original context and date."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step4-map-atoms",
+      "title": "Step 4 — Map Content Atoms to New Formats"
+    },
+    {
+      "type": "paragraph",
+      "content": "Map definitions to glossaries, questions to FAQs, steps to checklists, and explanations to newsletter sections or video outlines."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step5-choose-formats",
+      "title": "Step 5 — Choose the Right Formats"
+    },
+    {
+      "type": "paragraph",
+      "content": "Select formats matching your actual audience and channels. Do not publish everywhere automatically."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step6-generate-drafts",
+      "title": "Step 6 — Use AI to Generate Derivative Drafts"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI must receive the approved source, target format, audience, tone, constraints, and prohibited changes. AI must preserve facts, dates, and qualifications."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step7-human-review",
+      "title": "Step 7 — Human Review"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10-Point Structured Human Review Checklist",
+      "content": "1. Factual accuracy\n2. Source preservation\n3. Context preservation\n4. Legal/regulatory sensitivity\n5. Fair Housing compliance\n6. Privacy protection\n7. Editorial quality\n8. Brand voice consistency\n9. Target format structure\n10. Clear call to action"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step8-publish-connect",
+      "title": "Step 8 — Publish and Connect"
+    },
+    {
+      "type": "workflow",
+      "title": "Interconnected Asset Architecture",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Master Guide"
+        },
+        {
+          "type": "process",
+          "label": "FAQ & Checklist"
+        },
+        {
+          "type": "process",
+          "label": "Glossary & Newsletter"
+        },
+        {
+          "type": "output",
+          "label": "Video & Related Assets"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step9-track-relationships",
+      "title": "Step 9 — Track Source Relationships"
+    },
+    {
+      "type": "paragraph",
+      "content": "Log source article ID, version, creation date, reviewer, status, format, and next review date for every derivative."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step10-maintain-content",
+      "title": "Step 10 — Maintain Repurposed Content"
+    },
+    {
+      "type": "workflow",
+      "title": "Source-Triggered Update Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Source Updated"
+        },
+        {
+          "type": "process",
+          "label": "Identify Dependent Content"
+        },
+        {
+          "type": "decision",
+          "label": "Review & Update Derivatives"
+        },
+        {
+          "type": "output",
+          "label": "Re-Publish Current Assets"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "example1-buyer-guide",
+      "title": "17. Real Estate Example #1 — Buyer Guide"
+    },
+    {
+      "type": "workflow",
+      "title": "Buyer Guide Repurposing Architecture",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Buyer Guide Source"
+        },
+        {
+          "type": "process",
+          "label": "FAQ, Checklist & Newsletter"
+        },
+        {
+          "type": "process",
+          "label": "Video Outline & Glossary"
+        },
+        {
+          "type": "output",
+          "label": "Social Post & Prep Handout"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "example2-seller-guide",
+      "title": "18. Real Estate Example #2 — Seller Guide"
+    },
+    {
+      "type": "paragraph",
+      "content": "From a Seller Prep Guide, create a seller checklist, FAQ, email sequence, educational social content, video outline, and consultation prep sheet. Preserve all pricing caveats."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "example3-local-guide",
+      "title": "19. Real Estate Example #3 — Local Guide"
+    },
+    {
+      "type": "paragraph",
+      "content": "From a Neighborhood Guide, derive local FAQs, resource lists, glossaries, newsletters, and video outlines. Mandatory Fair Housing review required on every derivative."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "repurposing-matrix",
+      "title": "20. Repurposing Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "matrix-table",
+      "columns": [
+        "Source Type",
+        "Best Formats",
+        "Audience",
+        "Risk",
+        "Review Level"
+      ],
+      "rows": [
+        [
+          "Guide (comprehensive)",
+          "FAQ, checklist, newsletter, video, glossary",
+          "Buyers, sellers, broad",
+          "Medium",
+          "Full review of every derivative"
+        ],
+        [
+          "Tutorial (process)",
+          "Checklist, workflow diagram, social posts",
+          "Active buyers/sellers",
+          "Medium",
+          "Full review for step accuracy"
+        ],
+        [
+          "Checklist",
+          "Social content, email reminders",
+          "Action-oriented leads",
+          "Low",
+          "Standard review"
+        ],
+        [
+          "FAQ",
+          "Glossary entries, social snippets",
+          "General audience",
+          "Low",
+          "Standard review"
+        ],
+        [
+          "Local Guide",
+          "Local FAQ, resource list, video outline",
+          "Market researchers",
+          "High (local/Fair Housing)",
+          "Full review + Fair Housing check"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-not-to-repurpose",
+      "title": "21. What Should NOT Be Repurposed Automatically?"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "High-Risk Content Requiring Prior Human Review",
+      "content": "Outdated statistics, unverified market data, property-specific facts, confidential client details, legal/tax/mortgage advice, investment projections, Fair Housing-sensitive descriptions, and unresolved contradictions require human review BEFORE repurposing."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-atomicization",
+      "title": "22. AI Prompt — Content Atomicization"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-atomicization-block",
+      "title": "AI Prompt Template: Content Atomicization",
+      "prompt": "You are helping a real estate business break down an approved source article into reusable knowledge atoms.\n\nSOURCE CONTENT: [insert the full approved source]\n\nPlease identify and organize:\n- Definitions (terms and their meanings)\n- Questions the content already answers, explicitly or implicitly\n- Specific facts and claims\n- Any general process described\n- Individual steps within that process\n- Examples used\n- Warnings or important cautions\n- Checklist-style, actionable items\n- References to external resources\n- Statistics, each with its source and date if available\n- Direct quotes or citations worth preserving\n\nImportant instructions:\n- Preserve the exact wording of any fact, date, or qualification where precision matters.\n- Do not invent information not present in the source.\n- Do not add unsupported claims.\n- Do not remove important context when extracting an atom — each one should remain accurate on its own.\n- Flag anything unclear or ambiguous in the source rather than resolving it yourself.\n- Identify any content that appears potentially sensitive (property specifics, market data, neighborhood descriptions) for extra review care."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-repurposing",
+      "title": "23. AI Prompt — Content Repurposing"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-repurposing-block",
+      "title": "AI Prompt Template: Content Repurposer",
+      "prompt": "SOURCE CONTENT: [insert approved source, or the relevant atom(s)]\nTARGET FORMAT: [FAQ / checklist / newsletter / social post / video outline / glossary / other]\nTARGET AUDIENCE: [insert]\nCHANNEL: [insert]\nTONE: [insert]\nREQUIRED FACTS: [list any facts, dates, or qualifications that must appear accurately in the output]\nPROHIBITED CHANGES: [list anything that must not be altered — e.g., specific figures, dates, disclaimers]\n\nTASK: Transform the source into the requested format.\n\nInstructions:\n- Preserve the meaning of the source exactly.\n- Preserve all factual claims as stated in the source.\n- Preserve dates associated with any dynamic information.\n- Preserve qualifications and caveats from the source.\n- Preserve source citations where relevant.\n- Do not invent anything not present in the source.\n- Flag any information that seems missing or unclear rather than filling the gap yourself.\n- Avoid any language that could be read as discriminatory or as steering toward or away from a neighborhood or area."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-qa",
+      "title": "24. AI Prompt — Derivative Content QA"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-qa-block",
+      "title": "AI Prompt Template: Derivative Content QA Auditor",
+      "prompt": "You are performing a content integrity check comparing an approved source against a derivative asset created from it.\n\nSOURCE: [insert full source content]\nDERIVATIVE: [insert the derivative content to check]\n\nPlease compare the two and check for:\n- Facts: does every factual claim in the derivative match the source?\n- Numbers: do all figures match exactly?\n- Dates: are dates preserved and accurate?\n- Names: are any names consistent?\n- Claims: does the derivative make any claim not present in the source?\n- Qualifications: are important caveats from the source still present?\n- Omissions: is anything important missing that changes the meaning?\n- Additions: has anything been added that wasn't in the source?\n- Contradictions: does the derivative contradict the source anywhere?\n- Unsupported statements: does the derivative state anything as fact that the source only implied or qualified?\n- Source preservation: are citations and references intact where relevant?\n\nOutput a result of PASS, PARTIAL, or FAIL, along with detailed findings explaining any issue identified."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quality-checklist",
+      "title": "25. Content Repurposing Quality Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Is the source approved, current, and verified?",
+        "Are source citations, dates, and qualifications preserved in full?",
+        "Does the derivative preserve context without introducing new claims?",
+        "Is the language free of discriminatory terms or steering hints?",
+        "Was sensitive or confidential client data excluded?",
+        "Is the new format clear, readable, and independently useful?",
+        "Is the source relationship logged and a reviewer assigned?"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "integrity-audit-example",
+      "title": "26. Content Integrity Audit Example"
+    },
+    {
+      "type": "paragraph",
+      "content": "A QA audit comparing a 1,500-word buyer guide against 4 derived assets caught 3 subtle errors: a changed timeline figure in the newsletter, a missing qualification in the FAQ, and an unsupported sentence in the video outline. Systematic comparison catches errors quick skims miss."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "27. 30-Day Content Repurposing Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Content Repurposing Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Choose One Strong Source",
+          "content": "Select a single, verified, well-approved piece of existing content."
+        },
+        {
+          "title": "Week 2 — Atomicize & Map Content",
+          "content": "Extract knowledge atoms and map them to derivative formats using the matrix."
+        },
+        {
+          "title": "Week 3 — Create 3–5 Derivative Assets",
+          "content": "Draft derivatives with AI and complete full human review."
+        },
+        {
+          "title": "Week 4 — Publish, Connect & Document",
+          "content": "Publish reviewed derivatives, link to source, log in tracking system, and measure."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-performance",
+      "title": "28. Measuring Content Repurposing Performance"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Source-to-asset ratio (number of derivatives from each source)",
+        "Content production time vs. review time per derivative",
+        "Rework rate and error rate caught during QA",
+        "Derivative approval rate and content freshness",
+        "Percentage of assets with documented source relationships"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "29. Common Content Repurposing Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "16 Common Real Estate Repurposing Mistakes",
+      "content": "1. Repurposing before approving the source\n2. Treating AI output as automatically accurate\n3. Removing important qualifications\n4. Changing statistics during transformation\n5. Losing source dates and citations\n6. Adding unsupported claims\n7. Creating too many derivative assets\n8. Publishing identical content with superficial changes\n9. Ignoring Fair Housing\n10. Failing to track source relationships\n11. Never updating derivative assets\n12. Measuring only content volume\n13. Using low-quality source content\n14. Exposing confidential information\n15. Failing to adapt formats to channels\n16. Skipping human review on derivatives"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "30. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Extract knowledge and classify content into atoms",
+        "Summarize and transform content into different formats",
+        "Generate first-pass derivative drafts",
+        "Identify inconsistencies between source and derivative",
+        "Create format-specific variations and flag stale content"
+      ],
+      "cons": [
+        "Cannot guarantee factual or legal accuracy",
+        "Cannot guarantee Fair Housing compliance without human review",
+        "Cannot guarantee accuracy of the original source itself",
+        "Cannot guarantee search rankings, AI citations, leads, or revenue"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "31. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Source-First Repurposing Discipline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Create & Verify Source"
+        },
+        {
+          "type": "process",
+          "label": "Atomize & Repurpose"
+        },
+        {
+          "type": "decision",
+          "label": "Review & Publish"
+        },
+        {
+          "type": "output",
+          "label": "Connect & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "32. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Real Estate Content Repurposing Questions & Answers",
+      "items": [
+        {
+          "question": "What is AI content repurposing?",
+          "answer": "AI content repurposing is transforming one approved, verified piece of content into multiple formats — such as a FAQ, checklist, or newsletter section — using AI while preserving facts, dates, and qualifications."
+        },
+        {
+          "question": "How can real estate businesses repurpose content with AI?",
+          "answer": "Start from one strong source, extract knowledge atoms, map atoms to formats, use AI to draft derivatives, and complete full human review before publishing."
+        },
+        {
+          "question": "What real estate content is best for repurposing?",
+          "answer": "Comprehensive, well-researched guides, tutorials, existing FAQs, checklists, and local guides work best."
+        },
+        {
+          "question": "Can one real estate guide become multiple content assets?",
+          "answer": "Yes. A single well-verified guide can support a FAQ, checklist, newsletter section, video outline, glossary, and short social content."
+        },
+        {
+          "question": "Should AI-generated derivative content always be reviewed?",
+          "answer": "Yes, every single derivative, not just the original source, because transformation can introduce subtle errors or drop qualifications."
+        },
+        {
+          "question": "Can AI introduce Fair Housing problems during content repurposing?",
+          "answer": "Yes — neutral content can be reworded during transformation in a way that reads as discriminatory or steering-related. Mandatory Fair Housing review is required."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "33. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "34. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Visibility Checklist for Real Estate Businesses",
+      "url": "ai-visibility-checklist-real-estate-businesses.html",
+      "description": "Completes real estate visibility & compliance audit."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Housing & Search Citations",
+      "items": [
+        "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports description of HUD's 2024 AI guidance under the Fair Housing Act.",
+        "HUD Office of Fair Housing and Equal Opportunity — \"Guidance on Application of the Fair Housing Act to the Advertising of Housing, Credit, and Other Real Estate-Related Transactions Through Digital Platforms\" — https://archives.hud.gov/news/2024/FHEO_Guidance_on_Advertising_through_Digital_Platforms.pdf — Supports Fair Housing advertising provisions and anti-steering principles.",
+        "Fair Housing Institute — \"Fair Housing Advertising - Guidelines To Compliance\" — https://fairhousinginstitute.com/fair-housing-advertising-guidelines/ — Supports fair housing advertising compliance guidelines."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-visibility-checklist-real-estate-businesses.html"
+    ]
+  }
+}

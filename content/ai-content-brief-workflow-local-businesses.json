@@ -1,0 +1,790 @@
+{
+  "id": "ai-content-brief-workflow-local-businesses",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Content Brief Workflow for Local Businesses",
+    "subtitle": "A structured, reusable framework defining why content exists, for whom, based on what evidence, and within what boundaries before drafting begins.",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 24,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Local business owners",
+      "Small business owners",
+      "Solopreneurs",
+      "Local marketing teams",
+      "Content managers",
+      "Founders using AI for content production"
+    ],
+    "primaryTopic": "AI Content Brief Workflow for Local Businesses"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-content-brief-workflow-local-businesses.html",
+    "metaDescription": "A step-by-step AI content brief workflow for local businesses — turn research into actionable specifications, boundaries, and traceability matrices.",
+    "openGraph": {
+      "title": "AI Content Brief Workflow for Local Businesses | Locatria",
+      "description": "A step-by-step AI content brief workflow for local businesses — turn research into actionable specifications, boundaries, and traceability matrices.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Content Brief Workflow for Local Businesses",
+    "industryFocus": "general"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "A Content Brief is not an outline, a keyword list, or a prompt — it's a structured specification defining why content exists, who it's for, what evidence supports it, what it must and must not claim, and what a writer or AI system should actually produce.",
+        "The Content Brief sits between research and content production: research answers \"what do we know?\", the brief answers \"what are we going to create from that knowledge?\"",
+        "A good brief explicitly distinguishes verified information from a content idea, an assumption, and an item still requiring verification — never letting these blur together.",
+        "Content boundaries (what must NOT be included — unsupported claims, guarantees, invented statistics, individualized professional advice) are just as important as content requirements, and are frequently the section skipped by businesses that later regret it.",
+        "The brief should stay simple enough for a founder-operated business to actually use — this is a lightweight governance tool, not a 50-page bureaucratic document.",
+        "A completed, approved Content Brief becomes a genuine control layer for content integrity — a reference point to check the final article against, not just a planning exercise that's forgotten once drafting begins."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: Why Content Briefs Matter"
+    },
+    {
+      "type": "paragraph",
+      "content": "A local business might have real research, genuine customer questions, a keyword list, and good source material — and still produce weak content, because nobody actually defined what the final piece was supposed to accomplish before writing began. Research gathers evidence. A Content Brief turns that evidence into a clear specification."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-brief",
+      "title": "2. What Is a Content Brief?"
+    },
+    {
+      "type": "definitions",
+      "id": "content-brief-definition",
+      "title": "Content Brief Definition & Role",
+      "items": [
+        {
+          "term": "Content Brief",
+          "definition": "A structured document that defines the purpose, audience, scope, evidence, content requirements, structure, risks, and success criteria for a content asset — completed before production begins."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>What it is NOT:</strong> it is not the article itself, not just a title, not just an outline, not just a keyword list, not an AI prompt, and not a content calendar. Each of these is a different, narrower tool — a Content Brief sits above and informs all of them."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-local-businesses-need-briefs",
+      "title": "3. Why Local Businesses Need Content Briefs"
+    },
+    {
+      "type": "paragraph",
+      "content": "Small teams face practical risks: inconsistent content quality, repeated research, generic AI text, unclear review ownership, excessive revisions, and unverified claims slipping through. A Content Brief helps reduce every one of these problems by making explicit decisions before writing starts."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "research-and-brief",
+      "title": "4. The Relationship Between Research and Content Brief"
+    },
+    {
+      "type": "workflow",
+      "title": "Research-to-Brief Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Business Goal & Research"
+        },
+        {
+          "type": "process",
+          "label": "Verified Knowledge & Opportunity"
+        },
+        {
+          "type": "process",
+          "label": "Content Brief Specification"
+        },
+        {
+          "type": "output",
+          "label": "Content Production"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "brief-vs-outline-vs-prompt",
+      "title": "5. Content Brief vs. Outline vs. Prompt"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "brief-vs-outline-table",
+      "columns": [
+        "",
+        "Content Brief",
+        "Outline",
+        "AI Prompt"
+      ],
+      "rows": [
+        [
+          "What it defines",
+          "Full specification — why, for whom, evidence, boundaries",
+          "Structure — section sequence only",
+          "Instructions for AI to generate text"
+        ],
+        [
+          "Scope",
+          "Broad — goal, audience, research, risks, SEO",
+          "Narrow — structural sequence",
+          "Narrow — specific generation task"
+        ],
+        [
+          "Timing",
+          "Created after research, before writing",
+          "Derived from brief",
+          "Used during drafting"
+        ],
+        [
+          "Standalone?",
+          "Yes — actionable for any writer",
+          "No — lacks why and evidence",
+          "No — risks generic output without brief"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "minimum-viable-brief",
+      "title": "6. The Minimum Viable Content Brief"
+    },
+    {
+      "type": "paragraph",
+      "content": "For a founder-operated business, a lightweight 15-field version is enough to begin: Working Title, Business Goal, Audience, User Intent, Content Purpose, Key Questions, Core Answer, Required Info, Sources, Claims to Verify, Structure, Internal Links, CTA, Reviewer, and Update Requirements."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "complete-framework",
+      "title": "7. The Complete Content Brief Framework"
+    },
+    {
+      "type": "paragraph",
+      "content": "The complete Locatria Content Brief Framework includes Content Identity, Business Context, Audience, Intent, Research Summary, Content Requirements, SEO/GEO, Trust/Risk Boundaries, Editorial Tone, Conversion CTA, and Governance."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step1-business-goal",
+      "title": "Step 1 — Define the Business Goal"
+    },
+    {
+      "type": "paragraph",
+      "content": "Ask directly: what business problem should this content solve? Define whether the piece explains a service, answers recurring questions, supports local visibility, or builds topical authority."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step2-audience",
+      "title": "Step 2 — Define the Audience"
+    },
+    {
+      "type": "paragraph",
+      "content": "Answer clearly: Who is this for? What do they need? What do they already know? What decision are they trying to make?"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step3-primary-question",
+      "title": "Step 3 — Define the Primary Question"
+    },
+    {
+      "type": "paragraph",
+      "content": "A strong brief centers on one clear, specific question (e.g., \"How can a local business make its business information easier for AI systems to understand?\")."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step4-secondary-questions",
+      "title": "Step 4 — Define Secondary Questions"
+    },
+    {
+      "type": "paragraph",
+      "content": "Expand the primary question into supporting sub-questions (What? Why? How? When? Who? Where? What to avoid?)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step5-core-answer",
+      "title": "Step 5 — Define the Core Answer"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define a preliminary, evidence-grounded conclusion answer upfront to guide the writer/AI."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step6-research-to-requirements",
+      "title": "Step 6 — Convert Research Into Content Requirements"
+    },
+    {
+      "type": "workflow",
+      "title": "Research-to-Requirements Mapping",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Research Finding"
+        },
+        {
+          "type": "process",
+          "label": "Content Requirement Mapping"
+        },
+        {
+          "type": "output",
+          "label": "Brief Instruction"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step7-what-must-be-included",
+      "title": "Step 7 — Define What Must Be Included"
+    },
+    {
+      "type": "paragraph",
+      "content": "List required definitions, workflows, tables, checklists, FAQs, and warnings to prevent essential content from disappearing during drafting."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step8-what-must-not-be-included",
+      "title": "Step 8 — Define What Must NOT Be Included"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define firm boundaries: no unsupported claims, no guarantees, no invented statistics, no unverified facts, no individualized medical/legal/financial advice."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step9-sources-and-evidence",
+      "title": "Step 9 — Define Sources and Evidence"
+    },
+    {
+      "type": "paragraph",
+      "content": "Carry forward primary sources, secondary sources, URLs, dates, and verification statuses so writers do not rediscover research from scratch."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step10-seo-geo-requirements",
+      "title": "Step 10 — Define SEO and GEO Requirements"
+    },
+    {
+      "type": "paragraph",
+      "content": "Specify primary topics, related concepts, entity references, user intent, and structured information without resorting to mechanical keyword stuffing."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step11-content-structure",
+      "title": "Step 11 — Define Content Structure"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define introduction purpose, main section sequence, placement of examples/tables, FAQ location, and final takeaways."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step12-internal-relationships",
+      "title": "Step 12 — Define Internal Knowledge Relationships"
+    },
+    {
+      "type": "workflow",
+      "title": "Knowledge Linkage Architecture",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Current Article"
+        },
+        {
+          "type": "process",
+          "label": "Related Guide & Workflow"
+        },
+        {
+          "type": "output",
+          "label": "Checklist & Resource"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step13-cta-conversion",
+      "title": "Step 13 — Define CTA and Conversion"
+    },
+    {
+      "type": "paragraph",
+      "content": "Match the call to action to user intent (e.g., pointing educational guides toward related workflows or diagnostic checklists)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step14-maintenance",
+      "title": "Step 14 — Define Maintenance Requirements"
+    },
+    {
+      "type": "workflow",
+      "title": "Content Lifecycle Update Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Publish Asset"
+        },
+        {
+          "type": "process",
+          "label": "Monitor Dynamic Facts"
+        },
+        {
+          "type": "decision",
+          "label": "Review & Update"
+        },
+        {
+          "type": "output",
+          "label": "Re-Publish Current Version"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-brief-workflow",
+      "title": "22. Complete Content Brief Master Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "15-Stage Master Brief Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Goal & Question"
+        },
+        {
+          "type": "process",
+          "label": "Research & Requirements"
+        },
+        {
+          "type": "process",
+          "label": "Boundaries & SEO"
+        },
+        {
+          "type": "decision",
+          "label": "Approval Gate"
+        },
+        {
+          "type": "output",
+          "label": "Production Ready"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "approval-gate",
+      "title": "23. Content Brief Approval Gate"
+    },
+    {
+      "type": "workflow",
+      "title": "Governance Status Progression",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Draft Brief"
+        },
+        {
+          "type": "process",
+          "label": "Review Gate"
+        },
+        {
+          "type": "decision",
+          "label": "Human Approved"
+        },
+        {
+          "type": "output",
+          "label": "Passed to Production"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-role-in-briefs",
+      "title": "24. AI's Role in Content Brief Creation"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can help organize research, summarize findings, cluster questions, identify gaps, and format draft briefs. Humans must review and approve briefs before drafting begins."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-brief-generator",
+      "title": "25. AI Prompt — Content Brief Generator"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-brief-gen-block",
+      "title": "AI Prompt Template: Content Brief Generator",
+      "prompt": "You are helping a local business convert research findings into a structured Content Brief.\n\nRESEARCH FINDINGS: [insert research summary, sources, claims, evidence]\nSOURCE LIST: [insert]\nBUSINESS GOAL: [insert]\nAUDIENCE: [insert]\nPRIMARY QUESTION: [insert]\nCONTENT TYPE: [insert]\n\nPlease generate a structured Content Brief covering identity, goal, audience, questions, core answer, requirements, boundaries, sources, SEO/GEO, structure, internal links, CTA, and maintenance.\n\nImportant: Do NOT invent facts, sources, or URLs. Preserve all qualifications."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-quality-auditor",
+      "title": "26. AI Prompt — Content Brief Quality Auditor"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-audit-block",
+      "title": "AI Prompt Template: Content Brief Quality Auditor",
+      "prompt": "You are auditing a Content Brief for completeness and quality before approval.\n\nCONTENT BRIEF: [insert brief]\n\nAssess: Completeness, Clarity, Research Support, Source Coverage, Audience/Question Specificity, Boundaries, Risks, Links, and Maintenance. Output result: PASS, PARTIAL, or FAIL with findings."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-conversion",
+      "title": "27. AI Prompt — Research-to-Brief Conversion"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-conv-block",
+      "title": "AI Prompt Template: Research-to-Brief Converter",
+      "prompt": "You are converting an approved research package into a Content Brief.\n\nRESEARCH PACKAGE: [insert research, sources, claims, evidence, uncertainties]\n\nProduce a complete Content Brief using only information in this package. Carry uncertainties forward explicitly; do not resolve them yourself."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "brief-template",
+      "title": "28. Content Brief Template"
+    },
+    {
+      "type": "paragraph",
+      "content": "A standardized markdown template detailing Content Identity, Business Goal, Audience, Questions, Core Answer, Sources, Required Content, Boundaries, Structure, SEO/GEO, Internal Links, CTA, Maintenance, and Approval."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-dental-example",
+      "title": "29. Hypothetical Example — Dental"
+    },
+    {
+      "type": "paragraph",
+      "content": "Brief specifying local visibility AI workflows for dental clinics, with ADA AI compliance references, clear clinical boundaries (no medical claims/PHI), and links to existing Dental cluster guides."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-law-example",
+      "title": "30. Hypothetical Example — Law"
+    },
+    {
+      "type": "paragraph",
+      "content": "Brief specifying client FAQ organization workflows for law firms, with ABA Formal Opinion 512 & Model Rule 7.1 references, boundaries against individualized advice, and links to existing Law cluster guides."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-real-estate-example",
+      "title": "31. Hypothetical Example — Real Estate"
+    },
+    {
+      "type": "paragraph",
+      "content": "Brief specifying local content workflows for real estate professionals, with HUD 2024 Fair Housing Act guidance references, Fair Housing boundaries, and links to existing Real Estate cluster guides."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "brief-to-production",
+      "title": "32. Content Brief to Article Production"
+    },
+    {
+      "type": "workflow",
+      "title": "Full Production Control Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Approved Content Brief"
+        },
+        {
+          "type": "process",
+          "label": "Markdown & Article JSON"
+        },
+        {
+          "type": "decision",
+          "label": "Integrity Gate Validation"
+        },
+        {
+          "type": "output",
+          "label": "Rendered & Published Asset"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-integrity-brief",
+      "title": "33. Content Integrity and the Content Brief"
+    },
+    {
+      "type": "paragraph",
+      "content": "The approved brief serves as a reference benchmark for downstream validation: BRIEF vs. MARKDOWN vs. ARTICLE JSON vs. HTML."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "traceability-matrix",
+      "title": "34. Content Brief Traceability Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "trace-table",
+      "columns": [
+        "Requirement",
+        "Source",
+        "Brief Section",
+        "Article Section",
+        "JSON Block",
+        "Validation Status"
+      ],
+      "rows": [
+        [
+          "Local visibility definition",
+          "Google Business Profile Help",
+          "Required Content",
+          "H2: What Is Local Visibility?",
+          "definition_block_01",
+          "Pass"
+        ],
+        [
+          "Fair Housing caution",
+          "HUD 2024 guidance",
+          "Content Boundaries",
+          "H2: Neighborhood Considerations",
+          "callout_warning_02",
+          "Pass"
+        ],
+        [
+          "Attorney review requirement",
+          "ABA Formal Opinion 512",
+          "Content Boundaries",
+          "Throughout, multiple callouts",
+          "callout_important_03",
+          "Pass"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quality-checklist",
+      "title": "35. Content Brief Quality Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Clear business goal and specific audience defined",
+        "Primary question and secondary sub-questions clear",
+        "Core answer preliminary statement recorded",
+        "Required content sections and formats defined",
+        "Prohibited content boundaries explicitly listed",
+        "Sources, URLs, dates, and claim verification recorded",
+        "High-risk claims flagged and reviewer assigned",
+        "Approval status explicitly marked APPROVED before production"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "36. Common Content Brief Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "10 Common Content Brief Mistakes",
+      "content": "1. Creating brief before research\n2. Making brief only a keyword list or outline\n3. Making brief too vague or overly complicated\n4. Not defining audience, primary question, or core answer\n5. Not recording sources or identifying risky claims\n6. Letting AI invent missing info\n7. Omitting content boundaries\n8. Forgetting internal links or maintenance update triggers\n9. Creating CTAs disconnected from intent\n10. Producing content without brief approval"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "37. 30-Day Content Brief Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Implementation Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Adopt Minimum Viable Brief",
+          "content": "Adopt the lightweight 15-field brief for any new content."
+        },
+        {
+          "title": "Week 2 — Test Full Cycle",
+          "content": "Complete full brief-to-publish cycle for a single article."
+        },
+        {
+          "title": "Week 3 — Add Risk & Maintenance Fields",
+          "content": "Expand framework with Source, Risk, and Maintenance tracking."
+        },
+        {
+          "title": "Week 4 — Connect to Integrity Validation",
+          "content": "Use brief as a reference benchmark for Article Integrity Gate."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-quality",
+      "title": "38. Measuring Content Brief Quality"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track brief approval rate, revision rate after drafting, content rework rate, missing section rate, source coverage, content drift rate, and percentage of articles with approved briefs."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "39. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Structure research into brief formats",
+        "Generate first-draft briefs and cluster questions",
+        "Identify gaps in research or brief specifications",
+        "Map research findings to content requirements",
+        "Format reusable brief templates"
+      ],
+      "cons": [
+        "Cannot guarantee factual, legal, medical, financial, or Fair Housing accuracy",
+        "Cannot validate third-party source authenticity",
+        "Cannot replace human approval and domain expert review",
+        "Cannot guarantee search rankings, citations, or leads"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "40. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Complete Governance Cycle",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Research"
+        },
+        {
+          "type": "process",
+          "label": "Content Brief"
+        },
+        {
+          "type": "process",
+          "label": "Content Drafting"
+        },
+        {
+          "type": "decision",
+          "label": "Validation"
+        },
+        {
+          "type": "output",
+          "label": "Publish"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "41. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Content Brief Questions & Answers",
+      "items": [
+        {
+          "question": "What is a content brief?",
+          "answer": "A Content Brief is a structured document defining the purpose, audience, scope, evidence, content requirements, structure, risks, and success criteria for a piece of content before production begins."
+        },
+        {
+          "question": "What is the difference between a content brief and an outline?",
+          "answer": "An outline defines structural sequence. A Content Brief defines why content exists, for whom, based on what evidence, and within what boundaries."
+        },
+        {
+          "question": "Can AI create a content brief?",
+          "answer": "AI can help organize research into a brief format, but human review and approval are mandatory before drafting begins."
+        },
+        {
+          "question": "How does a content brief support content integrity?",
+          "answer": "It provides an explicit reference benchmark against which finished Markdown, JSON, and HTML can be validated for completeness and accuracy."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "42. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "43. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Prompt Workflow for Local Business Content Creation",
+      "url": "ai-prompt-workflow-local-business-content-creation.html",
+      "description": "Approved brief becomes input to the prompt drafting chain."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Research Workflow for Local Businesses",
+      "url": "ai-content-research-workflow-local-businesses.html",
+      "description": "Briefs depend on verified research inputs."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Research & Compliance Citations",
+      "items": [
+        "Google for Developers — \"Creating Helpful, Reliable, People-First Content\" — https://developers.google.com/search/docs/fundamentals/creating-helpful-content — Supports content quality evaluation and YMYL principles.",
+        "American Bar Association — \"ABA issues first ethics guidance on a lawyer's use of AI tools\" — https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/ — Supports ABA Formal Opinion 512 legal content boundary requirements.",
+        "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports Fair Housing risk evaluation criteria in real estate content briefs."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-prompt-workflow-local-business-content-creation.html",
+      "ai-content-research-workflow-local-businesses.html"
+    ]
+  }
+}

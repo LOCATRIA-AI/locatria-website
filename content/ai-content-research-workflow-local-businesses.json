@@ -1,0 +1,855 @@
+{
+  "id": "ai-content-research-workflow-local-businesses",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Content Research Workflow for Local Businesses",
+    "subtitle": "A complete, repeatable workflow for using AI to accelerate content research while keeping authoritative sources and human judgment firmly in control.",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 25,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Local business owners",
+      "Small business owners",
+      "Solopreneurs",
+      "Local marketing teams",
+      "Content managers",
+      "Founders using AI for content research"
+    ],
+    "primaryTopic": "AI Content Research Workflow for Local Businesses"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-content-research-workflow-local-businesses.html",
+    "metaDescription": "A step-by-step AI content research workflow for local businesses — generate research questions, discover and verify sources, and build verified briefs.",
+    "openGraph": {
+      "title": "AI Content Research Workflow for Local Businesses | Locatria",
+      "description": "A step-by-step AI content research workflow for local businesses — generate research questions, discover and verify sources, and build verified briefs.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Content Research Workflow for Local Businesses",
+    "industryFocus": "general"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI can dramatically speed up research organization, question generation, and summarization — but AI-generated information is not automatically reliable, and treating it as a source of truth rather than a research assistant is where most content quality problems begin.",
+        "Content research is broader than keyword research: it includes real customer questions, misconceptions, process explanations, and local context — not just what people type into a search box.",
+        "Every important claim should be classified by risk (low, medium, or high) and verified accordingly — general educational explanations need less scrutiny than legal, medical, financial, or property-specific claims.",
+        "When sources conflict, the answer is not to force a false consensus — check source authority, dates, definitions, and geographic scope, document the difference, and let a human make the final call.",
+        "A research log and source library turn one-off research into a reusable business asset — supporting future content, updates, fact-checking, and repurposing, not just a single article.",
+        "The correct workflow is question → research → source → verify → structure → review → create. It is never: ask AI → copy the answer → publish."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: AI Can Speed Up Research — But It Does Not Make Research Automatically Reliable"
+    },
+    {
+      "type": "workflow",
+      "title": "Safe AI Research Discipline Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Real Question"
+        },
+        {
+          "type": "process",
+          "label": "Research & Source Discovery"
+        },
+        {
+          "type": "decision",
+          "label": "Verify & Human Review"
+        },
+        {
+          "type": "output",
+          "label": "Structured Brief & Content"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-ai-research",
+      "title": "2. What Is AI-Assisted Content Research?"
+    },
+    {
+      "type": "definitions",
+      "id": "ai-research-definition",
+      "title": "Core AI Research Definition & Role Distinction",
+      "items": [
+        {
+          "term": "AI Role",
+          "definition": "AI = Research Assistant. AI helps generate questions, cluster topics, summarize supplied text, and compare documents."
+        },
+        {
+          "term": "Human Role",
+          "definition": "Human = Source of Truth & Verifier. Humans select authoritative sources, verify factual claims, apply domain judgment, and make final publishing decisions."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-vs-traditional-research",
+      "title": "3. AI Research vs. Traditional Content Research"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "trad-vs-ai-table",
+      "columns": [
+        "Dimension",
+        "Traditional Research",
+        "AI-Assisted Research"
+      ],
+      "rows": [
+        [
+          "Speed",
+          "Slower — manual search & reading",
+          "Much faster organization and summarization"
+        ],
+        [
+          "Organization",
+          "Manual clustering and note-taking",
+          "AI rapidly clusters and structures info"
+        ],
+        [
+          "Question Generation",
+          "Manual brainstorming",
+          "AI rapidly generates research sub-questions"
+        ],
+        [
+          "Source Discovery",
+          "Manual search across sites",
+          "AI suggests source categories and search terms"
+        ],
+        [
+          "Verification",
+          "Inherently manual",
+          "Still inherently manual — AI does not self-verify"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-vs-keyword-research",
+      "title": "4. Content Research vs. Keyword Research"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "content-vs-kw-table",
+      "columns": [
+        "",
+        "Content Research",
+        "Keyword Research"
+      ],
+      "rows": [
+        [
+          "Core Question",
+          "What does the audience need to understand?",
+          "What are people searching for?"
+        ],
+        [
+          "Inputs",
+          "Customer questions, misconceptions, process gaps",
+          "Search queries, volume, competition data"
+        ],
+        [
+          "Output",
+          "Genuine understanding of audience information gaps",
+          "List of terms with estimated demand"
+        ],
+        [
+          "Risk If Used Alone",
+          "May miss searchable phrasing",
+          "May answer queries without real utility"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "start-with-business-goal",
+      "title": "5. Start With the Business Goal"
+    },
+    {
+      "type": "paragraph",
+      "content": "Get clear on what the business is trying to accomplish: educate customers, answer recurring questions, support local visibility, explain a service, or build topical authority. Avoid creating content for volume's sake."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-audience",
+      "title": "6. Define the Audience"
+    },
+    {
+      "type": "paragraph",
+      "content": "Identify clearly who the research is for — prospective patients/clients, buyers, sellers, or homeowners. Let audience needs shape the research parameters."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "start-with-real-question",
+      "title": "7. Start With a Real Question"
+    },
+    {
+      "type": "paragraph",
+      "content": "Gather real questions from customer conversations, sales calls, reviews, and support inquiries. Do not claim AI-generated questions represent real demand without data."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "decompose-questions",
+      "title": "8. Turn One Question Into Research Questions"
+    },
+    {
+      "type": "paragraph",
+      "content": "Use AI to decompose a broad question into specific sub-questions: definitions, local signals, process steps, required verifications, and authoritative source types."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "build-research-brief",
+      "title": "9. Build a Research Brief"
+    },
+    {
+      "type": "paragraph",
+      "content": "Document Research Topic, Business Goal, Audience, Primary Question, Sub-questions, Geographic Scope, Industry, Required Sources, Potential Risks, and Reviewer."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "discover-sources",
+      "title": "10. Discover Sources With AI"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can suggest source categories and search directions. Every suggested URL must be independently opened and verified for existence, currency, and accuracy."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "build-source-library",
+      "title": "11. Build a Source Library"
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintain a central log recording Source Name, Type, URL, Topic, Authority Level, Publication Date, Access Date, Relevant Claim, and Verification Status."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "evaluate-source-quality",
+      "title": "12. Evaluate Source Quality"
+    },
+    {
+      "type": "workflow",
+      "title": "Four-Tier Source Quality Hierarchy",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Tier 1: Government & Regulatory Primary"
+        },
+        {
+          "type": "process",
+          "label": "Tier 2: Established Professional Bodies"
+        },
+        {
+          "type": "process",
+          "label": "Tier 3: Educational & Industry Blogs"
+        },
+        {
+          "type": "output",
+          "label": "Tier 4: Forums & Community Signals"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "verify-claims",
+      "title": "13. Verify Important Claims"
+    },
+    {
+      "type": "paragraph",
+      "content": "Classify claims by risk: Low Risk (general educational concepts), Medium Risk (industry statistics), High Risk (legal, medical, financial, property-specific facts). High-risk claims require primary source verification and expert review."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "cross-check-conflicts",
+      "title": "14. Cross-Check Conflicting Information"
+    },
+    {
+      "type": "workflow",
+      "title": "Conflict Resolution Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Conflict Detected"
+        },
+        {
+          "type": "process",
+          "label": "Check Authority, Dates & Scope"
+        },
+        {
+          "type": "decision",
+          "label": "Document Difference"
+        },
+        {
+          "type": "output",
+          "label": "Human Final Decision"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "summarize-sources",
+      "title": "15. Use AI to Summarize Sources"
+    },
+    {
+      "type": "paragraph",
+      "content": "Provide AI with the actual source text directly. Instruct AI to preserve numbers, dates, and qualifications exactly as stated, and flag uncertainties."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "compare-sources",
+      "title": "16. Use AI to Compare Sources"
+    },
+    {
+      "type": "paragraph",
+      "content": "Compare multiple documents by feeding actual text to AI. Output should categorize Agreement, Difference, Missing Info, Conflict, and Verification Needed."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "extract-knowledge-atoms",
+      "title": "17. Extract Knowledge Atoms"
+    },
+    {
+      "type": "paragraph",
+      "content": "Organize findings into distinct units: Definition, Fact, Question, Process, Step, Example, Warning, Statistic, Source, Quote, Counterpoint, and Uncertainty."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "identify-content-gaps",
+      "title": "18. Identify Content Gaps"
+    },
+    {
+      "type": "paragraph",
+      "content": "Distinguish a Research Gap (missing evidence needing sourcing) from a Content Gap (verified topic ready to be drafted)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "build-content-brief",
+      "title": "19. Turn Research Into a Content Brief"
+    },
+    {
+      "type": "paragraph",
+      "content": "Build content briefs containing purpose, audience, key questions, structure, verified facts with primary sources, FAQ opportunities, and update requirements."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-research-workflow",
+      "title": "20. AI Content Research Master Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "13-Stage Master Research Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Goal & Question"
+        },
+        {
+          "type": "process",
+          "label": "Source Discovery & Verification"
+        },
+        {
+          "type": "process",
+          "label": "Atom Extraction & Brief"
+        },
+        {
+          "type": "decision",
+          "label": "Human Editorial Review"
+        },
+        {
+          "type": "output",
+          "label": "Content Production"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "research-log",
+      "title": "21. Research Log"
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintain a research log to document Date, Question, Claim, Source URL, Access Date, Evidence, Verification Status, and Reviewer."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "research-traceability",
+      "title": "22. Research-to-Content Traceability"
+    },
+    {
+      "type": "workflow",
+      "title": "Traceability Linkage",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Content Claim"
+        },
+        {
+          "type": "process",
+          "label": "Research Evidence"
+        },
+        {
+          "type": "process",
+          "label": "Primary Source"
+        },
+        {
+          "type": "output",
+          "label": "Published Section"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "evergreen-research",
+      "title": "23. Research for Evergreen Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Separate stable evergreen principles from dynamic facts (statistics, prices, regulations). Dynamic facts require documented dates and recurring review schedules."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-research",
+      "title": "24. Research for Local Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Use city/county government portals, state agencies, and official local organizations. Verify location details and public resources against primary sources."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "risk-by-industry",
+      "title": "25. Research Risk by Industry"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "risk-industry-table",
+      "columns": [
+        "Industry",
+        "High-Risk Claim Areas",
+        "Required Verification"
+      ],
+      "rows": [
+        [
+          "Dental",
+          "Medical claims, treatment outcomes",
+          "Dentist professional review"
+        ],
+        [
+          "Law",
+          "Statutes, deadlines, jurisdiction rules",
+          "Licensed attorney review"
+        ],
+        [
+          "Real Estate",
+          "Market statistics, zoning, tax, Fair Housing",
+          "Broker / legal review"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-question-generator",
+      "title": "26. AI Research Prompt — Research Question Generator"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-q-gen-block",
+      "title": "AI Prompt Template: Research Question Generator",
+      "prompt": "You are helping a local business generate research questions for a content topic.\n\nBUSINESS TOPIC: [insert]\nAUDIENCE: [insert]\nBUSINESS GOAL: [insert]\n\nPlease:\n- Generate specific research questions breaking down this topic\n- Classify each question by type (definitional, procedural, local, regulatory)\n- Identify missing info needing investigation\n- Identify high-risk claim areas (legal, medical, financial, property)\n\nImportant instructions:\n- Do NOT answer the research questions yourself.\n- Do NOT invent evidence or claim search demand without data provided."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-source-discovery",
+      "title": "27. AI Research Prompt — Source Discovery Assistant"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-src-disc-block",
+      "title": "AI Prompt Template: Source Discovery Assistant",
+      "prompt": "You are helping a local business identify potential research directions for a content topic.\n\nTOPIC: [insert]\nINDUSTRY: [insert]\nGEOGRAPHIC SCOPE: [insert]\n\nPlease identify:\n- Likely categories of authoritative sources\n- Types of credible organizations\n- Useful search directions or terminology\n- Potential primary-source opportunities\n\nImportant instructions:\n- State clearly: \"These are research directions, not verified sources\"\n- Do NOT fabricate specific URLs or claims."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-source-analysis",
+      "title": "28. AI Research Prompt — Source Analysis"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-src-analysis-block",
+      "title": "AI Prompt Template: Source Analysis Assistant",
+      "prompt": "You are helping a local business extract information from a supplied source document.\n\nSOURCE MATERIAL: [insert actual source text/document]\n\nPlease extract:\n- Key claims, facts, definitions, statistics with context, dates, qualifications, methodology, and limitations.\n\nImportant instructions:\n- Do NOT introduce info not present in the supplied source.\n- Preserve exact wording where precision matters (numbers, dates)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-claim-verification",
+      "title": "29. AI Research Prompt — Claim Verification"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-claim-verif-block",
+      "title": "AI Prompt Template: Claim Verification Auditor",
+      "prompt": "You are helping a local business assess the verification status of a specific claim.\n\nCLAIM: [insert specific claim]\nSOURCE: [insert source text]\nCONTEXT: [insert geographic scope, date, industry]\n\nClassify claim as: Verified, Partially Supported, Unsupported, Conflicting, or Needs Human Review.\n\nExplain classification with reference to source text. Do NOT classify as Verified based on plausibility alone."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-brief-generator",
+      "title": "30. AI Research Prompt — Content Brief Generator"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-brief-gen-block",
+      "title": "AI Prompt Template: Content Brief Generator",
+      "prompt": "You are helping a local business turn approved research findings into a structured content brief.\n\nAPPROVED RESEARCH FINDINGS: [insert verified facts, sources, and knowledge atoms]\n\nProduce a content brief with purpose, target audience, key questions, structure, verified facts with sources, FAQ opportunities, remaining gaps, and update requirements."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quality-checklist",
+      "title": "31. Research Quality Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Business goal, audience, and specific research question defined",
+        "Primary and authoritative sources prioritized and URLs/dates recorded",
+        "Important claims supported by genuine sources and dynamic facts dated",
+        "Conflicting sources identified and documented",
+        "AI did not invent URLs, citations, or unsupported claims",
+        "High-risk medical, legal, financial, or regulatory claims reviewed by qualified professionals",
+        "Research log complete with reviewer assigned"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-dental-example",
+      "title": "32. Hypothetical Research Example (Dental)"
+    },
+    {
+      "type": "workflow",
+      "title": "Dental Research Case Study",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Patient Education Question"
+        },
+        {
+          "type": "process",
+          "label": "Dental Association Guidance"
+        },
+        {
+          "type": "decision",
+          "label": "Verify Primary Source"
+        },
+        {
+          "type": "output",
+          "label": "Brief with Clinical Disclaimer"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-law-example",
+      "title": "33. Hypothetical Law Example"
+    },
+    {
+      "type": "workflow",
+      "title": "Legal Notice Research Case Study",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Response Deadline Question"
+        },
+        {
+          "type": "process",
+          "label": "State Court Primary Statutes"
+        },
+        {
+          "type": "decision",
+          "label": "Attorney Jurisdiction Review"
+        },
+        {
+          "type": "output",
+          "label": "Jurisdiction-Specific Brief"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-real-estate-example",
+      "title": "34. Hypothetical Real Estate Example"
+    },
+    {
+      "type": "workflow",
+      "title": "First-Time Buyer Research Case Study",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Homebuyer Questions"
+        },
+        {
+          "type": "process",
+          "label": "Verified Local Practice Data"
+        },
+        {
+          "type": "decision",
+          "label": "Fact-Check Market Figures"
+        },
+        {
+          "type": "output",
+          "label": "Buyer Educational Brief"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "research-repurposing",
+      "title": "35. Research-to-Content Repurposing"
+    },
+    {
+      "type": "workflow",
+      "title": "Research Atom Repurposing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Verified Research Atoms"
+        },
+        {
+          "type": "process",
+          "label": "Master Guide"
+        },
+        {
+          "type": "process",
+          "label": "FAQ & Checklist"
+        },
+        {
+          "type": "output",
+          "label": "Newsletter & Video Outline"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "36. 30-Day AI Content Research Implementation Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Research Implementation Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Build Source Library & Log",
+          "content": "Set up Source Library and Research Log tracking templates."
+        },
+        {
+          "title": "Week 2 — Research One Core Topic",
+          "content": "Execute full workflow for a single high-priority business topic."
+        },
+        {
+          "title": "Week 3 — Build Brief & Draft Article",
+          "content": "Produce a verified content brief and completed draft for review."
+        },
+        {
+          "title": "Week 4 — Standardize Prompts & Governance",
+          "content": "Adapt prompt templates and assign research log ownership."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-quality",
+      "title": "37. Measuring Research Quality"
+    },
+    {
+      "type": "paragraph",
+      "content": "Track source coverage, verified claim rate, unsupported claim rate caught during review, Tier 1 source ratio, and published content traceability."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "38. Common AI Content Research Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "12 Common AI Research Mistakes",
+      "content": "1. Asking AI for facts and copying the answer\n2. Treating AI citations as automatically valid\n3. Not opening source URLs\n4. Using low-quality sources for high-risk claims\n5. Ignoring publication dates and geographic scope\n6. Ignoring conflicting sources\n7. Asking AI to fill missing information\n8. Removing important qualifications during summarization\n9. Researching only keywords without business goal or audience\n10. Using confidential customer information in AI prompts\n11. Publishing high-risk claims without expert review\n12. Failing to maintain research or log sources"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "39. What AI Can and Cannot Do in Content Research"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Generate research questions and cluster topics",
+        "Summarize supplied source documents",
+        "Compare multiple text sources systematically",
+        "Classify claims by verification status",
+        "Format content briefs and research logs"
+      ],
+      "cons": [
+        "Cannot guarantee factual, legal, medical, financial, or local accuracy",
+        "Cannot validate third-party source authenticity",
+        "Cannot replace domain expert review",
+        "Cannot guarantee search rankings, citations, or leads"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "40. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Evidence-First Discipline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Question"
+        },
+        {
+          "type": "process",
+          "label": "Source & Verify"
+        },
+        {
+          "type": "decision",
+          "label": "Review"
+        },
+        {
+          "type": "output",
+          "label": "Create"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "41. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "AI Content Research Questions & Answers",
+      "items": [
+        {
+          "question": "What is AI-assisted content research?",
+          "answer": "AI-assisted content research uses AI to help generate questions, organize info, summarize sources, compare findings, and format content briefs, while humans verify claims and select authoritative sources."
+        },
+        {
+          "question": "Is AI-generated research automatically reliable?",
+          "answer": "No. AI can generate plausible-sounding but fabricated facts and citations. Independent human verification against primary sources is mandatory before publication."
+        },
+        {
+          "question": "What is the difference between content research and keyword research?",
+          "answer": "Keyword research asks \"what are people searching for?\" Content research asks \"what does the audience need to understand?\" The two complement each other for a complete content strategy."
+        },
+        {
+          "question": "Should confidential client information be used in AI research?",
+          "answer": "No. Never enter confidential client or private transaction information into general-purpose AI tools."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "42. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "43. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Brief Workflow for Local Businesses",
+      "url": "ai-content-brief-workflow-local-businesses.html",
+      "description": "Research directly feeds into building structured content briefs."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI FAQ Research Workflow for Local Businesses",
+      "url": "ai-faq-research-workflow-local-businesses.html",
+      "description": "Specialized research workflow for customer FAQs."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Competitor Content Gap Analysis Workflow",
+      "url": "ai-competitor-content-gap-analysis-workflow.html",
+      "description": "Competitor gap analysis is a core component of audience content research."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Research & Ethics Citations",
+      "items": [
+        "Wikipedia — \"Mata v. Avianca, Inc.\" — https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc. — Supports description of court sanctions for AI-generated fabricated case citations.",
+        "Google for Developers — \"Creating Helpful, Reliable, People-First Content\" — https://developers.google.com/search/docs/fundamentals/creating-helpful-content — Supports YMYL and content quality evaluation principles.",
+        "American Bar Association — \"ABA issues first ethics guidance on a lawyer's use of AI tools\" — https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/ — Supports professional responsibility requirements for AI verification."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-content-brief-workflow-local-businesses.html",
+      "ai-faq-research-workflow-local-businesses.html",
+      "ai-competitor-content-gap-analysis-workflow.html"
+    ]
+  }
+}

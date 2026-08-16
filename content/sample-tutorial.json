@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-client-intake-law-firms-tutorial",
+  "type": "tutorial",
+  "status": "draft",
+  "metadata": {
+    "title": "Setting Up Confidential AI Client Intake Triage for Law Firms",
+    "description": "A step-by-step technical walkthrough for solo attorneys and boutique law firms on creating confidential AI inquiry triage forms.",
+    "category": "Tutorials & SOPs",
+    "industry": "law",
+    "difficulty": "beginner",
+    "readingTime": 7,
+    "publishedAt": null,
+    "updatedAt": "2026-08-10T10:15:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Legal Technology Operations Specialist"
+  },
+  "seo": {
+    "title": "Setting Up Confidential AI Client Intake Triage for Law Firms | Locatria",
+    "description": "Step-by-step tutorial for law firms to automate confidential client intake form triage and conflict check screening.",
+    "canonical": "https://locatria.com/knowledge/ai-client-intake-law-firms-tutorial",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "Law Firm AI Client Intake Triage",
+    "audience": [
+      "Solo Attorneys",
+      "Law Firm Managing Partners",
+      "Legal Practice Managers"
+    ],
+    "industries": [
+      "Law Firms",
+      "Legal Services"
+    ],
+    "entities": [
+      "Attorney-Client Privilege",
+      "Conflict of Interest Check",
+      "Client Intake Automation"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways for Legal Practices",
+      "items": [
+        "Confidential intake forms capture essential matter details before attorney consultation.",
+        "System prompts must explicitly state that automated triage does not create an attorney-client relationship.",
+        "Conflict screening remains a required manual step performed by firm staff."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "tutorial-overview",
+      "title": "1. Tutorial Overview & Legal Boundaries"
+    },
+    {
+      "type": "paragraph",
+      "content": "Boutique law firms receive numerous inquiries weekly that require immediate screening for practice area fit and basic case details. Configuring a zero-code AI form triage assistant streamlines client onboarding."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Ethics & Confidentiality Disclaimer",
+      "content": "Ensure your form submission header clearly states that submitting information does not constitute legal representation or establish attorney-client privilege."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "step-by-step-setup",
+      "title": "2. Step-by-Step Configuration Walkthrough"
+    },
+    {
+      "type": "stepByStep",
+      "title": "3-Step Setup Procedure",
+      steps": [
+        {
+          "title": "Create Website Form Fields",
+          "content": "Add standard fields: Full Name, Opposing Party Name, Contact Email, Practice Area, and Brief Description."
+        },
+        {
+          "title": "Embed Triage System Prompt",
+          "content": "Input system guardrails instructing the AI model to categorize case urgency and flag potential conflict parties."
+        },
+        {
+          "title": "Configure Internal Email Triage",
+          "content": "Set automated email notifications to deliver qualified inquiry summaries directly to the intake paralegal."
+        }
+      ]
+    },
+    {
+      "type": "screenshot",
+      "step": 2,
+      "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+      "alt": "Form Triage Settings Screen",
+      "caption": "Step 2: Configuring confidential intake guardrails in the assistant settings panel."
+    },
+    {
+      "type": "example",
+      "title": "Example: Personal Injury Case Triage",
+      "context": "Prospective client submits form regarding auto accident",
+      "content": "AI Output: 'Categorized as Personal Injury (Auto). Incident Date: Aug 2, 2026. Opposing party named. Summary prepared for Paralegal review.'"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "id": "launch-readiness",
+      "title": "3. Launch Readiness Verification"
+    },
+    {
+      "type": "checklist",
+      "title": "Law Firm Intake Launch Checklist",
+      "items": [
+        {
+          "label": "Non-representation disclaimer placed visibly above submit button",
+          "checked": true
+        },
+        {
+          "label": "Opposing party field set as mandatory for conflict check screening",
+          "checked": true
+        },
+        {
+          "label": "Zero-data retention privacy setting enabled with form provider",
+          "checked": false
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedArticles": [
+      "ai-patient-intake-dental-clinics",
+      "ai-local-seo-real-estate-guide"
+    ],
+    "relatedGuides": [
+      "law-firm-ai-automation-track"
+    ],
+    "previous": "legal-privacy-fundamentals",
+    "next": "automating-legal-document-drafting"
+  }
+}

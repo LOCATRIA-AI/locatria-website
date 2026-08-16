@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-patient-intake-dental-clinics",
+  "type": "guide",
+  "status": "draft",
+  "metadata": {
+    "title": "HIPAA-Compliant AI Patient Intake Blueprint for Dental Clinics",
+    "description": "A practical zero-code guide for dental practice owners on setting up 24/7 patient intake triage without violating privacy rules.",
+    "category": "Guides & Blueprints",
+    "industry": "dental",
+    "difficulty": "beginner",
+    "readingTime": 8,
+    "publishedAt": null,
+    "updatedAt": "2026-08-08T15:30:00Z"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Healthcare AI Systems Specialist"
+  },
+  "seo": {
+    "title": "HIPAA-Compliant AI Patient Intake Blueprint for Dental Clinics | Locatria",
+    "description": "Practical guide for dental practices to implement AI patient intake triage and reduce appointment no-shows safely.",
+    "canonical": "https://locatria.com/knowledge/ai-patient-intake-dental-clinics",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "primaryTopic": "Dental Practice AI Patient Intake",
+    "audience": [
+      "Dental Practice Owners",
+      "Clinic Office Managers",
+      "Dental Operations Staff"
+    ],
+    "industries": [
+      "Dental Practices",
+      "Healthcare SMBs"
+    ],
+    "entities": [
+      "HIPAA Compliance",
+      "Patient Appointment Scheduling",
+      "Conversational AI Triage"
+    ]
+  },
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways for Dental Practices",
+      "items": [
+        "Automated after-hours triage captures patient inquiries immediately when your reception desk is closed.",
+        "Zero-data retention agreements with commercial AI providers prevent HIPAA protected health information (PHI) leaks.",
+        "Human office staff maintain full control over final appointment confirmations and clinical decisions."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-dental-ai-matters",
+      "title": "1. Why Dental Practices Need Automated Intake Triage"
+    },
+    {
+      "type": "paragraph",
+      "content": "Dental practices lose significant prospective patient volume when after-hours emergency inquiries go directly to an unmonitored voicemail. An automated intake assistant answers routine questions instantly, qualifies appointment urgency, and alerts staff on duty."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Operational Insight",
+      "content": "Responding to patient appointment inquiries within 5 minutes significantly improves booking conversion rates compared to next-day follow-ups."
+    },
+    {
+      "type": "definition",
+      "term": "Zero Data Retention (ZDR)",
+      "definition": "A contractual agreement with AI software providers ensuring patient conversation logs are not stored or used to train public machine learning models.",
+      "example": "Enterprise settings on ChatGPT Team and Claude for Work."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "implementation-blueprint",
+      "title": "2. Step-by-Step Implementation Blueprint"
+    },
+    {
+      "type": "stepByStep",
+      "title": "3-Step Practice Deployment Guide",
+      steps": [
+        {
+          "title": "Audit Common Reception Questions",
+          "content": "Compile top 10 patient questions (insurance acceptance, office hours, emergency dental policies) into a structured FAQ document."
+        },
+        {
+          "title": "Configure System Guardrails",
+          "content": "Instruct your AI intake prompt never to provide binding clinical diagnoses or prescribe treatments."
+        },
+        {
+          "title": "Connect Web Form & Reception Alerts",
+          "content": "Route qualified patient inquiry summaries directly to your front desk email for human confirmation."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Example: Emergency Toothache Qualification",
+      "context": "Patient submits weekend website inquiry about sudden tooth pain",
+      "content": "AI assistant identifies emergency flags (swelling, fever) and directs patient to call emergency line immediately while alerting on-call staff."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-library",
+      "title": "3. Dental Reception AI System Prompt"
+    },
+    {
+      "type": "promptBlock",
+      "title": "System Prompt • Dental Intake Assistant",
+      "prompt": "You are a polite, professional receptionist for [Clinic Name] located in [City, State].\n1. Greet the patient warmly.\n2. Answer routine questions using strictly the provided Knowledge Base.\n3. Collect Patient Name, Phone Number, and Primary Dental Concern.\n4. If the patient mentions severe pain or swelling, instruct them to call our emergency line.\n5. Never offer clinical diagnoses or prescribe treatments."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "compliance-checklist",
+      "title": "4. Dental AI Compliance Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "HIPAA & Operational Readiness Checklist",
+      "items": [
+        {
+          "label": "Business Associate Agreement (BAA) signed with AI software vendor",
+          "checked": true
+        },
+        {
+          "label": "Zero Data Retention (ZDR) toggled ON in enterprise admin panel",
+          "checked": true
+        },
+        {
+          "label": "Front desk staff trained on reviewing AI inquiry summaries",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-matrix",
+      "title": "5. Manual Reception vs AI Intake Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "columns": [
+        "Manual Voicemail",
+        "Locatria AI Triage"
+      ],
+      "rows": [
+        {
+          "criteria": "Response Time",
+          "values": [
+            "12 - 24 Hours",
+            "< 10 Seconds"
+          ]
+        },
+        {
+          "criteria": "After-Hours Coverage",
+          "values": [
+            "Voicemail Only",
+            "24/7 Live Qualification"
+          ]
+        },
+        {
+          "criteria": "Monthly Software Overhead",
+          "values": [
+            "$0",
+            "$20 - $50"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "relatedArticle",
+      "title": "Confidential Client Triage for Service SMBs",
+      "url": "article.html"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "Dental Practice AI Automation Track",
+      "description": "Complete 4-module structured learning path for dental office managers.",
+      "url": "article.html"
+    }
+  ],
+  "relationships": {
+    "relatedArticles": [
+      "ai-client-triage-legal-medical",
+      "dental-no-show-reduction-guide"
+    ],
+    "relatedGuides": [
+      "dental-clinic-automation-track"
+    ],
+    "previous": "getting-started-with-local-ai",
+    "next": "advanced-prompting-for-dental-practices"
+  }
+}

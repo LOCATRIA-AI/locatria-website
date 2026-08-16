@@ -1,0 +1,1608 @@
+{
+  "id": "ai-visibility-checklist-law-firms",
+  "type": "checklist",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "AI Visibility Checklist for Law Firms",
+    "subtitle": "A practical diagnostic tool for auditing whether a law firm's publicly available information is clear, consistent, and easy for both people and AI-assisted search systems to understand.",
+    "industry": "law-firms",
+    "difficulty": "beginner",
+    "readingTimeMinutes": 22,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Law firm owners",
+      "Managing partners",
+      "Solo attorneys",
+      "Small and local law firms",
+      "Attorneys responsible for marketing",
+      "Legal marketing teams",
+      "Law firm operations staff"
+    ],
+    "primaryTopic": "AI Visibility Checklist for Law Firms"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/ai-visibility-checklist-law-firms.html",
+    "metaDescription": "A practical diagnostic checklist for auditing law firm online information clarity, local signals, structured data, and AI search readiness.",
+    "openGraph": {
+      "title": "AI Visibility Checklist for Law Firms | Locatria",
+      "description": "A practical diagnostic checklist for auditing law firm online information clarity, local signals, structured data, and AI search readiness.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Visibility Checklist for Law Firms",
+    "industryFocus": "law-firms"
+  },
+  "featured": true,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "AI Visibility is not something a law firm can simply \"turn on\" — it's the ongoing result of making the firm's information clear, consistent, trustworthy, structured, and easy to verify.",
+        "No firm, tool, or checklist can guarantee that any AI system will recommend, cite, rank, or display a law firm — AI systems control their own retrieval and ranking mechanisms, which are outside any individual firm's control.",
+        "This checklist evaluates 18 categories, from business identity to technical discoverability, and should be worked through using observable evidence, not assumptions about what \"probably\" exists.",
+        "Structured data, FAQ content, and consistent local information can all help make a firm's information easier to understand — none of them, individually or combined, guarantees a specific visibility outcome.",
+        "Google fully deprecated FAQ rich search results as of May 2026, after restricting them since 2023 — a reminder that specific technical tactics change over time, while clear, accurate, well-organized content remains the durable foundation.",
+        "The practical sequence for using this checklist is: audit, identify gaps, prioritize, improve, verify, and re-audit — this is a recurring discipline, not a one-time project."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction"
+    },
+    {
+      "type": "paragraph",
+      "content": "Prospective clients increasingly research a law firm through more than a single channel — search engines, Google Maps, legal directories, reviews, the firm's own website, and a growing layer of AI-powered search tools and conversational assistants that summarize information directly rather than presenting a list of links to click through."
+    },
+    {
+      "type": "paragraph",
+      "content": "A firm can be genuinely excellent at law and still be difficult to understand from the outside: an inconsistent business name across directories, a practice-area page that says almost nothing, attorney information that's years out of date, or FAQ content that never actually addresses what a worried prospective client wants to know. None of these problems reflect a lack of legal skill — they reflect a gap in how clearly that skill is communicated."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "No Outcome Guarantees",
+      "content": "This checklist is built to help close that gap. It can tell a firm where its information is clear, consistent, and well-supported, and where it's thin, contradictory, or simply missing. It cannot tell a firm that completing every item will produce a specific search ranking, an AI citation, or a new client — no honest resource can promise that."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-ai-visibility",
+      "title": "2. What Is AI Visibility for a Law Firm?"
+    },
+    {
+      "type": "paragraph",
+      "content": "For the purposes of this checklist, <strong>AI Visibility</strong> means: the degree to which a law firm's publicly available information is clear, consistent, useful, structured, trustworthy, and discoverable enough for search engines and AI-powered systems to potentially understand the firm correctly."
+    },
+    {
+      "type": "definitions",
+      "id": "foundational-questions",
+      "title": "7 Foundational Questions for Law Firm AI Visibility",
+      "items": [
+        {
+          "term": "Who are you?",
+          "definition": "Official firm name, entity structure, and brand clarity."
+        },
+        {
+          "term": "What do you do?",
+          "definition": "Specific practice areas and clear legal service scope."
+        },
+        {
+          "term": "Where do you operate?",
+          "definition": "Physical office location and explicitly defined service area."
+        },
+        {
+          "term": "Who do you serve?",
+          "definition": "Target audience (individuals, families, small businesses)."
+        },
+        {
+          "term": "What problems do you address?",
+          "definition": "Specific legal situations and client concerns handled."
+        },
+        {
+          "term": "What topics do you have expertise in?",
+          "definition": "Depth of educational and practice-area content."
+        },
+        {
+          "term": "How can someone verify this?",
+          "definition": "Bar credentials, directory consistency, and authoritative citations."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-to-use",
+      "title": "3. How to Use This Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "PASS — this is clearly and verifiably in place",
+        "PARTIAL — this exists but has meaningful gaps or inconsistencies",
+        "FAIL — this is missing or clearly incorrect",
+        "N/A — not applicable to this firm's specific situation"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "evidence-first",
+      "title": "4. Evidence-First Auditing"
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "Evidence Over Assumptions",
+      "content": "One rule matters more than any other in this entire process: do not mark an item \"Pass\" because the firm assumes it's true. A checklist item should be supported by observable evidence, not a general impression.\n\nBad: \"We probably have this.\"\nGood: \"The firm's official website, at [specific page], clearly displays this information, confirmed on [date].\""
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "business-identity",
+      "title": "5. Business Identity Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "business-identity-chk",
+      "title": "Category 1: Business Identity Checklist",
+      "items": [
+        {
+          "label": "Official law firm name is clearly and consistently stated",
+          "checked": true
+        },
+        {
+          "label": "Business name is used consistently across all major public sources",
+          "checked": true
+        },
+        {
+          "label": "A clear, plain-language description of the firm exists",
+          "checked": true
+        },
+        {
+          "label": "The firm's business category (e.g., \"Law Firm,\" \"Attorney\") is correctly set on business profiles",
+          "checked": true
+        },
+        {
+          "label": "Website is easy to find and clearly represents the firm",
+          "checked": true
+        },
+        {
+          "label": "Phone number is easy to find",
+          "checked": true
+        },
+        {
+          "label": "Physical address (or clear statement of virtual/remote practice) is easy to find",
+          "checked": true
+        },
+        {
+          "label": "General contact information is easy to find",
+          "checked": true
+        },
+        {
+          "label": "Official domain is used consistently across marketing materials",
+          "checked": true
+        },
+        {
+          "label": "Firm identity is not contradicted anywhere across public sources",
+          "checked": true
+        },
+        {
+          "label": "The distinction between the firm and individual attorneys is clear where relevant",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "location-signals",
+      "title": "6. Location & Local Signals Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "location-signals-chk",
+      "title": "Category 2: Location & Local Signals Checklist",
+      "items": [
+        {
+          "label": "Physical office address is clearly stated, where applicable",
+          "checked": true
+        },
+        {
+          "label": "City and state are clearly stated",
+          "checked": true
+        },
+        {
+          "label": "Service area is explicitly described, separate from office location",
+          "checked": true
+        },
+        {
+          "label": "Multiple office locations, if any, are each clearly listed",
+          "checked": true
+        },
+        {
+          "label": "Location-specific pages exist where the firm serves multiple distinct areas",
+          "checked": true
+        },
+        {
+          "label": "Address information is consistent across sources",
+          "checked": true
+        },
+        {
+          "label": "Phone information is consistent across sources",
+          "checked": true
+        },
+        {
+          "label": "Google Business Profile (or equivalent) is claimed and complete",
+          "checked": true
+        },
+        {
+          "label": "Map information or directions are available where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Service-area boundaries are described clearly",
+          "checked": true
+        },
+        {
+          "label": "Location references are consistent across all major public sources",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "practice-areas",
+      "title": "7. Practice Area Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "practice-areas-chk",
+      "title": "Category 3: Practice Area Checklist",
+      "items": [
+        {
+          "label": "Practice areas are clearly and specifically listed",
+          "checked": true
+        },
+        {
+          "label": "Each major practice area has a dedicated page or clearly defined section",
+          "checked": true
+        },
+        {
+          "label": "Practice-area terminology is understandable to a layperson",
+          "checked": true
+        },
+        {
+          "label": "Descriptions of the same practice area are consistent across pages",
+          "checked": true
+        },
+        {
+          "label": "No page contradicts another regarding practice-area scope",
+          "checked": true
+        },
+        {
+          "label": "The scope of each practice area is clearly bounded",
+          "checked": true
+        },
+        {
+          "label": "The relationship between practice areas and specific services is clear",
+          "checked": true
+        },
+        {
+          "label": "Appropriate supporting content exists for major practice areas",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "attorney-info",
+      "title": "8. Attorney Information Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "attorney-info-chk",
+      "title": "Category 4: Attorney Information Checklist",
+      "items": [
+        {
+          "label": "Attorney names are clearly listed where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Professional roles are clearly stated",
+          "checked": true
+        },
+        {
+          "label": "Attorney biographies exist and are current",
+          "checked": true
+        },
+        {
+          "label": "Each attorney's practice areas are clearly indicated",
+          "checked": true
+        },
+        {
+          "label": "Office location/assignment is clear for multi-location firms",
+          "checked": true
+        },
+        {
+          "label": "Relevant qualifications are accurately presented",
+          "checked": true
+        },
+        {
+          "label": "Relevant professional experience is accurately presented",
+          "checked": true
+        },
+        {
+          "label": "Professional credentials are accurately presented",
+          "checked": true
+        },
+        {
+          "label": "Bar admission information is presented where appropriate and already public",
+          "checked": true
+        },
+        {
+          "label": "Attorney information is consistent across sources",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "website-structure",
+      "title": "9. Website Structure Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "website-structure-chk",
+      "title": "Category 5: Website Structure Checklist",
+      "items": [
+        {
+          "label": "Navigation is clear and logically organized",
+          "checked": true
+        },
+        {
+          "label": "The homepage clearly identifies who the firm is and what it does",
+          "checked": true
+        },
+        {
+          "label": "Practice areas are structured clearly within the site's navigation",
+          "checked": true
+        },
+        {
+          "label": "URLs are readable and reasonably descriptive",
+          "checked": true
+        },
+        {
+          "label": "Page titles are descriptive",
+          "checked": true
+        },
+        {
+          "label": "Headings are used clearly and hierarchically",
+          "checked": true
+        },
+        {
+          "label": "Content hierarchy is logical",
+          "checked": true
+        },
+        {
+          "label": "Internal links connect related pages",
+          "checked": true
+        },
+        {
+          "label": "Contact information is easy to find from any page",
+          "checked": true
+        },
+        {
+          "label": "Content is accessible as real, readable text",
+          "checked": true
+        },
+        {
+          "label": "The site is usable on mobile devices",
+          "checked": true
+        },
+        {
+          "label": "Important public content is indexable",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "service-pages",
+      "title": "10. Practice-Area / Service Page Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "service-pages-chk",
+      "title": "Category 6: Service Page Checklist",
+      "items": [
+        {
+          "label": "Each practice area explains what it means in plain language",
+          "checked": true
+        },
+        {
+          "label": "Each practice area explains what problems it addresses",
+          "checked": true
+        },
+        {
+          "label": "Each practice area explains who the firm generally serves",
+          "checked": true
+        },
+        {
+          "label": "Each practice area explains its geographic scope",
+          "checked": true
+        },
+        {
+          "label": "Common prospective-client questions are addressed",
+          "checked": true
+        },
+        {
+          "label": "Specific services within the practice area are listed",
+          "checked": true
+        },
+        {
+          "label": "Relevant attorney expertise is connected to the page",
+          "checked": true
+        },
+        {
+          "label": "Related educational resources are linked",
+          "checked": true
+        },
+        {
+          "label": "An appropriate next step is provided",
+          "checked": true
+        },
+        {
+          "label": "No legal guarantees or promised outcomes are implied",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "client-questions",
+      "title": "11. Client Questions Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "client-questions-chk",
+      "title": "Category 7: Client Questions Checklist",
+      "items": [
+        {
+          "label": "Common, genuinely recurring questions are addressed",
+          "checked": true
+        },
+        {
+          "label": "Beginner-level questions are addressed",
+          "checked": true
+        },
+        {
+          "label": "Unfamiliar terminology is explained",
+          "checked": true
+        },
+        {
+          "label": "General process questions are addressed",
+          "checked": true
+        },
+        {
+          "label": "Preparation-related questions are addressed",
+          "checked": true
+        },
+        {
+          "label": "Service-specific questions are addressed",
+          "checked": true
+        },
+        {
+          "label": "Geographic/jurisdiction-specific questions are addressed where relevant",
+          "checked": true
+        },
+        {
+          "label": "Questions are connected to the relevant practice area",
+          "checked": true
+        },
+        {
+          "label": "Case-specific questions are clearly distinguished from educational ones",
+          "checked": true
+        },
+        {
+          "label": "No individualized legal advice is published as FAQ content",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "educational-content",
+      "title": "12. Educational Content Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "educational-content-chk",
+      "title": "Category 8: Educational Content Checklist",
+      "items": [
+        {
+          "label": "Genuinely useful articles exist for core practice areas",
+          "checked": true
+        },
+        {
+          "label": "Comprehensive guides exist for major topics where appropriate",
+          "checked": true
+        },
+        {
+          "label": "FAQ content exists and is organized logically",
+          "checked": true
+        },
+        {
+          "label": "Checklists exist where genuinely helpful",
+          "checked": true
+        },
+        {
+          "label": "Glossary content exists for unfamiliar terminology",
+          "checked": true
+        },
+        {
+          "label": "Topic coverage reflects the firm's actual expertise",
+          "checked": true
+        },
+        {
+          "label": "Content has appropriate depth",
+          "checked": true
+        },
+        {
+          "label": "Content connects to related resources",
+          "checked": true
+        },
+        {
+          "label": "Author/reviewer information is available where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Sources are of appropriate quality",
+          "checked": true
+        },
+        {
+          "label": "Factual claims have been verified",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "topical-relevance",
+      "title": "13. Topical Relevance Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "topical-relevance-chk",
+      "title": "Category 9: Topical Relevance Checklist",
+      "items": [
+        {
+          "label": "Core topics connected to each practice area are covered",
+          "checked": true
+        },
+        {
+          "label": "Supporting/adjacent topics are addressed",
+          "checked": true
+        },
+        {
+          "label": "Related questions are covered",
+          "checked": true
+        },
+        {
+          "label": "Terminology is used consistently",
+          "checked": true
+        },
+        {
+          "label": "Educational depth is proportionate to topic importance",
+          "checked": true
+        },
+        {
+          "label": "Internal links connect topically related content",
+          "checked": true
+        },
+        {
+          "label": "Related resources are cross-referenced",
+          "checked": true
+        },
+        {
+          "label": "No large gaps exist in core topic coverage",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "structured-data",
+      "title": "14. Structured Data Checklist"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "2026 FAQPage Structured Data Deprecation Notice",
+      "content": "Google fully deprecated FAQ rich search results as of May 2026, after restricting them since 2023. FAQPage markup remains technically valid schema.org, but it no longer produces visible rich results in search. Retain it if helpful for machine readability, but do not rely on it for rich snippet visibility."
+    },
+    {
+      "type": "checklist",
+      "id": "structured-data-chk",
+      "title": "Category 10: Structured Data Checklist",
+      "items": [
+        {
+          "label": "Structured data is implemented where genuinely appropriate (e.g., LegalService, Organization)",
+          "checked": true
+        },
+        {
+          "label": "Structured data matches visible page content",
+          "checked": true
+        },
+        {
+          "label": "Required properties are present for each schema type used",
+          "checked": true
+        },
+        {
+          "label": "Markup has been validated with a current testing tool",
+          "checked": true
+        },
+        {
+          "label": "Information in the markup is accurate and current",
+          "checked": true
+        },
+        {
+          "label": "Markup is reviewed after major business changes",
+          "checked": true
+        },
+        {
+          "label": "FAQPage markup, if used, is not relied upon for visible rich results (deprecated as of 2026)",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "reviews-reputation",
+      "title": "15. Reviews & Reputation Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "reviews-reputation-chk",
+      "title": "Category 11: Reviews & Reputation Checklist",
+      "items": [
+        {
+          "label": "Active, monitored public review presence exists",
+          "checked": true
+        },
+        {
+          "label": "Review information is consistent with other public sources",
+          "checked": true
+        },
+        {
+          "label": "A review response process exists and is followed",
+          "checked": true
+        },
+        {
+          "label": "Responses never confirm client identity",
+          "checked": true
+        },
+        {
+          "label": "No fabricated reviews exist",
+          "checked": true
+        },
+        {
+          "label": "No review manipulation is used",
+          "checked": true
+        },
+        {
+          "label": "Public responses never discuss confidential case details",
+          "checked": true
+        },
+        {
+          "label": "Responses maintain a professional tone",
+          "checked": true
+        },
+        {
+          "label": "Reputation is monitored on an ongoing basis",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "trust-credibility",
+      "title": "16. Trust & Credibility Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "trust-credibility-chk",
+      "title": "Category 12: Trust & Credibility Checklist",
+      "items": [
+        {
+          "label": "Attorney biographies are genuine, complete, and current",
+          "checked": true
+        },
+        {
+          "label": "Professional credentials are accurate",
+          "checked": true
+        },
+        {
+          "label": "Firm information is presented clearly",
+          "checked": true
+        },
+        {
+          "label": "Contact information is clear and current",
+          "checked": true
+        },
+        {
+          "label": "Editorial/reviewer information exists where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Citations reference authoritative sources",
+          "checked": true
+        },
+        {
+          "label": "Appropriate disclaimers exist where relevant",
+          "checked": true
+        },
+        {
+          "label": "Firm ownership and identity are transparent",
+          "checked": true
+        },
+        {
+          "label": "Information is consistent everywhere it appears",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-freshness",
+      "title": "17. Content Freshness & Maintenance Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "content-freshness-chk",
+      "title": "Category 13: Content Freshness & Maintenance Checklist",
+      "items": [
+        {
+          "label": "Publication dates are shown where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Last-reviewed dates are tracked",
+          "checked": true
+        },
+        {
+          "label": "Statistics referenced are current",
+          "checked": true
+        },
+        {
+          "label": "Legal references are current",
+          "checked": true
+        },
+        {
+          "label": "No broken links exist in important content",
+          "checked": true
+        },
+        {
+          "label": "Terminology used is current",
+          "checked": true
+        },
+        {
+          "label": "Content reflects current firm information",
+          "checked": true
+        },
+        {
+          "label": "Practice-area content is updated as the firm's practice changes",
+          "checked": true
+        },
+        {
+          "label": "FAQ content is periodically reviewed",
+          "checked": true
+        },
+        {
+          "label": "Attorney information is kept current",
+          "checked": true
+        },
+        {
+          "label": "Location information is kept current",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "external-consistency",
+      "title": "18. External Information Consistency Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "external-consistency-chk",
+      "title": "Category 14: External Information Consistency Checklist",
+      "items": [
+        {
+          "label": "Firm name is consistent across website, profiles, and directories",
+          "checked": true
+        },
+        {
+          "label": "Address is consistent across all sources",
+          "checked": true
+        },
+        {
+          "label": "Phone number is consistent across all sources",
+          "checked": true
+        },
+        {
+          "label": "Website URL is consistent across all sources",
+          "checked": true
+        },
+        {
+          "label": "Practice areas are consistently described across sources",
+          "checked": true
+        },
+        {
+          "label": "Office locations are consistently described across sources",
+          "checked": true
+        },
+        {
+          "label": "Attorney information is consistent across sources",
+          "checked": true
+        },
+        {
+          "label": "Legal directory listings are accurate",
+          "checked": true
+        },
+        {
+          "label": "Social media profiles are consistent with official information",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-readiness",
+      "title": "19. AI Search Readiness Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "ai-readiness-chk",
+      "title": "Category 15: AI Search Readiness Checklist",
+      "items": [
+        {
+          "label": "Entity identity is clear and consistent everywhere",
+          "checked": true
+        },
+        {
+          "label": "Practice areas are clearly and specifically described",
+          "checked": true
+        },
+        {
+          "label": "Location and service area are clear",
+          "checked": true
+        },
+        {
+          "label": "Attorney information is clear and current",
+          "checked": true
+        },
+        {
+          "label": "Genuine questions are addressed with genuine answers",
+          "checked": true
+        },
+        {
+          "label": "Educational content is useful, not filler",
+          "checked": true
+        },
+        {
+          "label": "Content is reasonably well-structured",
+          "checked": true
+        },
+        {
+          "label": "Content references authoritative sources where relevant",
+          "checked": true
+        },
+        {
+          "label": "External information is reasonably consistent",
+          "checked": true
+        },
+        {
+          "label": "Page structure is understandable",
+          "checked": true
+        },
+        {
+          "label": "Relationships between related topics are clear",
+          "checked": true
+        },
+        {
+          "label": "Content is kept reasonably current",
+          "checked": true
+        },
+        {
+          "label": "Information is generally trustworthy and verifiable",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "technical-discoverability",
+      "title": "20. Technical Discoverability Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "technical-discoverability-chk",
+      "title": "Category 16: Technical Discoverability Checklist",
+      "items": [
+        {
+          "label": "The site is crawlable",
+          "checked": true
+        },
+        {
+          "label": "Important pages are indexable",
+          "checked": true
+        },
+        {
+          "label": "Canonical URLs are used appropriately",
+          "checked": true
+        },
+        {
+          "label": "The site uses HTTPS",
+          "checked": true
+        },
+        {
+          "label": "The site is usable on mobile devices",
+          "checked": true
+        },
+        {
+          "label": "Page performance is reasonable",
+          "checked": true
+        },
+        {
+          "label": "Page titles are descriptive",
+          "checked": true
+        },
+        {
+          "label": "Meta descriptions are present and descriptive",
+          "checked": true
+        },
+        {
+          "label": "Headings are used correctly",
+          "checked": true
+        },
+        {
+          "label": "Internal links connect related content",
+          "checked": true
+        },
+        {
+          "label": "An XML sitemap exists where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Robots directives are configured intentionally",
+          "checked": true
+        },
+        {
+          "label": "Structured data has been validated",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-relationships",
+      "title": "21. Content Relationship Checklist"
+    },
+    {
+      "type": "workflow",
+      "title": "Contextual Content Relationship Chain",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Practice Area Page"
+        },
+        {
+          "type": "process",
+          "label": "Service Page & FAQ"
+        },
+        {
+          "type": "process",
+          "label": "Educational Guide"
+        },
+        {
+          "type": "output",
+          "label": "Glossary & Resources"
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "id": "content-relationships-chk",
+      "title": "Category 17: Content Relationship Checklist",
+      "items": [
+        {
+          "label": "Practice-area pages connect to related service pages",
+          "checked": true
+        },
+        {
+          "label": "Service pages connect to relevant FAQ content",
+          "checked": true
+        },
+        {
+          "label": "FAQ content connects to fuller educational guides where appropriate",
+          "checked": true
+        },
+        {
+          "label": "Educational guides connect to relevant glossary entries",
+          "checked": true
+        },
+        {
+          "label": "Glossary entries connect back to the content that uses those terms",
+          "checked": true
+        },
+        {
+          "label": "Related resources are cross-referenced meaningfully",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "maintenance-governance",
+      "title": "22. Maintenance & Governance Checklist"
+    },
+    {
+      "type": "checklist",
+      "id": "maintenance-governance-chk",
+      "title": "Category 18: Maintenance & Governance Checklist",
+      "items": [
+        {
+          "label": "A designated content owner exists",
+          "checked": true
+        },
+        {
+          "label": "A designated reviewer (typically an attorney) exists for legal content",
+          "checked": true
+        },
+        {
+          "label": "A recurring review schedule is established and followed",
+          "checked": true
+        },
+        {
+          "label": "An update process exists for when firm information changes",
+          "checked": true
+        },
+        {
+          "label": "Source tracking exists for research-based content",
+          "checked": true
+        },
+        {
+          "label": "A change log exists for significant content updates",
+          "checked": true
+        },
+        {
+          "label": "A defined process exists for handling outdated content",
+          "checked": true
+        },
+        {
+          "label": "The firm has an internal AI usage policy",
+          "checked": true
+        },
+        {
+          "label": "Confidentiality rules for AI tool use are documented",
+          "checked": true
+        },
+        {
+          "label": "An approval process exists before content is published",
+          "checked": true
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "master-checklist",
+      "title": "23. Complete Master Checklist"
+    },
+    {
+      "type": "paragraph",
+      "content": "The complete master checklist aggregates all 18 categories above into a unified audit document for comprehensive law firm review."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "scorecard",
+      "title": "24. AI Visibility Scorecard"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "scorecard-table",
+      "columns": [
+        "Category",
+        "Max Score",
+        "Pass (2 pts)",
+        "Partial (1 pt)",
+        "Fail (0 pt)"
+      ],
+      "rows": [
+        [
+          "1. Business Identity",
+          "22",
+          "11 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "2. Location & Local Signals",
+          "22",
+          "11 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "3. Practice Areas",
+          "16",
+          "8 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "4. Attorney Information",
+          "20",
+          "10 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "5. Website Structure",
+          "24",
+          "12 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "6. Service Pages",
+          "20",
+          "10 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "7. Client Questions",
+          "20",
+          "10 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "8. Educational Content",
+          "22",
+          "11 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "9. Topical Relevance",
+          "16",
+          "8 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "10. Structured Data",
+          "14",
+          "7 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "11. Reviews & Reputation",
+          "18",
+          "9 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "12. Trust & Credibility",
+          "18",
+          "9 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "13. Content Freshness & Maintenance",
+          "22",
+          "11 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "14. External Information Consistency",
+          "18",
+          "9 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "15. AI Search Readiness",
+          "26",
+          "13 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "16. Technical Discoverability",
+          "26",
+          "13 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "17. Content Relationships",
+          "12",
+          "6 items",
+          "0 items",
+          "0 items"
+        ],
+        [
+          "18. Maintenance & Governance",
+          "20",
+          "10 items",
+          "0 items",
+          "0 items"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "score-interpretation",
+      "title": "25. Score Interpretation"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "High Readiness — large majority score PASS; clear, consistent, well-maintained information.",
+        "Moderate Readiness — mix of PASS and PARTIAL items; solid foundation with room for improvement.",
+        "Needs Improvement — significant PARTIAL/FAIL items; core information gaps affect clarity.",
+        "Foundational Gaps — majority of FAIL items in core categories (Business Identity, Location, Practice Areas)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prioritization-matrix",
+      "title": "26. Prioritization Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "prioritization-matrix-table",
+      "columns": [
+        "Priority Level",
+        "Impact & Description",
+        "Example Action"
+      ],
+      "rows": [
+        [
+          "P1 — Critical",
+          "High impact, addresses foundational gap or inconsistency",
+          "Incorrect phone number across directories; missing practice page"
+        ],
+        [
+          "P2 — High",
+          "Meaningful impact, reasonable effort",
+          "Thin FAQ coverage for a core practice area"
+        ],
+        [
+          "P3 — Medium",
+          "Useful improvement, not urgent",
+          "Adding glossary entries for less common terms"
+        ],
+        [
+          "P4 — Later",
+          "Low urgency, minor refinement",
+          "Polishing internal linking on low-traffic page"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "27. 30-Day AI Visibility Improvement Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Roadmap to Improve Law Firm AI Visibility",
+      "steps": [
+        {
+          "title": "Week 1 — Foundation",
+          "content": "Business Identity, Location & Local Signals, External Information Consistency."
+        },
+        {
+          "title": "Week 2 — Core Content Structure",
+          "content": "Practice Areas, Service Pages, Attorney Information."
+        },
+        {
+          "title": "Week 3 — Depth & Trust",
+          "content": "Client Questions, Educational Content, Topical Relevance."
+        },
+        {
+          "title": "Week 4 — Technical & Governance",
+          "content": "Technical Discoverability, Structured Data, Maintenance & Governance, followed by re-audit."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-example",
+      "title": "28. Hypothetical Law Firm Audit Example"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "audit-example-table",
+      "columns": [
+        "Finding",
+        "Priority",
+        "Action Taken"
+      ],
+      "rows": [
+        [
+          "Inconsistent business name",
+          "P1",
+          "Standardized across website and Google Business Profile"
+        ],
+        [
+          "Missing second practice-area page",
+          "P1",
+          "Built dedicated page matching existing depth"
+        ],
+        [
+          "Outdated attorney biography",
+          "P1",
+          "Removed former attorney and updated bios"
+        ],
+        [
+          "No FAQ content",
+          "P2",
+          "Built initial FAQ content for both practice areas"
+        ],
+        [
+          "Address inconsistency",
+          "P1",
+          "Corrected directory listing"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-workflow",
+      "title": "29. AI-Assisted Visibility Audit Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "Human-Led, AI-Assisted Audit Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Collect Public Info"
+        },
+        {
+          "type": "process",
+          "label": "AI Analysis & Inconsistency Flagging"
+        },
+        {
+          "type": "decision",
+          "label": "Human Verification & Legal Review"
+        },
+        {
+          "type": "output",
+          "label": "Implement & Re-Audit"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-prompt",
+      "title": "30. AI Visibility Audit Prompt"
+    },
+    {
+      "type": "promptBlock",
+      "id": "audit-prompt-block",
+      "title": "AI Prompt Template: Law Firm AI Visibility Audit Assistant",
+      "prompt": "You are helping a law firm audit its publicly available online information using Locatria's AI Visibility Checklist framework.\n\nFIRM INFORMATION:\nFirm Name:\nWebsite:\nCity / Service Area:\nPractice Areas:\nAttorney Information (names, roles, as publicly listed):\nGoogle Business Profile Information:\nMajor Legal Directory Information:\nKey Website Pages:\nStructured Data Status, if known:\nReview / Reputation Notes:\nOther Relevant Public Information:\n\nPlease review this information and produce an audit that:\n- Organizes findings by category\n- Identifies inconsistencies across the sources provided\n- Clearly distinguishes confirmed facts from assumptions\n- Identifies missing information across each category\n- Identifies unclear or thin practice-area descriptions\n- Identifies location-related gaps\n- Identifies FAQ and educational content opportunities\n- Identifies trust and credibility gaps\n- Identifies technical questions requiring human/SEO review\n- Prioritizes improvements as P1 (Critical), P2 (High), P3 (Medium), or P4 (Later)\n- Flags any item requiring professional or attorney verification\n\nImportant instructions:\n- Use only the information supplied above; do not invent facts.\n- Clearly distinguish evidence from assumption throughout your response.\n- Do not provide legal advice or make legal conclusions.\n- Do not request or process any confidential client information.\n- Do not claim that fixing these issues guarantees search rankings or AI citations.\n- Do not invent citations or fabricate evidence for any finding."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "31. Common AI Visibility Checklist Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "20 Common Mistakes in Law Firm AI Visibility Auditing",
+      "content": "1. Treating AI Visibility as a ranking guarantee\n2. Focusing only on keywords\n3. Ignoring business identity consistency\n4. Ignoring location information\n5. Creating generic AI content\n6. Publishing unreviewed legal content\n7. Using confidential information in AI tools\n8. Overusing structured data\n9. Adding markup that does not match visible content\n10. Ignoring outdated content\n11. Ignoring external inconsistencies\n12. Treating reviews as a ranking hack\n13. Manipulating reviews\n14. Creating too many low-value FAQs\n15. Building one enormous FAQ page without structure\n16. Ignoring attorney information\n17. Ignoring content relationships\n18. Measuring only traffic\n19. Trying to optimize for a specific AI system\n20. Never re-auditing"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-checklist-can-cannot-do",
+      "title": "32. What the Checklist Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Identify information gaps",
+        "Identify consistency problems",
+        "Organize improvement work",
+        "Prioritize tasks",
+        "Establish a baseline understanding of information ecosystem",
+        "Measure progress over time",
+        "Create ongoing maintenance discipline"
+      ],
+      "cons": [
+        "Cannot guarantee search rankings",
+        "Cannot guarantee AI citations",
+        "Cannot guarantee ChatGPT recommendations",
+        "Cannot guarantee Google AI visibility",
+        "Cannot guarantee leads, clients, or revenue",
+        "Cannot predict exact behavior of specific AI systems"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "33. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Durable Information Quality Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Audit & Identify Gaps"
+        },
+        {
+          "type": "process",
+          "label": "Prioritize & Improve"
+        },
+        {
+          "type": "output",
+          "label": "Verify & Re-Audit"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "34. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "AI Visibility Questions & Answers",
+      "items": [
+        {
+          "question": "What is AI Visibility for a law firm?",
+          "answer": "AI Visibility is the degree to which a law firm's publicly available information is clear, consistent, useful, structured, trustworthy, and discoverable enough for search engines and AI-powered systems to potentially understand the firm correctly."
+        },
+        {
+          "question": "How can a law firm audit its AI Visibility?",
+          "answer": "Work through the eighteen categories in this checklist using observable evidence rather than assumptions, mark each item PASS, PARTIAL, FAIL, or N/A, record where the evidence came from, and use the scorecard and prioritization matrix to decide what to fix first."
+        },
+        {
+          "question": "Does AI Visibility replace local SEO?",
+          "answer": "No. AI Visibility builds on the same fundamentals local SEO already established — accurate business information, consistent local signals, useful content — and extends them to a broader set of AI-powered discovery experiences."
+        },
+        {
+          "question": "Can a law firm guarantee ChatGPT visibility?",
+          "answer": "No. No firm, tool, or technique can guarantee that any specific AI system will cite, recommend, or display a particular law firm. AI systems control their own retrieval and ranking mechanisms, which are not something any individual business can fully control."
+        },
+        {
+          "question": "Can this checklist guarantee AI recommendations?",
+          "answer": "No. This checklist evaluates information clarity, consistency, and completeness — factors within a firm's control. It cannot guarantee how any AI system will ultimately behave."
+        },
+        {
+          "question": "What information should a law firm make clear online?",
+          "answer": "At minimum: the firm's name, location and service area, practice areas, attorney information, and how a prospective client can verify all of it — consistently, across the firm's own website and every external source."
+        },
+        {
+          "question": "How important is location information?",
+          "answer": "Very important. Location and service-area clarity are foundational to both local search and general understanding of who the firm can actually help."
+        },
+        {
+          "question": "Do practice-area pages matter for AI visibility?",
+          "answer": "Yes. Clear, specific, well-organized practice-area pages help both visitors and systems understand exactly what the firm handles."
+        },
+        {
+          "question": "Should law firms create FAQ content?",
+          "answer": "Yes, when it reflects genuinely recurring client questions and stays appropriately general and educational. FAQ content is valuable for clarity and usefulness even though, as of 2026, it no longer produces visible rich results in Google Search."
+        },
+        {
+          "question": "Does structured data guarantee AI visibility?",
+          "answer": "No. Structured data can help systems parse already-accurate information more precisely, but it does not guarantee inclusion in any specific search feature or AI answer."
+        },
+        {
+          "question": "How often should a law firm perform an AI Visibility audit?",
+          "answer": "At minimum on a recurring schedule — quarterly is a reasonable starting point — and immediately after any significant change: a new attorney, a new practice area, a relocation, or a substantial website update."
+        },
+        {
+          "question": "Can AI perform the audit automatically?",
+          "answer": "AI can help organize, compare, and classify information quickly using a prompt like the one in this guide, but a person must verify every finding, confirm legal accuracy, and make final decisions."
+        },
+        {
+          "question": "Should confidential client information be used in an AI audit?",
+          "answer": "No. Visibility audits should rely entirely on public information — the firm's own public website, public business profiles, and public directory listings."
+        },
+        {
+          "question": "How should a law firm prioritize AI Visibility improvements?",
+          "answer": "Use the Impact/Effort/Risk framework: address critical, foundational gaps first, then move to high-value improvements, and save minor refinements for later."
+        },
+        {
+          "question": "What should a law firm fix first?",
+          "answer": "Foundational information problems — inconsistent business identity, unclear location information, and missing or incomplete practice-area content — should be addressed before more advanced tactics."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "35. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "36. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "What Is AI Visibility? A Practical Guide for Local Businesses",
+      "url": "what-is-ai-visibility-practical-guide-local-businesses.html",
+      "description": "Links back to core foundational AI visibility concepts."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Search & Legal Citations",
+      "items": [
+        "Google Search Central Blog — \"Changes to HowTo and FAQ rich results\" (August 8, 2023) — https://developers.google.com/search/blog/2023/08/howto-faq-changes — Supports description of Google's 2023 restriction of FAQ rich results.",
+        "Search Engine Journal — \"Google Drops FAQ Rich Results From Search\" — https://www.searchenginejournal.com/google-drops-faq-rich-results-from-search/574429/ — Supports description of Google's complete deprecation of FAQ rich results as of May 7, 2026.",
+        "Search Engine Land — \"The rise and fall of FAQ schema – and what it means for SEO today\" — https://searchengineland.com/faq-schema-rise-fall-seo-today-463993 — Supports guidance that FAQPage markup should be used on genuine FAQ pages.",
+        "Schema.org — LegalService, Organization, LocalBusiness, Person, BreadcrumbList type definitions — https://schema.org/LegalService — Supports description of LegalService schema type.",
+        "Google for Developers — \"Local Business (LocalBusiness) Structured Data\" — https://developers.google.com/search/docs/appearance/structured-data/local-business — Supports description of LocalBusiness-family structured data.",
+        "American Bar Association — \"ABA issues first ethics guidance on a lawyer's use of AI tools\" — https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/ — Supports professional responsibility framing in AI contexts."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "what-is-ai-visibility-practical-guide-local-businesses.html"
+    ]
+  }
+}

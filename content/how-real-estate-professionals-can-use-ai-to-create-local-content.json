@@ -1,0 +1,648 @@
+{
+  "id": "how-real-estate-professionals-can-use-ai-to-create-local-content",
+  "type": "guide",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "How Real Estate Professionals Can Use AI to Create Local Content",
+    "subtitle": "How real estate professionals can use AI to build genuinely useful, accurate, locally relevant content from real questions and verified facts — not template filler.",
+    "industry": "real-estate",
+    "difficulty": "beginner",
+    "readingTimeMinutes": 22,
+    "lastUpdated": "2026-08-14",
+    "audience": [
+      "Real estate agents",
+      "Brokers",
+      "Brokerage owners",
+      "Independent real estate professionals",
+      "Small real estate teams",
+      "Real estate marketing professionals"
+    ],
+    "primaryTopic": "How Real Estate Professionals Can Use AI to Create Local Content"
+  },
+  "seo": {
+    "canonical": "https://locatria-website.vercel.app/how-real-estate-professionals-can-use-ai-to-create-local-content.html",
+    "metaDescription": "A practical guide for real estate agents and brokerages to build accurate, Fair Housing-compliant local content and neighborhood guides using AI.",
+    "openGraph": {
+      "title": "How Real Estate Professionals Can Use AI to Create Local Content | Locatria",
+      "description": "A practical guide for real estate agents and brokerages to build accurate, Fair Housing-compliant local content and neighborhood guides using AI.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "How Real Estate Professionals Can Use AI to Create Local Content",
+    "industryFocus": "real-estate"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "Local content is not a generic article with a city name inserted — it's genuinely useful information built from real local questions and verified, current facts specific to a market.",
+        "AI can meaningfully accelerate research, organization, and drafting, but AI-generated local content is not automatically local expertise — every fact still needs a real source and human verification.",
+        "Fair Housing obligations apply fully to local content: neighborhood descriptions must stay objective and factual, never framed around who lives somewhere, and must never steer buyers toward or away from an area.",
+        "Dynamic information — market statistics, property prices, mortgage rates, local regulations — changes quickly and must always be sourced, verified, and dated before publication, never assumed to remain accurate over time.",
+        "A smaller number of genuinely useful, verified local resources is more valuable than a large archive of thin, near-identical location pages built by swapping city names into a template.",
+        "The goal of AI-assisted local content is not more pages. It's more useful local knowledge — genuinely local, accurate, trustworthy, and maintained over time."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: Local Content Is More Than a City Name"
+    },
+    {
+      "type": "paragraph",
+      "content": "A generic real estate article — \"5 Tips for First-Time Buyers\" — can be useful. A genuinely local resource, built around real questions people in a specific market actually ask and grounded in verified, current information about that market, can be considerably more valuable to the person reading it."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can meaningfully accelerate the creation of this kind of content — organizing questions, drafting outlines, structuring information, and producing first-draft text far faster than starting from a blank page. But <strong>AI-generated local content is not automatically local expertise.</strong> AI doesn't know your specific market, your specific clients' recurring concerns, or the current state of local regulations — underlying local knowledge and verification still comes from you."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-local-content",
+      "title": "2. What Is Local Content for Real Estate?"
+    },
+    {
+      "type": "definitions",
+      "id": "local-content-definitions",
+      "title": "Local Content vs. Generic Content Definitions",
+      "items": [
+        {
+          "term": "Local Content",
+          "definition": "Content genuinely shaped by and relevant to a specific market — built from real local questions, grounded in verified facts about that specific place, and useful to someone actually researching or transacting in that market."
+        },
+        {
+          "term": "Generic Content",
+          "definition": "Identical, template-based content that could describe almost any market, with a location swapped in as the only distinguishing detail."
+        }
+      ]
+    },
+    {
+      "type": "comparisonTable",
+      "id": "local-vs-generic-table",
+      "columns": [
+        "Generic Content",
+        "Local Content"
+      ],
+      "rows": [
+        [
+          "\"Best Real Estate Tips in [City]\" with interchangeable advice",
+          "Guide addressing real local buyer/seller questions with process details"
+        ],
+        [
+          "Neighborhood page listing generic adjectives (\"charming\", \"desirable\")",
+          "Neighborhood page describing documented amenities & transit with checkable details"
+        ],
+        [
+          "\"Moving to [city]\" page reading identical to any other city",
+          "Relocation guide addressing specific city services, processes, and resources"
+        ],
+        [
+          "Market statistics with no date or source",
+          "Market info explicitly sourced, dated, and flagged for review"
+        ],
+        [
+          "Property-type page that could apply to any market",
+          "Property-type page addressing considerations specific to how that type functions locally"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-local-content-matters",
+      "title": "3. Why Local Content Matters"
+    },
+    {
+      "type": "paragraph",
+      "content": "Local content answers real local questions, demonstrates actual relevant market knowledge, supports website information architecture, helps people understand local processes, creates reusable educational assets, and strengthens topical relationships across a business's content."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-ai-changes-creation",
+      "title": "4. How AI Changes Local Content Creation"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI helps with brainstorming, question research, topic clustering, outline creation, source organization, content transformation, content audits, and identifying stale pages. AI does <strong>NOT</strong> provide local expertise, verified facts, current market knowledge, legal accuracy, or Fair Housing compliance."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "start-with-audience",
+      "title": "5. Start With the Real Audience"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define four things clearly: <strong>audience</strong> (who is this for?), <strong>location</strong> (which specific market?), <strong>intent</strong> (what are they trying to accomplish?), and <strong>question</strong> (what specifically are they asking?)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "find-real-questions",
+      "title": "6. Find Real Local Questions"
+    },
+    {
+      "type": "paragraph",
+      "content": "Gather real questions from website inquiries, existing FAQs, consultations, customer interactions, review themes, and public resources. <strong>AI should not invent questions and present them as real customer demand without evidence.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "topic-map",
+      "title": "7. Build a Local Content Topic Map"
+    },
+    {
+      "type": "workflow",
+      "title": "Local Knowledge Architecture Map",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Location Core"
+        },
+        {
+          "type": "process",
+          "label": "Buying, Selling & Property Types"
+        },
+        {
+          "type": "process",
+          "label": "Process, FAQs & Moving"
+        },
+        {
+          "type": "output",
+          "label": "Local Resources & Homeownership"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "city-content",
+      "title": "8. City-Level Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Useful city-level topics include moving to the city, the general buying process in that market, seller considerations, relevant property types, local transaction specifics, public resources, local terminology, and transportation. Every specific claim needs a real, verifiable source."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "neighborhood-content",
+      "title": "9. Neighborhood-Level Content"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Fair Housing Act & Steering Rules",
+      "content": "Neighborhood descriptions must stay objective and factual — location relative to landmarks or transit, documented amenities, parks, libraries, and property types. Avoid subjective descriptions. Do not rank neighborhoods based on protected characteristics, and do not encourage steering."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "property-type-content",
+      "title": "10. Property-Type Local Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Organize around single-family homes, condominiums, townhomes, and multifamily properties actually present in the market. Explain what the property type means, common questions, local considerations, and maintenance."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "buyer-content",
+      "title": "11. Buyer-Focused Local Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Cover the buying process, preparation, local terminology, inspection questions, closing, property types, moving, and resources. Human professionals verify local specifics, timelines, and terminology."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "seller-content",
+      "title": "12. Seller-Focused Local Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Cover property prep, listing process, marketing, showings, common concerns, and transaction education. Be careful with pricing claims — educational concepts are different from specific pricing advice."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq-content",
+      "title": "13. Local FAQ Content"
+    },
+    {
+      "type": "workflow",
+      "title": "Local FAQ Generation Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Collect Real Questions"
+        },
+        {
+          "type": "process",
+          "label": "Normalize, Cluster & Prioritize"
+        },
+        {
+          "type": "decision",
+          "label": "Draft & Human Verify"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "resource-content",
+      "title": "14. Local Resource Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Create resources around public agencies, transportation, libraries, parks, utilities, local government offices, and moving services. Use authoritative sources; do not fabricate contact details or service availability."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "market-content",
+      "title": "15. Local Market Content"
+    },
+    {
+      "type": "workflow",
+      "title": "Dynamic Market Data Verification Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Source Data"
+        },
+        {
+          "type": "process",
+          "label": "Verify & Date"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Scheduled Review"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-brief",
+      "title": "16. Use AI to Create the Content Brief"
+    },
+    {
+      "type": "paragraph",
+      "content": "Structure content briefs with target location, audience, question intent, topic, purpose, primary/secondary sources, required facts, potential risks, format, reviewer, publication date, and review date. A human verifies every field."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "drafting-content",
+      "title": "17. Use AI to Draft Local Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI works from an approved outline and verified facts. Instructions must mandate: do not invent facts/stats/citations, preserve source meaning, flag uncertainty, and avoid discriminatory or steering language."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "fact-checking-workflow",
+      "title": "18. Human Fact-Checking Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "Fact-Checking & Fair Housing Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "AI Draft"
+        },
+        {
+          "type": "process",
+          "label": "Fact Inventory & Source Check"
+        },
+        {
+          "type": "decision",
+          "label": "Fair Housing Review"
+        },
+        {
+          "type": "output",
+          "label": "Editorial Approval & Publish"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "repurposing-content",
+      "title": "19. Local Content Repurposing"
+    },
+    {
+      "type": "paragraph",
+      "content": "One approved guide can support FAQs, checklists, newsletter sections, video outlines, social posts, and glossary entries. Repurpose approved local knowledge; do not multiply unverified claims."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "content-maintenance",
+      "title": "20. Local Content Maintenance"
+    },
+    {
+      "type": "paragraph",
+      "content": "Review content regularly triggered by outdated statistics, changed local services, transportation changes, or new regulations. AI flags potential updates; humans verify."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "avoid-programmatic-content",
+      "title": "21. Avoid Programmatic Local Content at Scale"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Avoid Mass-Produced Thin Location Pages",
+      "content": "Do not create hundreds of nearly identical city/neighborhood pages differing only in location name. Thin, unverified location pages raise real accuracy and Fair Housing risks. A smaller number of genuinely useful local resources is far more valuable."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "hypothetical-example",
+      "title": "22. Hypothetical Example"
+    },
+    {
+      "type": "paragraph",
+      "content": "A real estate agent gathers 50 real client questions, organizes them into a topic map using AI, identifies municipal sources, drafts priority topics, fact-checks every claim for Fair Housing compliance, and publishes a small set of high-value guides."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-content-workflow",
+      "title": "23. Local Content Workflow"
+    },
+    {
+      "type": "workflow",
+      "title": "End-to-End Local Content Pipeline",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Audience & Location"
+        },
+        {
+          "type": "process",
+          "label": "Questions & Sources"
+        },
+        {
+          "type": "process",
+          "label": "Brief & AI Draft"
+        },
+        {
+          "type": "decision",
+          "label": "Fact & Fair Housing Review"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-research",
+      "title": "24. AI Prompt for Local Content Research"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-research-block",
+      "title": "AI Prompt Template: Local Content Researcher",
+      "prompt": "You are helping a real estate professional research potential local content topics.\n\nAUDIENCE: [insert - buyers/sellers/homeowners/relocating households/etc.]\nLOCATION: [insert specific market]\nKNOWN QUESTIONS OR CONCERNS (real, generalized): [insert]\n\nPlease:\n- Identify potential local content topics based on the information provided\n- Classify the likely audience for each topic\n- Classify the likely intent behind each topic (informational, process-related, comparison, etc.)\n- Identify what information would be required to write about each topic accurately\n- Identify likely authoritative sources for each topic (without inventing specific URLs or facts)\n- Distinguish Known Information (already confirmed) from Research Need (requiring further investigation)\n- Identify potential risks associated with each topic (e.g., Fair Housing sensitivity, dynamic market information)\n\nImportant instructions:\n- Do not invent facts about this specific market.\n- Do not claim that a topic is \"popular\" or \"in high demand\" without evidence actually provided to you.\n- Flag any topic involving neighborhoods, safety, schools, or demographics for particular Fair Housing care.\n- Do not invent statistics or citations."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-brief",
+      "title": "25. AI Prompt for Local Content Brief"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-brief-block",
+      "title": "AI Prompt Template: Local Content Brief Creator",
+      "prompt": "You are helping a real estate professional build a structured content brief for a piece of local content.\n\nTOPIC: [insert]\nLOCATION: [insert]\nAUDIENCE: [insert]\nINTENT: [insert]\n\nPlease produce a brief including:\n- Purpose (what this content should accomplish)\n- The specific questions this content should answer\n- Primary sources needed to verify key facts\n- Facts that will require verification before publishing\n- Potential risks (Fair Housing sensitivity, dynamic information, etc.)\n- A recommended content structure\n- Suggested internal content relationships (related existing or planned content)\n- A placeholder for the assigned reviewer\n- A placeholder for the review date\n\nImportant instructions:\n- Do not invent facts about this market or topic.\n- Do not assume information not provided above.\n- Flag anything uncertain rather than presenting it as confirmed.\n- Flag any topic touching neighborhoods, safety, schools, or demographics for specific Fair Housing review."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prompt-drafting",
+      "title": "26. AI Prompt for Local Content Drafting"
+    },
+    {
+      "type": "promptBlock",
+      "id": "prompt-drafting-block",
+      "title": "AI Prompt Template: Local Content Drafter",
+      "prompt": "You are helping a real estate professional draft a piece of local content from an approved brief and verified sources.\n\nAPPROVED BRIEF: [insert]\nVERIFIED FACTS AND SOURCES: [insert]\n\nPlease draft the content according to the brief, using only the verified facts and sources supplied.\n\nImportant instructions:\n- Do not invent information not present in the supplied facts and sources.\n- Do not invent statistics.\n- Do not invent citations.\n- Preserve the meaning and qualifications of the source material exactly.\n- Avoid discriminatory language of any kind.\n- Avoid any language that could be read as steering toward or away from a neighborhood or area.\n- Avoid financial, legal, or investment advice — keep content general and educational.\n- Identify any statement in your draft that requires verification before publishing.\n- Write for a human reader first; do not optimize for keyword density at the expense of clarity or usefulness."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "quality-checklist",
+      "title": "27. Local Content Quality Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Is the content genuinely local, not generic content with a location inserted?",
+        "Is the location clearly defined and real questions answered?",
+        "Are important facts, property data, and market statistics verified against authoritative sources?",
+        "Are dynamic facts dated and source URLs recorded?",
+        "Does the content avoid steering, protected-class descriptions, and unsupported safety/school claims?",
+        "Did AI invent anything not in the supplied sources?",
+        "Is a review date recorded and content owner assigned?"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "28. Common Local Content Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "18 Common Real Estate Local Content Mistakes",
+      "content": "1. Replacing city names in generic articles\n2. Creating hundreds of thin location pages\n3. Inventing local facts\n4. Publishing outdated statistics\n5. Using AI as the source of truth\n6. Ignoring Fair Housing\n7. Steering users toward neighborhoods\n8. Making unsupported safety claims\n9. Making unsupported school claims\n10. Using protected characteristics in neighborhood descriptions\n11. Creating keyword-heavy content\n12. Publishing without human review\n13. Copying local competitor content\n14. Failing to cite sources\n15. Failing to update dynamic information\n16. Creating content for every location instead of useful locations\n17. Measuring only page count\n18. Ignoring actual audience questions"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "thirty-day-plan",
+      "title": "29. 30-Day Local Content Plan"
+    },
+    {
+      "type": "stepByStep",
+      "title": "4-Week Local Content Roadmap",
+      "steps": [
+        {
+          "title": "Week 1 — Identify Audience, Locations & Questions",
+          "content": "Define specific audiences and locations served, and gather real recurring questions."
+        },
+        {
+          "title": "Week 2 — Build Topic Map & Source Library",
+          "content": "Organize questions into a topic map and identify authoritative municipal/public sources."
+        },
+        {
+          "title": "Week 3 — Create & Review 2–4 High-Value Resources",
+          "content": "Draft, fact-check, and complete Fair Housing review for priority topics."
+        },
+        {
+          "title": "Week 4 — Publish & Establish Maintenance",
+          "content": "Publish reviewed content, link related assets, and set a recurring review schedule."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "measuring-quality",
+      "title": "30. Measuring Local Content Quality"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Number of genuinely verified local resources published",
+        "Source coverage (percentage of content with documented source)",
+        "Content freshness and review completion rate",
+        "FAQ coverage across real topics",
+        "Content coverage by location and audience actually served",
+        "Size of update backlog and rework rate"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-cannot-do",
+      "title": "31. What AI Can and Cannot Do"
+    },
+    {
+      "type": "prosCons",
+      "pros": [
+        "Organize research and cluster questions",
+        "Build topic maps and outlines",
+        "Draft content from verified sources",
+        "Summarize info and repurpose approved formats",
+        "Audit existing content for gaps and staleness"
+      ],
+      "cons": [
+        "Cannot guarantee genuine local expertise or current facts",
+        "Cannot guarantee legal accuracy or Fair Housing compliance",
+        "Cannot guarantee search rankings, AI citations, leads, or revenue"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "final-takeaway",
+      "title": "32. Final Takeaway"
+    },
+    {
+      "type": "workflow",
+      "title": "Continuous Local Knowledge Loop",
+      "nodes": [
+        {
+          "type": "input",
+          "label": "Question & Research"
+        },
+        {
+          "type": "process",
+          "label": "Structure, Draft & Verify"
+        },
+        {
+          "type": "output",
+          "label": "Publish & Maintain"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "33. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Real Estate Local Content Questions & Answers",
+      "items": [
+        {
+          "question": "What is local content in real estate?",
+          "answer": "Local content is content genuinely built around a specific market's real questions and verified facts — as opposed to generic content with a location name inserted."
+        },
+        {
+          "question": "Can AI help real estate agents create local content?",
+          "answer": "Yes. AI can help research, organize, cluster questions, build outlines, and draft first versions of local content working from verified sources."
+        },
+        {
+          "question": "Can AI create neighborhood guides?",
+          "answer": "AI can help organize and draft neighborhood content from verified, objective information — location, documented amenities, transportation, and public resources."
+        },
+        {
+          "question": "How can real estate professionals verify AI-generated local information?",
+          "answer": "Use a fact-checking workflow that traces every important claim back to a specific, authoritative source and confirms wording accuracy."
+        },
+        {
+          "question": "What Fair Housing issues should real estate professionals consider?",
+          "answer": "HUD's 2024 guidance confirms Fair Housing applies fully. Neighborhood descriptions must stay objective and factual, avoid protected-characteristic framing, and avoid steering."
+        },
+        {
+          "question": "Should real estate professionals use AI to create hundreds of location pages?",
+          "answer": "No. Mass-produced thin location content creates real accuracy and Fair Housing risks. A smaller number of genuinely researched, verified resources is far more valuable."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "34. Related Locatria Knowledge"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "35. Sources / References"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Repurposing Workflow for Real Estate Businesses",
+      "url": "ai-content-repurposing-workflow-real-estate-businesses.html",
+      "description": "Repurposes local market content across listing formats."
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Housing & Search Citations",
+      "items": [
+        "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports description of HUD's 2024 AI guidance under the Fair Housing Act.",
+        "HUD Office of Fair Housing and Equal Opportunity — \"Guidance on Application of the Fair Housing Act to the Advertising of Housing, Credit, and Other Real Estate-Related Transactions Through Digital Platforms\" — https://archives.hud.gov/news/2024/FHEO_Guidance_on_Advertising_through_Digital_Platforms.pdf — Supports Fair Housing advertising provisions and anti-steering principles.",
+        "Fair Housing Institute — \"Fair Housing Advertising - Guidelines To Compliance\" — https://fairhousinginstitute.com/fair-housing-advertising-guidelines/ — Supports fair housing advertising compliance guidelines."
+      ]
+    }
+  ],
+  "relationships": {
+    "relatedGuides": [
+      "ai-content-repurposing-workflow-real-estate-businesses.html"
+    ]
+  }
+}
