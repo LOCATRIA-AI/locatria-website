@@ -35,8 +35,8 @@
   text-decoration: none;
   color: var(--color-text-main);
   flex-shrink: 0;
-  max-height: 36px !important;
-  overflow: hidden;
+  max-height: 54px !important;
+  overflow: visible;
 }
 
 .brand-link:hover {
@@ -469,10 +469,10 @@
 
 /* Official Brand Logo Image Styles */
 .brand-logo-img {
-  height: 36px !important;
-  max-height: 36px !important;
+  height: 52px !important;
+  max-height: 54px !important;
   width: auto !important;
-  max-width: 220px !important;
+  max-width: 160px !important;
   object-fit: contain !important;
   display: block !important;
 }
