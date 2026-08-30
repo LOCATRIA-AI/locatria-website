@@ -29,12 +29,14 @@
 
 /* Logo & Brand Identity */
 .brand-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--space-3);
   text-decoration: none;
   color: var(--color-text-main);
   flex-shrink: 0;
+  max-height: 36px !important;
+  overflow: hidden;
 }
 
 .brand-link:hover {
@@ -240,12 +242,15 @@
 }
 
 .search-trigger-icon {
-  width: 18px;
-  height: 18px;
+  width: 18px !important;
+  max-width: 18px !important;
+  height: 18px !important;
+  max-height: 18px !important;
   stroke-width: 1.75px;
   flex-shrink: 0;
   color: #6B7280;
   transition: color var(--transition-fast);
+  display: inline-block !important;
 }
 
 .search-trigger-btn:hover .search-trigger-icon {
@@ -343,8 +348,8 @@
 }
 
 .mobile-menu-toggle svg {
-  width: 16px;
-  height: 16px;
+  width: 16px !important;
+  height: 16px !important;
   stroke-width: 1.5px;
 }
 
@@ -353,8 +358,10 @@
 }
 
 @media (min-width: 1024px) {
-  .mobile-menu-toggle {
-    display: none;
+  .mobile-menu-toggle,
+  .mobile-drawer,
+  .mobile-drawer-overlay {
+    display: none !important;
   }
 }
 
@@ -420,8 +427,8 @@
 }
 
 .mobile-drawer-close svg {
-  width: 16px;
-  height: 16px;
+  width: 16px !important;
+  height: 16px !important;
   stroke-width: 1.5px;
 }
 
@@ -462,11 +469,12 @@
 
 /* Official Brand Logo Image Styles */
 .brand-logo-img {
-  height: 42px;
-  width: auto;
-  max-width: 240px;
-  object-fit: contain;
-  display: block;
+  height: 36px !important;
+  max-height: 36px !important;
+  width: auto !important;
+  max-width: 220px !important;
+  object-fit: contain !important;
+  display: block !important;
 }
 
 .logo-icon-img {
