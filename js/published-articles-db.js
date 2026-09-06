@@ -1,7 +1,7 @@
 /**
  * LOCATRIA PUBLISHED ARTICLES DATABASE v1.1
  * Single Source of Truth for Published Production Content.
- * Auto-synchronized on 2026-09-06T10:51:39.707Z
+ * Auto-synchronized on 2026-09-06T11:11:25.714Z
  */
 (function (window) {
   'use strict';
