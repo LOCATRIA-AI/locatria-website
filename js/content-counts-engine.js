@@ -1,16 +1,17 @@
 /**
- * LOCATRIA PRODUCTION CONTENT COUNTS ENGINE v1.2
+ * LOCATRIA PRODUCTION CONTENT COUNTS ENGINE v1.3
  * Calculates real-time published content & industry counts from single source of truth.
+ * Auto-synchronized on 2026-09-06T10:51:39.711Z
  */
 (function (window) {
   'use strict';
 
   const LocatriaContentCounts = {
-    version: '1.2.0',
-    publishedTotal: 30,
+    version: '1.3.0',
+    publishedTotal: 32,
     countsByType: {
   "guide": 9,
-  "workflow": 18,
+  "workflow": 20,
   "checklist": 3,
   "tutorial": 0,
   "faq": 0,
@@ -19,10 +20,10 @@
   "resource": 0
 },
     countsByIndustry: {
-  "dental": 6,
+  "dental": 7,
   "law": 5,
   "realEstate": 5,
-  "general": 14
+  "general": 15
 },
 
     init: function () {
@@ -34,6 +35,28 @@
     },
 
     applyCounts: function () {
+      // Dynamic override if LocatriaPublishedArticles is available
+      if (window.LocatriaPublishedArticles && Array.isArray(window.LocatriaPublishedArticles)) {
+        const liveArticles = window.LocatriaPublishedArticles;
+        const liveByType = { guide: 0, workflow: 0, checklist: 0, tutorial: 0, faq: 0, glossary: 0, prompt: 0, resource: 0 };
+        const liveByInd = { dental: 0, law: 0, realEstate: 0, general: 0 };
+        
+        liveArticles.forEach(a => {
+          if (a.status === 'published') {
+            if (liveByType[a.type] !== undefined) liveByType[a.type]++;
+            const ind = a.industry || 'general';
+            if (ind.includes('dental')) liveByInd.dental++;
+            else if (ind.includes('law')) liveByInd.law++;
+            else if (ind.includes('real-estate') || ind.includes('realEstate')) liveByInd.realEstate++;
+            else liveByInd.general++;
+          }
+        });
+        
+        this.publishedTotal = liveArticles.length;
+        this.countsByType = liveByType;
+        this.countsByIndustry = liveByInd;
+      }
+
       // Update Knowledge Hub Category Card Footers if present
       const cardFooterGuides = document.querySelector('[href="category.html?type=guides"] .card-category-footer span:first-child');
       if (cardFooterGuides) cardFooterGuides.textContent = this.countsByType.guide + ' Guides';

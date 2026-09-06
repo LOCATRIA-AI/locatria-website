@@ -160,6 +160,13 @@
     ],
     "optionalKnowledge": [
       {
+        "articleId": "ai-local-entity-consistency-nape-audit-workflow",
+        "title": "How to Audit Your Local Business Entity Consistency for AI and Local Search",
+        "slugUrl": "ai-local-entity-consistency-nape-audit-workflow.html",
+        "type": "workflow",
+        "note": "Optional workflow for multi-platform local business NAPE entity consistency auditing."
+      },
+      {
         "articleId": "ai-faq-research-workflow-local-businesses",
         "title": "AI FAQ Research Workflow for Local Businesses",
         "slugUrl": "ai-faq-research-workflow-local-businesses.html",

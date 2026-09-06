@@ -1,6 +1,7 @@
 /**
- * LOCATRIA PUBLISHED ARTICLES DATABASE v1.0
+ * LOCATRIA PUBLISHED ARTICLES DATABASE v1.1
  * Single Source of Truth for Published Production Content.
+ * Auto-synchronized on 2026-09-06T10:51:39.707Z
  */
 (function (window) {
   'use strict';
@@ -13,10 +14,10 @@
     "status": "published",
     "industry": "law-firms",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "20 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-11",
+    "description": "A practical workflow for law firms to transform attorney-approved content into multiple derivative formats without sacrificing legal accuracy.",
     "slugUrl": "ai-assisted-legal-content-repurposing-workflow.html"
   },
   {
@@ -26,11 +27,11 @@
     "status": "published",
     "industry": "dental-clinics",
     "difficulty": "beginner",
-    "readTime": 18,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T21:45:00Z",
-    "description": "A practical, privacy-conscious workflow for using AI to draft dental review responses faster — with human review, escalation, and judgment kept firmly in place.",
-    "slugUrl": "ai-assisted-review-response-workflow-dental-clinics.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "ai-assisted-review-response-workflow-dental-clinics"
   },
   {
     "id": "ai-competitor-content-gap-analysis-workflow",
@@ -39,10 +40,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-15",
+    "description": "A step-by-step AI competitor content gap analysis workflow for local businesses — map competitor topics, validate audience demand, and build original content.",
     "slugUrl": "ai-competitor-content-gap-analysis-workflow.html"
   },
   {
@@ -52,10 +53,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "24 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A step-by-step AI content brief workflow for local businesses — turn research into actionable specifications, boundaries, and traceability matrices.",
     "slugUrl": "ai-content-brief-workflow-local-businesses.html"
   },
   {
@@ -65,10 +66,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A step-by-step AI content repurposing workflow for local businesses — extract knowledge atoms, build repurposing matrices, and maintain content integrity.",
     "slugUrl": "ai-content-repurposing-workflow-local-businesses.html"
   },
   {
@@ -78,10 +79,10 @@
     "status": "published",
     "industry": "real-estate",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "24 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A step-by-step AI content repurposing workflow for real estate businesses — turn 1 verified guide into FAQs, checklists, newsletters, and video outlines safely.",
     "slugUrl": "ai-content-repurposing-workflow-real-estate-businesses.html"
   },
   {
@@ -91,10 +92,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A step-by-step AI content research workflow for local businesses — generate research questions, discover and verify sources, and build verified briefs.",
     "slugUrl": "ai-content-research-workflow-local-businesses.html"
   },
   {
@@ -104,11 +105,24 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-15",
+    "description": "A step-by-step AI content update workflow for local businesses — monitor change signals, verify sources, audit integrity, and propagate updates.",
     "slugUrl": "ai-content-update-workflow-local-businesses.html"
+  },
+  {
+    "id": "ai-dental-gbp-entity-audit-maintenance-workflow",
+    "title": "How Dental Clinics Can Use AI to Audit & Maintain Their Google Business Profile Entity Data",
+    "type": "workflow",
+    "status": "published",
+    "industry": "dental",
+    "difficulty": "intermediate",
+    "readTime": "18 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-06",
+    "description": "A practical operational workflow for dental clinics to audit and maintain Google Business Profile (GBP) entity data (NAPE), services, hours, and appointment details across AI engines.",
+    "slugUrl": "ai-dental-gbp-entity-audit-maintenance-workflow.html"
   },
   {
     "id": "ai-faq-research-workflow-local-businesses",
@@ -117,11 +131,24 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "23 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A step-by-step AI FAQ research workflow for local businesses — mine customer questions, validate evidence, classify risk, and build structured FAQ briefs.",
     "slugUrl": "ai-faq-research-workflow-local-businesses.html"
+  },
+  {
+    "id": "ai-local-entity-consistency-nape-audit-workflow",
+    "title": "How to Audit Your Local Business Entity Consistency for AI and Local Search",
+    "type": "workflow",
+    "status": "published",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readTime": "18 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-06",
+    "description": "Learn how to audit and reconcile your local business entity data (NAPE) across AI search engines, Google Business Profile, Apple Maps, Bing Places, and directory ecosystems.",
+    "slugUrl": "ai-local-entity-consistency-nape-audit-workflow.html"
   },
   {
     "id": "ai-local-seo-audit-workflow-small-businesses",
@@ -130,10 +157,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "24 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A step-by-step AI Local SEO audit workflow for small businesses — audit identity, GBP, content, reviews, and structured data with evidence-first scoring.",
     "slugUrl": "ai-local-seo-audit-workflow-small-businesses.html"
   },
   {
@@ -143,10 +170,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-15",
+    "description": "A step-by-step AI prompt workflow for local businesses — connect research, brief, prompt chaining, fact-checking, and integrity auditing into one system.",
     "slugUrl": "ai-prompt-workflow-local-business-content-creation.html"
   },
   {
@@ -156,10 +183,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-15",
+    "description": "A step-by-step AI review response workflow for local businesses — classify reviews, screen privacy risks, audit drafts, and enforce human approval.",
     "slugUrl": "ai-review-response-workflow-local-businesses.html"
   },
   {
@@ -169,10 +196,10 @@
     "status": "published",
     "industry": "law-firms",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "22 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A practical diagnostic checklist for auditing law firm online information clarity, local signals, structured data, and AI search readiness.",
     "slugUrl": "ai-visibility-checklist-law-firms.html"
   },
   {
@@ -182,10 +209,10 @@
     "status": "published",
     "industry": "real-estate",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "26 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "Audit your real estate business AI visibility across 21 core categories — agent consistency, location signals, Fair Housing compliance, and structured data.",
     "slugUrl": "ai-visibility-checklist-real-estate-businesses.html"
   },
   {
@@ -195,11 +222,11 @@
     "status": "published",
     "industry": "dental-clinics",
     "difficulty": "intermediate",
-    "readTime": 18,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T17:38:00Z",
-    "description": "A practical, non-clinical guide to where AI can realistically support a dental clinic's marketing, content, communication, and administrative workflows — and where human and professional review must stay firmly in place.",
-    "slugUrl": "ai-workflows-dental-clinics-practical-use-cases.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "ai-workflows-dental-clinics-practical-use-cases"
   },
   {
     "id": "ai-workflows-law-firms-practical-use-cases",
@@ -208,11 +235,11 @@
     "status": "published",
     "industry": "law-firms",
     "difficulty": "beginner",
-    "readTime": 25,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T22:15:00Z",
-    "description": "A practical, workflow-oriented guide showing exactly where AI can responsibly fit into a small law firm's day-to-day content, marketing, administrative, and visibility-related work — and where human judgment and professional responsibility must remain firmly in control.",
-    "slugUrl": "ai-workflows-law-firms-practical-use-cases.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "ai-workflows-law-firms-practical-use-cases"
   },
   {
     "id": "ai-workflows-real-estate-businesses-practical-use-cases",
@@ -221,10 +248,10 @@
     "status": "published",
     "industry": "real-estate",
     "difficulty": "intermediate",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "Sixteen practical AI workflows for real estate brokerages and agents — lead organization, listing content, FAQs, audits, and Fair Housing compliance.",
     "slugUrl": "ai-workflows-real-estate-businesses-practical-use-cases.html"
   },
   {
@@ -234,11 +261,11 @@
     "status": "published",
     "industry": "dental-clinics",
     "difficulty": "beginner",
-    "readTime": 20,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T21:55:00Z",
-    "description": "A practical, no-hype checklist for auditing whether your dental clinic's online information is clear, consistent, and easy for search and AI systems to understand.",
-    "slugUrl": "dental-clinic-ai-visibility-checklist.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "dental-clinic-ai-visibility-checklist"
   },
   {
     "id": "how-ai-is-changing-local-seo-small-businesses",
@@ -247,11 +274,11 @@
     "status": "published",
     "industry": "general",
     "difficulty": "intermediate",
-    "readTime": 16,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T17:10:00Z",
-    "description": "A clear-eyed look at what AI actually changes about Local SEO for small businesses — the research, content, and maintenance workflow — and what fundamentals stay exactly the same.",
-    "slugUrl": "how-ai-is-changing-local-seo-small-businesses.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-ai-is-changing-local-seo-small-businesses"
   },
   {
     "id": "how-dental-clinics-can-use-ai-create-better-patient-faqs",
@@ -260,11 +287,11 @@
     "status": "published",
     "industry": "dental-clinics",
     "difficulty": "beginner",
-    "readTime": 16,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T20:55:00Z",
-    "description": "A practical guide to building a dental patient FAQ system with AI support — real patient questions, clear answers, and professional review at every step.",
-    "slugUrl": "how-dental-clinics-can-use-ai-create-better-patient-faqs.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-dental-clinics-can-use-ai-create-better-patient-faqs"
   },
   {
     "id": "how-dental-clinics-can-use-ai-repurpose-educational-content",
@@ -273,11 +300,11 @@
     "status": "published",
     "industry": "dental-clinics",
     "difficulty": "beginner",
-    "readTime": 17,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T21:18:00Z",
-    "description": "A practical guide to turning one approved dental educational article into multiple formats with AI — website content, FAQs, email, and more — without sacrificing accuracy or professional review.",
-    "slugUrl": "how-dental-clinics-can-use-ai-repurpose-educational-content.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-dental-clinics-can-use-ai-repurpose-educational-content"
   },
   {
     "id": "how-dental-clinics-use-ai-local-visibility",
@@ -286,11 +313,11 @@
     "status": "published",
     "industry": "dental",
     "difficulty": "beginner",
-    "readTime": 12,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T11:45:00Z",
-    "description": "A practical, evidence-based guide showing dental clinic owners where AI genuinely helps with local visibility — content, FAQs, review responses — and where human judgment and patient privacy must stay firmly in control.",
-    "slugUrl": "how-dental-clinics-use-ai-local-visibility.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-dental-clinics-use-ai-local-visibility"
   },
   {
     "id": "how-law-firms-can-use-ai-improve-local-visibility",
@@ -299,11 +326,11 @@
     "status": "published",
     "industry": "law-firms",
     "difficulty": "beginner",
-    "readTime": 22,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T22:00:00Z",
-    "description": "A practical, evergreen guide to making your law firm's expertise easier for potential clients — and the systems they use to search — to discover, understand, and trust.",
-    "slugUrl": "how-law-firms-can-use-ai-improve-local-visibility.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-law-firms-can-use-ai-improve-local-visibility"
   },
   {
     "id": "how-law-firms-can-use-ai-organize-client-faq-content",
@@ -312,10 +339,10 @@
     "status": "published",
     "industry": "law-firms",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "18 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-11",
+    "description": "A practical guide to turning scattered intake questions, emails, and attorney experience into a structured, maintainable FAQ knowledge system.",
     "slugUrl": "how-law-firms-can-use-ai-organize-client-faq-content.html"
   },
   {
@@ -325,11 +352,11 @@
     "status": "published",
     "industry": "general",
     "difficulty": "beginner",
-    "readTime": 15,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T14:30:00Z",
-    "description": "A practical pillar guide showing local business owners where AI genuinely helps build online visibility — research, content, maintenance — and where human judgment and trust must stay in control.",
-    "slugUrl": "how-local-businesses-can-use-ai-improve-online-visibility.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-local-businesses-can-use-ai-improve-online-visibility"
   },
   {
     "id": "how-real-estate-businesses-can-use-ai-to-improve-local-visibility",
@@ -338,10 +365,10 @@
     "status": "published",
     "industry": "real-estate",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "20 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A practical guide for real estate agents and brokerages to improve local visibility, neighborhood content, and Fair Housing-compliant AI search readiness.",
     "slugUrl": "how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html"
   },
   {
@@ -351,10 +378,10 @@
     "status": "published",
     "industry": "real-estate",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "22 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-14",
+    "description": "A practical guide for real estate agents and brokerages to build accurate, Fair Housing-compliant local content and neighborhood guides using AI.",
     "slugUrl": "how-real-estate-professionals-can-use-ai-to-create-local-content.html"
   },
   {
@@ -364,11 +391,11 @@
     "status": "published",
     "industry": "general",
     "difficulty": "beginner",
-    "readTime": 15,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T17:30:00Z",
-    "description": "A practical, step-by-step guide to building a simple AI content workflow for a local business — no large team, no complex automation, just a repeatable process from customer question to published content.",
-    "slugUrl": "how-to-build-simple-ai-content-workflow-local-business.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "how-to-build-simple-ai-content-workflow-local-business"
   },
   {
     "id": "how-to-build-simple-ai-marketing-system-solopreneur",
@@ -377,10 +404,10 @@
     "status": "published",
     "industry": "general",
     "difficulty": "beginner",
-    "readTime": "10 min read",
+    "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
-    "description": "",
+    "pubDate": "2026-08-15",
+    "description": "A step-by-step guide for solopreneurs to build a simple, repeatable AI marketing system — connect content, distribution, lead paths, and measurement.",
     "slugUrl": "how-to-build-simple-ai-marketing-system-solopreneur.html"
   },
   {
@@ -390,11 +417,11 @@
     "status": "published",
     "industry": "general",
     "difficulty": "beginner",
-    "readTime": 14,
+    "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10T16:50:00Z",
-    "description": "A clear, no-hype explanation of what AI visibility actually means for a local business, how it differs from traditional SEO, GEO, and AEO, and where to realistically start.",
-    "slugUrl": "what-is-ai-visibility-practical-guide-local-businesses.html"
+    "pubDate": "2026-08-10",
+    "description": "",
+    "slugUrl": "what-is-ai-visibility-practical-guide-local-businesses"
   }
 ];
 })(window);

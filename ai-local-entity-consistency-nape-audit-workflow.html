@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Audit Your Local Business Entity Consistency for AI and Local Search | Locatria Knowledge Hub</title>
+  <meta name="description" content="Learn how to audit and reconcile your local business entity data (NAPE) across AI search engines, Google Business Profile, Apple Maps, Bing Places, and directory ecosystems.">
+  
+  <!-- OpenGraph & SEO -->
+  <link rel="canonical" href="https://www.locatria.com/ai-local-entity-consistency-nape-audit-workflow.html">
+  <meta property="og:title" content="How to Audit Your Local Business Entity Consistency for AI and Local Search | Locatria">
+  <meta property="og:description" content="Learn how to audit and reconcile your local business entity data (NAPE) across AI search engines, Google Business Profile, Apple Maps, Bing Places, and directory ecosystems.">
+  <meta property="og:type" content="article">
+
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS Files -->
+  <link rel="stylesheet" href="css/variables.css?v=5.4">
+  <link rel="stylesheet" href="css/global.css?v=5.4">
+  <link rel="stylesheet" href="css/header.css?v=5.4">
+  <link rel="stylesheet" href="css/components.css?v=5.4">
+  <link rel="stylesheet" href="css/sidebar.css?v=5.4">
+  <link rel="stylesheet" href="css/footer.css?v=5.4">
+  <link rel="stylesheet" href="css/article.css?v=5.4">
+  <link rel="stylesheet" href="css/components-v1.css?v=5.4">
+
+  <!-- LOCATRIA Standalone Brand Icon Favicon Suite -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- WCAG Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- GLOBAL HEADER (Synchronized with IA v1.0) -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Locatria Home">
+        <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="brand-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge.html" class="nav-link is-active">Knowledge Hub</a>
+        
+        <!-- Learn Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html#learning-paths" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Learn
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?type=guides" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Guides & Blueprints</strong>
+                  <span class="dropdown-item-desc">Evergreen operational AI guides</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=tutorials" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Step-by-Step Tutorials</strong>
+                  <span class="dropdown-item-desc">Actionable zero-code tutorials</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="knowledge.html#learning-paths" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Learning Paths</strong>
+                  <span class="dropdown-item-desc">Structured step-by-step tracks</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Industries Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html#industry-solutions" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Industries
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?industry=real-estate" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Real Estate</strong>
+                  <span class="dropdown-item-desc">Lead capture & listing AI workflows</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=law-firms" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Law Offices</strong>
+                  <span class="dropdown-item-desc">Client intake & document triage</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=dental-clinics" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Dental Clinics</strong>
+                  <span class="dropdown-item-desc">Patient scheduling & FAQ assistants</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="category.html?type=resources" class="nav-link">Resources</a>
+        <a href="index.html#why-locatria" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn js-search-trigger" aria-label="Search">
+          <svg class="search-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="search-trigger-text">
+            <span class="placeholder-desktop">Search articles, guides, workflows...</span>
+            <span class="placeholder-mobile">Search articles...</span>
+          </span>
+          <span class="search-shortcut-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+        </button>
+        <a href="knowledge.html#learning-paths" class="btn btn-primary" style="height: 40px; padding: 0 16px;">Start Learning</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Modal (Strictly Hidden by Default) -->
+  <div class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search Knowledge Base">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg class="search-icon-modal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-modal-input" placeholder="Search guides, workflows..." aria-label="Search Input">
+        <button type="button" class="search-modal-close-btn">ESC</button>
+      </div>
+      <div class="search-results-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <!-- MAIN ARTICLE PAGE CONTENT -->
+  <div id="main-content" class="page-wrapper">
+    <div class="container" style="max-width: 1040px; padding-top: var(--space-6);">
+      
+      <!-- BREADCRUMB COMPONENT -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="knowledge.html" class="breadcrumb-link">Knowledge Hub</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="category.html?type=workflows" class="breadcrumb-link">Automated Workflows</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item is-active" aria-current="page">How to Audit Your Local Business Entity Consistency for AI and Local Search</li>
+        </ol>
+      </nav>
+
+      <!-- ARTICLE HEADER / HERO CONTAINER -->
+      <header class="article-header" style="margin-bottom: var(--space-6);">
+        <div class="article-badge-row">
+          <span class="badge badge-blue">AUTOMATED WORKFLOW</span>
+          <span class="badge badge-purple">LOCAL SEO & AI VISIBILITY</span>
+        </div>
+        <h1 class="article-title" style="font-size: 2.25rem; font-weight: 800; line-height: 1.25; margin-top: var(--space-3); margin-bottom: var(--space-3);">How to Audit Your Local Business Entity Consistency for AI and Local Search</h1>
+        <p class="article-subtitle" style="font-size: 1.125rem; color: var(--color-gray-600); margin-bottom: var(--space-4);">A step-by-step operational workflow for auditing and maintaining local business entity consistency (NAPE) across AI engines and map directories.</p>
+        
+        <div class="article-meta-row" style="display: flex; align-items: center; gap: var(--space-4); font-size: 0.875rem; color: var(--color-gray-500); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-gray-200);">
+          <div class="meta-item">
+            <span>By <strong>Locatria Editorial Team</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Published: <strong>Sep 6, 2026</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Reading Time: <strong>18 min read</strong></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2-COLUMN ARTICLE LAYOUT (720px Main Prose + 260px Sticky TOC) -->
+      <div class="article-layout-grid" style="display: grid; grid-template-columns: 1fr 260px; gap: var(--space-8); align-items: start;">
+        
+        <!-- MAIN PROSE CONTAINER -->
+        <main id="article-dynamic-container" class="article-prose" role="main">
+          
+          <!-- Learning Path Contextual Banner -->
+          <div class="learning-path-banner" role="region" aria-label="Learning Path Context">
+            <div class="learning-path-banner-badge">Part of this Learning Path</div>
+            <h3 class="learning-path-banner-title">Build an AI Marketing System as a Solopreneur</h3>
+            <p class="learning-path-banner-desc">This article is part of the AI Marketing System, a step-by-step path for automating local customer acquisition, review responses, and competitor gap analysis.</p>
+            <a href="learn/ai-marketing-system.html" class="learning-path-banner-link">
+              <span>Explore the AI Marketing System Learning Path</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div id="key-takeaways" class="component-key-takeaways">
+            <div class="takeaways-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              <span>Key Takeaways</span>
+            </div>
+            <ul class="takeaways-list">
+              
+                <li class="takeaways-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Traditional NAP (Name, Address, Phone) is no longer sufficient for AI search engine visibility — local businesses must manage NAPE (Name, Address, Phone, Entity Context).</span>
+                </li>
+              
+                <li class="takeaways-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>AI search engines (ChatGPT, Perplexity, Gemini, SearchGPT) pull entity information from diverse web sources and data aggregators, making entity disambiguation essential.</span>
+                </li>
+              
+                <li class="takeaways-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Conflicting or inconsistent NAPE attributes across major directories cause AI engines to hallucinate details or exclude your business from localized recommendations.</span>
+                </li>
+              
+                <li class="takeaways-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>A structured 6-step NAPE audit isolates P0 critical identity errors (wrong address, wrong phone) from P2 formatting variations, prioritizing high-impact corrections.</span>
+                </li>
+              
+                <li class="takeaways-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Human judgment and authoritative primary source verification remain mandatory — automated audit tools identify discrepancies, but humans verify real-world accuracy.</span>
+                </li>
+              
+            </ul>
+          </div>
+<h2 id="introduction" class="component-heading h2">1. Introduction: The Shift from NAP to NAPE</h2>
+<p class="component-paragraph">For over a decade, local search engine optimization focused heavily on NAP consistency — ensuring your business Name, Address, and Phone Number matched across online directories. However, the rise of AI-driven search engines (such as ChatGPT, Perplexity, Google Gemini, and SearchGPT) has fundamentally expanded this requirement into <strong>NAPE: Name, Address, Phone, and Entity Context</strong>.</p>
+<div id="nape-definition" class="component-definitions-list" style="margin-bottom: var(--space-6);">
+            <h3 class="component-heading h3" style="margin-bottom: var(--space-4);">NAPE Framework Definition</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
+              
+                <div class="component-definition" style="padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                  <div class="definition-term" style="font-weight: 700; font-size: var(--text-base); color: var(--color-primary-700); margin-bottom: 4px;">NAPE Framework</div>
+                  <div class="definition-text" style="font-size: var(--text-sm); color: var(--color-text-body); line-height: 1.5; white-space: pre-wrap;">A LOCATRIA operational framework extending traditional NAP to include Entity Context — verifying category relationships, primary service offerings, practitioner associations, operating hours, and location disambiguation across AI knowledge bases.</div>
+                </div>
+              
+            </div>
+          </div>
+<h2 id="why-entity-consistency-matters" class="component-heading h2">2. Why Entity Consistency Matters for AI & Local Search</h2>
+<p class="component-paragraph">AI search assistants do not simply list web pages; they synthesize entity answers by querying knowledge vaults, map providers, and structured schemas. When an AI system encounters conflicting NAPE data — such as two different suite numbers or conflicting business hours across platforms — it experiences low confidence. In AI discovery, low entity confidence leads directly to omission or hallucinated recommendations.</p>
+<h2 id="six-step-audit-workflow" class="component-heading h2">3. The Six-Step Audit Workflow</h2>
+<div class="component-step-by-step">
+            <h3 class="component-heading h3">Locatria Six-Step NAPE Audit Workflow</h3>
+            
+              <div class="step-item-card">
+                <span class="step-badge">Step 01</span>
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 4px 0 6px 0;">Step 01 — Build Canonical Record</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); white-space: pre-wrap;">Establish your single authoritative NAPE master record containing exact legal name, physical address, local phone, primary category, and service entities.</p>
+              </div>
+            
+              <div class="step-item-card">
+                <span class="step-badge">Step 02</span>
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 4px 0 6px 0;">Step 02 — Audit External Sources</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); white-space: pre-wrap;">Inspect primary map ecosystems (Google Business Profile, Apple Maps, Bing Places) and top industry directory sources for discrepancies.</p>
+              </div>
+            
+              <div class="step-item-card">
+                <span class="step-badge">Step 03</span>
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 4px 0 6px 0;">Step 03 — Test AI Interpretation</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); white-space: pre-wrap;">Run structured diagnostic queries across major AI assistants (ChatGPT, Perplexity, Gemini, SearchGPT) to observe entity retrieval behavior.</p>
+              </div>
+            
+              <div class="step-item-card">
+                <span class="step-badge">Step 04</span>
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 4px 0 6px 0;">Step 04 — Isolate Discrepancies</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); white-space: pre-wrap;">Categorize findings into P0 Critical Identity Errors, P1 Service/Hours Confusions, and P2 Formatting Variations.</p>
+              </div>
+            
+              <div class="step-item-card">
+                <span class="step-badge">Step 05</span>
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 4px 0 6px 0;">Step 05 — Correct Primary Sources</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); white-space: pre-wrap;">Submit authoritative updates directly to core map providers, data aggregators, and primary web properties.</p>
+              </div>
+            
+              <div class="step-item-card">
+                <span class="step-badge">Step 06</span>
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 4px 0 6px 0;">Step 06 — Recheck & Verification</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); white-space: pre-wrap;">Establish a 30-day verification check to confirm that AI knowledge vaults have indexed the updated entity signals.</p>
+              </div>
+            
+          </div>
+<h2 id="step-1-build-canonical-record" class="component-heading h2">4. Step 1: Build Your Canonical Business Record</h2>
+<p class="component-paragraph">Before auditing external sites, construct your internal Single Source of Truth. Record exact legal business name, physical street address, Suite/Unit number, primary local telephone number, official website domain, primary business category, and core service offerings.</p>
+<h2 id="step-2-audit-external-sources" class="component-heading h2">5. Step 2: Audit External Sources</h2>
+<p class="component-paragraph">Check your core business profiles systematically: Google Business Profile, Apple Maps (Apple Business Connect), Bing Places, Yelp, Facebook Local, and major industry directories (e.g. Healthgrades for Dental, Avvo for Law, Realtor.com for Real Estate).</p>
+<h2 id="step-3-test-ai-interpretation" class="component-heading h2">6. Step 3: Test AI Interpretation</h2>
+<p class="component-paragraph">Prompt AI search engines with direct navigational and entity queries (e.g., "What is the address, phone number, and primary services of [Business Name] in [City, State]?"). Note any hallucinated hours, outdated suite numbers, or incorrect category associations.</p>
+<h2 id="step-4-isolate-prioritize-discrepancies" class="component-heading h2">7. Step 4: Isolate and Prioritize Discrepancies</h2>
+<p class="component-paragraph">Prioritize fixes based on risk: <strong>P0 (Critical)</strong>: Wrong phone number, incorrect street address, or closed status. <strong>P1 (Important)</strong>: Conflicting business hours, missing primary categories, or outdated website URL. <strong>P2 (Minor)</strong>: Minor punctuation or abbreviation differences (e.g., St. vs Street).</p>
+<h2 id="step-5-correct-primary-sources" class="component-heading h2">8. Step 5: Correct Primary Sources</h2>
+<p class="component-paragraph">Update your primary profiles directly. For data aggregators, update major data providers (Data Axle, Neustar Localeze, Foursquare) that feed downstream search engines and AI knowledge graphs.</p>
+<h2 id="step-6-recheck-verification" class="component-heading h2">9. Step 6: Recheck & Verification</h2>
+<p class="component-paragraph">AI search engines re-index external sources periodically. Re-run your diagnostic prompts 30 days after submitting corrections to confirm that knowledge graphs reflect your canonical NAPE record.</p>
+<h2 id="entity-identity-test" class="component-heading h2">10. The Entity Identity Test</h2>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">LOCATRIA Entity Identity Test (6 Core Questions)</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  />
+                  <label for="chk-0">Is your exact business name identical across Google, Apple Maps, and your website footer?</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  />
+                  <label for="chk-1">Is your physical address formatted consistently, including Suite or Unit numbers?</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  />
+                  <label for="chk-2">Does your primary local telephone number match across all active web profiles?</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-3"  />
+                  <label for="chk-3">Is your primary business category explicitly defined and consistent across platforms?</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-4"  />
+                  <label for="chk-4">Are your operating hours synchronized, including special holiday hours?</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-5"  />
+                  <label for="chk-5">Does structured LocalBusiness Organization JSON-LD exist on your homepage?</label>
+                </li>
+              
+            </ul>
+          </div>
+<h2 id="practical-audit-matrix" class="component-heading h2">11. The Practical Audit Matrix</h2>
+<div id="audit-matrix-table" class="component-table-wrapper">
+            <table class="component-comparison-table">
+              <thead>
+                <tr>
+                  <th>Source Platform</th><th>Attribute Checked</th><th>Priority Level</th><th>Correction Method</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Google Business Profile</td><td>Name, Address, Phone, Hours, Categories</td><td>P0 / P1</td><td>Direct GBP Dashboard Update</td></tr><tr><td>Apple Business Connect</td><td>Name, Address, Phone, Location Pin</td><td>P0 / P1</td><td>Apple Business Connect Portal</td></tr><tr><td>Bing Places for Business</td><td>Name, Address, Phone, Category</td><td>P1</td><td>Bing Places Dashboard / Sync</td></tr><tr><td>Data Aggregators (Data Axle)</td><td>Core NAPE Signals & Citations</td><td>P1 / P2</td><td>Aggregator Portal Submission</td></tr><tr><td>AI Engines (ChatGPT / Gemini)</td><td>Entity Retrieval & Description</td><td>P0 / P1</td><td>Primary Source Update & Schema</td></tr>
+              </tbody>
+            </table>
+          </div>
+<h2 id="common-mistakes" class="component-heading h2">12. Common Entity Audit Mistakes</h2>
+<div class="component-callout variant-warning callout callout-warning">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">Common Entity Audit Mistakes:</strong>
+              <div class="callout-body">1. Over-optimizing minor punctuation variations (e.g. 'Suite 100' vs '#100') while ignoring wrong phone numbers.
+2. Changing your business name slightly on different profiles to target keywords (violates Google guidelines and confuses AI entities).
+3. Neglecting to update data aggregators that supply baseline data to AI search engines.
+4. Assuming automated sync software fixes entity confusion without manual verification.</div>
+            </div>
+          </div>
+<h2 id="audit-scope-limitations" class="component-heading h2">13. What This Audit Can and Cannot Tell You</h2>
+<div class="component-pros-cons">
+            <div class="pros-box">
+              <div class="pros-title">✓ Pros & Advantages</div>
+              <ul style="padding-left: 18px; margin: 0; font-size: var(--text-xs); color: #14532d;">
+                <li>Identifies factual NAPE discrepancies across web directories</li><li>Diagnoses low-confidence entity signals causing AI hallucinations</li><li>Provides a clear, prioritized checklist for updating primary profiles</li><li>Establishes a baseline for long-term local entity governance</li>
+              </ul>
+            </div>
+            <div class="cons-box">
+              <div class="cons-title">✕ Cons & Limitations</div>
+              <ul style="padding-left: 18px; margin: 0; font-size: var(--text-xs); color: #7f1d1d;">
+                <li>Cannot force AI search engines to update their cache instantly</li><li>Cannot guarantee specific local search rank positions</li><li>Cannot fix third-party user reviews containing incorrect information</li>
+              </ul>
+            </div>
+          </div>
+<h2 id="operating-checklist" class="component-heading h2">14. Local Business Entity Consistency Checklist</h2>
+<ul class="component-unordered-list"><li>Document canonical NAPE master record in a central document</li><li>Audit Google Business Profile, Apple Maps, and Bing Places</li><li>Test diagnostic queries on ChatGPT, Perplexity, and Gemini</li><li>Log discrepancies in the NAPE Audit Matrix with assigned priority</li><li>Submit authoritative corrections to primary platforms and aggregators</li><li>Re-test AI diagnostic queries after 30 days to verify indexing</li></ul>
+<h2 id="faq" class="component-heading h2">15. Frequently Asked Questions (FAQ)</h2>
+<div id="faq-block" class="component-faq-list">
+            <h3 class="component-heading h3" style="margin-bottom: var(--space-4);">Entity Consistency Questions & Answers</h3>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">What is NAPE in local AI visibility?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">NAPE stands for Name, Address, Phone, and Entity Context. It expands traditional NAP by adding category relationships, service definitions, hours, and location disambiguation.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">How long does it take for AI search engines to update entity information?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Most AI search engines refresh their web knowledge caches every 2 to 4 weeks after primary sources (GBP, Apple Maps, structured data) are updated.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Do minor address abbreviations (like St vs Street) harm AI visibility?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">No. Modern AI language models understand standard abbreviations. Focus effort on critical identity errors such as incorrect suite numbers, wrong phone numbers, or conflicting business names.</p>
+              </div>
+            
+          </div>
+<h2 id="conclusion" class="component-heading h2">16. Conclusion</h2>
+<p class="component-paragraph">Maintaining entity consistency is the foundation of AI search discoverability. By establishing a canonical NAPE record and following a repeatable audit workflow, local business owners ensure that prospective customers receive accurate, high-confidence information across both traditional maps and modern AI search assistants.</p>
+<h2 id="related-knowledge" class="component-heading h2">17. Related Locatria Knowledge</h2>
+<div class="component-related-guide-card">
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-primary-600); margin-bottom: 4px;">Learning Path Continuation</div>
+            <h4 style="font-size: var(--text-base); margin-bottom: 4px;"><a href="what-is-ai-visibility-practical-guide-local-businesses.html" class="component-link">What Is AI Visibility? A Practical Guide for Local Businesses</a></h4>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin: 0;">An foundational practical guide to how AI systems search, extract, and recommend local business information.</p>
+          </div>
+<div class="component-related-guide-card">
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-primary-600); margin-bottom: 4px;">Learning Path Continuation</div>
+            <h4 style="font-size: var(--text-base); margin-bottom: 4px;"><a href="how-ai-is-changing-local-seo-small-businesses.html" class="component-link">How AI Is Changing Local SEO for Small Businesses</a></h4>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin: 0;">Understand how search engine algorithms and AI answer engines evaluate local entity signals.</p>
+          </div>
+<div class="component-related-guide-card">
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-primary-600); margin-bottom: 4px;">Learning Path Continuation</div>
+            <h4 style="font-size: var(--text-base); margin-bottom: 4px;"><a href="ai-local-seo-audit-workflow-small-businesses.html" class="component-link">AI Local SEO Audit Workflow for Small Businesses</a></h4>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin: 0;">A structured, AI-assisted diagnosis answering what's working, what's inconsistent, and what to fix first.</p>
+          </div>
+<div class="component-related-guide-card">
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-primary-600); margin-bottom: 4px;">Learning Path Continuation</div>
+            <h4 style="font-size: var(--text-base); margin-bottom: 4px;"><a href="ai-content-update-workflow-local-businesses.html" class="component-link">AI Content Update Workflow for Local Businesses</a></h4>
+            <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin: 0;">A repeatable, evidence-based process for keeping published content accurate, current, and dependable over time.</p>
+          </div>
+<h2 id="sources-references" class="component-heading h2">18. Sources / References</h2>
+<div id="sources-block" class="component-sources-list" style="margin-top: var(--space-8); padding: var(--space-5); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <h4 style="font-size: var(--text-sm); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 12px 0;">Authoritative Compliance & Search Engine Citations</h4>
+            <ul style="padding-left: 20px; margin: 0; font-size: var(--text-xs); color: var(--color-text-muted); display: flex; flex-direction: column; gap: 6px;">
+              <li>Google Search Central — "Creating Helpful, Reliable, People-First Content" — https://developers.google.com/search/docs/fundamentals/creating-helpful-content — Supports quality standards.</li><li>Google Business Profile Help — "Guidelines for representing your business on Google" — https://support.google.com/business/answer/3038177 — Supports NAP and business identity rules.</li><li>W3C Schema.org — "LocalBusiness Organization Schema Specification" — https://schema.org/LocalBusiness — Supports structured entity representation.</li>
+            </ul>
+          </div>
+
+        </main>
+
+        <!-- STICKY TABLE OF CONTENTS SIDEBAR -->
+        <aside class="article-sidebar" style="position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto;" aria-label="Table of Contents">
+          <div class="toc-card" style="background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: var(--radius-lg); padding: var(--space-4);">
+            <div class="toc-header" style="font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-gray-700); margin-bottom: var(--space-3);">Table of Contents</div>
+            <nav id="toc-nav" class="toc-nav-list" style="display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.875rem;">
+              <a href="#key-takeaways" class="toc-link">Key Takeaways</a>
+              <a href="#introduction" class="toc-link">1. Introduction</a>
+              <a href="#why-entity-consistency-matters" class="toc-link">2. Why Entity Consistency Matters</a>
+              <a href="#six-step-audit-workflow" class="toc-link">3. The Six-Step Audit Workflow</a>
+              <a href="#step-1-build-canonical-record" class="toc-link">4. Step 1: Canonical Record</a>
+              <a href="#step-2-audit-external-sources" class="toc-link">5. Step 2: Audit External Sources</a>
+              <a href="#step-3-test-ai-interpretation" class="toc-link">6. Step 3: Test AI Interpretation</a>
+              <a href="#step-4-isolate-prioritize-discrepancies" class="toc-link">7. Step 4: Isolate Discrepancies</a>
+              <a href="#step-5-correct-primary-sources" class="toc-link">8. Step 5: Correct Primary Sources</a>
+              <a href="#step-6-recheck-verification" class="toc-link">9. Step 6: Recheck & Verification</a>
+              <a href="#entity-identity-test" class="toc-link">10. The Entity Identity Test</a>
+              <a href="#practical-audit-matrix" class="toc-link">11. The Practical Audit Matrix</a>
+              <a href="#common-mistakes" class="toc-link">12. Common Audit Mistakes</a>
+              <a href="#audit-scope-limitations" class="toc-link">13. Scope & Limitations</a>
+              <a href="#operating-checklist" class="toc-link">14. Operating Checklist</a>
+              <a href="#faq" class="toc-link">15. Frequently Asked Questions</a>
+              <a href="#conclusion" class="toc-link">16. Conclusion</a>
+              <a href="#related-knowledge" class="toc-link">17. Related Knowledge</a>
+              <a href="#sources-references" class="toc-link">18. Sources / References</a>
+            </nav>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- NEWSLETTER CTA -->
+    <section id="newsletter" class="section-block">
+      <div class="container">
+        <div class="card card-cta" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-primary-50) 100%);">
+          <span class="badge badge-blue" style="margin: 0 auto var(--space-3) auto;">Weekly Knowledge Briefing</span>
+          <h2 class="card-cta-title">Stay Ahead with Practical AI Local Entity Consistency & NAPE Audit Workflows</h2>
+          <p class="card-cta-desc">
+            Get practical, actionable AI entity consistency and NAPE audit workflows for local business owners directly in your inbox every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form" style="max-width: 440px; margin: 0 auto; width: 100%;">
+            <div class="newsletter-input-group" style="margin-bottom: var(--space-2);">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Locatria Home Footer">
+            <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="footer-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+          </a>
+          <p class="footer-brand-desc">
+            Locatria is an educational knowledge platform empowering local businesses, small business owners, and solopreneurs to grow using practical, trustworthy AI tools.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="knowledge.html" class="footer-link">Knowledge Hub</a></li>
+            <li><a href="category.html?type=guides" class="footer-link">Guides & Blueprints</a></li>
+            <li><a href="category.html?type=tutorials" class="footer-link">Step-by-Step Tutorials</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">Resource Library</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?industry=real-estate" class="footer-link">Real Estate AI</a></li>
+            <li><a href="category.html?industry=law-firms" class="footer-link">Law Firm Automation</a></li>
+            <li><a href="category.html?industry=dental-clinics" class="footer-link">Dental Practice AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?type=prompts" class="footer-link">AI Prompt Packs</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">ROI Savings Calculators</a></li>
+            <li><a href="category.html?type=checklists" class="footer-link">Workflow Checklists</a></li>
+            <li><a href="category.html?type=glossary" class="footer-link">AI Terms Glossary</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Weekly AI Briefing</h4>
+          <p style="font-size: var(--text-xs); color: #cbd5e1; margin-bottom: var(--space-2);">
+            Get actionable AI workflows for local business owners every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Locatria. All rights reserved. Helping Local Businesses Grow with AI.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="#privacy" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="#terms" class="footer-legal-link">Terms of Use</a></li>
+          <li><a href="#affiliate" class="footer-legal-link">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/published-articles-db.js?v=5.4"></script>
+  <script src="js/learning-paths-db.js?v=5.4"></script>
+  <script src="js/main.js?v=5.4"></script>
+  <script src="js/search.js?v=5.4"></script>
+</body>
+</html>

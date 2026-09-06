@@ -1,0 +1,396 @@
+{
+  "id": "ai-local-entity-consistency-nape-audit-workflow",
+  "type": "workflow",
+  "schemaVersion": "1.0",
+  "status": "published",
+  "metadata": {
+    "title": "How to Audit Your Local Business Entity Consistency for AI and Local Search",
+    "subtitle": "A step-by-step operational workflow for auditing and maintaining local business entity consistency (NAPE) across AI engines and map directories.",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 18,
+    "lastUpdated": "2026-09-06",
+    "audience": [
+      "Small business owners",
+      "Solopreneurs",
+      "Local marketing operators",
+      "Local business founders",
+      "Independent practice owners"
+    ],
+    "primaryTopic": "How to Audit Your Local Business Entity Consistency for AI and Local Search"
+  },
+  "seo": {
+    "canonical": "https://www.locatria.com/ai-local-entity-consistency-nape-audit-workflow.html",
+    "metaDescription": "Learn how to audit and reconcile your local business entity data (NAPE) across AI search engines, Google Business Profile, Apple Maps, Bing Places, and directory ecosystems.",
+    "openGraph": {
+      "title": "How to Audit Your Local Business Entity Consistency for AI and Local Search | Locatria",
+      "description": "Learn how to audit and reconcile your local business entity data (NAPE) across AI search engines, Google Business Profile, Apple Maps, Bing Places, and directory ecosystems.",
+      "type": "article"
+    }
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "Local Business Entity Consistency",
+    "industryFocus": "general"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "keyTakeaways",
+      "id": "key-takeaways",
+      "title": "Key Takeaways",
+      "items": [
+        "Traditional NAP (Name, Address, Phone) is no longer sufficient for AI search engine visibility — local businesses must manage NAPE (Name, Address, Phone, Entity Context).",
+        "AI search engines (ChatGPT, Perplexity, Gemini, SearchGPT) pull entity information from diverse web sources and data aggregators, making entity disambiguation essential.",
+        "Conflicting or inconsistent NAPE attributes across major directories cause AI engines to hallucinate details or exclude your business from localized recommendations.",
+        "A structured 6-step NAPE audit isolates P0 critical identity errors (wrong address, wrong phone) from P2 formatting variations, prioritizing high-impact corrections.",
+        "Human judgment and authoritative primary source verification remain mandatory — automated audit tools identify discrepancies, but humans verify real-world accuracy."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "introduction",
+      "title": "1. Introduction: The Shift from NAP to NAPE"
+    },
+    {
+      "type": "paragraph",
+      "content": "For over a decade, local search engine optimization focused heavily on NAP consistency — ensuring your business Name, Address, and Phone Number matched across online directories. However, the rise of AI-driven search engines (such as ChatGPT, Perplexity, Google Gemini, and SearchGPT) has fundamentally expanded this requirement into <strong>NAPE: Name, Address, Phone, and Entity Context</strong>."
+    },
+    {
+      "type": "definitions",
+      "id": "nape-definition",
+      "title": "NAPE Framework Definition",
+      "items": [
+        {
+          "term": "NAPE Framework",
+          "definition": "A LOCATRIA operational framework extending traditional NAP to include Entity Context — verifying category relationships, primary service offerings, practitioner associations, operating hours, and location disambiguation across AI knowledge bases."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-entity-consistency-matters",
+      "title": "2. Why Entity Consistency Matters for AI & Local Search"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI search assistants do not simply list web pages; they synthesize entity answers by querying knowledge vaults, map providers, and structured schemas. When an AI system encounters conflicting NAPE data — such as two different suite numbers or conflicting business hours across platforms — it experiences low confidence. In AI discovery, low entity confidence leads directly to omission or hallucinated recommendations."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "six-step-audit-workflow",
+      "title": "3. The Six-Step Audit Workflow"
+    },
+    {
+      "type": "stepByStep",
+      "id": "six-step-workflow-card",
+      "title": "Locatria Six-Step NAPE Audit Workflow",
+      "steps": [
+        {
+          "title": "Step 01 — Build Canonical Record",
+          "content": "Establish your single authoritative NAPE master record containing exact legal name, physical address, local phone, primary category, and service entities."
+        },
+        {
+          "title": "Step 02 — Audit External Sources",
+          "content": "Inspect primary map ecosystems (Google Business Profile, Apple Maps, Bing Places) and top industry directory sources for discrepancies."
+        },
+        {
+          "title": "Step 03 — Test AI Interpretation",
+          "content": "Run structured diagnostic queries across major AI assistants (ChatGPT, Perplexity, Gemini, SearchGPT) to observe entity retrieval behavior."
+        },
+        {
+          "title": "Step 04 — Isolate Discrepancies",
+          "content": "Categorize findings into P0 Critical Identity Errors, P1 Service/Hours Confusions, and P2 Formatting Variations."
+        },
+        {
+          "title": "Step 05 — Correct Primary Sources",
+          "content": "Submit authoritative updates directly to core map providers, data aggregators, and primary web properties."
+        },
+        {
+          "title": "Step 06 — Recheck & Verification",
+          "content": "Establish a 30-day verification check to confirm that AI knowledge vaults have indexed the updated entity signals."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step-1-build-canonical-record",
+      "title": "4. Step 1: Build Your Canonical Business Record"
+    },
+    {
+      "type": "paragraph",
+      "content": "Before auditing external sites, construct your internal Single Source of Truth. Record exact legal business name, physical street address, Suite/Unit number, primary local telephone number, official website domain, primary business category, and core service offerings."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step-2-audit-external-sources",
+      "title": "5. Step 2: Audit External Sources"
+    },
+    {
+      "type": "paragraph",
+      "content": "Check your core business profiles systematically: Google Business Profile, Apple Maps (Apple Business Connect), Bing Places, Yelp, Facebook Local, and major industry directories (e.g. Healthgrades for Dental, Avvo for Law, Realtor.com for Real Estate)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step-3-test-ai-interpretation",
+      "title": "6. Step 3: Test AI Interpretation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Prompt AI search engines with direct navigational and entity queries (e.g., \"What is the address, phone number, and primary services of [Business Name] in [City, State]?\"). Note any hallucinated hours, outdated suite numbers, or incorrect category associations."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step-4-isolate-prioritize-discrepancies",
+      "title": "7. Step 4: Isolate and Prioritize Discrepancies"
+    },
+    {
+      "type": "paragraph",
+      "content": "Prioritize fixes based on risk: <strong>P0 (Critical)</strong>: Wrong phone number, incorrect street address, or closed status. <strong>P1 (Important)</strong>: Conflicting business hours, missing primary categories, or outdated website URL. <strong>P2 (Minor)</strong>: Minor punctuation or abbreviation differences (e.g., St. vs Street)."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step-5-correct-primary-sources",
+      "title": "8. Step 5: Correct Primary Sources"
+    },
+    {
+      "type": "paragraph",
+      "content": "Update your primary profiles directly. For data aggregators, update major data providers (Data Axle, Neustar Localeze, Foursquare) that feed downstream search engines and AI knowledge graphs."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "step-6-recheck-verification",
+      "title": "9. Step 6: Recheck & Verification"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI search engines re-index external sources periodically. Re-run your diagnostic prompts 30 days after submitting corrections to confirm that knowledge graphs reflect your canonical NAPE record."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "entity-identity-test",
+      "title": "10. The Entity Identity Test"
+    },
+    {
+      "type": "checklist",
+      "id": "entity-identity-checklist",
+      "title": "LOCATRIA Entity Identity Test (6 Core Questions)",
+      "items": [
+        {
+          "id": "q1",
+          "label": "Is your exact business name identical across Google, Apple Maps, and your website footer?"
+        },
+        {
+          "id": "q2",
+          "label": "Is your physical address formatted consistently, including Suite or Unit numbers?"
+        },
+        {
+          "id": "q3",
+          "label": "Does your primary local telephone number match across all active web profiles?"
+        },
+        {
+          "id": "q4",
+          "label": "Is your primary business category explicitly defined and consistent across platforms?"
+        },
+        {
+          "id": "q5",
+          "label": "Are your operating hours synchronized, including special holiday hours?"
+        },
+        {
+          "id": "q6",
+          "label": "Does structured LocalBusiness Organization JSON-LD exist on your homepage?"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "practical-audit-matrix",
+      "title": "11. The Practical Audit Matrix"
+    },
+    {
+      "type": "comparisonTable",
+      "id": "audit-matrix-table",
+      "columns": [
+        "Source Platform",
+        "Attribute Checked",
+        "Priority Level",
+        "Correction Method"
+      ],
+      "rows": [
+        [
+          "Google Business Profile",
+          "Name, Address, Phone, Hours, Categories",
+          "P0 / P1",
+          "Direct GBP Dashboard Update"
+        ],
+        [
+          "Apple Business Connect",
+          "Name, Address, Phone, Location Pin",
+          "P0 / P1",
+          "Apple Business Connect Portal"
+        ],
+        [
+          "Bing Places for Business",
+          "Name, Address, Phone, Category",
+          "P1",
+          "Bing Places Dashboard / Sync"
+        ],
+        [
+          "Data Aggregators (Data Axle)",
+          "Core NAPE Signals & Citations",
+          "P1 / P2",
+          "Aggregator Portal Submission"
+        ],
+        [
+          "AI Engines (ChatGPT / Gemini)",
+          "Entity Retrieval & Description",
+          "P0 / P1",
+          "Primary Source Update & Schema"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-mistakes",
+      "title": "12. Common Entity Audit Mistakes"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Common Entity Audit Mistakes",
+      "content": "1. Over-optimizing minor punctuation variations (e.g. 'Suite 100' vs '#100') while ignoring wrong phone numbers.\n2. Changing your business name slightly on different profiles to target keywords (violates Google guidelines and confuses AI entities).\n3. Neglecting to update data aggregators that supply baseline data to AI search engines.\n4. Assuming automated sync software fixes entity confusion without manual verification."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "audit-scope-limitations",
+      "title": "13. What This Audit Can and Cannot Tell You"
+    },
+    {
+      "type": "prosCons",
+      "id": "can-cannot-tell-you",
+      "pros": [
+        "Identifies factual NAPE discrepancies across web directories",
+        "Diagnoses low-confidence entity signals causing AI hallucinations",
+        "Provides a clear, prioritized checklist for updating primary profiles",
+        "Establishes a baseline for long-term local entity governance"
+      ],
+      "cons": [
+        "Cannot force AI search engines to update their cache instantly",
+        "Cannot guarantee specific local search rank positions",
+        "Cannot fix third-party user reviews containing incorrect information"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "operating-checklist",
+      "title": "14. Local Business Entity Consistency Checklist"
+    },
+    {
+      "type": "unorderedList",
+      "id": "operating-checklist-list",
+      "items": [
+        "Document canonical NAPE master record in a central document",
+        "Audit Google Business Profile, Apple Maps, and Bing Places",
+        "Test diagnostic queries on ChatGPT, Perplexity, and Gemini",
+        "Log discrepancies in the NAPE Audit Matrix with assigned priority",
+        "Submit authoritative corrections to primary platforms and aggregators",
+        "Re-test AI diagnostic queries after 30 days to verify indexing"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "15. Frequently Asked Questions (FAQ)"
+    },
+    {
+      "type": "faq",
+      "id": "faq-block",
+      "title": "Entity Consistency Questions & Answers",
+      "items": [
+        {
+          "question": "What is NAPE in local AI visibility?",
+          "answer": "NAPE stands for Name, Address, Phone, and Entity Context. It expands traditional NAP by adding category relationships, service definitions, hours, and location disambiguation."
+        },
+        {
+          "question": "How long does it take for AI search engines to update entity information?",
+          "answer": "Most AI search engines refresh their web knowledge caches every 2 to 4 weeks after primary sources (GBP, Apple Maps, structured data) are updated."
+        },
+        {
+          "question": "Do minor address abbreviations (like St vs Street) harm AI visibility?",
+          "answer": "No. Modern AI language models understand standard abbreviations. Focus effort on critical identity errors such as incorrect suite numbers, wrong phone numbers, or conflicting business names."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "conclusion",
+      "title": "16. Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintaining entity consistency is the foundation of AI search discoverability. By establishing a canonical NAPE record and following a repeatable audit workflow, local business owners ensure that prospective customers receive accurate, high-confidence information across both traditional maps and modern AI search assistants."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "related-knowledge",
+      "title": "17. Related Locatria Knowledge"
+    },
+    {
+      "type": "relatedGuide",
+      "title": "What Is AI Visibility? A Practical Guide for Local Businesses",
+      "url": "what-is-ai-visibility-practical-guide-local-businesses.html",
+      "description": "An foundational practical guide to how AI systems search, extract, and recommend local business information."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "How AI Is Changing Local SEO for Small Businesses",
+      "url": "how-ai-is-changing-local-seo-small-businesses.html",
+      "description": "Understand how search engine algorithms and AI answer engines evaluate local entity signals."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Local SEO Audit Workflow for Small Businesses",
+      "url": "ai-local-seo-audit-workflow-small-businesses.html",
+      "description": "A structured, AI-assisted diagnosis answering what's working, what's inconsistent, and what to fix first."
+    },
+    {
+      "type": "relatedGuide",
+      "title": "AI Content Update Workflow for Local Businesses",
+      "url": "ai-content-update-workflow-local-businesses.html",
+      "description": "A repeatable, evidence-based process for keeping published content accurate, current, and dependable over time."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "sources-references",
+      "title": "18. Sources / References"
+    },
+    {
+      "type": "sources",
+      "id": "sources-block",
+      "title": "Authoritative Compliance & Search Engine Citations",
+      "items": [
+        "Google Search Central — \"Creating Helpful, Reliable, People-First Content\" — https://developers.google.com/search/docs/fundamentals/creating-helpful-content — Supports quality standards.",
+        "Google Business Profile Help — \"Guidelines for representing your business on Google\" — https://support.google.com/business/answer/3038177 — Supports NAP and business identity rules.",
+        "W3C Schema.org — \"LocalBusiness Organization Schema Specification\" — https://schema.org/LocalBusiness — Supports structured entity representation."
+      ]
+    }
+  ]
+}
