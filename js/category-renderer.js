@@ -122,6 +122,26 @@
       const heroDesc = document.querySelector('.hero-knowledge-section p');
       if (heroDesc) heroDesc.textContent = categoryDesc;
 
+      // Update Sidebar Active Filter Highlight Dynamically
+      const sidebarLinks = document.querySelectorAll('.sidebar-filter-link');
+      const activeType = filterType ? filterType.toLowerCase() : (!filterIndustry ? 'guides' : null);
+      sidebarLinks.forEach(link => {
+        const href = (link.getAttribute('href') || '').toLowerCase();
+        link.style.color = '';
+        link.style.fontWeight = '';
+        link.classList.remove('is-active');
+
+        if (activeType && (href.includes('type=' + activeType) || (activeType === 'guides' && href.includes('type=guide')))) {
+          link.style.color = 'var(--color-primary-600)';
+          link.style.fontWeight = '600';
+          link.classList.add('is-active');
+        } else if (filterIndustry && href.includes('industry=' + filterIndustry.toLowerCase())) {
+          link.style.color = 'var(--color-primary-600)';
+          link.style.fontWeight = '600';
+          link.classList.add('is-active');
+        }
+      });
+
       // Render Main Content Column
       const mainCol = document.querySelector('.layout-with-sidebar main');
       if (!mainCol) return;
