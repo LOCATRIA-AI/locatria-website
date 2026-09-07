@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content | Locatria Knowledge Hub</title>
+  <meta name="description" content="A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.">
+  
+  <!-- OpenGraph & SEO -->
+  <link rel="canonical" href="https://www.locatria.com/ai-assisted-local-business-content-update-maintenance-workflow.html">
+  <meta property="og:title" content="How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content | Locatria">
+  <meta property="og:description" content="A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.">
+  <meta property="og:type" content="article">
+
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS Files -->
+  <link rel="stylesheet" href="css/variables.css?v=5.4">
+  <link rel="stylesheet" href="css/global.css?v=5.4">
+  <link rel="stylesheet" href="css/header.css?v=5.4">
+  <link rel="stylesheet" href="css/components.css?v=5.4">
+  <link rel="stylesheet" href="css/sidebar.css?v=5.4">
+  <link rel="stylesheet" href="css/footer.css?v=5.4">
+  <link rel="stylesheet" href="css/article.css?v=5.4">
+  <link rel="stylesheet" href="css/components-v1.css?v=5.4">
+
+  <!-- LOCATRIA Standalone Brand Icon Favicon Suite -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- WCAG Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- GLOBAL HEADER (Synchronized with IA v1.0) -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Locatria Home">
+        <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="brand-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge.html" class="nav-link is-active">Knowledge Hub</a>
+        
+        <!-- Learn Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html#learning-paths" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Learn
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?type=guides" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Guides & Blueprints</strong>
+                  <span class="dropdown-item-desc">Evergreen operational AI guides</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=tutorials" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Step-by-Step Tutorials</strong>
+                  <span class="dropdown-item-desc">Actionable zero-code tutorials</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=workflows" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Automated Workflows</strong>
+                  <span class="dropdown-item-desc">End-to-end execution blueprints</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=checklists" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Audit Checklists</strong>
+                  <span class="dropdown-item-desc">Verification & compliance lists</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Industries Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Industries
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?industry=real-estate" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Real Estate</strong>
+                  <span class="dropdown-item-desc">Property marketing & lead systems</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=law-firms" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Law Firms</strong>
+                  <span class="dropdown-item-desc">Ethical intake & FAQ governance</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=dental-clinics" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Dental Clinics</strong>
+                  <span class="dropdown-item-desc">Patient scheduling & FAQ assistants</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="category.html?type=resources" class="nav-link">Resources</a>
+        <a href="index.html#why-locatria" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn js-search-trigger" aria-label="Search">
+          <svg class="search-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="search-trigger-text">
+            <span class="placeholder-desktop">Search articles, guides, workflows...</span>
+            <span class="placeholder-mobile">Search articles...</span>
+          </span>
+          <span class="search-shortcut-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+        </button>
+        <a href="knowledge.html#learning-paths" class="btn btn-primary" style="height: 40px; padding: 0 16px;">Start Learning</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Modal (Strictly Hidden by Default) -->
+  <div class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search Knowledge Base">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg class="search-icon-modal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-modal-input" placeholder="Search guides, workflows..." aria-label="Search Input">
+        <button type="button" class="search-modal-close-btn">ESC</button>
+      </div>
+      <div class="search-results-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <!-- MAIN ARTICLE PAGE CONTENT -->
+  <div id="main-content" class="page-wrapper">
+    <div class="container" style="max-width: 1040px; padding-top: var(--space-6);">
+      
+      <!-- BREADCRUMB COMPONENT -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="knowledge.html" class="breadcrumb-link">Knowledge Hub</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="category.html?type=workflows" class="breadcrumb-link">Automated Workflows</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item is-active" aria-current="page">How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content</li>
+        </ol>
+      </nav>
+
+      <!-- ARTICLE HEADER / HERO CONTAINER -->
+      <header class="article-header" style="margin-bottom: var(--space-6);">
+        <div class="article-badge-row">
+          <span class="badge badge-blue">AUTOMATED WORKFLOW</span>
+          <span class="badge badge-purple">CONTENT OPERATIONS & MAINTENANCE</span>
+        </div>
+        <h1 class="article-title" style="font-size: 2.25rem; font-weight: 800; line-height: 1.25; margin-top: var(--space-3); margin-bottom: var(--space-3);">How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content</h1>
+        <p class="article-subtitle" style="font-size: 1.125rem; color: var(--color-gray-600); margin-bottom: var(--space-4);">A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.</p>
+        
+        <div class="article-meta-row" style="display: flex; align-items: center; gap: var(--space-4); font-size: 0.875rem; color: var(--color-gray-500); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-gray-200);">
+          <div class="meta-item">
+            <span>By <strong>Locatria Editorial Team</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Published: <strong>Sep 7, 2026</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Reading Time: <strong>20 min read</strong></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2-COLUMN ARTICLE LAYOUT (720px Main Prose + 260px Sticky TOC) -->
+      <div class="article-layout-grid" style="display: grid; grid-template-columns: 1fr 260px; gap: var(--space-8); align-items: start;">
+        
+        <!-- MAIN PROSE CONTAINER -->
+        <main id="article-dynamic-container" class="article-prose" role="main">
+          
+          <!-- Learning Path Contextual Banner -->
+          <div class="learning-path-banner" role="region" aria-label="Learning Path Context">
+            <div class="learning-path-banner-badge">Part of this Learning Path</div>
+            <h3 class="learning-path-banner-title">Build an AI Content System for Your Local Business</h3>
+            <p class="learning-path-banner-desc">This article is part of the Build an AI Content System for Your Local Business Learning Path, a step-by-step track for creating, auditing, updating, and maintaining reliable content across digital channels.</p>
+            <a href="learn/ai-content-system.html" class="learning-path-banner-link">
+              <span>Explore the Build an AI Content System Learning Path</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <p class="component-paragraph">Most local businesses put real effort into creating content: service pages, FAQs, blog articles, location pages. Far fewer put any structured effort into what happens to that content afterward. A service page written two years ago might still describe a discontinued offering. An FAQ might answer a policy question using a policy that's since changed. A blog post about "current" pricing might not say when "current" was.</p>
+<p class="component-paragraph">None of this happens because anyone is careless. It happens because creating new content has a clear trigger — a new service, a new season, a new idea — while maintaining old content doesn't. Nothing prompts anyone to go back and check what may need review.</p>
+<p class="component-paragraph">Consider a simple example: a local business publishes its hours, a service description, and a policy page. Months later, hours shift for a season, the service list changes, and a policy is quietly updated internally — but none of that is reflected on the site, because no one had a reason to look. This is the ordinary, unremarkable way content drifts out of date.</p>
+<p class="component-paragraph">This article introduces content maintenance as a deliberate part of a mature content system: a repeatable way to find out what may need review, verify what's actually true now, and decide what to do about it — with AI assisting at several points, but never as the final word on what's accurate.</p>
+<h2 id="what-content-maintenance-actually-means" class="component-heading h2">2. What Content Maintenance Actually Means</h2>
+<p class="component-paragraph">Content maintenance means keeping existing information accurate, useful, and aligned with verified sources as the underlying business or environment changes. That's a different goal from making a website <em>look</em> active.</p>
+<p class="component-paragraph">It's worth being explicit about this distinction, because the two get confused easily: <strong>content maintenance is not artificial freshness.</strong> Changing a publish date without changing anything meaningful, or making small cosmetic edits purely to signal recency, doesn't make information more accurate — it just makes it look more recent than it is. The maintenance work described in this article is about the underlying accuracy, usefulness, and source-alignment of what's published, not about how new it appears.</p>
+<p class="component-paragraph">Maintenance can result in keeping, updating, improving, fixing, or retiring content. Not every page needs to be changed — for many pages, the correct outcome of a review is simply confirming it's still right.</p>
+<h2 id="build-a-content-inventory" class="component-heading h2">3. Build a Content Inventory</h2>
+<p class="component-paragraph">The first step in maintaining anything is knowing what already exists. Without an inventory, maintenance becomes guesswork — a business ends up reviewing whatever it happens to remember rather than what actually needs attention.</p>
+<p class="component-paragraph">A content inventory doesn't need to be sophisticated. At minimum, it should capture: the URL or location of each piece of content, its general topic, its content type (service page, FAQ, blog post, location page), the important factual claims it makes, what sources those claims depend on, and when it was last verified. Building this once creates visibility into the existing knowledge base that most businesses simply don't have — a clear, reviewable picture of everything that's currently telling customers something about the business.</p>
+<p class="component-paragraph">A small business doesn't need to document every page perfectly before starting. Begin with the content that matters most to customers and the business — hours, services, policies, contact information — then expand the inventory over time.</p>
+<h2 id="prioritize-content-by-change-sensitivity" class="component-heading h2">4. Prioritize Content by Change Sensitivity</h2>
+<p class="component-paragraph">Not everything needs the same attention. For this workflow, LOCATRIA uses three practical levels of <strong>Change Sensitivity</strong> — a LOCATRIA operational framework, not an official industry standard.</p>
+<p class="component-paragraph"><strong>Low Change Sensitivity</strong> covers information that generally changes infrequently — evergreen educational explanations, stable definitions, foundational concepts. This content can go a long time between reviews.</p>
+<p class="component-paragraph"><strong>Medium Change Sensitivity</strong> covers information that can change periodically — service descriptions, process explanations, business policies, pricing-related information where applicable. This warrants more regular attention than evergreen content.</p>
+<p class="component-paragraph"><strong>High Change Sensitivity</strong> covers information where a change can materially affect accuracy or a customer's decision — business hours, contact information, addresses, service availability, important policies, and other time-sensitive business information. This deserves earlier and more frequent attention, especially when relevant change events occur.</p>
+<p class="component-paragraph">Change Sensitivity is a prioritization mechanism, not a fixed calendar. Sorting content this way, even roughly, immediately clarifies where limited review time is best spent — it doesn't dictate a universal review interval on its own.</p>
+<h2 id="the-ai-assisted-content-maintenance-workflow" class="component-heading h2">5. The AI-Assisted Content Maintenance Workflow</h2>
+<p class="component-paragraph">This workflow follows nine steps, forming a repeatable loop rather than a one-time project.</p>
+<p class="component-paragraph"><strong>Step 1 — Inventory Existing Content</strong><br><strong>Why it matters:</strong> You can't maintain what you haven't accounted for.<br><strong>What to do:</strong> Build or update the content inventory from Section 3.<br><strong>Where AI helps:</strong> Organize a list of URLs or pages into a structured format, and help categorize content by type or topic.<br><strong>Human responsibility:</strong> Confirm the inventory is actually complete and current.<br><strong>Output:</strong> A working content inventory.</p>
+<p class="component-paragraph"><strong>Step 2 — Classify Content by Change Sensitivity</strong><br><strong>Why it matters:</strong> Not all content deserves the same attention, and effort spent evenly is effort spent poorly.<br><strong>What to do:</strong> Assign Low, Medium, or High sensitivity to each inventoried item.<br><strong>Where AI helps:</strong> Suggest a likely sensitivity level based on the content's topic, for human confirmation.<br><strong>Human responsibility:</strong> Confirm or correct the classification based on actual business knowledge.<br><strong>Output:</strong> A sensitivity-tagged inventory.</p>
+<p class="component-paragraph"><strong>Step 3 — Identify Potential Changes</strong><br><strong>Why it matters:</strong> Review time should go toward content that might actually need it.<br><strong>What to do:</strong> Review higher-sensitivity content first, looking for anything that might be outdated.<br><strong>Where AI helps:</strong> Compare a piece of content against newer source material or business notes, and flag apparent discrepancies.<br><strong>Human responsibility:</strong> Treat every AI flag as a candidate for review, not a confirmed problem. AI flags are review candidates, not confirmed problems.<br><strong>Output:</strong> A list of review candidates.</p>
+<p class="component-paragraph"><strong>Step 4 — Verify the Current Source</strong><br><strong>Why it matters:</strong> A flagged difference isn't the same as a confirmed fact.<br><strong>What to do:</strong> Check the most authoritative current source available for each flagged item — see Section 7 for the verification sequence and Section 11 for the source hierarchy.<br><strong>Where AI helps:</strong> Help organize source material for comparison.<br><strong>Human responsibility:</strong> Verification happens against an actual authoritative current source — this is a human task, not something AI can complete on its own.<br><strong>Output:</strong> A confirmed current fact, or confirmation that nothing has changed.</p>
+<p class="component-paragraph"><strong>Step 5 — Use AI to Compare and Organize Changes</strong><br><strong>Why it matters:</strong> Once the current facts are confirmed, the difference between old and new content needs to be clear before anyone drafts anything.<br><strong>What to do:</strong> Feed the verified current information and the existing published content into AI for comparison.<br><strong>Where AI helps:</strong> AI compares and organizes — highlighting specific differences, summarizing what's changed, and organizing multiple changes for review.<br><strong>Human responsibility:</strong> Confirm the comparison accurately reflects both versions.<br><strong>Output:</strong> A clear, organized picture of what needs to change.</p>
+<p class="component-paragraph"><strong>Step 6 — Human Verify the Change</strong><br><strong>Why it matters:</strong> This is the ownership point — the last check before anything moves toward publication.<br><strong>What to do:</strong> Review the comparison against the verified source directly.<br><strong>Where AI helps:</strong> This step is intentionally human-owned; AI's role here is limited to having already organized the comparison in Step 5.<br><strong>Human responsibility:</strong> Approve, adjust, or reject the proposed change.<br><strong>Output:</strong> An approved change ready for drafting.</p>
+<p class="component-paragraph"><strong>Step 7 — Update → Review → Approve</strong><br><strong>Why it matters:</strong> An approved change still needs to become accurate published wording, and human approval is required before it goes live.<br><strong>What to do:</strong> Draft the update, review it, and approve it for publication.<br><strong>Where AI helps:</strong> Draft the specific wording change based on the approved, verified information.<br><strong>Human responsibility:</strong> Final review and publication approval.<br><strong>Output:</strong> Updated, published content.</p>
+<p class="component-paragraph"><strong>Step 8 — Record the Change</strong><br><strong>Why it matters:</strong> Without a record, there's no way to know what was done or why.<br><strong>What to do:</strong> Log the change in a change record or worksheet (Section 9).<br><strong>Where AI helps:</strong> Help draft a concise summary of the change for the log.<br><strong>Human responsibility:</strong> Confirm the log entry is accurate.<br><strong>Output:</strong> An updated change history.</p>
+<p class="component-paragraph"><strong>Step 9 — Set the Next Review</strong><br><strong>Why it matters:</strong> A one-time fix doesn't prevent the same content from going stale again unnoticed.<br><strong>What to do:</strong> Assign a next-review point based on the content's change sensitivity (Section 10).<br><strong>Where AI helps:</strong> Suggest a review interval based on the assigned sensitivity level.<br><strong>Human responsibility:</strong> Confirm the interval makes sense for that specific content — this is not a universal, one-size-fits-all interval.<br><strong>Output:</strong> A scheduled next review.</p>
+<p class="component-paragraph">Together, these steps form a loop: Inventory → Prioritize → Detect → Verify → Compare → Update → Review → Record → Monitor → Review Again. It's a continuous maintenance cycle, not a one-time cleanup — and different pieces of content will move through that loop at very different speeds depending on their change sensitivity.</p>
+<h2 id="what-ai-can-do-and-where-it-should-stop" class="component-heading h2">6. What AI Can Do — and Where It Should Stop</h2>
+<p class="component-paragraph">AI can help identify, compare, organize, and draft potential changes. Humans remain responsible for verifying the underlying information and approving what gets published.</p>
+<p class="component-paragraph"><strong>AI can help with:</strong> identifying review candidates, comparing versions, organizing findings, summarizing what's changed, drafting proposed wording, and classifying the type of change involved.</p>
+<p class="component-paragraph"><strong>AI should not independently:</strong> determine factual truth, choose which of two conflicting sources is canonical, publish a change, make legal or compliance decisions, or replace the actual verification step against a real source.</p>
+<p class="component-paragraph">For example, AI may notice that one page says a service is available while a newer business document suggests otherwise. AI can flag the conflict and summarize the difference. It cannot decide which statement is correct without checking the authoritative source. Detection is not the same as verification.</p>
+<p class="component-paragraph">AI output should not be treated as the canonical source of truth — it's an assistance layer that speeds up the mechanical parts of the process, not a substitute for checking a real source.</p>
+<h2 id="how-to-verify-a-potential-change" class="component-heading h2">7. How to Verify a Potential Change</h2>
+<p class="component-paragraph">A detected change is only a review signal. It is not proof that the underlying information is wrong. Human verification against a real source is required before publication.</p>
+<p class="component-paragraph">The sequence is straightforward: <strong>Potential Change → Find Current Source → Compare → Confirm → Approve.</strong> The distinction that matters most here is between "AI detected something that looks different" and "the source confirms something has actually changed." Those are two different claims, and only the second one justifies an edit.</p>
+<p class="component-paragraph"><strong>Source hierarchy for verification:</strong></p>
+<ul class="component-unordered-list"><li><strong>Tier 1 — Official / Primary Sources:</strong> official business information, the official website, an official business profile, official policies, authoritative organizational records.</li><li><strong>Tier 2 — Authoritative Sources:</strong> government sources, professional organizations, recognized institutions, authoritative databases.</li><li><strong>Tier 3 — Established Secondary Sources:</strong> reputable industry publications, established reference sources, credible third-party publications.</li></ul>
+<p class="component-paragraph">Check the most authoritative current source available. When sources disagree, resolve the discrepancy at the source rather than choosing whichever version is easiest to publish.</p>
+<p class="component-paragraph">AI output is not a source tier. It can help interpret or compare information across these tiers, but it isn't itself where verification comes from.</p>
+<h2 id="update-improve-fix-keep-or-retire" class="component-heading h2">8. Update, Improve, Fix, Keep, or Retire?</h2>
+<p class="component-paragraph">Once a piece of content has been reviewed, it falls into one of five action states.</p>
+<p class="component-paragraph"><strong>Keep</strong> — the information remains accurate and useful as it is. No action needed beyond confirming the next review date.</p>
+<p class="component-paragraph"><strong>Update</strong> — the underlying information has changed (a new address, a revised policy, a discontinued service), and the content needs to reflect that.</p>
+<p class="component-paragraph"><strong>Improve</strong> — the information is still broadly correct, but it could be made clearer, more useful, or better structured. This is a quality improvement, not a correction.</p>
+<p class="component-paragraph"><strong>Fix</strong> — there's an actual error, inconsistency, broken link, or factual problem that needs correcting, independent of whether anything in the real world has changed.</p>
+<p class="component-paragraph"><strong>Retire</strong> — the content is no longer useful, relevant, supportable, or appropriate to keep publicly available. This should be a considered decision, not a default: content shouldn't be retired simply because it's old. A well-written, still-accurate explanation of a stable concept can be years old and still be exactly right.</p>
+<p class="component-paragraph">A simple way to think through which action applies:</p>
+<ul class="component-unordered-list"><li><strong>Is it still accurate?</strong><ul><li>Yes → Is it still useful?<ul><li>Yes → <strong>Keep</strong> or <strong>Improve</strong></li><li>No → Consider <strong>Retire</strong></li></ul></li><li>No → Did the underlying information change?<ul><li>Yes → <strong>Update</strong></li><li>No (it was always wrong) → <strong>Fix</strong></li></ul></li></ul></li></ul>
+<p class="component-paragraph">This isn't meant to be a rigid decision tree — it's a quick way to sanity-check the call, not a replacement for judgment about the specific content in front of you.</p>
+<h2 id="building-the-content-maintenance-worksheet" class="component-heading h2">9. Building the Content Maintenance Worksheet</h2>
+<p class="component-paragraph">The <strong>Local Business Content Maintenance Worksheet</strong> turns this workflow into something a founder or small team can actually run day to day.</p>
+<p class="component-paragraph">Recommended fields: URL, Topic, Content Type, Claim, Source, Source Type, Last Verified, Change Sensitivity, Potential Change, AI Analysis, Human Verification, Action, Status, Change Log, and Next Review.</p>
+<p class="component-paragraph">For simple pages, one row can represent one content item. For pages containing multiple high-impact claims, multiple rows can be used so important claims can be verified independently. Start with high-impact claims rather than documenting every sentence on every page.</p>
+<p class="component-paragraph">In practice, each row tracks one claim or one piece of content: what it says, where that's supposed to come from, when it was last checked, how sensitive it is to change, and what — if anything — needs to happen to it.</p>
+<div class="component-table-wrapper">
+            <table class="component-comparison-table">
+              <caption>Local Business Content Maintenance Worksheet — Illustrative Example Row</caption>
+              <thead>
+                <tr><th>Field</th><th>Example Value</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>URL</td><td>/services/consultations</td></tr><tr><td>Topic</td><td>Consultation availability</td></tr><tr><td>Content Type</td><td>Service page</td></tr><tr><td>Claim</td><td>"Consultations available Mon–Fri"</td></tr><tr><td>Source</td><td>Internal scheduling policy</td></tr><tr><td>Source Type</td><td>Tier 1</td></tr><tr><td>Last Verified</td><td>[date]</td></tr><tr><td>Change Sensitivity</td><td>High</td></tr><tr><td>Potential Change</td><td>Hours may have changed</td></tr><tr><td>AI Analysis</td><td>Flagged inconsistency with recent internal note</td></tr><tr><td>Human Verification</td><td>Confirmed — hours updated</td></tr><tr><td>Action</td><td>Update</td></tr><tr><td>Status</td><td>In progress</td></tr><tr><td>Change Log</td><td>Hours corrected [date]</td></tr><tr><td>Next Review</td><td>[date]</td></tr>
+              </tbody>
+            </table>
+          </div>
+<p class="component-paragraph">This doesn't need to be enterprise content governance software. A shared spreadsheet is enough to start, and the system can become more structured as the amount of content grows.</p>
+<h2 id="creating-a-change-driven-review-loop" class="component-heading h2">10. Creating a Change-Driven Review Loop</h2>
+<p class="component-paragraph">Review frequency should depend on change sensitivity, not a single calendar rule applied to everything. Change Sensitivity determines priority; actual review timing depends on the specific content, business context, and relevant change events.</p>
+<p class="component-paragraph">High-sensitivity content — hours, contact information, availability — deserves earlier and more frequent attention. Medium-sensitivity content can be checked periodically. Low-sensitivity, evergreen content can go much longer between reviews.</p>
+<p class="component-paragraph">A <strong>change event</strong> is anything that should trigger a targeted review regardless of when the next scheduled check was due — for example:</p>
+<ul class="component-unordered-list"><li>a relocation</li><li>a new service</li><li>a discontinued service</li><li>a policy change</li><li>an operating-hours change</li><li>an availability change</li></ul>
+<p class="component-paragraph">Rather than prescribing a universal monthly or quarterly schedule for all content, tie review timing to the "Last Verified" and "Change Sensitivity" fields in the worksheet, and to actual change events like these. The loop is: review dates and change events feed monitoring, monitoring feeds the next review, and each review updates the maintenance record.</p>
+<h2 id="what-content-maintenance-means-for-local-search-and-ai-visibility" class="component-heading h2">11. What Content Maintenance Means for Local Search and AI Visibility</h2>
+<p class="component-paragraph">Google has said it values helpful, reliable, people-first content, and it maintains freshness-related systems for the kinds of queries where current information is genuinely useful or expected. None of that means every page benefits from being frequently updated, and artificially changing a publication date to appear fresh isn't what content maintenance is about. Updating content should be driven by actual changes, actual errors, or genuine improvements in usefulness — not by a desire to look active.</p>
+<p class="component-paragraph">The same conservative framing applies to AI-assisted discovery: maintaining accurate, current, and well-organized public information can help keep a business's website and knowledge assets aligned with what's actually true, and that alignment is a reasonable thing to aim for on its own terms. It does not translate into a guarantee of higher AI rankings, more AI citations, or guaranteed inclusion in any specific AI-generated answer. Better prepared, not guaranteed, is the right way to think about it.</p>
+<p class="component-paragraph">Maintaining accurate public information is valuable even if no AI system ultimately surfaces the content. Accuracy serves customers directly — it isn't only useful insofar as it might influence an algorithm.</p>
+<h2 id="common-failure-modes" class="component-heading h2">12. Common Failure Modes</h2>
+<p class="component-paragraph"><strong>1. Updating every page just to make the site look fresh.</strong> This treats appearance as the goal instead of accuracy.</p>
+<p class="component-paragraph"><strong>2. Changing dates without meaningful changes.</strong> A new timestamp on unchanged content misrepresents how current the information actually is.</p>
+<p class="component-paragraph"><strong>3. Trusting AI output as factual truth.</strong> AI can be wrong, and treating its output as settled fact skips the verification step that actually matters.</p>
+<p class="component-paragraph"><strong>4. Treating AI detection as verification.</strong> A flagged discrepancy is a signal to check, not a confirmed problem.</p>
+<p class="component-paragraph"><strong>5. Using weak sources when primary sources exist.</strong> Reaching for a convenient secondary source when an official one is available introduces unnecessary risk.</p>
+<p class="component-paragraph"><strong>6. Updating content without recording what changed.</strong> Without a change log, there's no way to track what was actually done or why.</p>
+<p class="component-paragraph"><strong>7. Applying the same review schedule to every page.</strong> Treating a stable, evergreen explainer the same as time-sensitive business hours wastes review effort in the wrong places.</p>
+<p class="component-paragraph"><strong>8. Automating publication without human approval.</strong> Letting AI-drafted changes go live without a human checking them removes the one step that actually catches mistakes.</p>
+<h2 id="practical-checklist" class="component-heading h2">13. Practical Checklist</h2>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">Practical Checklist</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-0" style="cursor: pointer; line-height: 1.4;">Content inventory built and current</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-1" style="cursor: pointer; line-height: 1.4;">Each item classified as Low, Medium, or High change sensitivity</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-2" style="cursor: pointer; line-height: 1.4;">Higher-sensitivity content reviewed first</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-3"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-3" style="cursor: pointer; line-height: 1.4;">Potential changes identified, treated as candidates, not confirmed facts</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-4"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-4" style="cursor: pointer; line-height: 1.4;">Each flagged item checked against its actual current source</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-5"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-5" style="cursor: pointer; line-height: 1.4;">AI used to compare and organize, not to confirm accuracy</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-6"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-6" style="cursor: pointer; line-height: 1.4;">Every proposed change is human-verified before publication</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-7"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-7" style="cursor: pointer; line-height: 1.4;">Updates reviewed and approved before publication</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-8"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-8" style="cursor: pointer; line-height: 1.4;">Every change recorded in a change log</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-9"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-9" style="cursor: pointer; line-height: 1.4;">Next review date set based on change sensitivity</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-10"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-10" style="cursor: pointer; line-height: 1.4;">No content retired solely because it's old</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-11"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-11" style="cursor: pointer; line-height: 1.4;">Changes were made because of a real information, accuracy, usefulness, or business need — not simply to make the page look fresh</label>
+                </li>
+              
+            </ul>
+          </div>
+<h2 id="frequently-asked-questions" class="component-heading h2">14. Frequently Asked Questions</h2>
+<div id="faq" class="component-faq-list">
+            <h3 class="component-heading h3" style="margin-bottom: var(--space-4);">Frequently Asked Questions</h3>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">How often should a local business review existing content?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">It depends on change sensitivity. High-sensitivity information (hours, contact details, availability) needs frequent review; stable, evergreen content can go much longer between checks. There's no single universal schedule that fits every page.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Can AI tell me which content is outdated?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">AI can help identify content that may require review by comparing it against newer information, but that's a signal, not a confirmed finding — the actual source still needs to be checked.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Should every old article be updated?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">No. Age alone doesn't mean content is wrong. A still-accurate, well-written piece can be old and correct at the same time.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Does updating content improve SEO?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Updating content because something has genuinely changed, or because it makes the content more accurate or useful, is worthwhile on its own terms. There's no basis for treating updates as a direct ranking lever, and changing dates without meaningful changes doesn't improve anything.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Can AI verify whether information is correct?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">No. AI can assist with comparison and organization, but verification means checking against an actual current source, which is a human task.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">What should I do when two sources disagree?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Go to the highest-tier source available (Section 7) and resolve the discrepancy there rather than picking whichever version is more convenient.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">When should I retire an old page?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">When it's no longer useful, relevant, supportable, or appropriate to keep public — not simply because time has passed.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Does content maintenance improve AI visibility?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Accurate public information is a useful foundation, and maintenance supports the overall quality of that information. But there's no guarantee it improves AI ranking, no guarantee it earns AI citations, and no guarantee of inclusion in any specific AI-generated answer.</p>
+              </div>
+            
+          </div>
+<h2 id="conclusion" class="component-heading h2">15. Conclusion</h2>
+<p class="component-paragraph">The goal of content maintenance isn't to make a website look fresh. It's to keep the business's public knowledge accurate, useful, and aligned with verified information as things change. AI assists throughout this process — organizing, comparing, drafting — but humans verify the facts and approve what actually gets published. Treated as a continuous loop rather than an occasional cleanup, this workflow keeps a business's existing content doing its job long after it was first written.</p>
+<p class="component-paragraph"><a href="ai-local-entity-consistency-nape-audit-workflow.html" class="article-internal-link">Article #31 — Local Entity Consistency & NAPE Audit</a> provides a foundation for maintaining accurate business entity information; this article extends that same discipline to the broader body of content a local business publishes.</p>
+
+        </main>
+
+        <!-- STICKY TABLE OF CONTENTS SIDEBAR -->
+        <aside class="article-sidebar" style="position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto;" aria-label="Table of Contents">
+          <div class="toc-card" style="background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: var(--radius-lg); padding: var(--space-4);">
+            <div class="toc-header" style="font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-gray-700); margin-bottom: var(--space-3);">Table of Contents</div>
+            <nav id="toc-nav" class="toc-nav-list" style="display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.875rem;">
+              <a href="#what-content-maintenance-actually-means" class="toc-link">2. What Content Maintenance Means</a>
+              <a href="#build-a-content-inventory" class="toc-link">3. Build a Content Inventory</a>
+              <a href="#prioritize-content-by-change-sensitivity" class="toc-link">4. Prioritize by Change Sensitivity</a>
+              <a href="#the-ai-assisted-content-maintenance-workflow" class="toc-link">5. 9-Step Maintenance Workflow</a>
+              <a href="#what-ai-can-do-and-where-it-should-stop" class="toc-link">6. What AI Can Do & Stop Boundary</a>
+              <a href="#how-to-verify-a-potential-change" class="toc-link">7. How to Verify a Potential Change</a>
+              <a href="#update-improve-fix-keep-or-retire" class="toc-link">8. Update, Improve, Fix, Keep, Retire</a>
+              <a href="#building-the-content-maintenance-worksheet" class="toc-link">9. Content Maintenance Worksheet</a>
+              <a href="#creating-a-change-driven-review-loop" class="toc-link">10. Change-Driven Review Loop</a>
+              <a href="#what-content-maintenance-means-for-local-search-and-ai-visibility" class="toc-link">11. Local Search & AI Visibility</a>
+              <a href="#common-failure-modes" class="toc-link">12. Common Failure Modes</a>
+              <a href="#practical-checklist" class="toc-link">13. Practical Checklist</a>
+              <a href="#frequently-asked-questions" class="toc-link">14. Frequently Asked Questions</a>
+              <a href="#conclusion" class="toc-link">15. Conclusion</a>
+            </nav>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- NEWSLETTER CTA -->
+    <section id="newsletter" class="section-block">
+      <div class="container">
+        <div class="card card-cta" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-primary-50) 100%);">
+          <span class="badge badge-blue" style="margin: 0 auto var(--space-3) auto;">Weekly Knowledge Briefing</span>
+          <h2 class="card-cta-title">Stay Ahead with Practical Local Business AI Workflows</h2>
+          <p class="card-cta-desc">
+            Get practical, actionable AI content maintenance and local visibility workflows for local businesses directly in your inbox every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form" style="max-width: 440px; margin: 0 auto; width: 100%;">
+            <div class="newsletter-input-group" style="margin-bottom: var(--space-2);">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Locatria Home Footer">
+            <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="footer-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+          </a>
+          <p class="footer-brand-desc">
+            Locatria is an educational knowledge platform empowering local businesses, small business owners, and solopreneurs to grow using practical, trustworthy AI tools.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="knowledge.html" class="footer-link">Knowledge Hub</a></li>
+            <li><a href="category.html?type=guides" class="footer-link">Guides & Blueprints</a></li>
+            <li><a href="category.html?type=tutorials" class="footer-link">Step-by-Step Tutorials</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">Resource Library</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?industry=real-estate" class="footer-link">Real Estate AI</a></li>
+            <li><a href="category.html?industry=law-firms" class="footer-link">Law Firm Automation</a></li>
+            <li><a href="category.html?industry=dental-clinics" class="footer-link">Dental Practice AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?type=prompts" class="footer-link">AI Prompt Packs</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">ROI Savings Calculators</a></li>
+            <li><a href="category.html?type=checklists" class="footer-link">Workflow Checklists</a></li>
+            <li><a href="category.html?type=glossary" class="footer-link">AI Terms Glossary</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Weekly AI Briefing</h4>
+          <p style="font-size: var(--text-xs); color: #cbd5e1; margin-bottom: var(--space-2);">
+            Get actionable AI workflows for local business owners every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Locatria. All rights reserved. Helping Local Businesses Grow with AI.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="#privacy" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="#terms" class="footer-legal-link">Terms of Use</a></li>
+          <li><a href="#affiliate" class="footer-legal-link">Affiliate Disclosure</a></li>
+        </ul>
+        <div class="social-links-group" aria-label="Social Media Links">
+          <a href="https://www.linkedin.com/company/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a href="https://x.com/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on X">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@LOCATRIA" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://web.facebook.com/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on TikTok">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-1.41V8.9a6.34 6.34 0 0 0-5.34 2.29A6.33 6.33 0 0 0 5 15.63a6.34 6.34 0 0 0 6.34 6.34c3.5 0 6.34-2.84 6.34-6.34V9.4a8.16 8.16 0 0 0 4.91 1.62V7.57a4.85 4.85 0 0 1-3-.88z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Single Production System JavaScript Core Bundle -->
+  <script src="js/published-articles-db.js?v=5.4"></script>
+  <script src="js/content-counts-engine.js?v=5.4"></script>
+  <script src="js/component-renderer.js?v=5.4"></script>
+  <script src="js/main.js?v=5.4"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 /**
  * LOCATRIA PUBLISHED ARTICLES DATABASE v1.1
  * Single Source of Truth for Published Production Content.
- * Auto-synchronized on 2026-09-07T07:33:37.320Z
+ * Auto-synchronized on 2026-09-07T09:11:47.361Z
  */
 (function (window) {
   'use strict';
@@ -32,6 +32,19 @@
     "pubDate": "2026-09-07",
     "description": "An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.",
     "slugUrl": "ai-assisted-legal-intake-faq-governance-workflow.html"
+  },
+  {
+    "id": "ai-assisted-local-business-content-update-maintenance-workflow",
+    "title": "How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content",
+    "type": "workflow",
+    "status": "published",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readTime": "20 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-07",
+    "description": "A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.",
+    "slugUrl": "ai-assisted-local-business-content-update-maintenance-workflow.html"
   },
   {
     "id": "ai-assisted-real-estate-neighborhood-research-workflow",

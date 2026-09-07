@@ -1,0 +1,503 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-assisted-local-business-content-update-maintenance-workflow",
+  "type": "workflow",
+  "status": "published",
+  "metadata": {
+    "title": "How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content",
+    "subtitle": "A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.",
+    "category": "Workflows",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 20,
+    "lastUpdated": "2026-09-07",
+    "audience": [
+      "Local Business Owners",
+      "SMB Operators",
+      "Content Managers",
+      "Local SEO Specialists"
+    ],
+    "primaryTopic": "AI Visibility"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Local Content Systems Specialist"
+  },
+  "seo": {
+    "title": "How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content | Locatria",
+    "description": "A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.",
+    "canonical": "https://www.locatria.com/ai-assisted-local-business-content-update-maintenance-workflow.html",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Visibility & Content Maintenance Workflow",
+    "industryFocus": "general"
+  },
+  "relationships": {
+    "parentArticle": "ai-local-entity-consistency-nape-audit-workflow",
+    "relatedArticles": [
+      "ai-local-entity-consistency-nape-audit-workflow",
+      "ai-content-update-workflow-local-businesses"
+    ],
+    "learningPath": "lp02"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "Most local businesses put real effort into creating content: service pages, FAQs, blog articles, location pages. Far fewer put any structured effort into what happens to that content afterward. A service page written two years ago might still describe a discontinued offering. An FAQ might answer a policy question using a policy that's since changed. A blog post about \"current\" pricing might not say when \"current\" was."
+    },
+    {
+      "type": "paragraph",
+      "content": "None of this happens because anyone is careless. It happens because creating new content has a clear trigger — a new service, a new season, a new idea — while maintaining old content doesn't. Nothing prompts anyone to go back and check what may need review."
+    },
+    {
+      "type": "paragraph",
+      "content": "Consider a simple example: a local business publishes its hours, a service description, and a policy page. Months later, hours shift for a season, the service list changes, and a policy is quietly updated internally — but none of that is reflected on the site, because no one had a reason to look. This is the ordinary, unremarkable way content drifts out of date."
+    },
+    {
+      "type": "paragraph",
+      "content": "This article introduces content maintenance as a deliberate part of a mature content system: a repeatable way to find out what may need review, verify what's actually true now, and decide what to do about it — with AI assisting at several points, but never as the final word on what's accurate."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-content-maintenance-actually-means",
+      "title": "2. What Content Maintenance Actually Means"
+    },
+    {
+      "type": "paragraph",
+      "content": "Content maintenance means keeping existing information accurate, useful, and aligned with verified sources as the underlying business or environment changes. That's a different goal from making a website <em>look</em> active."
+    },
+    {
+      "type": "paragraph",
+      "content": "It's worth being explicit about this distinction, because the two get confused easily: <strong>content maintenance is not artificial freshness.</strong> Changing a publish date without changing anything meaningful, or making small cosmetic edits purely to signal recency, doesn't make information more accurate — it just makes it look more recent than it is. The maintenance work described in this article is about the underlying accuracy, usefulness, and source-alignment of what's published, not about how new it appears."
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintenance can result in keeping, updating, improving, fixing, or retiring content. Not every page needs to be changed — for many pages, the correct outcome of a review is simply confirming it's still right."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "build-a-content-inventory",
+      "title": "3. Build a Content Inventory"
+    },
+    {
+      "type": "paragraph",
+      "content": "The first step in maintaining anything is knowing what already exists. Without an inventory, maintenance becomes guesswork — a business ends up reviewing whatever it happens to remember rather than what actually needs attention."
+    },
+    {
+      "type": "paragraph",
+      "content": "A content inventory doesn't need to be sophisticated. At minimum, it should capture: the URL or location of each piece of content, its general topic, its content type (service page, FAQ, blog post, location page), the important factual claims it makes, what sources those claims depend on, and when it was last verified. Building this once creates visibility into the existing knowledge base that most businesses simply don't have — a clear, reviewable picture of everything that's currently telling customers something about the business."
+    },
+    {
+      "type": "paragraph",
+      "content": "A small business doesn't need to document every page perfectly before starting. Begin with the content that matters most to customers and the business — hours, services, policies, contact information — then expand the inventory over time."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "prioritize-content-by-change-sensitivity",
+      "title": "4. Prioritize Content by Change Sensitivity"
+    },
+    {
+      "type": "paragraph",
+      "content": "Not everything needs the same attention. For this workflow, LOCATRIA uses three practical levels of <strong>Change Sensitivity</strong> — a LOCATRIA operational framework, not an official industry standard."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Low Change Sensitivity</strong> covers information that generally changes infrequently — evergreen educational explanations, stable definitions, foundational concepts. This content can go a long time between reviews."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Medium Change Sensitivity</strong> covers information that can change periodically — service descriptions, process explanations, business policies, pricing-related information where applicable. This warrants more regular attention than evergreen content."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>High Change Sensitivity</strong> covers information where a change can materially affect accuracy or a customer's decision — business hours, contact information, addresses, service availability, important policies, and other time-sensitive business information. This deserves earlier and more frequent attention, especially when relevant change events occur."
+    },
+    {
+      "type": "paragraph",
+      "content": "Change Sensitivity is a prioritization mechanism, not a fixed calendar. Sorting content this way, even roughly, immediately clarifies where limited review time is best spent — it doesn't dictate a universal review interval on its own."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "the-ai-assisted-content-maintenance-workflow",
+      "title": "5. The AI-Assisted Content Maintenance Workflow"
+    },
+    {
+      "type": "paragraph",
+      "content": "This workflow follows nine steps, forming a repeatable loop rather than a one-time project."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 1 — Inventory Existing Content</strong><br><strong>Why it matters:</strong> You can't maintain what you haven't accounted for.<br><strong>What to do:</strong> Build or update the content inventory from Section 3.<br><strong>Where AI helps:</strong> Organize a list of URLs or pages into a structured format, and help categorize content by type or topic.<br><strong>Human responsibility:</strong> Confirm the inventory is actually complete and current.<br><strong>Output:</strong> A working content inventory."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 2 — Classify Content by Change Sensitivity</strong><br><strong>Why it matters:</strong> Not all content deserves the same attention, and effort spent evenly is effort spent poorly.<br><strong>What to do:</strong> Assign Low, Medium, or High sensitivity to each inventoried item.<br><strong>Where AI helps:</strong> Suggest a likely sensitivity level based on the content's topic, for human confirmation.<br><strong>Human responsibility:</strong> Confirm or correct the classification based on actual business knowledge.<br><strong>Output:</strong> A sensitivity-tagged inventory."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 3 — Identify Potential Changes</strong><br><strong>Why it matters:</strong> Review time should go toward content that might actually need it.<br><strong>What to do:</strong> Review higher-sensitivity content first, looking for anything that might be outdated.<br><strong>Where AI helps:</strong> Compare a piece of content against newer source material or business notes, and flag apparent discrepancies.<br><strong>Human responsibility:</strong> Treat every AI flag as a candidate for review, not a confirmed problem. AI flags are review candidates, not confirmed problems.<br><strong>Output:</strong> A list of review candidates."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 4 — Verify the Current Source</strong><br><strong>Why it matters:</strong> A flagged difference isn't the same as a confirmed fact.<br><strong>What to do:</strong> Check the most authoritative current source available for each flagged item — see Section 7 for the verification sequence and Section 11 for the source hierarchy.<br><strong>Where AI helps:</strong> Help organize source material for comparison.<br><strong>Human responsibility:</strong> Verification happens against an actual authoritative current source — this is a human task, not something AI can complete on its own.<br><strong>Output:</strong> A confirmed current fact, or confirmation that nothing has changed."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 5 — Use AI to Compare and Organize Changes</strong><br><strong>Why it matters:</strong> Once the current facts are confirmed, the difference between old and new content needs to be clear before anyone drafts anything.<br><strong>What to do:</strong> Feed the verified current information and the existing published content into AI for comparison.<br><strong>Where AI helps:</strong> AI compares and organizes — highlighting specific differences, summarizing what's changed, and organizing multiple changes for review.<br><strong>Human responsibility:</strong> Confirm the comparison accurately reflects both versions.<br><strong>Output:</strong> A clear, organized picture of what needs to change."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 6 — Human Verify the Change</strong><br><strong>Why it matters:</strong> This is the ownership point — the last check before anything moves toward publication.<br><strong>What to do:</strong> Review the comparison against the verified source directly.<br><strong>Where AI helps:</strong> This step is intentionally human-owned; AI's role here is limited to having already organized the comparison in Step 5.<br><strong>Human responsibility:</strong> Approve, adjust, or reject the proposed change.<br><strong>Output:</strong> An approved change ready for drafting."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 7 — Update → Review → Approve</strong><br><strong>Why it matters:</strong> An approved change still needs to become accurate published wording, and human approval is required before it goes live.<br><strong>What to do:</strong> Draft the update, review it, and approve it for publication.<br><strong>Where AI helps:</strong> Draft the specific wording change based on the approved, verified information.<br><strong>Human responsibility:</strong> Final review and publication approval.<br><strong>Output:</strong> Updated, published content."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 8 — Record the Change</strong><br><strong>Why it matters:</strong> Without a record, there's no way to know what was done or why.<br><strong>What to do:</strong> Log the change in a change record or worksheet (Section 9).<br><strong>Where AI helps:</strong> Help draft a concise summary of the change for the log.<br><strong>Human responsibility:</strong> Confirm the log entry is accurate.<br><strong>Output:</strong> An updated change history."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 9 — Set the Next Review</strong><br><strong>Why it matters:</strong> A one-time fix doesn't prevent the same content from going stale again unnoticed.<br><strong>What to do:</strong> Assign a next-review point based on the content's change sensitivity (Section 10).<br><strong>Where AI helps:</strong> Suggest a review interval based on the assigned sensitivity level.<br><strong>Human responsibility:</strong> Confirm the interval makes sense for that specific content — this is not a universal, one-size-fits-all interval.<br><strong>Output:</strong> A scheduled next review."
+    },
+    {
+      "type": "paragraph",
+      "content": "Together, these steps form a loop: Inventory → Prioritize → Detect → Verify → Compare → Update → Review → Record → Monitor → Review Again. It's a continuous maintenance cycle, not a one-time cleanup — and different pieces of content will move through that loop at very different speeds depending on their change sensitivity."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-ai-can-do-and-where-it-should-stop",
+      "title": "6. What AI Can Do — and Where It Should Stop"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can help identify, compare, organize, and draft potential changes. Humans remain responsible for verifying the underlying information and approving what gets published."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>AI can help with:</strong> identifying review candidates, comparing versions, organizing findings, summarizing what's changed, drafting proposed wording, and classifying the type of change involved."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>AI should not independently:</strong> determine factual truth, choose which of two conflicting sources is canonical, publish a change, make legal or compliance decisions, or replace the actual verification step against a real source."
+    },
+    {
+      "type": "paragraph",
+      "content": "For example, AI may notice that one page says a service is available while a newer business document suggests otherwise. AI can flag the conflict and summarize the difference. It cannot decide which statement is correct without checking the authoritative source. Detection is not the same as verification."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI output should not be treated as the canonical source of truth — it's an assistance layer that speeds up the mechanical parts of the process, not a substitute for checking a real source."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-to-verify-a-potential-change",
+      "title": "7. How to Verify a Potential Change"
+    },
+    {
+      "type": "paragraph",
+      "content": "A detected change is only a review signal. It is not proof that the underlying information is wrong. Human verification against a real source is required before publication."
+    },
+    {
+      "type": "paragraph",
+      "content": "The sequence is straightforward: <strong>Potential Change → Find Current Source → Compare → Confirm → Approve.</strong> The distinction that matters most here is between \"AI detected something that looks different\" and \"the source confirms something has actually changed.\" Those are two different claims, and only the second one justifies an edit."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Source hierarchy for verification:</strong>"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Tier 1 — Official / Primary Sources:</strong> official business information, the official website, an official business profile, official policies, authoritative organizational records.",
+        "<strong>Tier 2 — Authoritative Sources:</strong> government sources, professional organizations, recognized institutions, authoritative databases.",
+        "<strong>Tier 3 — Established Secondary Sources:</strong> reputable industry publications, established reference sources, credible third-party publications."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Check the most authoritative current source available. When sources disagree, resolve the discrepancy at the source rather than choosing whichever version is easiest to publish."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI output is not a source tier. It can help interpret or compare information across these tiers, but it isn't itself where verification comes from."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "update-improve-fix-keep-or-retire",
+      "title": "8. Update, Improve, Fix, Keep, or Retire?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once a piece of content has been reviewed, it falls into one of five action states."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Keep</strong> — the information remains accurate and useful as it is. No action needed beyond confirming the next review date."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Update</strong> — the underlying information has changed (a new address, a revised policy, a discontinued service), and the content needs to reflect that."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Improve</strong> — the information is still broadly correct, but it could be made clearer, more useful, or better structured. This is a quality improvement, not a correction."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Fix</strong> — there's an actual error, inconsistency, broken link, or factual problem that needs correcting, independent of whether anything in the real world has changed."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Retire</strong> — the content is no longer useful, relevant, supportable, or appropriate to keep publicly available. This should be a considered decision, not a default: content shouldn't be retired simply because it's old. A well-written, still-accurate explanation of a stable concept can be years old and still be exactly right."
+    },
+    {
+      "type": "paragraph",
+      "content": "A simple way to think through which action applies:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Is it still accurate?</strong><ul><li>Yes → Is it still useful?<ul><li>Yes → <strong>Keep</strong> or <strong>Improve</strong></li><li>No → Consider <strong>Retire</strong></li></ul></li><li>No → Did the underlying information change?<ul><li>Yes → <strong>Update</strong></li><li>No (it was always wrong) → <strong>Fix</strong></li></ul></li></ul>"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This isn't meant to be a rigid decision tree — it's a quick way to sanity-check the call, not a replacement for judgment about the specific content in front of you."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "building-the-content-maintenance-worksheet",
+      "title": "9. Building the Content Maintenance Worksheet"
+    },
+    {
+      "type": "paragraph",
+      "content": "The <strong>Local Business Content Maintenance Worksheet</strong> turns this workflow into something a founder or small team can actually run day to day."
+    },
+    {
+      "type": "paragraph",
+      "content": "Recommended fields: URL, Topic, Content Type, Claim, Source, Source Type, Last Verified, Change Sensitivity, Potential Change, AI Analysis, Human Verification, Action, Status, Change Log, and Next Review."
+    },
+    {
+      "type": "paragraph",
+      "content": "For simple pages, one row can represent one content item. For pages containing multiple high-impact claims, multiple rows can be used so important claims can be verified independently. Start with high-impact claims rather than documenting every sentence on every page."
+    },
+    {
+      "type": "paragraph",
+      "content": "In practice, each row tracks one claim or one piece of content: what it says, where that's supposed to come from, when it was last checked, how sensitive it is to change, and what — if anything — needs to happen to it."
+    },
+    {
+      "type": "table",
+      "caption": "Local Business Content Maintenance Worksheet — Illustrative Example Row",
+      "headers": [
+        "Field",
+        "Example Value"
+      ],
+      "rows": [
+        ["URL", "/services/consultations"],
+        ["Topic", "Consultation availability"],
+        ["Content Type", "Service page"],
+        ["Claim", "\"Consultations available Mon–Fri\""],
+        ["Source", "Internal scheduling policy"],
+        ["Source Type", "Tier 1"],
+        ["Last Verified", "[date]"],
+        ["Change Sensitivity", "High"],
+        ["Potential Change", "Hours may have changed"],
+        ["AI Analysis", "Flagged inconsistency with recent internal note"],
+        ["Human Verification", "Confirmed — hours updated"],
+        ["Action", "Update"],
+        ["Status", "In progress"],
+        ["Change Log", "Hours corrected [date]"],
+        ["Next Review", "[date]"]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This doesn't need to be enterprise content governance software. A shared spreadsheet is enough to start, and the system can become more structured as the amount of content grows."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "creating-a-change-driven-review-loop",
+      "title": "10. Creating a Change-Driven Review Loop"
+    },
+    {
+      "type": "paragraph",
+      "content": "Review frequency should depend on change sensitivity, not a single calendar rule applied to everything. Change Sensitivity determines priority; actual review timing depends on the specific content, business context, and relevant change events."
+    },
+    {
+      "type": "paragraph",
+      "content": "High-sensitivity content — hours, contact information, availability — deserves earlier and more frequent attention. Medium-sensitivity content can be checked periodically. Low-sensitivity, evergreen content can go much longer between reviews."
+    },
+    {
+      "type": "paragraph",
+      "content": "A <strong>change event</strong> is anything that should trigger a targeted review regardless of when the next scheduled check was due — for example:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "a relocation",
+        "a new service",
+        "a discontinued service",
+        "a policy change",
+        "an operating-hours change",
+        "an availability change"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Rather than prescribing a universal monthly or quarterly schedule for all content, tie review timing to the \"Last Verified\" and \"Change Sensitivity\" fields in the worksheet, and to actual change events like these. The loop is: review dates and change events feed monitoring, monitoring feeds the next review, and each review updates the maintenance record."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-content-maintenance-means-for-local-search-and-ai-visibility",
+      "title": "11. What Content Maintenance Means for Local Search and AI Visibility"
+    },
+    {
+      "type": "paragraph",
+      "content": "Google has said it values helpful, reliable, people-first content, and it maintains freshness-related systems for the kinds of queries where current information is genuinely useful or expected. None of that means every page benefits from being frequently updated, and artificially changing a publication date to appear fresh isn't what content maintenance is about. Updating content should be driven by actual changes, actual errors, or genuine improvements in usefulness — not by a desire to look active."
+    },
+    {
+      "type": "paragraph",
+      "content": "The same conservative framing applies to AI-assisted discovery: maintaining accurate, current, and well-organized public information can help keep a business's website and knowledge assets aligned with what's actually true, and that alignment is a reasonable thing to aim for on its own terms. It does not translate into a guarantee of higher AI rankings, more AI citations, or guaranteed inclusion in any specific AI-generated answer. Better prepared, not guaranteed, is the right way to think about it."
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintaining accurate public information is valuable even if no AI system ultimately surfaces the content. Accuracy serves customers directly — it isn't only useful insofar as it might influence an algorithm."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-failure-modes",
+      "title": "12. Common Failure Modes"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>1. Updating every page just to make the site look fresh.</strong> This treats appearance as the goal instead of accuracy."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>2. Changing dates without meaningful changes.</strong> A new timestamp on unchanged content misrepresents how current the information actually is."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>3. Trusting AI output as factual truth.</strong> AI can be wrong, and treating its output as settled fact skips the verification step that actually matters."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>4. Treating AI detection as verification.</strong> A flagged discrepancy is a signal to check, not a confirmed problem."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>5. Using weak sources when primary sources exist.</strong> Reaching for a convenient secondary source when an official one is available introduces unnecessary risk."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>6. Updating content without recording what changed.</strong> Without a change log, there's no way to track what was actually done or why."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>7. Applying the same review schedule to every page.</strong> Treating a stable, evergreen explainer the same as time-sensitive business hours wastes review effort in the wrong places."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>8. Automating publication without human approval.</strong> Letting AI-drafted changes go live without a human checking them removes the one step that actually catches mistakes."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "practical-checklist",
+      "title": "13. Practical Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Practical Checklist",
+      "items": [
+        "Content inventory built and current",
+        "Each item classified as Low, Medium, or High change sensitivity",
+        "Higher-sensitivity content reviewed first",
+        "Potential changes identified, treated as candidates, not confirmed facts",
+        "Each flagged item checked against its actual current source",
+        "AI used to compare and organize, not to confirm accuracy",
+        "Every proposed change is human-verified before publication",
+        "Updates reviewed and approved before publication",
+        "Every change recorded in a change log",
+        "Next review date set based on change sensitivity",
+        "No content retired solely because it's old",
+        "Changes were made because of a real information, accuracy, usefulness, or business need — not simply to make the page look fresh"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "frequently-asked-questions",
+      "title": "14. Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "How often should a local business review existing content?",
+          "answer": "It depends on change sensitivity. High-sensitivity information (hours, contact details, availability) needs frequent review; stable, evergreen content can go much longer between checks. There's no single universal schedule that fits every page."
+        },
+        {
+          "question": "Can AI tell me which content is outdated?",
+          "answer": "AI can help identify content that may require review by comparing it against newer information, but that's a signal, not a confirmed finding — the actual source still needs to be checked."
+        },
+        {
+          "question": "Should every old article be updated?",
+          "answer": "No. Age alone doesn't mean content is wrong. A still-accurate, well-written piece can be old and correct at the same time."
+        },
+        {
+          "question": "Does updating content improve SEO?",
+          "answer": "Updating content because something has genuinely changed, or because it makes the content more accurate or useful, is worthwhile on its own terms. There's no basis for treating updates as a direct ranking lever, and changing dates without meaningful changes doesn't improve anything."
+        },
+        {
+          "question": "Can AI verify whether information is correct?",
+          "answer": "No. AI can assist with comparison and organization, but verification means checking against an actual current source, which is a human task."
+        },
+        {
+          "question": "What should I do when two sources disagree?",
+          "answer": "Go to the highest-tier source available (Section 7) and resolve the discrepancy there rather than picking whichever version is more convenient."
+        },
+        {
+          "question": "When should I retire an old page?",
+          "answer": "When it's no longer useful, relevant, supportable, or appropriate to keep public — not simply because time has passed."
+        },
+        {
+          "question": "Does content maintenance improve AI visibility?",
+          "answer": "Accurate public information is a useful foundation, and maintenance supports the overall quality of that information. But there's no guarantee it improves AI ranking, no guarantee it earns AI citations, and no guarantee of inclusion in any specific AI-generated answer."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "conclusion",
+      "title": "15. Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "content": "The goal of content maintenance isn't to make a website look fresh. It's to keep the business's public knowledge accurate, useful, and aligned with verified information as things change. AI assists throughout this process — organizing, comparing, drafting — but humans verify the facts and approve what actually gets published. Treated as a continuous loop rather than an occasional cleanup, this workflow keeps a business's existing content doing its job long after it was first written."
+    },
+    {
+      "type": "paragraph",
+      "content": "<a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"article-internal-link\">Article #31 — Local Entity Consistency & NAPE Audit</a> provides a foundation for maintaining accurate business entity information; this article extends that same discipline to the broader body of content a local business publishes."
+    }
+  ]
+}

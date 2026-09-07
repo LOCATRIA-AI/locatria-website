@@ -1,17 +1,17 @@
 /**
  * LOCATRIA PRODUCTION CONTENT COUNTS ENGINE v1.3
  * Calculates real-time published content & industry counts from single source of truth.
- * Auto-synchronized on 2026-09-07T07:33:37.325Z
+ * Auto-synchronized on 2026-09-07T09:11:47.371Z
  */
 (function (window) {
   'use strict';
 
   const LocatriaContentCounts = {
     version: '1.3.0',
-    publishedTotal: 34,
+    publishedTotal: 35,
     countsByType: {
   "guide": 9,
-  "workflow": 22,
+  "workflow": 23,
   "checklist": 3,
   "tutorial": 0,
   "faq": 0,
@@ -23,7 +23,7 @@
   "dental": 7,
   "law": 6,
   "realEstate": 6,
-  "general": 15
+  "general": 16
 },
 
     init: function () {
