@@ -145,9 +145,9 @@
             ${block.title ? `<div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">${this.formatInline(block.title)}</div>` : ''}
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
               ${(block.items || []).map((item, idx) => `
-                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
-                  <input type="checkbox" class="checklist-checkbox" id="chk-${idx}" ${item.checked ? 'checked' : ''} />
-                  <label for="chk-${idx}">${this.formatInline(item.label || item)}</label>
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-${idx}" ${item.checked ? 'checked' : ''} style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-${idx}" style="cursor: pointer; line-height: 1.4;">${this.formatInline(item.label || item)}</label>
                 </li>
               `).join('')}
             </ul>

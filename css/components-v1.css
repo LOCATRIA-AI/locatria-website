@@ -254,6 +254,12 @@
   margin-bottom: var(--space-8);
 }
 
+.component-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 /* --- GROUP 04: DATA + AI (C18 - C24) --- */
 
 .component-table-wrapper {
