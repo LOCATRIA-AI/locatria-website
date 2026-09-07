@@ -1,7 +1,7 @@
 /**
  * LOCATRIA PUBLISHED ARTICLES DATABASE v1.1
  * Single Source of Truth for Published Production Content.
- * Auto-synchronized on 2026-09-06T11:53:33.030Z
+ * Auto-synchronized on 2026-09-07T02:47:20.766Z
  */
 (function (window) {
   'use strict';
@@ -19,6 +19,19 @@
     "pubDate": "2026-08-11",
     "description": "A practical workflow for law firms to transform attorney-approved content into multiple derivative formats without sacrificing legal accuracy.",
     "slugUrl": "ai-assisted-legal-content-repurposing-workflow.html"
+  },
+  {
+    "id": "ai-assisted-legal-intake-faq-governance-workflow",
+    "title": "How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow",
+    "type": "workflow",
+    "status": "published",
+    "industry": "law",
+    "difficulty": "intermediate",
+    "readTime": "20 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-07",
+    "description": "An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.",
+    "slugUrl": "ai-assisted-legal-intake-faq-governance-workflow.html"
   },
   {
     "id": "ai-assisted-review-response-workflow-dental-clinics",

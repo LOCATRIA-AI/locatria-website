@@ -1,0 +1,474 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-assisted-legal-intake-faq-governance-workflow",
+  "type": "workflow",
+  "status": "published",
+  "metadata": {
+    "title": "How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow",
+    "subtitle": "An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.",
+    "category": "Workflows",
+    "industry": "law",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 20,
+    "lastUpdated": "2026-09-07",
+    "audience": [
+      "Law Firm Partners",
+      "Managing Attorneys",
+      "Legal Practice Managers",
+      "Legal Marketing & Operations Leaders"
+    ],
+    "primaryTopic": "AI-Assisted Legal Intake & FAQ Governance Workflow"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Legal AI Operations Specialist"
+  },
+  "seo": {
+    "title": "How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow | Locatria",
+    "description": "An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.",
+    "canonical": "https://www.locatria.com/ai-assisted-legal-intake-faq-governance-workflow.html",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "Legal Intake AI Governance & FAQ Maintenance",
+    "industryFocus": "law"
+  },
+  "relationships": {
+    "parentArticle": "how-law-firms-can-use-ai-organize-client-faq-content",
+    "relatedArticles": [
+      "ai-local-entity-consistency-nape-audit-workflow",
+      "how-law-firms-can-use-ai-improve-local-visibility"
+    ],
+    "learningPath": "lp05"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "A person fills out a law firm's contact form at 11 p.m. An AI tool could draft a friendly acknowledgment, summarize what they wrote, and flag it for the morning. That part is easy. What's harder — and what actually matters — is what happens downstream: whether the firm collected more information than it needed, whether that information went somewhere it shouldn't have, and whether the information was handled appropriately if the exchange developed into a consultation about possible representation."
+    },
+    {
+      "type": "paragraph",
+      "content": "The same tension shows up on the public side of the firm. An AI tool can draft an FAQ answer about how a practice area works in minutes. Whether that answer is accurate, current, and safe to publish under the firm's name is a separate question — one AI cannot answer on its own."
+    },
+    {
+      "type": "paragraph",
+      "content": "This article lays out an operational workflow for both problems: AI-assisted legal intake and AI-assisted FAQ governance, built around a single non-negotiable principle. AI can assist. It does not decide."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-legal-intake-and-faq-governance-need-more-than-ai-automation",
+      "title": "Why Legal Intake and FAQ Governance Need More Than AI Automation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Law firms sit in an unusual position relative to most local businesses. Intake isn't just customer service — from the moment someone consults a lawyer about possible representation, ABA Model Rule 1.18 treats that person as a <strong>prospective client</strong>, with confidentiality duties attaching even if a formal engagement never happens. FAQ content isn't just marketing copy — under Model Rule 7.1, a lawyer's public communications about services must not be false or misleading, and outdated or inaccurate FAQ answers can drift into that territory without anyone intending it."
+    },
+    {
+      "type": "paragraph",
+      "content": "Automating either process end-to-end — \"let the AI handle intake\" or \"let the AI keep the FAQ updated\" — skips past exactly the judgment calls that make legal practice legal practice: whether information should be collected at all, whether a conflict might exist, whether an answer to a common question still reflects current law or firm policy. This article is not about removing that judgment. It's about giving AI a clearly bounded role around it."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "the-controlled-ai-assistance-model",
+      "title": "The Controlled AI Assistance Model"
+    },
+    {
+      "type": "paragraph",
+      "content": "The operating model this article uses is simple:"
+    },
+    {
+      "type": "codeBlock",
+      "filename": "Operating Architecture",
+      "language": "plaintext",
+      "code": "LAW FIRM\n   |\n   +--- Client Intake -------- AI Assistance --+\n   |                                            |\n   +--- Public FAQ ----------- AI Assistance ---+\n                                                 |\n                                                 v\n                                    HUMAN / LAWYER REVIEW\n                                                 |\n                                                 v\n                                        APPROVED OUTPUT"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI sits inside both tracks as an assistant — organizing, summarizing, drafting, and comparing. Where a decision requires professional judgment, confidentiality assessment, or approval of public legal content, the workflow routes the output to an appropriately responsible human reviewer. The firm, not the AI, remains accountable for consequential decisions and approved communications."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-a-law-firm-should-define-before-using-ai",
+      "title": "What a Law Firm Should Define Before Using AI"
+    },
+    {
+      "type": "paragraph",
+      "content": "Before adopting any AI assistance, ABA Formal Opinion 512 (2024) — the ABA's guidance on generative AI tools — points to several existing duties that firms need to think through first: competence with the tool's capabilities and limitations, protection of client and prospective-client confidentiality, appropriate client communication about AI use, and supervision consistent with Model Rule 5.3. In practice, that means defining, before any tool touches real intake or FAQ content:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "What specific tasks AI will be allowed to assist with",
+        "What information categories may or may not be entered into the tool",
+        "Who is responsible for reviewing AI-assisted output before it's acted on",
+        "How the firm evaluates a given AI tool's data handling before using it for anything client-related"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "These aren't abstract governance exercises — they're the answers a firm needs before Step 1 below makes sense in practice."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "evaluating-an-ai-tool-or-provider",
+      "title": "Evaluating an AI Tool or Provider"
+    },
+    {
+      "type": "paragraph",
+      "content": "If the firm is considering ChatGPT, another general-purpose assistant, or a legal-specific AI product, the evaluation is broader than \"does it produce good output.\" Worth checking before any client-related information touches the tool: how the provider handles data submitted to it, what the contractual terms say about retention and use of that data, who inside or outside the provider can access it, how the tool is configured (some enterprise or firm-specific configurations differ meaningfully from a consumer version of the same product), and whether the firm's own policy and applicable professional obligations are satisfied given the type and sensitivity of information involved. A provider's general privacy or security marketing language is only one input into that evaluation — it isn't, by itself, a substitute for the firm doing this work. This applies regardless of which specific AI product a firm is considering; this article isn't a recommendation for any particular one."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "the-10-step-ai-assisted-legal-intake-faq-governance-workflow",
+      "title": "The 10-Step AI-Assisted Legal Intake & FAQ Governance Workflow"
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-a-legal-intake",
+      "title": "Phase A — Legal Intake"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 1 — Define Intake Scope</strong><br>Decide, in plain terms, what the firm actually needs to know at the initial stage: is this person a fit for the firm's practice areas, is there an apparent conflict, and what's the general nature of the matter. At this stage, the goal is to define the minimum information needed for the firm's initial purpose — additional information can be requested later if the matter requires it. This step is about drawing the boundary before any form, script, or AI tool is built around it."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 2 — Collect Minimum Necessary Information</strong><br>Model Rule 1.18 and the reasoning behind it support a simple operating principle: <strong>collect the minimum information reasonably necessary for the firm's initial purpose.</strong> A detailed case narrative, sensitive personal history, or documents aren't needed to determine whether someone is a plausible prospective client. Resist the instinct to \"collect everything and let AI sort it later\" — that instinct increases confidentiality exposure for information the firm didn't need in the first place."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 3 — Initial Conflict / Matter Screening</strong><br>The firm needs some baseline information to support its conflict-check and matter-screening process. AI may assist by organizing or formatting the details provided so a human can run or review the check, but AI does not perform the conflict check on its own or decide whether a conflict exists. The firm's established conflict system and a responsible human remain in charge of that assessment."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 4 — AI-Assisted Intake Triage & Routing</strong><br>For inquiries that clear initial screening, AI assistance can format the information into a structured summary: key dates, practice area, contact preferences, and any urgency flags the person noted. This is an administrative organization step — AI is organizing unstructured text to make human review faster, not evaluating legal claims or deciding case value."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 5 — Lawyer / Designated Reviewer Review</strong><br>Before any decision is communicated to the person — whether that's scheduling a consultation, requesting specific additional information, or declining the matter — a lawyer or designated reviewer evaluates the intake summary. ABA Formal Opinion 506 (2023) discusses the role of supervised nonlawyer personnel in prospective-client intake; it does not address AI tools. LOCATRIA applies a similar principle only as an operational analogy: an AI tool can assist with organizing details, but it is not a lawyer and cannot evaluate legal merits or decide whether to accept a client. That judgment remains with the lawyer."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-b-public-faq-governance",
+      "title": "Phase B — Public FAQ Governance"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 6 — Maintain Public FAQ Knowledge</strong><br>Treat the firm's FAQ as maintained knowledge, not a static page written once and forgotten. For each FAQ entry, track: the current question and approved answer, what source or reasoning supports it, its review status, who owns it, and when it was last reviewed or changed. This is the same discipline that underlies knowledge maintenance elsewhere in this workflow — it just applies to public content instead of internal records."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 7 — AI-Assisted FAQ Draft / Update</strong><br>AI can genuinely help here: identifying FAQ content that looks outdated, comparing an existing answer against newer source material, flagging inconsistencies between related answers, summarizing what changed in an underlying law, service, or policy, and preparing a draft revision. What AI does not do is approve that content for publication — a draft, however well-written, is not yet an answer the firm has vouched for."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 8 — Legal Review & Approval</strong><br>Before any meaningfully changed or new FAQ content goes live, appropriate human or legal review should confirm: it's accurate, it's current, it's consistent with the firm's other public statements, it does not create a false or misleading communication under applicable professional-conduct rules, such as ABA Model Rule 7.1 where applicable, it reflects relevant jurisdictional context where that matters, and it aligns with information the firm has already approved elsewhere. AI-generated FAQ content is not automatically safe to publish — that determination is a human one."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 9 — Publish / Communicate</strong><br>Only content that has cleared review moves into the firm's public channels — website, GBP, social profiles, wherever the FAQ lives. Publishing accurate, well-organized information is worthwhile in its own right; it does not, by itself, guarantee any particular search or AI-visibility outcome."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 10 — Change-Driven Review</strong><br>FAQ governance isn't a one-time project. Revisit specific entries when something material changes: a relevant law or regulation shifts, the firm adds or drops a service, firm policy changes, public business information changes, an error is discovered, or a previously published answer needs correction. This mirrors the change-driven maintenance approach used elsewhere in LOCATRIA's workflows rather than an arbitrary fixed review calendar."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "where-ai-should-stop",
+      "title": "Where AI Should Stop"
+    },
+    {
+      "type": "paragraph",
+      "content": "Draw this line explicitly and keep it visible to everyone using these tools:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "AI does not determine whether a legal claim is valid.",
+        "AI does not independently decide whether to accept a client.",
+        "AI does not replace the firm's conflict-check process.",
+        "AI does not independently provide individualized legal advice during intake.",
+        "AI-generated FAQ content is not automatically safe to publish.",
+        "No AI tool's confidentiality or security controls, by themselves, satisfy the firm's professional obligations — that requires the firm's own evaluation."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Where any of these lines get blurry, the default answer is human review, not AI judgment."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "handling-public-information-vs-prospective-client-information",
+      "title": "Handling Public Information vs. Prospective-Client Information"
+    },
+    {
+      "type": "paragraph",
+      "content": "It helps to think in three layers, each with a different risk profile. For this workflow, LOCATRIA uses these three layers as an operational way to distinguish information-handling risk; they are not formal legal classifications."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Layer 1 — Public Business Information:</strong> firm name, office location, contact details, practice areas, public services, public FAQs, public website content. Low sensitivity; this is information the firm already publishes."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Layer 2 — Prospective-Client Intake Information:</strong> name, contact details, general matter type, and the limited information needed for initial screening and conflict/scope processes. Moderate sensitivity — confidentiality duties attach here even before representation begins."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Layer 3 — Sensitive/Confidential Matter Information:</strong> detailed case narratives, sensitive personal information, case documents, and anything not actually needed for initial screening. This information generally warrants a higher level of caution and should not be collected or entered into an AI tool unless there is a defined reason to do so and the firm has evaluated the relevant handling requirements."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI assistance should be scoped to the layer it's actually working with. A tool appropriate for organizing Layer 1 public FAQ content isn't automatically appropriate for Layer 2 or 3 information — that's a separate evaluation involving the tool's data handling, contractual terms, retention practices, and access controls, not just its output quality."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-to-build-a-legal-intake-faq-governance-worksheet",
+      "title": "How to Build a Legal Intake & FAQ Governance Worksheet"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Area",
+        "Field",
+        "Source",
+        "AI Assistance",
+        "Human Review",
+        "Status",
+        "Action"
+      ],
+      "rows": [
+        [
+          "Intake",
+          "Matter type",
+          "Intake form",
+          "Classify/summarize",
+          "Lawyer",
+          "Reviewed / Pending",
+          "Route / Hold"
+        ],
+        [
+          "Intake",
+          "Conflict-check inputs",
+          "Firm records + intake",
+          "Organize/format",
+          "Conflicts reviewer",
+          "Reviewed / Pending",
+          "Clear / Escalate"
+        ],
+        [
+          "Intake",
+          "Prospective-client contact info",
+          "Intake form",
+          "Format/verify completeness",
+          "Lawyer / staff",
+          "Reviewed / Pending",
+          "Proceed / Follow up"
+        ],
+        [
+          "FAQ",
+          "Question + current answer",
+          "Existing FAQ",
+          "Compare to source material",
+          "Lawyer",
+          "Current / Outdated",
+          "Keep / Draft update"
+        ],
+        [
+          "FAQ",
+          "Draft revision",
+          "AI-assisted draft",
+          "Draft/summarize changes",
+          "Lawyer",
+          "Draft / Approved",
+          "Approve / Revise"
+        ],
+        [
+          "FAQ",
+          "Publication record",
+          "CMS/website",
+          "—",
+          "Firm owner",
+          "Published / Pending",
+          "Publish / Hold"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Keep this simple enough that a small firm can maintain it in a spreadsheet — the point is traceability (who reviewed what, and when), not a formal compliance filing."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-failure-modes",
+      "title": "Common Failure Modes"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Collecting too much information too early, before it's clear the person will even become a client",
+        "Entering sensitive prospective-client information into an AI tool the firm hasn't evaluated",
+        "Treating an AI-generated classification or summary as if it were a legal decision",
+        "Letting AI assistance quietly substitute for the firm's actual conflict-check process",
+        "Publishing an AI-drafted FAQ answer without legal review",
+        "Losing track of what source or reasoning supports a given FAQ answer",
+        "Treating FAQs as \"done\" once published, rather than as maintained content",
+        "Failing to revisit FAQ content after a relevant law, service, or policy change",
+        "Assuming an AI provider's privacy or security settings automatically satisfy the firm's confidentiality obligations",
+        "Applying one jurisdiction's guidance as if it were universal"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-this-workflow-supports-ai-visibility",
+      "title": "How This Workflow Supports AI Visibility"
+    },
+    {
+      "type": "paragraph",
+      "content": "Maintaining accurate, reviewed, and consistent public information — firm details, practice areas, and a well-governed FAQ — can contribute to a clearer public information foundation for search and AI-assisted discovery, in the same sense described in <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">Article #31 — Local Entity Consistency & NAPE Audit Workflow</a>. It can make a firm's publicly available information easier to maintain and interpret consistently over time."
+    },
+    {
+      "type": "paragraph",
+      "content": "That is a modest, evidence-based claim, deliberately. This workflow does not claim that FAQ content directly improves AI rankings, that AI-generated FAQs guarantee visibility, or that publishing more FAQ entries produces better search outcomes. Consistency and accuracy are worthwhile on their own terms — as a foundation, not a guarantee."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "the-maintenance-loop",
+      "title": "The Maintenance Loop"
+    },
+    {
+      "type": "paragraph",
+      "content": "The full cycle, across both intake and FAQ governance, is:"
+    },
+    {
+      "type": "paragraph",
+      "content": "Define → Collect → Screen → Assist → Review → Maintain → Draft → Approve → Publish → Recheck"
+    },
+    {
+      "type": "paragraph",
+      "content": "This loop runs continuously, triggered by real events — a new type of inquiry the intake process wasn't built for, a change in the law an FAQ answer depends on, a new service the firm offers — rather than on a fixed schedule that may not match how often things actually change."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "practical-checklist",
+      "title": "Practical Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Legal Intake & FAQ Governance Checklist",
+      "items": [
+        {
+          "label": "Intake scope is defined and limited to the firm's initial purpose",
+          "checked": false
+        },
+        {
+          "label": "Intake collects the minimum information reasonably necessary",
+          "checked": false
+        },
+        {
+          "label": "Conflict/matter screening process is in place and AI-assisted only where appropriate",
+          "checked": false
+        },
+        {
+          "label": "AI-assisted organization/routing tasks are clearly scoped",
+          "checked": false
+        },
+        {
+          "label": "A lawyer or properly supervised person reviews intake before any decision",
+          "checked": false
+        },
+        {
+          "label": "FAQ entries have a defined owner, source, and review date",
+          "checked": false
+        },
+        {
+          "label": "AI-assisted FAQ drafts are clearly marked as drafts, not approved content",
+          "checked": false
+        },
+        {
+          "label": "Legal review occurs before publishing new or materially changed FAQ content",
+          "checked": false
+        },
+        {
+          "label": "Public information is checked against the firm's approved records",
+          "checked": false
+        },
+        {
+          "label": "A change-driven trigger list exists for both intake and FAQ review",
+          "checked": false
+        },
+        {
+          "label": "The firm has evaluated any AI tool's data handling before using it with client-related information",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "frequently-asked-questions",
+      "title": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Can AI conduct a law firm's client intake?",
+          "answer": "No. AI can assist with organizing, summarizing, and routing intake information within a lawyer-controlled workflow, but it does not independently conduct intake or decide whether to accept a client."
+        },
+        {
+          "question": "Can a law firm use AI for conflict-checking support?",
+          "answer": "AI may assist with organizing or formatting information that feeds into an approved conflict-check process. The firm remains responsible for the process itself and its results — AI does not perform the conflict check on its own."
+        },
+        {
+          "question": "Should prospective-client information be entered into AI tools?",
+          "answer": "Only after the firm has evaluated the specific tool's data handling, retention, access, and contractual terms, and only with information that's actually necessary for the task at hand. Sensitive or detailed matter information (Layer 3) deserves particular caution."
+        },
+        {
+          "question": "Can AI write law-firm FAQs?",
+          "answer": "AI can assist with drafting or identifying FAQ updates. It does not make the content safe to publish on its own — that requires appropriate human or legal review before anything goes live."
+        },
+        {
+          "question": "Who should review AI-generated legal FAQ content?",
+          "answer": "A lawyer or another appropriately qualified person the firm has designated for that review, checking accuracy, currentness, consistency, and whether the content could be misleading under applicable communications rules."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "conclusion",
+      "title": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI becomes genuinely useful to a law firm not when it's given the most authority, but when it's placed inside a workflow the firm actually controls. The pattern running through both intake and FAQ governance is the same: define the scope, let AI assist with the organizing and drafting work it's actually good at, and keep a human — specifically, a lawyer, where lawyer judgment is required — as the point where anything becomes real."
+    },
+    {
+      "type": "paragraph",
+      "content": "Professional-responsibility requirements and AI-related guidance can vary by jurisdiction. This workflow is an operational framework for organizing AI-assisted intake and FAQ governance, not a substitute for jurisdiction-specific legal or ethics advice."
+    },
+    {
+      "type": "paragraph",
+      "content": "For the broader entity-consistency foundation this workflow connects to, see <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">Article #31 — Local Entity Consistency & NAPE Audit Workflow</a>. For the underlying FAQ knowledge-organization concepts this article operationalizes, see <a href=\"how-law-firms-can-use-ai-organize-client-faq-content.html\" class=\"component-link\">Article #13 — How Law Firms Can Use AI to Organize Client FAQ Content</a>."
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow | Locatria Knowledge Hub</title>
+  <meta name="description" content="An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.">
+  
+  <!-- OpenGraph & SEO -->
+  <link rel="canonical" href="https://www.locatria.com/ai-assisted-legal-intake-faq-governance-workflow.html">
+  <meta property="og:title" content="How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow | Locatria">
+  <meta property="og:description" content="An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.">
+  <meta property="og:type" content="article">
+
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS Files -->
+  <link rel="stylesheet" href="css/variables.css?v=5.4">
+  <link rel="stylesheet" href="css/global.css?v=5.4">
+  <link rel="stylesheet" href="css/header.css?v=5.4">
+  <link rel="stylesheet" href="css/components.css?v=5.4">
+  <link rel="stylesheet" href="css/sidebar.css?v=5.4">
+  <link rel="stylesheet" href="css/footer.css?v=5.4">
+  <link rel="stylesheet" href="css/article.css?v=5.4">
+  <link rel="stylesheet" href="css/components-v1.css?v=5.4">
+
+  <!-- LOCATRIA Standalone Brand Icon Favicon Suite -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- WCAG Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- GLOBAL HEADER (Synchronized with IA v1.0) -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Locatria Home">
+        <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="brand-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge.html" class="nav-link is-active">Knowledge Hub</a>
+        
+        <!-- Learn Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html#learning-paths" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Learn
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?type=guides" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Guides & Blueprints</strong>
+                  <span class="dropdown-item-desc">Evergreen operational AI guides</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=tutorials" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Step-by-Step Tutorials</strong>
+                  <span class="dropdown-item-desc">Actionable zero-code tutorials</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=workflows" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Automated Workflows</strong>
+                  <span class="dropdown-item-desc">End-to-end execution blueprints</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=checklists" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Audit Checklists</strong>
+                  <span class="dropdown-item-desc">Verification & compliance lists</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Industries Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Industries
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?industry=real-estate" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Real Estate</strong>
+                  <span class="dropdown-item-desc">Property marketing & lead systems</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=law-firms" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Law Firms</strong>
+                  <span class="dropdown-item-desc">Ethical intake & FAQ governance</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=dental-clinics" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Dental Clinics</strong>
+                  <span class="dropdown-item-desc">Patient scheduling & FAQ assistants</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="category.html?type=resources" class="nav-link">Resources</a>
+        <a href="index.html#why-locatria" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn js-search-trigger" aria-label="Search">
+          <svg class="search-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="search-trigger-text">
+            <span class="placeholder-desktop">Search articles, guides, workflows...</span>
+            <span class="placeholder-mobile">Search articles...</span>
+          </span>
+          <span class="search-shortcut-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+        </button>
+        <a href="knowledge.html#learning-paths" class="btn btn-primary" style="height: 40px; padding: 0 16px;">Start Learning</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Modal (Strictly Hidden by Default) -->
+  <div class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search Knowledge Base">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg class="search-icon-modal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-modal-input" placeholder="Search guides, workflows..." aria-label="Search Input">
+        <button type="button" class="search-modal-close-btn">ESC</button>
+      </div>
+      <div class="search-results-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <!-- MAIN ARTICLE PAGE CONTENT -->
+  <div id="main-content" class="page-wrapper">
+    <div class="container" style="max-width: 1040px; padding-top: var(--space-6);">
+      
+      <!-- BREADCRUMB COMPONENT -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="knowledge.html" class="breadcrumb-link">Knowledge Hub</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="category.html?type=workflows" class="breadcrumb-link">Automated Workflows</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item is-active" aria-current="page">How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow</li>
+        </ol>
+      </nav>
+
+      <!-- ARTICLE HEADER / HERO CONTAINER -->
+      <header class="article-header" style="margin-bottom: var(--space-6);">
+        <div class="article-badge-row">
+          <span class="badge badge-blue">AUTOMATED WORKFLOW</span>
+          <span class="badge badge-purple">LAW FIRM INTAKE & FAQ GOVERNANCE</span>
+        </div>
+        <h1 class="article-title" style="font-size: 2.25rem; font-weight: 800; line-height: 1.25; margin-top: var(--space-3); margin-bottom: var(--space-3);">How Law Firms Can Build an AI-Assisted Legal Intake & FAQ Governance Workflow</h1>
+        <p class="article-subtitle" style="font-size: 1.125rem; color: var(--color-gray-600); margin-bottom: var(--space-4);">An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.</p>
+        
+        <div class="article-meta-row" style="display: flex; align-items: center; gap: var(--space-4); font-size: 0.875rem; color: var(--color-gray-500); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-gray-200);">
+          <div class="meta-item">
+            <span>By <strong>Locatria Editorial Team</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Published: <strong>Sep 7, 2026</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Reading Time: <strong>20 min read</strong></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2-COLUMN ARTICLE LAYOUT (720px Main Prose + 260px Sticky TOC) -->
+      <div class="article-layout-grid" style="display: grid; grid-template-columns: 1fr 260px; gap: var(--space-8); align-items: start;">
+        
+        <!-- MAIN PROSE CONTAINER -->
+        <main id="article-dynamic-container" class="article-prose" role="main">
+          
+          <!-- Learning Path Contextual Banner -->
+          <div class="learning-path-banner" role="region" aria-label="Learning Path Context">
+            <div class="learning-path-banner-badge">Part of this Learning Path</div>
+            <h3 class="learning-path-banner-title">AI Visibility for Law Firms</h3>
+            <p class="learning-path-banner-desc">This article is part of the AI Visibility for Law Firms Learning Path, a step-by-step track for implementing ethical, Bar-compliant AI visibility and client communication systems for legal practices.</p>
+            <a href="learn/ai-visibility-law.html" class="learning-path-banner-link">
+              <span>Explore the AI Visibility for Law Firms Learning Path</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <p class="component-paragraph">A person fills out a law firm's contact form at 11 p.m. An AI tool could draft a friendly acknowledgment, summarize what they wrote, and flag it for the morning. That part is easy. What's harder — and what actually matters — is what happens downstream: whether the firm collected more information than it needed, whether that information went somewhere it shouldn't have, and whether the information was handled appropriately if the exchange developed into a consultation about possible representation.</p>
+<p class="component-paragraph">The same tension shows up on the public side of the firm. An AI tool can draft an FAQ answer about how a practice area works in minutes. Whether that answer is accurate, current, and safe to publish under the firm's name is a separate question — one AI cannot answer on its own.</p>
+<p class="component-paragraph">This article lays out an operational workflow for both problems: AI-assisted legal intake and AI-assisted FAQ governance, built around a single non-negotiable principle. AI can assist. It does not decide.</p>
+<h2 id="why-legal-intake-and-faq-governance-need-more-than-ai-automation" class="component-heading h2">Why Legal Intake and FAQ Governance Need More Than AI Automation</h2>
+<p class="component-paragraph">Law firms sit in an unusual position relative to most local businesses. Intake isn't just customer service — from the moment someone consults a lawyer about possible representation, ABA Model Rule 1.18 treats that person as a <strong>prospective client</strong>, with confidentiality duties attaching even if a formal engagement never happens. FAQ content isn't just marketing copy — under Model Rule 7.1, a lawyer's public communications about services must not be false or misleading, and outdated or inaccurate FAQ answers can drift into that territory without anyone intending it.</p>
+<p class="component-paragraph">Automating either process end-to-end — "let the AI handle intake" or "let the AI keep the FAQ updated" — skips past exactly the judgment calls that make legal practice legal practice: whether information should be collected at all, whether a conflict might exist, whether an answer to a common question still reflects current law or firm policy. This article is not about removing that judgment. It's about giving AI a clearly bounded role around it.</p>
+<h2 id="the-controlled-ai-assistance-model" class="component-heading h2">The Controlled AI Assistance Model</h2>
+<p class="component-paragraph">The operating model this article uses is simple:</p>
+<div class="component-code-block">
+            <div class="prompt-header">
+              <span>Operating Architecture</span>
+              <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText('LAW FIRM\n   |\n   +--- Client Intake -------- AI Assistance --+\n   |                                            |\n   +--- Public FAQ ----------- AI Assistance ---+\n                                                 |\n                                                 v\n                                    HUMAN / LAWYER REVIEW\n                                                 |\n                                                 v\n                                        APPROVED OUTPUT'); alert('Code copied!');">Copy Code</button>
+            </div>
+            <pre style="margin: 0;"><code>LAW FIRM
+   |
+   +--- Client Intake -------- AI Assistance --+
+   |                                            |
+   +--- Public FAQ ----------- AI Assistance ---+
+                                                 |
+                                                 v
+                                    HUMAN / LAWYER REVIEW
+                                                 |
+                                                 v
+                                        APPROVED OUTPUT</code></pre>
+          </div>
+<p class="component-paragraph">AI sits inside both tracks as an assistant — organizing, summarizing, drafting, and comparing. Where a decision requires professional judgment, confidentiality assessment, or approval of public legal content, the workflow routes the output to an appropriately responsible human reviewer. The firm, not the AI, remains accountable for consequential decisions and approved communications.</p>
+<h2 id="what-a-law-firm-should-define-before-using-ai" class="component-heading h2">What a Law Firm Should Define Before Using AI</h2>
+<p class="component-paragraph">Before adopting any AI assistance, ABA Formal Opinion 512 (2024) — the ABA's guidance on generative AI tools — points to several existing duties that firms need to think through first: competence with the tool's capabilities and limitations, protection of client and prospective-client confidentiality, appropriate client communication about AI use, and supervision consistent with Model Rule 5.3. In practice, that means defining, before any tool touches real intake or FAQ content:</p>
+<ul class="component-unordered-list"><li>What specific tasks AI will be allowed to assist with</li><li>What information categories may or may not be entered into the tool</li><li>Who is responsible for reviewing AI-assisted output before it's acted on</li><li>How the firm evaluates a given AI tool's data handling before using it for anything client-related</li></ul>
+<p class="component-paragraph">These aren't abstract governance exercises — they're the answers a firm needs before Step 1 below makes sense in practice.</p>
+<h3 id="evaluating-an-ai-tool-or-provider" class="component-heading h3">Evaluating an AI Tool or Provider</h3>
+<p class="component-paragraph">If the firm is considering ChatGPT, another general-purpose assistant, or a legal-specific AI product, the evaluation is broader than "does it produce good output." Worth checking before any client-related information touches the tool: how the provider handles data submitted to it, what the contractual terms say about retention and use of that data, who inside or outside the provider can access it, how the tool is configured (some enterprise or firm-specific configurations differ meaningfully from a consumer version of the same product), and whether the firm's own policy and applicable professional obligations are satisfied given the type and sensitivity of information involved. A provider's general privacy or security marketing language is only one input into that evaluation — it isn't, by itself, a substitute for the firm doing this work. This applies regardless of which specific AI product a firm is considering; this article isn't a recommendation for any particular one.</p>
+<h2 id="the-10-step-ai-assisted-legal-intake-faq-governance-workflow" class="component-heading h2">The 10-Step AI-Assisted Legal Intake & FAQ Governance Workflow</h2>
+<h3 id="phase-a-legal-intake" class="component-heading h3">Phase A — Legal Intake</h3>
+<p class="component-paragraph"><strong>Step 1 — Define Intake Scope</strong><br>Decide, in plain terms, what the firm actually needs to know at the initial stage: is this person a fit for the firm's practice areas, is there an apparent conflict, and what's the general nature of the matter. At this stage, the goal is to define the minimum information needed for the firm's initial purpose — additional information can be requested later if the matter requires it. This step is about drawing the boundary before any form, script, or AI tool is built around it.</p>
+<p class="component-paragraph"><strong>Step 2 — Collect Minimum Necessary Information</strong><br>Model Rule 1.18 and the reasoning behind it support a simple operating principle: <strong>collect the minimum information reasonably necessary for the firm's initial purpose.</strong> A detailed case narrative, sensitive personal history, or documents aren't needed to determine whether someone is a plausible prospective client. Resist the instinct to "collect everything and let AI sort it later" — that instinct increases confidentiality exposure for information the firm didn't need in the first place.</p>
+<p class="component-paragraph"><strong>Step 3 — Initial Conflict / Matter Screening</strong><br>The firm needs some baseline information to support its conflict-check and matter-screening process. AI may assist by organizing or formatting the details provided so a human can run or review the check, but AI does not perform the conflict check on its own or decide whether a conflict exists. The firm's established conflict system and a responsible human remain in charge of that assessment.</p>
+<p class="component-paragraph"><strong>Step 4 — AI-Assisted Intake Triage & Routing</strong><br>For inquiries that clear initial screening, AI assistance can format the information into a structured summary: key dates, practice area, contact preferences, and any urgency flags the person noted. This is an administrative organization step — AI is organizing unstructured text to make human review faster, not evaluating legal claims or deciding case value.</p>
+<p class="component-paragraph"><strong>Step 5 — Lawyer / Designated Reviewer Review</strong><br>Before any decision is communicated to the person — whether that's scheduling a consultation, requesting specific additional information, or declining the matter — a lawyer or designated reviewer evaluates the intake summary. ABA Formal Opinion 506 (2023) discusses the role of supervised nonlawyer personnel in prospective-client intake; it does not address AI tools. LOCATRIA applies a similar principle only as an operational analogy: an AI tool can assist with organizing details, but it is not a lawyer and cannot evaluate legal merits or decide whether to accept a client. That judgment remains with the lawyer.</p>
+<h3 id="phase-b-public-faq-governance" class="component-heading h3">Phase B — Public FAQ Governance</h3>
+<p class="component-paragraph"><strong>Step 6 — Maintain Public FAQ Knowledge</strong><br>Treat the firm's FAQ as maintained knowledge, not a static page written once and forgotten. For each FAQ entry, track: the current question and approved answer, what source or reasoning supports it, its review status, who owns it, and when it was last reviewed or changed. This is the same discipline that underlies knowledge maintenance elsewhere in this workflow — it just applies to public content instead of internal records.</p>
+<p class="component-paragraph"><strong>Step 7 — AI-Assisted FAQ Draft / Update</strong><br>AI can genuinely help here: identifying FAQ content that looks outdated, comparing an existing answer against newer source material, flagging inconsistencies between related answers, summarizing what changed in an underlying law, service, or policy, and preparing a draft revision. What AI does not do is approve that content for publication — a draft, however well-written, is not yet an answer the firm has vouched for.</p>
+<p class="component-paragraph"><strong>Step 8 — Legal Review & Approval</strong><br>Before any meaningfully changed or new FAQ content goes live, appropriate human or legal review should confirm: it's accurate, it's current, it's consistent with the firm's other public statements, it does not create a false or misleading communication under applicable professional-conduct rules, such as ABA Model Rule 7.1 where applicable, it reflects relevant jurisdictional context where that matters, and it aligns with information the firm has already approved elsewhere. AI-generated FAQ content is not automatically safe to publish — that determination is a human one.</p>
+<p class="component-paragraph"><strong>Step 9 — Publish / Communicate</strong><br>Only content that has cleared review moves into the firm's public channels — website, GBP, social profiles, wherever the FAQ lives. Publishing accurate, well-organized information is worthwhile in its own right; it does not, by itself, guarantee any particular search or AI-visibility outcome.</p>
+<p class="component-paragraph"><strong>Step 10 — Change-Driven Review</strong><br>FAQ governance isn't a one-time project. Revisit specific entries when something material changes: a relevant law or regulation shifts, the firm adds or drops a service, firm policy changes, public business information changes, an error is discovered, or a previously published answer needs correction. This mirrors the change-driven maintenance approach used elsewhere in LOCATRIA's workflows rather than an arbitrary fixed review calendar.</p>
+<h2 id="where-ai-should-stop" class="component-heading h2">Where AI Should Stop</h2>
+<p class="component-paragraph">Draw this line explicitly and keep it visible to everyone using these tools:</p>
+<ul class="component-unordered-list"><li>AI does not determine whether a legal claim is valid.</li><li>AI does not independently decide whether to accept a client.</li><li>AI does not replace the firm's conflict-check process.</li><li>AI does not independently provide individualized legal advice during intake.</li><li>AI-generated FAQ content is not automatically safe to publish.</li><li>No AI tool's confidentiality or security controls, by themselves, satisfy the firm's professional obligations — that requires the firm's own evaluation.</li></ul>
+<p class="component-paragraph">Where any of these lines get blurry, the default answer is human review, not AI judgment.</p>
+<h2 id="handling-public-information-vs-prospective-client-information" class="component-heading h2">Handling Public Information vs. Prospective-Client Information</h2>
+<p class="component-paragraph">It helps to think in three layers, each with a different risk profile. For this workflow, LOCATRIA uses these three layers as an operational way to distinguish information-handling risk; they are not formal legal classifications.</p>
+<p class="component-paragraph"><strong>Layer 1 — Public Business Information:</strong> firm name, office location, contact details, practice areas, public services, public FAQs, public website content. Low sensitivity; this is information the firm already publishes.</p>
+<p class="component-paragraph"><strong>Layer 2 — Prospective-Client Intake Information:</strong> name, contact details, general matter type, and the limited information needed for initial screening and conflict/scope processes. Moderate sensitivity — confidentiality duties attach here even before representation begins.</p>
+<p class="component-paragraph"><strong>Layer 3 — Sensitive/Confidential Matter Information:</strong> detailed case narratives, sensitive personal information, case documents, and anything not actually needed for initial screening. This information generally warrants a higher level of caution and should not be collected or entered into an AI tool unless there is a defined reason to do so and the firm has evaluated the relevant handling requirements.</p>
+<p class="component-paragraph">AI assistance should be scoped to the layer it's actually working with. A tool appropriate for organizing Layer 1 public FAQ content isn't automatically appropriate for Layer 2 or 3 information — that's a separate evaluation involving the tool's data handling, contractual terms, retention practices, and access controls, not just its output quality.</p>
+<h2 id="how-to-build-a-legal-intake-faq-governance-worksheet" class="component-heading h2">How to Build a Legal Intake & FAQ Governance Worksheet</h2>
+<div class="component-table-wrapper">
+            <table class="component-comparison-table">
+              
+              <thead>
+                <tr><th>Area</th><th>Field</th><th>Source</th><th>AI Assistance</th><th>Human Review</th><th>Status</th><th>Action</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Intake</td><td>Matter type</td><td>Intake form</td><td>Classify/summarize</td><td>Lawyer</td><td>Reviewed / Pending</td><td>Route / Hold</td></tr><tr><td>Intake</td><td>Conflict-check inputs</td><td>Firm records + intake</td><td>Organize/format</td><td>Conflicts reviewer</td><td>Reviewed / Pending</td><td>Clear / Escalate</td></tr><tr><td>Intake</td><td>Prospective-client contact info</td><td>Intake form</td><td>Format/verify completeness</td><td>Lawyer / staff</td><td>Reviewed / Pending</td><td>Proceed / Follow up</td></tr><tr><td>FAQ</td><td>Question + current answer</td><td>Existing FAQ</td><td>Compare to source material</td><td>Lawyer</td><td>Current / Outdated</td><td>Keep / Draft update</td></tr><tr><td>FAQ</td><td>Draft revision</td><td>AI-assisted draft</td><td>Draft/summarize changes</td><td>Lawyer</td><td>Draft / Approved</td><td>Approve / Revise</td></tr><tr><td>FAQ</td><td>Publication record</td><td>CMS/website</td><td>—</td><td>Firm owner</td><td>Published / Pending</td><td>Publish / Hold</td></tr>
+              </tbody>
+            </table>
+          </div>
+<p class="component-paragraph">Keep this simple enough that a small firm can maintain it in a spreadsheet — the point is traceability (who reviewed what, and when), not a formal compliance filing.</p>
+<h2 id="common-failure-modes" class="component-heading h2">Common Failure Modes</h2>
+<ul class="component-unordered-list"><li>Collecting too much information too early, before it's clear the person will even become a client</li><li>Entering sensitive prospective-client information into an AI tool the firm hasn't evaluated</li><li>Treating an AI-generated classification or summary as if it were a legal decision</li><li>Letting AI assistance quietly substitute for the firm's actual conflict-check process</li><li>Publishing an AI-drafted FAQ answer without legal review</li><li>Losing track of what source or reasoning supports a given FAQ answer</li><li>Treating FAQs as "done" once published, rather than as maintained content</li><li>Failing to revisit FAQ content after a relevant law, service, or policy change</li><li>Assuming an AI provider's privacy or security settings automatically satisfy the firm's confidentiality obligations</li><li>Applying one jurisdiction's guidance as if it were universal</li></ul>
+<h2 id="how-this-workflow-supports-ai-visibility" class="component-heading h2">How This Workflow Supports AI Visibility</h2>
+<p class="component-paragraph">Maintaining accurate, reviewed, and consistent public information — firm details, practice areas, and a well-governed FAQ — can contribute to a clearer public information foundation for search and AI-assisted discovery, in the same sense described in <a href="ai-local-entity-consistency-nape-audit-workflow.html" class="component-link">Article #31 — Local Entity Consistency & NAPE Audit Workflow</a>. It can make a firm's publicly available information easier to maintain and interpret consistently over time.</p>
+<p class="component-paragraph">That is a modest, evidence-based claim, deliberately. This workflow does not claim that FAQ content directly improves AI rankings, that AI-generated FAQs guarantee visibility, or that publishing more FAQ entries produces better search outcomes. Consistency and accuracy are worthwhile on their own terms — as a foundation, not a guarantee.</p>
+<h2 id="the-maintenance-loop" class="component-heading h2">The Maintenance Loop</h2>
+<p class="component-paragraph">The full cycle, across both intake and FAQ governance, is:</p>
+<p class="component-paragraph">Define → Collect → Screen → Assist → Review → Maintain → Draft → Approve → Publish → Recheck</p>
+<p class="component-paragraph">This loop runs continuously, triggered by real events — a new type of inquiry the intake process wasn't built for, a change in the law an FAQ answer depends on, a new service the firm offers — rather than on a fixed schedule that may not match how often things actually change.</p>
+<h2 id="practical-checklist" class="component-heading h2">Practical Checklist</h2>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">Legal Intake & FAQ Governance Checklist</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  />
+                  <label for="chk-0">Intake scope is defined and limited to the firm's initial purpose</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  />
+                  <label for="chk-1">Intake collects the minimum information reasonably necessary</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  />
+                  <label for="chk-2">Conflict/matter screening process is in place and AI-assisted only where appropriate</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-3"  />
+                  <label for="chk-3">AI-assisted organization/routing tasks are clearly scoped</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-4"  />
+                  <label for="chk-4">A lawyer or properly supervised person reviews intake before any decision</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-5"  />
+                  <label for="chk-5">FAQ entries have a defined owner, source, and review date</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-6"  />
+                  <label for="chk-6">AI-assisted FAQ drafts are clearly marked as drafts, not approved content</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-7"  />
+                  <label for="chk-7">Legal review occurs before publishing new or materially changed FAQ content</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-8"  />
+                  <label for="chk-8">Public information is checked against the firm's approved records</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-9"  />
+                  <label for="chk-9">A change-driven trigger list exists for both intake and FAQ review</label>
+                </li>
+              
+                <li style="display: flex; align-items: center; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-10"  />
+                  <label for="chk-10">The firm has evaluated any AI tool's data handling before using it with client-related information</label>
+                </li>
+              
+            </ul>
+          </div>
+<h2 id="frequently-asked-questions" class="component-heading h2">Frequently Asked Questions</h2>
+<div id="faq" class="component-faq-list">
+            <h3 class="component-heading h3" style="margin-bottom: var(--space-4);">Frequently Asked Questions</h3>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Can AI conduct a law firm's client intake?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">No. AI can assist with organizing, summarizing, and routing intake information within a lawyer-controlled workflow, but it does not independently conduct intake or decide whether to accept a client.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Can a law firm use AI for conflict-checking support?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">AI may assist with organizing or formatting information that feeds into an approved conflict-check process. The firm remains responsible for the process itself and its results — AI does not perform the conflict check on its own.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Should prospective-client information be entered into AI tools?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Only after the firm has evaluated the specific tool's data handling, retention, access, and contractual terms, and only with information that's actually necessary for the task at hand. Sensitive or detailed matter information (Layer 3) deserves particular caution.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Can AI write law-firm FAQs?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">AI can assist with drafting or identifying FAQ updates. It does not make the content safe to publish on its own — that requires appropriate human or legal review before anything goes live.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">Who should review AI-generated legal FAQ content?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">A lawyer or another appropriately qualified person the firm has designated for that review, checking accuracy, currentness, consistency, and whether the content could be misleading under applicable communications rules.</p>
+              </div>
+            
+          </div>
+<h2 id="conclusion" class="component-heading h2">Conclusion</h2>
+<p class="component-paragraph">AI becomes genuinely useful to a law firm not when it's given the most authority, but when it's placed inside a workflow the firm actually controls. The pattern running through both intake and FAQ governance is the same: define the scope, let AI assist with the organizing and drafting work it's actually good at, and keep a human — specifically, a lawyer, where lawyer judgment is required — as the point where anything becomes real.</p>
+<p class="component-paragraph">Professional-responsibility requirements and AI-related guidance can vary by jurisdiction. This workflow is an operational framework for organizing AI-assisted intake and FAQ governance, not a substitute for jurisdiction-specific legal or ethics advice.</p>
+<p class="component-paragraph">For the broader entity-consistency foundation this workflow connects to, see <a href="ai-local-entity-consistency-nape-audit-workflow.html" class="component-link">Article #31 — Local Entity Consistency & NAPE Audit Workflow</a>. For the underlying FAQ knowledge-organization concepts this article operationalizes, see <a href="how-law-firms-can-use-ai-organize-client-faq-content.html" class="component-link">Article #13 — How Law Firms Can Use AI to Organize Client FAQ Content</a>.</p>
+
+        </main>
+
+        <!-- STICKY TABLE OF CONTENTS SIDEBAR -->
+        <aside class="article-sidebar" style="position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto;" aria-label="Table of Contents">
+          <div class="toc-card" style="background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: var(--radius-lg); padding: var(--space-4);">
+            <div class="toc-header" style="font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-gray-700); margin-bottom: var(--space-3);">Table of Contents</div>
+            <nav id="toc-nav" class="toc-nav-list" style="display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.875rem;">
+              <a href="#why-legal-intake-and-faq-governance-need-more-than-ai-automation" class="toc-link">1. Need More Than Automation</a>
+              <a href="#the-controlled-ai-assistance-model" class="toc-link">2. Controlled AI Assistance Model</a>
+              <a href="#what-a-law-firm-should-define-before-using-ai" class="toc-link">3. Define Before Using AI</a>
+              <a href="#the-10-step-ai-assisted-legal-intake-faq-governance-workflow" class="toc-link">4. The 10-Step Workflow</a>
+              <a href="#where-ai-should-stop" class="toc-link">5. Where AI Should Stop</a>
+              <a href="#handling-public-information-vs-prospective-client-information" class="toc-link">6. 3-Layer Information Model</a>
+              <a href="#how-to-build-a-legal-intake-faq-governance-worksheet" class="toc-link">7. Governance Worksheet</a>
+              <a href="#common-failure-modes" class="toc-link">8. Common Failure Modes</a>
+              <a href="#how-this-workflow-supports-ai-visibility" class="toc-link">9. Support for AI Visibility</a>
+              <a href="#the-maintenance-loop" class="toc-link">10. The Maintenance Loop</a>
+              <a href="#practical-checklist" class="toc-link">11. Practical Checklist</a>
+              <a href="#frequently-asked-questions" class="toc-link">12. Frequently Asked Questions</a>
+              <a href="#conclusion" class="toc-link">13. Conclusion</a>
+            </nav>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- NEWSLETTER CTA -->
+    <section id="newsletter" class="section-block">
+      <div class="container">
+        <div class="card card-cta" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-primary-50) 100%);">
+          <span class="badge badge-blue" style="margin: 0 auto var(--space-3) auto;">Weekly Knowledge Briefing</span>
+          <h2 class="card-cta-title">Stay Ahead with Practical Legal AI Governance Workflows</h2>
+          <p class="card-cta-desc">
+            Get practical, actionable AI intake and FAQ governance workflows for legal practices directly in your inbox every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form" style="max-width: 440px; margin: 0 auto; width: 100%;">
+            <div class="newsletter-input-group" style="margin-bottom: var(--space-2);">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Locatria Home Footer">
+            <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="footer-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+          </a>
+          <p class="footer-brand-desc">
+            Locatria is an educational knowledge platform empowering local businesses, small business owners, and solopreneurs to grow using practical, trustworthy AI tools.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="knowledge.html" class="footer-link">Knowledge Hub</a></li>
+            <li><a href="category.html?type=guides" class="footer-link">Guides & Blueprints</a></li>
+            <li><a href="category.html?type=tutorials" class="footer-link">Step-by-Step Tutorials</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">Resource Library</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?industry=real-estate" class="footer-link">Real Estate AI</a></li>
+            <li><a href="category.html?industry=law-firms" class="footer-link">Law Firm Automation</a></li>
+            <li><a href="category.html?industry=dental-clinics" class="footer-link">Dental Practice AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?type=prompts" class="footer-link">AI Prompt Packs</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">ROI Savings Calculators</a></li>
+            <li><a href="category.html?type=checklists" class="footer-link">Workflow Checklists</a></li>
+            <li><a href="category.html?type=glossary" class="footer-link">AI Terms Glossary</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Weekly AI Briefing</h4>
+          <p style="font-size: var(--text-xs); color: #cbd5e1; margin-bottom: var(--space-2);">
+            Get actionable AI workflows for local business owners every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>
+          <p class="footer-copyright">&copy; 2026 Locatria. All rights reserved. Practical AI tools for local business growth.</p>
+        </div>
+        <div class="footer-legal-links">
+          <a href="#" class="footer-legal-link">Privacy Policy</a>
+          <a href="#" class="footer-legal-link">Terms of Service</a>
+          <a href="#" class="footer-legal-link">Editorial Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/component-renderer.js?v=5.4"></script>
+  <script src="js/search-modal.js?v=5.4"></script>
+</body>
+</html>
