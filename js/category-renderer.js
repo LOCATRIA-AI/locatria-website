@@ -1,12 +1,18 @@
 /**
- * LOCATRIA PRODUCTION CATEGORY RENDERER v1.0
- * Dynamically renders published production articles from single source of truth.
+ * LOCATRIA PRODUCTION CATEGORY RENDERER v1.1
+ * Dynamically renders and filters published production articles from single source of truth.
  */
 (function (window) {
   'use strict';
 
   const LocatriaCategoryRenderer = {
-    version: '1.0.0',
+    version: '1.1.0',
+    currentDifficulty: 'all',
+    currentSort: 'recent',
+    baseArticles: [],
+    categoryTypeKey: 'guide',
+    categoryTitle: 'Guides & Blueprints',
+    filterIndustry: null,
 
     init: function () {
       if (document.readyState === 'loading') {
@@ -28,7 +34,7 @@
         filterType = 'guides';
       }
 
-      let filteredArticles = [];
+      this.filterIndustry = filterIndustry;
       let categoryTitle = 'Guides & Blueprints';
       let categoryDesc = 'Evergreen operational strategies, implementation blueprints, and compliance frameworks for US local service businesses.';
       let categoryTypeKey = 'guide';
@@ -85,7 +91,7 @@
             categoryTypeKey = filterType;
         }
 
-        filteredArticles = articles.filter(a => a.type === categoryTypeKey);
+        this.baseArticles = articles.filter(a => a.type === categoryTypeKey);
       } else if (filterIndustry) {
         let indName = filterIndustry;
         if (filterIndustry === 'real-estate') indName = 'Real Estate';
@@ -95,7 +101,7 @@
         categoryTitle = indName + ' Knowledge Hub';
         categoryDesc = 'Tailored AI visibility, content workflows, and compliance blueprints for ' + indName + '.';
 
-        filteredArticles = articles.filter(a => {
+        this.baseArticles = articles.filter(a => {
           const ind = (a.industry || '').toLowerCase();
           if (filterIndustry === 'real-estate') return ind.includes('real-estate');
           if (filterIndustry === 'law-firms') return ind.includes('law');
@@ -103,6 +109,9 @@
           return ind.includes(filterIndustry.toLowerCase());
         });
       }
+
+      this.categoryTypeKey = categoryTypeKey;
+      this.categoryTitle = categoryTitle;
 
       // Update Page Head Title & Breadcrumb
       document.title = categoryTitle + ' — Locatria';
@@ -115,7 +124,7 @@
 
       const heroBadge = document.querySelector('.hero-knowledge-section .badge.badge-blue');
       if (heroBadge) {
-        const countText = filteredArticles.length + ' ' + (filterIndustry ? 'Articles' : (categoryTypeKey.charAt(0).toUpperCase() + categoryTypeKey.slice(1) + 's'));
+        const countText = this.baseArticles.length + ' ' + (filterIndustry ? 'Articles' : (categoryTypeKey.charAt(0).toUpperCase() + categoryTypeKey.slice(1) + 's'));
         heroBadge.textContent = countText;
       }
 
@@ -142,28 +151,84 @@
         }
       });
 
-      // Render Main Content Column
+      // Update Sidebar Popular / Recommended Guides with real published articles
+      const popularGuidesList = document.querySelector('.related-guides-list');
+      if (popularGuidesList) {
+        const topGuides = articles.slice(0, 3);
+        let popHtml = '';
+        topGuides.forEach(g => {
+          const indName = g.industry ? (g.industry.charAt(0).toUpperCase() + g.industry.slice(1)) : 'General';
+          popHtml += `
+            <li class="related-guide-item">
+              <a href="${g.slugUrl}" class="related-guide-link">${g.title}</a>
+              <span class="related-guide-meta">${indName} • ${g.readTime || '10 min read'}</span>
+            </li>`;
+        });
+        popularGuidesList.innerHTML = popHtml;
+      }
+
+      // Initial filter and render execution
+      this.applyFiltersAndRender();
+    },
+
+    applyFiltersAndRender: function () {
       const mainCol = document.querySelector('.layout-with-sidebar main');
       if (!mainCol) return;
 
-      // Preserve Filter Bar
-      const filterBar = mainCol.querySelector('div[style*="background-color: var(--color-bg-subtle)"]');
-      const filterBarHtml = filterBar ? filterBar.outerHTML : '';
+      // Filter articles by Difficulty
+      let displayArticles = [...this.baseArticles];
 
-      let contentHtml = filterBarHtml;
+      if (this.currentDifficulty !== 'all') {
+        displayArticles = displayArticles.filter(a => (a.difficulty || 'beginner').toLowerCase() === this.currentDifficulty);
+      }
 
-      if (!filteredArticles.length) {
+      // Sort articles
+      if (this.currentSort === 'recent') {
+        displayArticles.sort((a, b) => new Date(b.pubDate || '2026-08-10') - new Date(a.pubDate || '2026-08-10'));
+      } else if (this.currentSort === 'readtime') {
+        displayArticles.sort((a, b) => (parseInt(a.readTime, 10) || 10) - (parseInt(b.readTime, 10) || 10));
+      } else if (this.currentSort === 'popular') {
+        displayArticles.sort((a, b) => a.title.localeCompare(b.title));
+      }
+
+      // Build Interactive Filter Bar HTML
+      const activeBtnStyle = 'background-color: var(--color-primary-500); color: white; border-color: var(--color-primary-500);';
+      const inactiveBtnStyle = 'background-color: var(--color-bg-body); color: var(--color-text-main); border-color: var(--color-border-strong);';
+
+      let contentHtml = `
+        <div class="category-filter-bar" style="background-color: var(--color-bg-subtle); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); padding: var(--space-4); margin-bottom: var(--space-8); display: flex; flex-direction: column; gap: var(--space-3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3);">
+            <div style="display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap;" class="difficulty-filter-group">
+              <span style="font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted);">Difficulty Level:</span>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn ${this.currentDifficulty === 'all' ? 'is-active' : ''}" data-difficulty="all" style="${this.currentDifficulty === 'all' ? activeBtnStyle : inactiveBtnStyle}">All</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn ${this.currentDifficulty === 'beginner' ? 'is-active' : ''}" data-difficulty="beginner" style="${this.currentDifficulty === 'beginner' ? activeBtnStyle : inactiveBtnStyle}">Beginner</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn ${this.currentDifficulty === 'intermediate' ? 'is-active' : ''}" data-difficulty="intermediate" style="${this.currentDifficulty === 'intermediate' ? activeBtnStyle : inactiveBtnStyle}">Intermediate</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn ${this.currentDifficulty === 'advanced' ? 'is-active' : ''}" data-difficulty="advanced" style="${this.currentDifficulty === 'advanced' ? activeBtnStyle : inactiveBtnStyle}">Advanced</button>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: var(--space-2);">
+              <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Sort By:</span>
+              <select class="js-sort-select" style="background-color: var(--color-bg-body); border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); padding: 4px 8px; font-size: var(--text-xs); color: var(--color-text-main); cursor: pointer;">
+                <option value="recent" ${this.currentSort === 'recent' ? 'selected' : ''}>Recently Updated</option>
+                <option value="popular" ${this.currentSort === 'popular' ? 'selected' : ''}>Most Popular</option>
+                <option value="readtime" ${this.currentSort === 'readtime' ? 'selected' : ''}>Reading Time (Shortest)</option>
+              </select>
+            </div>
+          </div>
+        </div>`;
+
+      if (!displayArticles.length) {
         contentHtml += `
           <div class="card card-article" style="padding: var(--space-8); text-align: center; background-color: var(--color-bg-subtle);">
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-2);">No published content in this category yet</h3>
+            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-2);">No articles found matching this filter</h3>
             <p style="color: var(--color-text-muted); max-width: 540px; margin: 0 auto var(--space-4) auto;">
-              Locatria expands its knowledge base strictly through verified, high-value content. Check back soon or explore available Guides and Workflows.
+              There are currently no published ${this.categoryTitle.toLowerCase()} at the "${this.currentDifficulty}" difficulty level.
             </p>
-            <a href="category.html?type=guides" class="btn btn-primary btn-sm">Explore Guides & Blueprints →</a>
+            <button type="button" class="btn btn-primary btn-sm js-reset-difficulty">Show All Difficulty Levels →</button>
           </div>`;
       } else {
         // Featured 1st Article
-        const feat = filteredArticles[0];
+        const feat = displayArticles[0];
         contentHtml += `
           <article class="card card-article" style="margin-bottom: var(--space-8); background-color: var(--color-bg-subtle);">
             <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-6);">
@@ -192,10 +257,10 @@
           </article>`;
 
         // Remaining Articles Grid
-        if (filteredArticles.length > 1) {
+        if (displayArticles.length > 1) {
           contentHtml += `<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-bottom: var(--space-10);">`;
-          for (let i = 1; i < filteredArticles.length; i++) {
-            const art = filteredArticles[i];
+          for (let i = 1; i < displayArticles.length; i++) {
+            const art = displayArticles[i];
             const indBadge = art.industry ? (art.industry.charAt(0).toUpperCase() + art.industry.slice(1)) : 'General';
             contentHtml += `
               <article class="card card-article">
@@ -224,20 +289,34 @@
 
       mainCol.innerHTML = contentHtml;
 
-      // Update Sidebar Popular / Recommended Guides with real published articles
-      const popularGuidesList = document.querySelector('.related-guides-list');
-      if (popularGuidesList) {
-        const topGuides = articles.slice(0, 3);
-        let popHtml = '';
-        topGuides.forEach(g => {
-          const indName = g.industry ? (g.industry.charAt(0).toUpperCase() + g.industry.slice(1)) : 'General';
-          popHtml += `
-            <li class="related-guide-item">
-              <a href="${g.slugUrl}" class="related-guide-link">${g.title}</a>
-              <span class="related-guide-meta">${indName} • ${g.readTime || '10 min read'}</span>
-            </li>`;
+      // Attach Event Listeners to Difficulty Buttons & Sort Selector
+      const self = this;
+      const difficultyBtns = mainCol.querySelectorAll('.js-difficulty-btn');
+      difficultyBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetDiff = this.getAttribute('data-difficulty');
+          if (self.currentDifficulty === targetDiff) return;
+          self.currentDifficulty = targetDiff;
+          self.applyFiltersAndRender();
         });
-        popularGuidesList.innerHTML = popHtml;
+      });
+
+      const sortSelect = mainCol.querySelector('.js-sort-select');
+      if (sortSelect) {
+        sortSelect.addEventListener('change', function () {
+          self.currentSort = this.value;
+          self.applyFiltersAndRender();
+        });
+      }
+
+      const resetBtn = mainCol.querySelector('.js-reset-difficulty');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          self.currentDifficulty = 'all';
+          self.applyFiltersAndRender();
+        });
       }
     }
   };

@@ -263,23 +263,23 @@
       <main role="main">
         
         <!-- Interactive Filter Bar -->
-        <div style="background-color: var(--color-bg-subtle); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); padding: var(--space-4); margin-bottom: var(--space-8); display: flex; flex-direction: column; gap: var(--space-3);">
+        <div class="category-filter-bar" style="background-color: var(--color-bg-subtle); border: 1px solid var(--color-border-subtle); border-radius: var(--radius-lg); padding: var(--space-4); margin-bottom: var(--space-8); display: flex; flex-direction: column; gap: var(--space-3);">
           
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3);">
-            <div style="display: flex; align-items: center; gap: var(--space-2);">
+            <div style="display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap;" class="difficulty-filter-group">
               <span style="font-size: var(--text-xs); font-weight: 700; uppercase; letter-spacing: 0.05em; color: var(--color-text-muted);">Difficulty Level:</span>
-              <button type="button" class="btn btn-secondary btn-sm is-active" style="background-color: var(--color-primary-500); color: white; border-color: var(--color-primary-500);">All</button>
-              <button type="button" class="btn btn-secondary btn-sm">Beginner</button>
-              <button type="button" class="btn btn-secondary btn-sm">Intermediate</button>
-              <button type="button" class="btn btn-secondary btn-sm">Advanced</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn is-active" data-difficulty="all" style="background-color: var(--color-primary-500); color: white; border-color: var(--color-primary-500);">All</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn" data-difficulty="beginner">Beginner</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn" data-difficulty="intermediate">Intermediate</button>
+              <button type="button" class="btn btn-secondary btn-sm js-difficulty-btn" data-difficulty="advanced">Advanced</button>
             </div>
 
             <div style="display: flex; align-items: center; gap: var(--space-2);">
               <span style="font-size: var(--text-xs); color: var(--color-text-muted);">Sort By:</span>
-              <select style="background-color: var(--color-bg-body); border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); padding: 4px 8px; font-size: var(--text-xs); color: var(--color-text-main);">
-                <option>Recently Updated</option>
-                <option>Most Popular</option>
-                <option>Reading Time (Shortest)</option>
+              <select class="js-sort-select" style="background-color: var(--color-bg-body); border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); padding: 4px 8px; font-size: var(--text-xs); color: var(--color-text-main); cursor: pointer;">
+                <option value="recent">Recently Updated</option>
+                <option value="popular">Most Popular</option>
+                <option value="readtime">Reading Time (Shortest)</option>
               </select>
             </div>
           </div>
