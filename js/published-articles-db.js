@@ -1,7 +1,7 @@
 /**
  * LOCATRIA PUBLISHED ARTICLES DATABASE v1.1
  * Single Source of Truth for Published Production Content.
- * Auto-synchronized on 2026-09-07T02:47:20.766Z
+ * Auto-synchronized on 2026-09-07T07:33:37.320Z
  */
 (function (window) {
   'use strict';
@@ -32,6 +32,19 @@
     "pubDate": "2026-09-07",
     "description": "An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.",
     "slugUrl": "ai-assisted-legal-intake-faq-governance-workflow.html"
+  },
+  {
+    "id": "ai-assisted-real-estate-neighborhood-research-workflow",
+    "title": "How Real Estate Businesses Can Build an AI-Assisted Neighborhood Research Workflow",
+    "type": "workflow",
+    "status": "published",
+    "industry": "real-estate",
+    "difficulty": "intermediate",
+    "readTime": "22 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-07",
+    "description": "A practical operational workflow for real estate professionals to research, structure, verify, and maintain reliable neighborhood knowledge with AI assistance.",
+    "slugUrl": "ai-assisted-real-estate-neighborhood-research-workflow.html"
   },
   {
     "id": "ai-assisted-review-response-workflow-dental-clinics",

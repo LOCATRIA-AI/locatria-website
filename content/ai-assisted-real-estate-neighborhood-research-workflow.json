@@ -1,0 +1,508 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-assisted-real-estate-neighborhood-research-workflow",
+  "type": "workflow",
+  "status": "published",
+  "metadata": {
+    "title": "How Real Estate Businesses Can Build an AI-Assisted Neighborhood Research Workflow",
+    "subtitle": "A practical operational workflow for real estate professionals to research, structure, verify, and maintain reliable neighborhood knowledge with AI assistance.",
+    "category": "Workflows",
+    "industry": "real-estate",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 22,
+    "lastUpdated": "2026-09-07",
+    "audience": [
+      "Real Estate Brokers",
+      "Managing Agents",
+      "Brokerage Team Leaders",
+      "Real Estate Marketing & Content Managers"
+    ],
+    "primaryTopic": "AI-Assisted Real Estate Neighborhood Research Workflow"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Real Estate AI Systems Specialist"
+  },
+  "seo": {
+    "title": "How Real Estate Businesses Can Build an AI-Assisted Neighborhood Research Workflow | Locatria",
+    "description": "Learn how real estate businesses can research, structure, verify, and maintain reliable neighborhood knowledge using an AI-assisted workflow within Fair Housing boundaries.",
+    "canonical": "https://www.locatria.com/ai-assisted-real-estate-neighborhood-research-workflow.html",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "Real Estate Neighborhood Research AI Workflow",
+    "industryFocus": "real-estate"
+  },
+  "relationships": {
+    "parentArticle": "ai-local-entity-consistency-nape-audit-workflow",
+    "relatedArticles": [
+      "how-real-estate-professionals-can-use-ai-to-create-local-content",
+      "how-real-estate-businesses-can-use-ai-to-improve-local-visibility"
+    ],
+    "learningPath": "lp06"
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "\"Ask AI to write a neighborhood guide\" sounds like an easy way to fill a website with local content. Type in a neighborhood name, get back a few paragraphs about parks, schools, and commute times, publish it, move to the next neighborhood."
+    },
+    {
+      "type": "paragraph",
+      "content": "The real problem isn't the writing. It's everything underneath it: Where did the information come from? Is it current? Does the geographic area described match how people locally understand that neighborhood? Has anyone verified the specific claims before they went out under the business's name? And is the content something a real estate professional can publish responsibly, given the rules that apply to how real estate information gets communicated?"
+    },
+    {
+      "type": "paragraph",
+      "content": "This article lays out a practical workflow for answering those questions — one that treats neighborhood knowledge as something to be researched, structured, verified, and maintained, with AI assisting throughout but never standing in as the final word."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "why-asking-ai-to-write-a-neighborhood-guide-is-not-enough",
+      "title": "Why Asking AI to Write a Neighborhood Guide Is Not Enough"
+    },
+    {
+      "type": "paragraph",
+      "content": "Generative AI tools can produce fluent, confident-sounding neighborhood descriptions almost instantly. That fluency is exactly the problem. A few failure points show up reliably when AI output is treated as the starting and ending point:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Hallucination</strong> — plausible-sounding details (a park name, a school rating, a transit line) that aren't accurate for the actual location.",
+        "<strong>Outdated information</strong> — a model's training data has a cutoff, and even well-grounded tools may reflect information that's since changed.",
+        "<strong>Generic description</strong> — without real local input, AI-generated copy tends to read like every other neighborhood, regardless of what's actually distinctive about the place.",
+        "<strong>Geographic confusion</strong> — blending a locally understood neighborhood with an adjacent one, a ZIP code, or a Census boundary that doesn't match how residents actually draw the line.",
+        "<strong>Unsupported claims</strong> — confident statements with no traceable source, hard to defend if later shown wrong.",
+        "<strong>Subjective characterization</strong> — phrases like \"great for families\" or \"up-and-coming\" sound helpful but embed a judgment that isn't a fact, carrying its own risk (Section 8).",
+        "<strong>Content duplication</strong> — producing dozens of pages this way tends to produce dozens of pages that read almost identically."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "None of this means AI has no place in the process. It means the writing step needs to happen after something more substantial: verified, structured knowledge about the actual neighborhood."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "the-neighborhood-knowledge-record",
+      "title": "The Neighborhood Knowledge Record"
+    },
+    {
+      "type": "paragraph",
+      "content": "For this workflow, LOCATRIA uses a practical concept called the <strong>Neighborhood Knowledge Record</strong> — an internal, structured record of what a business actually knows about a neighborhood, built before any public content is drafted. This is a LOCATRIA operational framework, not an official industry standard."
+    },
+    {
+      "type": "paragraph",
+      "content": "The record can include: Neighborhood Name, City / State, Geographic Definition, Research Purpose, Location Context, Transportation, Amenities, Housing Context, Education, Community Context, Local Services, Market Context, Sources, Publication / Update Date, Last Verified, Change Sensitivity, AI Notes, Human Verification, and Content Status."
+    },
+    {
+      "type": "paragraph",
+      "content": "The value of building this record first, rather than asking AI to generate an article directly, is that it separates gathering and organizing what's true from communicating it well. A record like this can be checked, updated, and reused across multiple pieces of content — a neighborhood page, a listing description, a buyer FAQ — without re-researching the same facts each time. An AI-generated article with no underlying record can't be checked the same way; there's nothing behind it to verify against."
+    },
+    {
+      "type": "paragraph",
+      "content": "The conceptual flow is: Research → Structured Knowledge → Verified Knowledge → Public Content → Ongoing Maintenance."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "define-the-neighborhood-before-you-research-it",
+      "title": "Define the Neighborhood Before You Research It"
+    },
+    {
+      "type": "paragraph",
+      "content": "Before collecting any information, define what neighborhood is actually being described, in whose terms it's being described, and why."
+    },
+    {
+      "type": "paragraph",
+      "content": "A neighborhood is a local concept — the product of history, common usage, and how residents and local institutions refer to an area. A Census geography (a tract, a block group, a place) is a statistical geography, built for consistent data collection and reporting. The two are related but not interchangeable, and it's a mistake to treat \"Census tract\" and \"neighborhood\" as synonyms. Census geographies can provide structured, useful data for an area, but they don't necessarily match how a neighborhood is locally defined — a single locally recognized neighborhood might span multiple tracts, or a tract might straddle two neighborhoods entirely."
+    },
+    {
+      "type": "paragraph",
+      "content": "At this stage, define:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "The neighborhood's name and how it's locally used (and whether usage is contested or has multiple versions)",
+        "City and state",
+        "A working geographic boundary, sourced from a locally credible reference where possible",
+        "Which Census geography, if any, overlaps the area, used as <em>one source of data</em>, not the boundary definition itself",
+        "The research purpose, since purpose shapes what information actually matters"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "the-ai-assisted-neighborhood-research-verification-workflow",
+      "title": "The AI-Assisted Neighborhood Research & Verification Workflow"
+    },
+    {
+      "type": "paragraph",
+      "content": "This workflow follows ten steps across five phases: Define, Research, AI Assistance, Verification & Governance, and Content & Maintenance."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-1-define",
+      "title": "Phase 1 — Define"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 1 — Define the Neighborhood and Geographic Scope</strong><br>Identify the neighborhood's name, boundaries, and any overlapping Census geography (Section 4). AI can help organize multiple boundary definitions found across sources for human comparison, but deciding which definition to use — and flagging where local usage is genuinely ambiguous — is a human call."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 2 — Define the Research Purpose and Knowledge Model</strong><br>Decide whether this is general local-content research, listing-specific research, or research answering a recurring buyer question. AI can help draft a research question list based on that purpose; setting the actual purpose and depth needed stays with the business."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-2-research",
+      "title": "Phase 2 — Research"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 3 — Collect Information From Appropriate Sources</strong><br>Pull information from official local government sources, transportation authorities, school districts, the Census Bureau, and other primary sources, supplemented by established secondary sources (Section 7's hierarchy). AI can help identify what kinds of official sources typically exist for a category and organize the search; locating, reading, and confirming sources are current remains a human task."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 4 — Build the Neighborhood Research Record</strong><br>Turn scattered research into the structured Neighborhood Knowledge Record (Section 3), noting a source for each claim. AI can help format raw notes into the record's structure; confirming each entry traces to an actual source — not to AI's own generated text — requires human judgment."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-3-ai-assistance",
+      "title": "Phase 3 — AI Assistance"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 5 — Use AI to Organize, Compare and Summarize Research</strong><br>Feed source material — not AI-generated content — into AI tools to summarize lengthy documents, compare information across sources, and categorize findings by topic. A human still needs to confirm a summary hasn't dropped an important qualifier or introduced a claim the source didn't actually make."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 6 — Use AI to Identify Gaps and Potential Conflicts</strong><br>Ask AI to review the assembled record for missing fields or sources that disagree with each other. AI can flag a gap or a conflict; resolving it — deciding which source is right — is a human decision."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-4-verification-governance",
+      "title": "Phase 4 — Verification & Governance"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 7 — Verify High-Impact Information</strong><br>Prioritize verification for information likely to change (market conditions, school boundaries) or that carries higher stakes if wrong. AI can flag which fields are typically high-change or high-impact; the actual verification — checking a claim against its source directly — is human work."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 8 — Review Claims for Fair Housing, Bias and Unsupported Characterization</strong><br>Review every claim against the Fact / Interpretation / Recommendation framework (Section 7) and the Fair Housing distinctions in Section 8. AI can flag language patterns associated with subjective characterization for human review, but this step is entirely human-owned — AI does not certify Fair Housing compliance."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "phase-5-content-maintenance",
+      "title": "Phase 5 — Content & Maintenance"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 9 — Turn Verified Knowledge Into Public Content</strong><br>Draft and publish content using the verified Neighborhood Knowledge Record as the primary factual basis. AI can draft prose from that verified material and help with tone and structure; final review and approval before publication (Section 10) stays with a person."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Step 10 — Create a Change-Driven Maintenance Loop</strong><br>Track which fields are stable, which change occasionally, and which change often, revisiting accordingly (Section 11). AI can monitor for signals that a source has updated and flag content for re-review; deciding whether a change actually requires an update — and making it — is a human call."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-ai-can-assist-and-where-it-should-stop",
+      "title": "How AI Can Assist — and Where It Should Stop"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can assist the research process; it does not independently decide what the published truth should be."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>AI may assist with:</strong> summarizing, organizing, categorizing, comparing, structuring, identifying gaps or conflicts, generating research questions, and drafting from already-verified material."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>AI must not independently:</strong> verify that a claim is true, determine whether a source is authoritative, decide whether a neighborhood is \"good\" or \"safe,\" recommend a neighborhood based on any protected characteristic, certify Fair Housing compliance, approve content for publication, determine property value, or provide investment advice."
+    },
+    {
+      "type": "paragraph",
+      "content": "The line running through all of this: AI accelerates gathering, organizing, and drafting. Judgment about accuracy, sourcing, and what's appropriate to publish stays with a person."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "fact-interpretation-and-recommendation",
+      "title": "Fact, Interpretation, and Recommendation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Every claim in a neighborhood record falls into one of three categories, and the category determines how carefully it needs to be handled."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Level 1 — Fact.</strong> A statement directly supported by a source. <em>Example: \"The neighborhood is served by a specific transit route.\"</em> Facts are the safest category, provided the source is accurate and current."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Level 2 — Interpretation.</strong> A qualified interpretation of a fact, still tied back to what the fact actually supports. <em>Example: \"This may be relevant to residents who use that transit option.\"</em> Interpretations require care — they should stay closely tethered to the underlying fact rather than drifting into a broader judgment."
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Level 3 — Recommendation.</strong> A judgment about who should choose a neighborhood or what kind of person it's \"for.\" <em>Example: \"This is the best neighborhood for families.\"</em> This category carries significantly greater risk. It isn't a fact about the neighborhood — it's a value judgment, often layered on top of assumptions about who the reader is, and in a real estate context it edges directly into the kind of characterization Fair Housing law is designed to prevent (Section 8). AI should not be casually generating Level 3 statements, and a human reviewer should treat any Level 3 language as requiring the most scrutiny before publication."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "fair-housing-and-steering-keeping-neighborhood-content-objective",
+      "title": "Fair Housing and Steering: Keeping Neighborhood Content Objective"
+    },
+    {
+      "type": "paragraph",
+      "content": "<em>This section provides an operational content framework, not legal advice. Real estate professionals should follow applicable federal, state, local, brokerage, and professional requirements.</em>"
+    },
+    {
+      "type": "paragraph",
+      "content": "The federal Fair Housing Act prohibits discrimination in housing based on race, color, religion, sex, national origin, familial status, and disability, and HUD's regulations specifically identify <strong>steering</strong> — directing a person toward or away from a neighborhood based on a protected characteristic — as a prohibited practice. Steering concerns can arise when a real estate professional directs, limits, or withholds neighborhood information based on a protected characteristic. Subjective or coded descriptions can create additional risk because they may influence how a neighborhood is presented to different people."
+    },
+    {
+      "type": "paragraph",
+      "content": "That said, the article should not overcorrect into the opposite extreme. In a 2026 letter to real estate professionals, HUD clarified that sharing crime or school-quality information is not, by itself, a Fair Housing Act violation when shared without discriminatory intent — addressing earlier industry confusion that had led some professionals to avoid answering basic school or safety questions at all. NAR's own guidance, consistent for decades, takes a similar position: agents can share objective, factual information about schools and crime from a reliable third-party source, while subjective commentary, opinion, or hearsay on those topics has repeatedly been cited as evidence of discriminatory intent. NAR's Code of Ethics draws a similar line between sharing \"other demographic information\" and volunteering a neighborhood's racial, religious, or ethnic composition — the latter is prohibited when involved in a sale or lease."
+    },
+    {
+      "type": "paragraph",
+      "content": "The practical distinction that runs through all of this:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Objective, sourced information</strong> — a transit route exists, a specific school district serves an address, a police department publishes reported-incident data — can be shared when properly sourced, current, and not selectively withheld based on protected characteristics.",
+        "<strong>Subjective characterization</strong> — \"safe,\" \"dangerous,\" \"family-friendly,\" \"not for you\" — isn't a fact about the neighborhood, and layering it on top of objective data (\"this is a dangerous area,\" \"great schools, perfect for families\") is exactly the kind of characterization that draws fair housing scrutiny.",
+        "<strong>Steering</strong> based on any protected characteristic — deciding what to share, emphasize, or withhold based on who's asking — remains prohibited regardless of wording."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This means the earlier blanket instinct — \"never discuss crime, never discuss schools\" — is both unnecessary and, per HUD's own recent clarification, not what the law actually requires. The more precise practice is: keep what's shared objective, well-sourced, and free of selective withholding based on protected characteristics, leaving the subjective judgment about what it means to the person doing the deciding."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "building-the-neighborhood-research-verification-worksheet",
+      "title": "Building the Neighborhood Research & Verification Worksheet"
+    },
+    {
+      "type": "paragraph",
+      "content": "The <strong>Neighborhood Research & Verification Worksheet</strong> turns the concepts above into something a working real estate professional can actually fill in."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Field",
+        "Purpose"
+      ],
+      "rows": [
+        ["Neighborhood Name", "Entity identity"],
+        ["City / State", "Geographic context"],
+        ["Geographic Definition", "Scope"],
+        ["Research Purpose", "Why research is being done"],
+        ["Topic", "Information category"],
+        ["Claim", "What is being stated"],
+        ["Source", "Evidence"],
+        ["Source Type", "Official / Primary / Established Secondary"],
+        ["Publication / Update Date", "Freshness"],
+        ["Last Verified", "Maintenance"],
+        ["AI Interpretation", "AI assistance"],
+        ["Human Verification", "Final review"],
+        ["Claim Type", "Fact / Interpretation / Recommendation"],
+        ["Fair Housing Risk", "Low / Review / High"],
+        ["Status", "Verified / Review / Conflict / Outdated"]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "In practice, a real estate professional fills one row per claim: what's being said, where it came from, what kind of claim it is, and whether it's been verified. A claim marked \"Recommendation\" and \"High\" Fair Housing risk is an automatic stop — rewrite it as an objective fact or drop it before publication. A claim with no listed source isn't ready to publish; AI is an assistance layer that helps organize and check this worksheet, not a source type that belongs in the \"Source\" field itself. This isn't a compliance form to file away — it's a working tracker that makes it obvious, at a glance, what's actually ready to go live."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "turning-verified-knowledge-into-useful-public-content",
+      "title": "Turning Verified Knowledge Into Useful Public Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once the record is built and reviewed, the actual writing follows a simple sequence: Research → Verify → Draft → Review → Publish."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI drafting belongs after verification, not before or instead of it. Feed the verified Neighborhood Knowledge Record — not a prompt asking AI to \"write about\" the neighborhood from its own general knowledge — into the drafting step as the primary factual basis. This keeps AI's job to what it does well: turning organized, confirmed information into clear, readable prose. A human reviewer then checks the draft against the record once more before publication, confirming that drafting didn't quietly introduce a claim or characterization the underlying research doesn't support."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "maintaining-neighborhood-knowledge-over-time",
+      "title": "Maintaining Neighborhood Knowledge Over Time"
+    },
+    {
+      "type": "paragraph",
+      "content": "Neighborhood information doesn't all change at the same rate, so maintenance shouldn't treat it as if it does:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Stable information</strong> — general geographic definition, historical name — needs infrequent rechecking.",
+        "<strong>Changing information</strong> — local amenities, specific businesses, some transportation details — needs periodic review.",
+        "<strong>Highly changing information</strong> — market conditions, school boundary assignments, current listings — needs frequent attention and more regular recheck."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The maintenance loop is: Research → Verify → Publish → Monitor Changes → Recheck → Update. Tie rechecking to the \"Last Verified\" and \"Change Sensitivity\" fields in the Neighborhood Knowledge Record, rather than reviewing everything on a fixed schedule regardless of how likely it is to have changed."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "how-this-supports-ai-visibility",
+      "title": "How This Supports AI Visibility"
+    },
+    {
+      "type": "paragraph",
+      "content": "This workflow supports the qualities LOCATRIA associates with a strong public information foundation: accuracy, clarity, local specificity, source awareness, and ongoing maintenance."
+    },
+    {
+      "type": "paragraph",
+      "content": "These qualities can make content more useful to people and better prepared for search and AI-assisted discovery, but they do not guarantee rankings, citations, or inclusion in any AI-generated answer. Producing more neighborhood pages does not, by itself, improve AI visibility, and AI-generated content carries no inherent ranking advantage simply for being AI-generated. What matters is whether each piece of content is actually useful, accurate, and distinct."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-failure-modes",
+      "title": "Common Failure Modes"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>1. Asking AI to write the neighborhood guide first.</strong> Fast, and it reads well — but there's nothing underneath the prose to verify against. This workflow puts research and verification before any drafting occurs.",
+        "<strong>2. Treating AI output as source material.</strong> AI-generated text sounds authoritative but can include plausible, inaccurate details. This workflow treats AI output as something to verify, never as a source in its own right.",
+        "<strong>3. Confusing Census geography with neighborhood identity.</strong> Census data is convenient and structured, but a tract boundary may not match how anyone locally understands the neighborhood. This workflow treats Census data as one input, with local definitions established separately.",
+        "<strong>4. Publishing outdated local information.</strong> Content, once published, is easy to forget about — but stale information misleads readers and can misrepresent the business's diligence. This workflow ties maintenance to change sensitivity rather than leaving content static.",
+        "<strong>5. Mixing facts with subjective judgments.</strong> A subjective wrap-up sentence feels natural, but it turns an objective fact into an unsupported characterization. This workflow separates Fact, Interpretation, and Recommendation explicitly.",
+        "<strong>6. Using demographic information to make recommendations.</strong> Demographic data can feel like useful context for \"who this area is for,\" but that's precisely the kind of characterization Fair Housing law is designed to prevent. This workflow permits objective demographic data without turning it into a recommendation mechanism.",
+        "<strong>7. Making unsupported crime or school claims.</strong> A single statistic can feel like it tells the whole story, but reported data doesn't establish whether an area is \"safe\" or a school is \"good.\" This workflow requires sourcing, currency, and objective framing for both topics.",
+        "<strong>8. Mass-producing near-identical neighborhood pages.</strong> AI makes volume production cheap, but volume without genuine local knowledge produces content that helps no one. This workflow prioritizes knowledge depth over content volume."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "practical-checklist",
+      "title": "Practical Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Neighborhood Research & Verification Checklist",
+      "items": [
+        {
+          "label": "Neighborhood name, boundary, and purpose are defined",
+          "checked": false
+        },
+        {
+          "label": "Census geography (if used) is treated as one data input, not the boundary definition",
+          "checked": false
+        },
+        {
+          "label": "Research pulled from official and established sources, not AI generation",
+          "checked": false
+        },
+        {
+          "label": "Neighborhood Knowledge Record populated with sourced claims",
+          "checked": false
+        },
+        {
+          "label": "AI used only to organize, compare, summarize, and flag gaps/conflicts",
+          "checked": false
+        },
+        {
+          "label": "High-impact claims independently verified",
+          "checked": false
+        },
+        {
+          "label": "Every claim classified as Fact, Interpretation, or Recommendation",
+          "checked": false
+        },
+        {
+          "label": "Recommendation-level and high Fair Housing risk claims removed or rewritten",
+          "checked": false
+        },
+        {
+          "label": "Crime and school information is objective, appropriately sourced, current, and not selectively provided or withheld based on protected characteristics",
+          "checked": false
+        },
+        {
+          "label": "Draft written from verified record, not from an open-ended AI prompt",
+          "checked": false
+        },
+        {
+          "label": "Human review completed before publication",
+          "checked": false
+        },
+        {
+          "label": "Change-sensitivity and recheck schedule assigned per field",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "frequently-asked-questions",
+      "title": "Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Can AI research a neighborhood for a real estate business?",
+          "answer": "AI can assist with selected neighborhood research tasks — organizing, summarizing, and comparing source material — but it should not be treated as the source itself."
+        },
+        {
+          "question": "Should real estate agents trust AI-generated neighborhood information?",
+          "answer": "AI-generated content should be treated as something that requires verification, not as a finished, trustworthy answer. Claims should be checked against the actual sources before publication."
+        },
+        {
+          "question": "Can Census data be used to describe a neighborhood?",
+          "answer": "Census data can provide useful structured data for an area, but a Census geography does not automatically equal a locally defined neighborhood, and shouldn't be presented as if it does."
+        },
+        {
+          "question": "Can real estate businesses publish crime and school information?",
+          "answer": "Objective crime and school information can be provided appropriately when properly sourced and current, shared without regard to a client's protected characteristics — the concern is subjective characterization and selective sharing, not the data itself."
+        },
+        {
+          "question": "How often should neighborhood information be reviewed?",
+          "answer": "It depends on the field. Stable information needs infrequent review; frequently changing information — market conditions, school boundaries — needs more regular rechecking, tracked through the record's change-sensitivity and last-verified fields rather than a single fixed schedule for everything."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "conclusion",
+      "title": "Conclusion"
+    },
+    {
+      "type": "paragraph",
+      "content": "Better neighborhood content starts with better neighborhood knowledge. The workflow in this article — Define → Research → Structure → AI Assist → Verify → Govern → Publish → Maintain — puts the hard, valuable work first: figuring out what's actually true about a place, from sources that can be checked, before anything gets written. AI has a real role throughout that process, doing what it's good at — organizing, comparing, drafting from verified material — while the judgment about what's accurate, appropriately sourced, and responsibly framed stays with the people who are actually accountable for it."
+    },
+    {
+      "type": "paragraph",
+      "content": "For the broader entity-accuracy principles this workflow builds on, see <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">Article #31 — How to Audit Your Local Business Entity Consistency for AI and Local Search</a>."
+    }
+  ]
+}
