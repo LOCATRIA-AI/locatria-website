@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/evidence.schema.json",
+  "title": "Locatria Canonical Evidence Schema",
+  "description": "Defines an empirical observation or documented factual artifact supporting tool evaluation.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "evidence_id",
+    "tool_id",
+    "source",
+    "claim",
+    "observation",
+    "captured_at",
+    "captured_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "evidence"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "tool_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "name",
+        "url",
+        "type"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "OFFICIAL_PRODUCT_PAGE",
+            "OFFICIAL_DOCUMENTATION",
+            "OFFICIAL_PRICING",
+            "PRODUCT_TEST",
+            "CASE_STUDY",
+            "THIRD_PARTY_RESEARCH",
+            "USER_DOCUMENTATION",
+            "OTHER"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_strength": {
+      "type": "string",
+      "enum": [
+        "STRONG",
+        "MODERATE",
+        "LIMITED",
+        "UNKNOWN"
+      ]
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "captured_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

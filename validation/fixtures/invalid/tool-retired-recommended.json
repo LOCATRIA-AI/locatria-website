@@ -1,0 +1,36 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "example-retired-tool",
+  "tool_name": "Retired Legacy Tool",
+  "provider": "Legacy Vendor Inc",
+  "official_url": "https://example.com/legacy-tool",
+  "classification": {
+    "primary_capability": "Legacy Scraping",
+    "secondary_capabilities": [],
+    "target_users": ["Operators"],
+    "target_verticals": ["general"]
+  },
+  "problem": {
+    "primary_problem": "Deprecated local search format",
+    "secondary_problems": [],
+    "use_cases": ["Legacy audit"]
+  },
+  "workflow": {
+    "supported_workflows": ["legacy-workflow"],
+    "workflow_stages": ["Deprecated"],
+    "required_capabilities": []
+  },
+  "commercial": {
+    "pricing_model": "CUSTOM",
+    "free_plan": false,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "RETIRED_BUT_RECOMMENDED",
+  "governance": {
+    "last_reviewed": "2026-09-25",
+    "reviewer": "Governance Lead",
+    "review_status": "RETIRED",
+    "change_notes": "Tool is deprecated and sunset"
+  }
+}

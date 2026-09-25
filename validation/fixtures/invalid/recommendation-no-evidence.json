@@ -1,0 +1,16 @@
+{
+  "entity_type": "recommendation",
+  "schema_version": "1.0",
+  "recommendation_id": "invalid-no-evidence-rec",
+  "tool_id": "example-unbacked-tool",
+  "status": "RECOMMENDED",
+  "context": {
+    "target_user": "Small business owner",
+    "target_vertical": "general",
+    "problem": "Local visibility measurement",
+    "workflow": "ai-local-seo-audit-workflow-small-businesses",
+    "use_case": "Audit"
+  },
+  "rationale": "Recommended without empirical evidence references, violating governance standards.",
+  "evidence_refs": []
+}

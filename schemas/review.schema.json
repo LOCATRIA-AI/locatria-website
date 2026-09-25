@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/review.schema.json",
+  "title": "Locatria Canonical Review Schema",
+  "description": "Defines periodic review and governance lifecycle audit records for tools and resources.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "review_id",
+    "tool_id",
+    "review_type",
+    "review_date",
+    "reviewer",
+    "trigger",
+    "status"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "review"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "review_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "tool_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "review_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trigger": {
+      "type": "string",
+      "enum": [
+        "SCHEDULED",
+        "PRICE_CHANGE",
+        "FEATURE_CHANGE",
+        "AFFILIATE_CHANGE",
+        "USER_FEEDBACK",
+        "POLICY_CHANGE",
+        "SOURCE_CHANGE",
+        "OTHER"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "findings": {
+      "type": "string"
+    },
+    "changes_detected": {
+      "type": ["array", "boolean"],
+      "items": { "type": "string" }
+    },
+    "action": {
+      "type": "string"
+    },
+    "next_review": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,11 @@
+{
+  "entity_type": "affiliate",
+  "schema_version": "1.0",
+  "affiliate_id": "aff-schema-gen-001",
+  "tool_id": "example-schema-generator",
+  "affiliate_available": false,
+  "status": "NONE",
+  "disclosure_required": false,
+  "last_verified": "2026-09-25",
+  "notes": "No affiliate program exists or is utilized; tool recommended purely on operational and empirical merit."
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/recommendation.schema.json",
+  "title": "Locatria Canonical Recommendation Schema",
+  "description": "Defines a contextual, evidence-backed tool recommendation in LOCATRIA workflows.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "recommendation_id",
+    "tool_id",
+    "status",
+    "context",
+    "rationale",
+    "evidence_refs"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "recommendation"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "recommendation_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "tool_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "resource_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "RECOMMENDED",
+        "CONDITIONALLY_RECOMMENDED",
+        "LISTED",
+        "UNDER_REVIEW",
+        "NOT_RECOMMENDED",
+        "RETIRED"
+      ]
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "target_user",
+        "target_vertical",
+        "problem",
+        "workflow",
+        "use_case"
+      ],
+      "properties": {
+        "target_user": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_vertical": {
+          "type": "string",
+          "minLength": 1
+        },
+        "problem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "workflow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_case": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "evaluation_ref": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "when_to_consider": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "when_not_to_use": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

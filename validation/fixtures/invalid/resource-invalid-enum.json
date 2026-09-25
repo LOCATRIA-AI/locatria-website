@@ -1,0 +1,24 @@
+{
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "resource_id": "invalid-enum-resource",
+  "resource_title": "Invalid Enum Resource",
+  "resource_type": "INVALID_BLOG_POST_TYPE",
+  "description": "Test resource with invalid enum value for resource_type",
+  "problem": {
+    "problem_statement": "Testing schema enum constraints.",
+    "target_users": ["Operators"],
+    "target_verticals": ["general"]
+  },
+  "workflow": {
+    "workflow_name": "test-workflow",
+    "workflow_stage": "Stage 1",
+    "required_capabilities": ["Testing"]
+  },
+  "governance": {
+    "last_reviewed": "2026-09-25",
+    "review_status": "PENDING",
+    "reviewer": "Auditor",
+    "change_notes": "Contains invalid resource_type enum"
+  }
+}

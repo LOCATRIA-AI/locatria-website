@@ -1,0 +1,23 @@
+{
+  "name": "locatria-website",
+  "version": "1.0.0",
+  "description": "LOCATRIA website repository — AI Visibility and Knowledge Systems for Local Businesses",
+  "private": true,
+  "scripts": {
+    "validate:resource": "node validation/validate.js",
+    "validate:resources": "node validation/validate-all.js",
+    "test:resources": "node validation/validate-all.js",
+    "test:content": "node content-integrity-test.js"
+  },
+  "keywords": [
+    "ai-visibility",
+    "local-business",
+    "resource-layer"
+  ],
+  "author": "LOCATRIA Editorial Team",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

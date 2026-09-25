@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/relationship.schema.json",
+  "title": "Locatria Canonical Relationship Schema",
+  "description": "Defines explicit typed directional relationships between knowledge nodes, tools, and resources.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "relationship_id",
+    "source_type",
+    "source_id",
+    "relationship_type",
+    "target_type",
+    "target_id"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "relationship"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "relationship_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "source_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "relationship_type": {
+      "type": "string",
+      "enum": [
+        "ADDRESSES",
+        "LEADS_TO",
+        "SUPPORTS",
+        "REQUIRES",
+        "REFERENCES",
+        "USES",
+        "HAS_EVALUATION",
+        "HAS_AFFILIATE",
+        "HAS_RECOMMENDATION",
+        "HAS_REVIEW",
+        "SUPPORTED_BY",
+        "RELATED_TO"
+      ]
+    },
+    "target_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "context": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

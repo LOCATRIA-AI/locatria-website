@@ -1,0 +1,12 @@
+{
+  "entity_type": "relationship",
+  "schema_version": "1.0",
+  "relationship_id": "rel-schema-gen-001",
+  "source_type": "tool",
+  "source_id": "example-schema-generator",
+  "relationship_type": "SUPPORTS",
+  "target_type": "resource",
+  "target_id": "example-entity-audit-guide",
+  "context": "Provides structured data generation capability directly supporting the NAPE entity audit implementation guide.",
+  "created_at": "2026-09-25"
+}

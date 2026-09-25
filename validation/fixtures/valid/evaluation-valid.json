@@ -1,0 +1,22 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "eval-schema-gen-001",
+  "tool_id": "example-schema-generator",
+  "dimensions": {
+    "problem_fit": "Directly resolves local business structured data ambiguity by generating verified Schema.org LocalBusiness JSON-LD markup.",
+    "workflow_fit": "Integrates smoothly into the audit and implementation stages of the NAPE entity consistency workflow without requiring developer tooling.",
+    "usability": "Simple form-driven interface suitable for non-technical office staff and practice managers.",
+    "capability": "Comprehensive coverage of local business properties including geo-coordinates, opening hours specifications, and department hierarchies.",
+    "evidence": "Observed firsthand across controlled test runs with zero validation errors on Google Rich Results validator.",
+    "integration": "Exports clean, copy-pasteable script tags easily placed into WordPress, Webflow, or static HTML headers.",
+    "value": "Generous free tier covers up to 10 location pages, providing immediate operational value without commercial lock-in.",
+    "limitations": "Does not support automated continuous re-crawling; changes to business hours must be re-exported manually."
+  },
+  "evidence_refs": [
+    "evidence-schema-gen-001"
+  ],
+  "evaluated_by": "Locatria Senior Evaluator",
+  "evaluated_at": "2026-09-25",
+  "summary": "Qualitative evaluation demonstrates strong operational fit for local SMBs seeking entity disambiguation."
+}

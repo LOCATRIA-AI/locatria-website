@@ -1,0 +1,38 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "invalid-numeric-score-tool",
+  "tool_name": "Scored AI Optimizer",
+  "provider": "Metrics Corp",
+  "official_url": "https://example.com/scored-tool",
+  "score": "9.7/10",
+  "rating": 4.8,
+  "classification": {
+    "primary_capability": "Automated Content Optimization",
+    "secondary_capabilities": [],
+    "target_users": ["Operators"],
+    "target_verticals": ["general"]
+  },
+  "problem": {
+    "primary_problem": "Content scoring",
+    "secondary_problems": [],
+    "use_cases": ["Scoring content"]
+  },
+  "workflow": {
+    "supported_workflows": ["content-workflow"],
+    "workflow_stages": ["Optimization"],
+    "required_capabilities": []
+  },
+  "commercial": {
+    "pricing_model": "SUBSCRIPTION",
+    "free_plan": false,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "RECOMMENDED",
+  "governance": {
+    "last_reviewed": "2026-09-25",
+    "reviewer": "Auditor",
+    "review_status": "REJECTED",
+    "change_notes": "Violates Rule 008 with false precision numeric scores"
+  }
+}

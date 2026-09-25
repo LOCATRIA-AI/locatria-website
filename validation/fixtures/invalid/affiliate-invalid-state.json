@@ -1,0 +1,9 @@
+{
+  "entity_type": "affiliate",
+  "schema_version": "1.0",
+  "affiliate_id": "invalid-affiliate-state-001",
+  "tool_id": "example-non-affiliate-tool",
+  "affiliate_available": false,
+  "status": "ACTIVE",
+  "affiliate_url": "https://example.com/affiliate-link"
+}

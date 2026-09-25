@@ -1,0 +1,29 @@
+{
+  "entity_type": "recommendation",
+  "schema_version": "1.0",
+  "recommendation_id": "rec-schema-gen-001",
+  "tool_id": "example-schema-generator",
+  "resource_id": "example-entity-audit-guide",
+  "status": "RECOMMENDED",
+  "context": {
+    "target_user": "Small business operator or marketing manager",
+    "target_vertical": "General local service business",
+    "problem": "Unstructured or inconsistent local business schema",
+    "workflow": "ai-local-entity-consistency-nape-audit-workflow",
+    "use_case": "Generating verified LocalBusiness structured data for single and multi-location sites"
+  },
+  "rationale": "Recommended based on verified qualitative evaluation and empirical testing confirming zero schema errors on Schema.org test suites, with no dependency on commercial affiliate status.",
+  "evidence_refs": [
+    "evidence-schema-gen-001"
+  ],
+  "evaluation_ref": "eval-schema-gen-001",
+  "when_to_consider": [
+    "When a local business has no structured JSON-LD data on key service pages",
+    "When migrating or rebranding local service entities"
+  ],
+  "when_not_to_use": [
+    "When dynamic API-driven schema synchronization across 100+ enterprise branches is required"
+  ],
+  "created_at": "2026-09-25",
+  "updated_at": "2026-09-25"
+}

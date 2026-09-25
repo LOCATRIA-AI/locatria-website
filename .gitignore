@@ -1,4 +1,9 @@
 # ==============================
+# Node / Dependencies
+# ==============================
+node_modules/
+
+# ==============================
 # Vercel
 # ==============================
 .vercel/
@@ -25,7 +30,8 @@ Thumbs.db
 # ==============================
 # Internal documentation
 # ==============================
-docs/
+docs/*
+!docs/resource-system-schema.md
 
 # ==============================
 # Development / Scratch
@@ -34,7 +40,14 @@ scratch/
 scripts/
 
 
+# ==============================
+# Reports / Generated Validation Reports
+# ==============================
+reports/validation/validation-report-*.json
+
+# ==============================
 # Development test pages
+# ==============================
 component-lab.html
 content-integrity-test.js
 test-article.html

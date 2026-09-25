@@ -1,0 +1,15 @@
+{
+  "entity_type": "review",
+  "schema_version": "1.0",
+  "review_id": "rev-schema-gen-001",
+  "tool_id": "example-schema-generator",
+  "review_type": "ANNUAL_RECERTIFICATION",
+  "review_date": "2026-09-25",
+  "reviewer": "Locatria Governance Board",
+  "trigger": "SCHEDULED",
+  "status": "APPROVED",
+  "findings": "Verified ongoing Schema.org compliance and confirmed free tier terms remain unchanged.",
+  "changes_detected": false,
+  "action": "MAINTAIN_RECOMMENDED_STATUS",
+  "next_review": "2027-03-25"
+}

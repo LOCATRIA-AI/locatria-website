@@ -1,0 +1,34 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "invalid-missing-fields-tool",
+  "tool_name": "Incomplete Tool Without Provider",
+  "classification": {
+    "primary_capability": "Test Capability",
+    "secondary_capabilities": [],
+    "target_users": ["Operators"],
+    "target_verticals": ["general"]
+  },
+  "problem": {
+    "primary_problem": "Test Problem",
+    "secondary_problems": [],
+    "use_cases": ["Test Use Case"]
+  },
+  "workflow": {
+    "supported_workflows": ["test-workflow"],
+    "workflow_stages": ["Stage 1"],
+    "required_capabilities": []
+  },
+  "commercial": {
+    "pricing_model": "FREE",
+    "free_plan": true,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "DISCOVERED",
+  "governance": {
+    "last_reviewed": "2026-09-25",
+    "reviewer": "Auditor",
+    "review_status": "PENDING",
+    "change_notes": "Missing required fields provider and official_url"
+  }
+}

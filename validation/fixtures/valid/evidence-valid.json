@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "evidence-schema-gen-001",
+  "tool_id": "example-schema-generator",
+  "source": {
+    "name": "Example Corp Product Documentation",
+    "url": "https://example.com/docs/localbusiness-schema",
+    "type": "OFFICIAL_DOCUMENTATION"
+  },
+  "claim": "Outputs valid Schema.org LocalBusiness markup verified by Google Rich Results Test",
+  "observation": "Tested 12 dental clinic service pages; all produced compliant JSON-LD without syntax errors or deprecated fields.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-25",
+  "captured_by": "Locatria Systems Evaluator",
+  "notes": "Verified against schema.org v26.0 specification."
+}

@@ -1,0 +1,15 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "invalid-url-evidence",
+  "tool_id": "example-tool",
+  "source": {
+    "name": "Invalid Source",
+    "url": "not_a_valid_uri_string",
+    "type": "OFFICIAL_DOCUMENTATION"
+  },
+  "claim": "Testing URI and date format enforcement",
+  "observation": "URI does not conform to RFC 3986",
+  "captured_at": "25-09-2026",
+  "captured_by": "Auditor"
+}
