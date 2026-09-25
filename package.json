@@ -6,7 +6,8 @@
   "scripts": {
     "validate:resource": "node validation/validate.js",
     "validate:resources": "node validation/validate-all.js",
-    "test:resources": "node validation/validate-all.js",
+    "build:resource-index": "node scripts/build-resource-index.js",
+    "test:resources": "node validation/test-resource-data-layer.js",
     "test:content": "node content-integrity-test.js"
   },
   "keywords": [

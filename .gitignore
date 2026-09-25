@@ -32,12 +32,14 @@ Thumbs.db
 # ==============================
 docs/*
 !docs/resource-system-schema.md
+!docs/resource-data-layer.md
 
 # ==============================
 # Development / Scratch
 # ==============================
 scratch/
-scripts/
+scripts/*
+!scripts/build-resource-index.js
 
 
 # ==============================

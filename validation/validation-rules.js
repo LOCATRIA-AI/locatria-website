@@ -249,11 +249,24 @@ function validateCrossEntityCollection(records) {
   const evaluationsByTool = new Map();
   const recommendationsByTool = new Map();
   const affiliatesByTool = new Map();
+  const allEntityIds = new Set();
 
   records.forEach((rec, idx) => {
     if (!rec || typeof rec !== 'object') return;
-    const type = rec.entity_type;
-    const id = rec.tool_id || rec.resource_id || rec.relationship_id;
+    const type = rec.entity_type ? rec.entity_type.toLowerCase() : '';
+    let primaryId = null;
+    switch (type) {
+      case 'tool': primaryId = rec.tool_id; break;
+      case 'resource': primaryId = rec.resource_id; break;
+      case 'evidence': primaryId = rec.evidence_id; break;
+      case 'evaluation': primaryId = rec.evaluation_id; break;
+      case 'recommendation': primaryId = rec.recommendation_id; break;
+      case 'affiliate': primaryId = rec.affiliate_id; break;
+      case 'review': primaryId = rec.review_id; break;
+      case 'relationship': primaryId = rec.relationship_id; break;
+      default: primaryId = rec.id || rec.tool_id;
+    }
+    if (primaryId) allEntityIds.add(primaryId);
 
     if (type === 'tool' && rec.tool_id) {
       toolsMap.set(rec.tool_id, { record: rec, index: idx });
@@ -346,12 +359,124 @@ function validateCrossEntityCollection(records) {
     });
   });
 
+  // Cross-Check 5: Relationship Source and Target Integrity
+  const knownArticles = getKnownArticles();
+  const knownLearningPaths = getKnownLearningPaths();
+  const relationships = records.filter(r => r && r.entity_type === 'relationship');
+
+  relationships.forEach(rel => {
+    // Check Source
+    if (rel.source_type === 'article') {
+      if (!knownArticles.includes(rel.source_id)) {
+        errors.push({
+          category: ERROR_CATEGORIES.RELATIONSHIP_ERROR,
+          entityId: rel.relationship_id,
+          path: '/source_id',
+          message: `RELATIONSHIP_ERROR: Source article "${rel.source_id}" was not found in published articles.`
+        });
+      }
+    } else if (rel.source_type === 'learning_path') {
+      if (!knownLearningPaths.includes(rel.source_id)) {
+        errors.push({
+          category: ERROR_CATEGORIES.RELATIONSHIP_ERROR,
+          entityId: rel.relationship_id,
+          path: '/source_id',
+          message: `RELATIONSHIP_ERROR: Source learning path "${rel.source_id}" was not found in learning paths database.`
+        });
+      }
+    } else {
+      if (!allEntityIds.has(rel.source_id)) {
+        errors.push({
+          category: ERROR_CATEGORIES.RELATIONSHIP_ERROR,
+          entityId: rel.relationship_id,
+          path: '/source_id',
+          message: `RELATIONSHIP_ERROR: Source entity "${rel.source_id}" (${rel.source_type}) was not found in dataset.`
+        });
+      }
+    }
+
+    // Check Target
+    if (rel.target_type === 'article') {
+      if (!knownArticles.includes(rel.target_id)) {
+        errors.push({
+          category: ERROR_CATEGORIES.RELATIONSHIP_ERROR,
+          entityId: rel.relationship_id,
+          path: '/target_id',
+          message: `RELATIONSHIP_ERROR: Target article "${rel.target_id}" was not found in published articles.`
+        });
+      }
+    } else if (rel.target_type === 'learning_path') {
+      if (!knownLearningPaths.includes(rel.target_id)) {
+        errors.push({
+          category: ERROR_CATEGORIES.RELATIONSHIP_ERROR,
+          entityId: rel.relationship_id,
+          path: '/target_id',
+          message: `RELATIONSHIP_ERROR: Target learning path "${rel.target_id}" was not found in learning paths database.`
+        });
+      }
+    } else {
+      if (!allEntityIds.has(rel.target_id)) {
+        errors.push({
+          category: ERROR_CATEGORIES.RELATIONSHIP_ERROR,
+          entityId: rel.relationship_id,
+          path: '/target_id',
+          message: `RELATIONSHIP_ERROR: Target entity "${rel.target_id}" (${rel.target_type}) was not found in dataset.`
+        });
+      }
+    }
+  });
+
   return errors;
+}
+
+let cachedArticles = null;
+function getKnownArticles() {
+  if (cachedArticles) return cachedArticles;
+  try {
+    const filePath = require('path').join(__dirname, '../js/published-articles-db.js');
+    if (require('fs').existsSync(filePath)) {
+      const code = require('fs').readFileSync(filePath, 'utf8');
+      const win = {};
+      new Function('window', code)(win);
+      cachedArticles = (win.LocatriaPublishedArticles || []).map(a => a.id || a.slugUrl);
+      return cachedArticles;
+    }
+  } catch (e) {
+    // fallback
+  }
+  cachedArticles = [];
+  return cachedArticles;
+}
+
+let cachedLearningPaths = null;
+function getKnownLearningPaths() {
+  if (cachedLearningPaths) return cachedLearningPaths;
+  try {
+    const filePath = require('path').join(__dirname, '../js/learning-paths-db.js');
+    if (require('fs').existsSync(filePath)) {
+      const code = require('fs').readFileSync(filePath, 'utf8');
+      const win = {};
+      new Function('window', code)(win);
+      cachedLearningPaths = Object.keys(win.LocatriaLearningPaths || {});
+      return cachedLearningPaths;
+    }
+  } catch (e) {
+    // fallback
+  }
+  cachedLearningPaths = [];
+  return cachedLearningPaths;
+}
+
+function validateRelationshipIntegrity(relationship, dataset = []) {
+  return validateCrossEntityCollection([...dataset, relationship]).filter(e => e.category === ERROR_CATEGORIES.RELATIONSHIP_ERROR);
 }
 
 module.exports = {
   ERROR_CATEGORIES,
   mapAjvError,
   validateSemanticAndGovernance,
-  validateCrossEntityCollection
+  validateCrossEntityCollection,
+  validateRelationshipIntegrity,
+  getKnownArticles,
+  getKnownLearningPaths
 };

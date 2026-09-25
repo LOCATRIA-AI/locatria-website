@@ -1,0 +1,12 @@
+{
+  "entity_type": "relationship",
+  "schema_version": "1.0",
+  "relationship_id": "REL-001",
+  "source_type": "tool",
+  "source_id": "TOOL-001",
+  "relationship_type": "SUPPORTED_BY",
+  "target_type": "evidence",
+  "target_id": "EVD-001",
+  "context": "Tool recommendation is supported by laboratory benchmark test evidence EVD-001.",
+  "created_at": "2026-09-25"
+}

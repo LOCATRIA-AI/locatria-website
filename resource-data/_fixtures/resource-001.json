@@ -1,0 +1,42 @@
+{
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "resource_id": "RES-001",
+  "resource_title": "Local Business AI Entity Consistency Audit Guide",
+  "resource_type": "WORKFLOW_RESOURCE",
+  "description": "A step-by-step technical resource guide for local operators implementing entity consistency audits.",
+  "problem": {
+    "problem_statement": "Local businesses struggle to align entity records across directories without technical guidance.",
+    "target_users": [
+      "Local Business Operators",
+      "Marketing Coordinators"
+    ],
+    "target_verticals": [
+      "general",
+      "dental-clinics"
+    ]
+  },
+  "workflow": {
+    "workflow_name": "ai-local-entity-consistency-nape-audit-workflow",
+    "workflow_stage": "Preparation & Tool Setup",
+    "required_capabilities": [
+      "Structured Data Verification",
+      "NAP Record Comparison"
+    ]
+  },
+  "related_tools": [
+    "TOOL-001"
+  ],
+  "related_articles": [
+    "ai-local-entity-consistency-nape-audit-workflow.html"
+  ],
+  "related_learning_paths": [
+    "local-entity-optimization"
+  ],
+  "governance": {
+    "last_reviewed": "2026-09-25",
+    "review_status": "APPROVED",
+    "reviewer": "Locatria Editorial Lead",
+    "change_notes": "Canonical resource fixture RES-001 v1.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "entity_type": "affiliate",
+  "schema_version": "1.0",
+  "affiliate_id": "AFF-001",
+  "tool_id": "TOOL-001",
+  "status": "NONE",
+  "affiliate_available": false,
+  "notes": "No affiliate program exists or is utilized. Evaluation remains 100% unmonetized."
+}

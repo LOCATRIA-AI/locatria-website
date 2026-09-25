@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-09-25T11:21:18.141Z",
-  "targetDirectory": "validation\\fixtures",
+  "timestamp": "2026-09-25T15:58:54.346Z",
+  "targetDirectory": "resource-data\\_fixtures",
   "summary": {
-    "total": 15,
+    "total": 8,
     "valid": 8,
-    "invalid": 7
+    "invalid": 0
   },
   "byEntityType": {
     "tool": {
-      "total": 4,
+      "total": 1,
       "valid": 1,
-      "invalid": 3
+      "invalid": 0
     },
     "resource": {
-      "total": 2,
+      "total": 1,
       "valid": 1,
-      "invalid": 1
+      "invalid": 0
     },
     "evidence": {
-      "total": 2,
+      "total": 1,
       "valid": 1,
-      "invalid": 1
+      "invalid": 0
     },
     "evaluation": {
       "total": 1,
@@ -28,14 +28,14 @@
       "invalid": 0
     },
     "recommendation": {
-      "total": 2,
+      "total": 1,
       "valid": 1,
-      "invalid": 1
+      "invalid": 0
     },
     "affiliate": {
-      "total": 2,
+      "total": 1,
       "valid": 1,
-      "invalid": 1
+      "invalid": 0
     },
     "review": {
       "total": 1,
@@ -55,179 +55,58 @@
   },
   "files": [
     {
-      "file": "validation\\fixtures\\invalid\\affiliate-invalid-state.json",
+      "file": "resource-data\\_fixtures\\affiliate-001.json",
       "entityType": "affiliate",
-      "id": "example-non-affiliate-tool",
-      "valid": false,
-      "errors": [
-        {
-          "category": "SEMANTIC_ERROR",
-          "path": "/status",
-          "message": "SEMANTIC: Affiliate entity declares affiliate_available = false but status is ACTIVE. Status must be NONE."
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\invalid\\evidence-invalid-url.json",
-      "entityType": "evidence",
-      "id": "example-tool",
-      "valid": false,
-      "errors": [
-        {
-          "category": "FORMAT_ERROR",
-          "path": "/source/url",
-          "message": "must match format \"uri\""
-        },
-        {
-          "category": "FORMAT_ERROR",
-          "path": "/captured_at",
-          "message": "must match format \"date\""
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\invalid\\recommendation-no-evidence.json",
-      "entityType": "recommendation",
-      "id": "example-unbacked-tool",
-      "valid": false,
-      "errors": [
-        {
-          "category": "GOVERNANCE_ERROR",
-          "path": "/evidence_refs",
-          "message": "GOVERNANCE: Recommendation with status RECOMMENDED must provide at least one evidence_ref"
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\invalid\\resource-invalid-enum.json",
-      "entityType": "resource",
-      "id": "invalid-enum-resource",
-      "valid": false,
-      "errors": [
-        {
-          "category": "ENUM_ERROR",
-          "path": "/resource_type",
-          "message": "must be equal to one of the allowed values"
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\invalid\\tool-missing-fields.json",
-      "entityType": "tool",
-      "id": "invalid-missing-fields-tool",
-      "valid": false,
-      "errors": [
-        {
-          "category": "FIELD_ERROR",
-          "path": "/provider",
-          "message": "must have required property 'provider'"
-        },
-        {
-          "category": "FIELD_ERROR",
-          "path": "/official_url",
-          "message": "must have required property 'official_url'"
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\invalid\\tool-numeric-scoring.json",
-      "entityType": "tool",
-      "id": "invalid-numeric-score-tool",
-      "valid": false,
-      "errors": [
-        {
-          "category": "SCHEMA_ERROR",
-          "path": "/",
-          "message": "must NOT have additional properties"
-        },
-        {
-          "category": "SCHEMA_ERROR",
-          "path": "/",
-          "message": "must NOT have additional properties"
-        },
-        {
-          "category": "SEMANTIC_ERROR",
-          "path": "/score",
-          "message": "RULE 008: Forbidden numeric scoring property \"score\" detected. LOCATRIA strictly prohibits numeric tool scores or rankings."
-        },
-        {
-          "category": "SEMANTIC_ERROR",
-          "path": "/score",
-          "message": "RULE 008: False precision detected. Numeric score expression \"9.7/10\" violates qualitative evidence standards."
-        },
-        {
-          "category": "SEMANTIC_ERROR",
-          "path": "/rating",
-          "message": "RULE 008: Forbidden numeric scoring property \"rating\" detected. LOCATRIA strictly prohibits numeric tool scores or rankings."
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\invalid\\tool-retired-recommended.json",
-      "entityType": "tool",
-      "id": "example-retired-tool",
-      "valid": false,
-      "errors": [
-        {
-          "category": "ENUM_ERROR",
-          "path": "/lifecycle_status",
-          "message": "must be equal to one of the allowed values"
-        }
-      ]
-    },
-    {
-      "file": "validation\\fixtures\\valid\\affiliate-valid.json",
-      "entityType": "affiliate",
-      "id": "example-schema-generator",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\evaluation-valid.json",
+      "file": "resource-data\\_fixtures\\evaluation-001.json",
       "entityType": "evaluation",
-      "id": "example-schema-generator",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\evidence-valid.json",
+      "file": "resource-data\\_fixtures\\evidence-001.json",
       "entityType": "evidence",
-      "id": "example-schema-generator",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\recommendation-valid.json",
+      "file": "resource-data\\_fixtures\\recommendation-001.json",
       "entityType": "recommendation",
-      "id": "example-schema-generator",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\relationship-valid.json",
+      "file": "resource-data\\_fixtures\\relationship-001.json",
       "entityType": "relationship",
-      "id": "rel-schema-gen-001",
+      "id": "REL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\resource-valid.json",
+      "file": "resource-data\\_fixtures\\resource-001.json",
       "entityType": "resource",
-      "id": "example-entity-audit-guide",
+      "id": "RES-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\review-valid.json",
+      "file": "resource-data\\_fixtures\\review-001.json",
       "entityType": "review",
-      "id": "example-schema-generator",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "validation\\fixtures\\valid\\tool-valid.json",
+      "file": "resource-data\\_fixtures\\tool-001.json",
       "entityType": "tool",
-      "id": "example-schema-generator",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     }

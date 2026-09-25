@@ -25,15 +25,15 @@
     },
     "recommendation_id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "tool_id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "resource_id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "status": {
       "type": "string",
@@ -85,11 +85,11 @@
     },
     "evidence_refs": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+      "items": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }
     },
     "evaluation_ref": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "when_to_consider": {
       "type": "array",

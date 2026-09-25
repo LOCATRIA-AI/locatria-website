@@ -166,8 +166,9 @@ if (require.main === module) {
   console.log('------------------------------------------------------------\n');
 
   // Note: If running against a directory of mixed valid/invalid fixtures, individual results are reported.
-  // When running purely on valid fixtures or production data, exit 0 if all valid.
-  if (process.argv[2] && process.argv[2].includes('valid') && results.summary.invalid > 0) {
+  // When running purely on valid fixtures or production data, exit 1 if unexpected invalid records exist.
+  const isTargetingValidOnly = targetDir.endsWith(`${path.sep}valid`) || path.basename(targetDir) === 'valid';
+  if (isTargetingValidOnly && results.summary.invalid > 0) {
     process.exit(1);
   }
 }

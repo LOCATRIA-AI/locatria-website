@@ -26,11 +26,11 @@
     },
     "review_id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "tool_id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "review_type": {
       "type": "string",

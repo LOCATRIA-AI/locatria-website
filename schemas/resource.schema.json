@@ -26,7 +26,7 @@
     },
     "resource_id": {
       "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+      "pattern": "^[A-Za-z0-9_-]+$"
     },
     "resource_title": {
       "type": "string",
@@ -94,7 +94,7 @@
     },
     "related_tools": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+      "items": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }
     },
     "related_articles": {
       "type": "array",

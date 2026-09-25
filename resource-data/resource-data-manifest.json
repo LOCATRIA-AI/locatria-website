@@ -1,0 +1,17 @@
+{
+  "system": "LOCATRIA",
+  "layer": "RESOURCE_DATA",
+  "schema_version": "1.0",
+  "data_layer_version": "1.0",
+  "status": "OPERATIONAL",
+  "entity_counts": {
+    "tools": 0,
+    "resources": 0,
+    "evidence": 0,
+    "evaluations": 0,
+    "recommendations": 0,
+    "affiliates": 0,
+    "reviews": 0,
+    "relationships": 0
+  }
+}

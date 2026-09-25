@@ -1,0 +1,63 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "TOOL-001",
+  "tool_name": "Locatria Schema Generator",
+  "provider": "Locatria Test Labs",
+  "official_url": "https://example.com/schema-tool",
+  "classification": {
+    "primary_capability": "Structured Data Generation",
+    "secondary_capabilities": [
+      "Schema Validation",
+      "JSON-LD Export"
+    ],
+    "target_users": [
+      "Local Business Operators",
+      "In-House Content Managers"
+    ],
+    "target_verticals": [
+      "general",
+      "dental-clinics",
+      "law-firms",
+      "real-estate"
+    ]
+  },
+  "problem": {
+    "primary_problem": "Inconsistent local business entity data across AI knowledge platforms",
+    "secondary_problems": [
+      "Manual JSON-LD syntax errors",
+      "Unstructured service descriptions"
+    ],
+    "use_cases": [
+      "Generating LocalBusiness schema markup for service pages",
+      "Verifying NAP entity consistency against Google Search"
+    ]
+  },
+  "workflow": {
+    "supported_workflows": [
+      "ai-local-entity-consistency-nape-audit-workflow",
+      "ai-assisted-local-business-content-update-maintenance-workflow"
+    ],
+    "workflow_stages": [
+      "Audit",
+      "Implementation",
+      "Verification"
+    ],
+    "required_capabilities": [
+      "JSON Schema Export",
+      "Batch Profile Verification"
+    ]
+  },
+  "commercial": {
+    "pricing_model": "FREEMIUM",
+    "free_plan": true,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "RECOMMENDED",
+  "governance": {
+    "last_reviewed": "2026-09-25",
+    "reviewer": "Locatria Systems Auditor",
+    "review_status": "APPROVED",
+    "change_notes": "Canonical seed fixture verified against Canonical Tool Schema v1.0"
+  }
+}
