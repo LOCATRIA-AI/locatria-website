@@ -461,6 +461,19 @@
     "pubDate": "2026-08-10",
     "description": "",
     "slugUrl": "what-is-ai-visibility-practical-guide-local-businesses"
+  },
+  {
+    "id": "ai-ready-local-business-knowledge-system",
+    "title": "How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System",
+    "type": "guide",
+    "status": "published",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readTime": "22 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-08",
+    "description": "How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.",
+    "slugUrl": "ai-ready-local-business-knowledge-system.html"
   }
 ];
 })(window);

@@ -8,9 +8,9 @@
 
   const LocatriaContentCounts = {
     version: '1.3.0',
-    publishedTotal: 35,
+    publishedTotal: 36,
     countsByType: {
-  "guide": 9,
+  "guide": 10,
   "workflow": 23,
   "checklist": 3,
   "tutorial": 0,
@@ -23,7 +23,7 @@
   "dental": 7,
   "law": 6,
   "realEstate": 6,
-  "general": 16
+  "general": 17
 },
 
     init: function () {

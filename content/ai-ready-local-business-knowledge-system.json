@@ -1,0 +1,1083 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-ready-local-business-knowledge-system",
+  "type": "guide",
+  "status": "published",
+  "metadata": {
+    "title": "How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System",
+    "subtitle": "How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.",
+    "category": "Guides & Blueprints",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 22,
+    "lastUpdated": "2026-09-08",
+    "audience": [
+      "Local Business Owners",
+      "SMB Operators",
+      "Content Managers",
+      "Operations Directors"
+    ],
+    "primaryTopic": "AI Content Systems"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Local Content Systems Specialist"
+  },
+  "seo": {
+    "title": "How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System | Locatria",
+    "description": "How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.",
+    "canonical": "https://www.locatria.com/ai-ready-local-business-knowledge-system.html",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI-Ready Knowledge Systems & Business Content Architecture",
+    "industryFocus": "general"
+  },
+  "relationships": {
+    "parentArticle": "ai-local-entity-consistency-nape-audit-workflow",
+    "relatedArticles": [
+      "ai-local-entity-consistency-nape-audit-workflow",
+      "ai-assisted-local-business-content-update-maintenance-workflow",
+      "ai-content-research-workflow-local-businesses",
+      "ai-content-brief-workflow-local-businesses"
+    ]
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "Most local businesses do not start with a knowledge problem. They start with a scattering problem."
+    },
+    {
+      "type": "paragraph",
+      "content": "Look at what a typical local business already has:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "A website with a homepage, an about page and several service pages",
+        "An FAQ page, often written years ago and updated in pieces",
+        "One or more business profiles on maps, directories and social platforms",
+        "Policies for bookings, cancellations, payments or returns",
+        "Blog posts or guides that explain services to customers",
+        "Internal documents: price sheets, onboarding notes, staff instructions, email templates",
+        "A long, informal memory of the questions customers ask again and again"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "That is a substantial body of business knowledge. The trouble is that it lives in many places, was written at different times, by different people, for different purposes. Some of it is current, some is out of date, and some contradicts other parts. Very little of it records where the information came from or who is responsible for keeping it correct."
+    },
+    {
+      "type": "paragraph",
+      "content": "This matters more once AI becomes part of content and daily workflows. When AI is asked to draft an FAQ, summarize a service or answer a routine question, it can only work with what it is given. If what it is given is fragmented, outdated or contradictory, the output will carry those same problems — often presented in confident, polished language."
+    },
+    {
+      "type": "paragraph",
+      "content": "So the first step toward using AI effectively is not creating more content. It is organizing the knowledge the business already has."
+    },
+    {
+      "type": "paragraph",
+      "content": "This guide shows how to do that without special software or a technical team. The idea behind it is simple:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Core Strategic Principle",
+      "content": "The goal is not to turn all existing content into AI-generated content. The goal is to organize reliable business knowledge so AI can assist with content and workflows without losing the context, accuracy, and governance behind that information."
+    },
+    {
+      "type": "paragraph",
+      "content": "Or, in one line: <strong>structure the knowledge before scaling the AI.</strong>"
+    },
+    {
+      "type": "paragraph",
+      "content": "Throughout the guide, we will use one fictional example — a small dental clinic we will call Harbor Lane Dental — to show how the ideas work in practice. The clinic is only an illustration; the same approach applies to any local business."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-an-ai-ready-knowledge-system",
+      "title": "2. What Is an AI-Ready Knowledge System?"
+    },
+    {
+      "type": "paragraph",
+      "content": "At LOCATRIA, we use the term in a specific, practical sense:"
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "Definition: AI-Ready Knowledge System",
+      "content": "An AI-ready knowledge system is a structured, verified, maintainable body of business knowledge that can be reused by people, content workflows, and AI-assisted workflows."
+    },
+    {
+      "type": "paragraph",
+      "content": "This is a LOCATRIA working framework, not an official or industry-wide standard. It draws on broader, well-established ideas — knowledge management, provenance (knowing where information came from), information governance, responsible AI use and content maintenance — and translates them into something a small business can actually run."
+    },
+    {
+      "type": "paragraph",
+      "content": "Each of the four qualities in the definition does a specific job:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Structured</strong> — The information is organized into clear categories and records, rather than buried inside paragraphs across a dozen pages.",
+        "<strong>Verified</strong> — Each important piece of information has a known source and has been checked by someone who is in a position to confirm it.",
+        "<strong>Maintainable</strong> — Each piece of information has an owner and a way to be updated when the business changes.",
+        "<strong>Reusable</strong> — The same verified information can support many outputs: a service page, an FAQ, a staff answer, a content brief, an AI-assisted draft."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "It is just as important to be clear about what this is not. An AI-ready knowledge system is:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Not AI-generated content.</strong> Content may be produced from the system, but the system itself is verified business knowledge, not AI output.",
+        "<strong>Not a chatbot.</strong> A chatbot is one possible way to use knowledge; the system is the foundation underneath.",
+        "<strong>Not a RAG system.</strong> Retrieval-augmented generation (RAG) is a technical method some AI tools use to look up documents before answering. A knowledge system is the business layer — the reliable information itself.",
+        "<strong>Not knowledge-base software.</strong> Software can store a knowledge system, but buying software does not create one.",
+        "<strong>Not automatic AI publishing.</strong> Nothing in this system is designed to publish without human review."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "If you remember one distinction, make it this: the system is about the quality of your business knowledge, not the tools you use to hold it."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-belongs-in-a-local-business-knowledge-system",
+      "title": "3. What Belongs in a Local Business Knowledge System?"
+    },
+    {
+      "type": "paragraph",
+      "content": "A local business does not need an elaborate taxonomy. Six layers cover what most businesses need to know, keep accurate and reuse."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "business-identity",
+      "title": "3.1 Business Identity"
+    },
+    {
+      "type": "paragraph",
+      "content": "The basic facts that tell people — and systems — who the business is."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Business name, and any alternate names or common abbreviations",
+        "Locations and service areas",
+        "Contact information: phone, email, address, booking link",
+        "Business category",
+        "Official profiles (website, maps listing, directory and social profiles)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The consistency of this information across external platforms is covered in detail in our guide on <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">auditing your local business entity consistency</a>. In this article, the focus is on keeping one clear internal record of these facts, so every other workflow starts from the same version."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "products-services",
+      "title": "3.2 Products & Services"
+    },
+    {
+      "type": "paragraph",
+      "content": "What the business actually offers."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Services and products",
+        "Service descriptions in plain language",
+        "Availability (which locations, which days, who is eligible)",
+        "Relevant attributes (duration, what is included, what is not)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "customer-knowledge",
+      "title": "3.3 Customer Knowledge"
+    },
+    {
+      "type": "paragraph",
+      "content": "What customers need, ask and misunderstand."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Common questions and existing FAQs",
+        "Terminology customers use (which is often different from the terms staff use)",
+        "Customer needs and situations",
+        "Recurring questions or objections"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Example: a customer may ask \"Can I be seen today if I'm in pain?\" rather than using the service's official name. Both phrasings belong in the record."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "business-operations",
+      "title": "3.4 Business Operations"
+    },
+    {
+      "type": "paragraph",
+      "content": "How the business runs, in the ways that affect customers."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Opening hours, including holiday or seasonal changes",
+        "Policies (booking, cancellation, payment, returns, privacy)",
+        "Processes (what happens when a customer books, arrives, requests a change)",
+        "Service rules and operational information"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "content-assets",
+      "title": "3.5 Content Assets"
+    },
+    {
+      "type": "paragraph",
+      "content": "What the business has already published or produced."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Articles and guides",
+        "FAQ pages",
+        "Service pages",
+        "Videos and other published assets"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This layer matters because content is where knowledge shows up in public. When a fact changes, this layer tells you where it appears."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "source-governance",
+      "title": "3.6 Source & Governance"
+    },
+    {
+      "type": "paragraph",
+      "content": "This is the layer that turns a collection of information into a system. For each important knowledge item, it records:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Source</strong> — where the information came from",
+        "<strong>Owner</strong> — who is responsible for keeping it correct",
+        "<strong>Last verified</strong> — when someone last confirmed it",
+        "<strong>Status</strong> — verified, needs review, outdated, or unverified",
+        "<strong>Change history</strong> — what changed, and when",
+        "<strong>Related content</strong> — where the information is used"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Most businesses have some version of layers 1–5 scattered around. Very few have layer 6. Without it, the business can answer \"What information do we have?\" but not:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Where did this information come from?",
+        "Who owns it?",
+        "When was it last verified?",
+        "Is it still current?",
+        "Where is it being used?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Those questions are exactly the ones that matter once AI starts helping with content and workflows."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "start-with-the-knowledge-you-already-have",
+      "title": "4. Start With the Knowledge You Already Have"
+    },
+    {
+      "type": "paragraph",
+      "content": "A common mistake is to begin with a new tool, folder structure or template, and then try to fill it from scratch. That approach wastes much of the work the business has already done."
+    },
+    {
+      "type": "paragraph",
+      "content": "Start instead with an inventory. Go through the places your business information already lives:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Your existing website",
+        "Service pages",
+        "FAQ pages",
+        "Business profiles on maps, directories and social platforms",
+        "Written policies",
+        "Existing articles and guides",
+        "Internal documents, price sheets, staff notes and templates",
+        "Recurring customer questions (from phone calls, emails, messages and front-desk conversations)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "For each source, note what kinds of knowledge it contains, roughly how old it is and who wrote or approved it. You do not need to fix anything yet."
+    },
+    {
+      "type": "paragraph",
+      "content": "The working principle is:"
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "Working Principle",
+      "content": "<strong>REUSE → STRUCTURE → VERIFY</strong><br>rather than:<br><strong>CREATE EVERYTHING AGAIN</strong>"
+    },
+    {
+      "type": "paragraph",
+      "content": "At Harbor Lane Dental, the inventory shows emergency care described in four places — and they do not fully agree. That discovery is not a failure. It is the point of the inventory."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "organize-knowledge-into-reusable-structures",
+      "title": "5. Organize Knowledge Into Reusable Structures"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once you know what you have, the next step is to pull individual facts out of pages and documents and organize them into knowledge records."
+    },
+    {
+      "type": "paragraph",
+      "content": "A knowledge record is a single, clearly defined item — one service, one policy, one set of hours — with its details and its governance information kept together. Conceptually, it can look like this:"
+    },
+    {
+      "type": "codeBlock",
+      "filename": "Conceptual Knowledge Record Structure",
+      "language": "plaintext",
+      "code": "Service\n├── Name\n├── Description\n├── Availability\n├── Customer Questions\n├── Source\n├── Owner\n└── Last Verified"
+    },
+    {
+      "type": "paragraph",
+      "content": "Here is the Harbor Lane Dental record for emergency care:"
+    },
+    {
+      "type": "codeBlock",
+      "filename": "Harbor Lane Dental — Knowledge Record Example",
+      "language": "plaintext",
+      "code": "Knowledge: Emergency Dental Care\n├── Description: Same-day appointments for urgent dental problems,\n│   subject to availability\n├── Availability: During opening hours; after-hours instructions\n│   given by phone message\n├── Customer Questions:\n│   – \"Can I be seen today if I'm in pain?\"\n│   – \"What should I do if it happens at night?\"\n├── Source: Official Service Page\n├── Owner: Practice Manager\n├── Last Verified: September 2026\n├── Status: Verified\n└── Related Content:\n    – Emergency Care Service Page\n    – Emergency Dental FAQ\n    – Patient Education Article"
+    },
+    {
+      "type": "paragraph",
+      "content": "(The details above are fictional and only illustrate the structure.)"
+    },
+    {
+      "type": "paragraph",
+      "content": "The information is no longer tied to one page's wording. It is a clear, checked record that can feed many outputs from the same verified version."
+    },
+    {
+      "type": "paragraph",
+      "content": "You do not need a database for this. A shared document, a spreadsheet or a set of simple, consistently formatted notes can hold knowledge records. What matters is that the structure is consistent and the governance fields are always filled in."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "verify-knowledge-before-ai-uses-it",
+      "title": "6. Verify Knowledge Before AI Uses It"
+    },
+    {
+      "type": "paragraph",
+      "content": "Structure makes knowledge easier to use. Verification makes it more trustworthy and usable. This step deserves the most care, because once AI works from your knowledge, any error in it can spread across many outputs quickly."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "identify-the-source",
+      "title": "6.1 Identify the Source"
+    },
+    {
+      "type": "paragraph",
+      "content": "For each knowledge item, record where it came from: a service page, a policy document, a staff member, a business profile, an internal price sheet. \"We've always said this\" is not a source; it is a sign the item needs checking."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "determine-the-appropriate-authority",
+      "title": "6.2 Determine the Appropriate Authority"
+    },
+    {
+      "type": "paragraph",
+      "content": "Not every source carries the same weight. A signed policy document is usually more authoritative than an old blog post. Decide, for each type of knowledge, who or what is the appropriate authority — and write it down."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "check-the-current-version",
+      "title": "6.3 Check the Current Version"
+    },
+    {
+      "type": "paragraph",
+      "content": "Confirm that the information reflects how the business works today. Hours, prices, availability and policies are the items most likely to have drifted."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "record-verification",
+      "title": "6.4 Record Verification"
+    },
+    {
+      "type": "paragraph",
+      "content": "When an item has been checked, record who checked it and when. This is the \"Last Verified\" field. It does not prove the item is correct; it shows when it was last checked, which helps anyone — including your future self — see whether it may be due for review."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "resolve-conflicts",
+      "title": "6.5 Resolve Conflicts"
+    },
+    {
+      "type": "paragraph",
+      "content": "When two sources disagree, a person with the right authority decides which version is correct, and the record is updated. The outdated versions are then flagged for correction wherever they appear."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can help find a conflict, but it should not settle it. AI should not decide which conflicting business information is true simply because one version sounds more convincing."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "mark-unverified-information",
+      "title": "6.6 Mark Unverified Information"
+    },
+    {
+      "type": "paragraph",
+      "content": "Some items cannot be verified right away. That is fine, as long as they are clearly labeled — for example, with a status of \"Unverified\" or \"Needs Review.\" The risk is not unverified information; the risk is unverified information that looks verified."
+    },
+    {
+      "type": "paragraph",
+      "content": "Back at Harbor Lane Dental: the old blog post says emergency appointments are available \"any time.\" The service page says \"during opening hours, subject to availability.\" The practice manager, as owner, confirms the service page is correct, records the verification date and marks the blog post for update. That decision is hers, not an AI tool's."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "connect-knowledge-to-existing-content",
+      "title": "7. Connect Knowledge to Existing Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once knowledge is structured and verified, it becomes a shared foundation for content:"
+    },
+    {
+      "type": "codeBlock",
+      "filename": "Knowledge Architecture Fan-Out",
+      "language": "plaintext",
+      "code": "Verified Knowledge\n├── Service Page\n├── FAQ\n├── Article\n├── Other Content\n└── Workflow"
+    },
+    {
+      "type": "paragraph",
+      "content": "The Related Content field in each record is what makes this connection visible. It tells you, for any knowledge item, where it is currently used."
+    },
+    {
+      "type": "paragraph",
+      "content": "One caution: reuse does not mean copy everything everywhere. The same verified fact might appear as one sentence on a service page and a direct answer in an FAQ. Each output should still match its audience, its purpose and its context. The knowledge stays consistent; the expression adapts."
+    },
+    {
+      "type": "paragraph",
+      "content": "If you want to build content workflows on top of this foundation, LOCATRIA covers them separately — for example, <a href=\"ai-content-research-workflow-local-businesses.html\" class=\"component-link\">researching content</a>, <a href=\"ai-content-brief-workflow-local-businesses.html\" class=\"component-link\">writing content briefs</a>, <a href=\"ai-faq-research-workflow-local-businesses.html\" class=\"component-link\">researching FAQs</a> and <a href=\"ai-content-repurposing-workflow-local-businesses.html\" class=\"component-link\">repurposing content</a>."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "use-ai-as-an-assistance-layer",
+      "title": "8. Use AI as an Assistance Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "With structured, verified knowledge in place, AI becomes more useful and less risky. It can help with tasks such as:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Organizing scattered text into draft knowledge records",
+        "Summarizing long documents into their key facts",
+        "Comparing two versions of the same information",
+        "Classifying items into the six knowledge layers",
+        "Identifying possible gaps — for example, a service with no customer questions recorded",
+        "Identifying possible conflicts — for example, hours that differ between two sources",
+        "Transforming verified information into drafts — an FAQ answer, a content brief or a workflow input"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "In each case, AI is working with knowledge the business has already checked, or flagging things for a human to review. What it should not be:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>AI ≠ source of truth.</strong> It can reflect your knowledge, but it does not replace it.",
+        "<strong>AI ≠ final approver.</strong> It can suggest; a person decides.",
+        "<strong>AI ≠ business owner.</strong> Responsibility for accuracy stays with the business."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This caution is not just a LOCATRIA preference. The NIST AI Risk Management Framework's Generative AI Profile notes that generative AI can produce false information presented with confidence, and emphasizes human oversight, review of accuracy and attention to where information comes from.<sup><a href=\"#sources\" class=\"component-link\">1</a></sup>"
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "The Golden Rule of AI Assistance",
+      "content": "The principle to keep is simple: <strong>AI assists with knowledge. Humans remain responsible for verification and approval.</strong>"
+    },
+    {
+      "type": "paragraph",
+      "content": "At Harbor Lane Dental, the practice manager might ask an AI tool to compare the emergency FAQ against the verified record and list any differences. She reviews the two it finds, approving one and rejecting the other. The AI did the comparison; she made the decision."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "maintain-the-knowledge-system",
+      "title": "9. Maintain the Knowledge System"
+    },
+    {
+      "type": "paragraph",
+      "content": "Business knowledge changes. Common examples include:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "A service is added, changed or discontinued",
+        "Opening hours change, permanently or seasonally",
+        "A policy is updated",
+        "A location opens, moves or closes",
+        "Pricing changes",
+        "An internal process changes"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "A knowledge system is only useful if it keeps up. The conceptual flow is:"
+    },
+    {
+      "type": "codeBlock",
+      "filename": "Knowledge Maintenance Pipeline",
+      "language": "plaintext",
+      "code": "Knowledge\n   ↓\n Change\n   ↓\n Verify\n   ↓\n Update Knowledge\n   ↓\n Identify Related Content\n   ↓\n Review / Update Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "The key step is \"Identify Related Content.\" Because each record lists where it is used, a change points straight to the pages, FAQs and documents that may need attention. Without that link, updates tend to reach one page and miss three others."
+    },
+    {
+      "type": "paragraph",
+      "content": "For LOCATRIA, this creates a simple operational lifecycle: knowledge is collected, structured, verified, stored, used, maintained and then re-verified over time."
+    },
+    {
+      "type": "workflowDiagram",
+      "title": "LOCATRIA Knowledge Operational Lifecycle",
+      "nodes": [
+        "COLLECT",
+        "STRUCTURE",
+        "VERIFY",
+        "STORE",
+        "USE",
+        "MAINTAIN",
+        "REVERIFY ↺"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The full process of auditing and updating published content is covered in our guide on <a href=\"ai-assisted-local-business-content-update-maintenance-workflow.html\" class=\"component-link\">using AI to audit, update and maintain existing content</a>, and in the <a href=\"ai-content-update-workflow-local-businesses.html\" class=\"component-link\">AI content update workflow</a>. The knowledge system is the layer underneath: it records what the business has verified and where it is used, so content maintenance has something reliable to work from."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "from-knowledge-system-to-ai-workflows",
+      "title": "10. From Knowledge System to AI Workflows"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once the knowledge layer exists, workflows no longer need to rediscover the same facts each time. Structured knowledge can serve as a reusable foundation for:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Content research</strong> — starting from what the business actually offers and what customers actually ask",
+        "<strong>Content briefs</strong> — pulling verified facts directly into the brief",
+        "<strong>FAQ workflows</strong> — using the Customer Knowledge layer as a starting point",
+        "<strong>Content repurposing</strong> — adapting verified knowledge to new formats without changing the facts",
+        "<strong>Content maintenance</strong> — using the Related Content field to find what needs updating",
+        "<strong>Other AI-assisted workflows</strong> — for example, drafting responses to routine questions for staff to review, or <a href=\"ai-prompt-workflow-local-business-content-creation.html\" class=\"component-link\">prompting AI tools</a> with verified context instead of guesswork"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Each has its own method, covered elsewhere on LOCATRIA. The point here is the relationship between them:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Foundational Relationship",
+      "content": "<strong>Knowledge is the reusable layer underneath the workflow.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-an-ai-ready-knowledge-system-is-not",
+      "title": "11. What an AI-Ready Knowledge System Is Not"
+    },
+    {
+      "type": "paragraph",
+      "content": "Because the phrase includes \"AI,\" it is easy to assume implementation means buying or building something technical. It does not. An AI-ready knowledge system is not:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>An AI writing tool or a chatbot</strong> — both may use the knowledge; neither is the knowledge.",
+        "<strong>A vector database or a RAG implementation</strong> — these are technical methods some AI tools use, outside the scope of this guide.",
+        "<strong>A CMS</strong> — a CMS manages what you publish; the knowledge system manages what is true underneath it.",
+        "<strong>A random document collection</strong> — files without source, owner or status are storage, not a system.",
+        "<strong>A tool subscription</strong> — no subscription creates verified knowledge on its own.",
+        "<strong>A guarantee of AI visibility</strong> — see FAQ #8."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The system is about the quality, structure, verification and governance of business knowledge — not the software used to store it."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "local-business-knowledge-inventory-structure-worksheet",
+      "title": "12. Local Business Knowledge Inventory & Structure Worksheet"
+    },
+    {
+      "type": "paragraph",
+      "content": "This worksheet is the practical starting point for everything in this guide. It works in a spreadsheet, a shared document or even on paper."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "worksheet-fields",
+      "title": "12.1 The Fields"
+    },
+    {
+      "type": "paragraph",
+      "content": "In practice, most knowledge records belong to one of the first five areas. The Source & Governance layer is largely represented through the fields that track where the information came from, who owns it, when it was checked, and how it changes."
+    },
+    {
+      "type": "table",
+      "caption": "Local Business Knowledge Inventory Field Specifications",
+      "headers": [
+        "Group",
+        "Field",
+        "What to Record"
+      ],
+      "rows": [
+        [
+          "Knowledge",
+          "Knowledge Area",
+          "Which area the item belongs to (Business Identity, Products & Services, Customer Knowledge, Business Operations, Content Assets)"
+        ],
+        [
+          "Knowledge",
+          "Knowledge Item",
+          "The specific item (e.g., \"Emergency dental care\", \"Saturday hours\")"
+        ],
+        [
+          "Knowledge",
+          "Current Information",
+          "The information as it currently stands"
+        ],
+        [
+          "Governance",
+          "Source",
+          "Where the information came from"
+        ],
+        [
+          "Governance",
+          "Source Type",
+          "The kind of source (official page, policy document, staff confirmation, business profile, internal document)"
+        ],
+        [
+          "Governance",
+          "Owner",
+          "The person or role responsible for keeping it correct"
+        ],
+        [
+          "Governance",
+          "Last Verified",
+          "When it was last checked (month and year is usually enough)"
+        ],
+        [
+          "Governance",
+          "Status",
+          "Verified / Needs Review / Outdated / Unverified"
+        ],
+        [
+          "Governance",
+          "Change Notes",
+          "What changed and when"
+        ],
+        [
+          "Governance",
+          "Next Review",
+          "When the owner plans to check it again"
+        ],
+        [
+          "Relationship",
+          "Related Content",
+          "Where the information appears"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "worksheet-filled-example",
+      "title": "12.2 A Filled Example (Fictional)"
+    },
+    {
+      "type": "table",
+      "caption": "Filled Example — Harbor Lane Dental Knowledge Inventory",
+      "headers": [
+        "Knowledge Area",
+        "Knowledge Item",
+        "Current Information",
+        "Source",
+        "Source Type",
+        "Owner",
+        "Last Verified",
+        "Status",
+        "Related Content",
+        "Change Notes",
+        "Next Review"
+      ],
+      "rows": [
+        [
+          "Products & Services",
+          "Emergency Dental Care",
+          "Same-day appointments for urgent problems during opening hours, subject to availability",
+          "Official Service Page",
+          "Official page",
+          "Practice Manager",
+          "Sept 2026",
+          "Verified",
+          "Service Page; Emergency Dental FAQ; Patient Education Article",
+          "Blog post said \"any time\" — flagged for correction",
+          "When service or hours change"
+        ],
+        [
+          "Operations",
+          "Weekday Opening Hours",
+          "[Current hours]",
+          "Front-desk schedule",
+          "Internal document",
+          "Practice Manager",
+          "Sept 2026",
+          "Verified",
+          "Website footer; Maps profile; Contact page",
+          "—",
+          "Before each holiday season"
+        ],
+        [
+          "Operations",
+          "Cancellation Policy",
+          "[Current policy wording]",
+          "Signed policy document",
+          "Policy document",
+          "Clinic Owner",
+          "Sept 2026",
+          "Verified",
+          "Booking page; FAQ; Confirmation email template",
+          "—",
+          "When policy is revised"
+        ],
+        [
+          "Customer Knowledge",
+          "\"Can I be seen today if I'm in pain?\"",
+          "Answer based on Emergency Dental Care record",
+          "Front-desk call notes",
+          "Staff confirmation",
+          "Front Desk Lead",
+          "Sept 2026",
+          "Verified",
+          "Emergency Dental FAQ",
+          "Added from recurring calls",
+          "With Emergency Dental Care record"
+        ],
+        [
+          "Products & Services",
+          "Price range for check-ups",
+          "Stated in an older article",
+          "Old blog article",
+          "Existing content",
+          "Practice Manager",
+          "Unknown",
+          "Needs Review",
+          "Blog article",
+          "Source not confirmed",
+          "Before any reuse"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "worksheet-blank-structure",
+      "title": "12.3 A Blank Structure to Copy"
+    },
+    {
+      "type": "table",
+      "caption": "Blank Knowledge Inventory Structure Template",
+      "headers": [
+        "Knowledge Area",
+        "Knowledge Item",
+        "Current Information",
+        "Source",
+        "Source Type",
+        "Owner",
+        "Last Verified",
+        "Status",
+        "Related Content",
+        "Change Notes",
+        "Next Review"
+      ],
+      "rows": [
+        [
+          "[Area]",
+          "[Item name]",
+          "[Current verified details]",
+          "[Source document/person]",
+          "[Source type]",
+          "[Owner role/person]",
+          "[Month/Year]",
+          "[Verified / Needs Review / ...]",
+          "[Pages/URLs where used]",
+          "[What changed/why]",
+          "[Planned review trigger/date]"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "worksheet-how-to-start",
+      "title": "12.4 How to Start"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Begin small.</strong> Pick one knowledge area — often Products & Services or Operations — and fill in 10–20 rows.",
+        "<strong>Treat governance fields as essential.</strong> Source, Owner and Status matter as much as the information itself.",
+        "<strong>Mark what you are unsure of.</strong> \"Needs Review\" is a useful status, not an embarrassment.",
+        "<strong>Expand once it works.</strong> When the first area feels useful in real work, move to the next."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-failure-modes",
+      "title": "13. Common Failure Modes"
+    },
+    {
+      "type": "paragraph",
+      "content": "These patterns most often undermine a knowledge system in its first months:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Creating a new system before auditing existing information.</strong> A fresh template feels productive, but it leads to rewriting what already exists.",
+        "<strong>Treating every document as equally authoritative.</strong> An old blog post and a signed policy should not carry the same weight. Decide what counts as authoritative for each type of knowledge.",
+        "<strong>Letting AI fill unknown information.</strong> An empty field should be marked \"Unverified,\" not filled with a plausible-sounding guess.",
+        "<strong>No source or ownership.</strong> Information without a source cannot be checked. Information without an owner will not be maintained.",
+        "<strong>No verification status.</strong> If nothing distinguishes checked from unchecked items, everything ends up treated as reliable — including what is not.",
+        "<strong>Building a huge knowledge system before proving the workflow.</strong> Trying to capture everything at once usually stalls. A small, well-maintained system is more valuable than a large, abandoned one.",
+        "<strong>Confusing knowledge management with content production.</strong> The system's job is to hold reliable knowledge. Producing more content is a separate activity that can draw on it.",
+        "<strong>Treating AI-generated summaries as canonical truth.</strong> A summary is a draft until a person has checked it against the source."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "simple-implementation-checklist",
+      "title": "14. Simple Implementation Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Foundation",
+      "items": [
+        {
+          "label": "Inventory existing business information",
+          "checked": false
+        },
+        {
+          "label": "Identify major knowledge areas",
+          "checked": false
+        },
+        {
+          "label": "Identify authoritative sources",
+          "checked": false
+        },
+        {
+          "label": "Assign owners",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Structure",
+      "items": [
+        {
+          "label": "Organize knowledge into reusable categories",
+          "checked": false
+        },
+        {
+          "label": "Connect knowledge to existing content",
+          "checked": false
+        },
+        {
+          "label": "Record source and verification status",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "AI Boundaries",
+      "items": [
+        {
+          "label": "Define where AI can assist",
+          "checked": false
+        },
+        {
+          "label": "Define where human review is required",
+          "checked": false
+        },
+        {
+          "label": "Do not treat AI output as canonical truth",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Maintenance",
+      "items": [
+        {
+          "label": "Record changes",
+          "checked": false
+        },
+        {
+          "label": "Review affected knowledge",
+          "checked": false
+        },
+        {
+          "label": "Review related content",
+          "checked": false
+        },
+        {
+          "label": "Re-verify important information",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "15. Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "title": "Knowledge System FAQ",
+      "items": [
+        {
+          "question": "1. What is an AI-ready knowledge system?",
+          "answer": "It is LOCATRIA's term for a structured, verified, maintainable body of business knowledge that can be reused by people, content workflows and AI-assisted workflows. It is a practical framework rather than an official standard, informed by established ideas from knowledge management, provenance and responsible AI use."
+        },
+        {
+          "question": "2. Do I need special AI software to build one?",
+          "answer": "No. A spreadsheet or shared document is enough to start. What makes the system work is consistent structure, clear sources, named owners and recorded verification — not any particular software."
+        },
+        {
+          "question": "3. Is an AI-ready knowledge system the same as a knowledge base?",
+          "answer": "Not quite. \"Knowledge base\" often refers to a collection of help articles or a software product. An AI-ready knowledge system focuses on the underlying business knowledge and its governance — where each item came from, who owns it, when it was verified and where it is used. It could be stored in a knowledge base, but the two are not the same thing."
+        },
+        {
+          "question": "4. Do I need a RAG system?",
+          "answer": "For most local businesses starting out, no. RAG is a technical method some AI tools use to retrieve documents before answering. Whether or not a business ever uses such tools, the more basic need — and the focus of this guide — is reliable, organized knowledge."
+        },
+        {
+          "question": "5. Can I use existing website content?",
+          "answer": "Yes — and you should. Existing pages, FAQs and policies are usually the best starting point. Treat them as sources to extract and verify, not as automatically correct, since older content may contain outdated information."
+        },
+        {
+          "question": "6. How often should business knowledge be reviewed?",
+          "answer": "There is no single correct schedule. It depends on how often each type of information changes and how much harm an error would cause. A practical approach is to review items whenever a known change happens (new hours, a new service, a revised policy) and to set a planned review date for each item based on its importance. The \"Next Review\" field in the worksheet exists to make that choice explicit."
+        },
+        {
+          "question": "7. Can AI maintain the knowledge system automatically?",
+          "answer": "AI can help by comparing versions, flagging possible inconsistencies or drafting updates. But decisions about what is true, which source is authoritative and what becomes public should stay with people."
+        },
+        {
+          "question": "8. Does an AI-ready knowledge system improve AI visibility?",
+          "answer": "It may help indirectly, but no outcome is guaranteed. Organized, verified knowledge helps a business keep its information and content clear and consistent, which is generally useful for people, search and AI-assisted tools alike. Google's guidance on AI features in Search says there are no additional requirements or special optimizations for appearing in them, and points site owners to established best practices such as creating helpful, reliable, people-first content.² That guidance does not mention the LOCATRIA framework. A knowledge system can support the accuracy and consistency behind helpful content; it does not guarantee rankings, citations or recommendations from any search engine or AI assistant."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "conclusion",
+      "title": "16. Conclusion — Build the Knowledge Layer Before Scaling AI"
+    },
+    {
+      "type": "paragraph",
+      "content": "Most local businesses already hold much of the knowledge they need, spread across websites, profiles, policies, documents and the experience of their people. The work is not to replace it, but to bring it together."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Existing information is valuable.</strong> It is the starting point, not something to throw away.",
+        "<strong>Structure makes it reusable.</strong> Clear records can support many outputs from one verified version.",
+        "<strong>Verification supports accuracy.</strong> Knowing the source and when it was last checked shows what may need review.",
+        "<strong>Governance makes it maintainable.</strong> Owners, statuses and change notes keep the system alive as the business changes.",
+        "<strong>AI can assist.</strong> It can organize, compare, summarize and draft.",
+        "<strong>Humans remain accountable.</strong> Verification, conflict resolution and approval stay with the people responsible for the business."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Signature Principle",
+      "content": "<strong>STRUCTURE THE KNOWLEDGE BEFORE SCALING THE AI.</strong>"
+    },
+    {
+      "type": "paragraph",
+      "content": "The simplest way to begin is with the Local Business Knowledge Inventory & Structure Worksheet in Section 12. Choose one knowledge area, fill in the first few rows, and record the source, owner and status for each. That small, verified foundation is what everything else can build on."
+    },
+    {
+      "type": "sources",
+      "id": "sources",
+      "title": "References & Regulatory Sources",
+      "items": [
+        "¹ National Institute of Standards and Technology (NIST), Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1), July 2024. <a href=\"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf</a>",
+        "² Google Search Central, \"AI Features and Your Website.\" <a href=\"https://developers.google.com/search/docs/appearance/ai-features\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://developers.google.com/search/docs/appearance/ai-features</a>"
+      ]
+    }
+  ]
+}

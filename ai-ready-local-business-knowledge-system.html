@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System | Locatria Knowledge Hub</title>
+  <meta name="description" content="How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.">
+  
+  <!-- OpenGraph & SEO -->
+  <link rel="canonical" href="https://www.locatria.com/ai-ready-local-business-knowledge-system.html">
+  <meta property="og:title" content="How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System | Locatria">
+  <meta property="og:description" content="How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.">
+  <meta property="og:type" content="article">
+
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS Files -->
+  <link rel="stylesheet" href="css/variables.css?v=5.4">
+  <link rel="stylesheet" href="css/global.css?v=5.4">
+  <link rel="stylesheet" href="css/header.css?v=5.4">
+  <link rel="stylesheet" href="css/components.css?v=5.4">
+  <link rel="stylesheet" href="css/sidebar.css?v=5.4">
+  <link rel="stylesheet" href="css/footer.css?v=5.4">
+  <link rel="stylesheet" href="css/article.css?v=5.4">
+  <link rel="stylesheet" href="css/components-v1.css?v=5.4">
+
+  <!-- LOCATRIA Standalone Brand Icon Favicon Suite -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+
+  <!-- WCAG Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- GLOBAL HEADER (Synchronized with IA v1.0) -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Locatria Home">
+        <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="brand-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge.html" class="nav-link is-active">Knowledge Hub</a>
+        
+        <!-- Learn Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="knowledge.html#learning-paths" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Learn
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?type=guides" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Guides & Blueprints</strong>
+                  <span class="dropdown-item-desc">Evergreen operational AI guides</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=tutorials" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Step-by-Step Tutorials</strong>
+                  <span class="dropdown-item-desc">Actionable zero-code tutorials</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=workflows" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Automated Workflows</strong>
+                  <span class="dropdown-item-desc">End-to-end execution blueprints</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?type=checklists" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Audit Checklists</strong>
+                  <span class="dropdown-item-desc">Verification & compliance lists</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Industries Dropdown Menu -->
+        <div class="nav-item-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Industries
+            <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none">
+              <a href="category.html?industry=real-estate" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Real Estate</strong>
+                  <span class="dropdown-item-desc">Property marketing & lead systems</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=law-firms" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Law Firms</strong>
+                  <span class="dropdown-item-desc">Ethical intake & FAQ governance</span>
+                </div>
+              </a>
+            </li>
+            <li role="none">
+              <a href="category.html?industry=dental-clinics" class="dropdown-item" role="menuitem">
+                <div>
+                  <strong>Dental Clinics</strong>
+                  <span class="dropdown-item-desc">Patient scheduling & FAQ assistants</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="category.html?type=resources" class="nav-link">Resources</a>
+        <a href="index.html#why-locatria" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="search-trigger-btn js-search-trigger" aria-label="Search">
+          <svg class="search-trigger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="search-trigger-text">
+            <span class="placeholder-desktop">Search articles, guides, workflows...</span>
+            <span class="placeholder-mobile">Search articles...</span>
+          </span>
+          <span class="search-shortcut-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+        </button>
+        <a href="knowledge.html#learning-paths" class="btn btn-primary" style="height: 40px; padding: 0 16px;">Start Learning</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Search Modal (Strictly Hidden by Default) -->
+  <div class="search-modal-backdrop" role="dialog" aria-modal="true" aria-label="Search Knowledge Base">
+    <div class="search-modal">
+      <div class="search-modal-header">
+        <svg class="search-icon-modal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-modal-input" placeholder="Search guides, workflows..." aria-label="Search Input">
+        <button type="button" class="search-modal-close-btn">ESC</button>
+      </div>
+      <div class="search-results-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <!-- MAIN ARTICLE PAGE CONTENT -->
+  <div id="main-content" class="page-wrapper">
+    <div class="container" style="max-width: 1040px; padding-top: var(--space-6);">
+      
+      <!-- BREADCRUMB COMPONENT -->
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="knowledge.html" class="breadcrumb-link">Knowledge Hub</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="category.html?type=guides" class="breadcrumb-link">Guides & Blueprints</a>
+            <svg class="breadcrumb-separator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </li>
+          <li class="breadcrumb-item is-active" aria-current="page">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</li>
+        </ol>
+      </nav>
+
+      <!-- ARTICLE HEADER / HERO CONTAINER -->
+      <header class="article-header" style="margin-bottom: var(--space-6);">
+        <div class="article-badge-row">
+          <span class="badge badge-blue">GUIDE / SYSTEM BLUEPRINT</span>
+          <span class="badge badge-purple">AI CONTENT SYSTEMS</span>
+        </div>
+        <h1 class="article-title" style="font-size: 2.25rem; font-weight: 800; line-height: 1.25; margin-top: var(--space-3); margin-bottom: var(--space-3);">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</h1>
+        <p class="article-subtitle" style="font-size: 1.125rem; color: var(--color-gray-600); margin-bottom: var(--space-4);">How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.</p>
+        
+        <div class="article-meta-row" style="display: flex; align-items: center; gap: var(--space-4); font-size: 0.875rem; color: var(--color-gray-500); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-gray-200);">
+          <div class="meta-item">
+            <span>By <strong>Locatria Editorial Team</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Published: <strong>Sep 8, 2026</strong></span>
+          </div>
+          <div class="meta-item">
+            <span>Reading Time: <strong>22 min read</strong></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2-COLUMN ARTICLE LAYOUT (720px Main Prose + 260px Sticky TOC) -->
+      <div class="article-layout-grid" style="display: grid; grid-template-columns: 1fr 260px; gap: var(--space-8); align-items: start;">
+        
+        <!-- MAIN PROSE CONTAINER -->
+        <main id="article-dynamic-container" class="article-prose" role="main">
+          
+          <!-- System Blueprint Contextual Banner -->
+          <div class="learning-path-banner" role="region" aria-label="System Architecture Blueprint">
+            <div class="learning-path-banner-badge">Knowledge Architecture Blueprint</div>
+            <h3 class="learning-path-banner-title">Build an AI-Ready Business Knowledge System</h3>
+            <p class="learning-path-banner-desc">This operational blueprint establishes the six core information layers and governance practices required to transform existing website content, FAQs, and policies into a reliable foundation for AI-assisted operations.</p>
+            <a href="category.html?type=guides" class="learning-path-banner-link">
+              <span>Explore All Guides & System Blueprints</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <p class="component-paragraph">Most local businesses do not start with a knowledge problem. They start with a scattering problem.</p>
+<p class="component-paragraph">Look at what a typical local business already has:</p>
+<ul class="component-unordered-list"><li>A website with a homepage, an about page and several service pages</li><li>An FAQ page, often written years ago and updated in pieces</li><li>One or more business profiles on maps, directories and social platforms</li><li>Policies for bookings, cancellations, payments or returns</li><li>Blog posts or guides that explain services to customers</li><li>Internal documents: price sheets, onboarding notes, staff instructions, email templates</li><li>A long, informal memory of the questions customers ask again and again</li></ul>
+<p class="component-paragraph">That is a substantial body of business knowledge. The trouble is that it lives in many places, was written at different times, by different people, for different purposes. Some of it is current, some is out of date, and some contradicts other parts. Very little of it records where the information came from or who is responsible for keeping it correct.</p>
+<p class="component-paragraph">This matters more once AI becomes part of content and daily workflows. When AI is asked to draft an FAQ, summarize a service or answer a routine question, it can only work with what it is given. If what it is given is fragmented, outdated or contradictory, the output will carry those same problems — often presented in confident, polished language.</p>
+<p class="component-paragraph">So the first step toward using AI effectively is not creating more content. It is organizing the knowledge the business already has.</p>
+<p class="component-paragraph">This guide shows how to do that without special software or a technical team. The idea behind it is simple:</p>
+<div class="component-callout variant-info callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">Core Strategic Principle:</strong>
+              <div class="callout-body">The goal is not to turn all existing content into AI-generated content. The goal is to organize reliable business knowledge so AI can assist with content and workflows without losing the context, accuracy, and governance behind that information.</div>
+            </div>
+          </div>
+<p class="component-paragraph">Or, in one line: <strong>structure the knowledge before scaling the AI.</strong></p>
+<p class="component-paragraph">Throughout the guide, we will use one fictional example — a small dental clinic we will call Harbor Lane Dental — to show how the ideas work in practice. The clinic is only an illustration; the same approach applies to any local business.</p>
+<h2 id="what-is-an-ai-ready-knowledge-system" class="component-heading h2">2. What Is an AI-Ready Knowledge System?</h2>
+<p class="component-paragraph">At LOCATRIA, we use the term in a specific, practical sense:</p>
+<div class="component-callout variant-important callout callout-important">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">Definition: AI-Ready Knowledge System:</strong>
+              <div class="callout-body">An AI-ready knowledge system is a structured, verified, maintainable body of business knowledge that can be reused by people, content workflows, and AI-assisted workflows.</div>
+            </div>
+          </div>
+<p class="component-paragraph">This is a LOCATRIA working framework, not an official or industry-wide standard. It draws on broader, well-established ideas — knowledge management, provenance (knowing where information came from), information governance, responsible AI use and content maintenance — and translates them into something a small business can actually run.</p>
+<p class="component-paragraph">Each of the four qualities in the definition does a specific job:</p>
+<ul class="component-unordered-list"><li><strong>Structured</strong> — The information is organized into clear categories and records, rather than buried inside paragraphs across a dozen pages.</li><li><strong>Verified</strong> — Each important piece of information has a known source and has been checked by someone who is in a position to confirm it.</li><li><strong>Maintainable</strong> — Each piece of information has an owner and a way to be updated when the business changes.</li><li><strong>Reusable</strong> — The same verified information can support many outputs: a service page, an FAQ, a staff answer, a content brief, an AI-assisted draft.</li></ul>
+<p class="component-paragraph">It is just as important to be clear about what this is not. An AI-ready knowledge system is:</p>
+<ul class="component-unordered-list"><li><strong>Not AI-generated content.</strong> Content may be produced from the system, but the system itself is verified business knowledge, not AI output.</li><li><strong>Not a chatbot.</strong> A chatbot is one possible way to use knowledge; the system is the foundation underneath.</li><li><strong>Not a RAG system.</strong> Retrieval-augmented generation (RAG) is a technical method some AI tools use to look up documents before answering. A knowledge system is the business layer — the reliable information itself.</li><li><strong>Not knowledge-base software.</strong> Software can store a knowledge system, but buying software does not create one.</li><li><strong>Not automatic AI publishing.</strong> Nothing in this system is designed to publish without human review.</li></ul>
+<p class="component-paragraph">If you remember one distinction, make it this: the system is about the quality of your business knowledge, not the tools you use to hold it.</p>
+<h2 id="what-belongs-in-a-local-business-knowledge-system" class="component-heading h2">3. What Belongs in a Local Business Knowledge System?</h2>
+<p class="component-paragraph">A local business does not need an elaborate taxonomy. Six layers cover what most businesses need to know, keep accurate and reuse.</p>
+<h3 id="business-identity" class="component-heading h3">3.1 Business Identity</h3>
+<p class="component-paragraph">The basic facts that tell people — and systems — who the business is.</p>
+<ul class="component-unordered-list"><li>Business name, and any alternate names or common abbreviations</li><li>Locations and service areas</li><li>Contact information: phone, email, address, booking link</li><li>Business category</li><li>Official profiles (website, maps listing, directory and social profiles)</li></ul>
+<p class="component-paragraph">The consistency of this information across external platforms is covered in detail in our guide on <a href="ai-local-entity-consistency-nape-audit-workflow.html" class="component-link">auditing your local business entity consistency</a>. In this article, the focus is on keeping one clear internal record of these facts, so every other workflow starts from the same version.</p>
+<h3 id="products-services" class="component-heading h3">3.2 Products & Services</h3>
+<p class="component-paragraph">What the business actually offers.</p>
+<ul class="component-unordered-list"><li>Services and products</li><li>Service descriptions in plain language</li><li>Availability (which locations, which days, who is eligible)</li><li>Relevant attributes (duration, what is included, what is not)</li></ul>
+<h3 id="customer-knowledge" class="component-heading h3">3.3 Customer Knowledge</h3>
+<p class="component-paragraph">What customers need, ask and misunderstand.</p>
+<ul class="component-unordered-list"><li>Common questions and existing FAQs</li><li>Terminology customers use (which is often different from the terms staff use)</li><li>Customer needs and situations</li><li>Recurring questions or objections</li></ul>
+<p class="component-paragraph">Example: a customer may ask "Can I be seen today if I'm in pain?" rather than using the service's official name. Both phrasings belong in the record.</p>
+<h3 id="business-operations" class="component-heading h3">3.4 Business Operations</h3>
+<p class="component-paragraph">How the business runs, in the ways that affect customers.</p>
+<ul class="component-unordered-list"><li>Opening hours, including holiday or seasonal changes</li><li>Policies (booking, cancellation, payment, returns, privacy)</li><li>Processes (what happens when a customer books, arrives, requests a change)</li><li>Service rules and operational information</li></ul>
+<h3 id="content-assets" class="component-heading h3">3.5 Content Assets</h3>
+<p class="component-paragraph">What the business has already published or produced.</p>
+<ul class="component-unordered-list"><li>Articles and guides</li><li>FAQ pages</li><li>Service pages</li><li>Videos and other published assets</li></ul>
+<p class="component-paragraph">This layer matters because content is where knowledge shows up in public. When a fact changes, this layer tells you where it appears.</p>
+<h3 id="source-governance" class="component-heading h3">3.6 Source & Governance</h3>
+<p class="component-paragraph">This is the layer that turns a collection of information into a system. For each important knowledge item, it records:</p>
+<ul class="component-unordered-list"><li><strong>Source</strong> — where the information came from</li><li><strong>Owner</strong> — who is responsible for keeping it correct</li><li><strong>Last verified</strong> — when someone last confirmed it</li><li><strong>Status</strong> — verified, needs review, outdated, or unverified</li><li><strong>Change history</strong> — what changed, and when</li><li><strong>Related content</strong> — where the information is used</li></ul>
+<p class="component-paragraph">Most businesses have some version of layers 1–5 scattered around. Very few have layer 6. Without it, the business can answer "What information do we have?" but not:</p>
+<ul class="component-unordered-list"><li>Where did this information come from?</li><li>Who owns it?</li><li>When was it last verified?</li><li>Is it still current?</li><li>Where is it being used?</li></ul>
+<p class="component-paragraph">Those questions are exactly the ones that matter once AI starts helping with content and workflows.</p>
+<h2 id="start-with-the-knowledge-you-already-have" class="component-heading h2">4. Start With the Knowledge You Already Have</h2>
+<p class="component-paragraph">A common mistake is to begin with a new tool, folder structure or template, and then try to fill it from scratch. That approach wastes much of the work the business has already done.</p>
+<p class="component-paragraph">Start instead with an inventory. Go through the places your business information already lives:</p>
+<ul class="component-unordered-list"><li>Your existing website</li><li>Service pages</li><li>FAQ pages</li><li>Business profiles on maps, directories and social platforms</li><li>Written policies</li><li>Existing articles and guides</li><li>Internal documents, price sheets, staff notes and templates</li><li>Recurring customer questions (from phone calls, emails, messages and front-desk conversations)</li></ul>
+<p class="component-paragraph">For each source, note what kinds of knowledge it contains, roughly how old it is and who wrote or approved it. You do not need to fix anything yet.</p>
+<p class="component-paragraph">The working principle is:</p>
+<div class="component-callout variant-important callout callout-important">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">Working Principle:</strong>
+              <div class="callout-body"><strong>REUSE → STRUCTURE → VERIFY</strong><br>rather than:<br><strong>CREATE EVERYTHING AGAIN</strong></div>
+            </div>
+          </div>
+<p class="component-paragraph">At Harbor Lane Dental, the inventory shows emergency care described in four places — and they do not fully agree. That discovery is not a failure. It is the point of the inventory.</p>
+<h2 id="organize-knowledge-into-reusable-structures" class="component-heading h2">5. Organize Knowledge Into Reusable Structures</h2>
+<p class="component-paragraph">Once you know what you have, the next step is to pull individual facts out of pages and documents and organize them into knowledge records.</p>
+<p class="component-paragraph">A knowledge record is a single, clearly defined item — one service, one policy, one set of hours — with its details and its governance information kept together. Conceptually, it can look like this:</p>
+<div class="component-code-block">
+            <div class="prompt-header">
+              <span>Conceptual Knowledge Record Structure</span>
+              <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText('Service\n├── Name\n├── Description\n├── Availability\n├── Customer Questions\n├── Source\n├── Owner\n└── Last Verified'); alert('Code copied!');">Copy Code</button>
+            </div>
+            <pre style="margin: 0;"><code>Service
+├── Name
+├── Description
+├── Availability
+├── Customer Questions
+├── Source
+├── Owner
+└── Last Verified</code></pre>
+          </div>
+<p class="component-paragraph">Here is the Harbor Lane Dental record for emergency care:</p>
+<div class="component-code-block">
+            <div class="prompt-header">
+              <span>Harbor Lane Dental — Knowledge Record Example</span>
+              <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText('Knowledge: Emergency Dental Care\n├── Description: Same-day appointments for urgent dental problems,\n│   subject to availability\n├── Availability: During opening hours; after-hours instructions\n│   given by phone message\n├── Customer Questions:\n│   – \"Can I be seen today if I\'m in pain?\"\n│   – \"What should I do if it happens at night?\"\n├── Source: Official Service Page\n├── Owner: Practice Manager\n├── Last Verified: September 2026\n├── Status: Verified\n└── Related Content:\n    – Emergency Care Service Page\n    – Emergency Dental FAQ\n    – Patient Education Article'); alert('Code copied!');">Copy Code</button>
+            </div>
+            <pre style="margin: 0;"><code>Knowledge: Emergency Dental Care
+├── Description: Same-day appointments for urgent dental problems,
+│   subject to availability
+├── Availability: During opening hours; after-hours instructions
+│   given by phone message
+├── Customer Questions:
+│   – &quot;Can I be seen today if I&#039;m in pain?&quot;
+│   – &quot;What should I do if it happens at night?&quot;
+├── Source: Official Service Page
+├── Owner: Practice Manager
+├── Last Verified: September 2026
+├── Status: Verified
+└── Related Content:
+    – Emergency Care Service Page
+    – Emergency Dental FAQ
+    – Patient Education Article</code></pre>
+          </div>
+<p class="component-paragraph">(The details above are fictional and only illustrate the structure.)</p>
+<p class="component-paragraph">The information is no longer tied to one page's wording. It is a clear, checked record that can feed many outputs from the same verified version.</p>
+<p class="component-paragraph">You do not need a database for this. A shared document, a spreadsheet or a set of simple, consistently formatted notes can hold knowledge records. What matters is that the structure is consistent and the governance fields are always filled in.</p>
+<h2 id="verify-knowledge-before-ai-uses-it" class="component-heading h2">6. Verify Knowledge Before AI Uses It</h2>
+<p class="component-paragraph">Structure makes knowledge easier to use. Verification makes it more trustworthy and usable. This step deserves the most care, because once AI works from your knowledge, any error in it can spread across many outputs quickly.</p>
+<h3 id="identify-the-source" class="component-heading h3">6.1 Identify the Source</h3>
+<p class="component-paragraph">For each knowledge item, record where it came from: a service page, a policy document, a staff member, a business profile, an internal price sheet. "We've always said this" is not a source; it is a sign the item needs checking.</p>
+<h3 id="determine-the-appropriate-authority" class="component-heading h3">6.2 Determine the Appropriate Authority</h3>
+<p class="component-paragraph">Not every source carries the same weight. A signed policy document is usually more authoritative than an old blog post. Decide, for each type of knowledge, who or what is the appropriate authority — and write it down.</p>
+<h3 id="check-the-current-version" class="component-heading h3">6.3 Check the Current Version</h3>
+<p class="component-paragraph">Confirm that the information reflects how the business works today. Hours, prices, availability and policies are the items most likely to have drifted.</p>
+<h3 id="record-verification" class="component-heading h3">6.4 Record Verification</h3>
+<p class="component-paragraph">When an item has been checked, record who checked it and when. This is the "Last Verified" field. It does not prove the item is correct; it shows when it was last checked, which helps anyone — including your future self — see whether it may be due for review.</p>
+<h3 id="resolve-conflicts" class="component-heading h3">6.5 Resolve Conflicts</h3>
+<p class="component-paragraph">When two sources disagree, a person with the right authority decides which version is correct, and the record is updated. The outdated versions are then flagged for correction wherever they appear.</p>
+<p class="component-paragraph">AI can help find a conflict, but it should not settle it. AI should not decide which conflicting business information is true simply because one version sounds more convincing.</p>
+<h3 id="mark-unverified-information" class="component-heading h3">6.6 Mark Unverified Information</h3>
+<p class="component-paragraph">Some items cannot be verified right away. That is fine, as long as they are clearly labeled — for example, with a status of "Unverified" or "Needs Review." The risk is not unverified information; the risk is unverified information that looks verified.</p>
+<p class="component-paragraph">Back at Harbor Lane Dental: the old blog post says emergency appointments are available "any time." The service page says "during opening hours, subject to availability." The practice manager, as owner, confirms the service page is correct, records the verification date and marks the blog post for update. That decision is hers, not an AI tool's.</p>
+<h2 id="connect-knowledge-to-existing-content" class="component-heading h2">7. Connect Knowledge to Existing Content</h2>
+<p class="component-paragraph">Once knowledge is structured and verified, it becomes a shared foundation for content:</p>
+<div class="component-code-block">
+            <div class="prompt-header">
+              <span>Knowledge Architecture Fan-Out</span>
+              <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText('Verified Knowledge\n├── Service Page\n├── FAQ\n├── Article\n├── Other Content\n└── Workflow'); alert('Code copied!');">Copy Code</button>
+            </div>
+            <pre style="margin: 0;"><code>Verified Knowledge
+├── Service Page
+├── FAQ
+├── Article
+├── Other Content
+└── Workflow</code></pre>
+          </div>
+<p class="component-paragraph">The Related Content field in each record is what makes this connection visible. It tells you, for any knowledge item, where it is currently used.</p>
+<p class="component-paragraph">One caution: reuse does not mean copy everything everywhere. The same verified fact might appear as one sentence on a service page and a direct answer in an FAQ. Each output should still match its audience, its purpose and its context. The knowledge stays consistent; the expression adapts.</p>
+<p class="component-paragraph">If you want to build content workflows on top of this foundation, LOCATRIA covers them separately — for example, <a href="ai-content-research-workflow-local-businesses.html" class="component-link">researching content</a>, <a href="ai-content-brief-workflow-local-businesses.html" class="component-link">writing content briefs</a>, <a href="ai-faq-research-workflow-local-businesses.html" class="component-link">researching FAQs</a> and <a href="ai-content-repurposing-workflow-local-businesses.html" class="component-link">repurposing content</a>.</p>
+<h2 id="use-ai-as-an-assistance-layer" class="component-heading h2">8. Use AI as an Assistance Layer</h2>
+<p class="component-paragraph">With structured, verified knowledge in place, AI becomes more useful and less risky. It can help with tasks such as:</p>
+<ul class="component-unordered-list"><li>Organizing scattered text into draft knowledge records</li><li>Summarizing long documents into their key facts</li><li>Comparing two versions of the same information</li><li>Classifying items into the six knowledge layers</li><li>Identifying possible gaps — for example, a service with no customer questions recorded</li><li>Identifying possible conflicts — for example, hours that differ between two sources</li><li>Transforming verified information into drafts — an FAQ answer, a content brief or a workflow input</li></ul>
+<p class="component-paragraph">In each case, AI is working with knowledge the business has already checked, or flagging things for a human to review. What it should not be:</p>
+<ul class="component-unordered-list"><li><strong>AI ≠ source of truth.</strong> It can reflect your knowledge, but it does not replace it.</li><li><strong>AI ≠ final approver.</strong> It can suggest; a person decides.</li><li><strong>AI ≠ business owner.</strong> Responsibility for accuracy stays with the business.</li></ul>
+<p class="component-paragraph">This caution is not just a LOCATRIA preference. The NIST AI Risk Management Framework's Generative AI Profile notes that generative AI can produce false information presented with confidence, and emphasizes human oversight, review of accuracy and attention to where information comes from.<sup><a href="#sources" class="component-link">1</a></sup></p>
+<div class="component-callout variant-important callout callout-important">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">The Golden Rule of AI Assistance:</strong>
+              <div class="callout-body">The principle to keep is simple: <strong>AI assists with knowledge. Humans remain responsible for verification and approval.</strong></div>
+            </div>
+          </div>
+<p class="component-paragraph">At Harbor Lane Dental, the practice manager might ask an AI tool to compare the emergency FAQ against the verified record and list any differences. She reviews the two it finds, approving one and rejecting the other. The AI did the comparison; she made the decision.</p>
+<h2 id="maintain-the-knowledge-system" class="component-heading h2">9. Maintain the Knowledge System</h2>
+<p class="component-paragraph">Business knowledge changes. Common examples include:</p>
+<ul class="component-unordered-list"><li>A service is added, changed or discontinued</li><li>Opening hours change, permanently or seasonally</li><li>A policy is updated</li><li>A location opens, moves or closes</li><li>Pricing changes</li><li>An internal process changes</li></ul>
+<p class="component-paragraph">A knowledge system is only useful if it keeps up. The conceptual flow is:</p>
+<div class="component-code-block">
+            <div class="prompt-header">
+              <span>Knowledge Maintenance Pipeline</span>
+              <button type="button" class="copy-btn" onclick="navigator.clipboard.writeText('Knowledge\n   ↓\n Change\n   ↓\n Verify\n   ↓\n Update Knowledge\n   ↓\n Identify Related Content\n   ↓\n Review / Update Content'); alert('Code copied!');">Copy Code</button>
+            </div>
+            <pre style="margin: 0;"><code>Knowledge
+   ↓
+ Change
+   ↓
+ Verify
+   ↓
+ Update Knowledge
+   ↓
+ Identify Related Content
+   ↓
+ Review / Update Content</code></pre>
+          </div>
+<p class="component-paragraph">The key step is "Identify Related Content." Because each record lists where it is used, a change points straight to the pages, FAQs and documents that may need attention. Without that link, updates tend to reach one page and miss three others.</p>
+<p class="component-paragraph">For LOCATRIA, this creates a simple operational lifecycle: knowledge is collected, structured, verified, stored, used, maintained and then re-verified over time.</p>
+<div class="component-workflow-diagram">
+            <div style="font-weight: 800; font-size: var(--text-sm); margin-bottom: 8px;">LOCATRIA Knowledge Operational Lifecycle</div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="badge badge-blue">COLLECT</span> → <span class="badge badge-blue">STRUCTURE</span> → <span class="badge badge-blue">VERIFY</span> → <span class="badge badge-blue">STORE</span> → <span class="badge badge-blue">USE</span> → <span class="badge badge-blue">MAINTAIN</span> → <span class="badge badge-blue">REVERIFY ↺</span>
+            </div>
+          </div>
+<p class="component-paragraph">The full process of auditing and updating published content is covered in our guide on <a href="ai-assisted-local-business-content-update-maintenance-workflow.html" class="component-link">using AI to audit, update and maintain existing content</a>, and in the <a href="ai-content-update-workflow-local-businesses.html" class="component-link">AI content update workflow</a>. The knowledge system is the layer underneath: it records what the business has verified and where it is used, so content maintenance has something reliable to work from.</p>
+<h2 id="from-knowledge-system-to-ai-workflows" class="component-heading h2">10. From Knowledge System to AI Workflows</h2>
+<p class="component-paragraph">Once the knowledge layer exists, workflows no longer need to rediscover the same facts each time. Structured knowledge can serve as a reusable foundation for:</p>
+<ul class="component-unordered-list"><li><strong>Content research</strong> — starting from what the business actually offers and what customers actually ask</li><li><strong>Content briefs</strong> — pulling verified facts directly into the brief</li><li><strong>FAQ workflows</strong> — using the Customer Knowledge layer as a starting point</li><li><strong>Content repurposing</strong> — adapting verified knowledge to new formats without changing the facts</li><li><strong>Content maintenance</strong> — using the Related Content field to find what needs updating</li><li><strong>Other AI-assisted workflows</strong> — for example, drafting responses to routine questions for staff to review, or <a href="ai-prompt-workflow-local-business-content-creation.html" class="component-link">prompting AI tools</a> with verified context instead of guesswork</li></ul>
+<p class="component-paragraph">Each has its own method, covered elsewhere on LOCATRIA. The point here is the relationship between them:</p>
+<div class="component-callout variant-info callout callout-info">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">Foundational Relationship:</strong>
+              <div class="callout-body"><strong>Knowledge is the reusable layer underneath the workflow.</strong></div>
+            </div>
+          </div>
+<h2 id="what-an-ai-ready-knowledge-system-is-not" class="component-heading h2">11. What an AI-Ready Knowledge System Is Not</h2>
+<p class="component-paragraph">Because the phrase includes "AI," it is easy to assume implementation means buying or building something technical. It does not. An AI-ready knowledge system is not:</p>
+<ul class="component-unordered-list"><li><strong>An AI writing tool or a chatbot</strong> — both may use the knowledge; neither is the knowledge.</li><li><strong>A vector database or a RAG implementation</strong> — these are technical methods some AI tools use, outside the scope of this guide.</li><li><strong>A CMS</strong> — a CMS manages what you publish; the knowledge system manages what is true underneath it.</li><li><strong>A random document collection</strong> — files without source, owner or status are storage, not a system.</li><li><strong>A tool subscription</strong> — no subscription creates verified knowledge on its own.</li><li><strong>A guarantee of AI visibility</strong> — see FAQ #8.</li></ul>
+<p class="component-paragraph">The system is about the quality, structure, verification and governance of business knowledge — not the software used to store it.</p>
+<h2 id="local-business-knowledge-inventory-structure-worksheet" class="component-heading h2">12. Local Business Knowledge Inventory & Structure Worksheet</h2>
+<p class="component-paragraph">This worksheet is the practical starting point for everything in this guide. It works in a spreadsheet, a shared document or even on paper.</p>
+<h3 id="worksheet-fields" class="component-heading h3">12.1 The Fields</h3>
+<p class="component-paragraph">In practice, most knowledge records belong to one of the first five areas. The Source & Governance layer is largely represented through the fields that track where the information came from, who owns it, when it was checked, and how it changes.</p>
+<div class="component-table-wrapper">
+            <table class="component-comparison-table">
+              <caption>Local Business Knowledge Inventory Field Specifications</caption>
+              <thead>
+                <tr><th>Group</th><th>Field</th><th>What to Record</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Knowledge</td><td>Knowledge Area</td><td>Which area the item belongs to (Business Identity, Products & Services, Customer Knowledge, Business Operations, Content Assets)</td></tr><tr><td>Knowledge</td><td>Knowledge Item</td><td>The specific item (e.g., "Emergency dental care", "Saturday hours")</td></tr><tr><td>Knowledge</td><td>Current Information</td><td>The information as it currently stands</td></tr><tr><td>Governance</td><td>Source</td><td>Where the information came from</td></tr><tr><td>Governance</td><td>Source Type</td><td>The kind of source (official page, policy document, staff confirmation, business profile, internal document)</td></tr><tr><td>Governance</td><td>Owner</td><td>The person or role responsible for keeping it correct</td></tr><tr><td>Governance</td><td>Last Verified</td><td>When it was last checked (month and year is usually enough)</td></tr><tr><td>Governance</td><td>Status</td><td>Verified / Needs Review / Outdated / Unverified</td></tr><tr><td>Governance</td><td>Change Notes</td><td>What changed and when</td></tr><tr><td>Governance</td><td>Next Review</td><td>When the owner plans to check it again</td></tr><tr><td>Relationship</td><td>Related Content</td><td>Where the information appears</td></tr>
+              </tbody>
+            </table>
+          </div>
+<h3 id="worksheet-filled-example" class="component-heading h3">12.2 A Filled Example (Fictional)</h3>
+<div class="component-table-wrapper">
+            <table class="component-comparison-table">
+              <caption>Filled Example — Harbor Lane Dental Knowledge Inventory</caption>
+              <thead>
+                <tr><th>Knowledge Area</th><th>Knowledge Item</th><th>Current Information</th><th>Source</th><th>Source Type</th><th>Owner</th><th>Last Verified</th><th>Status</th><th>Related Content</th><th>Change Notes</th><th>Next Review</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Products & Services</td><td>Emergency Dental Care</td><td>Same-day appointments for urgent problems during opening hours, subject to availability</td><td>Official Service Page</td><td>Official page</td><td>Practice Manager</td><td>Sept 2026</td><td>Verified</td><td>Service Page; Emergency Dental FAQ; Patient Education Article</td><td>Blog post said "any time" — flagged for correction</td><td>When service or hours change</td></tr><tr><td>Operations</td><td>Weekday Opening Hours</td><td>[Current hours]</td><td>Front-desk schedule</td><td>Internal document</td><td>Practice Manager</td><td>Sept 2026</td><td>Verified</td><td>Website footer; Maps profile; Contact page</td><td>—</td><td>Before each holiday season</td></tr><tr><td>Operations</td><td>Cancellation Policy</td><td>[Current policy wording]</td><td>Signed policy document</td><td>Policy document</td><td>Clinic Owner</td><td>Sept 2026</td><td>Verified</td><td>Booking page; FAQ; Confirmation email template</td><td>—</td><td>When policy is revised</td></tr><tr><td>Customer Knowledge</td><td>"Can I be seen today if I'm in pain?"</td><td>Answer based on Emergency Dental Care record</td><td>Front-desk call notes</td><td>Staff confirmation</td><td>Front Desk Lead</td><td>Sept 2026</td><td>Verified</td><td>Emergency Dental FAQ</td><td>Added from recurring calls</td><td>With Emergency Dental Care record</td></tr><tr><td>Products & Services</td><td>Price range for check-ups</td><td>Stated in an older article</td><td>Old blog article</td><td>Existing content</td><td>Practice Manager</td><td>Unknown</td><td>Needs Review</td><td>Blog article</td><td>Source not confirmed</td><td>Before any reuse</td></tr>
+              </tbody>
+            </table>
+          </div>
+<h3 id="worksheet-blank-structure" class="component-heading h3">12.3 A Blank Structure to Copy</h3>
+<div class="component-table-wrapper">
+            <table class="component-comparison-table">
+              <caption>Blank Knowledge Inventory Structure Template</caption>
+              <thead>
+                <tr><th>Knowledge Area</th><th>Knowledge Item</th><th>Current Information</th><th>Source</th><th>Source Type</th><th>Owner</th><th>Last Verified</th><th>Status</th><th>Related Content</th><th>Change Notes</th><th>Next Review</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>[Area]</td><td>[Item name]</td><td>[Current verified details]</td><td>[Source document/person]</td><td>[Source type]</td><td>[Owner role/person]</td><td>[Month/Year]</td><td>[Verified / Needs Review / ...]</td><td>[Pages/URLs where used]</td><td>[What changed/why]</td><td>[Planned review trigger/date]</td></tr>
+              </tbody>
+            </table>
+          </div>
+<h3 id="worksheet-how-to-start" class="component-heading h3">12.4 How to Start</h3>
+<ul class="component-unordered-list"><li><strong>Begin small.</strong> Pick one knowledge area — often Products & Services or Operations — and fill in 10–20 rows.</li><li><strong>Treat governance fields as essential.</strong> Source, Owner and Status matter as much as the information itself.</li><li><strong>Mark what you are unsure of.</strong> "Needs Review" is a useful status, not an embarrassment.</li><li><strong>Expand once it works.</strong> When the first area feels useful in real work, move to the next.</li></ul>
+<h2 id="common-failure-modes" class="component-heading h2">13. Common Failure Modes</h2>
+<p class="component-paragraph">These patterns most often undermine a knowledge system in its first months:</p>
+<ul class="component-unordered-list"><li><strong>Creating a new system before auditing existing information.</strong> A fresh template feels productive, but it leads to rewriting what already exists.</li><li><strong>Treating every document as equally authoritative.</strong> An old blog post and a signed policy should not carry the same weight. Decide what counts as authoritative for each type of knowledge.</li><li><strong>Letting AI fill unknown information.</strong> An empty field should be marked "Unverified," not filled with a plausible-sounding guess.</li><li><strong>No source or ownership.</strong> Information without a source cannot be checked. Information without an owner will not be maintained.</li><li><strong>No verification status.</strong> If nothing distinguishes checked from unchecked items, everything ends up treated as reliable — including what is not.</li><li><strong>Building a huge knowledge system before proving the workflow.</strong> Trying to capture everything at once usually stalls. A small, well-maintained system is more valuable than a large, abandoned one.</li><li><strong>Confusing knowledge management with content production.</strong> The system's job is to hold reliable knowledge. Producing more content is a separate activity that can draw on it.</li><li><strong>Treating AI-generated summaries as canonical truth.</strong> A summary is a draft until a person has checked it against the source.</li></ul>
+<h2 id="simple-implementation-checklist" class="component-heading h2">14. Simple Implementation Checklist</h2>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">Foundation</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-0" style="cursor: pointer; line-height: 1.4;">Inventory existing business information</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-1" style="cursor: pointer; line-height: 1.4;">Identify major knowledge areas</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-2" style="cursor: pointer; line-height: 1.4;">Identify authoritative sources</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-3"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-3" style="cursor: pointer; line-height: 1.4;">Assign owners</label>
+                </li>
+              
+            </ul>
+          </div>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">Structure</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-0" style="cursor: pointer; line-height: 1.4;">Organize knowledge into reusable categories</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-1" style="cursor: pointer; line-height: 1.4;">Connect knowledge to existing content</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-2" style="cursor: pointer; line-height: 1.4;">Record source and verification status</label>
+                </li>
+              
+            </ul>
+          </div>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">AI Boundaries</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-0" style="cursor: pointer; line-height: 1.4;">Define where AI can assist</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-1" style="cursor: pointer; line-height: 1.4;">Define where human review is required</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-2" style="cursor: pointer; line-height: 1.4;">Do not treat AI output as canonical truth</label>
+                </li>
+              
+            </ul>
+          </div>
+<div class="component-checklist">
+            <div style="font-weight: 800; font-size: var(--text-base); margin-bottom: 12px;">Maintenance</div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-0"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-0" style="cursor: pointer; line-height: 1.4;">Record changes</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-1"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-1" style="cursor: pointer; line-height: 1.4;">Review affected knowledge</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-2"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-2" style="cursor: pointer; line-height: 1.4;">Review related content</label>
+                </li>
+              
+                <li style="display: flex; align-items: flex-start; gap: 10px; font-size: var(--text-sm);">
+                  <input type="checkbox" class="checklist-checkbox" id="chk-3"  style="flex-shrink: 0; width: 16px; height: 16px; margin-top: 3px; cursor: pointer;" />
+                  <label for="chk-3" style="cursor: pointer; line-height: 1.4;">Re-verify important information</label>
+                </li>
+              
+            </ul>
+          </div>
+<h2 id="faq" class="component-heading h2">15. Frequently Asked Questions</h2>
+<div id="faq" class="component-faq-list">
+            <h3 class="component-heading h3" style="margin-bottom: var(--space-4);">Knowledge System FAQ</h3>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">1. What is an AI-ready knowledge system?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">It is LOCATRIA's term for a structured, verified, maintainable body of business knowledge that can be reused by people, content workflows and AI-assisted workflows. It is a practical framework rather than an official standard, informed by established ideas from knowledge management, provenance and responsible AI use.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">2. Do I need special AI software to build one?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">No. A spreadsheet or shared document is enough to start. What makes the system work is consistent structure, clear sources, named owners and recorded verification — not any particular software.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">3. Is an AI-ready knowledge system the same as a knowledge base?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Not quite. "Knowledge base" often refers to a collection of help articles or a software product. An AI-ready knowledge system focuses on the underlying business knowledge and its governance — where each item came from, who owns it, when it was verified and where it is used. It could be stored in a knowledge base, but the two are not the same thing.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">4. Do I need a RAG system?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">For most local businesses starting out, no. RAG is a technical method some AI tools use to retrieve documents before answering. Whether or not a business ever uses such tools, the more basic need — and the focus of this guide — is reliable, organized knowledge.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">5. Can I use existing website content?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">Yes — and you should. Existing pages, FAQs and policies are usually the best starting point. Treat them as sources to extract and verify, not as automatically correct, since older content may contain outdated information.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">6. How often should business knowledge be reviewed?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">There is no single correct schedule. It depends on how often each type of information changes and how much harm an error would cause. A practical approach is to review items whenever a known change happens (new hours, a new service, a revised policy) and to set a planned review date for each item based on its importance. The "Next Review" field in the worksheet exists to make that choice explicit.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">7. Can AI maintain the knowledge system automatically?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">AI can help by comparing versions, flagging possible inconsistencies or drafting updates. But decisions about what is true, which source is authoritative and what becomes public should stay with people.</p>
+              </div>
+            
+              <div class="faq-item" style="margin-bottom: var(--space-4); padding: var(--space-4); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+                <h4 style="font-size: var(--text-base); font-weight: 700; margin: 0 0 8px 0; color: var(--color-text-main);">8. Does an AI-ready knowledge system improve AI visibility?</h4>
+                <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-body); line-height: 1.6; white-space: pre-wrap;">It may help indirectly, but no outcome is guaranteed. Organized, verified knowledge helps a business keep its information and content clear and consistent, which is generally useful for people, search and AI-assisted tools alike. Google's guidance on AI features in Search says there are no additional requirements or special optimizations for appearing in them, and points site owners to established best practices such as creating helpful, reliable, people-first content.² That guidance does not mention the LOCATRIA framework. A knowledge system can support the accuracy and consistency behind helpful content; it does not guarantee rankings, citations or recommendations from any search engine or AI assistant.</p>
+              </div>
+            
+          </div>
+<h2 id="conclusion" class="component-heading h2">16. Conclusion — Build the Knowledge Layer Before Scaling AI</h2>
+<p class="component-paragraph">Most local businesses already hold much of the knowledge they need, spread across websites, profiles, policies, documents and the experience of their people. The work is not to replace it, but to bring it together.</p>
+<ul class="component-unordered-list"><li><strong>Existing information is valuable.</strong> It is the starting point, not something to throw away.</li><li><strong>Structure makes it reusable.</strong> Clear records can support many outputs from one verified version.</li><li><strong>Verification supports accuracy.</strong> Knowing the source and when it was last checked shows what may need review.</li><li><strong>Governance makes it maintainable.</strong> Owners, statuses and change notes keep the system alive as the business changes.</li><li><strong>AI can assist.</strong> It can organize, compare, summarize and draft.</li><li><strong>Humans remain accountable.</strong> Verification, conflict resolution and approval stay with the people responsible for the business.</li></ul>
+<div class="component-callout variant-tip callout callout-tip">
+            <svg class="callout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="callout-content">
+              <strong class="callout-title">Signature Principle:</strong>
+              <div class="callout-body"><strong>STRUCTURE THE KNOWLEDGE BEFORE SCALING THE AI.</strong></div>
+            </div>
+          </div>
+<p class="component-paragraph">The simplest way to begin is with the Local Business Knowledge Inventory & Structure Worksheet in Section 12. Choose one knowledge area, fill in the first few rows, and record the source, owner and status for each. That small, verified foundation is what everything else can build on.</p>
+<div id="sources" class="component-sources-list" style="margin-top: var(--space-8); padding: var(--space-5); background-color: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+            <h4 style="font-size: var(--text-sm); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin: 0 0 12px 0;">References & Regulatory Sources</h4>
+            <ul style="padding-left: 20px; margin: 0; font-size: var(--text-xs); color: var(--color-text-muted); display: flex; flex-direction: column; gap: 6px;">
+              <li>¹ National Institute of Standards and Technology (NIST), Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1), July 2024. <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf" target="_blank" rel="noopener noreferrer" class="component-link">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf</a></li><li>² Google Search Central, "AI Features and Your Website." <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" class="component-link">https://developers.google.com/search/docs/appearance/ai-features</a></li>
+            </ul>
+          </div>
+
+        </main>
+
+        <!-- STICKY TABLE OF CONTENTS SIDEBAR -->
+        <aside class="article-sidebar" style="position: sticky; top: 96px; max-height: calc(100vh - 120px); overflow-y: auto;" aria-label="Table of Contents">
+          <div class="toc-card" style="background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: var(--radius-lg); padding: var(--space-4);">
+            <div class="toc-header" style="font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-gray-700); margin-bottom: var(--space-3);">Table of Contents</div>
+            <nav id="toc-nav" class="toc-nav-list" style="display: flex; flex-direction: column; gap: var(--space-2); font-size: 0.875rem;">
+              <a href="#what-is-an-ai-ready-knowledge-system" class="toc-link">2. What Is a Knowledge System?</a>
+              <a href="#what-belongs-in-a-local-business-knowledge-system" class="toc-link">3. Six Core Knowledge Layers</a>
+              <a href="#business-identity" class="toc-link" style="padding-left: 12px; font-size: 0.8rem;">3.1 Business Identity</a>
+              <a href="#products-services" class="toc-link" style="padding-left: 12px; font-size: 0.8rem;">3.2 Products & Services</a>
+              <a href="#customer-knowledge" class="toc-link" style="padding-left: 12px; font-size: 0.8rem;">3.3 Customer Knowledge</a>
+              <a href="#business-operations" class="toc-link" style="padding-left: 12px; font-size: 0.8rem;">3.4 Business Operations</a>
+              <a href="#content-assets" class="toc-link" style="padding-left: 12px; font-size: 0.8rem;">3.5 Content Assets</a>
+              <a href="#source-governance" class="toc-link" style="padding-left: 12px; font-size: 0.8rem;">3.6 Source & Governance</a>
+              <a href="#start-with-the-knowledge-you-already-have" class="toc-link">4. Start With Existing Knowledge</a>
+              <a href="#organize-knowledge-into-reusable-structures" class="toc-link">5. Reusable Structures</a>
+              <a href="#verify-knowledge-before-ai-uses-it" class="toc-link">6. Verify Before AI Uses It</a>
+              <a href="#connect-knowledge-to-existing-content" class="toc-link">7. Connect Knowledge to Content</a>
+              <a href="#use-ai-as-an-assistance-layer" class="toc-link">8. AI as an Assistance Layer</a>
+              <a href="#maintain-the-knowledge-system" class="toc-link">9. Maintain the System</a>
+              <a href="#from-knowledge-system-to-ai-workflows" class="toc-link">10. From Knowledge to Workflows</a>
+              <a href="#what-an-ai-ready-knowledge-system-is-not" class="toc-link">11. What It Is Not</a>
+              <a href="#local-business-knowledge-inventory-structure-worksheet" class="toc-link">12. Inventory Worksheet</a>
+              <a href="#common-failure-modes" class="toc-link">13. Common Failure Modes</a>
+              <a href="#simple-implementation-checklist" class="toc-link">14. Implementation Checklist</a>
+              <a href="#faq" class="toc-link">15. Frequently Asked Questions</a>
+              <a href="#conclusion" class="toc-link">16. Conclusion</a>
+            </nav>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER CTA -->
+  <section id="newsletter" class="section-block">
+    <div class="container">
+      <div class="card card-cta" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, var(--color-bg-subtle) 0%, var(--color-primary-50) 100%);">
+        <span class="badge badge-blue" style="margin: 0 auto var(--space-3) auto;">Weekly Knowledge Briefing</span>
+        <h2 class="card-cta-title">Stay Ahead with Practical Local Business AI Workflows</h2>
+        <p class="card-cta-desc">
+          Get practical, actionable AI content maintenance and local visibility workflows for local businesses directly in your inbox every Tuesday.
+        </p>
+        <form class="newsletter-form js-newsletter-form" style="max-width: 440px; margin: 0 auto; width: 100%;">
+          <div class="newsletter-input-group" style="margin-bottom: var(--space-2);">
+            <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Locatria Home Footer">
+            <img src="assets/locatria-logo.png" alt="Locatria — AI Visibility & Digital Growth Systems for Local Businesses" class="footer-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+          </a>
+          <p class="footer-brand-desc">
+            Locatria is an educational knowledge platform empowering local businesses, small business owners, and solopreneurs to grow using practical, trustworthy AI tools.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="knowledge.html" class="footer-link">Knowledge Hub</a></li>
+            <li><a href="category.html?type=guides" class="footer-link">Guides & Blueprints</a></li>
+            <li><a href="category.html?type=tutorials" class="footer-link">Step-by-Step Tutorials</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">Resource Library</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Industries</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?industry=real-estate" class="footer-link">Real Estate AI</a></li>
+            <li><a href="category.html?industry=law-firms" class="footer-link">Law Firm Automation</a></li>
+            <li><a href="category.html?industry=dental-clinics" class="footer-link">Dental Practice AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-link-list">
+            <li><a href="category.html?type=prompts" class="footer-link">AI Prompt Packs</a></li>
+            <li><a href="category.html?type=resources" class="footer-link">ROI Savings Calculators</a></li>
+            <li><a href="category.html?type=checklists" class="footer-link">Workflow Checklists</a></li>
+            <li><a href="category.html?type=glossary" class="footer-link">AI Terms Glossary</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col">
+          <h4 class="footer-col-title">Weekly AI Briefing</h4>
+          <p style="font-size: var(--text-xs); color: #cbd5e1; margin-bottom: var(--space-2);">
+            Get actionable AI workflows for local business owners every Tuesday.
+          </p>
+          <form class="newsletter-form js-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your business email" class="newsletter-input" style="background-color: var(--color-bg-body); color: var(--color-text-main); border: 1px solid var(--color-border-strong);" required aria-label="Business Email Address">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Locatria. All rights reserved. Helping Local Businesses Grow with AI.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="#privacy" class="footer-legal-link">Privacy Policy</a></li>
+          <li><a href="#terms" class="footer-legal-link">Terms of Use</a></li>
+          <li><a href="#affiliate" class="footer-legal-link">Affiliate Disclosure</a></li>
+        </ul>
+        <div class="social-links-group" aria-label="Social Media Links">
+          <a href="https://www.linkedin.com/company/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a href="https://x.com/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on X">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@LOCATRIA" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://web.facebook.com/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on TikTok">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-1.41V8.9a6.34 6.34 0 0 0-5.34 2.29A6.33 6.33 0 0 0 5 15.63a6.34 6.34 0 0 0 6.34 6.34c3.5 0 6.34-2.84 6.34-6.34V9.4a8.16 8.16 0 0 0 4.91 1.62V7.57a4.85 4.85 0 0 1-3-.88z"/></svg>
+          </a>
+          <a href="https://www.pinterest.com/locatria" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Locatria on Pinterest">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.592 0 12.017 0z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Single Production System JavaScript Core Bundle -->
+  <script src="js/published-articles-db.js?v=5.5"></script>
+  <script src="js/content-counts-engine.js?v=5.5"></script>
+  <script src="js/component-renderer.js?v=5.5"></script>
+  <script src="js/main.js?v=5.5"></script>
+</body>
+</html>
