@@ -592,7 +592,7 @@
       "type": "codeBlock",
       "filename": "LOCATRIA Knowledge, Measurement, and Prioritization Loop",
       "language": "plaintext",
-      "code": "#36 AI-Ready Knowledge\n        ↓\nContent / Workflows\n        ↓\n#37 Measurement → Evidence\n        ↓\n#38 Prioritization → Decision\n        ↓\nAction → #31 Entity / #35 Maintenance / #36 Knowledge\n        ↓\nVerification\n        ↓\n#37 Measurement ↺"
+      "code": "AI-Ready Knowledge\n        ↓\nContent / Workflows\n        ↓\nMeasurement → Evidence\n        ↓\nPrioritization → Decision\n        ↓\nAction → Entity / Maintenance / Knowledge\n        ↓\nVerification\n        ↓\nMeasurement ↺"
     },
     {
       "type": "heading",
