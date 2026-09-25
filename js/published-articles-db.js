@@ -475,5 +475,19 @@
     "description": "How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.",
     "slugUrl": "ai-ready-local-business-knowledge-system.html"
   }
+  ,
+  {
+  "id": "ai-visibility-measurement-for-local-businesses",
+  "title": "How Local Businesses Can Measure AI Visibility Without Chasing Rankings",
+  "type": "guide",
+  "status": "published",
+  "industry": "general",
+  "difficulty": "intermediate",
+  "readTime": "22 min read",
+  "authorName": "Locatria Editorial Team",
+  "pubDate": "2026-09-08",
+  "description": "A practical measurement framework to observe where and how your local business appears in AI-powered search, evaluate first-party evidence, and improve your knowledge system.",
+  "slugUrl": "ai-visibility-measurement-for-local-businesses.html"
+}
 ];
 })(window);
