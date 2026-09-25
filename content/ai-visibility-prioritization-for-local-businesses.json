@@ -573,7 +573,7 @@
         "<strong>Business information issues</strong> belong with the entity work described in <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">How to Audit Your Local Business Entity Consistency for AI and Local Search</a>.",
         "<strong>Content issues</strong> belong with the maintenance process in <a href=\"ai-assisted-local-business-content-update-maintenance-workflow.html\" class=\"component-link\">How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content</a>.",
         "<strong>Knowledge issues</strong> belong with the verified knowledge records described in <a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</a>.",
-        "<strong>Evidence issues</strong> go back to measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">#37</a>): repeat the observation, add context, or check first-party data.",
+        "<strong>Evidence issues</strong> go back to measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">How Local Businesses Can Measure AI Visibility Without Chasing Rankings</a>): repeat the observation, add context, or check first-party data.",
         "<strong>Competitor-related findings</strong>, once verified as meaningful, can be explored separately through an <a href=\"ai-competitor-content-gap-analysis-workflow.html\" class=\"component-link\">AI Competitor Content Gap Analysis Workflow</a>.",
         "<strong>Wider local search questions</strong> belong in a <a href=\"ai-local-seo-audit-workflow-small-businesses.html\" class=\"component-link\">local SEO audit</a>. Prioritizing AI visibility issues does not replace that audit.",
         "<strong>Unclear causes</strong> stay at INVESTIGATE until more is known.",
@@ -736,7 +736,7 @@
         [
           "Classification",
           "Related Article / System",
-          "[#31 / #35 / #36 / etc.]"
+          "[Related article or system]"
         ],
         [
           "Assessment",
@@ -903,7 +903,7 @@
         [
           "Classification",
           "Related Article / System",
-          "#35 Content maintenance; #36 for the record check"
+          "<a href=\"ai-assisted-local-business-content-update-maintenance-workflow.html\" class=\"component-link\">How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content</a> (Content maintenance); <a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</a> (for the record check)"
         ],
         [
           "Assessment",
@@ -985,7 +985,7 @@
       "type": "unorderedList",
       "items": [
         "<strong>An AI answer omission is an observation, not automatically a defect.</strong> Only after checking the knowledge record, website and profile did the team identify a plausible content issue worth addressing: a thinly explained service page.",
-        "<strong>The source was checked before the symptom was fixed.</strong> Had the knowledge record been wrong, the route would have been #36, not #35.",
+        "<strong>The source was checked before the symptom was fixed.</strong> Had the knowledge record been wrong, the route would have been <a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</a>, not <a href=\"ai-assisted-local-business-content-update-maintenance-workflow.html\" class=\"component-link\">How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content</a>.",
         "<strong>High importance does not automatically mean NOW.</strong> Emergency care matters, but nothing was factually wrong, so NEXT was the proportionate decision.",
         "<strong>The action is justified on its own merits.</strong> A clearer page helps customers whether or not any AI answer changes. The re-observation will show what changed, but it will not prove why."
       ]
@@ -1003,9 +1003,9 @@
         "<strong>2. Confusing visibility with business impact</strong><br><em>Consequence:</em> Effort goes into changes that may not affect customers or outcomes.<br><em>Better:</em> Assess impact separately, and keep outcome evidence apart from visibility evidence.",
         "<strong>3. Treating competitor presence as automatically problematic</strong><br><em>Consequence:</em> Content gets rewritten to \"compete\" when nothing is wrong with your own information.<br><em>Better:</em> Ask whether your own information is correct and complete. If it is, a competitor's presence may call for OBSERVE or NO ACTION.",
         "<strong>4. Creating a single priority score</strong><br><em>Consequence:</em> The reasoning is hidden and uncertainty disappears into a number.<br><em>Better:</em> Record each dimension in words and give a written reason for the decision.",
-        "<strong>5. Ignoring evidence quality</strong><br><em>Consequence:</em> Weak, unrepeated or misclassified evidence drives real changes.<br><em>Better:</em> Verify first, and route weak evidence back to measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">#37</a>).",
+        "<strong>5. Ignoring evidence quality</strong><br><em>Consequence:</em> Weak, unrepeated or misclassified evidence drives real changes.<br><em>Better:</em> Verify first, and route weak evidence back to measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">How Local Businesses Can Measure AI Visibility Without Chasing Rankings</a>).",
         "<strong>6. Ignoring uncertainty</strong><br><em>Consequence:</em> Confident fixes for causes nobody has identified.<br><em>Better:</em> Use INVESTIGATE when the cause is unclear.",
-        "<strong>7. Fixing symptoms instead of source information</strong><br><em>Consequence:</em> Content gets corrected while the underlying record or profile stays wrong, so the error comes back.<br><em>Better:</em> Check dependencies. Fix the knowledge record (<a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">#36</a>) or entity source (<a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">#31</a>) first.",
+        "<strong>7. Fixing symptoms instead of source information</strong><br><em>Consequence:</em> Content gets corrected while the underlying record or profile stays wrong, so the error comes back.<br><em>Better:</em> Check dependencies. Fix the knowledge record (<a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</a>) or entity source (<a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">How to Audit Your Local Business Entity Consistency for AI and Local Search</a>) first.",
         "<strong>8. Prioritizing easy tasks over important ones</strong><br><em>Consequence:</em> Many small fixes, while the issue that matters waits.<br><em>Better:</em> Use effort to order work that is already worth doing, never to decide what is worth doing.",
         "<strong>9. Letting AI choose priorities without human review</strong><br><em>Consequence:</em> Decisions made without knowledge of business context, and with no one accountable.<br><em>Better:</em> Use AI to organize and summarize, and have a named person decide.",
         "<strong>10. Changing too many things at once</strong><br><em>Consequence:</em> Nobody can tell which change, if any, made a difference.<br><em>Better:</em> Make focused changes, record them, and re-observe before the next round."
@@ -1125,11 +1125,11 @@
         },
         {
           "question": "3. What if an AI system gives an incorrect answer about my business?",
-          "answer": "Record it with evidence and repeat the observation. Then check your own sources: your knowledge records, website and business profiles. If one of them is wrong, correct the source first (see #31 and #36). If all of them are correct, the available evidence does not establish why the answer was wrong, so continue observing and keep your information accurate and consistent."
+          "answer": "Record it with evidence and repeat the observation. Then check your own sources: your knowledge records, website and business profiles. If one of them is wrong, correct the source first (see <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">How to Audit Your Local Business Entity Consistency for AI and Local Search</a> and <a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</a>). If all of them are correct, the available evidence does not establish why the answer was wrong, so continue observing and keep your information accurate and consistent."
         },
         {
           "question": "4. Should competitor mentions always be treated as a problem?",
-          "answer": "No. A competitor appearing in an answer does not, on its own, show that your business is losing visibility or that anything is wrong. Check whether your own information is correct and complete. If a pattern suggests a genuine content gap, it can be explored separately (#28)."
+          "answer": "No. A competitor appearing in an answer does not, on its own, show that your business is losing visibility or that anything is wrong. Check whether your own information is correct and complete. If a pattern suggests a genuine content gap, it can be explored separately (<a href=\"ai-competitor-content-gap-analysis-workflow.html\" class=\"component-link\">AI Competitor Content Gap Analysis Workflow</a>)."
         },
         {
           "question": "5. Can AI decide which visibility problems I should fix first?",
@@ -1141,7 +1141,7 @@
         },
         {
           "question": "7. How does this relate to AI visibility measurement?",
-          "answer": "Measurement (#37) collects and interprets the evidence. Prioritization decides what to do with it. After action, the loop returns to measurement to verify what changed."
+          "answer": "Measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">How Local Businesses Can Measure AI Visibility Without Chasing Rankings</a>) collects and interprets the evidence. Prioritization decides what to do with it. After action, the loop returns to measurement to verify what changed."
         }
       ]
     },
