@@ -1,0 +1,1196 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ai-visibility-prioritization-for-local-businesses",
+  "type": "guide",
+  "status": "published",
+  "metadata": {
+    "title": "How Local Businesses Can Prioritize AI Visibility Issues Using Evidence",
+    "subtitle": "A structured decision framework to prioritize AI visibility findings using evidence quality, business impact, urgency, and uncertainty — without falling into priority scoring traps.",
+    "category": "Guides & Blueprints",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readingTimeMinutes": 24,
+    "lastUpdated": "2026-09-08",
+    "audience": [
+      "Local Business Owners",
+      "SMB Operators",
+      "Marketing Managers",
+      "Local SEO Practitioners"
+    ],
+    "primaryTopic": "AI Visibility Prioritization"
+  },
+  "author": {
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
+    "role": "Local Content Systems Specialist"
+  },
+  "seo": {
+    "title": "How Local Businesses Can Prioritize AI Visibility Issues Using Evidence | Locatria",
+    "description": "A structured decision framework to prioritize AI visibility findings using evidence quality, business impact, urgency, and uncertainty — without falling into priority scoring traps.",
+    "canonical": "https://www.locatria.com/ai-visibility-prioritization-for-local-businesses.html",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "AI Visibility Prioritization & Decision Framework",
+    "industryFocus": "general"
+  },
+  "relationships": {
+    "parentArticle": "ai-visibility-measurement-for-local-businesses",
+    "relatedArticles": [
+      "ai-visibility-measurement-for-local-businesses",
+      "ai-ready-local-business-knowledge-system",
+      "ai-assisted-local-business-content-update-maintenance-workflow",
+      "ai-local-entity-consistency-nape-audit-workflow",
+      "ai-competitor-content-gap-analysis-workflow",
+      "ai-local-seo-audit-workflow-small-businesses",
+      "what-is-ai-visibility-practical-guide-local-businesses"
+    ]
+  },
+  "featured": false,
+  "content": [
+    {
+      "type": "paragraph",
+      "content": "Once a local business starts measuring its AI visibility, observations pile up quickly. An AI answer leaves out a service. A competitor appears where you expected your business. Generative AI impressions dip for a page. Your hours show up slightly wrong in one answer and correct in another."
+    },
+    {
+      "type": "paragraph",
+      "content": "The natural reaction is to treat each of these as a task. That approach burns time, spreads attention thin and can make things worse: pages get rewritten on the strength of one answer, several changes land at once, and nobody can tell afterwards what actually helped."
+    },
+    {
+      "type": "paragraph",
+      "content": "Measurement tells you what you saw. It does not tell you what to do first. Those are separate steps, and this guide covers the second."
+    },
+    {
+      "type": "paragraph",
+      "content": "In <a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">How Local Businesses Can Measure AI Visibility Without Chasing Rankings</a>, we set out how to collect reliable evidence. This guide starts where that one ends, with a different question:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "The Prioritization Question",
+      "content": "Given reliable evidence, what deserves attention first, why, and where should the issue go?"
+    },
+    {
+      "type": "paragraph",
+      "content": "The thesis behind it:"
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "Core Thesis",
+      "content": "The goal of AI visibility prioritization is not to turn every observation into an optimization task. It is to use documented evidence, business context, uncertainty, and available resources to decide which issues deserve attention first — and then verify whether the action addressed the underlying problem."
+    },
+    {
+      "type": "paragraph",
+      "content": "And the LOCATRIA working principle that runs through it:"
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "LOCATRIA Working Principle",
+      "content": "<strong>Not every observation deserves an action. Prioritize from evidence, context, and consequence.</strong>"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "what-is-evidence-based-ai-visibility-prioritization",
+      "title": "2. What Is Evidence-Based AI Visibility Prioritization?"
+    },
+    {
+      "type": "paragraph",
+      "content": "At LOCATRIA, we use the term to mean:"
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Definition: Evidence-Based AI Visibility Prioritization",
+      "content": "A repeatable way of deciding which AI visibility issues deserve attention, in what order, and through which system, based on the quality of the evidence, the business consequence, and what is practical to do."
+    },
+    {
+      "type": "paragraph",
+      "content": "It sits between measurement and action. If you are new to the basic concept, <a href=\"what-is-ai-visibility-practical-guide-local-businesses.html\" class=\"component-link\">What Is AI Visibility?</a> explains it. Here we assume you already have observations and need to decide what to do with them."
+    },
+    {
+      "type": "paragraph",
+      "content": "The core distinction of this guide is:"
+    },
+    {
+      "type": "callout",
+      "variant": "important",
+      "title": "The Core Operational Distinction",
+      "content": "<strong>Something changed ≠ Something is wrong ≠ Something should be fixed now</strong>"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Something changed:</strong> an answer, a mention or a number is different from before.",
+        "<strong>Something is wrong:</strong> after checking, you confirm there is a real problem, such as incorrect information or a missing service that you do offer.",
+        "<strong>Something should be fixed now:</strong> the problem matters enough, and the evidence is strong enough, to act on before other things."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Many changes are not problems. Many problems are not urgent. Prioritization keeps these apart."
+    },
+    {
+      "type": "paragraph",
+      "content": "LOCATRIA uses a simple working framework for this:"
+    },
+    {
+      "type": "workflowDiagram",
+      "title": "LOCATRIA Prioritization Framework",
+      "nodes": [
+        "IDENTIFY",
+        "VERIFY",
+        "CLASSIFY",
+        "ASSESS",
+        "PRIORITIZE",
+        "ACT",
+        "VERIFY",
+        "REPEAT ↺"
+      ]
+    },
+    {
+      "type": "table",
+      "caption": "Prioritization Lifecycle Stages & Inquiries",
+      "headers": [
+        "Stage",
+        "Question It Answers"
+      ],
+      "rows": [
+        [
+          "Identify",
+          "What was actually observed?"
+        ],
+        [
+          "Verify",
+          "Is the observation reliable enough to act on?"
+        ],
+        [
+          "Classify",
+          "What type of issue is it?"
+        ],
+        [
+          "Assess",
+          "What are the impact, urgency, effort, dependencies and uncertainty?"
+        ],
+        [
+          "Prioritize",
+          "What deserves attention, and when?"
+        ],
+        [
+          "Act",
+          "Which system, workflow or owner should handle it?"
+        ],
+        [
+          "Verify",
+          "Did the action address the underlying issue?"
+        ],
+        [
+          "Repeat",
+          "Back to measurement: what do we observe now?"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This is LOCATRIA's working framework, not an industry standard. The rest of this guide walks through each stage."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "from-observation-to-decision",
+      "title": "3. From Observation to Decision"
+    },
+    {
+      "type": "paragraph",
+      "content": "Prioritization goes wrong most often when steps are skipped. An observation jumps straight to an action, and the reasoning in between is never written down."
+    },
+    {
+      "type": "paragraph",
+      "content": "A fuller path asks a series of questions in turn. Something changed, but is the evidence reliable? If it is, is there actually an issue? If there is, what type of issue is it, what is its business impact, how urgent is it, what effort is involved and what dependencies exist? Only then comes the question of what should happen next."
+    },
+    {
+      "type": "paragraph",
+      "content": "Each step answers a different question, so each needs its own layer of reasoning:"
+    },
+    {
+      "type": "table",
+      "caption": "Reasoning Layers with Harbor Lane Dental Illustration",
+      "headers": [
+        "Layer",
+        "What It Is",
+        "Harbor Lane Dental Example (Fictional)"
+      ],
+      "rows": [
+        [
+          "Observation",
+          "What was actually seen",
+          "An AI-powered search answer described the clinic but did not mention its emergency dental service."
+        ],
+        [
+          "Evidence",
+          "The recorded material behind it",
+          "Question wording, date, environment, screenshot, answer text, sources shown, repeat observation"
+        ],
+        [
+          "Interpretation",
+          "What it might mean",
+          "The observation does not establish why the service was omitted. One possibility is that the service is not sufficiently represented in the sources available to the system."
+        ],
+        [
+          "Decision",
+          "What the business chooses to do",
+          "Verify the clinic's canonical service information before changing any content."
+        ],
+        [
+          "Action",
+          "What actually changes",
+          "For example, clarifying the emergency service on the website, if checks show that is needed"
+        ],
+        [
+          "Verification",
+          "Whether the action worked",
+          "Re-running the same observation later, the same way"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Harbor Lane Dental is a fictional clinic, used across LOCATRIA's articles. All examples are invented and do not represent real Google or AI performance."
+    },
+    {
+      "type": "paragraph",
+      "content": "Keeping these layers apart is what makes a decision explainable later. If someone asks \"Why did we change that page?\", the answer should trace back through decision, interpretation and evidence to an observation. \"It seemed like a good idea at the time\" is not an answer."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "verify-the-evidence-before-acting",
+      "title": "4. Verify the Evidence Before Acting"
+    },
+    {
+      "type": "paragraph",
+      "content": "<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">How Local Businesses Can Measure AI Visibility Without Chasing Rankings</a> explains how to build the measurement and observation process. This guide starts once that evidence exists, and asks a narrower question: is it strong enough to justify a decision?"
+    },
+    {
+      "type": "paragraph",
+      "content": "Think of this step as an evidence sufficiency gate. A weak observation should not drive a large change, however alarming it looks. Before an issue moves on to classification, ask:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Was it repeated?</strong> One answer, on one day, in one environment, is a single data point.",
+        "<strong>Is the source reliable?</strong> Where did the observation come from, and how was it recorded?",
+        "<strong>Is it reproducible?</strong> Does the same question, in the same context, give a similar result?",
+        "<strong>Is there conflicting evidence?</strong> Do other observations or data point the other way?",
+        "<strong>Is it first-party or indirect?</strong> Data from the platform itself is stronger for the surface it covers than an estimate or a single screenshot."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "know-what-first-party-evidence-covers",
+      "title": "Know What Your First-Party Evidence Covers"
+    },
+    {
+      "type": "paragraph",
+      "content": "For Google's own generative search features, Search Console provides first-party evidence where the report is available. It is only one layer of a broader AI visibility measurement system."
+    },
+    {
+      "type": "paragraph",
+      "content": "The relevant source is Search Console's generative AI performance report. It shows impressions, which Google describes as \"how many times links to your site were shown to a user in a generative AI feature on Google Search,\" for AI Overviews and AI Mode. The data can be viewed by pages, countries, devices and dates.<sup><a href=\"#sources\" class=\"component-link\">1</a></sup> Google notes that the newest data can be preliminary and may change, that data from Search Labs experiments is not included, and that the report may not be available for every property.<sup><a href=\"#sources\" class=\"component-link\">1</a></sup>"
+    },
+    {
+      "type": "paragraph",
+      "content": "This is valuable evidence, but it is bounded. It is not a complete AI visibility measurement system. It does not measure visibility in ChatGPT, Gemini, Claude or other AI systems outside Google Search. It is not a visibility score, and it does not explain why a link was or was not shown. When deciding, treat it as strong evidence for the surface it covers and as silent about everything else."
+    },
+    {
+      "type": "paragraph",
+      "content": "Platform data can also contain issues of its own. Google keeps a public record of known data anomalies in Search Console, and that record has included an entry affecting this report.<sup><a href=\"#sources\" class=\"component-link\">2</a></sup> Before treating a sudden change as meaningful, check whether a known data issue could explain it."
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "measurement-itself-can-be-wrong",
+      "title": "Measurement Itself Can Be Wrong"
+    },
+    {
+      "type": "paragraph",
+      "content": "The same caution applies to any measurement, including your own and any tool's. A September 2026 public AI visibility study later corrected figures after identifying a business-name matching problem: generic words from a listing title, such as the city or the trade, had been counted as mentions of the business. The corrected results differed substantially from the originals.<sup><a href=\"#sources\" class=\"component-link\">3</a></sup>"
+    },
+    {
+      "type": "paragraph",
+      "content": "The lesson is not about any one study or the wider industry. It is methodological: measurement can contain classification or methodology errors, so evidence should be validated before action. If your evidence comes from a method you cannot inspect, treat it with more caution, not less."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "classify-the-issue",
+      "title": "5. Classify the Issue"
+    },
+    {
+      "type": "paragraph",
+      "content": "Once an observation holds up, the next question is what kind of issue it is. Classification matters because it decides where the issue should go next. The same symptom, such as \"the answer got our service wrong,\" can have very different causes."
+    },
+    {
+      "type": "table",
+      "caption": "Issue Categories & Problem Domains",
+      "headers": [
+        "Category",
+        "What It Covers",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "A. Business information / entity",
+          "Core facts about the business across sources",
+          "Wrong address, outdated hours, incorrect business name, incorrect service information on profiles or directories"
+        ],
+        [
+          "B. Content",
+          "What the business has published",
+          "Outdated page, missing explanation of a service, pages that contradict each other"
+        ],
+        [
+          "C. Knowledge",
+          "The business's own internal, verified information",
+          "Missing knowledge, poorly structured information, conflicting internal records, unclear ownership"
+        ],
+        [
+          "D. AI observation",
+          "How AI answers present the business, where no underlying defect is yet confirmed",
+          "Inconsistent interpretation, a missing service, an unexpected citation, a changing description"
+        ],
+        [
+          "E. Measurement / evidence",
+          "The quality of the evidence itself",
+          "Too few observations, unclear source, unreliable method"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Two notes:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Category D is often a starting point, not a conclusion.</strong> An AI answer that omits a service is an observation. Checking may show it traces back to a content gap (B), a knowledge gap (C), an entity issue (A), or nothing you can identify.",
+        "<strong>Category E points back to measurement.</strong> If the problem is the evidence, the right move is to improve the evidence, not to change the business's information."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "assess-business-impact",
+      "title": "6. Assess Business Impact"
+    },
+    {
+      "type": "paragraph",
+      "content": "Not every verified issue matters equally. Business impact asks: if this issue is real, what could it affect?"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Is it related to an important service, one that matters to customers or to the business?",
+        "Does it affect business identity, such as the name, location or category?",
+        "Does it affect customer-facing information people act on, such as hours, contact details or availability?",
+        "Could it materially affect a business process, such as bookings, calls or referrals?"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Two cautions:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Visibility is not the same as business impact.</strong> A change in impressions or mentions may or may not affect enquiries. Keep outcome evidence, such as calls, forms and bookings, separate, and do not assume a link the evidence does not establish.",
+        "<strong>Avoid invented numbers.</strong> You rarely have reliable evidence to put a monetary value on an AI visibility issue. A plain description (\"affects the service we most want new patients to find\") is more honest than a made-up figure."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "consider-urgency-effort-dependencies-and-uncertainty",
+      "title": "7. Consider Urgency, Effort, Dependencies and Uncertainty"
+    },
+    {
+      "type": "paragraph",
+      "content": "Categories (§5) tell you what kind of issue you are dealing with. Dimensions tell you how to decide what to do about it. Impact is one dimension; five others complete the picture. Together they form the six prioritization dimensions."
+    },
+    {
+      "type": "table",
+      "caption": "The Six Prioritization Dimensions",
+      "headers": [
+        "Dimension",
+        "Key Questions"
+      ],
+      "rows": [
+        [
+          "1. Evidence strength",
+          "Repeated? Reliable source? Reproducible? Conflicting evidence? First-party or indirect?"
+        ],
+        [
+          "2. Business impact",
+          "Important service? Identity? Customer-facing information? Business process?"
+        ],
+        [
+          "3. Urgency",
+          "Is the information time-sensitive? Has something recently changed? Could delay create a meaningful consequence?"
+        ],
+        [
+          "4. Effort",
+          "Is the fix simple? Does it need several sources corrected? Content restructuring? Wider knowledge-system work?"
+        ],
+        [
+          "5. Dependency",
+          "Does another correction need to happen first? Is the source information itself correct? Does the content depend on another knowledge record?"
+        ],
+        [
+          "6. Uncertainty",
+          "Do we understand the cause? Is the observation repeatable? Are sources conflicting? Is the impact unclear?"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "A few points deserve emphasis:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Easy does not mean important.</strong> Effort helps determine how an already-worthwhile action fits into the work sequence, and whether it is feasible now. It should not, by itself, determine whether the issue matters.",
+        "<strong>Dependencies set the order.</strong> If the website says one thing and your own records say another, fix the record first. Otherwise you may correct content to the wrong version.",
+        "<strong>High uncertainty usually means INVESTIGATE, not FIX NOW.</strong> When you do not understand the cause, the next step is to learn more."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "why-not-a-single-score",
+      "title": "Why Not a Single Score?"
+    },
+    {
+      "type": "paragraph",
+      "content": "It is tempting to turn these dimensions into a number, such as \"Priority Score: 87/100,\" or a formula like Impact × Urgency ÷ Effort. This guide deliberately does not."
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "The dimensions are different kinds of judgment. A multiplication does not make them comparable.",
+        "A score hides the reasoning. Two issues can score the same for completely different reasons.",
+        "It creates false precision. The number looks objective while resting on estimates, often very uncertain ones.",
+        "It hides uncertainty, the dimension most likely to change the right decision."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "A short written note for each dimension (\"strong evidence, repeated twice; high impact, main service; low effort; depends on the knowledge record\") is more useful. It keeps the reasoning visible and open to challenge."
+    },
+    {
+      "type": "paragraph",
+      "content": "The same logic appears in established risk-management practice. The NIST AI Risk Management Framework, for example, says that the treatment of documented risks should be \"prioritized based on impact, likelihood, and available resources or methods\" (MANAGE 1.2), and that measurement methods should come with associated measures of uncertainty.<sup><a href=\"#sources\" class=\"component-link\">4</a></sup> NIST's framework is about managing risks in AI systems. It does not define AI visibility prioritization and is not the source of LOCATRIA's framework, but its reasoning is a useful precedent."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "decide-what-happens-now-next-later-or-needs-investigation",
+      "title": "8. Decide What Happens Now, Next, Later or Needs Investigation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Assessment leads to a decision. LOCATRIA uses six practical decision states. They are not rankings. They describe what happens next and why."
+    },
+    {
+      "type": "table",
+      "caption": "The Six Decision States",
+      "headers": [
+        "Decision State",
+        "Meaning",
+        "Typical Situation"
+      ],
+      "rows": [
+        [
+          "NOW",
+          "Evidence is strong enough, and the consequence justifies near-term action",
+          "Verified wrong hours on a customer-facing source"
+        ],
+        [
+          "NEXT",
+          "Worth addressing, but not first",
+          "A verified content gap on a secondary service"
+        ],
+        [
+          "INVESTIGATE",
+          "Important uncertainty remains",
+          "A service omission with an unclear cause"
+        ],
+        [
+          "OBSERVE",
+          "Keep measuring before changing anything",
+          "A single unusual answer with no other supporting evidence"
+        ],
+        [
+          "LATER",
+          "A valid issue, but lower current priority",
+          "Minor wording inconsistency on an old page"
+        ],
+        [
+          "NO ACTION",
+          "The evidence does not justify intervention",
+          "A competitor mention that reflects nothing wrong with your own information"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "Every decision should come with a reason in plain language. \"NOW, because the evidence is repeated and first-party, the information is customer-facing and the fix is simple\" can be explained, reviewed and revisited later."
+    },
+    {
+      "type": "paragraph",
+      "content": "Decision states can also change. An OBSERVE item can become NOW after a repeat observation confirms it. An INVESTIGATE item can become NO ACTION once the cause turns out to be a known data issue."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "route-the-issue-to-the-right-system",
+      "title": "9. Route the Issue to the Right System"
+    },
+    {
+      "type": "paragraph",
+      "content": "Deciding when is half the job. The other half is deciding where: which system, workflow or owner should handle the issue."
+    },
+    {
+      "type": "paragraph",
+      "content": "LOCATRIA's routing model connects the decision layer to the rest of the knowledge architecture:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>Business information issues</strong> belong with the entity work described in <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">How to Audit Your Local Business Entity Consistency for AI and Local Search</a>.",
+        "<strong>Content issues</strong> belong with the maintenance process in <a href=\"ai-assisted-local-business-content-update-maintenance-workflow.html\" class=\"component-link\">How Local Businesses Can Use AI to Audit, Update, and Maintain Existing Content</a>.",
+        "<strong>Knowledge issues</strong> belong with the verified knowledge records described in <a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">How Local Businesses Can Turn Their Existing Content Into an AI-Ready Knowledge System</a>.",
+        "<strong>Evidence issues</strong> go back to measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">#37</a>): repeat the observation, add context, or check first-party data.",
+        "<strong>Competitor-related findings</strong>, once verified as meaningful, can be explored separately through an <a href=\"ai-competitor-content-gap-analysis-workflow.html\" class=\"component-link\">AI Competitor Content Gap Analysis Workflow</a>.",
+        "<strong>Wider local search questions</strong> belong in a <a href=\"ai-local-seo-audit-workflow-small-businesses.html\" class=\"component-link\">local SEO audit</a>. Prioritizing AI visibility issues does not replace that audit.",
+        "<strong>Unclear causes</strong> stay at INVESTIGATE until more is known.",
+        "<strong>Low-consequence, isolated observations</strong> go to OBSERVE or NO ACTION."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "This is a conceptual map, not a rule that every issue must go somewhere. Many issues end, correctly, at OBSERVE or NO ACTION."
+    },
+    {
+      "type": "paragraph",
+      "content": "The whole loop looks like this:"
+    },
+    {
+      "type": "codeBlock",
+      "filename": "LOCATRIA Knowledge, Measurement, and Prioritization Loop",
+      "language": "plaintext",
+      "code": "#36 AI-Ready Knowledge\n        ↓\nContent / Workflows\n        ↓\n#37 Measurement → Evidence\n        ↓\n#38 Prioritization → Decision\n        ↓\nAction → #31 Entity / #35 Maintenance / #36 Knowledge\n        ↓\nVerification\n        ↓\n#37 Measurement ↺"
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "use-ai-as-a-decision-support-layer",
+      "title": "10. Use AI as a Decision-Support Layer"
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can help with prioritization, as long as its role is clear."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can help:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "organize observations into a consistent format",
+        "compare records across dates or sources",
+        "group similar issues together",
+        "identify contradictions between sources",
+        "summarize the evidence for an issue",
+        "point out possible dependencies",
+        "draft possible actions for review",
+        "prepare a first version of the prioritization worksheet"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "AI should not be:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "the one who sets priorities on its own",
+        "the business decision-maker",
+        "the source of truth about your business",
+        "the authority on business consequences",
+        "the final approver of any change"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The reason is practical. AI has no inside knowledge of your business: which service matters most this season, what changed last week, or what a wrong answer would cost. It can also present weak evidence in confident language. The broader principle is consistent with risk-management approaches that emphasize documented evidence, uncertainty and accountable decision-making."
+    },
+    {
+      "type": "paragraph",
+      "content": "AI can help organize the evidence. The business still owns the decision."
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "ai-visibility-issue-prioritization-worksheet",
+      "title": "11. AI Visibility Issue Prioritization Worksheet"
+    },
+    {
+      "type": "paragraph",
+      "content": "This worksheet records one issue at a time. It is designed to answer \"Why are we taking this action?\", not \"What score did this issue receive?\""
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "blank-prioritization-worksheet",
+      "title": "11.1 Blank Worksheet"
+    },
+    {
+      "type": "table",
+      "caption": "Prioritization Worksheet Template",
+      "headers": [
+        "Section",
+        "Field",
+        "Entry"
+      ],
+      "rows": [
+        [
+          "Identification",
+          "Issue ID",
+          "[ID]"
+        ],
+        [
+          "Identification",
+          "Date",
+          "[YYYY-MM-DD]"
+        ],
+        [
+          "Identification",
+          "Source / Environment",
+          "[Surface / tool / device]"
+        ],
+        [
+          "Identification",
+          "Query / Observation Context",
+          "[Query & location]"
+        ],
+        [
+          "Identification",
+          "Original Observation",
+          "[What was seen]"
+        ],
+        [
+          "Evidence",
+          "What was observed?",
+          "[Details]"
+        ],
+        [
+          "Evidence",
+          "Evidence URL / Screenshot",
+          "[File / Link]"
+        ],
+        [
+          "Evidence",
+          "Evidence Type",
+          "First-party / observation / estimate"
+        ],
+        [
+          "Evidence",
+          "Evidence Strength",
+          "Described in words"
+        ],
+        [
+          "Evidence",
+          "Repeated / Confirmed?",
+          "Yes / No"
+        ],
+        [
+          "Evidence",
+          "Conflicting Evidence?",
+          "Yes / No / Notes"
+        ],
+        [
+          "Classification",
+          "Issue Category",
+          "A–E"
+        ],
+        [
+          "Classification",
+          "Affected Entity / Content / Knowledge / Workflow",
+          "[Asset name]"
+        ],
+        [
+          "Classification",
+          "Related Article / System",
+          "[#31 / #35 / #36 / etc.]"
+        ],
+        [
+          "Assessment",
+          "Business Impact",
+          "[Described in words]"
+        ],
+        [
+          "Assessment",
+          "Urgency",
+          "[Described in words]"
+        ],
+        [
+          "Assessment",
+          "Effort",
+          "[Described in words]"
+        ],
+        [
+          "Assessment",
+          "Dependency",
+          "[Prerequisites]"
+        ],
+        [
+          "Assessment",
+          "Uncertainty",
+          "[Limits of understanding]"
+        ],
+        [
+          "Decision",
+          "Decision State",
+          "NOW / NEXT / INVESTIGATE / OBSERVE / LATER / NO ACTION"
+        ],
+        [
+          "Decision",
+          "Reason for Decision",
+          "[Written rationale]"
+        ],
+        [
+          "Decision",
+          "Owner",
+          "[Designated role]"
+        ],
+        [
+          "Decision",
+          "Next Action",
+          "[Concrete task]"
+        ],
+        [
+          "Verification",
+          "Change Implemented?",
+          "Date / Pending"
+        ],
+        [
+          "Verification",
+          "Re-observation Date",
+          "Scheduled date"
+        ],
+        [
+          "Verification",
+          "Result",
+          "[Outcome notes]"
+        ],
+        [
+          "Verification",
+          "Remaining Issue",
+          "[Follow-up notes]"
+        ],
+        [
+          "Verification",
+          "Next Review",
+          "[Future trigger]"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h3",
+      "id": "worked-example-harbor-lane-dental",
+      "title": "11.2 Worked Example: Harbor Lane Dental (Fictional)"
+    },
+    {
+      "type": "paragraph",
+      "content": "Harbor Lane Dental is fictional. All details are invented for illustration and do not represent real Google or AI performance."
+    },
+    {
+      "type": "callout",
+      "variant": "info",
+      "title": "Scenario",
+      "content": "An AI-powered search answer consistently describes the clinic but omits its emergency dental service.<br><br>It would be easy to conclude \"the clinic has an AI visibility problem.\" The worksheet slows that down."
+    },
+    {
+      "type": "table",
+      "caption": "Filled Example — Harbor Lane Dental Prioritization Worksheet (HLD-007)",
+      "headers": [
+        "Section",
+        "Field",
+        "Entry"
+      ],
+      "rows": [
+        [
+          "Identification",
+          "Issue ID",
+          "HLD-007"
+        ],
+        [
+          "Identification",
+          "Date",
+          "[Observation date]"
+        ],
+        [
+          "Identification",
+          "Source / Environment",
+          "AI Mode in Google Search; signed out; mobile"
+        ],
+        [
+          "Identification",
+          "Query / Observation Context",
+          "\"Where can I get same-day emergency dental care in [area]?\", run from within the service area"
+        ],
+        [
+          "Identification",
+          "Original Observation",
+          "Clinic described correctly; emergency service not mentioned"
+        ],
+        [
+          "Evidence",
+          "What was observed?",
+          "Clinic named with correct location; answer lists other clinics for emergency care"
+        ],
+        [
+          "Evidence",
+          "Evidence URL / Screenshot",
+          "Screenshots from the baseline and the repeat saved to the observation folder"
+        ],
+        [
+          "Evidence",
+          "Evidence Type",
+          "Direct observation (not first-party data)"
+        ],
+        [
+          "Evidence",
+          "Evidence Strength",
+          "Moderate: repeated once with the same result; one environment only"
+        ],
+        [
+          "Evidence",
+          "Repeated / Confirmed?",
+          "Yes, the repeat observation a week later matched"
+        ],
+        [
+          "Evidence",
+          "Conflicting Evidence?",
+          "None found yet"
+        ],
+        [
+          "Classification",
+          "Issue Category",
+          "Starts as D (AI observation). After checks: plausibly B (content)"
+        ],
+        [
+          "Classification",
+          "Affected Entity / Content / Knowledge / Workflow",
+          "The clinic's verified knowledge record lists emergency care as current. The service page mentions it only in one line near the bottom, and the business profile lists it correctly."
+        ],
+        [
+          "Classification",
+          "Related Article / System",
+          "#35 Content maintenance; #36 for the record check"
+        ],
+        [
+          "Assessment",
+          "Business Impact",
+          "High if real: emergency care is a key service and time-sensitive for patients"
+        ],
+        [
+          "Assessment",
+          "Urgency",
+          "Moderate: no recent change to the service; the information is accurate but under-explained"
+        ],
+        [
+          "Assessment",
+          "Effort",
+          "Low to moderate: clarify one page; no source corrections needed"
+        ],
+        [
+          "Assessment",
+          "Dependency",
+          "Knowledge record confirmed first, so it is safe to proceed"
+        ],
+        [
+          "Assessment",
+          "Uncertainty",
+          "The observation does not establish why the service was omitted. A clearer page is worth having for customers either way."
+        ],
+        [
+          "Decision",
+          "Decision State",
+          "NEXT"
+        ],
+        [
+          "Decision",
+          "Reason for Decision",
+          "Repeated observation; the service matters; the source information is correct; the page is weak for human readers regardless of AI. Not NOW, because nothing is incorrect and no customer-facing fact is wrong."
+        ],
+        [
+          "Decision",
+          "Owner",
+          "Practice Manager"
+        ],
+        [
+          "Decision",
+          "Next Action",
+          "Clarify the emergency service on the service page using the verified knowledge record"
+        ],
+        [
+          "Verification",
+          "Change Implemented?",
+          "[Date]"
+        ],
+        [
+          "Verification",
+          "Re-observation Date",
+          "[A few weeks after the change]"
+        ],
+        [
+          "Verification",
+          "Result",
+          "[To be recorded]"
+        ],
+        [
+          "Verification",
+          "Remaining Issue",
+          "[To be recorded]"
+        ],
+        [
+          "Verification",
+          "Next Review",
+          "Re-observe using the same question and environment"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "The example shows three things:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>An AI answer omission is an observation, not automatically a defect.</strong> Only after checking the knowledge record, website and profile did the team identify a plausible content issue worth addressing: a thinly explained service page.",
+        "<strong>The source was checked before the symptom was fixed.</strong> Had the knowledge record been wrong, the route would have been #36, not #35.",
+        "<strong>High importance does not automatically mean NOW.</strong> Emergency care matters, but nothing was factually wrong, so NEXT was the proportionate decision.",
+        "<strong>The action is justified on its own merits.</strong> A clearer page helps customers whether or not any AI answer changes. The re-observation will show what changed, but it will not prove why."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "common-failure-modes",
+      "title": "12. Common Failure Modes"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "<strong>1. Acting on one AI answer</strong><br><em>Consequence:</em> Large changes rest on a single data point that may not repeat.<br><em>Better:</em> Repeat the observation in the same context before acting, unless the information is clearly wrong at the source.",
+        "<strong>2. Confusing visibility with business impact</strong><br><em>Consequence:</em> Effort goes into changes that may not affect customers or outcomes.<br><em>Better:</em> Assess impact separately, and keep outcome evidence apart from visibility evidence.",
+        "<strong>3. Treating competitor presence as automatically problematic</strong><br><em>Consequence:</em> Content gets rewritten to \"compete\" when nothing is wrong with your own information.<br><em>Better:</em> Ask whether your own information is correct and complete. If it is, a competitor's presence may call for OBSERVE or NO ACTION.",
+        "<strong>4. Creating a single priority score</strong><br><em>Consequence:</em> The reasoning is hidden and uncertainty disappears into a number.<br><em>Better:</em> Record each dimension in words and give a written reason for the decision.",
+        "<strong>5. Ignoring evidence quality</strong><br><em>Consequence:</em> Weak, unrepeated or misclassified evidence drives real changes.<br><em>Better:</em> Verify first, and route weak evidence back to measurement (<a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">#37</a>).",
+        "<strong>6. Ignoring uncertainty</strong><br><em>Consequence:</em> Confident fixes for causes nobody has identified.<br><em>Better:</em> Use INVESTIGATE when the cause is unclear.",
+        "<strong>7. Fixing symptoms instead of source information</strong><br><em>Consequence:</em> Content gets corrected while the underlying record or profile stays wrong, so the error comes back.<br><em>Better:</em> Check dependencies. Fix the knowledge record (<a href=\"ai-ready-local-business-knowledge-system.html\" class=\"component-link\">#36</a>) or entity source (<a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">#31</a>) first.",
+        "<strong>8. Prioritizing easy tasks over important ones</strong><br><em>Consequence:</em> Many small fixes, while the issue that matters waits.<br><em>Better:</em> Use effort to order work that is already worth doing, never to decide what is worth doing.",
+        "<strong>9. Letting AI choose priorities without human review</strong><br><em>Consequence:</em> Decisions made without knowledge of business context, and with no one accountable.<br><em>Better:</em> Use AI to organize and summarize, and have a named person decide.",
+        "<strong>10. Changing too many things at once</strong><br><em>Consequence:</em> Nobody can tell which change, if any, made a difference.<br><em>Better:</em> Make focused changes, record them, and re-observe before the next round."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "simple-prioritization-checklist",
+      "title": "13. Simple Prioritization Checklist"
+    },
+    {
+      "type": "checklist",
+      "title": "Identify",
+      "items": [
+        {
+          "label": "Record what was actually observed, with context",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Verify",
+      "items": [
+        {
+          "label": "Check whether the observation repeats",
+          "checked": false
+        },
+        {
+          "label": "Check for conflicting evidence and known data issues",
+          "checked": false
+        },
+        {
+          "label": "Note whether the evidence is first-party, observation or estimate",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Classify",
+      "items": [
+        {
+          "label": "Assign a category (A–E)",
+          "checked": false
+        },
+        {
+          "label": "Check the underlying knowledge record and sources",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Assess",
+      "items": [
+        {
+          "label": "Describe impact, urgency, effort, dependency and uncertainty in words",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Prioritize",
+      "items": [
+        {
+          "label": "Choose a decision state: NOW, NEXT, INVESTIGATE, OBSERVE, LATER or NO ACTION",
+          "checked": false
+        },
+        {
+          "label": "Write the reason for the decision",
+          "checked": false
+        },
+        {
+          "label": "Assign an owner",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "checklist",
+      "title": "Act and Verify",
+      "items": [
+        {
+          "label": "Route the issue to the right system",
+          "checked": false
+        },
+        {
+          "label": "Make focused changes only",
+          "checked": false
+        },
+        {
+          "label": "Re-observe the same way and record the result",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "faq",
+      "title": "14. Frequently Asked Questions"
+    },
+    {
+      "type": "faq",
+      "title": "Prioritization FAQ",
+      "items": [
+        {
+          "question": "1. Should every AI visibility issue be fixed?",
+          "answer": "No. Many observations reflect normal variation, measurement limits or nothing wrong with your information. Verify the evidence, classify the issue and assess its consequence first. OBSERVE and NO ACTION are legitimate outcomes."
+        },
+        {
+          "question": "2. Should I create an AI visibility score to prioritize issues?",
+          "answer": "A single score is possible, but it is not required and can create false precision. It combines different kinds of judgment into one number while hiding the reasoning and uncertainty behind the decision. Recording the dimensions in words with a written reason keeps the decision easier to explain and review."
+        },
+        {
+          "question": "3. What if an AI system gives an incorrect answer about my business?",
+          "answer": "Record it with evidence and repeat the observation. Then check your own sources: your knowledge records, website and business profiles. If one of them is wrong, correct the source first (see #31 and #36). If all of them are correct, the available evidence does not establish why the answer was wrong, so continue observing and keep your information accurate and consistent."
+        },
+        {
+          "question": "4. Should competitor mentions always be treated as a problem?",
+          "answer": "No. A competitor appearing in an answer does not, on its own, show that your business is losing visibility or that anything is wrong. Check whether your own information is correct and complete. If a pattern suggests a genuine content gap, it can be explored separately (#28)."
+        },
+        {
+          "question": "5. Can AI decide which visibility problems I should fix first?",
+          "answer": "AI can help organize observations, group issues, spot contradictions and draft options. The decision should stay with a person who understands the business context and is accountable for the outcome."
+        },
+        {
+          "question": "6. What should I do when I do not have enough evidence?",
+          "answer": "Choose OBSERVE or INVESTIGATE. Repeat the observation, add context, check first-party data where it exists, and look for known data issues. Improving the evidence is a valid action in itself."
+        },
+        {
+          "question": "7. How does this relate to AI visibility measurement?",
+          "answer": "Measurement (#37) collects and interprets the evidence. Prioritization decides what to do with it. After action, the loop returns to measurement to verify what changed."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": "h2",
+      "id": "conclusion",
+      "title": "15. Conclusion — Measure → Prioritize → Improve → Verify"
+    },
+    {
+      "type": "paragraph",
+      "content": "Measurement produces observations. Prioritization turns them into decisions you can explain. Without it, every observation becomes a task, and the important issues compete with the trivial ones."
+    },
+    {
+      "type": "paragraph",
+      "content": "The approach in this guide is simple:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+        "Verify the evidence before trusting it.",
+        "Classify the issue so it goes to the right place.",
+        "Assess impact, urgency, effort, dependencies and uncertainty, in words rather than a score.",
+        "Decide a clear state (NOW, NEXT, INVESTIGATE, OBSERVE, LATER or NO ACTION) with a written reason.",
+        "Act through the right system, and fix sources before symptoms.",
+        "Verify by observing again the same way.",
+        "Use AI to organize the evidence, and keep the decision with the business."
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Core Principle",
+      "content": "<strong>Not every observation deserves an action. Prioritize from evidence, context, and consequence.</strong>"
+    },
+    {
+      "type": "paragraph",
+      "content": "<strong>Measure → Prioritize → Improve → Verify → Repeat</strong>"
+    },
+    {
+      "type": "sources",
+      "id": "sources",
+      "title": "References & Authoritative Sources",
+      "items": [
+        "¹ Google Search Console Help, \"Generative AI performance report (Search).\" <a href=\"https://support.google.com/webmasters/answer/16984139\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://support.google.com/webmasters/answer/16984139</a>",
+        "² Google Search Console Help, \"Data anomalies in Search Console.\" <a href=\"https://support.google.com/webmasters/answer/6211453\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://support.google.com/webmasters/answer/6211453</a>",
+        "³ SEMPITE, \"AI Visibility Index\" dataset card (correction notice for figures published before 17 September 2026). <a href=\"https://huggingface.co/datasets/sempite/ai-visibility-index\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://huggingface.co/datasets/sempite/ai-visibility-index</a>",
+        "⁴ National Institute of Standards and Technology (NIST), Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, January 2023. <a href=\"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf</a>"
+      ]
+    }
+  ]
+}

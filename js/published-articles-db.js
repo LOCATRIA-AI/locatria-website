@@ -489,5 +489,19 @@
   "description": "A practical measurement framework to observe where and how your local business appears in AI-powered search, evaluate first-party evidence, and improve your knowledge system.",
   "slugUrl": "ai-visibility-measurement-for-local-businesses.html"
 }
+  ,
+  {
+  "id": "ai-visibility-prioritization-for-local-businesses",
+  "title": "How Local Businesses Can Prioritize AI Visibility Issues Using Evidence",
+  "type": "guide",
+  "status": "published",
+  "industry": "general",
+  "difficulty": "intermediate",
+  "readTime": "24 min read",
+  "authorName": "Locatria Editorial Team",
+  "pubDate": "2026-09-08",
+  "description": "A structured decision framework to prioritize AI visibility findings using evidence quality, business impact, urgency, and uncertainty — without falling into priority scoring traps.",
+  "slugUrl": "ai-visibility-prioritization-for-local-businesses.html"
+}
 ];
 })(window);
