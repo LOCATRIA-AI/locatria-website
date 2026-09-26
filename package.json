@@ -12,6 +12,7 @@
     "test:affiliates": "node validation/test-affiliate-operations.js",
     "test:production": "node validation/test-resource-production.js",
     "test:measurement": "node validation/test-resource-measurement.js",
+    "test:review-loop": "node validation/test-resource-review-loop.js",
     "test:content": "node content-integrity-test.js"
   },
   "keywords": [

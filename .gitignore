@@ -42,6 +42,7 @@ docs/*
 !docs/affiliate-operations.md
 !docs/resource-content-production.md
 !docs/resource-measurement.md
+!docs/resource-review-improvement-loop.md
 !docs/templates/
 !docs/templates/*
 !docs/workflows/
