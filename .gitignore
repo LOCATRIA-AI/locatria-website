@@ -34,6 +34,7 @@ docs/*
 !docs/resource-system-schema.md
 !docs/resource-data-layer.md
 !docs/resource-pilot-a3-1.md
+!docs/resource-pilot-a3-2-capability-map.md
 !docs/workflows/
 !docs/workflows/*
 
