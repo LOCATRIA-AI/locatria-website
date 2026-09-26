@@ -1,0 +1,28 @@
+{
+  "recommendation_id": "REC-CAN-002",
+  "tool_id": "TOOL-CAN-002",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "LISTED",
+  "context": {
+    "target_user": "Local service marketers and SEO practitioners",
+    "target_vertical": "All Local Verticals",
+    "problem": "Discovering live consumer search questions and intent hierarchies.",
+    "workflow": "WF-AICONTENT-001 (Stage 1 — Research)",
+    "use_case": "Visual radial question mapping from Google PAA data."
+  },
+  "rationale": "In Benchmark Test 02, AlsoAsked mapped a 3-tier hierarchy of 38 live Google PAA questions. Listed as a specialized search intent research resource; does not provide keyword volume metrics.",
+  "evidence_refs": [
+    "EVD-CAN-002-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-002",
+  "when_to_consider": [
+    "For deep People-Also-Ask visual query clustering during early topic discovery."
+  ],
+  "when_not_to_use": [
+    "When search volume or competitive ranking metrics are required."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

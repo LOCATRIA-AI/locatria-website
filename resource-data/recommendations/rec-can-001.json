@@ -1,0 +1,31 @@
+{
+  "recommendation_id": "REC-CAN-001",
+  "tool_id": "TOOL-CAN-001",
+  "resource_id": "RES-PROFILE-NOTEBOOKLM",
+  "status": "CONDITIONALLY_RECOMMENDED",
+  "context": {
+    "target_user": "Solo practitioners, healthcare clinic owners, and small business operators",
+    "target_vertical": "Healthcare & Professional Services",
+    "problem": "Synthesizing disorganized clinic protocols, pricing schedules, and practice notes into structured research summaries without factual drift.",
+    "workflow": "WF-AICONTENT-001 (Stage 1 — Research)",
+    "use_case": "Private source-grounded knowledge querying and citation mapping from internal business documentation."
+  },
+  "rationale": "In Benchmark Test 01, NotebookLM grounded 100% of factual synthesis in uploaded clinic sources with paragraph citation chips, correctly identifying omitted modalities without hallucinating. Recommending is conditioned upon practitioner curation of source notes.",
+  "evidence_refs": [
+    "EVD-CAN-001-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-001",
+  "when_to_consider": [
+    "When synthesizing messy internal clinic notes, PDFs, and treatment guidelines into grounded brief material.",
+    "When zero-hallucination factual containment is strictly required.",
+    "When looking for a free, secure source-grounding repository prior to drafting."
+  ],
+  "when_not_to_use": [
+    "When expecting live web crawling or automated competitive search intelligence.",
+    "When source documents have not been reviewed for factual accuracy and completeness."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

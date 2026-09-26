@@ -1,5 +1,76 @@
 {
   "entity_type": "AFFILIATE_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "affiliate_id": "AFF-CAN-001",
+      "tool_id": "TOOL-CAN-001",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-001.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-002",
+      "tool_id": "TOOL-CAN-002",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-002.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-003",
+      "tool_id": "TOOL-CAN-003",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-003.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-004",
+      "tool_id": "TOOL-CAN-004",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-004.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-005",
+      "tool_id": "TOOL-CAN-005",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-005.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-006",
+      "tool_id": "TOOL-CAN-006",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-006.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-007",
+      "tool_id": "TOOL-CAN-007",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-007.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-008",
+      "tool_id": "TOOL-CAN-008",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-008.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-010",
+      "tool_id": "TOOL-CAN-010",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-010.json"
+    },
+    {
+      "affiliate_id": "AFF-CAN-011",
+      "tool_id": "TOOL-CAN-011",
+      "status": "NONE",
+      "affiliate_available": false,
+      "path": "resource-data/affiliates/aff-can-011.json"
+    }
+  ]
 }

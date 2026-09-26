@@ -1,0 +1,12 @@
+{
+  "entity_type": "relationship",
+  "schema_version": "1.0",
+  "relationship_id": "REL-RES-005",
+  "source_type": "resource",
+  "source_id": "RES-PROFILE-CLAUDE",
+  "relationship_type": "USES",
+  "target_type": "tool",
+  "target_id": "TOOL-CAN-006",
+  "context": "Tool profile evaluates Claude 3.5 Sonnet.",
+  "created_at": "2026-09-26"
+}

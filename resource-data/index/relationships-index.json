@@ -1,5 +1,96 @@
 {
   "entity_type": "RELATIONSHIP_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "relationship_id": "REL-RES-001",
+      "source_type": "resource",
+      "source_id": "RES-WORKFLOW-001",
+      "relationship_type": "USES",
+      "target_type": "tool",
+      "target_id": "TOOL-CAN-001",
+      "path": "resource-data/relationships/rel-res-001.json"
+    },
+    {
+      "relationship_id": "REL-RES-002",
+      "source_type": "resource",
+      "source_id": "RES-WORKFLOW-001",
+      "relationship_type": "USES",
+      "target_type": "tool",
+      "target_id": "TOOL-CAN-006",
+      "path": "resource-data/relationships/rel-res-002.json"
+    },
+    {
+      "relationship_id": "REL-RES-003",
+      "source_type": "resource",
+      "source_id": "RES-WORKFLOW-001",
+      "relationship_type": "REFERENCES",
+      "target_type": "article",
+      "target_id": "ai-content-research-workflow-local-businesses",
+      "path": "resource-data/relationships/rel-res-003.json"
+    },
+    {
+      "relationship_id": "REL-RES-004",
+      "source_type": "resource",
+      "source_id": "RES-WORKFLOW-001",
+      "relationship_type": "REFERENCES",
+      "target_type": "learning_path",
+      "target_id": "lp02",
+      "path": "resource-data/relationships/rel-res-004.json"
+    },
+    {
+      "relationship_id": "REL-RES-005",
+      "source_type": "resource",
+      "source_id": "RES-PROFILE-CLAUDE",
+      "relationship_type": "USES",
+      "target_type": "tool",
+      "target_id": "TOOL-CAN-006",
+      "path": "resource-data/relationships/rel-res-005.json"
+    },
+    {
+      "relationship_id": "REL-RES-006",
+      "source_type": "resource",
+      "source_id": "RES-PROFILE-CLAUDE",
+      "relationship_type": "REFERENCES",
+      "target_type": "article",
+      "target_id": "ai-prompt-workflow-local-business-content-creation",
+      "path": "resource-data/relationships/rel-res-006.json"
+    },
+    {
+      "relationship_id": "REL-RES-007",
+      "source_type": "resource",
+      "source_id": "RES-PROFILE-NOTEBOOKLM",
+      "relationship_type": "USES",
+      "target_type": "tool",
+      "target_id": "TOOL-CAN-001",
+      "path": "resource-data/relationships/rel-res-007.json"
+    },
+    {
+      "relationship_id": "REL-RES-008",
+      "source_type": "resource",
+      "source_id": "RES-PROFILE-NOTEBOOKLM",
+      "relationship_type": "REFERENCES",
+      "target_type": "article",
+      "target_id": "ai-content-research-workflow-local-businesses",
+      "path": "resource-data/relationships/rel-res-008.json"
+    },
+    {
+      "relationship_id": "REL-TOOL-REC-001",
+      "source_type": "tool",
+      "source_id": "TOOL-CAN-006",
+      "relationship_type": "HAS_RECOMMENDATION",
+      "target_type": "recommendation",
+      "target_id": "REC-CAN-006",
+      "path": "resource-data/relationships/rel-tool-rec-001.json"
+    },
+    {
+      "relationship_id": "REL-TOOL-REC-002",
+      "source_type": "tool",
+      "source_id": "TOOL-CAN-001",
+      "relationship_type": "HAS_RECOMMENDATION",
+      "target_type": "recommendation",
+      "target_id": "REC-CAN-001",
+      "path": "resource-data/relationships/rel-tool-rec-002.json"
+    }
+  ]
 }

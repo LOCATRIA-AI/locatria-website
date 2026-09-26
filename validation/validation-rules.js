@@ -457,7 +457,11 @@ function getKnownLearningPaths() {
       const code = require('fs').readFileSync(filePath, 'utf8');
       const win = {};
       new Function('window', code)(win);
-      cachedLearningPaths = Object.keys(win.LocatriaLearningPaths || {});
+      if (Array.isArray(win.LocatriaLearningPaths)) {
+        cachedLearningPaths = win.LocatriaLearningPaths.flatMap(lp => [lp.id, lp.slug]).filter(Boolean);
+      } else {
+        cachedLearningPaths = Object.keys(win.LocatriaLearningPaths || {});
+      }
       return cachedLearningPaths;
     }
   } catch (e) {

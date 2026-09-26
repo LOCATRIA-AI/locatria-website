@@ -1,0 +1,42 @@
+{
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "resource_id": "RES-PROFILE-NOTEBOOKLM",
+  "resource_title": "NotebookLM: Source-Grounded Clinical Knowledge Synthesis",
+  "resource_type": "TOOL_PROFILE",
+  "description": "Empirical profile and operational guidelines for using Google NotebookLM as a private, citation-backed knowledge repository for local business content research.",
+  "problem": {
+    "problem_statement": "Synthesizing disorganized clinic protocols, pricing schedules, and practice notes into structured briefs with zero factual drift.",
+    "target_users": [
+      "Clinic Owners",
+      "Practitioners",
+      "Content Strategists"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services"
+    ]
+  },
+  "workflow": {
+    "workflow_name": "WF-AICONTENT-001",
+    "workflow_stage": "Stage 1 — Research",
+    "required_capabilities": [
+      "CAP-RES-04"
+    ]
+  },
+  "related_tools": [
+    "TOOL-CAN-001"
+  ],
+  "related_articles": [
+    "ai-content-research-workflow-local-businesses"
+  ],
+  "related_learning_paths": [
+    "lp02"
+  ],
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "review_status": "PUBLISHED",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "change_notes": "Initial tool profile published following Sprint A.3.4 empirical benchmark."
+  }
+}

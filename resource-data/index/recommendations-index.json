@@ -1,5 +1,66 @@
 {
   "entity_type": "RECOMMENDATION_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "recommendation_id": "REC-CAN-001",
+      "tool_id": "TOOL-CAN-001",
+      "status": "CONDITIONALLY_RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-001.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-002",
+      "tool_id": "TOOL-CAN-002",
+      "status": "LISTED",
+      "path": "resource-data/recommendations/rec-can-002.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-003",
+      "tool_id": "TOOL-CAN-003",
+      "status": "LISTED",
+      "path": "resource-data/recommendations/rec-can-003.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-004",
+      "tool_id": "TOOL-CAN-004",
+      "status": "CONDITIONALLY_RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-004.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-005",
+      "tool_id": "TOOL-CAN-005",
+      "status": "CONDITIONALLY_RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-005.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-006",
+      "tool_id": "TOOL-CAN-006",
+      "status": "RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-006.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-007",
+      "tool_id": "TOOL-CAN-007",
+      "status": "CONDITIONALLY_RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-007.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-008",
+      "tool_id": "TOOL-CAN-008",
+      "status": "LISTED",
+      "path": "resource-data/recommendations/rec-can-008.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-010",
+      "tool_id": "TOOL-CAN-010",
+      "status": "CONDITIONALLY_RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-010.json"
+    },
+    {
+      "recommendation_id": "REC-CAN-011",
+      "tool_id": "TOOL-CAN-011",
+      "status": "CONDITIONALLY_RECOMMENDED",
+      "path": "resource-data/recommendations/rec-can-011.json"
+    }
+  ]
 }

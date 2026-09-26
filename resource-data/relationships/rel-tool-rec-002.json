@@ -1,0 +1,12 @@
+{
+  "entity_type": "relationship",
+  "schema_version": "1.0",
+  "relationship_id": "REL-TOOL-REC-002",
+  "source_type": "tool",
+  "source_id": "TOOL-CAN-001",
+  "relationship_type": "HAS_RECOMMENDATION",
+  "target_type": "recommendation",
+  "target_id": "REC-CAN-001",
+  "context": "Tool has canonical recommendation REC-CAN-001.",
+  "created_at": "2026-09-26"
+}

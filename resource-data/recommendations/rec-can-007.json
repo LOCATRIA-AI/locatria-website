@@ -1,0 +1,29 @@
+{
+  "recommendation_id": "REC-CAN-007",
+  "tool_id": "TOOL-CAN-007",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "CONDITIONALLY_RECOMMENDED",
+  "context": {
+    "target_user": "Local business marketers and solo operators",
+    "target_vertical": "Local Services & SMBs",
+    "problem": "Transforming verified canonical guides into multi-channel marketing assets (Google Business Profile, FAQ schema, newsletters) efficiently.",
+    "workflow": "WF-AICONTENT-001 (Stage 4 — Repurpose)",
+    "use_case": "Syntactic format conversion of approved articles into structured JSON-LD and short social updates."
+  },
+  "rationale": "In Benchmark Test 07, GPT-4o accurately transformed canonical clinical text into a 112-word GBP post, valid JSON-LD FAQ schema, and a patient email newsletter with 100% factual fidelity. Conditioned on technical schema syntax validation and human check against promotional tone drift.",
+  "evidence_refs": [
+    "EVD-CAN-007-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-007",
+  "when_to_consider": [
+    "When rapidly reformatting canonical articles into diverse channel-specific formats.",
+    "When generating structured JSON-LD FAQPage schemas from existing text."
+  ],
+  "when_not_to_use": [
+    "When drafting primary factual claims without grounded source material."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

@@ -1,0 +1,28 @@
+{
+  "recommendation_id": "REC-CAN-008",
+  "tool_id": "TOOL-CAN-008",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "LISTED",
+  "context": {
+    "target_user": "Editorial teams and content managers",
+    "target_vertical": "All Local Verticals",
+    "problem": "Enforcing organizational style guides, brand terminology, and phone/address formatting.",
+    "workflow": "WF-AICONTENT-001 (Stage 3 — Create)",
+    "use_case": "Automated in-line brand linting across browser and document editors."
+  },
+  "rationale": "In Benchmark Test 08, Grammarly Business successfully flagged brand abbreviations and phone formatting defects based on configured custom rules. Listed as an entity consistency resource; blind to unconfigured real-world facts.",
+  "evidence_refs": [
+    "EVD-CAN-008-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-008",
+  "when_to_consider": [
+    "For brand style guide and terminology linting across team writers."
+  ],
+  "when_not_to_use": [
+    "As an autonomous fact-checker or medical truth verifier."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

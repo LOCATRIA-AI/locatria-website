@@ -1,0 +1,32 @@
+{
+  "entity_type": "recommendation",
+  "schema_version": "1.0",
+  "recommendation_id": "REC-CAN-006",
+  "tool_id": "TOOL-CAN-006",
+  "resource_id": "RES-PROFILE-CLAUDE",
+  "status": "RECOMMENDED",
+  "context": {
+    "target_user": "Local service business operators, clinic directors, and medical/legal content writers",
+    "target_vertical": "Local Healthcare & Professional Services",
+    "problem": "Generating context-bound, multi-section educational guides that adhere strictly to verified clinical facts and negative boundaries without fabricating unoffered services.",
+    "workflow": "WF-AICONTENT-001 (Stage 3 — Create)",
+    "use_case": "Drafting comprehensive local educational articles (800-900 words) from structured briefs and clinician fact sheets."
+  },
+  "rationale": "In Benchmark Test 06, Claude 3.5 Sonnet produced an 835-word educational guide strictly adhering to all 6 required brief sections with zero hallucination of excluded shockwave/stem-cell modalities. It demonstrated industry-leading prompt constraint compliance and natural, professional healthcare tone.",
+  "evidence_refs": [
+    "EVD-CAN-006-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-006",
+  "when_to_consider": [
+    "When drafting long-form educational articles where strict adherence to negative medical constraints is required.",
+    "When working from detailed, pre-structured content briefs and clinician fact sheets.",
+    "When calibrating tone for professional, empathetic local service communication."
+  ],
+  "when_not_to_use": [
+    "When expecting autonomous web research or live competitor keyword volume analysis.",
+    "When unguided by explicit source facts, as open-ended prompts increase factual drift.",
+    "For automatic site auditing or CMS publishing without human editorial review."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26"
+}

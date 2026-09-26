@@ -1,0 +1,42 @@
+{
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "resource_id": "RES-PROFILE-CLAUDE",
+  "resource_title": "Claude 3.5 Sonnet: Context-Bound Drafting for Local Service Businesses",
+  "resource_type": "TOOL_PROFILE",
+  "description": "Empirical profile and operational usage guidelines for deploying Claude 3.5 Sonnet to draft grounded, multi-section clinical and professional guides.",
+  "problem": {
+    "problem_statement": "Drafting educational local business guides that adhere strictly to factual briefs without hallucinating unverified services.",
+    "target_users": [
+      "Local Business Owners",
+      "Content Writers",
+      "Agency Strategists"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services"
+    ]
+  },
+  "workflow": {
+    "workflow_name": "WF-AICONTENT-001",
+    "workflow_stage": "Stage 3 — Create",
+    "required_capabilities": [
+      "CAP-CRT-01"
+    ]
+  },
+  "related_tools": [
+    "TOOL-CAN-006"
+  ],
+  "related_articles": [
+    "ai-prompt-workflow-local-business-content-creation"
+  ],
+  "related_learning_paths": [
+    "lp02"
+  ],
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "review_status": "PUBLISHED",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "change_notes": "Initial tool profile published following Sprint A.3.4 empirical benchmark."
+  }
+}

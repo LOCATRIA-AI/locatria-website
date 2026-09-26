@@ -1,5 +1,34 @@
 {
   "entity_type": "RESOURCE_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "resource_id": "RES-GUIDE-001",
+      "resource_title": "Evidence-Based AI Content Workflow Guide for Local Businesses",
+      "resource_type": "RESOURCE_GUIDE",
+      "lifecycle_status": "ACTIVE",
+      "path": "resource-data/resources/res-guide-001.json"
+    },
+    {
+      "resource_id": "RES-PROFILE-CLAUDE",
+      "resource_title": "Claude 3.5 Sonnet: Context-Bound Drafting for Local Service Businesses",
+      "resource_type": "TOOL_PROFILE",
+      "lifecycle_status": "ACTIVE",
+      "path": "resource-data/resources/res-profile-claude.json"
+    },
+    {
+      "resource_id": "RES-PROFILE-NOTEBOOKLM",
+      "resource_title": "NotebookLM: Source-Grounded Clinical Knowledge Synthesis",
+      "resource_type": "TOOL_PROFILE",
+      "lifecycle_status": "ACTIVE",
+      "path": "resource-data/resources/res-profile-notebooklm.json"
+    },
+    {
+      "resource_id": "RES-WORKFLOW-001",
+      "resource_title": "The Verified Local Business AI Content Production Workflow",
+      "resource_type": "WORKFLOW_RESOURCE",
+      "lifecycle_status": "ACTIVE",
+      "path": "resource-data/resources/res-workflow-001.json"
+    }
+  ]
 }

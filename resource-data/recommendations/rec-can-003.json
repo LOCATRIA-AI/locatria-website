@@ -1,0 +1,28 @@
+{
+  "recommendation_id": "REC-CAN-003",
+  "tool_id": "TOOL-CAN-003",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "LISTED",
+  "context": {
+    "target_user": "Content strategists and agency copywriters",
+    "target_vertical": "All Local Verticals",
+    "problem": "Analyzing top SERP competitor heading structures and topic frequency.",
+    "workflow": "WF-AICONTENT-001 (Stage 1 — Research)",
+    "use_case": "Competitive heading gap breakdown and outline compilation."
+  },
+  "rationale": "In Benchmark Test 03, Frase extracted 14 dominant SERP competitor headings and identified content gaps. Listed as a competitive research resource; requires vigilance against mechanical keyword stuffing.",
+  "evidence_refs": [
+    "EVD-CAN-003-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-003",
+  "when_to_consider": [
+    "For rapid competitive SERP outline and heading analysis."
+  ],
+  "when_not_to_use": [
+    "When local practitioner clinical voice is prioritized over generic search keyword optimization."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

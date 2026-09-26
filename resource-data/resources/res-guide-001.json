@@ -1,0 +1,44 @@
+{
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "resource_id": "RES-GUIDE-001",
+  "resource_title": "Evidence-Based AI Content Workflow Guide for Local Businesses",
+  "resource_type": "RESOURCE_GUIDE",
+  "description": "A comprehensive practitioner guide detailing how local service providers maintain zero-hallucination factual containment across research, drafting, and repurposing.",
+  "problem": {
+    "problem_statement": "Preventing medical and factual liability when deploying generative AI tools in local service business marketing.",
+    "target_users": [
+      "Local Business Owners",
+      "Healthcare Practitioners",
+      "Content Writers"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services"
+    ]
+  },
+  "workflow": {
+    "workflow_name": "WF-AICONTENT-001",
+    "workflow_stage": "Research to Drafting",
+    "required_capabilities": [
+      "CAP-RES-04",
+      "CAP-CRT-01"
+    ]
+  },
+  "related_tools": [
+    "TOOL-CAN-001",
+    "TOOL-CAN-006"
+  ],
+  "related_articles": [
+    "how-to-build-simple-ai-content-workflow-local-business"
+  ],
+  "related_learning_paths": [
+    "lp02"
+  ],
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "review_status": "PUBLISHED",
+    "reviewer": "LOCATRIA Editorial Governance Board",
+    "change_notes": "Initial publication of foundational resource guide."
+  }
+}

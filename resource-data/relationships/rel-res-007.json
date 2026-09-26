@@ -1,0 +1,12 @@
+{
+  "entity_type": "relationship",
+  "schema_version": "1.0",
+  "relationship_id": "REL-RES-007",
+  "source_type": "resource",
+  "source_id": "RES-PROFILE-NOTEBOOKLM",
+  "relationship_type": "USES",
+  "target_type": "tool",
+  "target_id": "TOOL-CAN-001",
+  "context": "Tool profile evaluates Google NotebookLM.",
+  "created_at": "2026-09-26"
+}

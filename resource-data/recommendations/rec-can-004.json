@@ -1,0 +1,29 @@
+{
+  "recommendation_id": "REC-CAN-004",
+  "tool_id": "TOOL-CAN-004",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "CONDITIONALLY_RECOMMENDED",
+  "context": {
+    "target_user": "Marketing managers and local business operators coordinating multi-author content",
+    "target_vertical": "Local Services & Agencies",
+    "problem": "Establishing standardized content briefs and structural hand-offs between business owners and content writers.",
+    "workflow": "WF-AICONTENT-001 (Stage 2 — Brief)",
+    "use_case": "Constructing modular briefs with search intent taxonomy, heading hierarchy, and editorial checklists."
+  },
+  "rationale": "In Benchmark Test 04, Content Harmony standardized a 6-section brief with target word counts and intent cards, incorporating custom business facts. Conditioned on editorial review to prune generic national medical advice.",
+  "evidence_refs": [
+    "EVD-CAN-004-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-004",
+  "when_to_consider": [
+    "When managing editorial hand-offs between business stakeholders and writers.",
+    "When standardizing content requirements across multiple service pages or locations."
+  ],
+  "when_not_to_use": [
+    "For solo practitioners with very low content volume where credit-based subscriptions are not cost-effective."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

@@ -6,12 +6,12 @@
   "status": "OPERATIONAL",
   "entity_counts": {
     "tools": 10,
-    "resources": 0,
+    "resources": 4,
     "evidence": 10,
     "evaluations": 10,
-    "recommendations": 0,
-    "affiliates": 0,
+    "recommendations": 10,
+    "affiliates": 10,
     "reviews": 0,
-    "relationships": 0
+    "relationships": 10
   }
 }

@@ -1,0 +1,12 @@
+{
+  "entity_type": "relationship",
+  "schema_version": "1.0",
+  "relationship_id": "REL-RES-002",
+  "source_type": "resource",
+  "source_id": "RES-WORKFLOW-001",
+  "relationship_type": "USES",
+  "target_type": "tool",
+  "target_id": "TOOL-CAN-006",
+  "context": "Workflow resource uses Claude for Stage 3 Create context-bound drafting.",
+  "created_at": "2026-09-26"
+}

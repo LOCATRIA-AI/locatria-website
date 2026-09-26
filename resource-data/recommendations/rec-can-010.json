@@ -1,0 +1,29 @@
+{
+  "recommendation_id": "REC-CAN-010",
+  "tool_id": "TOOL-CAN-010",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "CONDITIONALLY_RECOMMENDED",
+  "context": {
+    "target_user": "Content editors, compliance reviewers, and marketing managers",
+    "target_vertical": "All Local Verticals",
+    "problem": "Verifying cross-channel derivatives against canonical source text to prevent accidental distortion of insurance, pricing, or regulatory disclaimers.",
+    "workflow": "WF-AICONTENT-001 (Stage 4 — Repurpose)",
+    "use_case": "Side-by-side text comparison before publishing derivative marketing copy."
+  },
+  "rationale": "In Benchmark Test 09, Diffchecker instantly exposed a critical insurance claim error introduced during manual copying into a draft email. Conditioned on manual copy-pasting of text snippets.",
+  "evidence_refs": [
+    "EVD-CAN-010-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-010",
+  "when_to_consider": [
+    "Before publishing repurposed marketing snippets derived from sensitive legal or clinical guides.",
+    "When auditing revisions between original and updated service pages."
+  ],
+  "when_not_to_use": [
+    "When expecting automated CMS synchronization (it is a standalone comparison utility)."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

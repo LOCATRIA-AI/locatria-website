@@ -1,0 +1,29 @@
+{
+  "recommendation_id": "REC-CAN-005",
+  "tool_id": "TOOL-CAN-005",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "CONDITIONALLY_RECOMMENDED",
+  "context": {
+    "target_user": "Clinicians, attorneys, and technical professionals writing educational marketing",
+    "target_vertical": "Healthcare & Professional Services",
+    "problem": "Translating dense clinical or legal jargon into accessible Grade 7-8 reading levels.",
+    "workflow": "WF-AICONTENT-001 (Stage 3 — Create)",
+    "use_case": "Immediate post-draft syntactic editing to highlight hard-to-read sentences and passive voice."
+  },
+  "rationale": "In Benchmark Test 05, Hemingway Editor detected Grade 15 medical jargon and passive voice, enabling reduction to Grade 8 accessible prose in under 2 minutes. Conditioned on editorial oversight to ensure syntactic simplification does not compromise medical accuracy.",
+  "evidence_refs": [
+    "EVD-CAN-005-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-005",
+  "when_to_consider": [
+    "When simplifying technical professional prose for consumer/patient audiences.",
+    "When rapid, zero-setup visual readability feedback is needed."
+  ],
+  "when_not_to_use": [
+    "As a fact-checker or medical compliance validator (it has zero factual awareness)."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

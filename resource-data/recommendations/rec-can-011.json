@@ -1,0 +1,29 @@
+{
+  "recommendation_id": "REC-CAN-011",
+  "tool_id": "TOOL-CAN-011",
+  "resource_id": "RES-WORKFLOW-001",
+  "status": "CONDITIONALLY_RECOMMENDED",
+  "context": {
+    "target_user": "Local business webmasters and technical SEO practitioners",
+    "target_vertical": "All Local Verticals",
+    "problem": "Auditing published website content decay, identifying broken citations (404s), and inspecting schema freshness.",
+    "workflow": "WF-AICONTENT-001 (Stage 5 — Maintain)",
+    "use_case": "Quarterly or monthly scheduled website crawls to generate maintenance issue logs."
+  },
+  "rationale": "In Benchmark Test 10, Screaming Frog identified a broken external citation (404), stale Last-Modified headers (>18 months), and missing schema markup. Conditioned on desktop software installation and manual CMS patching.",
+  "evidence_refs": [
+    "EVD-CAN-011-01"
+  ],
+  "evaluation_ref": "EVAL-CAN-011",
+  "when_to_consider": [
+    "For scheduled maintenance audits of local business websites (free up to 500 URLs).",
+    "When locating broken outbound links and inspecting technical meta freshness tags."
+  ],
+  "when_not_to_use": [
+    "When expecting cloud-based automated patching inside CMS."
+  ],
+  "created_at": "2026-09-26",
+  "updated_at": "2026-09-26",
+  "entity_type": "recommendation",
+  "schema_version": "1.0"
+}

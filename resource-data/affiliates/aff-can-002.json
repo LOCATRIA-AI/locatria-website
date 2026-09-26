@@ -1,0 +1,12 @@
+{
+  "entity_type": "affiliate",
+  "schema_version": "1.0",
+  "affiliate_id": "AFF-CAN-002",
+  "tool_id": "TOOL-CAN-002",
+  "affiliate_available": false,
+  "status": "NONE",
+  "program": "None / Not Contracted",
+  "disclosure_required": false,
+  "last_verified": "2026-09-26",
+  "notes": "Commercial metadata decoupled from editorial evaluation. No commercial affiliate contract active in LOCATRIA pilot scope."
+}
