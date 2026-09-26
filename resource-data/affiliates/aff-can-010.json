@@ -5,8 +5,12 @@
   "tool_id": "TOOL-CAN-010",
   "affiliate_available": false,
   "status": "NONE",
-  "program": "None / Not Contracted",
+  "program": "None (Canvas Public)",
+  "network": "None",
   "disclosure_required": false,
   "last_verified": "2026-09-26",
-  "notes": "Commercial metadata decoupled from editorial evaluation. No commercial affiliate contract active in LOCATRIA pilot scope."
+  "notes": "Canvas / Diffchecker does not operate an active public affiliate program. LOCATRIA has zero commercial relationship.",
+  "affiliate_program_available": "FALSE",
+  "locatria_affiliate_relationship": "NOT_CONTRACTED",
+  "affiliate_activation_status": "NOT_ACTIVATED"
 }

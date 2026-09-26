@@ -13,21 +13,21 @@
       "affiliate_id": "AFF-CAN-002",
       "tool_id": "TOOL-CAN-002",
       "status": "NONE",
-      "affiliate_available": false,
+      "affiliate_available": true,
       "path": "resource-data/affiliates/aff-can-002.json"
     },
     {
       "affiliate_id": "AFF-CAN-003",
       "tool_id": "TOOL-CAN-003",
       "status": "NONE",
-      "affiliate_available": false,
+      "affiliate_available": true,
       "path": "resource-data/affiliates/aff-can-003.json"
     },
     {
       "affiliate_id": "AFF-CAN-004",
       "tool_id": "TOOL-CAN-004",
       "status": "NONE",
-      "affiliate_available": false,
+      "affiliate_available": true,
       "path": "resource-data/affiliates/aff-can-004.json"
     },
     {
@@ -55,7 +55,7 @@
       "affiliate_id": "AFF-CAN-008",
       "tool_id": "TOOL-CAN-008",
       "status": "NONE",
-      "affiliate_available": false,
+      "affiliate_available": true,
       "path": "resource-data/affiliates/aff-can-008.json"
     },
     {

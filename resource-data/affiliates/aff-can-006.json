@@ -5,8 +5,12 @@
   "tool_id": "TOOL-CAN-006",
   "affiliate_available": false,
   "status": "NONE",
-  "program": "None / Not Contracted",
+  "program": "None (Anthropic Public)",
+  "network": "None",
   "disclosure_required": false,
   "last_verified": "2026-09-26",
-  "notes": "Commercial metadata decoupled from editorial evaluation. No commercial affiliate contract active in LOCATRIA pilot scope."
+  "notes": "Anthropic does not offer a public affiliate program for Claude. LOCATRIA recommends Claude solely on empirical benchmark evidence.",
+  "affiliate_program_available": "FALSE",
+  "locatria_affiliate_relationship": "NOT_CONTRACTED",
+  "affiliate_activation_status": "NOT_ACTIVATED"
 }

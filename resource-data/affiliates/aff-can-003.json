@@ -3,10 +3,14 @@
   "schema_version": "1.0",
   "affiliate_id": "AFF-CAN-003",
   "tool_id": "TOOL-CAN-003",
-  "affiliate_available": false,
+  "affiliate_available": true,
   "status": "NONE",
-  "program": "None / Not Contracted",
+  "program": "Frase Affiliate Program (https://www.frase.io/affiliate-program/)",
+  "network": "FirstPromoter / In-House",
   "disclosure_required": false,
   "last_verified": "2026-09-26",
-  "notes": "Commercial metadata decoupled from editorial evaluation. No commercial affiliate contract active in LOCATRIA pilot scope."
+  "notes": "Vendor offers an official affiliate program (30% recurring for 12 months). LOCATRIA has not contracted or activated an affiliate relationship.",
+  "affiliate_program_available": "TRUE",
+  "locatria_affiliate_relationship": "NOT_CONTRACTED",
+  "affiliate_activation_status": "NOT_ACTIVATED"
 }

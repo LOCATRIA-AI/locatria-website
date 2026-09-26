@@ -156,26 +156,32 @@ The reverse sequence is strictly prohibited. Commercial relationships are isolat
 
 ---
 
-## 9. Affiliate Verification
+## 9. Affiliate Verification & Commercial Matrix
 
-LOCATRIA verifies commercial programs independently. No affiliate relationships are fabricated or assumed:
+LOCATRIA strictly distinguishes between **Vendor Affiliate Program Availability** (whether the vendor operates a public affiliate program) and **LOCATRIA Affiliate Relationship / Activation Status** (our actual commercial status with that vendor):
 
-### Master Affiliate Matrix
+$$\text{Vendor Offers Affiliate Program} \neq \text{LOCATRIA Has Activated Affiliate Relationship}$$
 
-| Tool ID | Tool Name | Affiliate Available | Program Verified | Affiliate Status | Disclosure Required | Last Verified |
-|---|---|---|---|---|---|---|
-| `TOOL-CAN-001` | **NotebookLM** | No | None (Google Labs) | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-002` | **AlsoAsked** | No | Not Contracted | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-003` | **Frase** | No | Not Contracted | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-004` | **Content Harmony** | No | Partner Program (Uncontracted) | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-005` | **Hemingway Editor** | No | None (Independent Ltd.) | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-006` | **Claude** | No | None (Anthropic Public) | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-007` | **ChatGPT / GPT-4o** | No | None (OpenAI Public) | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-008` | **Grammarly Business**| No | Not Contracted | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-010` | **Diffchecker** | No | None (Canvas Public) | `NONE` | No | 2026-09-26 |
-| `TOOL-CAN-011` | **Screaming Frog** | No | None (Screaming Frog Ltd.)| `NONE` | No | 2026-09-26 |
+### Master Commercial / Affiliate Matrix
 
-*Proof of Commercial Independence*: Claude (`TOOL-CAN-006`) is **RECOMMENDED** despite having **0% affiliate availability and 0% monetization**.
+| Tool ID | Tool Name | Vendor Affiliate Program Available (`affiliate_program_available`) | Vendor Program Reference / Platform | LOCATRIA Relationship (`locatria_affiliate_relationship`) | Activation Status (`affiliate_activation_status`) | Disclosure Required | Last Verified |
+|---|---|---|---|---|---|---|---|
+| `TOOL-CAN-001` | **NotebookLM** | **FALSE** | None (Google Labs) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-002` | **AlsoAsked** | **TRUE** | AlsoAsked Affiliate Scheme (Rewardful) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-003` | **Frase** | **TRUE** | Frase Affiliate Program (FirstPromoter) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-004` | **Content Harmony** | **TRUE** | Content Harmony Partner Program | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-005` | **Hemingway Editor** | **FALSE** | None (Independent Ltd.) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-006` | **Claude** | **FALSE** | None (Anthropic Public) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-007` | **ChatGPT / GPT-4o** | **FALSE** | None (OpenAI Public) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-008` | **Grammarly Business**| **TRUE** | Grammarly Affiliate Program (Impact) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-010` | **Diffchecker** | **FALSE** | None (Canvas Public) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+| `TOOL-CAN-011` | **Screaming Frog** | **FALSE** | None (Screaming Frog Ltd. policy) | `NOT_CONTRACTED` | `NOT_ACTIVATED` | No | 2026-09-26 |
+
+### Critical Commercial Observations:
+1. **Vendor Availability Verified**: Official research confirms that **Frase** (30% recurring via FirstPromoter), **Grammarly** (official program via Impact), **AlsoAsked** (20% recurring via Rewardful), and **Content Harmony** (20% recurring) maintain active commercial affiliate schemes.
+2. **Screaming Frog Policy Confirmed**: Official vendor information confirms Screaming Frog Ltd. does not operate an affiliate, reseller, or referral program.
+3. **Zero Commercial Activation in Pilot**: Across all 10 tools, LOCATRIA's relationship status is strictly `NOT_CONTRACTED` and activation status is `NOT_ACTIVATED` (`status: NONE`). No affiliate tracking URLs or commercial referral parameters are deployed.
+4. **Commercial Independence Demonstrated**: Claude (`TOOL-CAN-006`) is **RECOMMENDED** despite having **0% affiliate availability and 0% monetization**. Conversely, Frase and Grammarly offer high-paying commercial affiliate programs but are only **LISTED** based purely on their empirical capability boundaries in A.3.4.
 
 ---
 

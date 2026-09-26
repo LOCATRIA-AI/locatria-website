@@ -5,8 +5,12 @@
   "tool_id": "TOOL-CAN-011",
   "affiliate_available": false,
   "status": "NONE",
-  "program": "None / Not Contracted",
+  "program": "None (Screaming Frog Ltd. does not operate an affiliate or reseller scheme)",
+  "network": "None",
   "disclosure_required": false,
   "last_verified": "2026-09-26",
-  "notes": "Commercial metadata decoupled from editorial evaluation. No commercial affiliate contract active in LOCATRIA pilot scope."
+  "notes": "Official vendor policy confirms Screaming Frog does not offer an affiliate program. LOCATRIA has zero commercial relationship.",
+  "affiliate_program_available": "FALSE",
+  "locatria_affiliate_relationship": "NOT_CONTRACTED",
+  "affiliate_activation_status": "NOT_ACTIVATED"
 }

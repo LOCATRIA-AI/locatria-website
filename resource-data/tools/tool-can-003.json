@@ -50,7 +50,7 @@
   "commercial": {
     "pricing_model": "SUBSCRIPTION",
     "free_plan": false,
-    "affiliate_available": false
+    "affiliate_available": true
   },
   "lifecycle_status": "LISTED",
   "governance": {

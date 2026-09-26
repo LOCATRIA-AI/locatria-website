@@ -61,6 +61,32 @@
     },
     "notes": {
       "type": "string"
+    },
+    "affiliate_program_available": {
+      "type": "string",
+      "enum": [
+        "TRUE",
+        "FALSE",
+        "UNKNOWN"
+      ]
+    },
+    "locatria_affiliate_relationship": {
+      "type": "string",
+      "enum": [
+        "NOT_CONTRACTED",
+        "PENDING",
+        "ACTIVE",
+        "ENDED"
+      ]
+    },
+    "affiliate_activation_status": {
+      "type": "string",
+      "enum": [
+        "NOT_ACTIVATED",
+        "ACTIVATED",
+        "PAUSED",
+        "ENDED"
+      ]
     }
   },
   "additionalProperties": false
