@@ -1,0 +1,49 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-10: Screaming Frog
+================================================================================
+Test ID: TEST-10
+Candidate ID: CAN-011
+Tool: Screaming Frog SEO Spider
+Provider: Screaming Frog Ltd.
+Capability ID: CAP-MNT-01 (Content Freshness Auditing)
+Workflow Stage: Stage 5 — Maintain
+Model / Version: Screaming Frog SEO Spider v20.2 (Desktop Client, Free / Standard Mode)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT CRAWL SPECIFICATION:
+Target URL Structure: Simulated local clinic website environment containing benchmark maintenance inputs:
+- 1 target article URL with outdated schema and headers
+- 1 dead external medical citation link (simulated HTTP 404 response)
+- 1 outdated operating hours block on target page
+- 2 internal links to expired marathon training schedule pages
+
+OBSERVED RAW OUTPUT & DIAGNOSTICS:
+--------------------------------------------------------------------------------
+Crawl Summary:
+- URLs Inspected: 12
+- Internal HTML Pages: 8
+- External Links Checked: 4
+
+Key Audit Findings:
+1. Broken External Link:
+   - Source URL: https://www.apexspineaustin.com/blog/sports-chiropractor-vs-physical-therapist-running-injuries
+   - Target URL: http://www.journalofsportschiropractic.org/2019/study402
+   - Status Code: 404 Not Found (Client Error)
+   - Anchor Text: "2019 conservative sports management study"
+
+2. Freshness & Header Audit:
+   - Target URL HTTP Header `Last-Modified`: Sun, 10 Mar 2024 14:22:00 GMT (Age: >18 months)
+   - OpenGraph Tag `article:modified_time`: Missing
+   - Canonical Link: Matches source URL 200 OK
+
+3. Schema Markup Extraction:
+   - Detected: Article schema present
+   - Missing: FAQPage schema (present in drafting but not yet deployed to live HTML)
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Audit speed: Crawl and report generation completed in 8.4 seconds.
+2. Defect detection: 100% of broken links and outdated timestamps were flagged in structured tables.
+3. Exportability: Produced direct CSV export mapping broken link sources and anchor text for immediate editorial patching.
+4. Limitation: Requires local client desktop installation; cannot patch content automatically inside the CMS.

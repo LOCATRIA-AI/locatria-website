@@ -1,5 +1,76 @@
 {
   "entity_type": "EVIDENCE_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "evidence_id": "EVD-CAN-001-01",
+      "tool_id": "TOOL-CAN-001",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-001-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-002-01",
+      "tool_id": "TOOL-CAN-002",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-002-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-003-01",
+      "tool_id": "TOOL-CAN-003",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-003-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-004-01",
+      "tool_id": "TOOL-CAN-004",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-004-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-005-01",
+      "tool_id": "TOOL-CAN-005",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-005-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-006-01",
+      "tool_id": "TOOL-CAN-006",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-006-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-007-01",
+      "tool_id": "TOOL-CAN-007",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-007-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-008-01",
+      "tool_id": "TOOL-CAN-008",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-008-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-010-01",
+      "tool_id": "TOOL-CAN-010",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-010-01.json"
+    },
+    {
+      "evidence_id": "EVD-CAN-011-01",
+      "tool_id": "TOOL-CAN-011",
+      "evidence_type": "",
+      "confidence": "STRONG",
+      "path": "resource-data/evidence/evd-can-011-01.json"
+    }
+  ]
 }

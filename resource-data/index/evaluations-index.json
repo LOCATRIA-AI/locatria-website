@@ -1,5 +1,76 @@
 {
   "entity_type": "EVALUATION_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "evaluation_id": "EVAL-CAN-001",
+      "tool_id": "TOOL-CAN-001",
+      "evaluated_at": "2026-09-26",
+      "summary": "NotebookLM demonstrates Strong Fit for CAP-RES-04, delivering verified, citation-backed factual synthesis without hallucination.",
+      "path": "resource-data/evaluations/eval-can-001.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-002",
+      "tool_id": "TOOL-CAN-002",
+      "evaluated_at": "2026-09-26",
+      "summary": "AlsoAsked demonstrates Strong Fit for CAP-RES-01, mapping real customer intent trees and local question variants accurately.",
+      "path": "resource-data/evaluations/eval-can-002.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-003",
+      "tool_id": "TOOL-CAN-003",
+      "evaluated_at": "2026-09-26",
+      "summary": "Frase demonstrates Partial Fit for CAP-RES-03, effectively uncovering competitor subtopics while requiring vigilance against over-optimization.",
+      "path": "resource-data/evaluations/eval-can-003.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-004",
+      "tool_id": "TOOL-CAN-004",
+      "evaluated_at": "2026-09-26",
+      "summary": "Content Harmony demonstrates Strong Fit for CAP-BRF-01, excelling at creating comprehensive, shareable editorial briefs.",
+      "path": "resource-data/evaluations/eval-can-004.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-005",
+      "tool_id": "TOOL-CAN-005",
+      "evaluated_at": "2026-09-26",
+      "summary": "Hemingway Editor demonstrates Strong Fit for CAP-CRT-02, rapidly reducing complex technical prose to an accessible Grade 7-8 reading level.",
+      "path": "resource-data/evaluations/eval-can-005.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-006",
+      "tool_id": "TOOL-CAN-006",
+      "evaluated_at": "2026-09-26",
+      "summary": "Claude demonstrates Strong Fit for CAP-CRT-01, generating nuanced, context-bound long-form content with exceptional constraint adherence.",
+      "path": "resource-data/evaluations/eval-can-006.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-007",
+      "tool_id": "TOOL-CAN-007",
+      "evaluated_at": "2026-09-26",
+      "summary": "ChatGPT / GPT-4o demonstrates Strong Fit for CAP-REP-01, accurately transforming canonical content across diverse local marketing channels.",
+      "path": "resource-data/evaluations/eval-can-007.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-008",
+      "tool_id": "TOOL-CAN-008",
+      "evaluated_at": "2026-09-26",
+      "summary": "Grammarly Business demonstrates Partial Fit for CAP-CRT-03, providing solid entity consistency enforcement when pre-configured with brand rules.",
+      "path": "resource-data/evaluations/eval-can-008.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-010",
+      "tool_id": "TOOL-CAN-010",
+      "evaluated_at": "2026-09-26",
+      "summary": "Diffchecker demonstrates Strong Fit for CAP-REP-02, exposing textual shifts and omitted disclaimers across repurposed assets.",
+      "path": "resource-data/evaluations/eval-can-010.json"
+    },
+    {
+      "evaluation_id": "EVAL-CAN-011",
+      "tool_id": "TOOL-CAN-011",
+      "evaluated_at": "2026-09-26",
+      "summary": "Screaming Frog demonstrates Strong Fit for CAP-MNT-01, providing unmatched technical auditing of broken links and content freshness signals.",
+      "path": "resource-data/evaluations/eval-can-011.json"
+    }
+  ]
 }

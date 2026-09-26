@@ -1,0 +1,51 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-04: Content Harmony
+================================================================================
+Test ID: TEST-04
+Candidate ID: CAN-004
+Tool: Content Harmony
+Provider: Content Harmony LLC
+Capability ID: CAP-BRF-01 (Content Structuring & Outlining)
+Workflow Stage: Stage 2 — Brief
+Model / Version: Content Harmony Web App (Brief Workflow v2.4)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT SEARCH KEYWORD & SEED PARAMETERS:
+- Keyword: "sports chiropractor vs physical therapist running injury"
+- Intent Classification: Informational / Decision
+- Benchmark Constraints Added: Austin local business context, Texas direct access fact, no referral required.
+
+OBSERVED RAW OUTPUT:
+--------------------------------------------------------------------------------
+Structured Content Brief Generated:
+- Recommended Word Count Range: 900 - 1,250 words
+- Target Reading Level: 7th - 9th Grade (Flesch-Kincaid)
+- Primary Search Intent: Decision-stage comparison for runners experiencing acute/subacute pain.
+
+Proposed Heading Architecture:
+H1: Sports Chiropractor vs Physical Therapist: Which is Best for Your Running Injury?
+  H2: Understanding the Clinical Scope: DC vs PT
+    H3: The Sports Chiropractic Focus: Joint Mechanics & Soft Tissue (ART)
+    H3: The Physical Therapy Focus: Strengthening & Movement Rehabilitation
+  H2: When to Visit a Sports Chiropractor First
+    H3: Acute Joint Restrictions & Spine Alignment
+    H3: Muscle Spasms and Fascial Adhesions (Active Release Technique)
+  H2: When to Start with a Physical Therapist
+    H3: Post-Surgical Rehab and Severe Ligament Tears
+    H3: Long-Term Muscle Imbalance Retraining
+  H2: The Power of Collaborative Care for Runners
+  H2: Do You Need a Doctor's Referral in Texas?
+  H2: What to Expect During an Initial Evaluation in South Austin
+  H2: Frequently Asked Questions (FAQ)
+
+Search Intent Questions to Answer:
+- [x] Can a chiropractor diagnose a stress fracture? (Answer: Refer for diagnostic imaging)
+- [x] How many sessions until I can run again?
+- [x] Is Active Release Technique covered by HSA/FSA?
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Workflow fit: Produced a modular, highly shareable content brief format with checkboxes for writers.
+2. Customization: Allowed manual pinning of local Austin running facts and specific exclusion of shockwave claims.
+3. Editorial burden: Required approximately 3 minutes of editor time to prune national generic medical advice cards before exporting the brief to writer.

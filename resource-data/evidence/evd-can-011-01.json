@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-011-01",
+  "tool_id": "TOOL-CAN-011",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Screaming Frog)",
+    "url": "https://www.screamingfrog.co.uk/seo-spider/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Screaming Frog SEO Spider audits local websites to identify broken external citations, stale Last-Modified headers, and missing schema markup.",
+  "observation": "In Benchmark Test 10, flagged a broken external medical citation (404), detected an 18-month-old Last-Modified timestamp, and identified missing FAQPage schema.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-011",
+  "tool_id": "TOOL-CAN-011",
+  "dimensions": {
+    "problem_fit": "Strong Fit for periodic website maintenance, auditing published content decay, broken external citations, and technical metadata.",
+    "workflow_fit": "Workflow Compatible with Stage 5 Maintain; runs scheduled or on-demand crawls to flag outdated content needing editorial updates.",
+    "usability": "Moderate usability; desktop software interface with comprehensive technical data tables requiring basic familiarity with SEO metrics.",
+    "capability": "Comprehensive crawl auditing: detects 404 broken links, extracts HTTP Last-Modified headers, and inspects structured schema markup.",
+    "evidence": "Evidence Available with Strong empirical support from Benchmark Test 10 and extensive industry documentation.",
+    "integration": "Workflow Compatible via extensive CSV, Excel, and Google Sheets exports for maintenance task ticketing.",
+    "value": "High value on free tier (up to 500 URLs per crawl), which easily accommodates small-to-medium local business websites.",
+    "limitations": "Significant Limitation in automation: desktop-bound application that audits sites but cannot patch CMS content automatically."
+  },
+  "evidence_refs": [
+    "EVD-CAN-011-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Screaming Frog demonstrates Strong Fit for CAP-MNT-01, providing unmatched technical auditing of broken links and content freshness signals.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

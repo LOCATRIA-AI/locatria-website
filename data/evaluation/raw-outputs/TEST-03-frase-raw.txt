@@ -1,0 +1,47 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-03: Frase
+================================================================================
+Test ID: TEST-03
+Candidate ID: CAN-003
+Tool: Frase
+Provider: Frase, Inc. / Copysmith
+Capability ID: CAP-RES-03 (Topic & Competitor Gap Analysis)
+Workflow Stage: Stage 1 — Research
+Model / Version: Frase Web App (SERP Research & Topic Model Engine)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT SEARCH QUERY & PARAMETERS:
+- Target Query: "sports chiropractor vs physical therapist running injury"
+- Location Target: United States / Austin TX SERP
+- Competitor Scope: Top 20 ranking URLs
+
+OBSERVED RAW OUTPUT:
+--------------------------------------------------------------------------------
+SERP Competitor Metrics:
+- Average Word Count across Top 20: 1,420 words
+- Domain Rating Average: 48
+- Heading Usage: Average 9.2 H2s per article
+
+Top Identified Heading Themes across Competitors:
+1. Primary Differences in Clinical Training (DC vs DPT) (Present in 85% of results)
+2. Soft Tissue vs Joint Manipulation (Present in 75% of results)
+3. Acute Injuries vs Chronic Biomechanical Overuse (Present in 60% of results)
+4. Cost, Referral Requirements & Insurance Superbills (Present in 45% of results)
+5. Co-management: When Both Providers Work Together (Present in 40% of results)
+
+Identified Content & Semantic Gaps:
+- Gap 1: Specific gait analysis protocols for trail runners (Present in only 15% of SERP competitors).
+- Gap 2: Return-to-running load management timelines (Competitors rarely specify week-by-week return criteria).
+- Gap 3: Local running biomechanics factors (heat, elevation changes on Lady Bird Lake Trail).
+
+Topic Clusters Suggested:
+- "Active Release Technique for IT band" (High relevance score: 78%)
+- "Joint cavitation vs mobilization" (Medium relevance: 54%)
+- "Eccentric tendon loading" (High relevance: 82%)
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Speed: SERP ingestion and gap generation completed in 24 seconds.
+2. Outline Integration: Automatically generated an outline draft proposal based on top-performing competitor headings.
+3. Limitation: The tool's AI content recommendation heavily emphasizes keyword density metrics which can lead to keyword stuffing if unmonitored by an editor.

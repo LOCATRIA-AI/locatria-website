@@ -1,0 +1,61 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "TOOL-CAN-001",
+  "tool_name": "NotebookLM",
+  "provider": "Google",
+  "official_url": "https://notebooklm.google.com/",
+  "classification": {
+    "primary_capability": "CAP-RES-04",
+    "secondary_capabilities": [
+      "CAP-RES-01"
+    ],
+    "target_users": [
+      "Local Business Owners",
+      "Content Strategists",
+      "Practitioners"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services",
+      "Local Retail"
+    ]
+  },
+  "problem": {
+    "primary_problem": "Execution of Source Fact Gathering & Synthesis within local business content workflows.",
+    "secondary_problems": [
+      "Content production bottleneck",
+      "Factual quality control"
+    ],
+    "use_cases": [
+      "Automating or assisting Source Fact Gathering & Synthesis for local service providers."
+    ]
+  },
+  "workflow": {
+    "supported_workflows": [
+      "WF-AICONTENT-001"
+    ],
+    "workflow_stages": [
+      "Research",
+      "Brief",
+      "Create",
+      "Repurpose",
+      "Maintain"
+    ],
+    "required_capabilities": [
+      "CAP-RES-04"
+    ]
+  },
+  "commercial": {
+    "pricing_model": "FREE",
+    "free_plan": true,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "EVALUATED",
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "review_status": "EVALUATED",
+    "change_notes": "Completed Sprint A.3.4 empirical evaluation."
+  }
+}

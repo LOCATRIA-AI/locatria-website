@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-010-01",
+  "tool_id": "TOOL-CAN-010",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Diffchecker)",
+    "url": "https://www.diffchecker.com/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Diffchecker exposes character-level and word-level discrepancies between canonical articles and repurposed derivative marketing drafts.",
+  "observation": "In Benchmark Test 09, instantly exposed a high-risk insurance claim discrepancy introduced into a derivative email draft in visual split view.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

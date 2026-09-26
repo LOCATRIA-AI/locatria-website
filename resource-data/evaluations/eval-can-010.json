@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-010",
+  "tool_id": "TOOL-CAN-010",
+  "dimensions": {
+    "problem_fit": "Strong Fit for auditing cross-channel adaptations against the canonical source to prevent dangerous factual drift.",
+    "workflow_fit": "Workflow Compatible with Stage 4 Repurpose; provides a fast visual verification checkpoint before publishing derivative assets.",
+    "usability": "High usability with an immediate two-pane text difference viewer and zero user account barrier for basic checks.",
+    "capability": "Precise character-level and word-level diff highlighting, side-by-side split views, and line numbering.",
+    "evidence": "Evidence Available with Strong empirical confirmation from Benchmark Test 09.",
+    "integration": "Requires Workaround via manual text copy-paste; desktop version supports local file comparisons.",
+    "value": "High value on free web version for local content workflows; zero recurring overhead.",
+    "limitations": "Requires Human Oversight to evaluate diff findings: the tool highlights text changes but cannot interpret semantic intent."
+  },
+  "evidence_refs": [
+    "EVD-CAN-010-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Diffchecker demonstrates Strong Fit for CAP-REP-02, exposing textual shifts and omitted disclaimers across repurposed assets.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

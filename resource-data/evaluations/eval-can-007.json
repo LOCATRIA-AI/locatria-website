@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-007",
+  "tool_id": "TOOL-CAN-007",
+  "dimensions": {
+    "problem_fit": "Strong Fit for repurposing canonical local business guides into multi-channel marketing assets (GBP, FAQ schema, newsletters).",
+    "workflow_fit": "Workflow Compatible with Stage 4 Repurpose; effortlessly converts unstructured long-form prose into channel-specific formats.",
+    "usability": "High usability across web and mobile apps with intuitive multi-modal prompt execution.",
+    "capability": "Excellent multi-format generation including valid JSON-LD schema, character-constrained social posts, and conversational email copy.",
+    "evidence": "Evidence Available with Strong empirical verification from Benchmark Test 07 running on GPT-4o.",
+    "integration": "Workflow Compatible with code blocks, JSON exports, and extensive third-party automation webhooks.",
+    "value": "High value on free tier and Plus subscription, offering broad multi-capability utility for small business operators.",
+    "limitations": "Requires Human Oversight to validate technical schema markup and temper promotional enthusiasm into professional local brand tone."
+  },
+  "evidence_refs": [
+    "EVD-CAN-007-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "ChatGPT / GPT-4o demonstrates Strong Fit for CAP-REP-01, accurately transforming canonical content across diverse local marketing channels.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

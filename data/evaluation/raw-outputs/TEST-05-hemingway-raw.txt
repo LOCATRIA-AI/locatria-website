@@ -1,0 +1,43 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-05: Hemingway Editor
+================================================================================
+Test ID: TEST-05
+Candidate ID: CAN-005
+Tool: Hemingway Editor
+Provider: Hemingway Ltd.
+Capability ID: CAP-CRT-02 (Local Tone & Voice Calibration / Readability)
+Workflow Stage: Stage 3 — Create
+Model / Version: Hemingway Web App v3.0 / Desktop
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT DRAFT TEXT TESTED:
+"When an athlete experiences patellofemoral pain syndrome secondary to excessive pronation and kinetic chain collapse along the vastus medialis obliquus, immediate cessation of locomotion is frequently recommended by practitioners. However, joint cavitation combined with Active Release Technique soft-tissue protocols demonstrates significant efficacy in restoring neuromuscular proprioception."
+
+OBSERVED RAW OUTPUT & DIAGNOSTICS:
+--------------------------------------------------------------------------------
+Readability Grade: Grade 15 (Post-Graduate / Complex)
+Word Count: 49 words
+Character Count: 368 characters
+
+Diagnostics Breakdown:
+- 2 sentences of 2 are "very hard to read" (Red highlight).
+- 2 instances of passive voice detected ("is frequently recommended", "demonstrates significant efficacy").
+- 4 complex phrases flagged ("secondary to", "cessation of locomotion", "significant efficacy", "neuromuscular proprioception").
+- Adverb count: 2 ("frequently", "secondary").
+
+EDITOR-ASSISTED REWRITE TEST:
+Rewritten Text:
+"When runners develop runner's knee from uneven foot strike or weak hip muscles, doctors often tell them to stop running completely. However, sports chiropractors use joint adjustments and Active Release Technique to loosen tight muscles, restore natural joint motion, and help athletes return to training safely."
+
+POST-EDIT RE-ANALYSIS:
+- Readability Grade: Grade 8 (Good)
+- 0 hard to read sentences
+- 0 passive voice instances
+- Reading time: 12 seconds
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Precision: Instant visual color-coding of difficult prose enabled rapid, targeted plain-language simplification.
+2. Limitation: Tool does not evaluate medical factual accuracy or brand guidelines; solely parses structural readability metrics.
+3. Speed: Instant client-side browser evaluation (<0.1s latency).

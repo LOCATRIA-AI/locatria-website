@@ -1,0 +1,38 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-09: Diffchecker
+================================================================================
+Test ID: TEST-09
+Candidate ID: CAN-010
+Tool: Diffchecker
+Provider: Diffchecker / Canvas
+Capability ID: CAP-REP-02 (Cross-Asset Consistency Checking)
+Workflow Stage: Stage 4 — Repurpose
+Model / Version: Diffchecker Web Diff Engine (Split & Unified Diff Mode)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT COMPARISON PAIR:
+Original Source Segment (Canonical Guide, Section 6):
+"We operate as a boutique, out-of-network provider, providing itemized superbills so patients can seek direct reimbursement from their insurance carrier. Texas is a direct-access state; no referral is needed."
+
+Repurposed Draft Segment (Unverified Patient Email Draft):
+"We operate as a clinic accepting all major private insurance plans with full in-network coverage. You do not need a referral."
+
+OBSERVED RAW OUTPUT:
+--------------------------------------------------------------------------------
+Visual Diff Breakdown (Side-by-Side Split View):
+- Line 1 Left:  "We operate as a boutique, out-of-network provider, providing itemized superbills so patients can seek direct reimbursement from their insurance carrier."
+- Line 1 Right: "We operate as a clinic accepting all major private insurance plans with full in-network coverage."
+  [DELETED / RED]: "boutique, out-of-network provider, providing itemized superbills so patients can seek direct reimbursement from their insurance carrier."
+  [INSERTED / GREEN]: "clinic accepting all major private insurance plans with full in-network coverage."
+
+- Line 2 Left:  "Texas is a direct-access state; no referral is needed."
+- Line 2 Right: "You do not need a referral."
+  [DELETED / RED]: "Texas is a direct-access state;"
+  [CHANGED / GREEN]: "You do"
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Detection accuracy: Instantly exposed a high-risk factual contradiction introduced during manual copying (changing "out-of-network with superbill" to "accepting all private insurance in-network").
+2. Usability: Zero learning curve; color-coded character-level highlighting made the discrepancy immediately visible to the reviewer.
+3. Limitation: Strictly a syntactic/textual differencing tool; does not interpret semantics or provide AI-assisted rewriting suggestions.

@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-006",
+  "tool_id": "TOOL-CAN-006",
+  "dimensions": {
+    "problem_fit": "Strong Fit for local businesses requiring long-form educational content strictly grounded in verified operational facts.",
+    "workflow_fit": "Workflow Compatible with Stage 3 Create; ingests full briefs and produces structured drafts adhering to heading specifications.",
+    "usability": "High usability via clean conversational web interface and Claude Artifacts pane for real-time document inspection.",
+    "capability": "Industry-leading prompt adherence, nuanced medical-legal tone calibration, and strict compliance with negative constraints.",
+    "evidence": "Evidence Available with Strong empirical demonstration in Benchmark Test 06 using Claude 3.5 Sonnet.",
+    "integration": "Workflow Compatible via Artifact markdown export and API accessibility for automated publishing workflows.",
+    "value": "High value with capable free tier and cost-effective Pro subscription for demanding drafting workloads.",
+    "limitations": "Requires Human Oversight to verify local landmark details, addresses, and ensure prose remains conversational."
+  },
+  "evidence_refs": [
+    "EVD-CAN-006-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Claude demonstrates Strong Fit for CAP-CRT-01, generating nuanced, context-bound long-form content with exceptional constraint adherence.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

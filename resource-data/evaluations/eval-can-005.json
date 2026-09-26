@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-005",
+  "tool_id": "TOOL-CAN-005",
+  "dimensions": {
+    "problem_fit": "Strong Fit for local healthcare and professional service businesses needing to calibrate dense clinical jargon for lay patients.",
+    "workflow_fit": "Workflow Compatible with Stage 3 Create; serves as an immediate post-draft editing step to simplify sentence structure.",
+    "usability": "High usability with zero setup required; instant visual color-coding of readability grade and sentence complexity.",
+    "capability": "Real-time structural readability analysis, highlighting passive voice, overly complex sentences, and unnecessary adverbs.",
+    "evidence": "Evidence Available with Strong empirical validation from Benchmark Test 05.",
+    "integration": "Requires Workaround via manual text copy-paste into CMS; desktop app supports markdown/HTML file exports.",
+    "value": "High value on free web version; desktop license is a one-time purchase with no recurring monthly subscription fee.",
+    "limitations": "Significant Limitation in clinical awareness: cannot detect factual errors, brand style violations, or medical inaccuracies."
+  },
+  "evidence_refs": [
+    "EVD-CAN-005-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Hemingway Editor demonstrates Strong Fit for CAP-CRT-02, rapidly reducing complex technical prose to an accessible Grade 7-8 reading level.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

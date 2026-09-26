@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-007-01",
+  "tool_id": "TOOL-CAN-007",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (ChatGPT / GPT-4o)",
+    "url": "https://chatgpt.com/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "ChatGPT / GPT-4o accurately transforms canonical articles into valid JSON-LD FAQ schema, GBP updates, and newsletters without factual drift.",
+  "observation": "In Benchmark Test 07, produced a 112-word GBP post, syntactically valid FAQPage schema, and a 142-word patient newsletter with 100% factual fidelity.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

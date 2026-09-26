@@ -35,8 +35,16 @@ function findJsonFiles(dir) {
     const fullPath = path.join(dir, file);
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
+      if (file === 'index' || file === 'node_modules' || file === '.git' || file === '_fixtures') {
+        return;
+      }
       results = results.concat(findJsonFiles(fullPath));
-    } else if (file.endsWith('.json') && !file.endsWith('.schema.json')) {
+    } else if (
+      file.endsWith('.json') &&
+      !file.endsWith('.schema.json') &&
+      !file.endsWith('-index.json') &&
+      file !== 'resource-data-manifest.json'
+    ) {
       results.push(fullPath);
     }
   });

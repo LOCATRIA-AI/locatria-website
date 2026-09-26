@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-004",
+  "tool_id": "TOOL-CAN-004",
+  "dimensions": {
+    "problem_fit": "Strong Fit for standardizing content briefs and establishing clear factual boundaries between local business owners and writers.",
+    "workflow_fit": "Workflow Compatible with Stage 2 Brief; structures intent classification, outline hierarchy, and editorial checklists cleanly.",
+    "usability": "High usability with an editorial-first brief builder designed specifically for content managers and practitioners.",
+    "capability": "Robust brief generation including visual asset requirements, search intent cards, competitor outline comparisons, and custom questions.",
+    "evidence": "Evidence Available with Strong empirical results from Benchmark Test 04 and documented case studies.",
+    "integration": "Workflow Compatible via shareable web links, Google Docs synchronizing, and structured PDF exports.",
+    "value": "Moderate value for solopreneurs due to credit-based pricing; high value for multi-location businesses managing multiple content writers.",
+    "limitations": "Requires Human Oversight to prune national clinical suggestions and enforce strict local clinic constraints."
+  },
+  "evidence_refs": [
+    "EVD-CAN-004-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Content Harmony demonstrates Strong Fit for CAP-BRF-01, excelling at creating comprehensive, shareable editorial briefs.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

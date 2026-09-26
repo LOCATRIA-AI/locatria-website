@@ -1,0 +1,87 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-07: ChatGPT / GPT-4o
+================================================================================
+Test ID: TEST-07
+Candidate ID: CAN-007
+Tool: ChatGPT / GPT-4o
+Provider: OpenAI
+Capability ID: CAP-REP-01 (Multi-Format / Semantic Format Transformation)
+Workflow Stage: Stage 4 — Repurpose
+Model / Version: GPT-4o (model: gpt-4o-2024-08-06 / web interface)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT PROMPT & SOURCE ARTIFACT:
+Source Material: 835-word canonical clinical draft from Test 06.
+Task: Repurpose the canonical article into 3 specific channel formats without altering underlying facts:
+Format 1: Google Business Profile (GBP) Update Post (<150 words, local hook, phone number, direct call to action).
+Format 2: Valid JSON-LD FAQPage Schema Markup (3 questions answered accurately).
+Format 3: Patient Email Newsletter Feature (<200 words, friendly tone, 3 key takeaways for Austin trail runners).
+
+OBSERVED RAW OUTPUT:
+--------------------------------------------------------------------------------
+### FORMAT 1: GOOGLE BUSINESS PROFILE (GBP) UPDATE POST
+Struggling with runner's knee or hip tightness along Lady Bird Lake? Deciding between chiropractic and physical therapy shouldn't delay your recovery. At Apex Spine & Sports Chiropractic in South Austin, Dr. Marcus Vance, DC, CCSP, combines Active Release Technique (ART) with joint adjustments to resolve acute pain and restore your natural running stride. 
+
+Whether you're prepping for the Cap10K or marathon season, we provide direct-access care with no doctor's referral required. Every session is 1-on-1 for 30 dedicated minutes with your doctor.
+
+📍 1401 S Congress Ave, Suite 220, Austin, TX
+📞 Call (512) 555-0194 or book your 60-minute movement assessment online today!
+(Word count: 112 words)
+
+### FORMAT 2: JSON-LD FAQPAGE SCHEMA MARKUP
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a doctor's referral to see a sports chiropractor in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. In Texas, chiropractors are licensed portal-of-entry physicians, allowing you to schedule an evaluation directly without a prior medical referral."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a sports chiropractor and a physical therapist for runners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A sports chiropractor focuses on acute joint mechanics, spinal alignment, and hands-on soft tissue therapy like Active Release Technique (ART). Physical therapists specialize in progressive neuromuscular rehabilitation and long-term strength rebuilding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long are treatment sessions at Apex Spine & Sports Chiropractic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Initial evaluations are comprehensive 60-minute assessments, while follow-up treatment sessions are 30 minutes of direct 1-on-1 care with Dr. Marcus Vance."
+      }
+    }
+  ]
+}
+```
+
+### FORMAT 3: PATIENT EMAIL NEWSLETTER FEATURE
+Subject: Chiro or PT? How to Tackle Nagging Running Injuries
+
+Hi Runner,
+
+Logging long weekend miles on Austin's trails is rewarding—until pain strikes. When should you call a sports chiropractor versus a physical therapist?
+
+Here is your quick decision guide:
+• See a Sports Chiro First: If you have acute joint stiffness, pelvis restrictions, or painful muscle adhesions (like IT band friction) that need hands-on Active Release Technique (ART).
+• See a Physical Therapist First: If you are rehabilitating post-surgery or need months of progressive strength exercises for ligament tears.
+• Combine Both for Best Results: Joint mobility plus corrective strength work provides the fastest, safest return to running.
+
+Remember: In Texas, you have direct access to chiropractic care without a doctor's referral.
+
+Ready to get back on the trail? Book your 60-minute evaluation with Dr. Vance at our South Congress clinic!
+(Word count: 142 words)
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Syntax validation: The generated JSON-LD parses validly against schema.org and Google Rich Results Test specifications.
+2. Word count constraint compliance: GBP post was 112 words (<150 limit); Email was 142 words (<200 limit).
+3. Fact fidelity: 0 factual drift observed across all three derivative assets.

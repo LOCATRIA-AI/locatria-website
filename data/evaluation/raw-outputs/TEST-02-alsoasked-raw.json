@@ -1,0 +1,53 @@
+{
+  "test_id": "TEST-02",
+  "candidate_id": "CAN-002",
+  "tool": "AlsoAsked",
+  "provider": "AlsoAsked Ltd.",
+  "capability_id": "CAP-RES-01",
+  "workflow_stage": "Stage 1 — Research",
+  "search_parameters": {
+    "query": "sports chiropractor Austin running injury",
+    "language": "en",
+    "region": "us",
+    "depth": 2
+  },
+  "date_of_execution": "2026-09-26",
+  "observed_raw_data": {
+    "total_questions_discovered": 38,
+    "top_level_clusters": [
+      {
+        "cluster_name": "Comparative Care Intent (Chiro vs PT)",
+        "questions": [
+          "Should a runner see a chiropractor or physical therapist?",
+          "Can a chiropractor fix runner's knee?",
+          "Is physical therapy better than chiropractic for IT band?",
+          "Do runners benefit from regular chiropractic adjustments?"
+        ]
+      },
+      {
+        "cluster_name": "Procedural & Cost / Insurance Intent",
+        "questions": [
+          "Do you need a referral to see a sports chiropractor in Texas?",
+          "How much does a sports chiropractor visit cost in Austin?",
+          "Does insurance cover active release technique for runners?",
+          "How many sessions of chiro do runners need?"
+        ]
+      },
+      {
+        "cluster_name": "Diagnostic / Symptom Intent",
+        "questions": [
+          "Can a chiropractor help with tight hip flexors from running?",
+          "How do you tell the difference between meniscus and runner's knee?",
+          "What causes sudden sharp foot pain while trail running?"
+        ]
+      }
+    ],
+    "export_formats_supported": ["CSV", "PNG", "SVG", "JSON"]
+  },
+  "raw_observations": {
+    "hierarchy_fidelity": "Generated an explicit 3-tier radial question graph with clear parent-child query relationships.",
+    "local_geo_specificity": "Local modifier queries surfaced Texas-specific referral questions ('Do you need a referral to see a sports chiro in Texas?'), directly matching local business needs.",
+    "gap_identified": "Tool does not calculate keyword search volume or SERP competitiveness; solely maps intent hierarchy.",
+    "execution_time_seconds": 12.8
+  }
+}

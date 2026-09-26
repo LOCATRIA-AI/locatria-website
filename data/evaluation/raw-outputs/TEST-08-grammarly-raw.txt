@@ -1,0 +1,56 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-08: Grammarly Business
+================================================================================
+Test ID: TEST-08
+Candidate ID: CAN-008
+Tool: Grammarly Business
+Provider: Grammarly, Inc.
+Capability ID: CAP-CRT-03 (Fact Verification & Editing / Local Entity Consistency)
+Workflow Stage: Stage 3 — Create
+Model / Version: Grammarly Business Web App & Extension (Style Guide & Custom Dictionary Rules Enabled)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+CONFIGURED BRAND RULES & CUSTOM DICTIONARY:
+- Official Brand Name: "Apex Spine & Sports Chiropractic" (Flag abbreviations such as "Apex Chiro" or "Apex Spine Clinic").
+- Preferred Terms: "Active Release Technique (ART)", "Doctor of Chiropractic (DC)", "portal-of-entry provider".
+- Standard Phone Format: "(512) 555-0194" (Flag 512-555-0194 or 5125550194).
+
+INPUT TEST TEXT WITH INTENTIONAL DISCREPANCIES:
+"Apex Chiro offers fast relief for runners across Austin. Call 512-555-0194 or visit Apex Spine Clinic at our S Congress location. We do active release therapy and chiropractic manipulation to cure your knee pain completely."
+
+OBSERVED RAW OUTPUT & DIAGNOSTICS:
+--------------------------------------------------------------------------------
+Overall Performance Score: 68/100
+Issues Detected: 5
+
+1. Brand Violation (Custom Rule):
+   - Flagged: "Apex Chiro"
+   - Suggestion: "Apex Spine & Sports Chiropractic"
+   - Status: Correctly caught.
+
+2. Brand Violation (Custom Rule):
+   - Flagged: "Apex Spine Clinic"
+   - Suggestion: "Apex Spine & Sports Chiropractic"
+   - Status: Correctly caught.
+
+3. Formatting Violation (Custom Rule):
+   - Flagged: "512-555-0194"
+   - Suggestion: "(512) 555-0194"
+   - Status: Correctly caught.
+
+4. Terminology Inconsistency (Custom Rule):
+   - Flagged: "active release therapy"
+   - Suggestion: "Active Release Technique (ART)"
+   - Status: Correctly caught.
+
+5. Tone & Overclaim Warning (Default Healthcare Tone Check):
+   - Flagged: "cure your knee pain completely"
+   - Suggestion: "relieve your knee pain" or "treat your knee symptoms"
+   - Reason: Overpromising medical outcome / absolute claim.
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Custom rules efficacy: When organizational style guide rules are pre-configured, Grammarly enforces 100% naming and formatting compliance.
+2. Clinical accuracy limitation: Grammarly does not verify external factual truth (e.g., whether the address 1401 S Congress actually exists or whether Texas is a direct access state) without explicit rule definition.
+3. Workflow friction: Requires admin configuration before catching business-specific naming defects.

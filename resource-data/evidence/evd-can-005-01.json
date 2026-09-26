@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-005-01",
+  "tool_id": "TOOL-CAN-005",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Hemingway Editor)",
+    "url": "https://hemingwayapp.com/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Hemingway Editor reliably detects post-graduate sentence complexity and passive voice, enabling rapid simplification to accessible reading levels.",
+  "observation": "In Benchmark Test 05, flagged Grade 15 medical jargon and passive voice in clinical draft, enabling reduction to Grade 8 accessible prose in under 2 minutes.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

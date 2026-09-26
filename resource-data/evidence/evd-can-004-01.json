@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-004-01",
+  "tool_id": "TOOL-CAN-004",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Content Harmony)",
+    "url": "https://www.contentharmony.com/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Content Harmony standardizes structured content briefs with search intent taxonomy, heading hierarchy, and editorial question checklists.",
+  "observation": "In Benchmark Test 04, produced a complete 6-section brief with target word counts and intent cards, successfully incorporating custom clinic facts.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

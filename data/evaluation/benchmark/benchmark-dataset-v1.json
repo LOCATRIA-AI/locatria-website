@@ -1,0 +1,165 @@
+{
+  "dataset_id": "LOCATRIA-LB-BENCHMARK-v1.0",
+  "version": "1.0",
+  "created_at": "2026-09-26",
+  "domain": "Local Healthcare & Sports Rehabilitation",
+  "business_context": {
+    "business_name": "Apex Spine & Sports Chiropractic",
+    "location": {
+      "address": "1401 S Congress Ave, Suite 220",
+      "city": "Austin",
+      "state": "TX",
+      "postal_code": "78704",
+      "phone": "(512) 555-0194",
+      "service_area": "South Congress, Zilker, Bouldin Creek, Barton Hills, Downtown Austin"
+    },
+    "target_customer": "Amateur runners, marathon trainees, CrossFit athletes, and active local professionals suffering from overuse running injuries or back pain.",
+    "services_offered": [
+      "Active Release Technique (ART) soft tissue therapy",
+      "Biomechanical running gait evaluation",
+      "Joint manipulation and spinal adjustment",
+      "Functional rehabilitation exercise programs",
+      "Custom orthotic casting and ergonomic consultations"
+    ],
+    "positioning": "Evidence-informed, active-rehab sports chiropractic clinic that integrates hands-on soft tissue therapy with corrective exercises, avoiding long-term maintenance contracts or ungrounded claims.",
+    "brand_voice": "Authoritative, empathetic, clinically grounded, direct, and accessible (target Grade 7-8 reading level). Avoid hyperbolic promises, miracle cures, or disparagement of medical specialists.",
+    "business_constraints": [
+      "Cannot diagnose systemic pathological conditions requiring medical oncology/rheumatology.",
+      "Does NOT accept in-network HMO health insurance; operates as out-of-network provider providing superbills.",
+      "Requires in-person clinical assessment prior to administering adjustments.",
+      "Does NOT offer invasive procedures, steroid injections, or prescription pharmaceuticals."
+    ]
+  },
+  "customer_context": {
+    "primary_questions": [
+      "When should I see a sports chiropractor instead of a physical therapist for a running injury?",
+      "Can a sports chiropractor help with IT band syndrome and plantar fasciitis?",
+      "Do I need a doctor referral to visit a chiropractor in Texas?",
+      "What is the difference between active release technique and regular massage?",
+      "How many sessions does it typically take to recover from runner's knee?"
+    ],
+    "search_intents": [
+      "Comparative intent (Chiropractor vs Physical Therapist for runners)",
+      "Diagnostic / symptom-checking intent (Runner's knee symptoms vs IT band friction)",
+      "Local service discovery (Sports chiropractor near Lady Bird Lake Austin)"
+    ],
+    "pain_points": [
+      "Frustration with passive rest advice ('just stop running for 6 weeks')",
+      "Fear of aggressive, forceful spinal 'cracking'",
+      "Confusion over insurance reimbursement and out-of-pocket costs",
+      "Recurrent flare-ups during half-marathon or marathon training cycles"
+    ],
+    "local_context_markers": [
+      "Ann and Roy Butler Hike-and-Bike Trail at Lady Bird Lake",
+      "Austin Marathon and Cap10K training seasons",
+      "Zilker Park trail conditions and Texas summer heat training"
+    ]
+  },
+  "source_context": {
+    "verified_clinic_facts": [
+      "Lead clinician: Dr. Marcus Vance, DC, CCSP (Certified Chiropractic Sports Physician), 12 years clinical experience.",
+      "Clinic founded in Austin in 2014.",
+      "Initial examination duration: 60 minutes comprehensive functional movement & biomechanical evaluation.",
+      "Follow-up treatment sessions: 30 minutes 1-on-1 with clinician (never handed off to an assistant).",
+      "Average acute injury treatment plan: 4 to 8 sessions over 3 to 6 weeks combined with home active rehab exercises."
+    ],
+    "approved_source_material": "Standard American College of Sports Medicine (ACSM) and ACA Sports Council clinical guidelines on conservative management of lower-extremity overuse injuries.",
+    "known_facts": [
+      "Chiropractors are licensed portal-of-entry healthcare providers in Texas; no general medical referral is legally required for consultation.",
+      "Sports chiropractors emphasize joint mechanics and soft tissue mobilization, while physical therapists frequently emphasize motor control re-education and progressive strengthening; collaborative co-management is common."
+    ],
+    "intentionally_incomplete_facts": [
+      "Extracorporeal Shockwave Therapy (ESWT) is currently under clinical review and is NOT offered at this clinic.",
+      "Stem cell regenerative therapy is NOT offered.",
+      "Acupuncture is NOT currently practiced in-house."
+    ],
+    "prohibited_hallucinations": [
+      "Do not claim Apex Spine offers shockwave or regenerative injection therapy.",
+      "Do not claim 100% cure guarantees or permanent relief from arthritis in 1 session.",
+      "Do not claim in-network status with Medicare or Medicaid."
+    ]
+  },
+  "content_brief": {
+    "target_topic": "When to See a Sports Chiropractor vs. Physical Therapist for Running Injuries",
+    "primary_keyword": "sports chiropractor vs physical therapist running injury",
+    "secondary_keywords": [
+      "runner injury treatment Austin",
+      "sports chiro for runners knee",
+      "active release technique Austin"
+    ],
+    "target_audience": "Local runners in Austin preparing for races or dealing with nagging tendon/joint pain.",
+    "search_intent": "Informational / Commercial Investigation",
+    "required_sections": [
+      "1. Introduction: The Frustration of Runner Overuse Injuries",
+      "2. Core Philosophies: Sports Chiropractic vs. Physical Therapy",
+      "3. When to Choose a Sports Chiropractor First",
+      "4. When a Physical Therapist is the Better Starting Point",
+      "5. How Collaborative Co-Care Speeds Marathon Recovery",
+      "6. What to Expect at Apex Spine & Sports Chiropractic in Austin"
+    ],
+    "required_facts": [
+      "Must state that Texas is a direct-access state for chiropractic care (no referral needed).",
+      "Must mention Active Release Technique (ART) and 1-on-1 30-minute treatment sessions.",
+      "Must reference local Austin running landmarks (e.g., Lady Bird Lake Trail)."
+    ],
+    "prohibited_claims": [
+      "No claims of cure guarantees.",
+      "No derogatory claims against physical therapy or orthopedic physicians.",
+      "No mention of shockwave therapy or laser therapy."
+    ],
+    "tone_requirements": "Empathetic, clear, clinically accurate, direct, Grade 7-8 readability.",
+    "desired_format": "Educational clinical guide (approx. 800-900 words) with structured H2/H3 subheadings and FAQ callout."
+  },
+  "repurposing_inputs": {
+    "canonical_article_slug": "sports-chiropractor-vs-physical-therapist-running-injuries-austin",
+    "approved_facts": [
+      "Dr. Marcus Vance, DC, CCSP leads care.",
+      "Focus on active rehabilitation and ART soft-tissue work.",
+      "Located at 1401 S Congress Ave, Austin, TX.",
+      "Direct patient access (no physician referral required in Texas)."
+    ],
+    "target_channels": [
+      {
+        "channel": "Google Business Profile",
+        "format": "GBP Update Post",
+        "constraints": "Under 150 words, compelling local hook, clear CTA to book assessment, phone number included."
+      },
+      {
+        "channel": "Website Structured FAQ",
+        "format": "FAQPage JSON-LD & Accordion",
+        "constraints": "3 core Q&A pairs matching exact patient questions without clinical puffery."
+      },
+      {
+        "channel": "Patient Newsletter",
+        "format": "Email Newsletter Feature",
+        "constraints": "Under 200 words, conversational tone, 3 bulleted takeaway symptoms for trail runners."
+      }
+    ]
+  },
+  "maintenance_inputs": {
+    "original_article_url": "https://www.apexspineaustin.com/blog/sports-chiropractor-vs-physical-therapist-running-injuries",
+    "original_publish_date": "2024-03-10",
+    "outdated_elements": [
+      {
+        "element": "Clinic Operating Hours",
+        "old_value": "Monday-Thursday: 8am - 5pm, Friday: 8am - 12pm",
+        "new_value": "Monday-Thursday: 7:30am - 6pm, Friday: 7:30am - 2pm, Saturday: 8am - 12pm (Runner Clinic)"
+      },
+      {
+        "element": "Insurance Verification Policy",
+        "old_value": "We submit claims to BlueCross BlueShield of Texas.",
+        "new_value": "Effective Jan 2026, we are an out-of-network boutique clinic; we provide itemized superbills for direct insurer reimbursement."
+      },
+      {
+        "element": "External Clinical Citation",
+        "old_value": "http://www.journalofsportschiropractic.org/2019/study402 (Dead link / 404 error)",
+        "new_value": "https://doi.org/10.1016/j.jcm.2023.04.002 (Updated DOI permanent handle)"
+      }
+    ],
+    "freshness_signals": [
+      "Review article:modified_time meta tag",
+      "Verify broken external URLs with HTTP status inspection",
+      "Update internal links to Austin marathon training schedules"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "TOOL-CAN-003",
+  "tool_name": "Frase",
+  "provider": "Frase, Inc. / Copysmith",
+  "official_url": "https://www.frase.io/",
+  "classification": {
+    "primary_capability": "CAP-RES-03",
+    "secondary_capabilities": [
+      "CAP-RES-02",
+      "CAP-BRF-01"
+    ],
+    "target_users": [
+      "Local Business Owners",
+      "Content Strategists",
+      "Practitioners"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services",
+      "Local Retail"
+    ]
+  },
+  "problem": {
+    "primary_problem": "Execution of Topic & Competitor Gap Analysis within local business content workflows.",
+    "secondary_problems": [
+      "Content production bottleneck",
+      "Factual quality control"
+    ],
+    "use_cases": [
+      "Automating or assisting Topic & Competitor Gap Analysis for local service providers."
+    ]
+  },
+  "workflow": {
+    "supported_workflows": [
+      "WF-AICONTENT-001"
+    ],
+    "workflow_stages": [
+      "Research",
+      "Brief",
+      "Create",
+      "Repurpose",
+      "Maintain"
+    ],
+    "required_capabilities": [
+      "CAP-RES-03"
+    ]
+  },
+  "commercial": {
+    "pricing_model": "SUBSCRIPTION",
+    "free_plan": false,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "EVALUATED",
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "review_status": "EVALUATED",
+    "change_notes": "Completed Sprint A.3.4 empirical evaluation."
+  }
+}

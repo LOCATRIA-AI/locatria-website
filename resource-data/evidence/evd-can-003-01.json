@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-003-01",
+  "tool_id": "TOOL-CAN-003",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Frase)",
+    "url": "https://www.frase.io/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Frase analyzes top 20 Google SERP competitors to identify dominant heading structures and actionable topic coverage gaps.",
+  "observation": "In Benchmark Test 03, identified 14 dominant SERP subheadings and revealed competitor gaps in gait analysis and return-to-running load management.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

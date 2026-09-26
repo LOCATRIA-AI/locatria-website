@@ -1,5 +1,76 @@
 {
   "entity_type": "TOOL_INDEX",
   "schema_version": "1.0",
-  "items": []
+  "items": [
+    {
+      "tool_id": "TOOL-CAN-001",
+      "tool_name": "NotebookLM",
+      "provider": "Google",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-001.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-002",
+      "tool_name": "AlsoAsked",
+      "provider": "AlsoAsked Ltd.",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-002.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-003",
+      "tool_name": "Frase",
+      "provider": "Frase, Inc. / Copysmith",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-003.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-004",
+      "tool_name": "Content Harmony",
+      "provider": "Content Harmony LLC",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-004.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-005",
+      "tool_name": "Hemingway Editor",
+      "provider": "Hemingway Ltd.",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-005.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-006",
+      "tool_name": "Claude",
+      "provider": "Anthropic",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-006.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-007",
+      "tool_name": "ChatGPT / GPT-4o",
+      "provider": "OpenAI",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-007.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-008",
+      "tool_name": "Grammarly Business",
+      "provider": "Grammarly, Inc.",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-008.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-010",
+      "tool_name": "Diffchecker",
+      "provider": "Diffchecker / Canvas",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-010.json"
+    },
+    {
+      "tool_id": "TOOL-CAN-011",
+      "tool_name": "Screaming Frog",
+      "provider": "Screaming Frog Ltd.",
+      "lifecycle_status": "EVALUATED",
+      "path": "resource-data/tools/tool-can-011.json"
+    }
+  ]
 }

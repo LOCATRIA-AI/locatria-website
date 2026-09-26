@@ -1,0 +1,61 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "TOOL-CAN-002",
+  "tool_name": "AlsoAsked",
+  "provider": "AlsoAsked Ltd.",
+  "official_url": "https://alsoasked.com/",
+  "classification": {
+    "primary_capability": "CAP-RES-01",
+    "secondary_capabilities": [
+      "CAP-RES-02"
+    ],
+    "target_users": [
+      "Local Business Owners",
+      "Content Strategists",
+      "Practitioners"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services",
+      "Local Retail"
+    ]
+  },
+  "problem": {
+    "primary_problem": "Execution of Customer Inquiry Discovery & Clustering within local business content workflows.",
+    "secondary_problems": [
+      "Content production bottleneck",
+      "Factual quality control"
+    ],
+    "use_cases": [
+      "Automating or assisting Customer Inquiry Discovery & Clustering for local service providers."
+    ]
+  },
+  "workflow": {
+    "supported_workflows": [
+      "WF-AICONTENT-001"
+    ],
+    "workflow_stages": [
+      "Research",
+      "Brief",
+      "Create",
+      "Repurpose",
+      "Maintain"
+    ],
+    "required_capabilities": [
+      "CAP-RES-01"
+    ]
+  },
+  "commercial": {
+    "pricing_model": "FREEMIUM",
+    "free_plan": true,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "EVALUATED",
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "review_status": "EVALUATED",
+    "change_notes": "Completed Sprint A.3.4 empirical evaluation."
+  }
+}

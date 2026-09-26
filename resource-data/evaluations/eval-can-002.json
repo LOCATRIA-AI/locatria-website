@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-002",
+  "tool_id": "TOOL-CAN-002",
+  "dimensions": {
+    "problem_fit": "Strong Fit for discovering live customer search intent hierarchies and unearthing real-world patient questions.",
+    "workflow_fit": "Workflow Compatible with Stage 1 Research; directly informs editorial FAQ planning and section outline structuring.",
+    "usability": "High usability via visual radial mind-maps and structured tree tables with multi-format CSV/PNG exports.",
+    "capability": "Deep People Also Ask (PAA) question clustering with regional geo-targeting; reveals local statutory/regulatory inquiries.",
+    "evidence": "Evidence Available with Strong empirical backing from Benchmark Test 02 across US/Texas search queries.",
+    "integration": "Workflow Compatible via CSV, PNG, and JSON data exports into brief preparation pipelines.",
+    "value": "High value on free tier for low-volume local inquiries, with affordable subscription tiers for growing agencies.",
+    "limitations": "Significant Limitation in keyword metrics: provides question trees only, without search volume or CPC difficulty data."
+  },
+  "evidence_refs": [
+    "EVD-CAN-002-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "AlsoAsked demonstrates Strong Fit for CAP-RES-01, mapping real customer intent trees and local question variants accurately.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

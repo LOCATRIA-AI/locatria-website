@@ -1,0 +1,62 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "TOOL-CAN-004",
+  "tool_name": "Content Harmony",
+  "provider": "Content Harmony LLC",
+  "official_url": "https://www.contentharmony.com/",
+  "classification": {
+    "primary_capability": "CAP-BRF-01",
+    "secondary_capabilities": [
+      "CAP-BRF-02",
+      "CAP-BRF-03"
+    ],
+    "target_users": [
+      "Local Business Owners",
+      "Content Strategists",
+      "Practitioners"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services",
+      "Local Retail"
+    ]
+  },
+  "problem": {
+    "primary_problem": "Execution of Content Structuring & Outlining within local business content workflows.",
+    "secondary_problems": [
+      "Content production bottleneck",
+      "Factual quality control"
+    ],
+    "use_cases": [
+      "Automating or assisting Content Structuring & Outlining for local service providers."
+    ]
+  },
+  "workflow": {
+    "supported_workflows": [
+      "WF-AICONTENT-001"
+    ],
+    "workflow_stages": [
+      "Research",
+      "Brief",
+      "Create",
+      "Repurpose",
+      "Maintain"
+    ],
+    "required_capabilities": [
+      "CAP-BRF-01"
+    ]
+  },
+  "commercial": {
+    "pricing_model": "SUBSCRIPTION",
+    "free_plan": false,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "EVALUATED",
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "review_status": "EVALUATED",
+    "change_notes": "Completed Sprint A.3.4 empirical evaluation."
+  }
+}

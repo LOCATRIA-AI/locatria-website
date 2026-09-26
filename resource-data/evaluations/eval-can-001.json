@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-001",
+  "tool_id": "TOOL-CAN-001",
+  "dimensions": {
+    "problem_fit": "Strong Fit for synthesizing unstructured clinic notes, treatment protocols, and local business knowledge into grounded briefs without factual drift.",
+    "workflow_fit": "Workflow Compatible with Stage 1 Research; serves as a private, grounded knowledge repository for content creation.",
+    "usability": "High usability with an intuitive notebook interface and conversational query system; requires zero complex configuration.",
+    "capability": "Excellent source-grounded summarization, query answering, and citation mapping; strictly adheres to source boundaries.",
+    "evidence": "Evidence Available with Strong empirical support from Benchmark Test 01 and official Google Labs documentation.",
+    "integration": "Requires Workaround for direct CMS or markdown pipeline export; content must be copied manually or via Google Docs.",
+    "value": "High value on free tier with generous source document upload allowances for local service businesses.",
+    "limitations": "Requires Human Oversight to curate complete source notes, as the tool does not autonomously search or verify external web facts."
+  },
+  "evidence_refs": [
+    "EVD-CAN-001-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "NotebookLM demonstrates Strong Fit for CAP-RES-04, delivering verified, citation-backed factual synthesis without hallucination.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

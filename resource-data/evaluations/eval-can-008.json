@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-008",
+  "tool_id": "TOOL-CAN-008",
+  "dimensions": {
+    "problem_fit": "Partial Fit for local businesses; effective for enforcing entity naming and formatting rules, but unable to verify unconfigured real-world facts.",
+    "workflow_fit": "Workflow Compatible with Stage 3 Create and Stage 4 Repurpose; operates seamlessly inside browser text fields and document editors.",
+    "usability": "High usability with non-intrusive in-line suggestions and administrative style guide configuration dashboard.",
+    "capability": "Strong enforcement of customized brand dictionaries, preferred terminology, phone formatting, and tone guardrails.",
+    "evidence": "Evidence Available with Strong empirical confirmation from Benchmark Test 08.",
+    "integration": "Workflow Compatible across Google Docs, Word, CMS editors, and web extension plugins.",
+    "value": "Moderate value; requires paid team tier to unlock custom style guides and brand dictionaries needed for local entity governance.",
+    "limitations": "Significant Limitation in autonomous fact-checking: completely relies on pre-programmed rules and cannot detect unconfigured factual inaccuracies."
+  },
+  "evidence_refs": [
+    "EVD-CAN-008-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Grammarly Business demonstrates Partial Fit for CAP-CRT-03, providing solid entity consistency enforcement when pre-configured with brand rules.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

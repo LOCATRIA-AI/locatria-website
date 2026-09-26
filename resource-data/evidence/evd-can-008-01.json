@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-008-01",
+  "tool_id": "TOOL-CAN-008",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Grammarly Business)",
+    "url": "https://www.grammarly.com/business",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Grammarly Business enforces organizational style guides and custom dictionaries to catch brand abbreviations and formatting violations.",
+  "observation": "In Benchmark Test 08, successfully caught unauthorized brand abbreviations (Apex Chiro) and phone format defects based on configured custom rules.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

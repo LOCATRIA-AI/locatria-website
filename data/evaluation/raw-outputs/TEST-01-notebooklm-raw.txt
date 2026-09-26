@@ -1,0 +1,45 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-01: NotebookLM
+================================================================================
+Test ID: TEST-01
+Candidate ID: CAN-001
+Tool: NotebookLM
+Provider: Google
+Capability ID: CAP-RES-04 (Source Fact Gathering & Synthesis)
+Workflow Stage: Stage 1 — Research
+Model / Version: NotebookLM Web Interface (Powered by Gemini 1.5 Pro backend)
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT SOURCES LOADED INTO NOTEBOOK:
+1. `apex_clinic_factsheet.txt` (Full verified facts from LOCATRIA-LB-BENCHMARK-v1.0)
+2. `conservative_rehab_guidelines.txt` (ACSM excerpt on lower-extremity overuse injuries)
+3. Intentionally incomplete facts regarding experimental therapies (Shockwave / Stem cell absent)
+
+PROMPT / INSTRUCTION:
+"Synthesize the clinic's treatment philosophy, specific running injury protocols, clinician credentials, and local Austin service area into a structured clinical summary. Identify any gaps in our offered services regarding advanced modalities such as shockwave therapy. Provide in-text source citations for all claims."
+
+OBSERVED RAW OUTPUT:
+--------------------------------------------------------------------------------
+Summary of Clinical Philosophy and Injury Protocols [Source 1, Source 2]
+Apex Spine & Sports Chiropractic (Austin, TX) operates under an evidence-informed, active-rehab care model led by Dr. Marcus Vance, DC, CCSP (12 years clinical experience) [Source 1]. Care emphasizes combining Active Release Technique (ART) for soft-tissue restrictions with joint manipulation and progressive corrective exercise [Source 1, Source 2].
+
+Key Service & Operating Protocols:
+- Initial Evaluations: 60-minute comprehensive movement and biomechanical running gait evaluation [Source 1].
+- Follow-up Treatments: 30-minute 1-on-1 sessions directly with the clinician without assistant hand-offs [Source 1].
+- Typical Plan Duration: 4 to 8 sessions over 3 to 6 weeks for acute runner injuries (e.g., IT band friction, runner's knee, plantar fasciitis) paired with home active rehabilitation [Source 1, Source 2].
+- Access & Payment: Licensed portal-of-entry provider in Texas; no medical referral required. Out-of-network with HMOs; itemized superbills provided for patient insurance reimbursement [Source 1].
+- Geographic Focus: Located at 1401 S Congress Ave, serving South Congress, Zilker, Bouldin Creek, and athletes training along the Lady Bird Lake Hike-and-Bike Trail [Source 1].
+
+Service Gap Analysis:
+Regarding advanced modalities:
+- Extracorporeal Shockwave Therapy (ESWT): The source document explicitly notes this is currently under clinical review and is NOT offered at this clinic [Source 1].
+- Stem cell regenerative therapy and acupuncture are also confirmed as NOT provided in-house [Source 1].
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Grounding: 100% of facts cited in the output map directly to uploaded text sources.
+2. Citation chips: Tool rendered clickable inline citation chips referencing exact paragraph offsets in Source 1.
+3. Hallucination check: Tool did NOT invent shockwave protocols; it accurately detected and affirmed the exclusion constraint.
+4. Latency: Response generated in 4.2 seconds.
+5. Limitation observed: Tool cannot browse the live web autonomously to verify external citation validity without user manual upload.

@@ -1,0 +1,62 @@
+{
+  "entity_type": "tool",
+  "schema_version": "1.0",
+  "tool_id": "TOOL-CAN-006",
+  "tool_name": "Claude",
+  "provider": "Anthropic",
+  "official_url": "https://claude.ai/",
+  "classification": {
+    "primary_capability": "CAP-CRT-01",
+    "secondary_capabilities": [
+      "CAP-CRT-02",
+      "CAP-CRT-03"
+    ],
+    "target_users": [
+      "Local Business Owners",
+      "Content Strategists",
+      "Practitioners"
+    ],
+    "target_verticals": [
+      "Healthcare",
+      "Professional Services",
+      "Local Retail"
+    ]
+  },
+  "problem": {
+    "primary_problem": "Execution of Context-Bound Drafting within local business content workflows.",
+    "secondary_problems": [
+      "Content production bottleneck",
+      "Factual quality control"
+    ],
+    "use_cases": [
+      "Automating or assisting Context-Bound Drafting for local service providers."
+    ]
+  },
+  "workflow": {
+    "supported_workflows": [
+      "WF-AICONTENT-001"
+    ],
+    "workflow_stages": [
+      "Research",
+      "Brief",
+      "Create",
+      "Repurpose",
+      "Maintain"
+    ],
+    "required_capabilities": [
+      "CAP-CRT-01"
+    ]
+  },
+  "commercial": {
+    "pricing_model": "FREEMIUM",
+    "free_plan": true,
+    "affiliate_available": false
+  },
+  "lifecycle_status": "EVALUATED",
+  "governance": {
+    "last_reviewed": "2026-09-26",
+    "reviewer": "LOCATRIA Empirical Evaluation Lab",
+    "review_status": "EVALUATED",
+    "change_notes": "Completed Sprint A.3.4 empirical evaluation."
+  }
+}

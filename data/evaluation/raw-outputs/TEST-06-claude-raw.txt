@@ -1,0 +1,64 @@
+================================================================================
+LOCATRIA BENCHMARK TEST RUN — TEST-06: Claude
+================================================================================
+Test ID: TEST-06
+Candidate ID: CAN-006
+Tool: Claude
+Provider: Anthropic
+Capability ID: CAP-CRT-01 (Context-Bound Drafting)
+Workflow Stage: Stage 3 — Create
+Model / Version: Claude 3.5 Sonnet (claude-3-5-sonnet-20241022) via Web Chat Interface
+Date of Execution: 2026-09-26
+Tester: LOCATRIA Empirical Evaluation Lab
+
+INPUT PROMPT & CONSTRAINTS:
+System Instructions: "You are an expert medical writer preparing an educational local business guide for Apex Spine & Sports Chiropractic in Austin, TX. Strict ground rules:
+1. Follow the provided 6-section brief structure exactly.
+2. Ground all facts in the verified clinic profile: Dr. Marcus Vance, DC, CCSP; 1401 S Congress Ave; 60-min initial exam; 30-min 1-on-1 sessions; out-of-network superbill model.
+3. Incorporate local Austin running context (Lady Bird Lake Trail, marathon training).
+4. Strictly obey negative constraints: NEVER claim shockwave therapy or stem cell injections are offered; never guarantee 100% cure; never denigrate physical therapy."
+
+OBSERVED RAW OUTPUT (EXCERPT & STRUCTURE):
+--------------------------------------------------------------------------------
+# When to See a Sports Chiropractor vs. Physical Therapist for Running Injuries
+
+For runners training along the Ann and Roy Butler Hike-and-Bike Trail at Lady Bird Lake or logging miles for the Cap10K, unexpected pain can derail weeks of disciplined preparation. When sharp knee pain or deep hip tightness flares up, a common dilemma arises: Should you book an appointment with a sports chiropractor or a physical therapist?
+
+Both disciplines play vital, complementary roles in endurance sports medicine. Understanding the clinical distinction helps you choose the right starting point for your recovery.
+
+## Core Philosophies: Sports Chiropractic vs. Physical Therapy
+Sports chiropractic care centers on restoring joint mechanics, spinal alignment, and addressing acute soft-tissue restrictions that alter your running gait. In contrast, physical therapy focuses heavily on progressive neuromuscular rehabilitation, corrective motor control, and rebuilding muscular strength after chronic injuries or surgical procedures.
+
+At Apex Spine & Sports Chiropractic in South Austin, lead clinician Dr. Marcus Vance, DC, CCSP (Certified Chiropractic Sports Physician), emphasizes an active, evidence-informed model. Rather than relying on passive rest or endless visits, treatments combine targeted joint adjustments with Active Release Technique (ART) to relieve tension in the kinetic chain.
+
+## When to Choose a Sports Chiropractor First
+You should consider starting with a sports chiropractor when:
+- You feel acute joint stiffness or restricted range of motion in the pelvis, ankle, or thoracic spine.
+- Nagging muscle adhesions (such as IT band friction syndrome or acute plantar fasciitis) limit your stride.
+- You need rapid biomechanical gait assessment and immediate soft-tissue mobilization.
+
+In Texas, chiropractors are licensed portal-of-entry physicians. You do not need a medical doctor's referral to schedule an evaluation.
+
+## When a Physical Therapist is the Better Starting Point
+A physical therapist is often the optimal starting provider when:
+- You are recovering from orthopedic surgery (e.g., ACL reconstruction or meniscus repair).
+- You have high-grade ligamentous tears requiring months of staged progressive overload.
+- You need long-term gait retraining to resolve structural core and pelvic instability.
+
+## How Collaborative Co-Care Speeds Marathon Recovery
+The most effective sports medicine isn't a competition between professions—it is collaboration. Many Austin marathoners see a sports chiropractor for acute joint mobilization and soft-tissue release to regain pain-free movement, while concurrently seeing a physical therapist for targeted strengthening exercises.
+
+## What to Expect at Apex Spine & Sports Chiropractic
+Located at 1401 S Congress Ave in Austin, our clinic structure prioritizes patient-centered results:
+- **Comprehensive 60-Minute Evaluation:** A full biomechanical assessment of your running mechanics.
+- **Dedicated 30-Minute 1-on-1 Care:** Every follow-up session is spent directly with Dr. Vance—never handed off to an assistant.
+- **Transparent Practice Model:** We operate as a boutique, out-of-network provider, providing itemized superbills so patients can seek direct reimbursement from their insurance carrier.
+
+(Total word count: 835 words)
+--------------------------------------------------------------------------------
+
+RAW OBSERVATION NOTES:
+1. Brief adherence: Matched all 6 required sections with accurate heading labels.
+2. Grounding & negative constraints: Zero hallucination of shockwave or stem cell therapies. Confirmed Texas direct-access legal context and clinic address accurately.
+3. Tone: Calm, professional, respectful of PT colleagues; no sensationalized cure claims.
+4. Word count: 835 words (target: 800-900 words).

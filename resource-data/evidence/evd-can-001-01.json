@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-001-01",
+  "tool_id": "TOOL-CAN-001",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (NotebookLM)",
+    "url": "https://notebooklm.google.com/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "NotebookLM grounds 100% of factual synthesis in provided source files and refuses to extrapolate unverified treatment modalities.",
+  "observation": "In Benchmark Test 01 with clinic facts and omitted shockwave facts, tool produced grounded synthesis with clickable citation chips and did not hallucinate unoffered modalities.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

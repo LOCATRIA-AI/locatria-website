@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-002-01",
+  "tool_id": "TOOL-CAN-002",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (AlsoAsked)",
+    "url": "https://alsoasked.com/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "AlsoAsked maps multi-level customer search intent hierarchies and uncovers state-specific patient questions from live Google PAA data.",
+  "observation": "In Benchmark Test 02, generated a 3-tier radial hierarchy of 38 live Google PAA questions, including Texas-specific direct-access regulatory queries.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

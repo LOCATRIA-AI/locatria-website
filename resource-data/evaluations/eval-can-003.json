@@ -1,0 +1,26 @@
+{
+  "entity_type": "evaluation",
+  "schema_version": "1.0",
+  "evaluation_id": "EVAL-CAN-003",
+  "tool_id": "TOOL-CAN-003",
+  "dimensions": {
+    "problem_fit": "Partial Fit for local businesses; powerful for dissecting competitor SERP headings but can emphasize generic SEO metrics over local nuance.",
+    "workflow_fit": "Workflow Compatible with Stage 1 Research and Stage 2 Brief, providing end-to-end SERP analysis and outline drafting.",
+    "usability": "Moderate usability; rich interface with multiple panes for SERP analysis, topic scoring, and AI drafting.",
+    "capability": "Comprehensive SERP competitor heading breakdown, topic frequency analysis, and question discovery.",
+    "evidence": "Evidence Available with Strong empirical support from Benchmark Test 03 and vendor documentation.",
+    "integration": "Workflow Compatible with built-in Google Docs and WordPress integrations, plus markdown export.",
+    "value": "Moderate value for single local businesses due to ongoing subscription cost compared to free standalone research tools.",
+    "limitations": "Requires Human Oversight to prevent keyword stuffing and resist homogenizing content against generic national competitors."
+  },
+  "evidence_refs": [
+    "EVD-CAN-003-01"
+  ],
+  "evaluated_by": "LOCATRIA Empirical Evaluation Lab",
+  "evaluated_at": "2026-09-26",
+  "summary": "Frase demonstrates Partial Fit for CAP-RES-03, effectively uncovering competitor subtopics while requiring vigilance against over-optimization.",
+  "governance": {
+    "review_status": "FINAL",
+    "last_reviewed": "2026-09-26"
+  }
+}

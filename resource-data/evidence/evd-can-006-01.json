@@ -1,0 +1,17 @@
+{
+  "entity_type": "evidence",
+  "schema_version": "1.0",
+  "evidence_id": "EVD-CAN-006-01",
+  "tool_id": "TOOL-CAN-006",
+  "source": {
+    "name": "LOCATRIA Benchmark Empirical Test (Claude)",
+    "url": "https://claude.ai/",
+    "type": "PRODUCT_TEST"
+  },
+  "claim": "Claude generates context-bound educational drafts that strictly adhere to multi-section briefs and respect negative factual constraints.",
+  "observation": "In Benchmark Test 06, Claude 3.5 Sonnet produced an 835-word clinical guide matching all 6 required sections with zero hallucination of unoffered shockwave treatments.",
+  "evidence_strength": "STRONG",
+  "captured_at": "2026-09-26",
+  "captured_by": "LOCATRIA Empirical Evaluation Lab",
+  "notes": "Derived from controlled execution of LOCATRIA-LB-BENCHMARK-v1.0. Raw output preserved in data/evaluation/raw-outputs/."
+}

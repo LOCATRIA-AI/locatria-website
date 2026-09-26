@@ -5,10 +5,10 @@
   "data_layer_version": "1.0",
   "status": "OPERATIONAL",
   "entity_counts": {
-    "tools": 0,
+    "tools": 10,
     "resources": 0,
-    "evidence": 0,
-    "evaluations": 0,
+    "evidence": 10,
+    "evaluations": 10,
     "recommendations": 0,
     "affiliates": 0,
     "reviews": 0,
