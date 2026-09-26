@@ -87,6 +87,37 @@
         "PAUSED",
         "ENDED"
       ]
+    },
+    "destination_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "program_source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "responsible_owner": {
+      "type": "string"
+    },
+    "date_applied": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_activated": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_paused_ended": {
+      "type": "string",
+      "format": "date"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "UNVERIFIED",
+        "PENDING_CHECK"
+      ]
     }
   },
   "additionalProperties": false
