@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Operating Dashboard v1.0 — LOCATRIA / GDBS OS</title>
+  <meta name="description" content="Founder and Operator control surface for the LOCATRIA Resource & Knowledge Operating System. Real-time view of Resource Portfolio, Tool State, Review Queue, and Governance Health.">
+  
+  <!-- Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS Files -->
+  <link rel="stylesheet" href="css/variables.css?v=4.0">
+  <link rel="stylesheet" href="css/global.css?v=4.0">
+  <link rel="stylesheet" href="css/header.css?v=4.0">
+  <link rel="stylesheet" href="css/components.css?v=4.0">
+  <link rel="stylesheet" href="css/sidebar.css?v=4.0">
+  <link rel="stylesheet" href="css/footer.css?v=4.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    /* Dashboard specific layout enhancements */
+    .dashboard-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-4);
+    }
+    .dashboard-header {
+      background: var(--color-bg-surface);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      margin-bottom: var(--space-8);
+      box-shadow: var(--shadow-sm);
+    }
+    .dashboard-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+    }
+    .dashboard-title {
+      font-size: var(--text-3xl);
+      font-weight: 800;
+      color: var(--color-text-main);
+      margin: 0 0 var(--space-2) 0;
+      letter-spacing: -0.02em;
+    }
+    .dashboard-subtitle {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+    .dashboard-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+    }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .status-badge.healthy {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }
+    .status-badge.neutral {
+      background: var(--color-bg-muted);
+      color: var(--color-text-body);
+      border: 1px solid var(--color-border-subtle);
+    }
+    .status-badge.info {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+    .status-badge.warning {
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fde68a;
+    }
+
+    /* Section Cards */
+    .op-section {
+      background: #ffffff;
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      margin-bottom: var(--space-8);
+      box-shadow: var(--shadow-sm);
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+    .section-title {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-text-main);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .section-subtitle {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-top: 2px;
+    }
+
+    /* Metric Counters Grid */
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+    .metric-card {
+      background: var(--color-bg-subtle);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-4);
+      text-align: center;
+    }
+    .metric-value {
+      font-size: var(--text-3xl);
+      font-weight: 800;
+      color: var(--color-text-main);
+      font-family: var(--font-mono);
+      line-height: 1.1;
+    }
+    .metric-label {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: var(--space-2);
+    }
+
+    /* Tables */
+    .op-table-wrapper {
+      overflow-x: auto;
+      margin-top: var(--space-4);
+    }
+    .op-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: var(--text-sm);
+    }
+    .op-table th {
+      background: var(--color-bg-muted);
+      color: var(--color-text-main);
+      font-weight: 600;
+      padding: 10px 14px;
+      border-bottom: 2px solid var(--color-border-subtle);
+      white-space: nowrap;
+    }
+    .op-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--color-border-subtle);
+      vertical-align: middle;
+    }
+    .op-table tr:hover td {
+      background: var(--color-bg-subtle);
+    }
+
+    /* Status Pills */
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 11px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+    }
+    .pill-rec {
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+    .pill-cond {
+      background: #eff6ff;
+      color: #1e40af;
+      border: 1px solid #bfdbfe;
+    }
+    .pill-list {
+      background: #f8fafc;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+    }
+    .pill-alert {
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }
+
+    /* Empty State Banner */
+    .empty-banner {
+      background: var(--color-bg-subtle);
+      border: 1px dashed var(--color-border-strong);
+      border-radius: var(--radius-md);
+      padding: var(--space-8);
+      text-align: center;
+      margin: var(--space-4) 0;
+    }
+    .empty-banner-title {
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text-main);
+      margin-bottom: var(--space-2);
+      font-family: var(--font-mono);
+    }
+    .empty-banner-desc {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* Two-Ledger Grid */
+    .two-ledger-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+      margin-top: var(--space-4);
+    }
+    @media (max-width: 768px) {
+      .two-ledger-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .ledger-card {
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      padding: var(--space-5);
+      background: #ffffff;
+    }
+    .ledger-title {
+      font-size: var(--text-base);
+      font-weight: 700;
+      color: var(--color-text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-2);
+    }
+    .ledger-principle {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      line-height: 1.4;
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    /* Founder Action List */
+    .action-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+      padding: var(--space-4);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-3);
+      background: var(--color-bg-surface);
+    }
+    .action-icon {
+      font-size: 20px;
+      line-height: 1;
+      margin-top: 2px;
+    }
+    .action-content {
+      flex: 1;
+    }
+    .action-title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text-main);
+      margin-bottom: 2px;
+    }
+    .action-desc {
+      font-size: var(--text-xs);
+      color: var(--color-text-body);
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .action-meta {
+      font-size: 11px;
+      color: var(--color-text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Filters Bar */
+    .filters-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+      margin-bottom: var(--space-4);
+      background: var(--color-bg-subtle);
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border-subtle);
+    }
+    .filter-input {
+      padding: 6px 12px;
+      border: 1px solid var(--color-border-strong);
+      border-radius: var(--radius-sm);
+      font-size: var(--text-xs);
+      font-family: var(--font-sans);
+      background: #ffffff;
+      color: var(--color-text-main);
+    }
+    .filter-input:focus {
+      outline: none;
+      border-color: var(--color-primary-500);
+      box-shadow: 0 0 0 2px var(--color-focus-ring);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WCAG Accessibility Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- GLOBAL HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Locatria Home">
+        <img src="assets/locatria-logo.png" alt="Locatria Logo" class="brand-logo-img" height="52" style="height: 52px !important; width: auto !important; max-width: 160px !important; object-fit: contain !important; display: block !important;">
+      </a>
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge.html" class="nav-link">Knowledge Hub</a>
+        <a href="resource-dashboard.html" class="nav-link is-active">Operating Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="dashboard-container">
+
+    <!-- DASHBOARD HEADER -->
+    <div class="dashboard-header">
+      <div class="dashboard-title-row">
+        <div>
+          <h1 class="dashboard-title">Resource Operating Dashboard</h1>
+          <p class="dashboard-subtitle">Founder & Operator Control Surface for the LOCATRIA Knowledge & Resource Operating System</p>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono);">
+            SNAPSHOT: <strong id="snapshot-date">2026-09-26</strong> | ENV: <strong>LOCAL REPO</strong>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-badges">
+        <span class="status-badge healthy">✓ System Healthy</span>
+        <span class="status-badge neutral">10 Tools Audited</span>
+        <span class="status-badge neutral">4 Resources Published</span>
+        <span class="status-badge info">Review Queue: 0 Open</span>
+        <span class="status-badge warning">Telemetry: Baseline Ready</span>
+        <span class="status-badge neutral">Commercial: 0 Active (Decoupled)</span>
+      </div>
+    </div>
+
+    <!-- GLOBAL SEARCH & FILTER BAR -->
+    <div class="filters-bar">
+      <div style="flex: 1; min-width: 240px;">
+        <input type="text" id="global-search" class="filter-input" style="width: 100%;" placeholder="🔍 Search Tools, Resources, Recommendations, or Reviews...">
+      </div>
+      <div>
+        <select id="filter-tool-status" class="filter-input">
+          <option value="ALL">All Recommendation Statuses</option>
+          <option value="RECOMMENDED">RECOMMENDED</option>
+          <option value="CONDITIONALLY_RECOMMENDED">CONDITIONALLY_RECOMMENDED</option>
+          <option value="LISTED">LISTED</option>
+        </select>
+      </div>
+      <div>
+        <select id="filter-resource-type" class="filter-input">
+          <option value="ALL">All Resource Types</option>
+          <option value="RESOURCE_GUIDE">RESOURCE_GUIDE</option>
+          <option value="WORKFLOW_RESOURCE">WORKFLOW_RESOURCE</option>
+          <option value="TOOL_PROFILE">TOOL_PROFILE</option>
+        </select>
+      </div>
+      <button id="reset-filters-btn" class="filter-input" style="cursor: pointer; background: var(--color-bg-muted);">Reset Filters</button>
+    </div>
+
+    <!-- SECTION 01: OPERATING OVERVIEW -->
+    <section class="op-section" id="section-overview">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">01 — Operating Overview</h2>
+          <div class="section-subtitle">Canonical inventory counts directly read from the Resource Data Layer</div>
+        </div>
+        <span class="pill pill-rec">SINGLE SOURCE OF TRUTH</span>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-value" id="count-tools">10</div>
+          <div class="metric-label">Tools</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-resources">4</div>
+          <div class="metric-label">Resources</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-evaluations">10</div>
+          <div class="metric-label">Evaluations</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-recommendations">10</div>
+          <div class="metric-label">Recommendations</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-evidence">10</div>
+          <div class="metric-label">Evidence</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-relationships">10</div>
+          <div class="metric-label">Relationships</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-reviews">0</div>
+          <div class="metric-label">Reviews</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-measurements">0</div>
+          <div class="metric-label">Measurements</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="count-affiliates">0</div>
+          <div class="metric-label">Active Affiliates</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FOUNDER ACTION CENTER (Promoted to top for Operator Focus) -->
+    <section class="op-section" id="section-action-center" style="border-left: 4px solid var(--color-primary-500);">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">10 — Founder Action Center</h2>
+          <div class="section-subtitle">Operational queue: What requires human attention next? (Founder retains decision authority)</div>
+        </div>
+        <span class="pill pill-cond">HUMAN DECISION AUTHORITY</span>
+      </div>
+
+      <div id="founder-actions-list">
+        <div class="action-item">
+          <div class="action-icon">ℹ️</div>
+          <div class="action-content">
+            <div class="action-title">Measurement Telemetry Collection Pending</div>
+            <div class="action-desc">The Resource Measurement Layer (A.4.4) is architected and validated, awaiting initial real visitor traffic once deployment completes. No synthetic numbers are generated.</div>
+            <div class="action-meta">TARGET: resource-data/measurements | SEVERITY: LOW | STATUS: MONITOR</div>
+          </div>
+          <div>
+            <span class="pill pill-list">STANDBY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: RESOURCE PORTFOLIO -->
+    <section class="op-section" id="section-portfolio">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">02 — Resource Portfolio</h2>
+          <div class="section-subtitle">Canonical published resources categorized by architecture type. (No ranking or scoring)</div>
+        </div>
+        <div style="font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono);">
+          1 Guide • 1 Workflow Resource • 2 Tool Profiles
+        </div>
+      </div>
+
+      <div class="op-table-wrapper">
+        <table class="op-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Resource Title</th>
+              <th>Type</th>
+              <th>Lifecycle Status</th>
+              <th>Related Tools</th>
+              <th>Last Reviewed</th>
+              <th>Reviewer</th>
+            </tr>
+          </thead>
+          <tbody id="resource-table-body">
+            <tr>
+              <td><code>RES-GUIDE-001</code></td>
+              <td><strong>The Small Business Guide to AI Content Operations</strong></td>
+              <td><span class="pill pill-list">RESOURCE_GUIDE</span></td>
+              <td><span class="pill pill-rec">PUBLISHED</span></td>
+              <td>Claude, NotebookLM, Perplexity</td>
+              <td>2026-09-26</td>
+              <td>LOCATRIA Governance Board</td>
+            </tr>
+            <tr>
+              <td><code>RES-WORKFLOW-001</code></td>
+              <td><strong>The Verified Local Business AI Content Production Workflow</strong></td>
+              <td><span class="pill pill-list">WORKFLOW_RESOURCE</span></td>
+              <td><span class="pill pill-rec">PUBLISHED</span></td>
+              <td>NotebookLM, Claude, Perplexity, ChatGPT, Grammarly</td>
+              <td>2026-09-26</td>
+              <td>LOCATRIA Governance Board</td>
+            </tr>
+            <tr>
+              <td><code>RES-PROFILE-CLAUDE</code></td>
+              <td><strong>Anthropic Claude 3.5 Sonnet: Local Content Evaluation Profile</strong></td>
+              <td><span class="pill pill-list">TOOL_PROFILE</span></td>
+              <td><span class="pill pill-rec">PUBLISHED</span></td>
+              <td>Claude 3.5 Sonnet</td>
+              <td>2026-09-26</td>
+              <td>LOCATRIA Empirical Lab</td>
+            </tr>
+            <tr>
+              <td><code>RES-PROFILE-NOTEBOOKLM</code></td>
+              <td><strong>Google NotebookLM: Source Grounding & Fact Synthesis Profile</strong></td>
+              <td><span class="pill pill-list">TOOL_PROFILE</span></td>
+              <td><span class="pill pill-rec">PUBLISHED</span></td>
+              <td>NotebookLM</td>
+              <td>2026-09-26</td>
+              <td>LOCATRIA Empirical Lab</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 03: TOOL & RECOMMENDATION STATE -->
+    <section class="op-section" id="section-tools">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">03 — Tool & Recommendation State</h2>
+          <div class="section-subtitle">Canonical tool inventory and editorial recommendation states. (State view only; no ranking or winners)</div>
+        </div>
+        <div style="font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono);">
+          3 Recommended • 5 Conditionally Recommended • 2 Listed
+        </div>
+      </div>
+
+      <div class="op-table-wrapper">
+        <table class="op-table" id="tools-table">
+          <thead>
+            <tr>
+              <th>Tool ID</th>
+              <th>Tool Name</th>
+              <th>Provider</th>
+              <th>Primary Capability</th>
+              <th>Recommendation Status</th>
+              <th>Workflow Stages</th>
+              <th>Commercial Pricing</th>
+              <th>Evidence Link</th>
+            </tr>
+          </thead>
+          <tbody id="tools-table-body">
+            <!-- Dynamically populated or statically verified -->
+            <tr>
+              <td><code>TOOL-CAN-001</code></td>
+              <td><strong>NotebookLM</strong></td>
+              <td>Google</td>
+              <td>CAP-RES-04 (Source Fact Gathering)</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>Research, Brief, Create</td>
+              <td>FREE (100% Free Plan)</td>
+              <td><code>EVD-CAN-001-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-002</code></td>
+              <td><strong>AlsoAsked</strong></td>
+              <td>AlsoAsked Ltd.</td>
+              <td>CAP-RES-01 (Entity & Question Discovery)</td>
+              <td><span class="pill pill-list">LISTED</span></td>
+              <td>Research</td>
+              <td>FREEMIUM</td>
+              <td><code>EVD-CAN-002-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-003</code></td>
+              <td><strong>Frase</strong></td>
+              <td>Frase Inc.</td>
+              <td>CAP-BRF-01 (Outline Structuring)</td>
+              <td><span class="pill pill-list">LISTED</span></td>
+              <td>Brief, Maintain</td>
+              <td>SUBSCRIPTION ($15/mo)</td>
+              <td><code>EVD-CAN-003-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-004</code></td>
+              <td><strong>Content Harmony</strong></td>
+              <td>Content Harmony</td>
+              <td>CAP-BRF-01 (Standardized Brief Creation)</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>Brief</td>
+              <td>SUBSCRIPTION</td>
+              <td><code>EVD-CAN-004-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-005</code></td>
+              <td><strong>Hemingway Editor</strong></td>
+              <td>Hemingway Ltd.</td>
+              <td>CAP-CRT-02 (Readability & Jargon Reduction)</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>Create</td>
+              <td>FREE / DESKTOP</td>
+              <td><code>EVD-CAN-005-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-006</code></td>
+              <td><strong>Claude (3.5 Sonnet)</strong></td>
+              <td>Anthropic</td>
+              <td>CAP-CRT-01 (Context-Bound First Draft)</td>
+              <td><span class="pill pill-rec">RECOMMENDED</span></td>
+              <td>Brief, Create, Repurpose</td>
+              <td>FREEMIUM ($20/mo Pro)</td>
+              <td><code>EVD-CAN-006-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-007</code></td>
+              <td><strong>ChatGPT / GPT-4o</strong></td>
+              <td>OpenAI</td>
+              <td>CAP-CRT-01 (First Draft Assembly)</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>Brief, Create, Repurpose</td>
+              <td>FREEMIUM ($20/mo)</td>
+              <td><code>EVD-CAN-007-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-008</code></td>
+              <td><strong>Grammarly Business</strong></td>
+              <td>Grammarly Inc.</td>
+              <td>CAP-CRT-02 (Tone & Style Calibration)</td>
+              <td><span class="pill pill-list">LISTED</span></td>
+              <td>Create, Maintain</td>
+              <td>FREEMIUM ($12/mo)</td>
+              <td><code>EVD-CAN-008-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-010</code></td>
+              <td><strong>Diffchecker</strong></td>
+              <td>Diffchecker</td>
+              <td>CAP-MNT-01 (Entity Drift & Verification)</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>Maintain</td>
+              <td>FREEMIUM</td>
+              <td><code>EVD-CAN-010-01</code></td>
+            </tr>
+            <tr>
+              <td><code>TOOL-CAN-011</code></td>
+              <td><strong>Screaming Frog</strong></td>
+              <td>Screaming Frog Ltd.</td>
+              <td>CAP-MNT-01 (Site & Link Drift Audit)</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>Maintain</td>
+              <td>FREEMIUM</td>
+              <td><code>EVD-CAN-011-01</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 08: GOVERNANCE HEALTH PANEL -->
+    <section class="op-section" id="section-governance">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">08 — Governance Health Panel</h2>
+          <div class="section-subtitle">Operational compliance monitoring across evidence, reviews, and lifecycles. (Categorical states only; no numeric score)</div>
+        </div>
+        <span class="pill pill-rec">HEALTH: OK</span>
+      </div>
+
+      <div class="op-table-wrapper">
+        <table class="op-table">
+          <thead>
+            <tr>
+              <th>Check ID</th>
+              <th>Governance Condition</th>
+              <th>Observed Count</th>
+              <th>Status</th>
+              <th>Operational Diagnostic</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>GOV-CHK-01</code></td>
+              <td><strong>Tools Without Required Evidence</strong></td>
+              <td>0 tools</td>
+              <td><span class="pill pill-rec">OK</span></td>
+              <td>All 10 tools have empirical benchmark evidence records.</td>
+            </tr>
+            <tr>
+              <td><code>GOV-CHK-02</code></td>
+              <td><strong>Recommendations Missing Required Fields</strong></td>
+              <td>0 records</td>
+              <td><span class="pill pill-rec">OK</span></td>
+              <td>All 10 recommendations have valid status, rationale, and evidence links.</td>
+            </tr>
+            <tr>
+              <td><code>GOV-CHK-03</code></td>
+              <td><strong>RETIRED Tool Depreciation State</strong></td>
+              <td>0 tools</td>
+              <td><span class="pill pill-rec">OK</span></td>
+              <td>Zero deprecated tools in current production baseline.</td>
+            </tr>
+            <tr>
+              <td><code>GOV-CHK-04</code></td>
+              <td><strong>Affiliate Records Requiring Verification</strong></td>
+              <td>0 records</td>
+              <td><span class="pill pill-rec">OK</span></td>
+              <td>All 10 affiliate profiles verified with audit timestamps.</td>
+            </tr>
+            <tr>
+              <td><code>GOV-CHK-05</code></td>
+              <td><strong>Commercial Independence Baseline</strong></td>
+              <td>10 unactivated</td>
+              <td><span class="pill pill-rec">OK</span></td>
+              <td>All 10 tool records remain strictly NOT_ACTIVATED / NOT_CONTRACTED. Zero commercial entanglement.</td>
+            </tr>
+            <tr>
+              <td><code>GOV-CHK-06</code></td>
+              <td><strong>Open Review Candidates</strong></td>
+              <td>0 open</td>
+              <td><span class="pill pill-rec">OK</span></td>
+              <td>Review queue is clear. Zero open candidates requiring attention.</td>
+            </tr>
+            <tr>
+              <td><code>GOV-CHK-07</code></td>
+              <td><strong>Measurement Telemetry Baseline</strong></td>
+              <td>0 records</td>
+              <td><span class="pill pill-cond">INSUFFICIENT_DATA</span></td>
+              <td>Telemetry collection pending initial production run. No synthetic data generated.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 09: COMMERCIAL / AFFILIATE STATUS -->
+    <section class="op-section" id="section-commercial">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">09 — Commercial & Affiliate Status</h2>
+          <div class="section-subtitle">Strict decoupling: Vendor program availability ≠ LOCATRIA relationship ≠ Activation status ≠ Recommendation</div>
+        </div>
+        <span class="pill pill-list">STRICTLY DECOUPLED</span>
+      </div>
+
+      <div style="background: var(--color-bg-subtle); padding: var(--space-4); border-radius: var(--radius-md); font-size: var(--text-xs); color: var(--color-text-body); margin-bottom: var(--space-4);">
+        <strong>Commercial Independence Rule:</strong> Affiliate availability or revenue never influences editorial recommendations. Currently 7 vendors offer programs, but LOCATRIA maintains 0 contracted relationships and 0 activated links in production.
+      </div>
+
+      <div class="op-table-wrapper">
+        <table class="op-table">
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Vendor Program Available</th>
+              <th>LOCATRIA Relationship</th>
+              <th>Activation Status</th>
+              <th>Recommendation Status</th>
+              <th>Last Verified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NotebookLM</td>
+              <td>FALSE (None)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>AlsoAsked</td>
+              <td>TRUE (Direct)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-list">LISTED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Frase</td>
+              <td>TRUE (Direct)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-list">LISTED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Content Harmony</td>
+              <td>TRUE (Direct)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Hemingway Editor</td>
+              <td>FALSE (None)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Claude (3.5 Sonnet)</td>
+              <td>FALSE (None)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-rec">RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>ChatGPT / GPT-4o</td>
+              <td>FALSE (None)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Grammarly Business</td>
+              <td>TRUE (CJ Affiliate)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-list">LISTED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Diffchecker</td>
+              <td>FALSE (None)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+            <tr>
+              <td>Screaming Frog</td>
+              <td>FALSE (None)</td>
+              <td>NOT_CONTRACTED</td>
+              <td>NOT_ACTIVATED</td>
+              <td><span class="pill pill-cond">CONDITIONALLY_RECOMMENDED</span></td>
+              <td>2026-09-26</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 04 & 05: MEASUREMENT OVERVIEW & TWO-LEDGER PARTITIONING -->
+    <section class="op-section" id="section-measurement">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">04 & 05 — Measurement & Independent Ledgers</h2>
+          <div class="section-subtitle">Empirical Telemetry: REACH • ENGAGEMENT • USER_VALUE • COMMERCIAL</div>
+        </div>
+        <span class="pill pill-cond">AUTHENTIC DATA ONLY</span>
+      </div>
+
+      <!-- Empty State Verification Banner -->
+      <div class="empty-banner">
+        <div class="empty-banner-title">NO MEASUREMENT DATA AVAILABLE</div>
+        <div class="empty-banner-desc">
+          The measurement system (A.4.4) is active and validated. Zero telemetry records currently exist in <code>resource-data/measurements/</code>.
+          In accordance with strict GDBS OS governance, <strong>no synthetic data, mock counts, or fake charts are generated</strong>.
+        </div>
+      </div>
+
+      <!-- Two Independent Ledgers -->
+      <div class="two-ledger-grid">
+        <div class="ledger-card">
+          <div class="ledger-title">
+            <span>User Value Ledger</span>
+            <span class="pill pill-rec">PRIORITY LEDGER</span>
+          </div>
+          <div class="ledger-principle">
+            <strong>Principle:</strong> User value precedes commercial value. Measures genuine utility: learning path progression, tool views, official clicks, and practitioner feedback.
+          </div>
+          <div style="font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono);">
+            • LEARNING_PATH_CLICK: 0<br>
+            • TOOL_VIEW: 0<br>
+            • OFFICIAL_TOOL_CLICK: 0<br>
+            • RESOURCE_FEEDBACK: 0
+          </div>
+          <div style="margin-top: var(--space-4); font-size: 11px; color: var(--color-text-subtle);">STATUS: AWAITING TELEMETRY</div>
+        </div>
+
+        <div class="ledger-card">
+          <div class="ledger-title">
+            <span>Commercial Activity Ledger</span>
+            <span class="pill pill-list">INDEPENDENT LEDGER</span>
+          </div>
+          <div class="ledger-principle">
+            <strong>Principle:</strong> Commercial activity is strictly operational. Clicks and commissions never imply editorial superiority or recommendation quality. Combined scoring is strictly prohibited.
+          </div>
+          <div style="font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono);">
+            • AFFILIATE_CLICK: 0<br>
+            • CONVERSION: 0<br>
+            • REVENUE: $0.00
+          </div>
+          <div style="margin-top: var(--space-4); font-size: 11px; color: var(--color-text-subtle);">STATUS: INACTIVE (0 ACTIVE CONTRACTS)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06 & 07: REVIEW QUEUE & DECISION HISTORY -->
+    <section class="op-section" id="section-review-loop">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">06 & 07 — Review Queue & Decision History</h2>
+          <div class="section-subtitle">Continuous Improvement Loop (A.4.5): Candidates, diagnoses, human decisions, and audit history</div>
+        </div>
+        <span class="pill pill-rec">QUEUE: CLEAR</span>
+      </div>
+
+      <!-- Section 06: Review Queue Empty State -->
+      <div class="empty-banner" style="margin-bottom: var(--space-6);">
+        <div class="empty-banner-title">NO OPEN REVIEW CANDIDATES</div>
+        <div class="empty-banner-desc">
+          There are currently no review items requiring human attention. The repository baseline contains 0 review candidates in <code>resource-data/reviews/</code>.
+        </div>
+      </div>
+
+      <!-- Section 07: Decision History Log -->
+      <h3 style="font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-3);">Canonical Decision & Action History</h3>
+      <div class="op-table-wrapper">
+        <table class="op-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Entity</th>
+              <th>Trigger</th>
+              <th>Decision Outcome</th>
+              <th>Rationale</th>
+              <th>Reviewer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2026-09-26</td>
+              <td><code>RES-WORKFLOW-001</code></td>
+              <td>PUBLICATION_GATE</td>
+              <td><span class="pill pill-rec">PUBLISHED</span></td>
+              <td>Initial publication of canonical workflow resource for WF-AICONTENT-001.</td>
+              <td>LOCATRIA Governance Board</td>
+            </tr>
+            <tr>
+              <td>2026-09-26</td>
+              <td><code>RES-GUIDE-001</code></td>
+              <td>PUBLICATION_GATE</td>
+              <td><span class="pill pill-rec">PUBLISHED</span></td>
+              <td>Initial publication of foundational resource guide for local business AI content operations.</td>
+              <td>LOCATRIA Governance Board</td>
+            </tr>
+            <tr>
+              <td>2026-09-26</td>
+              <td><code>TOOL-CAN-004</code> (Claude)</td>
+              <td>SCHEDULED</td>
+              <td><span class="pill pill-rec">RECOMMENDED</span></td>
+              <td>Sprint A.3.5: Updated lifecycle status to RECOMMENDED based on empirical evaluation.</td>
+              <td>LOCATRIA Empirical Lab</td>
+            </tr>
+            <tr>
+              <td>2026-09-26</td>
+              <td><code>TOOL-CAN-006</code> (Surfer)</td>
+              <td>SCHEDULED</td>
+              <td><span class="pill pill-rec">RECOMMENDED</span></td>
+              <td>Sprint A.3.5: Updated lifecycle status to RECOMMENDED based on empirical evaluation.</td>
+              <td>LOCATRIA Empirical Lab</td>
+            </tr>
+            <tr>
+              <td>2026-09-26</td>
+              <td><code>TOOL-CAN-007</code> (Grammarly)</td>
+              <td>SCHEDULED</td>
+              <td><span class="pill pill-rec">RECOMMENDED</span></td>
+              <td>Sprint A.3.5: Updated lifecycle status to RECOMMENDED based on empirical evaluation.</td>
+              <td>LOCATRIA Empirical Lab</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div style="font-size: var(--text-xs); color: var(--color-text-muted); text-align: center;">
+        LOCATRIA / GDBS OS • Module 07: Content & Knowledge Operating System • Chapter 01: Content Production System<br>
+        Sprint A.4.6: Resource Operating Dashboard v1.0 • Read & Operate Control Surface
+      </div>
+    </div>
+  </footer>
+
+  <!-- CLIENT-SIDE INTERACTIVITY SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('global-search');
+      const toolStatusFilter = document.getElementById('filter-tool-status');
+      const resourceTypeFilter = document.getElementById('filter-resource-type');
+      const resetBtn = document.getElementById('reset-filters-btn');
+
+      function filterTables() {
+        const query = (searchInput.value || '').toLowerCase().trim();
+        const selectedStatus = toolStatusFilter.value;
+        const selectedType = resourceTypeFilter.value;
+
+        // Filter Tools Table
+        const toolRows = document.querySelectorAll('#tools-table-body tr');
+        toolRows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          const matchesQuery = !query || text.includes(query);
+          const matchesStatus = selectedStatus === 'ALL' || text.includes(selectedStatus.toLowerCase());
+          row.style.display = (matchesQuery && matchesStatus) ? '' : 'none';
+        });
+
+        // Filter Resources Table
+        const resRows = document.querySelectorAll('#resource-table-body tr');
+        resRows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          const matchesQuery = !query || text.includes(query);
+          const matchesType = selectedType === 'ALL' || text.includes(selectedType.toLowerCase());
+          row.style.display = (matchesQuery && matchesType) ? '' : 'none';
+        });
+      }
+
+      searchInput.addEventListener('input', filterTables);
+      toolStatusFilter.addEventListener('change', filterTables);
+      resourceTypeFilter.addEventListener('change', filterTables);
+
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        toolStatusFilter.value = 'ALL';
+        resourceTypeFilter.value = 'ALL';
+        filterTables();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -24,7 +24,8 @@ const ENTITY_FOLDERS = {
   recommendation: 'recommendations',
   affiliate: 'affiliates',
   review: 'reviews',
-  relationship: 'relationships'
+  relationship: 'relationships',
+  measurement: 'measurements'
 };
 
 const ID_FIELDS = {
@@ -35,7 +36,8 @@ const ID_FIELDS = {
   recommendation: 'recommendation_id',
   affiliate: 'affiliate_id',
   review: 'review_id',
-  relationship: 'relationship_id'
+  relationship: 'relationship_id',
+  measurement: 'measurement_id'
 };
 
 /**
@@ -186,6 +188,7 @@ const loadRecommendation = (id, opts) => loadEntity('recommendation', id, opts);
 const loadAffiliate = (id, opts) => loadEntity('affiliate', id, opts);
 const loadReview = (id, opts) => loadEntity('review', id, opts);
 const loadRelationship = (id, opts) => loadEntity('relationship', id, opts);
+const loadMeasurement = (id, opts) => loadEntity('measurement', id, opts);
 
 // Typed entity listers
 const listTools = (opts) => listEntities('tool', opts);
@@ -196,6 +199,7 @@ const listRecommendations = (opts) => listEntities('recommendation', opts);
 const listAffiliates = (opts) => listEntities('affiliate', opts);
 const listReviews = (opts) => listEntities('review', opts);
 const listRelationships = (opts) => listEntities('relationship', opts);
+const listMeasurements = (opts) => listEntities('measurement', opts);
 
 /**
  * Finds relationships matching optional sourceId, targetId, or relationshipType.
@@ -262,6 +266,7 @@ module.exports = {
   loadAffiliate,
   loadReview,
   loadRelationship,
+  loadMeasurement,
   listTools,
   listResources,
   listEvidence,
@@ -270,6 +275,7 @@ module.exports = {
   listAffiliates,
   listReviews,
   listRelationships,
+  listMeasurements,
   findRelationships,
   findRelatedEntities,
   resolveRelationship

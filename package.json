@@ -13,6 +13,7 @@
     "test:production": "node validation/test-resource-production.js",
     "test:measurement": "node validation/test-resource-measurement.js",
     "test:review-loop": "node validation/test-resource-review-loop.js",
+    "test:dashboard": "node validation/test-resource-dashboard.js",
     "test:content": "node content-integrity-test.js"
   },
   "keywords": [

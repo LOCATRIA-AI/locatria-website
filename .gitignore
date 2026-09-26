@@ -43,6 +43,7 @@ docs/*
 !docs/resource-content-production.md
 !docs/resource-measurement.md
 !docs/resource-review-improvement-loop.md
+!docs/resource-operating-dashboard.md
 !docs/templates/
 !docs/templates/*
 !docs/workflows/
