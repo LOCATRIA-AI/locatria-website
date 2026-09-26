@@ -8,6 +8,7 @@
     "validate:resources": "node validation/validate-all.js",
     "build:resource-index": "node scripts/build-resource-index.js",
     "test:resources": "node validation/test-resource-data-layer.js",
+    "test:governance": "node validation/test-lifecycle-governance.js",
     "test:content": "node content-integrity-test.js"
   },
   "keywords": [
