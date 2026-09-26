@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/measurement.schema.json",
+  "title": "Locatria Canonical Resource Measurement Schema",
+  "description": "Defines an empirical measurement or telemetry record for the LOCATRIA Resource Layer, strictly decoupled from editorial recommendations.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "measurement_id",
+    "resource_id",
+    "layer",
+    "metric",
+    "value",
+    "data_quality",
+    "source",
+    "measurement_period",
+    "captured_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "measurement"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "measurement_id": {
+      "type": "string",
+      "pattern": "^MEAS-[A-Za-z0-9_-]+$"
+    },
+    "resource_id": {
+      "type": "string",
+      "pattern": "^RES-[A-Za-z0-9_-]+$"
+    },
+    "layer": {
+      "type": "string",
+      "enum": [
+        "REACH",
+        "ENGAGEMENT",
+        "USER_VALUE",
+        "COMMERCIAL"
+      ]
+    },
+    "metric": {
+      "type": "string",
+      "enum": [
+        "RESOURCE_VIEW",
+        "UNIQUE_RESOURCE_VIEW",
+        "RESOURCE_ENGAGED",
+        "SCROLL_DEPTH",
+        "ENGAGEMENT_DURATION",
+        "RELATED_ARTICLE_CLICK",
+        "LEARNING_PATH_CLICK",
+        "TOOL_VIEW",
+        "OFFICIAL_TOOL_CLICK",
+        "AFFILIATE_CLICK",
+        "CONVERSION",
+        "REVENUE",
+        "RESOURCE_FEEDBACK"
+      ]
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0
+    },
+    "unit": {
+      "type": "string"
+    },
+    "data_quality": {
+      "type": "string",
+      "enum": [
+        "ACTUAL",
+        "ESTIMATED",
+        "MANUAL",
+        "UNAVAILABLE"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "WEBSITE_ANALYTICS",
+        "SEARCH_CONSOLE",
+        "INTERNAL_EVENT_LOG",
+        "AFFILIATE_NETWORK_REPORT",
+        "USER_SURVEY",
+        "MANUAL_AUDIT"
+      ]
+    },
+    "measurement_period": {
+      "type": "object",
+      "required": [
+        "start_date",
+        "end_date"
+      ],
+      "properties": {
+        "start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "end_date": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "attribution_context": {
+      "type": "object",
+      "properties": {
+        "channel": { "type": "string" },
+        "campaign": { "type": "string" },
+        "tool_id": { "type": "string" },
+        "article_id": { "type": "string" },
+        "country": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    },
+    "governance": {
+      "type": "object",
+      "properties": {
+        "review_status": { "type": "string" },
+        "reviewer": { "type": "string" },
+        "last_reviewed": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

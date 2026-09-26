@@ -124,6 +124,22 @@ const ENTITY_CONFIG = {
       target_id: entity.target_id,
       path: relPath.replace(/\\/g, '/')
     })
+  },
+  measurement: {
+    folder: 'measurements',
+    indexFile: 'measurements-index.json',
+    indexType: 'MEASUREMENT_INDEX',
+    idKey: 'measurement_id',
+    extract: (entity, relPath) => ({
+      measurement_id: entity.measurement_id,
+      resource_id: entity.resource_id || '',
+      layer: entity.layer || '',
+      metric: entity.metric || '',
+      value: entity.value !== undefined ? entity.value : 0,
+      data_quality: entity.data_quality || '',
+      captured_at: entity.captured_at || '',
+      path: relPath.replace(/\\/g, '/')
+    })
   }
 };
 
@@ -189,7 +205,8 @@ function buildResourceIndex(baseDir = defaultBaseDir, options = {}) {
     recommendation: [],
     affiliate: [],
     review: [],
-    relationship: []
+    relationship: [],
+    measurement: []
   };
 
   scanned.forEach(({ entity, relPath }) => {
@@ -241,7 +258,8 @@ function buildResourceIndex(baseDir = defaultBaseDir, options = {}) {
       recommendations: grouped.recommendation.length,
       affiliates: grouped.affiliate.length,
       reviews: grouped.review.length,
-      relationships: grouped.relationship.length
+      relationships: grouped.relationship.length,
+      measurements: grouped.measurement.length
     }
   };
 

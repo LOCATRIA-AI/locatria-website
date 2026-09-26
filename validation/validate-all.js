@@ -74,6 +74,7 @@ function runBatchValidation(targetDir = defaultTargetDir) {
       affiliate: { total: 0, valid: 0, invalid: 0 },
       review: { total: 0, valid: 0, invalid: 0 },
       relationship: { total: 0, valid: 0, invalid: 0 },
+      measurement: { total: 0, valid: 0, invalid: 0 },
       other: { total: 0, valid: 0, invalid: 0 }
     },
     files: [],
@@ -103,7 +104,7 @@ function runBatchValidation(targetDir = defaultTargetDir) {
     results.files.push({
       file: path.relative(rootDir, file),
       entityType: rawType,
-      id: entity ? (entity.tool_id || entity.resource_id || entity.evidence_id || entity.evaluation_id || entity.recommendation_id || entity.affiliate_id || entity.review_id || entity.relationship_id || 'unknown') : 'unknown',
+      id: entity ? (entity.tool_id || entity.resource_id || entity.evidence_id || entity.evaluation_id || entity.recommendation_id || entity.affiliate_id || entity.review_id || entity.relationship_id || entity.measurement_id || 'unknown') : 'unknown',
       valid: res.valid,
       errors: res.errors
     });
@@ -154,7 +155,8 @@ if (require.main === module) {
     recommendation: 'Recommendations',
     affiliate: 'Affiliates',
     review: 'Reviews',
-    relationship: 'Relationships'
+    relationship: 'Relationships',
+    measurement: 'Measurements'
   };
 
   Object.entries(typeLabels).forEach(([key, label]) => {

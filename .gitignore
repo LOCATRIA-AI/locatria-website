@@ -41,6 +41,7 @@ docs/*
 !docs/resource-lifecycle-governance.md
 !docs/affiliate-operations.md
 !docs/resource-content-production.md
+!docs/resource-measurement.md
 !docs/templates/
 !docs/templates/*
 !docs/workflows/

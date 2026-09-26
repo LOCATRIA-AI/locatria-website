@@ -11,6 +11,7 @@
     "test:governance": "node validation/test-lifecycle-governance.js",
     "test:affiliates": "node validation/test-affiliate-operations.js",
     "test:production": "node validation/test-resource-production.js",
+    "test:measurement": "node validation/test-resource-measurement.js",
     "test:content": "node content-integrity-test.js"
   },
   "keywords": [
