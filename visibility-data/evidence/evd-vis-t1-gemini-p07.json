@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P07",
+  "observation_id": "OBS-T1-GEMINI-P07",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A small business can track its visibility in ChatGPT and other AI search systems by adopting a routine monitoring process:\n\n* **Establish a prompt baseline:** Create a set of 15 to 30 core queries reflecting what local customers search for regarding your services and location.\n* **Run periodic manual or automated checks:** Test these queries on a regular schedule across ChatGPT, Microsoft Copilot, Perplexity, and Google AI Overviews.\n* **Leverage third-party tools:** Utilize emerging local AI tracking platforms that automate prompt execution, aggregate visibility scores, track competitor inclusion, and log specific citation sources.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P07."
+}

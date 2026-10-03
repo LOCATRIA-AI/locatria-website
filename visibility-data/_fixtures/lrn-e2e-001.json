@@ -1,0 +1,25 @@
+{
+  "entity_type": "learning",
+  "schema_version": "1.0",
+  "learning_id": "LRN-E2E-001",
+  "learning_version": "1.0",
+  "source_verification_refs": [
+    "VFY-E2E-001"
+  ],
+  "hypothesis_result": "SUPPORTED",
+  "learning_type": "L3",
+  "statement": "Deploying structured Organization JSON-LD markup reliably improves entity recognition in search LLMs.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "confidence": "HIGH",
+  "applicability": "All client static web properties",
+  "limitations": "Subject to search engine crawler re-indexing latency",
+  "status": "VALIDATED",
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:08:16.351Z",
+  "updated_at": "2026-10-03T10:08:16.532Z",
+  "created_by": "SYSTEM",
+  "is_immutable": true,
+  "metadata": {}
+}

@@ -1,0 +1,36 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-B05-QUAL-001",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "B05 Canonical Entity Schema Implementation",
+  "statement": "Implement Organization schema markup to establish canonical entity identity.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-B05-001"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY",
+    "V4_ENTITY"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:37.001Z",
+  "updated_at": "2026-10-03T10:04:37.149Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "FOUNDER",
+  "qualified_at": "2026-10-03T10:04:37.149Z",
+  "qualification_notes": "Qualified by Founder",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

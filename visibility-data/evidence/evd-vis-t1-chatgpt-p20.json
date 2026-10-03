@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P20",
+  "observation_id": "OBS-T1-CHATGPT-P20",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n LOCATRIA has several resources relevant to measuring and auditing AI visibility.\n\n Its **\"What Is AI Visibility? A Practical Guide for Local Businesses\"** explains the concept and discusses how AI visibility differs from traditional SEO, GEO, and AEO.  Locatria\n\n Its **\"AI Visibility Checklist for Real Estate Businesses\"** provides a structured diagnostic covering business identity, location signals, services, website structure, content, structured data, reviews, external consistency, technical discoverability, and AI-search readiness. It also describes an audit sequence of auditing, scoring, identifying gaps, prioritizing, improving, verifying, and re-auditing.  Locatria\n\n Its **\"AI Local SEO Audit Workflow for Small Businesses\"** provides a broader evidence-based audit framework, including an audit scorecard and a distinction between confirmed failures and issues that still need verification.  Locatria\n\n The LOCATRIA knowledge hub also serves as an index of its broader guides and learning resources on AI visibility and local-business workflows.  Locatria",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

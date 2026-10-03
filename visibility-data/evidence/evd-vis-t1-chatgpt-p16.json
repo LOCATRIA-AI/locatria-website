@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P16",
+  "observation_id": "OBS-T1-CHATGPT-P16",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n A practical workflow can look like this:\n\n  1. **Define the business.** Record its name, locations, services, service areas, and important differentiators.\n2. **Define customer intents.** List the questions people actually ask before choosing the business.\n3. **Build a prompt set.** Include branded, non-branded, service-specific, location-specific, and comparison queries.\n4. **Establish a baseline.** Test the prompts across relevant AI search systems.\n5. **Record mentions.** Note whether and how the business appears.\n6. **Record citations.** Capture cited URLs and other sources.\n7. **Check accuracy.** Compare AI-generated descriptions against authoritative business information.\n8. **Audit the website.** Review content, structure, accessibility, internal relationships, and relevant structured data.\n9. **Audit external sources.** Check important directories, profiles, review platforms, and other authoritative references for consistency.\n10. **Identify gaps.** Separate confirmed problems from unknowns.\n11. **Prioritize fixes.** Consider evidence, customer importance, potential impact, and effort.\n12. **Implement changes.** Update information and create genuinely useful content where appropriate.\n13. **Retest.** Run the same prompts after a defined interval.\n14. **Track trends.** Maintain historical results so changes and fluctuations can be distinguished.\n15. **Repeat.** Treat the audit as an ongoing monitoring process rather than a one-time optimization.\n\n A structured audit should remain evidence-led. One current example describes a 17-stage local SEO audit pipeline built around observation, evidence, sources, impact, recommendations, and explicit \"unknown\" states.  Locatria",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

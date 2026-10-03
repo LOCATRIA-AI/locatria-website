@@ -1,0 +1,35 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-B05-UNQUAL-002",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Unqualified Opportunity For Testing",
+  "statement": "This opportunity remains unvalidated and unqualified.",
+  "status": "DETECTED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-B05-001"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "qualification_state": "UNQUALIFIED",
+  "confidence_state": "LOW",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:37.154Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "qualified_by": null,
+  "qualified_at": null,
+  "qualification_notes": "",
+  "is_immutable": false,
+  "metadata": {},
+  "notes": ""
+}

@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/diagnosis.schema.json",
+  "title": "LOCATRIA Visibility Diagnosis Schema",
+  "description": "Defines an evidence-backed diagnostic interpretation of AI visibility observations in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "diagnosis_id",
+    "diagnosis_version",
+    "diagnosis_type",
+    "title",
+    "statement",
+    "status",
+    "scope",
+    "observation_refs",
+    "evidence_refs",
+    "metric_refs",
+    "environment_refs",
+    "run_refs",
+    "problem_taxonomy",
+    "confidence_state",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "diagnosis"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "diagnosis_id": {
+      "type": "string",
+      "pattern": "^DIAG-[A-Za-z0-9_-]+$"
+    },
+    "diagnosis_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "diagnosis_type": {
+      "type": "string",
+      "enum": [
+        "DISCOVERY_DIAGNOSIS",
+        "RETRIEVAL_DIAGNOSIS",
+        "CITATION_DIAGNOSIS",
+        "ENTITY_DIAGNOSIS",
+        "CONTEXT_DIAGNOSIS",
+        "COVERAGE_DIAGNOSIS",
+        "ENVIRONMENT_DIAGNOSIS",
+        "CROSS_METRIC_DIAGNOSIS",
+        "OTHER"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 10
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DETECTED",
+        "UNDER_REVIEW",
+        "VALIDATED",
+        "NEED_MORE_EVIDENCE",
+        "REJECTED"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "GLOBAL",
+        "ENVIRONMENT_SPECIFIC",
+        "PROMPT_SET_SPECIFIC",
+        "RUN_SPECIFIC",
+        "TOPIC_SPECIFIC"
+      ]
+    },
+    "observation_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^OBS-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "metric_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "M01_MENTION",
+          "M02_VERIFIED_CITATION",
+          "M03_VERIFIED_RETRIEVAL",
+          "M04_ENTITY_RECOGNITION",
+          "M05_CONTEXT_ACCURACY"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "environment_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ENV-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "run_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^RUN-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "problem_taxonomy": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "V1_DISCOVERY",
+          "V2_RETRIEVAL",
+          "V3_CITATION",
+          "V4_ENTITY",
+          "V5_CONTEXT",
+          "V6_COVERAGE",
+          "V7_ENVIRONMENT"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "confidence_state": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNVERIFIED"
+      ]
+    },
+    "uncertainty_statement": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validated_by": {
+      "type": ["string", "null"]
+    },
+    "validated_at": {
+      "type": ["string", "null"]
+    },
+    "validation_notes": {
+      "type": "string"
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

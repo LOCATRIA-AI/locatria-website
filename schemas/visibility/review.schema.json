@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/review.schema.json",
+  "title": "LOCATRIA Visibility Operating Review Schema",
+  "description": "Defines formal periodic governance review records (Monthly Operating Review and Quarterly Founder Strategic Review) in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "review_id",
+    "review_version",
+    "review_type",
+    "period_start",
+    "period_end",
+    "status",
+    "owner",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "operating_review"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "review_id": {
+      "type": "string",
+      "pattern": "^REV-[A-Za-z0-9_-]+$"
+    },
+    "review_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "review_type": {
+      "type": "string",
+      "enum": ["MONTHLY_OPERATING", "QUARTERLY_STRATEGIC"]
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^GOV-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "decisions_required": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["decision_topic", "recommended_action"],
+        "properties": {
+          "decision_topic": { "type": "string" },
+          "recommended_action": { "type": "string" },
+          "founder_decision": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["topic", "recommendation", "rational_basis"],
+        "properties": {
+          "topic": { "type": "string" },
+          "recommendation": { "type": "string" },
+          "rational_basis": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "founder_decisions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^DEC-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EXC-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "system_rule_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFTED", "IN_REVIEW", "COMPLETED", "CANCELLED"]
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

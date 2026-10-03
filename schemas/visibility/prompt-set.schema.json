@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/prompt-set.schema.json",
+  "title": "LOCATRIA Visibility Prompt Set Schema",
+  "description": "Defines an immutable, versioned grouping of canonical prompts for controlled measurement runs.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "prompt_set_id",
+    "prompt_set_version",
+    "name",
+    "description",
+    "prompt_ids",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "prompt_set"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "prompt_set_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "prompt_set_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "ARCHIVED",
+        "RETIRED"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

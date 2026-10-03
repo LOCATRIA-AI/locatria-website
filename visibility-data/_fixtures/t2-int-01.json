@@ -1,0 +1,19 @@
+{
+  "entity_type": "intervention",
+  "schema_version": "1.0",
+  "intervention_id": "T2-INT-01",
+  "intervention_type": "CANONICAL_SOURCE",
+  "target": "index.html, knowledge.html",
+  "description": "Canonical Entity & Source Discoverability Intervention.",
+  "baseline_state": "T1 control state with unlinked canonical entity.",
+  "intended_change": "Inject schema markup and authoritative discoverability links.",
+  "implementation_scope": "GLOBAL",
+  "rollback_method": "Git revert to commit pre-T2-INT-01.",
+  "reversible": true,
+  "status": "ACTIVE",
+  "created_at": "2026-10-03T10:04:38.651Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

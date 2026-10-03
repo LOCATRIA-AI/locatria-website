@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/learning.schema.json",
+  "title": "LOCATRIA Visibility Learning Schema",
+  "description": "Defines a validated empirical insight derived strictly from verification evidence in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "learning_id",
+    "learning_version",
+    "source_verification_refs",
+    "hypothesis_result",
+    "learning_type",
+    "statement",
+    "evidence_refs",
+    "confidence",
+    "applicability",
+    "limitations",
+    "status",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "learning"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "learning_id": {
+      "type": "string",
+      "pattern": "^LRN-[A-Za-z0-9_-]+$"
+    },
+    "learning_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "source_verification_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^VFY-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "hypothesis_result": {
+      "type": "string",
+      "enum": [
+        "SUPPORTED",
+        "DIRECTIONALLY_SUPPORTED",
+        "NOT_SUPPORTED",
+        "INCONCLUSIVE",
+        "INVALID",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "learning_type": {
+      "type": "string",
+      "enum": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "MEASUREMENT",
+        "DIAGNOSIS",
+        "OPPORTUNITY",
+        "PRIORITIZATION",
+        "ACTION",
+        "EXPERIMENT",
+        "SYSTEM"
+      ]
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 10
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "INSUFFICIENT", "UNVERIFIED"]
+    },
+    "applicability": {
+      "type": "string",
+      "minLength": 5
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 5
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFTED",
+        "UNDER_REVIEW",
+        "VALIDATED",
+        "REJECTED",
+        "NEEDS_MORE_EVIDENCE"
+      ]
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

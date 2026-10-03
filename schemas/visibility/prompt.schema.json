@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/prompt.schema.json",
+  "title": "LOCATRIA Visibility Prompt Schema",
+  "description": "Defines a canonical prompt in the LOCATRIA Visibility Operating System Prompt Registry.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "prompt_id",
+    "prompt_version",
+    "prompt_text",
+    "prompt_category",
+    "intent_type",
+    "language",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "prompt"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "prompt_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "prompt_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "prompt_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prompt_category": {
+      "type": "string",
+      "enum": [
+        "FOUNDATION",
+        "DISCOVERY",
+        "MEASUREMENT",
+        "AUDIT",
+        "PRIORITIZATION",
+        "WORKFLOW",
+        "BRANDED",
+        "COMPARISON",
+        "INDUSTRY",
+        "OTHER"
+      ]
+    },
+    "intent_type": {
+      "type": "string",
+      "enum": [
+        "INFORMATIONAL",
+        "NAVIGATIONAL",
+        "TRANSACTIONAL",
+        "COMPARATIVE",
+        "EVALUATIVE",
+        "DIAGNOSTIC",
+        "BRANDED_DISCOVERY",
+        "UNBRANDED_DISCOVERY",
+        "OTHER"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 10
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "ACTIVE",
+        "RETIRED"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "retired_at": {
+      "type": ["string", "null"]
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

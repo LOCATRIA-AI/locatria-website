@@ -1,0 +1,21 @@
+{
+  "entity_type": "governance_exception",
+  "schema_version": "1.0",
+  "exception_id": "EXC-TEST-EXP-001",
+  "exception_version": "1.0",
+  "exception_type": "EX01",
+  "subject_type": "EXPERIMENT",
+  "subject_id": "EXP-B06-READY-001",
+  "rule_reference": "PROTOCOL_RULE",
+  "deviation": "Expired deviation test.",
+  "reason": "Testing conflict detection.",
+  "impact": "Temporary deviation.",
+  "mitigation": "Temporary deviation logged for test verification.",
+  "expiry_date": "2026-10-02T10:04:55.286Z",
+  "requested_by": "OPERATOR",
+  "approved_by": "FOUNDER",
+  "approved_at": "2026-10-02T06:18:15.286Z",
+  "status": "APPROVED",
+  "created_at": "2026-10-02T06:18:15.286Z",
+  "is_immutable": true
+}

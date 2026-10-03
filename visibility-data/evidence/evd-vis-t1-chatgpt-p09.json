@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P09",
+  "observation_id": "OBS-T1-CHATGPT-P09",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Test relevant AI queries and inspect the citations or source references supplied with the answers.\n\n For each query, record:\n\n 1. Whether the website is cited.\n2. Which URL or page is cited, when available.\n3. What statement the citation appears to support.\n4. Whether the cited page actually contains that information.\n5. Whether the information is current and accurate.\n6. Whether the same page is cited repeatedly for related questions.\n\n It is useful to distinguish **being mentioned** from **being used as a source**. An AI system may name a business while citing a directory, review site, government page, or another source instead of the business's own website.\n\n For larger studies, researchers can log every citation produced by repeated queries. For example, BrightLocal's 2026 local-AI study analyzed 1.9 million AI citations and found that business websites represented a substantial share of unique cited domains.  BrightLocal",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P09."
+}

@@ -1,0 +1,35 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-TEST-011",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Referential Integrity Opportunity",
+  "statement": "Opportunity referencing validated diagnosis DIAG-TEST-010.",
+  "status": "DETECTED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-TEST-010"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "qualification_state": "UNQUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:28.047Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "qualified_by": null,
+  "qualified_at": null,
+  "qualification_notes": "",
+  "is_immutable": false,
+  "metadata": {},
+  "notes": ""
+}

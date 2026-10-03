@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T2-CHATGPT-RAW",
+  "source_name": "ChatGPT T2 Raw Observation Dataset",
+  "source_type": "RAW_MODEL_RESPONSE_EXPORT",
+  "source_path": "../21 Affiliate Program/Module 08/ChatGPT V3.txt",
+  "source_level": "S6",
+  "source_role": "T2_INTERVENTION_SOURCE",
+  "source_format": "TXT",
+  "source_hash": "6d5a7bbcc3196f10ca4ce50922fd636a4bff297f3e098a26a6bda76a1e3f3746",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:03.143Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:03.143Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Level 1 raw model responses captured for T2 intervention"
+}

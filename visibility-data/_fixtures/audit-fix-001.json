@@ -1,0 +1,17 @@
+{
+  "entity_type": "audit_log",
+  "schema_version": "1.0.0",
+  "audit_id": "AUD-FIX-001",
+  "actor": "FOUNDER",
+  "actor_type": "FOUNDER",
+  "action": "CREATE",
+  "entity_type_target": "measurement_run",
+  "entity_id": "RUN-FIX-001",
+  "before": null,
+  "after": {
+    "run_id": "RUN-FIX-001",
+    "status": "COMPLETED"
+  },
+  "timestamp": "2026-09-28T01:00:00Z",
+  "reason": "Test fixture audit log entry"
+}

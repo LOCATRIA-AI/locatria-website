@@ -1,0 +1,23 @@
+{
+  "entity_type": "observation",
+  "schema_version": "1.0.0",
+  "observation_id": "OBS-T1-PERPLEXITY-P18",
+  "run_id": "RUN-M08-1-T1-REF",
+  "prompt_id": "P18",
+  "environment_id": "ENV-PERPLEXITY",
+  "observed_at": "2026-09-27T00:00:00Z",
+  "raw_response_id": "EVD-VIS-T1-PERPLEXITY-P18",
+  "mention": "YES",
+  "citation_signal": "NO",
+  "verified_citation": "NO",
+  "retrieval": "UNVERIFIED",
+  "entity_recognition": "UNVERIFIED",
+  "context_accuracy": "N/A",
+  "confidence": "HIGH",
+  "qa_status": "VERIFIED",
+  "evidence_ids": [
+    "EVD-VIS-T1-PERPLEXITY-P18"
+  ],
+  "is_immutable": true,
+  "notes": "Response explicitly says no verified LOCATRIA information; displayed citations are Perplexity documentation, not LOCATRIA."
+}

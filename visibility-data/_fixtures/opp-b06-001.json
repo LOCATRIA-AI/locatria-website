@@ -1,0 +1,36 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-B06-001",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "B06 Canonical Entity Verification Opportunity",
+  "statement": "Opportunity to verify canonical schema impact on entity visibility.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-B06-001"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY",
+    "V4_ENTITY"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:45.310Z",
+  "updated_at": "2026-10-03T10:04:45.447Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "FOUNDER",
+  "qualified_at": "2026-10-03T10:04:45.447Z",
+  "qualification_notes": "Opportunity qualified based on validated underlying diagnosis.",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

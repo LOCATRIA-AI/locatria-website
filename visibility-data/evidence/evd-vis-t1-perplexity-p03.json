@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-PERPLEXITY-P03",
+  "observation_id": "OBS-T1-PERPLEXITY-P03",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "AI visibility focuses on how AI systems source and present information about a business (citations, data integrity, and AI-generated responses), while local SEO optimizes a business&#8217;s web presence to appear in traditional search results and maps. They overlap but target different discovery mechanics. [docs.perplexity](https://docs.perplexity.ai/docs/agent-api/presets)",
+  "source_title": "docs.perplexity.ai",
+  "source_url": "https://docs.perplexity.ai/docs/agent-api/presets",
+  "source_domain": "docs.perplexity.ai",
+  "citation_text": "[docs.perplexity.ai](https://docs.perplexity.ai/docs/agent-api/presets)",
+  "source_location": "Inline citation in response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Displayed source is docs.perplexity.ai; it is not evidence that LOCATRIA was retrieved."
+}

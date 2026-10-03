@@ -1,0 +1,35 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-E2E-002",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Experimental Secondary Knowledge Graph Injection",
+  "statement": "Inject experimental secondary microdata.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-E2E-001"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V2_RETRIEVAL"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:08:15.283Z",
+  "updated_at": "2026-10-03T10:08:15.466Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "OPERATOR",
+  "qualified_at": "2026-10-03T10:08:15.466Z",
+  "qualification_notes": "Opportunity qualified based on validated underlying diagnosis.",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

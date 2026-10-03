@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P09",
+  "observation_id": "OBS-T1-GEMINI-P09",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A local business can determine if AI systems are using its website as a source by analyzing server log files and web analytics for referral traffic originating from known AI domains, user agents, and search bot crawlers. Additionally, businesses can review the citation footnotes or source links provided directly beneath answers in engines like Perplexity, Microsoft Copilot, and ChatGPT search. If a business explicitly searches its brand terms inside these AI tools, the accompanying citation links will reveal whether the AI is pulling data directly from the business's web pages or relying on third-party aggregators and review sites.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P09."
+}

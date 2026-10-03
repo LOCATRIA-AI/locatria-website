@@ -1,0 +1,35 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-TEST-N15",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Qualified Opportunity Immutability Test",
+  "statement": "Opportunity to verify post-qualification immutability.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-TEST-010"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:30.535Z",
+  "updated_at": "2026-10-03T10:04:30.695Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "FOUNDER",
+  "qualified_at": "2026-10-03T10:04:30.695Z",
+  "qualification_notes": "Opportunity qualified based on validated underlying diagnosis.",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

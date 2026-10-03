@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/intervention.schema.json",
+  "title": "LOCATRIA Visibility Intervention Schema",
+  "description": "Defines an empirical intervention introduced during a visibility experiment in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "intervention_id",
+    "intervention_type",
+    "target",
+    "description",
+    "baseline_state",
+    "intended_change",
+    "implementation_scope",
+    "rollback_method",
+    "reversible",
+    "status",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "intervention"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "intervention_id": {
+      "type": "string",
+      "pattern": "^(T2-INT-\\d{2,}|INT-[A-Za-z0-9_-]+)$"
+    },
+    "intervention_type": {
+      "type": "string",
+      "enum": [
+        "SCHEMA_ORGANIZATION",
+        "CANONICAL_SOURCE",
+        "ENTITY_HOMEPAGE",
+        "CONTENT_STRUCTURE",
+        "INTERNAL_LINKING",
+        "OTHER"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "minLength": 3
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "baseline_state": {
+      "type": "string",
+      "minLength": 5
+    },
+    "intended_change": {
+      "type": "string",
+      "minLength": 5
+    },
+    "implementation_scope": {
+      "type": "string",
+      "enum": [
+        "GLOBAL",
+        "ENVIRONMENT_SPECIFIC",
+        "PROMPT_SET_SPECIFIC",
+        "ARTICLE_SPECIFIC",
+        "TOPIC_SPECIFIC"
+      ]
+    },
+    "rollback_method": {
+      "type": "string",
+      "minLength": 10
+    },
+    "reversible": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "ACTIVE",
+        "ROLLED_BACK",
+        "SUPERSEDED"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

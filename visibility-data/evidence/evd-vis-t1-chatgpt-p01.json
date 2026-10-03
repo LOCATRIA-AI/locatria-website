@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P01",
+  "observation_id": "OBS-T1-CHATGPT-P01",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n AI visibility is the extent to which a local business can be **discovered, understood, accurately represented, and mentioned or cited in AI-powered search and answer experiences**.\n\n For a local business, that can include ChatGPT, Google's AI search experiences, and other systems that answer questions such as \"best dentist near me\" or \"who installs air conditioners in Austin?\" rather than simply displaying a list of webpages.\n\n It is broader than simply being mentioned. Useful dimensions include:\n\n - Whether AI systems identify the business correctly.\n- Whether they understand its services and location.\n- Whether they mention it for relevant customer questions.\n- Whether the information they provide is accurate.\n- Whether the business's website or other sources are cited.\n- How consistently the business appears across different prompts, locations, platforms, and repeated searches.\n\n AI visibility is closely connected to traditional SEO and local SEO, because AI systems still depend on accessible, relevant, trustworthy information. However, an AI-generated answer can synthesize information from several sources rather than simply ranking individual webpages.  Locatria+1",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria+1",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

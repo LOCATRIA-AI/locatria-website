@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-PERPLEXITY-RUNNER",
+  "source_name": "Perplexity T1 Prompt Execution Runner",
+  "source_type": "RAW_PROMPT_EXECUTION_LOG",
+  "source_path": "../21 Affiliate Program/Module 08/20 prompt run chat Perplexity.txt",
+  "source_level": "S1",
+  "source_role": "T1_CONTROL_SOURCE",
+  "source_format": "TXT",
+  "source_hash": "6dce3e9ef003be75efa5ee266ea1b52804299ae661d4a603b08e89e69368e94c",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:03.005Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:03.005Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Primary Level 1 executed prompts for Perplexity in T1 Reference Run"
+}

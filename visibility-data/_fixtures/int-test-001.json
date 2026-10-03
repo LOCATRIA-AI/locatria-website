@@ -1,0 +1,19 @@
+{
+  "entity_type": "intervention",
+  "schema_version": "1.0",
+  "intervention_id": "INT-TEST-001",
+  "intervention_type": "SCHEMA_ORGANIZATION",
+  "target": "index.html",
+  "description": "Add Organization schema to index.html",
+  "baseline_state": "No Organization schema present.",
+  "intended_change": "Inject schema.org Organization JSON-LD markup.",
+  "implementation_scope": "GLOBAL",
+  "rollback_method": "Revert git commit and restore previous HTML markup.",
+  "reversible": true,
+  "status": "ACTIVE",
+  "created_at": "2026-10-03T10:04:37.953Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

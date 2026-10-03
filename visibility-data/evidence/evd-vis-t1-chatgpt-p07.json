@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P07",
+  "observation_id": "OBS-T1-CHATGPT-P07",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n A small business can start with a simple spreadsheet rather than requiring sophisticated software.\n\n Create columns for:\n\n - Date\n- AI platform\n- Location used for the search\n- Exact prompt\n- Business mentioned? Yes/No\n- Position/order, if applicable\n- Business information accurate? Yes/No\n- Website cited? Yes/No\n- Other cited sources\n- Competitors mentioned\n- Notes\n\n Use the same prompt set consistently. Include both **branded queries** and **non-branded discovery queries**. Non-branded queries are particularly useful for determining whether the business can be discovered without the customer already knowing its name.\n\n Run the tests periodically rather than relying on a single observation. AI results can vary across repeated searches, platforms, and locations. For larger-scale tracking, dedicated local AI visibility tools can automate prompt collection and reporting.  BrightLocal+1",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P07."
+}

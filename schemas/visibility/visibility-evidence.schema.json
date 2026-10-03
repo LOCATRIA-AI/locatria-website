@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/visibility-evidence.schema.json",
+  "title": "LOCATRIA Visibility Evidence Schema",
+  "description": "Defines an immutable empirical evidence record supporting a Visibility Observation in the LOCATRIA Visibility Operating System.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "evidence_id",
+    "observation_id",
+    "evidence_type",
+    "evidence_level",
+    "raw_response",
+    "captured_at",
+    "captured_by",
+    "verification_status",
+    "is_immutable"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "visibility_evidence"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^EVD-VIS-[A-Za-z0-9_-]+$"
+    },
+    "observation_id": {
+      "type": "string",
+      "pattern": "^OBS-[A-Za-z0-9_-]+$"
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "RAW_RESPONSE",
+        "SOURCE_CARD",
+        "DIRECT_URL",
+        "CITATION",
+        "ENTITY_TEXT",
+        "CONTEXT_TEXT",
+        "SCREENSHOT",
+        "OTHER"
+      ]
+    },
+    "evidence_level": {
+      "type": "string",
+      "enum": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    },
+    "raw_response": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": ["string", "null"]
+    },
+    "source_url": {
+      "type": ["string", "null"]
+    },
+    "source_domain": {
+      "type": ["string", "null"]
+    },
+    "citation_text": {
+      "type": ["string", "null"]
+    },
+    "source_location": {
+      "type": ["string", "null"]
+    },
+    "captured_at": {
+      "type": "string"
+    },
+    "captured_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "UNVERIFIED",
+        "VERIFIED",
+        "DISPUTED",
+        "DEPRECATED"
+      ]
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

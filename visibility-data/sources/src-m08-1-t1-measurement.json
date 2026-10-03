@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-MEASUREMENT",
+  "source_name": "M08.1.5 Measurement Dataset Workbook",
+  "source_type": "MEASUREMENT_DATASET",
+  "source_path": "../21 Affiliate Program/Module 08/M08_1_5_Measurement_Dataset_v1_0.xlsx",
+  "source_level": "S4",
+  "source_role": "QA_AUDIT_BASELINE",
+  "source_format": "XLSX",
+  "source_hash": "91bec86a711b902d24b2ee130c6b5d6180a903e7167e4477df3980d2da362fd4",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:03.063Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:03.063Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Authoritative Level 2 measurement dataset containing Sheet 01_OBSERVATIONS"
+}

@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P06",
+  "observation_id": "OBS-T1-CHATGPT-P06",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Use a standardized set of realistic customer queries and record the results.\n\n For example, a dental practice could test:\n\n - \"best dentist in \\[city\\]\"\n- \"emergency dentist in \\[city\\]\"\n- \"dentist accepting new patients in \\[area\\]\"\n- \"dentist for dental implants near \\[location\\]\"\n\n For every test, record:\n\n - Whether the business was mentioned.\n- Where it appeared relative to other businesses, if an ordered list is provided.\n- Whether the business was described correctly.\n- Which sources were cited.\n- Whether the business's own website was cited.\n- Which competitors appeared.\n- The date, platform, query, and geographic context.\n- Whether the result changes when the same query is repeated.\n\n You can then calculate measures such as:\n\n **Mention rate = searches mentioning the business &#247; total relevant searches**\n\n **Citation rate = searches citing a specified business source &#247; total relevant searches**\n\n For local AI search, it is particularly important to test multiple geographic points and repeated runs rather than treating one answer as definitive.  BrightLocal+1",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P06."
+}

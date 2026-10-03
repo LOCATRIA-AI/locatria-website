@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/observation.schema.json",
+  "title": "LOCATRIA Visibility Observation Schema",
+  "description": "Defines an empirical observation record for 1 Prompt × 1 Environment × 1 Run in the LOCATRIA Visibility Operating System. Strictly decoupled from composite scores.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "observation_id",
+    "run_id",
+    "prompt_id",
+    "environment_id",
+    "observed_at",
+    "mention",
+    "citation_signal",
+    "verified_citation",
+    "retrieval",
+    "entity_recognition",
+    "context_accuracy",
+    "confidence",
+    "qa_status",
+    "is_immutable"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "observation"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "observation_id": {
+      "type": "string",
+      "pattern": "^OBS-[A-Za-z0-9_-]+$"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^RUN-[A-Za-z0-9_-]+$"
+    },
+    "prompt_id": {
+      "type": "string"
+    },
+    "environment_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "type": "string"
+    },
+    "raw_response_id": {
+      "type": ["string", "null"]
+    },
+    "mention": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNVERIFIED"
+      ]
+    },
+    "citation_signal": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNVERIFIED"
+      ]
+    },
+    "verified_citation": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNVERIFIED"
+      ]
+    },
+    "retrieval": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNVERIFIED"
+      ]
+    },
+    "entity_recognition": {
+      "type": "string",
+      "enum": [
+        "CORRECT",
+        "INCORRECT",
+        "UNVERIFIED",
+        "N/A"
+      ]
+    },
+    "context_accuracy": {
+      "type": "string",
+      "enum": [
+        "ACCURATE",
+        "PARTIAL",
+        "INACCURATE",
+        "UNVERIFIED",
+        "N/A"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNVERIFIED"
+      ]
+    },
+    "qa_status": {
+      "type": "string",
+      "enum": [
+        "UNAUDITED",
+        "VERIFIED",
+        "FLAGGED",
+        "CORRECTED"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

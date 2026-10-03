@@ -1,0 +1,35 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-B04-QUAL-002",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Source Discoverability and Citation Enhancement",
+  "statement": "Improve citation acquisition across high-retrieval domains.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-B04-001"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V3_CITATION"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:32.285Z",
+  "updated_at": "2026-10-03T10:04:32.420Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "FOUNDER",
+  "qualified_at": "2026-10-03T10:04:32.420Z",
+  "qualification_notes": "Qualified by Founder",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

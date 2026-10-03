@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/control-state.schema.json",
+  "title": "LOCATRIA Visibility Control State Schema",
+  "description": "Defines an explainable snapshot of the operating control state and governance gate evaluations in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "control_state_id",
+    "state",
+    "reasons",
+    "evaluated_gates",
+    "timestamp",
+    "evaluated_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "control_state"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "control_state_id": {
+      "type": "string",
+      "pattern": "^CS-[A-Za-z0-9_-]+$"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "CONTROL_ACTIVE",
+        "CONTROL_DEGRADED",
+        "CONTROL_SUSPENDED",
+        "CONTROL_REVIEW_REQUIRED"
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evaluated_gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "gate_id",
+          "gate_name",
+          "status",
+          "reason",
+          "evidence_refs",
+          "affected_entities",
+          "required_action"
+        ],
+        "properties": {
+          "gate_id": {
+            "type": "string",
+            "enum": ["G01", "G02", "G03", "G04", "G05", "G06", "G07", "G08"]
+          },
+          "gate_name": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["PASS", "WARN", "FAIL"]
+          },
+          "reason": { "type": "string" },
+          "evidence_refs": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "affected_entities": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "required_action": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evaluated_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

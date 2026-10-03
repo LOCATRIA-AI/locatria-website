@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P12",
+  "observation_id": "OBS-T1-CHATGPT-P12",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n A useful audit has several layers:\n\n 1. **Business identity:** Is the name, address, phone number, website, and ownership information clear and consistent?\n2. **Services:** Are the actual services clearly described?\n3. **Location:** Are the city, neighborhoods, and service areas explicit?\n4. **Content:** Does the website answer real customer questions?\n5. **Trust:** Are credentials, reviews, expertise, and other appropriate evidence available?\n6. **Technical accessibility:** Can important pages be crawled and understood?\n7. **External consistency:** Do directories and other authoritative sources agree with the website?\n8. **AI testing:** Does the business appear for relevant branded and non-branded prompts?\n9. **Citations:** Which sources does AI use when discussing the business?\n10. **Accuracy:** Is the resulting AI representation correct?\n11. **Change monitoring:** Do results remain consistent over time?\n\n A good audit records **observation &#8594; evidence &#8594; source &#8594; impact &#8594; recommended action**, rather than assuming that an AI system's answer automatically proves a particular problem. This evidence-based approach is also used in structured local SEO/AI audit workflows.  Locatria",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

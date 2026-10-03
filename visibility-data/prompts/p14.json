@@ -1,0 +1,14 @@
+{
+  "entity_type": "prompt",
+  "schema_version": "1.0.0",
+  "prompt_id": "P14",
+  "prompt_version": "1.0.0",
+  "prompt_text": "What should a small business fix first if it has poor AI visibility?",
+  "prompt_category": "PRIORITIZATION",
+  "intent_type": "DIAGNOSTIC",
+  "language": "en",
+  "status": "ACTIVE",
+  "created_at": "2026-09-27T00:00:00Z",
+  "retired_at": null,
+  "notes": "Frozen historical benchmark prompt P14 in PSET-M08-1-FIXED20."
+}

@@ -1,0 +1,40 @@
+{
+  "entity_type": "diagnosis",
+  "schema_version": "1.0.0",
+  "diagnosis_id": "DIAG-TEST-N11",
+  "diagnosis_version": "1.0.0",
+  "diagnosis_type": "DISCOVERY_DIAGNOSIS",
+  "title": "Diagnosis Under Review",
+  "statement": "In review, not yet validated.",
+  "status": "UNDER_REVIEW",
+  "scope": "GLOBAL",
+  "observation_refs": [
+    "OBS-T1-CHATGPT-P01"
+  ],
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "metric_refs": [
+    "M01_MENTION"
+  ],
+  "environment_refs": [
+    "ENV-CHATGPT"
+  ],
+  "run_refs": [
+    "RUN-M08-1-T1-REF"
+  ],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "confidence_state": "HIGH",
+  "uncertainty_statement": "",
+  "created_at": "2026-10-03T10:04:30.091Z",
+  "updated_at": "2026-10-03T10:04:30.226Z",
+  "created_by": "SYSTEM",
+  "validated_by": null,
+  "validated_at": null,
+  "validation_notes": "",
+  "is_immutable": false,
+  "metadata": {},
+  "notes": ""
+}

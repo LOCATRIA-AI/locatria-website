@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-PERPLEXITY-P08",
+  "observation_id": "OBS-T1-PERPLEXITY-P08",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "- AI-citation presence rate (percentage of AI outputs that mention your business)\n- Consistency of NAP data across sources\n- Coverage of your business in AI sources (number of AI outputs referencing you)\n- Response sentiment and accuracy in AI answers\n- Time-to-surface in AI results after updates\n [docs.perplexity](https://docs.perplexity.ai/docs/agent-api/output-control)",
+  "source_title": "docs.perplexity.ai",
+  "source_url": "https://docs.perplexity.ai/docs/agent-api/output-control",
+  "source_domain": "docs.perplexity.ai",
+  "citation_text": "[docs.perplexity.ai](https://docs.perplexity.ai/docs/agent-api/output-control)",
+  "source_location": "Inline citation in response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Displayed source is docs.perplexity.ai; it is not evidence that LOCATRIA was retrieved."
+}

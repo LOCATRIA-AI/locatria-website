@@ -1,0 +1,19 @@
+{
+  "entity_type": "intervention",
+  "schema_version": "1.0",
+  "intervention_id": "INT-B06-001",
+  "intervention_type": "SCHEMA_ORGANIZATION",
+  "target": "index.html",
+  "description": "B06 Schema Organization Intervention.",
+  "baseline_state": "Baseline state without schema.",
+  "intended_change": "Inject schema JSON-LD.",
+  "implementation_scope": "GLOBAL",
+  "rollback_method": "Git revert to previous commit.",
+  "reversible": true,
+  "status": "ACTIVE",
+  "created_at": "2026-10-03T10:04:46.117Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

@@ -1,0 +1,27 @@
+{
+  "entity_type": "action",
+  "schema_version": "1.0",
+  "action_id": "ACT-E2E-DEPENDENT-B",
+  "action_version": "1.0",
+  "opportunity_id": "OPP-E2E-001",
+  "founder_decision_id": "DEC-E2E-APP-001",
+  "action_type": "CONTENT_UPDATE",
+  "title": "Dependent Content Optimization",
+  "description": "Requires base schema.",
+  "objective": "Dependent task.",
+  "status": "DRAFTED",
+  "responsible_actor": "OPERATOR",
+  "dependency_refs": [
+    "ACT-E2E-PREREQ-A"
+  ],
+  "experiment_refs": [],
+  "intervention_refs": [],
+  "audit_refs": [],
+  "blocked_reason": null,
+  "implementation_notes": "",
+  "created_at": "2026-10-03T10:08:18.407Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

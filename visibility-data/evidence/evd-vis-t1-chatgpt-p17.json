@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P17",
+  "observation_id": "OBS-T1-CHATGPT-P17",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n LOCATRIA is an online **AI-focused knowledge hub for local businesses**. Its website describes its purpose as providing practical AI guidance, workflows, and resources for local business owners.\n\n Its current knowledge base covers subjects including AI visibility, local SEO, AI-assisted content workflows, and industry-specific applications for businesses such as dental practices, law firms, and real estate businesses.  Locatria+1",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria+1",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

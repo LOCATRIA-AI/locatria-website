@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/verification.schema.json",
+  "title": "LOCATRIA Visibility Verification Schema",
+  "description": "Defines a formal evaluation of whether an implemented Action or Experiment produced an observable result consistent with the defined verification method in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "verification_id",
+    "verification_version",
+    "subject_type",
+    "subject_id",
+    "founder_decision_id",
+    "verification_type",
+    "verification_method",
+    "evidence_refs",
+    "protocol_version",
+    "confidence",
+    "status",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "verification"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "verification_id": {
+      "type": "string",
+      "pattern": "^VFY-[A-Za-z0-9_-]+$"
+    },
+    "verification_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "subject_type": {
+      "type": "string",
+      "enum": ["ACTION", "EXPERIMENT"]
+    },
+    "subject_id": {
+      "type": "string",
+      "pattern": "^(ACT|EXP)-[A-Za-z0-9_-]+$"
+    },
+    "action_id": {
+      "type": ["string", "null"],
+      "pattern": "^ACT-[A-Za-z0-9_-]+$"
+    },
+    "experiment_id": {
+      "type": ["string", "null"],
+      "pattern": "^EXP-[A-Za-z0-9_-]+$"
+    },
+    "founder_decision_id": {
+      "type": "string",
+      "pattern": "^DEC-[A-Za-z0-9_-]+$"
+    },
+    "verification_type": {
+      "type": "string",
+      "enum": [
+        "VFY-01",
+        "VFY-02",
+        "VFY-03",
+        "VFY-04",
+        "VFY-05",
+        "IMPLEMENTATION",
+        "MEASUREMENT_INTEGRITY",
+        "OUTCOME",
+        "HYPOTHESIS",
+        "LEARNING"
+      ]
+    },
+    "baseline_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "post_implementation_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol_deviation": {
+      "type": "boolean"
+    },
+    "deviation_reason": {
+      "type": ["string", "null"]
+    },
+    "environment_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ENV-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "prompt_set_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^PSET-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "verification_method": {
+      "type": "string",
+      "minLength": 5
+    },
+    "outcome": {
+      "type": ["string", "null"],
+      "enum": ["IMPROVED", "NO_CHANGE", "DEGRADED", "MIXED", "UNVERIFIED", null]
+    },
+    "hypothesis_result": {
+      "type": ["string", "null"],
+      "enum": ["SUPPORTED", "DIRECTIONALLY_SUPPORTED", "NOT_SUPPORTED", "INCONCLUSIVE", "INVALID", "NOT_APPLICABLE", null]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "INSUFFICIENT", "UNVERIFIED"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFTED",
+        "READY_FOR_REVIEW",
+        "UNDER_VERIFICATION",
+        "VERIFIED",
+        "NEEDS_MORE_EVIDENCE",
+        "UNVERIFIED",
+        "CANCELLED"
+      ]
+    },
+    "verifier": {
+      "type": ["string", "null"]
+    },
+    "verified_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/system-rule.schema.json",
+  "title": "LOCATRIA Visibility System Rule Schema",
+  "description": "Defines an authoritative operational or heuristic system rule derived from validated learning, approved by the Founder, and actively governing the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "system_rule_id",
+    "version",
+    "rule_statement",
+    "source_learning_refs",
+    "evidence_refs",
+    "applicability",
+    "limitations",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "system_rule"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "system_rule_id": {
+      "type": "string",
+      "pattern": "^SR-[A-Za-z0-9_-]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "rule_statement": {
+      "type": "string",
+      "minLength": 10
+    },
+    "source_learning_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^LRN-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "source_candidate_ref": {
+      "type": ["string", "null"],
+      "pattern": "^SRC-[A-Za-z0-9_-]+$"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "applicability": {
+      "type": "string",
+      "minLength": 5
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 5
+    },
+    "effective_from": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "effective_until": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "FOUNDER_APPROVED",
+        "ACTIVE",
+        "RETIRED",
+        "REJECTED"
+      ]
+    },
+    "approved_by": {
+      "type": ["string", "null"]
+    },
+    "approved_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "decision_reason": {
+      "type": ["string", "null"]
+    },
+    "supersedes": {
+      "type": ["string", "null"],
+      "pattern": "^SR-[A-Za-z0-9_-]+$"
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

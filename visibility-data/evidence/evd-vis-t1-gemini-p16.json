@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P16",
+  "observation_id": "OBS-T1-GEMINI-P16",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A practical AI visibility audit workflow for a local business consists of four sequential steps:\n\n1. **Prompt Setup:** Compile a list of 20 to 30 category and \"near me\" prompts relevant to your local market.\n2. **Execution &amp; Recording:** Run these prompts across major AI search platforms (ChatGPT, Perplexity, Google AI Overviews) and log whether your business appears, your position, and the competitors listed.\n3. **Source &amp; Accuracy Audit:** Check what web sources and review sites the AI models cite, and verify that your business's online facts, hours, and descriptions match reality.\n4. **Action Plan Generation:** Identify missing structured data, directory inconsistencies, or review deficits, and create a prioritized remediation checklist.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P16."
+}

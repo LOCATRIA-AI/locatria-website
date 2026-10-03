@@ -1,0 +1,19 @@
+{
+  "entity_type": "measurement_run",
+  "schema_version": "1.0.0",
+  "run_id": "RUN-M08-1-T1-REF",
+  "run_name": "M08.1 Pilot T1 Reference / Control State",
+  "run_type": "CONTROL",
+  "intervention_id": null,
+  "prompt_set_id": "PSET-M08-1-FIXED20",
+  "protocol_version": "1.0.0",
+  "start_time": "2026-09-27T00:00:00Z",
+  "end_time": "2026-09-27T23:59:59Z",
+  "operator": "FOUNDER",
+  "status": "COMPLETED",
+  "environment_count": 3,
+  "prompt_count": 20,
+  "observation_count": 60,
+  "is_immutable": true,
+  "notes": "T1 Reference State established as control baseline for M08.1 experiment. 60/60 observations formalized from Level 1 raw exports and Level 2 QA audit dataset."
+}

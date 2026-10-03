@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-PERPLEXITY-P05",
+  "observation_id": "OBS-T1-PERPLEXITY-P05",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "Track AI-driven exposure and accuracy: presence in AI-generated answers, citations from authoritative sources, consistency of NAP data across sources, and changes in AI references over time. Regular audits of AI sources and sample prompts help quantify visibility. [docs.perplexity](https://docs.perplexity.ai/docs/agent-api/output-control)",
+  "source_title": "docs.perplexity.ai",
+  "source_url": "https://docs.perplexity.ai/docs/agent-api/output-control",
+  "source_domain": "docs.perplexity.ai",
+  "citation_text": "[docs.perplexity.ai](https://docs.perplexity.ai/docs/agent-api/output-control)",
+  "source_location": "Inline citation in response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Displayed source is docs.perplexity.ai; it is not evidence that LOCATRIA was retrieved."
+}

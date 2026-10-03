@@ -1,0 +1,86 @@
+{
+  "entity_type": "control_state",
+  "schema_version": "1.0",
+  "control_state_id": "CS-1791021906705",
+  "state": "CONTROL_ACTIVE",
+  "reasons": [
+    "All 8 control gates passed cleanly. System operating in full compliance."
+  ],
+  "evaluated_gates": [
+    {
+      "gate_id": "G01",
+      "gate_name": "Data Integrity",
+      "status": "PASS",
+      "reason": "Canonical runs, prompt sets, and prompts verified intact.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G02",
+      "gate_name": "Evidence Integrity",
+      "status": "PASS",
+      "reason": "All 60 canonical T1 evidence records verified intact.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G03",
+      "gate_name": "Protocol Integrity",
+      "status": "PASS",
+      "reason": "All verification protocols aligned without unaccounted drift.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G04",
+      "gate_name": "Environment Integrity",
+      "status": "PASS",
+      "reason": "Canonical AI environments verified and active.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G05",
+      "gate_name": "Governance Integrity",
+      "status": "PASS",
+      "reason": "Governance issues and exceptions within operating limits.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G06",
+      "gate_name": "Founder Decision Integrity",
+      "status": "PASS",
+      "reason": "All active actions and experiments backed by valid Founder Decisions.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G07",
+      "gate_name": "System Rule Integrity",
+      "status": "PASS",
+      "reason": "All active system rules backed by explicit Founder authorization.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    },
+    {
+      "gate_id": "G08",
+      "gate_name": "Change Control Integrity",
+      "status": "PASS",
+      "reason": "Change requests conform to governance approval pipeline.",
+      "evidence_refs": [],
+      "affected_entities": [],
+      "required_action": "None"
+    }
+  ],
+  "timestamp": "2026-10-03T10:05:06.705Z",
+  "evaluated_by": "SYSTEM",
+  "audit_refs": []
+}

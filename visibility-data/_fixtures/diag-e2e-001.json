@@ -1,0 +1,42 @@
+{
+  "entity_type": "diagnosis",
+  "schema_version": "1.0.0",
+  "diagnosis_id": "DIAG-E2E-001",
+  "diagnosis_version": "1.0.0",
+  "diagnosis_type": "DISCOVERY_DIAGNOSIS",
+  "title": "Brand Entity Discovery Omission in ChatGPT",
+  "statement": "Brand entity completely absent from primary prompt responses in ChatGPT.",
+  "status": "VALIDATED",
+  "scope": "ENVIRONMENT_SPECIFIC",
+  "observation_refs": [
+    "OBS-T1-CHATGPT-P01"
+  ],
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "metric_refs": [
+    "M01_MENTION",
+    "M04_ENTITY_RECOGNITION"
+  ],
+  "environment_refs": [
+    "ENV-CHATGPT"
+  ],
+  "run_refs": [
+    "RUN-M08-1-T1-REF"
+  ],
+  "problem_taxonomy": [
+    "V1_DISCOVERY",
+    "V4_ENTITY"
+  ],
+  "confidence_state": "HIGH",
+  "uncertainty_statement": "",
+  "created_at": "2026-10-03T10:08:14.262Z",
+  "updated_at": "2026-10-03T10:08:14.709Z",
+  "created_by": "SYSTEM",
+  "validated_by": "OPERATOR",
+  "validated_at": "2026-10-03T10:08:14.709Z",
+  "validation_notes": "Validated against T1 evidence",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": "Validated against T1 evidence"
+}

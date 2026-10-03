@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-PERPLEXITY-P06",
+  "observation_id": "OBS-T1-PERPLEXITY-P06",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "Conduct periodic checks with representative prompts and locations, note if the business name, address, or products appear in AI responses, and monitor changes in citations or direct references in AI outputs. Compare across multiple AI systems. [docs.perplexity](https://docs.perplexity.ai/docs/agent-api/presets)",
+  "source_title": "docs.perplexity.ai",
+  "source_url": "https://docs.perplexity.ai/docs/agent-api/presets",
+  "source_domain": "docs.perplexity.ai",
+  "citation_text": "[docs.perplexity.ai](https://docs.perplexity.ai/docs/agent-api/presets)",
+  "source_location": "Inline citation in response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Displayed source is docs.perplexity.ai; it is not evidence that LOCATRIA was retrieved."
+}

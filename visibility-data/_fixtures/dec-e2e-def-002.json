@@ -1,0 +1,19 @@
+{
+  "entity_type": "founder_decision",
+  "schema_version": "1.0.0",
+  "decision_id": "DEC-E2E-DEF-002",
+  "decision_version": "1.0.0",
+  "opportunity_id": "OPP-E2E-002",
+  "priority_assessment_id": "PRIO-E2E-002",
+  "recommendation": "P3",
+  "decision": "DEFER",
+  "decision_reason": "Deferred by Founder: secondary priority until baseline stabilizes.",
+  "decision_notes": "",
+  "evidence_refs": [],
+  "created_at": "2026-10-03T10:08:15.625Z",
+  "decided_at": "2026-10-03T10:08:15.625Z",
+  "decided_by": "FOUNDER",
+  "status": "DECIDED",
+  "is_immutable": true,
+  "metadata": {}
+}

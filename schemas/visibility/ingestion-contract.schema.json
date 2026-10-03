@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/ingestion-contract.schema.json",
+  "title": "LOCATRIA Visibility Ingestion Batch Contract Schema",
+  "description": "Defines an ingestion batch operation record in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "ingestion_id",
+    "source_id",
+    "run_id",
+    "ingestion_type",
+    "started_at",
+    "operator",
+    "status",
+    "record_count",
+    "success_count",
+    "error_count",
+    "warning_count"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "ingestion_batch"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "ingestion_id": {
+      "type": "string",
+      "pattern": "^ING-[A-Za-z0-9_-]+$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^SRC-[A-Za-z0-9_-]+$"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^RUN-[A-Za-z0-9_-]+$"
+    },
+    "ingestion_type": {
+      "type": "string",
+      "enum": [
+        "HISTORICAL_IMPORT",
+        "CONTROLLED_RUN_INGESTION",
+        "VERIFICATION_RE-INGESTION",
+        "MANUAL_ENTRY"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": ["string", "null"]
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "RUNNING",
+        "COMPLETED",
+        "COMPLETED_WITH_WARNINGS",
+        "FAILED",
+        "REJECTED"
+      ]
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "success_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "error_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "warning_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "message"],
+        "properties": {
+          "code": { "type": "string" },
+          "message": { "type": "string" },
+          "details": { "type": "object", "additionalProperties": true }
+        },
+        "additionalProperties": false
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P11",
+  "observation_id": "OBS-T1-CHATGPT-P11",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Use a structured set of questions rather than asking only \"Do you know my business?\"\n\n For example, test:\n\n - \"What is \\[business name\\]?\"\n- \"Where is \\[business name\\] located?\"\n- \"What services does \\[business name\\] offer?\"\n- \"What areas does it serve?\"\n- \"Who would typically use this business?\"\n- \"What is \\[business name\\] known for?\"\n- \"What alternatives to \\[business name\\] are available in \\[city\\]?\"\n\n Then separately test **unbranded queries**, such as \"Which plumbers serve \\[neighborhood\\]?\" This checks whether the business can surface in a discovery scenario rather than merely being recognized after its name is supplied.\n\n Record the answers and check them against authoritative business information. Pay particular attention to outdated locations, incorrect services, conflated businesses, unsupported claims, and missing geographic coverage.\n\n Finally, repeat the tests periodically. Recognition in one ChatGPT conversation does not establish consistent visibility across all users, prompts, locations, or future versions of an AI system.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P11."
+}

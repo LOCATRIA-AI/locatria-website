@@ -1,0 +1,29 @@
+{
+  "entity_type": "operating_review",
+  "schema_version": "1.0",
+  "review_id": "REV-TEST-Q01",
+  "review_version": "1.0",
+  "review_type": "QUARTERLY_STRATEGIC",
+  "period_start": "2026-07-05T10:04:51.544Z",
+  "period_end": "2026-10-03T10:04:51.544Z",
+  "subjects": [
+    "System architecture",
+    "System rule candidates",
+    "Strategy alignment"
+  ],
+  "evidence_refs": [],
+  "issues": [],
+  "decisions_required": [],
+  "recommendations": [],
+  "founder_decisions": [],
+  "exceptions": [],
+  "system_rule_candidates": [],
+  "status": "DRAFTED",
+  "owner": "FOUNDER",
+  "summary": "",
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:51.544Z",
+  "completed_at": null,
+  "is_immutable": false,
+  "metadata": {}
+}

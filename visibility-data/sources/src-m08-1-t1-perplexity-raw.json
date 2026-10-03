@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-PERPLEXITY-RAW",
+  "source_name": "Perplexity T1 Raw Model Response Export",
+  "source_type": "RAW_MODEL_RESPONSE_EXPORT",
+  "source_path": "../21 Affiliate Program/Module 08/Perplexity V1.txt",
+  "source_level": "S2",
+  "source_role": "T1_CONTROL_SOURCE",
+  "source_format": "TXT",
+  "source_hash": "fa9d4712ed87863333dea90667bb30b65380de2348495802607dc7fb4a74750d",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:02.938Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:02.938Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Primary Level 1 raw model responses for 20 prompts in Perplexity T1 Reference Run"
+}

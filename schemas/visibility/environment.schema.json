@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/environment.schema.json",
+  "title": "LOCATRIA Visibility Environment Schema",
+  "description": "Defines an AI or search evaluation environment in the LOCATRIA Visibility Operating System. Environment is strictly decoupled from Model.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "environment_id",
+    "environment_name",
+    "provider",
+    "interface",
+    "search_mode",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "environment"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "environment_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "environment_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": ["string", "null"]
+    },
+    "interface": {
+      "type": "string",
+      "enum": [
+        "WEB",
+        "API",
+        "MOBILE_APP",
+        "DESKTOP_APP",
+        "UNKNOWN"
+      ]
+    },
+    "search_mode": {
+      "type": "string",
+      "enum": [
+        "WEB_SEARCH_ACTIVE",
+        "BROWSE_ENABLED",
+        "RETRIEVAL_AUGMENTED",
+        "NATIVE_KNOWLEDGE_ONLY",
+        "UNKNOWN"
+      ]
+    },
+    "geography": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "PAUSED",
+        "RETIRED"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P14",
+  "observation_id": "OBS-T1-GEMINI-P14",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "If a small business has poor AI visibility, it should fix its foundational data infrastructure and entity clarity first. This means ensuring Name, Address, and Phone (NAP) data is completely consistent across the web, updating Google Business Profile listings, and implementing proper LocalBusiness schema markup on the company website. Without clean, machine-readable structured data and consistent directory citations, AI models cannot reliably verify the business's existence, location, or operating details, making them unlikely to recommend it.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P14."
+}

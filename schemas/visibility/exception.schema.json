@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/exception.schema.json",
+  "title": "LOCATRIA Visibility Governance Exception Schema",
+  "description": "Defines an explicit, approved deviation from established operating rules, protocols, metrics, or governance constraints in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "exception_id",
+    "exception_version",
+    "exception_type",
+    "subject_type",
+    "subject_id",
+    "rule_reference",
+    "deviation",
+    "reason",
+    "impact",
+    "mitigation",
+    "expiry_date",
+    "requested_by",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "governance_exception"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "exception_id": {
+      "type": "string",
+      "pattern": "^EXC-[A-Za-z0-9_-]+$"
+    },
+    "exception_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "exception_type": {
+      "type": "string",
+      "enum": ["EX01", "EX02", "EX03", "EX04", "EX05", "EX06", "EX07"]
+    },
+    "subject_type": {
+      "type": "string",
+      "enum": [
+        "RUN",
+        "OBSERVATION",
+        "EVIDENCE",
+        "DIAGNOSIS",
+        "OPPORTUNITY",
+        "DECISION",
+        "ACTION",
+        "EXPERIMENT",
+        "VERIFICATION",
+        "LEARNING",
+        "SYSTEM_RULE",
+        "PROTOCOL",
+        "METRIC",
+        "ENVIRONMENT",
+        "PROMPT_SET"
+      ]
+    },
+    "subject_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rule_reference": {
+      "type": "string",
+      "minLength": 3
+    },
+    "deviation": {
+      "type": "string",
+      "minLength": 5
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 5
+    },
+    "impact": {
+      "type": "string",
+      "minLength": 5
+    },
+    "mitigation": {
+      "type": "string",
+      "minLength": 5
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requested_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approved_by": {
+      "type": ["string", "null"]
+    },
+    "approved_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "decision_reason": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "REQUESTED",
+        "UNDER_REVIEW",
+        "APPROVED",
+        "REJECTED",
+        "EXPIRED"
+      ]
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

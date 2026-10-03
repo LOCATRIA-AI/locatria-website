@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P13",
+  "observation_id": "OBS-T1-GEMINI-P13",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A local business should prioritize AI visibility problems based on impact and foundational necessity, following a logical triage order:\n\n1. **Critical factual inaccuracies:** Fix incorrect addresses, disconnected phone numbers, or wrong operating hours that cause AI to misinform customers.\n2. **Complete absence of schema markup:** Implement core structured data (LocalBusiness, GeoCoordinates, OpeningHours) so AI models can easily parse entity data.\n3. **Reputation and review gaps:** Address negative review sentiment or low review volume on platforms that AI engines heavily weight for quality filtering.\n4. **Content and context gaps:** Enhance website content with clear service descriptions and answers to common customer questions to improve citation relevance.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P13."
+}

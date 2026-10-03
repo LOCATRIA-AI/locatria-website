@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P15",
+  "observation_id": "OBS-T1-CHATGPT-P15",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Use a measurement cycle rather than intuition:\n\n **Measure &#8594; diagnose &#8594; prioritize &#8594; change &#8594; remeasure.**\n\n For each potential problem, collect:\n\n - The exact query producing the problem.\n- The AI platform.\n- Date and geographic context.\n- What the AI system returned.\n- Which businesses appeared.\n- Which sources were cited.\n- The relevant business page or external source.\n- Evidence that the business information is correct or incorrect.\n- The customer intent affected.\n- Estimated effort to address the problem.\n\n Then prioritize issues based on factors such as **frequency, importance of the customer intent, evidence strength, likely impact, and implementation effort**.\n\n For example, a repeatedly incorrect service-area description supported by conflicting public sources is a concrete evidence-based problem. A belief that \"AI probably doesn't understand our brand\" without testing is only a hypothesis.\n\n Repeat the same tests after changes. Research into local AI search shows that recommendations can vary substantially between repeated runs, platforms, and geographic points, which makes consistent measurement especially important.  BrightLocal+1",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P15."
+}

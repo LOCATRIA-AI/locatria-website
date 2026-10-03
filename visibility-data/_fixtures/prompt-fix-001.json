@@ -1,0 +1,14 @@
+{
+  "entity_type": "prompt",
+  "schema_version": "1.0.0",
+  "prompt_id": "PROMPT-FIX-001",
+  "prompt_version": "1.0.0",
+  "prompt_text": "What is AI Visibility for dental practices?",
+  "prompt_category": "DISCOVERY",
+  "intent_type": "INFORMATIONAL",
+  "language": "en",
+  "status": "ACTIVE",
+  "created_at": "2026-09-28T00:00:00Z",
+  "retired_at": null,
+  "notes": "Test fixture for prompt entity"
+}

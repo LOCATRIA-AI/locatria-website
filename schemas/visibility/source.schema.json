@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/source.schema.json",
+  "title": "LOCATRIA Visibility Source Registration Schema",
+  "description": "Defines a registered raw or authoritative evidence source in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "source_id",
+    "source_name",
+    "source_type",
+    "source_path",
+    "source_level",
+    "source_role",
+    "source_format",
+    "source_hash",
+    "hash_algorithm",
+    "hash_captured_at",
+    "registered_at",
+    "registered_by",
+    "status"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "source"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^SRC-[A-Za-z0-9_-]+$"
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "RAW_PROMPT_EXECUTION_LOG",
+        "RAW_MODEL_RESPONSE_EXPORT",
+        "QA_EVIDENCE_DATASET",
+        "MEASUREMENT_DATASET",
+        "PROTOCOL_SPECIFICATION",
+        "MANUAL_AUDIT_LOG",
+        "EXTERNAL_API_EXPORT",
+        "CANONICAL_REPOSITORY_RECORD"
+      ]
+    },
+    "source_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_level": {
+      "type": "string",
+      "enum": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7"
+      ]
+    },
+    "source_role": {
+      "type": "string",
+      "enum": [
+        "T1_CONTROL_SOURCE",
+        "T2_INTERVENTION_SOURCE",
+        "QA_AUDIT_BASELINE",
+        "PROTOCOL_RUNNER",
+        "HISTORICAL_ARCHIVE"
+      ]
+    },
+    "source_format": {
+      "type": "string",
+      "enum": [
+        "TXT",
+        "JSON",
+        "XLSX",
+        "CSV",
+        "DOCX"
+      ]
+    },
+    "source_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "hash_algorithm": {
+      "type": "string",
+      "enum": [
+        "SHA-256"
+      ]
+    },
+    "hash_captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "captured_at": {
+      "type": ["string", "null"]
+    },
+    "registered_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "registered_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "REGISTERED",
+        "ACTIVE",
+        "ARCHIVED",
+        "DEPRECATED"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

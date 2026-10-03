@@ -1,0 +1,35 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-TEST-013",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Valid Lifecycle Opportunity",
+  "statement": "Opportunity progressing cleanly through qualification gate.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-TEST-010"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:04:28.603Z",
+  "updated_at": "2026-10-03T10:04:28.811Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "FOUNDER",
+  "qualified_at": "2026-10-03T10:04:28.811Z",
+  "qualification_notes": "Opportunity approved and qualified by Founder",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

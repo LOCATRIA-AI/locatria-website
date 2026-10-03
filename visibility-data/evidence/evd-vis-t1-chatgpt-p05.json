@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P05",
+  "observation_id": "OBS-T1-CHATGPT-P05",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n A practical approach is to create a **repeatable prompt-and-observation test**.\n\n 1. Define the business's target services, locations, and customer intents.\n2. Create relevant non-branded prompts, such as \"best emergency dentist in \\[city\\].\"\n3. Run those prompts across the AI systems that matter to the business.\n4. Record which businesses are mentioned.\n5. Record the position or order in which businesses appear when the system provides an ordered list.\n6. Record whether the business's website or other sources are cited.\n7. Check whether the information about the business is accurate.\n8. Repeat searches over time and, where relevant, from different geographic locations.\n9. Track competitors appearing for the same prompts.\n10. Compare results over multiple measurement periods.\n\n Important metrics can include **mention rate, citation rate, persistence, source frequency, accuracy, and geographic consistency**.\n\n Repeated testing matters because AI-generated local recommendations can vary between runs, platforms, and locations. A 2026 BrightLocal study, for example, analyzed more than 200,000 localized searches across ChatGPT, Google AI Mode, and Google AI Overviews and found substantial variation in local recommendations.  BrightLocal",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P05."
+}

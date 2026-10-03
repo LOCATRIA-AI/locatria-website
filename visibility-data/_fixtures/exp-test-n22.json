@@ -1,0 +1,31 @@
+{
+  "entity_type": "experiment",
+  "schema_version": "1.0",
+  "experiment_id": "EXP-TEST-N22",
+  "experiment_version": "1.0",
+  "opportunity_id": "OPP-B05-QUAL-001",
+  "founder_decision_id": "DEC-B05-APP-001",
+  "title": "AI Advisor Experiment Test",
+  "hypothesis": "Testing AI advisor authority rejection.",
+  "reference_run_id": "RUN-M08-1-T1-REF",
+  "intervention_id": "INT-TEST-001",
+  "prompt_set_id": "PSET-M08-1-FIXED20",
+  "protocol_version": "1.0",
+  "environments": [
+    "ENV-CHATGPT"
+  ],
+  "variables": [],
+  "confounders": [],
+  "success_observation": "Entity mention rate increases from baseline.",
+  "verification_method": "Frozen 20-prompt evaluation.",
+  "rollback_plan": "Valid rollback plan for experiment testing.",
+  "status": "DRAFTED",
+  "dependency_refs": [],
+  "audit_refs": [],
+  "blocked_reason": null,
+  "created_at": "2026-10-03T10:04:43.556Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

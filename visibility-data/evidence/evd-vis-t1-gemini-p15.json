@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P15",
+  "observation_id": "OBS-T1-GEMINI-P15",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A local business can prioritize its AI search visibility improvements using evidence by analyzing data gathered from prompt tracking audits, competitor comparisons, and technical site reviews. By reviewing which competitors consistently win AI recommendations and examining the specific sources or review platforms the AI cites in response, the business can identify tangible performance gaps. Prioritization should then focus on the specific weak points revealed by the data—such as correcting missing schema markup, resolving directory inconsistencies, or boosting review counts on heavily cited third-party platforms.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P15."
+}

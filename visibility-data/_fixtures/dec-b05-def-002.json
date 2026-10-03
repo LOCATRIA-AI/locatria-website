@@ -1,0 +1,19 @@
+{
+  "entity_type": "founder_decision",
+  "schema_version": "1.0.0",
+  "decision_id": "DEC-B05-DEF-002",
+  "decision_version": "1.0.0",
+  "opportunity_id": "OPP-B05-QUAL-001",
+  "priority_assessment_id": "PRIO-B05-001",
+  "recommendation": "P2",
+  "decision": "DEFER",
+  "decision_reason": "Deferred until Q4.",
+  "decision_notes": "",
+  "evidence_refs": [],
+  "created_at": "2026-10-03T10:04:37.503Z",
+  "decided_at": "2026-10-03T10:04:37.503Z",
+  "decided_by": "FOUNDER",
+  "status": "DECIDED",
+  "is_immutable": true,
+  "metadata": {}
+}

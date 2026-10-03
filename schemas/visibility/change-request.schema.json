@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/change-request.schema.json",
+  "title": "LOCATRIA Visibility Change Request Schema",
+  "description": "Defines an explicit Change Request record governing material changes to prompt sets, prompts, environments, protocols, metrics, schemas, and system architecture in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "change_request_id",
+    "change_request_version",
+    "change_type",
+    "target",
+    "current_state",
+    "proposed_change",
+    "reason",
+    "impact",
+    "risk",
+    "rollback",
+    "requested_by",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "change_request"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "change_request_id": {
+      "type": "string",
+      "pattern": "^CR-[A-Za-z0-9_-]+$"
+    },
+    "change_request_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "change_type": {
+      "type": "string",
+      "enum": [
+        "PROMPT_SET",
+        "PROMPT",
+        "ENVIRONMENT",
+        "PROTOCOL",
+        "METRIC",
+        "SCHEMA",
+        "LIFECYCLE_RULE",
+        "GOVERNANCE_RULE",
+        "SYSTEM_RULE",
+        "ARCHITECTURE",
+        "MODULE_BOUNDARY"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "minLength": 3
+    },
+    "current_state": {
+      "type": "string",
+      "minLength": 3
+    },
+    "proposed_change": {
+      "type": "string",
+      "minLength": 5
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 5
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "impact": {
+      "type": "string",
+      "minLength": 5
+    },
+    "risk": {
+      "type": "string",
+      "minLength": 5
+    },
+    "rollback": {
+      "type": "string",
+      "minLength": 5
+    },
+    "requested_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewed_by": {
+      "type": ["string", "null"]
+    },
+    "approved_by": {
+      "type": ["string", "null"]
+    },
+    "approved_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "decision_reason": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "UNDER_REVIEW",
+        "APPROVED",
+        "REJECTED",
+        "IMPLEMENTED",
+        "VERIFIED"
+      ]
+    },
+    "effective_version": {
+      "type": ["string", "null"]
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

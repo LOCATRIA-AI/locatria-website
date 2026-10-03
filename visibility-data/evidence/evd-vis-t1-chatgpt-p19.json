@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P19",
+  "observation_id": "OBS-T1-CHATGPT-P19",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Yes. LOCATRIA's website explicitly publishes resources covering both **AI visibility and local SEO**.\n\n Its knowledge hub includes a foundational guide on AI visibility for local businesses, a guide on how AI is changing local SEO, and an AI-assisted local SEO audit workflow. The site also organizes resources into industry-specific hubs and learning paths.  Locatria+1",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria+1",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

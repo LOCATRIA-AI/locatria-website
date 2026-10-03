@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/action.schema.json",
+  "title": "LOCATRIA Visibility Action Schema",
+  "description": "Defines a controlled implementation activity authorized by an approved Founder Decision in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "action_id",
+    "action_version",
+    "opportunity_id",
+    "founder_decision_id",
+    "action_type",
+    "title",
+    "description",
+    "objective",
+    "status",
+    "responsible_actor",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "action"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "action_id": {
+      "type": "string",
+      "pattern": "^ACT-[A-Za-z0-9_-]+$"
+    },
+    "action_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^OPP-[A-Za-z0-9_-]+$"
+    },
+    "founder_decision_id": {
+      "type": "string",
+      "pattern": "^DEC-[A-Za-z0-9_-]+$"
+    },
+    "action_type": {
+      "type": "string",
+      "enum": [
+        "CONTENT_UPDATE",
+        "SCHEMA_MARKUP",
+        "CITATION_ACQUISITION",
+        "ENTITY_HOMEPAGE_SYNC",
+        "TECHNICAL_SEO",
+        "PROCESS_IMPROVEMENT",
+        "OTHER"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 5
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFTED",
+        "READY_FOR_IMPLEMENTATION",
+        "IN_PROGRESS",
+        "IMPLEMENTED",
+        "READY_FOR_VERIFICATION",
+        "BLOCKED",
+        "CANCELLED"
+      ]
+    },
+    "responsible_actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dependency_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ACT-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "experiment_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EXP-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "intervention_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(T2-INT-\\d{2,}|INT-[A-Za-z0-9_-]+)$"
+      },
+      "uniqueItems": true
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "blocked_reason": {
+      "type": ["string", "null"]
+    },
+    "implementation_notes": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

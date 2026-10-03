@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T2-CHATGPT-RUNNER",
+  "source_name": "ChatGPT T2 Measurement Runner Prompt v1.0",
+  "source_type": "PROTOCOL_SPECIFICATION",
+  "source_path": "../21 Affiliate Program/Module 08/CHATGPT MEASUREMENT RUNNER PROMPT v1.0.txt",
+  "source_level": "S5",
+  "source_role": "PROTOCOL_RUNNER",
+  "source_format": "TXT",
+  "source_hash": "6d866e4f154a9f7ad80437be215ba2af6fa4a0d01d9a7609f92223ba887faf65",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:03.107Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:03.107Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "M08.1.7-T2.2 runner prompt specification for ChatGPT T2 intervention run"
+}

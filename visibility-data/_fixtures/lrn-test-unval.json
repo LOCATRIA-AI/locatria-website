@@ -1,0 +1,25 @@
+{
+  "entity_type": "learning",
+  "schema_version": "1.0",
+  "learning_id": "LRN-TEST-UNVAL",
+  "learning_version": "1.0",
+  "source_verification_refs": [
+    "VFY-TEST-001"
+  ],
+  "hypothesis_result": "NOT_APPLICABLE",
+  "learning_type": "L1",
+  "statement": "Unvalidated learning for testing system rule candidate rejection.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "confidence": "HIGH",
+  "applicability": "General",
+  "limitations": "Testing limitations",
+  "status": "DRAFTED",
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:48.551Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

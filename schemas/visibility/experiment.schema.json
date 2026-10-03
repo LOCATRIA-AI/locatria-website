@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/experiment.schema.json",
+  "title": "LOCATRIA Visibility Experiment Schema",
+  "description": "Defines a controlled empirical test designed to evaluate a visibility hypothesis under a frozen protocol in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "experiment_id",
+    "experiment_version",
+    "opportunity_id",
+    "founder_decision_id",
+    "title",
+    "hypothesis",
+    "reference_run_id",
+    "intervention_id",
+    "prompt_set_id",
+    "protocol_version",
+    "environments",
+    "variables",
+    "confounders",
+    "success_observation",
+    "verification_method",
+    "rollback_plan",
+    "status",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "experiment"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^EXP-[A-Za-z0-9_-]+$"
+    },
+    "experiment_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^OPP-[A-Za-z0-9_-]+$"
+    },
+    "founder_decision_id": {
+      "type": "string",
+      "pattern": "^DEC-[A-Za-z0-9_-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "hypothesis": {
+      "type": "string",
+      "minLength": 10
+    },
+    "reference_run_id": {
+      "type": "string",
+      "pattern": "^RUN-[A-Za-z0-9_-]+$"
+    },
+    "intervention_id": {
+      "type": "string",
+      "pattern": "^(T2-INT-\\d{2,}|INT-[A-Za-z0-9_-]+)$"
+    },
+    "prompt_set_id": {
+      "type": "string",
+      "pattern": "^PSET-[A-Za-z0-9_-]+$"
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ENV-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confounders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "success_observation": {
+      "type": "string",
+      "minLength": 5
+    },
+    "verification_method": {
+      "type": "string",
+      "minLength": 5
+    },
+    "rollback_plan": {
+      "type": "string",
+      "minLength": 10
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFTED",
+        "READY_FOR_IMPLEMENTATION",
+        "IN_PROGRESS",
+        "IMPLEMENTED",
+        "READY_FOR_VERIFICATION",
+        "BLOCKED",
+        "CANCELLED"
+      ]
+    },
+    "dependency_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(ACT|EXP)-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "blocked_reason": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

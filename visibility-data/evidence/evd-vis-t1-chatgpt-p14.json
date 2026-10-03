@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P14",
+  "observation_id": "OBS-T1-CHATGPT-P14",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Start with the fundamentals that affect whether systems can correctly understand the business.\n\n A sensible first pass is:\n\n 1. Make the business identity and contact information accurate.\n2. Clearly state what the business does and where it operates.\n3. Make service areas explicit and distinguish them from the physical address.\n4. Resolve important inconsistencies between the website and external business profiles.\n5. Ensure important pages are technically accessible.\n6. Create or improve useful content answering genuine customer questions.\n7. Add appropriate evidence of expertise, credentials, and trust.\n8. Establish a baseline of AI-search tests so subsequent changes can be measured.\n\n There is no known technical switch that guarantees AI recommendations or citations. AI visibility depends on systems outside the business's control, so the practical goal is to improve the quality, clarity, accessibility, and consistency of the information those systems can use.  Locatria+1",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria+1",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

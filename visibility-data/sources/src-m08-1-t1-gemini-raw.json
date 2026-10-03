@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-GEMINI-RAW",
+  "source_name": "Gemini T1 Raw Model Response Export",
+  "source_type": "RAW_MODEL_RESPONSE_EXPORT",
+  "source_path": "../21 Affiliate Program/Module 08/Gemini V1.txt",
+  "source_level": "S2",
+  "source_role": "T1_CONTROL_SOURCE",
+  "source_format": "TXT",
+  "source_hash": "9195923fb528f9fe0acfd98ba9eabb5ce5e833f7d1a4a16ca44395bc3461a80e",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:02.918Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:02.918Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Primary Level 1 raw model responses for 20 prompts in Gemini T1 Reference Run"
+}

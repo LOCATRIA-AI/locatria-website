@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P03",
+  "observation_id": "OBS-T1-GEMINI-P03",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "While local SEO and AI visibility are closely related, they target different mechanics and outputs:\n\n* **Local SEO** primarily focuses on optimizing your website, Google Business Profile, and map citations to rank high in traditional search engine results pages and local map packs.\n* **AI visibility** focuses on how large language models and answer engines synthesize information across the web to understand, summarize, and recommend your business in conversational outputs.\nWhile local SEO targets keywords, proximity, and map rankings, AI visibility targets entity clarity, contextual trustworthiness, structured data parsing, and third-party validation.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P03."
+}

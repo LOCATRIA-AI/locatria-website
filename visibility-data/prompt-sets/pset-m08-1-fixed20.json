@@ -1,0 +1,33 @@
+{
+  "entity_type": "prompt_set",
+  "schema_version": "1.0.0",
+  "prompt_set_id": "PSET-M08-1-FIXED20",
+  "prompt_set_version": "1.0.0",
+  "name": "M08.1 Fixed 20-Prompt Visibility Benchmark Set",
+  "description": "Frozen 20-prompt reference set used for M08.1 AI Visibility Pilot across ChatGPT, Gemini, and Perplexity.",
+  "prompt_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P19",
+    "P20"
+  ],
+  "status": "ACTIVE",
+  "created_at": "2026-09-27T00:00:00Z",
+  "notes": "Frozen prompt set for T1 reference and T2 controlled comparison."
+}

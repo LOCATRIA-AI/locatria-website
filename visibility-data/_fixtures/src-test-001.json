@@ -1,0 +1,29 @@
+{
+  "entity_type": "system_rule_candidate",
+  "schema_version": "1.0",
+  "candidate_id": "SRC-TEST-001",
+  "candidate_version": "1.0",
+  "source_learning_refs": [
+    "LRN-TEST-001"
+  ],
+  "rule_statement": "Always deploy schema.org Organization JSON-LD before launching AI visibility campaigns.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "applicability": "All client sites and core digital properties.",
+  "limitations": "Subject to LLM crawler indexing delays.",
+  "confidence": "HIGH",
+  "proposed_action": "Add Organization schema template to standard site boilerplate.",
+  "status": "APPROVED",
+  "founder_review_required": true,
+  "founder_decision": "APPROVE",
+  "decision_reason": "Approved by Founder: empirically verified across T1 control set.",
+  "decided_by": "FOUNDER",
+  "decided_at": "2026-10-03T10:04:48.212Z",
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:48.049Z",
+  "updated_at": "2026-10-03T10:04:48.212Z",
+  "created_by": "SYSTEM",
+  "is_immutable": true,
+  "metadata": {}
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/measurement-run.schema.json",
+  "title": "LOCATRIA Visibility Measurement Run Schema",
+  "description": "Defines an empirical measurement run container across prompts and environments in the LOCATRIA Visibility Operating System.",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "run_id",
+    "run_name",
+    "run_type",
+    "prompt_set_id",
+    "protocol_version",
+    "start_time",
+    "operator",
+    "status",
+    "environment_count",
+    "prompt_count",
+    "observation_count",
+    "is_immutable"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "measurement_run"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^RUN-[A-Za-z0-9_-]+$"
+    },
+    "run_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_type": {
+      "type": "string",
+      "enum": [
+        "BASELINE",
+        "CONTROL",
+        "EXPERIMENT",
+        "RETEST",
+        "MONITORING",
+        "AD_HOC"
+      ]
+    },
+    "intervention_id": {
+      "type": ["string", "null"]
+    },
+    "prompt_set_id": {
+      "type": "string"
+    },
+    "protocol_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": ["string", "null"]
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "IN_PROGRESS",
+        "COMPLETED",
+        "FAILED",
+        "ABORTED"
+      ]
+    },
+    "environment_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "prompt_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "observation_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

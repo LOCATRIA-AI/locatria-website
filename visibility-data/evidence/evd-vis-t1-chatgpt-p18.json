@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P18",
+  "observation_id": "OBS-T1-CHATGPT-P18",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n LOCATRIA provides educational resources and practical workflows intended to help local businesses use AI in areas such as online visibility, local SEO, content creation, research, and ongoing maintenance.\n\n Its published material includes guides on AI visibility, AI-assisted local SEO, content workflows, and industry-specific resources. It also provides specialized learning paths, such as one focused on AI visibility for dental businesses.  Locatria+2",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria+2",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

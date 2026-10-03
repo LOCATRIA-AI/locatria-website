@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P10",
+  "observation_id": "OBS-T1-CHATGPT-P10",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n First define exactly what counts as a citation, then test a consistent set of prompts.\n\n A basic measurement can use:\n\n **Citation rate = number of tested answers citing the business's source &#247; number of tested answers**\n\n You can also measure:\n\n - **Citation count:** total citations recorded.\n- **Citation share:** the business's citations compared with citations for competing businesses or domains.\n- **Unique cited pages:** number of different pages from the business website that are cited.\n- **Citation relevance:** whether the cited page actually supports the statement being made.\n- **Citation persistence:** whether the same source continues to be cited over repeated runs.\n- **Citation coverage:** which customer questions produce citations and which do not.\n- **Citation source mix:** website versus directories, review platforms, government sources, and other sources.\n\n Keep the underlying observations, not just the aggregate percentage. AI answers can change, so a citation rate without the prompt, platform, date, and location behind it can be difficult to interpret.  BrightLocal+1",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P10."
+}

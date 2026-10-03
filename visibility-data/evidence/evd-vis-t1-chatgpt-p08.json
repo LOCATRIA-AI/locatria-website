@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P08",
+  "observation_id": "OBS-T1-CHATGPT-P08",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n Useful metrics include:\n\n - **Mention rate:** percentage of relevant prompts where the business is named.\n- **Citation rate:** percentage of answers that cite the business's website or another tracked source.\n- **Source frequency:** how often particular domains are used as sources.\n- **Persistence:** how often the business continues to appear when the same query is repeated.\n- **Prompt coverage:** percentage of the business's important customer intents for which it appears.\n- **Geographic coverage:** visibility across different locations or areas served.\n- **Accuracy rate:** percentage of AI descriptions that correctly represent the business.\n- **Competitor overlap:** which competitors appear for the same prompts.\n- **Position/order:** where the business appears when an answer provides an ordered set of recommendations.\n- **Trend over time:** whether these measurements improve, decline, or fluctuate.\n\n These metrics should be kept separate. A business can, for example, have a relatively high mention rate but a low citation rate, or be frequently cited without being recommended as a business. Recent local-AI research demonstrates why measuring both appearance and citations can provide more information than relying on one number.  BrightLocal+1",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for ChatGPT P08."
+}

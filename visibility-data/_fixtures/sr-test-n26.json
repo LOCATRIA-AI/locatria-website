@@ -1,0 +1,28 @@
+{
+  "entity_type": "system_rule",
+  "schema_version": "1.0",
+  "system_rule_id": "SR-TEST-N26",
+  "version": "1.0",
+  "rule_statement": "Rule testing automatic activation prevention.",
+  "source_learning_refs": [
+    "LRN-TEST-VAL-001"
+  ],
+  "source_candidate_ref": null,
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "applicability": "System-wide",
+  "limitations": "Subject to environment evolution",
+  "effective_from": null,
+  "effective_until": null,
+  "status": "DRAFT",
+  "approved_by": null,
+  "approved_at": null,
+  "decision_reason": null,
+  "supersedes": null,
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:58.969Z",
+  "updated_at": null,
+  "is_immutable": false,
+  "metadata": {}
+}

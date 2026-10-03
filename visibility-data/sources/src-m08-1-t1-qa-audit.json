@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-QA-AUDIT",
+  "source_name": "M08.1.5 T1 Dataset QA Evidence Audit Workbook",
+  "source_type": "QA_EVIDENCE_DATASET",
+  "source_path": "../21 Affiliate Program/Module 08/M08_1_5_T1_Dataset_QA_Evidence_Audit_v1_0.xlsx",
+  "source_level": "S3",
+  "source_role": "QA_AUDIT_BASELINE",
+  "source_format": "XLSX",
+  "source_hash": "9ef8a6137a3629718988ee36662ac2f94d34ea3d6909692b6abdaa424ce6a828",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:03.026Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:03.026Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Authoritative Level 2 QA audit containing audited Sheet 01_T1_DATASET_AUDIT"
+}

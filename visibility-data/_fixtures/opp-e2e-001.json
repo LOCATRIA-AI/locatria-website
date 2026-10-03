@@ -1,0 +1,36 @@
+{
+  "entity_type": "opportunity",
+  "schema_version": "1.0.0",
+  "opportunity_id": "OPP-E2E-001",
+  "opportunity_version": "1.0.0",
+  "opportunity_type": "VISIBILITY_IMPROVEMENT",
+  "title": "Deploy Organization Schema to Enable Entity Recognition",
+  "statement": "Add canonical schema markup to root domain to address entity absence.",
+  "status": "QUALIFIED",
+  "scope": "GLOBAL",
+  "diagnosis_refs": [
+    "DIAG-E2E-001"
+  ],
+  "observation_refs": [],
+  "evidence_refs": [],
+  "metric_refs": [],
+  "environment_refs": [],
+  "run_refs": [],
+  "problem_taxonomy": [
+    "V1_DISCOVERY",
+    "V4_ENTITY"
+  ],
+  "qualification_state": "QUALIFIED",
+  "confidence_state": "HIGH",
+  "expected_impact_hypothesis": "",
+  "rationale": "",
+  "created_at": "2026-10-03T10:08:14.527Z",
+  "updated_at": "2026-10-03T10:08:14.750Z",
+  "created_by": "SYSTEM",
+  "qualified_by": "OPERATOR",
+  "qualified_at": "2026-10-03T10:08:14.750Z",
+  "qualification_notes": "Opportunity qualified based on validated underlying diagnosis.",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

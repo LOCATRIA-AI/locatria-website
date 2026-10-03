@@ -1,0 +1,73 @@
+{
+  "import_id": "IMP-M08-1-HISTORICAL-v1.0",
+  "import_timestamp": "2026-09-28T06:57:09.948Z",
+  "import_operator": "Antigravity (on behalf of Founder)",
+  "protocol_version": "1.0.0",
+  "source_type": "LEVEL_1_RAW_EXPORTS_AND_LEVEL_2_QA_AUDIT",
+  "source_files": [
+    "GDBS OS/21 Affiliate Program/Module 08/20 prompt run chatGPT.txt",
+    "GDBS OS/21 Affiliate Program/Module 08/20 prompt run chat gemini.txt",
+    "GDBS OS/21 Affiliate Program/Module 08/20 prompt run chat Perplexity.txt",
+    "GDBS OS/21 Affiliate Program/Module 08/ChatGPT V1.txt",
+    "GDBS OS/21 Affiliate Program/Module 08/Gemini V1.txt",
+    "GDBS OS/21 Affiliate Program/Module 08/Perplexity V1.txt",
+    "GDBS OS/21 Affiliate Program/Module 08/M08_1_5_T1_Dataset_QA_Evidence_Audit_v1_0.xlsx",
+    "GDBS OS/21 Affiliate Program/Module 08/M08_1_5_Measurement_Dataset_v1_0.xlsx",
+    "GDBS OS/21 Affiliate Program/Module 08/M08_1_6_Visibility_Learning_Diagnosis_v1_0.xlsx"
+  ],
+  "target_entities": {
+    "prompts": 20,
+    "prompt_sets": 1,
+    "environments": 3,
+    "measurement_runs": 1,
+    "observations": 60,
+    "visibility_evidence": 60
+  },
+  "counts": {
+    "expected_observations": 60,
+    "imported_observations": 60,
+    "missing_observations": 0,
+    "expected_evidence": 60,
+    "imported_evidence": 60,
+    "missing_evidence": 0
+  },
+  "epistemic_classifications": {
+    "mention": {
+      "YES": 20,
+      "NO": 40
+    },
+    "citation_signal": {
+      "YES": 12,
+      "NO": 48
+    },
+    "verified_citation": {
+      "YES": 0,
+      "NO": 60
+    },
+    "retrieval": {
+      "YES": 0,
+      "NO": 0,
+      "UNVERIFIED": 60
+    },
+    "entity_recognition": {
+      "CORRECT": 4,
+      "UNVERIFIED": 8,
+      "NA": 48
+    },
+    "context_accuracy": {
+      "ACCURATE": 4,
+      "UNVERIFIED": 4,
+      "NA": 52
+    }
+  },
+  "invariants_verified": [
+    "NO composite visibility score generated or stored",
+    "Separation of citation_signal and verified_citation maintained",
+    "Retrieval marked UNVERIFIED (per historical QA audit protocol)",
+    "Zero data fabrication: All records match Level 1/2 historical files",
+    "All records locked as immutable (is_immutable = true)",
+    "Canonical intervention identity locked as T2-INT-01"
+  ],
+  "validation_status": "PASS_100_PERCENT",
+  "notes": "Historical formalization complete. All 60 observations and evidence records match original M08.1 T1 pilot files exactly."
+}

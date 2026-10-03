@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/governance.schema.json",
+  "title": "LOCATRIA Visibility Governance Issue Schema",
+  "description": "Defines an explicit governance record for tracking, escalating, reviewing, and resolving anomalies, policy breaches, and operational integrity issues in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "governance_id",
+    "governance_version",
+    "governance_type",
+    "governance_level",
+    "subject_type",
+    "subject_id",
+    "issue",
+    "evidence_refs",
+    "current_state",
+    "required_action",
+    "owner",
+    "status",
+    "founder_review_required",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "governance_issue"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "governance_id": {
+      "type": "string",
+      "pattern": "^GOV-[A-Za-z0-9_-]+$"
+    },
+    "governance_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "governance_type": {
+      "type": "string",
+      "enum": [
+        "DATA_INTEGRITY",
+        "PROTOCOL_DRIFT",
+        "EVIDENCE_ANOMALY",
+        "CONFLICT",
+        "POLICY_BREACH",
+        "SECURITY",
+        "OPERATIONAL",
+        "STRATEGIC"
+      ]
+    },
+    "governance_level": {
+      "type": "string",
+      "enum": ["G0", "G1", "G2", "G3"]
+    },
+    "subject_type": {
+      "type": "string",
+      "enum": [
+        "RUN",
+        "OBSERVATION",
+        "EVIDENCE",
+        "DIAGNOSIS",
+        "OPPORTUNITY",
+        "DECISION",
+        "ACTION",
+        "EXPERIMENT",
+        "VERIFICATION",
+        "LEARNING",
+        "SYSTEM_RULE",
+        "PROTOCOL",
+        "METRIC",
+        "ENVIRONMENT",
+        "PROMPT_SET"
+      ]
+    },
+    "subject_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "issue": {
+      "type": "string",
+      "minLength": 5
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "related_run_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^RUN-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "related_opportunity_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^OPP-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "related_decision_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^DEC-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "current_state": {
+      "type": "string",
+      "minLength": 3
+    },
+    "required_action": {
+      "type": "string",
+      "minLength": 3
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DETECTED",
+        "UNDER_REVIEW",
+        "ASSESSED",
+        "ACTION_REQUIRED",
+        "RESOLVED",
+        "CLOSED",
+        "REJECTED"
+      ]
+    },
+    "resolution": {
+      "type": ["string", "null"]
+    },
+    "resolved_by": {
+      "type": ["string", "null"]
+    },
+    "founder_review_required": {
+      "type": "boolean"
+    },
+    "founder_decision_ref": {
+      "type": ["string", "null"],
+      "pattern": "^DEC-[A-Za-z0-9_-]+$"
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "resolved_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-GEMINI-RUNNER",
+  "source_name": "Gemini T1 Prompt Execution Runner",
+  "source_type": "RAW_PROMPT_EXECUTION_LOG",
+  "source_path": "../21 Affiliate Program/Module 08/20 prompt run chat gemini.txt",
+  "source_level": "S1",
+  "source_role": "T1_CONTROL_SOURCE",
+  "source_format": "TXT",
+  "source_hash": "630845f05abc23f36ff5815478375948bce2e8623d46d491f2d6193a0527fe5b",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:02.983Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:02.983Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Primary Level 1 executed prompts for Gemini in T1 Reference Run"
+}

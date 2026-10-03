@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P04",
+  "observation_id": "OBS-T1-GEMINI-P04",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "GEO stands for Generative Engine Optimization (sometimes referred to as Answer Engine Optimization or AEO). It is the practice of optimizing digital content and online footprints so that generative AI tools and conversational search engines can easily parse, verify, and recommend a brand. In the context of local business visibility, GEO relates to structuring a business's online data—such as implementing LocalBusiness schema markup, maintaining consistent Name, Address, and Phone (NAP) details, gathering strong review sentiment, and providing explicit service descriptions—so that AI systems select the business for localized recommendations.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P04."
+}

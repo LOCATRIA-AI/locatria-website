@@ -1,0 +1,28 @@
+{
+  "entity_type": "system_rule",
+  "schema_version": "1.0",
+  "system_rule_id": "SR-E2E-001",
+  "version": "1.0",
+  "rule_statement": "Always deploy schema.org Organization JSON-LD before launching visibility campaigns.",
+  "source_learning_refs": [
+    "LRN-E2E-001"
+  ],
+  "source_candidate_ref": null,
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "applicability": "All client digital properties.",
+  "limitations": "Subject to crawler indexing cycles.",
+  "effective_from": "2026-10-03T10:08:16.713Z",
+  "effective_until": null,
+  "status": "ACTIVE",
+  "approved_by": "FOUNDER",
+  "approved_at": "2026-10-03T10:08:16.713Z",
+  "decision_reason": "Approved by Founder: empirically verified across T1 control set.",
+  "supersedes": null,
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:08:16.543Z",
+  "updated_at": "2026-10-03T10:08:16.713Z",
+  "is_immutable": true,
+  "metadata": {}
+}

@@ -1,0 +1,21 @@
+{
+  "entity_type": "source",
+  "schema_version": "1.0.0",
+  "source_id": "SRC-M08-1-T1-CHATGPT-RUNNER",
+  "source_name": "ChatGPT T1 Prompt Execution Runner",
+  "source_type": "RAW_PROMPT_EXECUTION_LOG",
+  "source_path": "../21 Affiliate Program/Module 08/20 prompt run chatGPT.txt",
+  "source_level": "S1",
+  "source_role": "T1_CONTROL_SOURCE",
+  "source_format": "TXT",
+  "source_hash": "2fe28822c0f20b33a5e3fb90ec2154cff075cb6c29dd0c6e1f681245afb88f7d",
+  "hash_algorithm": "SHA-256",
+  "hash_captured_at": "2026-09-28T07:50:02.961Z",
+  "source_version": "1.0.0",
+  "captured_at": null,
+  "registered_at": "2026-09-28T07:50:02.961Z",
+  "registered_by": "FOUNDER",
+  "status": "ACTIVE",
+  "metadata": {},
+  "notes": "Primary Level 1 executed prompts for ChatGPT in T1 Reference Run"
+}

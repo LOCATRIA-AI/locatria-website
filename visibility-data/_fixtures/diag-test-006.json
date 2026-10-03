@@ -1,0 +1,40 @@
+{
+  "entity_type": "diagnosis",
+  "schema_version": "1.0.0",
+  "diagnosis_id": "DIAG-TEST-006",
+  "diagnosis_version": "1.0.0",
+  "diagnosis_type": "DISCOVERY_DIAGNOSIS",
+  "title": "Lifecycle Transition Diagnosis",
+  "statement": "Valid statement for transition testing.",
+  "status": "VALIDATED",
+  "scope": "GLOBAL",
+  "observation_refs": [
+    "OBS-T1-PERPLEXITY-P01"
+  ],
+  "evidence_refs": [
+    "EVD-VIS-T1-PERPLEXITY-P01"
+  ],
+  "metric_refs": [
+    "M01_MENTION"
+  ],
+  "environment_refs": [
+    "ENV-PERPLEXITY"
+  ],
+  "run_refs": [
+    "RUN-M08-1-T1-REF"
+  ],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "confidence_state": "HIGH",
+  "uncertainty_statement": "",
+  "created_at": "2026-10-03T10:04:27.400Z",
+  "updated_at": "2026-10-03T10:04:27.556Z",
+  "created_by": "SYSTEM",
+  "validated_by": "FOUNDER",
+  "validated_at": "2026-10-03T10:04:27.556Z",
+  "validation_notes": "Diagnosis confirmed by Founder audit",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": "Beginning manual review"
+}

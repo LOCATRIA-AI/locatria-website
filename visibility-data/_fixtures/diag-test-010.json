@@ -1,0 +1,40 @@
+{
+  "entity_type": "diagnosis",
+  "schema_version": "1.0.0",
+  "diagnosis_id": "DIAG-TEST-010",
+  "diagnosis_version": "1.0.0",
+  "diagnosis_type": "DISCOVERY_DIAGNOSIS",
+  "title": "Validated Diagnosis for Opportunity",
+  "statement": "Validated statement for opportunity testing.",
+  "status": "VALIDATED",
+  "scope": "GLOBAL",
+  "observation_refs": [
+    "OBS-T1-CHATGPT-P01"
+  ],
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "metric_refs": [
+    "M01_MENTION"
+  ],
+  "environment_refs": [
+    "ENV-CHATGPT"
+  ],
+  "run_refs": [
+    "RUN-M08-1-T1-REF"
+  ],
+  "problem_taxonomy": [
+    "V1_DISCOVERY"
+  ],
+  "confidence_state": "HIGH",
+  "uncertainty_statement": "",
+  "created_at": "2026-10-03T10:04:27.884Z",
+  "updated_at": "2026-10-03T10:04:28.024Z",
+  "created_by": "SYSTEM",
+  "validated_by": "FOUNDER",
+  "validated_at": "2026-10-03T10:04:28.024Z",
+  "validation_notes": "Diagnosis validated against underlying evidence",
+  "is_immutable": true,
+  "metadata": {},
+  "notes": ""
+}

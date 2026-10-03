@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P11",
+  "observation_id": "OBS-T1-GEMINI-P11",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A business can test whether ChatGPT knows about its local brand by submitting targeted prompt queries directly into the chat interface. Tests should range from direct brand inquiries (e.g., \"Tell me about [Business Name] in [City], including its hours and services\") to broader category prompts (e.g., \"What are the top-rated [service type] providers in [neighborhood/city]?\"). Reviewing the generated output reveals whether ChatGPT recognizes the brand identity, correctly states its operational details, and positions it favorably against local competitors.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P11."
+}

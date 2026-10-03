@@ -1,0 +1,19 @@
+{
+  "entity_type": "intervention",
+  "schema_version": "1.0",
+  "intervention_id": "INT-TEST-002",
+  "intervention_type": "CANONICAL_SOURCE",
+  "target": "knowledge.html",
+  "description": "Add authoritative source references to knowledge portal.",
+  "baseline_state": "Source citations omitted in knowledge base.",
+  "intended_change": "Add bibliographic citations to each knowledge card.",
+  "implementation_scope": "GLOBAL",
+  "rollback_method": "Revert git commit on knowledge.html.",
+  "reversible": true,
+  "status": "PLANNED",
+  "created_at": "2026-10-03T10:04:38.516Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

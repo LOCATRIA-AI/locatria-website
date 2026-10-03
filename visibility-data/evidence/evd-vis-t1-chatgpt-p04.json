@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P04",
+  "observation_id": "OBS-T1-CHATGPT-P04",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n GEO usually means **Generative Engine Optimization**. It is a relatively new term for efforts intended to make content more likely to be understood, surfaced, or cited by generative AI systems.\n\n For local businesses, GEO overlaps with AI visibility because both concern how a business's information performs in AI-generated answers.\n\n For example, a local business might improve its GEO/AI-search readiness by:\n\n - Clearly explaining its services and service areas.\n- Publishing useful answers to genuine customer questions.\n- Keeping business information accurate and consistent.\n- Providing evidence and sources for factual claims.\n- Making important information easy for search engines and AI systems to access.\n\n There is not yet a universally standardized boundary between \"GEO,\" \"AEO,\" and \"AI visibility.\" The terminology is used somewhat differently across the industry, so it is more useful to define the measurement being performed than to rely on the label alone.  Locatria",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

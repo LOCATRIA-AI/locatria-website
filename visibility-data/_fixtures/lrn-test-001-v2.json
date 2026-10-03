@@ -1,0 +1,25 @@
+{
+  "entity_type": "learning",
+  "schema_version": "1.0",
+  "learning_id": "LRN-TEST-001-V2",
+  "learning_version": "2.0",
+  "source_verification_refs": [
+    "VFY-TEST-001"
+  ],
+  "hypothesis_result": "SUPPORTED",
+  "learning_type": "L5",
+  "statement": "Updated learning statement reflecting multi-model corroboration.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "confidence": "HIGH",
+  "applicability": "All primary domain entry pages.",
+  "limitations": "Requires valid JSON-LD syntax without trailing commas.",
+  "status": "DRAFTED",
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:48.386Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

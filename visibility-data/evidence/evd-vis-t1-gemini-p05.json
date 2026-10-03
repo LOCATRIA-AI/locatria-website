@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P05",
+  "observation_id": "OBS-T1-GEMINI-P05",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A local business can measure its AI visibility through several practical methods:\n\n* **Manual prompt testing:** Entering typical customer search queries into platforms like ChatGPT, Gemini, Perplexity, and Claude to see if and how the business is recommended.\n* **Dedicated AI tracking software:** Using specialized rank-tracking and visibility tools designed to monitor AI search engines and record mention frequencies, positioning, and sentiment.\n* **Citation and referral analysis:** Checking website referral traffic analytics for incoming traffic from AI-driven platforms and noting which third-party sources or directories are cited alongside the business.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P05."
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/founder-decision.schema.json",
+  "title": "LOCATRIA Visibility Founder Decision Schema",
+  "description": "Defines an authoritative strategic governance decision made exclusively by the Founder regarding a prioritized visibility opportunity in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "decision_id",
+    "decision_version",
+    "opportunity_id",
+    "priority_assessment_id",
+    "recommendation",
+    "decision",
+    "decision_reason",
+    "decided_by",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "founder_decision"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "decision_id": {
+      "type": "string",
+      "pattern": "^DEC-[A-Za-z0-9_-]+$"
+    },
+    "decision_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^OPP-[A-Za-z0-9_-]+$"
+    },
+    "priority_assessment_id": {
+      "type": "string",
+      "pattern": "^PRIO-[A-Za-z0-9_-]+$"
+    },
+    "recommendation": {
+      "type": "string",
+      "enum": ["P0", "P1", "P2", "P3", "RECOMMENDATION_UNCERTAIN"]
+    },
+    "decision": {
+      "type": "string",
+      "enum": ["APPROVE", "DEFER", "REJECT", "REQUEST_MORE_EVIDENCE"]
+    },
+    "decision_reason": {
+      "type": "string",
+      "minLength": 3
+    },
+    "decision_notes": {
+      "type": "string"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decided_at": {
+      "type": ["string", "null"]
+    },
+    "decided_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PENDING_REVIEW", "DECIDED"]
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

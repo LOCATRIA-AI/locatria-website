@@ -1,0 +1,32 @@
+{
+  "entity_type": "governance_issue",
+  "schema_version": "1.0",
+  "governance_id": "GOV-TEST-CRIT",
+  "governance_version": "1.0",
+  "governance_type": "PROTOCOL_DRIFT",
+  "governance_level": "G3",
+  "subject_type": "PROTOCOL",
+  "subject_id": "PROT-M08-2-v1",
+  "issue": "Critical protocol drift detected during production audit.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "related_run_refs": [],
+  "related_opportunity_refs": [],
+  "related_decision_refs": [],
+  "current_state": "DETECTED",
+  "required_action": "Immediate Founder review.",
+  "owner": "OPERATOR",
+  "status": "DETECTED",
+  "resolution": null,
+  "resolved_by": null,
+  "founder_review_required": true,
+  "founder_decision_ref": null,
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:52.355Z",
+  "updated_at": null,
+  "resolved_at": null,
+  "created_by": "OPERATOR",
+  "is_immutable": false,
+  "metadata": {}
+}

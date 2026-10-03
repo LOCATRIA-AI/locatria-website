@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-FIX-001",
+  "observation_id": "OBS-FIX-001",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "Locatria provides AI visibility workflows and practical guides for local businesses.",
+  "source_title": "Locatria Knowledge Hub",
+  "source_url": "https://www.locatria.com/knowledge.html",
+  "source_domain": "locatria.com",
+  "citation_text": "Source: locatria.com/knowledge.html",
+  "source_location": "Inline citation in answer",
+  "captured_at": "2026-09-28T00:30:00Z",
+  "captured_by": "QA_ENGINEER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Test fixture for visibility evidence"
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/system-rule-candidate.schema.json",
+  "title": "LOCATRIA Visibility System Rule Candidate Schema",
+  "description": "Defines a proposed operational or heuristic rule derived from validated learning awaiting explicit Founder review and authorization in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "candidate_id",
+    "candidate_version",
+    "source_learning_refs",
+    "rule_statement",
+    "evidence_refs",
+    "applicability",
+    "limitations",
+    "confidence",
+    "proposed_action",
+    "status",
+    "founder_review_required",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "system_rule_candidate"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^SRC-[A-Za-z0-9_-]+$"
+    },
+    "candidate_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "source_learning_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^LRN-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "rule_statement": {
+      "type": "string",
+      "minLength": 10
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "applicability": {
+      "type": "string",
+      "minLength": 5
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 5
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "INSUFFICIENT", "UNVERIFIED"]
+    },
+    "proposed_action": {
+      "type": "string",
+      "minLength": 5
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFTED",
+        "UNDER_REVIEW",
+        "FOUNDER_REVIEW",
+        "APPROVED",
+        "REJECTED",
+        "NEEDS_MORE_EVIDENCE"
+      ]
+    },
+    "founder_review_required": {
+      "type": "boolean",
+      "const": true
+    },
+    "founder_decision": {
+      "type": ["string", "null"],
+      "enum": ["APPROVE", "REJECT", "DEFER", "REQUEST_MORE_EVIDENCE", null]
+    },
+    "decision_reason": {
+      "type": ["string", "null"]
+    },
+    "decided_by": {
+      "type": ["string", "null"]
+    },
+    "decided_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "audit_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^AUD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

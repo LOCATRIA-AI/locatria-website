@@ -1,0 +1,15 @@
+{
+  "entity_type": "environment",
+  "schema_version": "1.0.0",
+  "environment_id": "ENV-PERPLEXITY",
+  "environment_name": "Perplexity",
+  "provider": "Perplexity AI",
+  "model": null,
+  "interface": "WEB",
+  "search_mode": "RETRIEVAL_AUGMENTED",
+  "geography": "GLOBAL",
+  "language": "en",
+  "status": "ACTIVE",
+  "created_at": "2026-09-27T00:00:00Z",
+  "notes": "Perplexity search and answer engine environment. Model is explicitly decoupled from environment."
+}

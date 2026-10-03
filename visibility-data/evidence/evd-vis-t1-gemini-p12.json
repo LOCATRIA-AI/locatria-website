@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P12",
+  "observation_id": "OBS-T1-GEMINI-P12",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "A comprehensive AI visibility audit for a local business involves a structured multi-step evaluation:\n\n* **Define search queries:** List the exact questions local customers ask when looking for your products or services.\n* **Execute cross-platform scans:** Test these prompts across major AI engines (ChatGPT, Perplexity, Gemini, Google AI Overviews) and record the outputs.\n* **Evaluate accuracy and presence:** Note whether your business appears, what rank it holds, and if the details provided (address, phone, offerings) are correct.\n* **Audit technical and foundational inputs:** Check your website for LocalBusiness schema markup, review sentiment scores across major platforms, and verify NAP consistency across online directories.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P12."
+}

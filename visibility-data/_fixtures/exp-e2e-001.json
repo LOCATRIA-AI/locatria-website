@@ -1,0 +1,38 @@
+{
+  "entity_type": "experiment",
+  "schema_version": "1.0",
+  "experiment_id": "EXP-E2E-001",
+  "experiment_version": "1.0",
+  "opportunity_id": "OPP-E2E-001",
+  "founder_decision_id": "DEC-E2E-APP-001",
+  "title": "Controlled Schema Intervention Experiment",
+  "hypothesis": "Adding Organization schema will increase brand entity mentions across LLMs.",
+  "reference_run_id": "RUN-M08-1-T1-REF",
+  "intervention_id": "T2-INT-01",
+  "prompt_set_id": "PSET-M08-1-FIXED20",
+  "protocol_version": "1.0",
+  "environments": [
+    "ENV-CHATGPT",
+    "ENV-GEMINI",
+    "ENV-PERPLEXITY"
+  ],
+  "variables": [
+    "Presence of Organization JSON-LD markup"
+  ],
+  "confounders": [
+    "AI model version drift",
+    "Temporal latency"
+  ],
+  "success_observation": "Entity mention rate increases from 0% baseline.",
+  "verification_method": "Run 20 frozen prompts against 3 environments.",
+  "rollback_plan": "Git revert to commit pre-T2-INT-01 and verify index.html.",
+  "status": "DRAFTED",
+  "dependency_refs": [],
+  "audit_refs": [],
+  "blocked_reason": null,
+  "created_at": "2026-10-03T10:08:15.970Z",
+  "updated_at": null,
+  "created_by": "SYSTEM",
+  "is_immutable": false,
+  "metadata": {}
+}

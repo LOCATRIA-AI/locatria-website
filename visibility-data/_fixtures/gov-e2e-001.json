@@ -1,0 +1,32 @@
+{
+  "entity_type": "governance_issue",
+  "schema_version": "1.0",
+  "governance_id": "GOV-E2E-001",
+  "governance_version": "1.0",
+  "governance_type": "OPERATIONAL",
+  "governance_level": "G1",
+  "subject_type": "OBSERVATION",
+  "subject_id": "OBS-T1-CHATGPT-P01",
+  "issue": "Minor crawler latency observed during verification execution.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "related_run_refs": [],
+  "related_opportunity_refs": [],
+  "related_decision_refs": [],
+  "current_state": "DETECTED",
+  "required_action": "Monitor crawler index logs.",
+  "owner": "OPERATOR",
+  "status": "DETECTED",
+  "resolution": null,
+  "resolved_by": null,
+  "founder_review_required": false,
+  "founder_decision_ref": null,
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:08:16.721Z",
+  "updated_at": null,
+  "resolved_at": null,
+  "created_by": "OPERATOR",
+  "is_immutable": false,
+  "metadata": {}
+}

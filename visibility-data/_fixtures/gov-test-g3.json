@@ -1,0 +1,32 @@
+{
+  "entity_type": "governance_issue",
+  "schema_version": "1.0",
+  "governance_id": "GOV-TEST-G3",
+  "governance_version": "1.0",
+  "governance_type": "STRATEGIC",
+  "governance_level": "G3",
+  "subject_type": "PROTOCOL",
+  "subject_id": "PROT-M08-2-v1",
+  "issue": "Major protocol evolution proposal requiring Founder authorization.",
+  "evidence_refs": [
+    "EVD-VIS-T1-CHATGPT-P01"
+  ],
+  "related_run_refs": [],
+  "related_opportunity_refs": [],
+  "related_decision_refs": [],
+  "current_state": "DETECTED",
+  "required_action": "Escalate to Founder.",
+  "owner": "OPERATOR",
+  "status": "DETECTED",
+  "resolution": null,
+  "resolved_by": null,
+  "founder_review_required": true,
+  "founder_decision_ref": null,
+  "audit_refs": [],
+  "created_at": "2026-10-03T10:04:51.116Z",
+  "updated_at": null,
+  "resolved_at": null,
+  "created_by": "OPERATOR",
+  "is_immutable": false,
+  "metadata": {}
+}

@@ -1,0 +1,23 @@
+{
+  "entity_type": "observation",
+  "schema_version": "1.0.0",
+  "observation_id": "OBS-FIX-001",
+  "run_id": "RUN-FIX-001",
+  "prompt_id": "PROMPT-FIX-001",
+  "environment_id": "ENV-FIX-001",
+  "observed_at": "2026-09-28T00:30:00Z",
+  "raw_response_id": "RAW-001",
+  "mention": "YES",
+  "citation_signal": "YES",
+  "verified_citation": "YES",
+  "retrieval": "YES",
+  "entity_recognition": "CORRECT",
+  "context_accuracy": "ACCURATE",
+  "confidence": "HIGH",
+  "qa_status": "VERIFIED",
+  "evidence_ids": [
+    "EVD-VIS-FIX-001"
+  ],
+  "is_immutable": true,
+  "notes": "Test fixture for observation record"
+}

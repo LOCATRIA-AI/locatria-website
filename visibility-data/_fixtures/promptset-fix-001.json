@@ -1,0 +1,14 @@
+{
+  "entity_type": "prompt_set",
+  "schema_version": "1.0.0",
+  "prompt_set_id": "PSET-FIX-001",
+  "prompt_set_version": "1.0.0",
+  "name": "Fixture Prompt Set",
+  "description": "Test fixture prompt set for integration testing",
+  "prompt_ids": [
+    "PROMPT-FIX-001"
+  ],
+  "status": "ACTIVE",
+  "created_at": "2026-09-28T00:00:00Z",
+  "notes": "Test fixture for prompt-set"
+}

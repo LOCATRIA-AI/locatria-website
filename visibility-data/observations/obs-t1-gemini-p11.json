@@ -1,0 +1,23 @@
+{
+  "entity_type": "observation",
+  "schema_version": "1.0.0",
+  "observation_id": "OBS-T1-GEMINI-P11",
+  "run_id": "RUN-M08-1-T1-REF",
+  "prompt_id": "P11",
+  "environment_id": "ENV-GEMINI",
+  "observed_at": "2026-09-27T00:00:00Z",
+  "raw_response_id": "EVD-VIS-T1-GEMINI-P11",
+  "mention": "NO",
+  "citation_signal": "NO",
+  "verified_citation": "NO",
+  "retrieval": "UNVERIFIED",
+  "entity_recognition": "N/A",
+  "context_accuracy": "N/A",
+  "confidence": "HIGH",
+  "qa_status": "VERIFIED",
+  "evidence_ids": [
+    "EVD-VIS-T1-GEMINI-P11"
+  ],
+  "is_immutable": true,
+  "notes": "T1 Reference observation for Gemini P11."
+}

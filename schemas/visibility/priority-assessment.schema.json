@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/priority-assessment.schema.json",
+  "title": "LOCATRIA Visibility Priority Assessment Schema",
+  "description": "Defines an evidence-backed categorical assessment of a qualified opportunity across six explicit dimensions in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "priority_assessment_id",
+    "priority_assessment_version",
+    "opportunity_id",
+    "impact",
+    "evidence_strength",
+    "feasibility",
+    "urgency",
+    "dependency",
+    "strategic_relevance",
+    "impact_basis",
+    "evidence_strength_basis",
+    "feasibility_basis",
+    "urgency_basis",
+    "dependency_basis",
+    "strategic_relevance_basis",
+    "assessment_scope",
+    "assessment_status",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "priority_assessment"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "priority_assessment_id": {
+      "type": "string",
+      "pattern": "^PRIO-[A-Za-z0-9_-]+$"
+    },
+    "priority_assessment_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^OPP-[A-Za-z0-9_-]+$"
+    },
+    "impact": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+    },
+    "evidence_strength": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "INSUFFICIENT"]
+    },
+    "feasibility": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+    },
+    "urgency": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+    },
+    "dependency": {
+      "type": "string",
+      "enum": ["BLOCKING", "SIGNIFICANT", "MINOR", "NONE", "UNKNOWN"]
+    },
+    "strategic_relevance": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "UNKNOWN"]
+    },
+    "impact_basis": {
+      "type": "string",
+      "minLength": 3
+    },
+    "evidence_strength_basis": {
+      "type": "string",
+      "minLength": 3
+    },
+    "feasibility_basis": {
+      "type": "string",
+      "minLength": 3
+    },
+    "urgency_basis": {
+      "type": "string",
+      "minLength": 3
+    },
+    "dependency_basis": {
+      "type": "string",
+      "minLength": 3
+    },
+    "strategic_relevance_basis": {
+      "type": "string",
+      "minLength": 3
+    },
+    "priority_recommendation": {
+      "type": "string",
+      "enum": ["P0", "P1", "P2", "P3", "RECOMMENDATION_UNCERTAIN"]
+    },
+    "recommendation_source": {
+      "type": "string",
+      "enum": ["AI_ADVISORY", "OPERATOR", "RULE_ENGINE", "FOUNDER"]
+    },
+    "recommendation_rationale": {
+      "type": "string"
+    },
+    "assessment_scope": {
+      "type": "string",
+      "enum": [
+        "GLOBAL",
+        "ENVIRONMENT_SPECIFIC",
+        "PROMPT_SET_SPECIFIC",
+        "RUN_SPECIFIC",
+        "TOPIC_SPECIFIC"
+      ]
+    },
+    "assessment_status": {
+      "type": "string",
+      "enum": ["DRAFTED", "ASSESSED", "RECOMMENDED", "FOUNDER_REVIEW"]
+    },
+    "assessment_notes": {
+      "type": "string"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewed_by": {
+      "type": ["string", "null"]
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

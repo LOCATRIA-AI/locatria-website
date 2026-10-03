@@ -85,3 +85,11 @@ test-article.html
 *.temp
 # Development / internal templates
 article.html
+
+# ==============================
+# Visibility Runtime Artifacts
+# ==============================
+visibility-data/audit/*.json
+!visibility-data/audit/.gitkeep
+visibility-data/ingestions/ing-*.json
+!visibility-data/ingestions/.gitkeep

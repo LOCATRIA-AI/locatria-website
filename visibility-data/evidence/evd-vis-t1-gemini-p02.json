@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P02",
+  "observation_id": "OBS-T1-GEMINI-P02",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "For a small local business, AI visibility means whether potential customers using AI assistants to find local recommendations will actually be told about your business. Because conversational AI tools typically provide a concise shortlist of just three to five recommendations rather than pages of search results, high AI visibility can mean capturing high-intent local customers before they even open a traditional map app. Conversely, low AI visibility means the business is effectively invisible to the growing share of consumers who rely on AI chat interfaces to discover local dining, shopping, healthcare, and home services.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P02."
+}

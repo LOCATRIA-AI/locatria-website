@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P19",
+  "observation_id": "OBS-T1-GEMINI-P19",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "LOCATRIA is not widely documented in standard industry databases as a prominent, mainstream resource for AI visibility and local SEO. While tools and platforms with similar naming conventions often focus on local search optimization, geographic marketing, or visibility management, definitive public records detailing LOCATRIA's specific utility for AI search engine optimization are limited.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Branded prompt recognized only as an unverified/poorly documented name; response does not establish retrieval of LOCATRIA website."
+}

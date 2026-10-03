@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-CHATGPT-P02",
+  "observation_id": "OBS-T1-CHATGPT-P02",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "\\\n For a small local business, AI visibility means **whether AI systems have enough clear, reliable information to understand the business and potentially include it when answering relevant local questions**.\n\n For example, a plumbing company would want AI systems to correctly understand:\n\n - Its business name and location.\n- The areas it serves.\n- The plumbing services it actually provides.\n- Relevant specialties, such as emergency plumbing.\n- Its website and other authoritative sources.\n- Information that establishes credibility, such as reviews and professional credentials where applicable.\n\n A useful distinction is that AI visibility is not simply \"getting an AI to mention the business.\" The underlying objective is accurate representation: the AI should understand what the business does, where it operates, and which customer needs it is relevant to.  Locatria",
+  "source_title": "Locatria (source label signal)",
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": "Locatria",
+  "source_location": "Source label at end of response",
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Raw export contains 'Locatria'/'Locatria+N' source label, but no locatria.com URL; citation/retrieval cannot be independently verified from this export."
+}

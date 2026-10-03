@@ -1,0 +1,19 @@
+{
+  "entity_type": "visibility_evidence",
+  "schema_version": "1.0.0",
+  "evidence_id": "EVD-VIS-T1-GEMINI-P08",
+  "observation_id": "OBS-T1-GEMINI-P08",
+  "evidence_type": "RAW_RESPONSE",
+  "evidence_level": "E1",
+  "raw_response": "Key metrics a local business should use to measure AI visibility include:\n\n* **AI Visibility Score / Mention Rate:** The percentage of tracked local queries in which the business is successfully recommended or referenced by AI models.\n* **Share of Voice:** How frequently the business appears relative to its top local competitors within AI-generated shortlists.\n* **Recommendation Position:** The average placement order (e.g., first, second, or third) when the business is named in an AI response.\n* **Sentiment and Accuracy Score:** A measure of whether the AI describes the business accurately and conveys a positive reputation based on reviews.\n* **Citation Frequency:** How often the business's website or trusted directory profiles are cited as source material by the AI model.",
+  "source_title": null,
+  "source_url": null,
+  "source_domain": null,
+  "citation_text": null,
+  "source_location": null,
+  "captured_at": "2026-09-27T00:00:00Z",
+  "captured_by": "FOUNDER",
+  "verification_status": "VERIFIED",
+  "is_immutable": true,
+  "notes": "Level 1 raw response captured for Gemini P08."
+}

@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.locatria.com/schemas/visibility/opportunity.schema.json",
+  "title": "LOCATRIA Visibility Opportunity Schema",
+  "description": "Defines an evidence-backed opportunity derived strictly from validated visibility diagnoses in the LOCATRIA Visibility Operating System (M08.2).",
+  "type": "object",
+  "required": [
+    "entity_type",
+    "schema_version",
+    "opportunity_id",
+    "opportunity_version",
+    "opportunity_type",
+    "title",
+    "statement",
+    "status",
+    "scope",
+    "diagnosis_refs",
+    "problem_taxonomy",
+    "qualification_state",
+    "confidence_state",
+    "created_at",
+    "created_by"
+  ],
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "const": "opportunity"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "opportunity_id": {
+      "type": "string",
+      "pattern": "^OPP-[A-Za-z0-9_-]+$"
+    },
+    "opportunity_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "opportunity_type": {
+      "type": "string",
+      "enum": [
+        "VISIBILITY_IMPROVEMENT",
+        "CONTENT_STRUCTURING",
+        "ENTITY_CLARIFICATION",
+        "CITATION_ACQUISITION",
+        "RETRIEVAL_OPTIMIZATION",
+        "ENVIRONMENT_ADAPTATION",
+        "OTHER"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 10
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DETECTED",
+        "DRAFTED",
+        "QUALIFYING",
+        "QUALIFIED",
+        "REJECTED"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "GLOBAL",
+        "ENVIRONMENT_SPECIFIC",
+        "PROMPT_SET_SPECIFIC",
+        "RUN_SPECIFIC",
+        "TOPIC_SPECIFIC"
+      ]
+    },
+    "diagnosis_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^DIAG-[A-Za-z0-9_-]+$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "observation_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^OBS-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "metric_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "M01_MENTION",
+          "M02_VERIFIED_CITATION",
+          "M03_VERIFIED_RETRIEVAL",
+          "M04_ENTITY_RECOGNITION",
+          "M05_CONTEXT_ACCURACY"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "environment_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ENV-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "run_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^RUN-[A-Za-z0-9_-]+$"
+      },
+      "uniqueItems": true
+    },
+    "problem_taxonomy": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "V1_DISCOVERY",
+          "V2_RETRIEVAL",
+          "V3_CITATION",
+          "V4_ENTITY",
+          "V5_CONTEXT",
+          "V6_COVERAGE",
+          "V7_ENVIRONMENT"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "qualification_state": {
+      "type": "string",
+      "enum": [
+        "UNQUALIFIED",
+        "IN_QUALIFICATION",
+        "QUALIFIED",
+        "DISQUALIFIED"
+      ]
+    },
+    "confidence_state": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNVERIFIED"
+      ]
+    },
+    "expected_impact_hypothesis": {
+      "type": "string"
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"]
+    },
+    "created_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "qualified_by": {
+      "type": ["string", "null"]
+    },
+    "qualified_at": {
+      "type": ["string", "null"]
+    },
+    "qualification_notes": {
+      "type": "string"
+    },
+    "is_immutable": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
