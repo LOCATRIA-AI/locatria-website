@@ -171,6 +171,44 @@
       this.applyFiltersAndRender();
     },
 
+    formatMonthYear: function (dateStr) {
+      if (!dateStr) return 'September 2026';
+      try {
+        const parts = String(dateStr).split('T')[0].split('-');
+        if (parts.length >= 2) {
+          const year = parts[0];
+          const monthNum = parseInt(parts[1], 10);
+          const months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+          ];
+          if (monthNum >= 1 && monthNum <= 12) {
+            return `${months[monthNum - 1]} ${year}`;
+          }
+        }
+      } catch (e) {}
+      return 'September 2026';
+    },
+
+    formatShortDate: function (dateStr) {
+      if (!dateStr) return 'Sep 2026';
+      try {
+        const parts = String(dateStr).split('T')[0].split('-');
+        if (parts.length >= 2) {
+          const year = parts[0];
+          const monthNum = parseInt(parts[1], 10);
+          const shortMonths = [
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+          ];
+          if (monthNum >= 1 && monthNum <= 12) {
+            return `${shortMonths[monthNum - 1]} ${year}`;
+          }
+        }
+      } catch (e) {}
+      return 'Sep 2026';
+    },
+
     applyFiltersAndRender: function () {
       const mainCol = document.querySelector('.layout-with-sidebar main');
       if (!mainCol) return;
@@ -184,7 +222,7 @@
 
       // Sort articles
       if (this.currentSort === 'recent') {
-        displayArticles.sort((a, b) => new Date(b.pubDate || '2026-08-10') - new Date(a.pubDate || '2026-08-10'));
+        displayArticles.sort((a, b) => new Date(b.pubDate || '2026-09-01') - new Date(a.pubDate || '2026-09-01'));
       } else if (this.currentSort === 'readtime') {
         displayArticles.sort((a, b) => (parseInt(a.readTime, 10) || 10) - (parseInt(b.readTime, 10) || 10));
       } else if (this.currentSort === 'popular') {
@@ -248,7 +286,7 @@
                   <div class="author-avatar-sm">LET</div>
                   <div class="author-info-sm">
                     <div class="author-name-sm">${feat.authorName || 'Locatria Editorial Team'}</div>
-                    <div>Senior AI Architects • Updated August 2026</div>
+                    <div>Senior AI Architects • Updated ${this.formatMonthYear(feat.pubDate)}</div>
                   </div>
                   <a href="${feat.slugUrl}" class="btn btn-primary btn-sm" style="margin-left: auto;">Read Article →</a>
                 </div>
@@ -278,7 +316,7 @@
                   <div class="author-avatar-sm">LET</div>
                   <div class="author-info-sm">
                     <div class="author-name-sm">${art.authorName || 'Locatria Editorial Team'}</div>
-                    <div>${art.readTime || '10 min read'} • Aug 2026</div>
+                    <div>${art.readTime || '10 min read'} • ${this.formatShortDate(art.pubDate)}</div>
                   </div>
                 </div>
               </article>`;

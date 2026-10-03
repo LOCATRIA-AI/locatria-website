@@ -11,8 +11,8 @@
     "difficulty": "beginner",
     "featured": true,
     "readingTime": 14,
-    "publishedAt": "2026-08-10T16:50:00Z",
-    "updatedAt": "2026-08-10T16:50:00Z"
+    "publishedAt": "2026-09-02T10:30:00Z",
+    "updatedAt": "2026-10-02T14:30:00Z"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -268,7 +268,7 @@
         },
         {
           "title": "7. Monitor Discovery",
-          "content": "Pay attention to how your business shows up in search and business profile insights."
+          "content": "Pay attention to how your business shows up in search and business profile insights. For a repeatable observation method, see our dedicated guide on <a href=\"ai-visibility-measurement-for-local-businesses.html\" class=\"component-link\">How Local Businesses Can Measure AI Visibility Without Chasing Rankings</a>."
         },
         {
           "title": "8. Improve",
@@ -400,6 +400,12 @@
       "description": "Lays foundational theory for practical online visibility execution."
     },
     {
+      "type": "relatedGuide",
+      "title": "How Local Businesses Can Measure AI Visibility Without Chasing Rankings",
+      "url": "ai-visibility-measurement-for-local-businesses.html",
+      "description": "A practical measurement framework to observe where and how your local business appears in AI-powered search, evaluate first-party evidence, and improve your knowledge system."
+    },
+    {
       "type": "sources",
       "id": "sources-references",
       "title": "Sources & References",
@@ -418,7 +424,8 @@
       "how-law-firms-can-use-ai-improve-local-visibility.html",
       "how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html",
       "how-ai-is-changing-local-seo-small-businesses.html",
-      "how-local-businesses-can-use-ai-improve-online-visibility.html"
+      "how-local-businesses-can-use-ai-improve-online-visibility.html",
+      "ai-visibility-measurement-for-local-businesses.html"
     ]
   }
 }

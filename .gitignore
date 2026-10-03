@@ -44,6 +44,13 @@ docs/*
 !docs/resource-measurement.md
 !docs/resource-review-improvement-loop.md
 !docs/resource-operating-dashboard.md
+!docs/visibility-ingestion-pipeline.md
+!docs/visibility-diagnosis-opportunity.md
+!docs/visibility-prioritization-founder-decision.md
+!docs/visibility-action-experiment.md
+!docs/visibility-verification-learning.md
+!docs/visibility-governance-control.md
+!docs/visibility-operating-orchestrator.md
 !docs/templates/
 !docs/templates/*
 !docs/workflows/
@@ -55,6 +62,8 @@ docs/*
 scratch/
 scripts/*
 !scripts/build-resource-index.js
+!scripts/import-m08-historical-data.js
+!scripts/register-m08-sources.js
 
 
 # ==============================

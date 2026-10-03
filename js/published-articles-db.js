@@ -1,7 +1,7 @@
 /**
- * LOCATRIA PUBLISHED ARTICLES DATABASE v1.1
+ * LOCATRIA PUBLISHED ARTICLES DATABASE v1.2
  * Single Source of Truth for Published Production Content.
- * Auto-synchronized on 2026-09-07T09:11:47.361Z
+ * Auto-synchronized on 2026-10-03T03:12:24.014Z
  */
 (function (window) {
   'use strict';
@@ -16,7 +16,7 @@
     "difficulty": "beginner",
     "readTime": "20 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-11",
+    "pubDate": "2026-09-17",
     "description": "A practical workflow for law firms to transform attorney-approved content into multiple derivative formats without sacrificing legal accuracy.",
     "slugUrl": "ai-assisted-legal-content-repurposing-workflow.html"
   },
@@ -29,7 +29,7 @@
     "difficulty": "intermediate",
     "readTime": "20 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-09-07",
+    "pubDate": "2026-09-15",
     "description": "An operational workflow for law firms to manage AI-assisted prospective client intake and public FAQ content within professional-responsibility boundaries.",
     "slugUrl": "ai-assisted-legal-intake-faq-governance-workflow.html"
   },
@@ -42,7 +42,7 @@
     "difficulty": "intermediate",
     "readTime": "20 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-09-07",
+    "pubDate": "2026-09-26",
     "description": "A practical, AI-assisted workflow for local businesses to inventory, verify, update, and maintain existing website content — keeping information accurate over time, not just looking fresh.",
     "slugUrl": "ai-assisted-local-business-content-update-maintenance-workflow.html"
   },
@@ -55,7 +55,7 @@
     "difficulty": "intermediate",
     "readTime": "22 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-09-07",
+    "pubDate": "2026-09-21",
     "description": "A practical operational workflow for real estate professionals to research, structure, verify, and maintain reliable neighborhood knowledge with AI assistance.",
     "slugUrl": "ai-assisted-real-estate-neighborhood-research-workflow.html"
   },
@@ -68,7 +68,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-11",
     "description": "",
     "slugUrl": "ai-assisted-review-response-workflow-dental-clinics"
   },
@@ -81,7 +81,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-15",
+    "pubDate": "2026-10-01",
     "description": "A step-by-step AI competitor content gap analysis workflow for local businesses — map competitor topics, validate audience demand, and build original content.",
     "slugUrl": "ai-competitor-content-gap-analysis-workflow.html"
   },
@@ -94,7 +94,7 @@
     "difficulty": "intermediate",
     "readTime": "24 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-25",
     "description": "A step-by-step AI content brief workflow for local businesses — turn research into actionable specifications, boundaries, and traceability matrices.",
     "slugUrl": "ai-content-brief-workflow-local-businesses.html"
   },
@@ -107,7 +107,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-27",
     "description": "A step-by-step AI content repurposing workflow for local businesses — extract knowledge atoms, build repurposing matrices, and maintain content integrity.",
     "slugUrl": "ai-content-repurposing-workflow-local-businesses.html"
   },
@@ -120,7 +120,7 @@
     "difficulty": "intermediate",
     "readTime": "24 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-22",
     "description": "A step-by-step AI content repurposing workflow for real estate businesses — turn 1 verified guide into FAQs, checklists, newsletters, and video outlines safely.",
     "slugUrl": "ai-content-repurposing-workflow-real-estate-businesses.html"
   },
@@ -133,7 +133,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-24",
     "description": "A step-by-step AI content research workflow for local businesses — generate research questions, discover and verify sources, and build verified briefs.",
     "slugUrl": "ai-content-research-workflow-local-businesses.html"
   },
@@ -146,7 +146,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-15",
+    "pubDate": "2026-09-30",
     "description": "A step-by-step AI content update workflow for local businesses — monitor change signals, verify sources, audit integrity, and propagate updates.",
     "slugUrl": "ai-content-update-workflow-local-businesses.html"
   },
@@ -159,7 +159,7 @@
     "difficulty": "intermediate",
     "readTime": "18 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-09-06",
+    "pubDate": "2026-09-10",
     "description": "A practical operational workflow for dental clinics to audit and maintain Google Business Profile (GBP) entity data (NAPE), services, hours, and appointment details across AI engines.",
     "slugUrl": "ai-dental-gbp-entity-audit-maintenance-workflow.html"
   },
@@ -172,7 +172,7 @@
     "difficulty": "intermediate",
     "readTime": "23 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-26",
     "description": "A step-by-step AI FAQ research workflow for local businesses — mine customer questions, validate evidence, classify risk, and build structured FAQ briefs.",
     "slugUrl": "ai-faq-research-workflow-local-businesses.html"
   },
@@ -185,7 +185,7 @@
     "difficulty": "intermediate",
     "readTime": "18 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-09-06",
+    "pubDate": "2026-09-08",
     "description": "Learn how to audit and reconcile your local business entity data (NAPE) across AI search engines, Google Business Profile, Apple Maps, Bing Places, and directory ecosystems.",
     "slugUrl": "ai-local-entity-consistency-nape-audit-workflow.html"
   },
@@ -198,7 +198,7 @@
     "difficulty": "intermediate",
     "readTime": "24 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-28",
     "description": "A step-by-step AI Local SEO audit workflow for small businesses — audit identity, GBP, content, reviews, and structured data with evidence-first scoring.",
     "slugUrl": "ai-local-seo-audit-workflow-small-businesses.html"
   },
@@ -211,7 +211,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-15",
+    "pubDate": "2026-10-01",
     "description": "A step-by-step AI prompt workflow for local businesses — connect research, brief, prompt chaining, fact-checking, and integrity auditing into one system.",
     "slugUrl": "ai-prompt-workflow-local-business-content-creation.html"
   },
@@ -224,7 +224,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-15",
+    "pubDate": "2026-09-29",
     "description": "A step-by-step AI review response workflow for local businesses — classify reviews, screen privacy risks, audit drafts, and enforce human approval.",
     "slugUrl": "ai-review-response-workflow-local-businesses.html"
   },
@@ -237,7 +237,7 @@
     "difficulty": "beginner",
     "readTime": "22 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-18",
     "description": "A practical diagnostic checklist for auditing law firm online information clarity, local signals, structured data, and AI search readiness.",
     "slugUrl": "ai-visibility-checklist-law-firms.html"
   },
@@ -250,7 +250,7 @@
     "difficulty": "beginner",
     "readTime": "26 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-23",
     "description": "Audit your real estate business AI visibility across 21 core categories — agent consistency, location signals, Fair Housing compliance, and structured data.",
     "slugUrl": "ai-visibility-checklist-real-estate-businesses.html"
   },
@@ -263,7 +263,7 @@
     "difficulty": "intermediate",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-08",
     "description": "",
     "slugUrl": "ai-workflows-dental-clinics-practical-use-cases"
   },
@@ -276,7 +276,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-15",
     "description": "",
     "slugUrl": "ai-workflows-law-firms-practical-use-cases"
   },
@@ -289,7 +289,7 @@
     "difficulty": "intermediate",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-20",
     "description": "Sixteen practical AI workflows for real estate brokerages and agents — lead organization, listing content, FAQs, audits, and Fair Housing compliance.",
     "slugUrl": "ai-workflows-real-estate-businesses-practical-use-cases.html"
   },
@@ -302,7 +302,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-12",
     "description": "",
     "slugUrl": "dental-clinic-ai-visibility-checklist"
   },
@@ -315,7 +315,7 @@
     "difficulty": "intermediate",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-03",
     "description": "",
     "slugUrl": "how-ai-is-changing-local-seo-small-businesses"
   },
@@ -328,7 +328,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-09",
     "description": "",
     "slugUrl": "how-dental-clinics-can-use-ai-create-better-patient-faqs"
   },
@@ -341,7 +341,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-10",
     "description": "",
     "slugUrl": "how-dental-clinics-can-use-ai-repurpose-educational-content"
   },
@@ -354,7 +354,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-07",
     "description": "",
     "slugUrl": "how-dental-clinics-use-ai-local-visibility"
   },
@@ -367,7 +367,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-14",
     "description": "",
     "slugUrl": "how-law-firms-can-use-ai-improve-local-visibility"
   },
@@ -380,7 +380,7 @@
     "difficulty": "beginner",
     "readTime": "18 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-11",
+    "pubDate": "2026-09-16",
     "description": "A practical guide to turning scattered intake questions, emails, and attorney experience into a structured, maintainable FAQ knowledge system.",
     "slugUrl": "how-law-firms-can-use-ai-organize-client-faq-content.html"
   },
@@ -393,7 +393,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-01",
     "description": "",
     "slugUrl": "how-local-businesses-can-use-ai-improve-online-visibility"
   },
@@ -406,7 +406,7 @@
     "difficulty": "beginner",
     "readTime": "20 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-19",
     "description": "A practical guide for real estate agents and brokerages to improve local visibility, neighborhood content, and Fair Housing-compliant AI search readiness.",
     "slugUrl": "how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html"
   },
@@ -419,7 +419,7 @@
     "difficulty": "beginner",
     "readTime": "22 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-14",
+    "pubDate": "2026-09-21",
     "description": "A practical guide for real estate agents and brokerages to build accurate, Fair Housing-compliant local content and neighborhood guides using AI.",
     "slugUrl": "how-real-estate-professionals-can-use-ai-to-create-local-content.html"
   },
@@ -432,7 +432,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-04",
     "description": "",
     "slugUrl": "how-to-build-simple-ai-content-workflow-local-business"
   },
@@ -445,7 +445,7 @@
     "difficulty": "beginner",
     "readTime": "25 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-15",
+    "pubDate": "2026-09-05",
     "description": "A step-by-step guide for solopreneurs to build a simple, repeatable AI marketing system — connect content, distribution, lead paths, and measurement.",
     "slugUrl": "how-to-build-simple-ai-marketing-system-solopreneur.html"
   },
@@ -458,7 +458,7 @@
     "difficulty": "beginner",
     "readTime": "10 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-08-10",
+    "pubDate": "2026-09-02",
     "description": "",
     "slugUrl": "what-is-ai-visibility-practical-guide-local-businesses"
   },
@@ -471,37 +471,36 @@
     "difficulty": "intermediate",
     "readTime": "22 min read",
     "authorName": "Locatria Editorial Team",
-    "pubDate": "2026-09-08",
+    "pubDate": "2026-09-30",
     "description": "How to organize reliable business knowledge across six operational layers so AI can assist with content and workflows without losing accuracy, context, and governance.",
     "slugUrl": "ai-ready-local-business-knowledge-system.html"
+  },
+  {
+    "id": "ai-visibility-measurement-for-local-businesses",
+    "title": "How Local Businesses Can Measure AI Visibility Without Chasing Rankings",
+    "type": "guide",
+    "status": "published",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readTime": "22 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-28",
+    "description": "A practical measurement framework to observe where and how your local business appears in AI-powered search, evaluate first-party evidence, and improve your knowledge system.",
+    "slugUrl": "ai-visibility-measurement-for-local-businesses.html"
+  },
+  {
+    "id": "ai-visibility-prioritization-for-local-businesses",
+    "title": "How Local Businesses Can Prioritize AI Visibility Issues Using Evidence",
+    "type": "guide",
+    "status": "published",
+    "industry": "general",
+    "difficulty": "intermediate",
+    "readTime": "24 min read",
+    "authorName": "Locatria Editorial Team",
+    "pubDate": "2026-09-29",
+    "description": "A structured decision framework to prioritize AI visibility findings using evidence quality, business impact, urgency, and uncertainty — without falling into priority scoring traps.",
+    "slugUrl": "ai-visibility-prioritization-for-local-businesses.html"
   }
-  ,
-  {
-  "id": "ai-visibility-measurement-for-local-businesses",
-  "title": "How Local Businesses Can Measure AI Visibility Without Chasing Rankings",
-  "type": "guide",
-  "status": "published",
-  "industry": "general",
-  "difficulty": "intermediate",
-  "readTime": "22 min read",
-  "authorName": "Locatria Editorial Team",
-  "pubDate": "2026-09-08",
-  "description": "A practical measurement framework to observe where and how your local business appears in AI-powered search, evaluate first-party evidence, and improve your knowledge system.",
-  "slugUrl": "ai-visibility-measurement-for-local-businesses.html"
-}
-  ,
-  {
-  "id": "ai-visibility-prioritization-for-local-businesses",
-  "title": "How Local Businesses Can Prioritize AI Visibility Issues Using Evidence",
-  "type": "guide",
-  "status": "published",
-  "industry": "general",
-  "difficulty": "intermediate",
-  "readTime": "24 min read",
-  "authorName": "Locatria Editorial Team",
-  "pubDate": "2026-09-08",
-  "description": "A structured decision framework to prioritize AI visibility findings using evidence quality, business impact, urgency, and uncertainty — without falling into priority scoring traps.",
-  "slugUrl": "ai-visibility-prioritization-for-local-businesses.html"
-}
 ];
-})(window);
+
+})(typeof window !== 'undefined' ? window : this);

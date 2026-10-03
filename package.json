@@ -14,7 +14,16 @@
     "test:measurement": "node validation/test-resource-measurement.js",
     "test:review-loop": "node validation/test-resource-review-loop.js",
     "test:dashboard": "node validation/test-resource-dashboard.js",
-    "test:content": "node content-integrity-test.js"
+    "test:content": "node content-integrity-test.js",
+    "test:visibility:foundation": "node validation/test-visibility-foundation.js",
+    "test:visibility:historical": "node validation/test-visibility-historical.js",
+    "test:visibility:ingestion": "node validation/test-visibility-ingestion.js",
+    "test:visibility:domain": "node validation/test-visibility-domain.js",
+    "test:visibility:prioritization": "node validation/test-visibility-prioritization.js",
+    "test:visibility:execution": "node validation/test-visibility-execution.js",
+    "test:visibility:verification": "node validation/test-visibility-verification.js",
+    "test:visibility:governance": "node validation/test-visibility-governance.js",
+    "test:visibility:orchestrator": "node validation/test-visibility-orchestrator.js"
   },
   "keywords": [
     "ai-visibility",
