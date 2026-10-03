@@ -9,7 +9,7 @@
     "industry": "law-firms",
     "difficulty": "beginner",
     "readingTimeMinutes": 22,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Law firm owners",
       "Managing partners",
@@ -19,7 +19,9 @@
       "Legal marketing teams",
       "Law firm operations staff"
     ],
-    "primaryTopic": "AI Visibility Checklist for Law Firms"
+    "primaryTopic": "AI Visibility Checklist for Law Firms",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-visibility-checklist-law-firms.html",
@@ -1604,5 +1606,8 @@
     "relatedGuides": [
       "what-is-ai-visibility-practical-guide-local-businesses.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

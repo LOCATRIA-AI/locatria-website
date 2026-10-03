@@ -9,7 +9,7 @@
     "industry": "general",
     "difficulty": "intermediate",
     "readingTimeMinutes": 25,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-15",
     "audience": [
       "Local business owners",
       "Small business owners",
@@ -18,7 +18,9 @@
       "Content managers",
       "Founders operating with AI"
     ],
-    "primaryTopic": "AI Review Response Workflow for Local Businesses"
+    "primaryTopic": "AI Review Response Workflow for Local Businesses",
+    "publishedAt": "2026-08-15T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-review-response-workflow-local-businesses.html",
@@ -856,5 +858,8 @@
         }
       ]
     }
-  ]
+  ],
+  "publishedAt": "2026-08-15T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-15"
 }

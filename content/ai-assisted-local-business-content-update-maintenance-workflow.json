@@ -17,7 +17,9 @@
       "Content Managers",
       "Local SEO Specialists"
     ],
-    "primaryTopic": "AI Visibility"
+    "primaryTopic": "AI Visibility",
+    "publishedAt": "2026-09-07T10:00:00Z",
+    "updatedAt": null
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -307,21 +309,66 @@
         "Example Value"
       ],
       "rows": [
-        ["URL", "/services/consultations"],
-        ["Topic", "Consultation availability"],
-        ["Content Type", "Service page"],
-        ["Claim", "\"Consultations available Mon–Fri\""],
-        ["Source", "Internal scheduling policy"],
-        ["Source Type", "Tier 1"],
-        ["Last Verified", "[date]"],
-        ["Change Sensitivity", "High"],
-        ["Potential Change", "Hours may have changed"],
-        ["AI Analysis", "Flagged inconsistency with recent internal note"],
-        ["Human Verification", "Confirmed — hours updated"],
-        ["Action", "Update"],
-        ["Status", "In progress"],
-        ["Change Log", "Hours corrected [date]"],
-        ["Next Review", "[date]"]
+        [
+          "URL",
+          "/services/consultations"
+        ],
+        [
+          "Topic",
+          "Consultation availability"
+        ],
+        [
+          "Content Type",
+          "Service page"
+        ],
+        [
+          "Claim",
+          "\"Consultations available Mon–Fri\""
+        ],
+        [
+          "Source",
+          "Internal scheduling policy"
+        ],
+        [
+          "Source Type",
+          "Tier 1"
+        ],
+        [
+          "Last Verified",
+          "[date]"
+        ],
+        [
+          "Change Sensitivity",
+          "High"
+        ],
+        [
+          "Potential Change",
+          "Hours may have changed"
+        ],
+        [
+          "AI Analysis",
+          "Flagged inconsistency with recent internal note"
+        ],
+        [
+          "Human Verification",
+          "Confirmed — hours updated"
+        ],
+        [
+          "Action",
+          "Update"
+        ],
+        [
+          "Status",
+          "In progress"
+        ],
+        [
+          "Change Log",
+          "Hours corrected [date]"
+        ],
+        [
+          "Next Review",
+          "[date]"
+        ]
       ]
     },
     {
@@ -499,5 +546,8 @@
       "type": "paragraph",
       "content": "<a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"article-internal-link\">Article #31 — Local Entity Consistency & NAPE Audit</a> provides a foundation for maintaining accurate business entity information; this article extends that same discipline to the broader body of content a local business publishes."
     }
-  ]
+  ],
+  "publishedAt": "2026-09-07T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-07"
 }

@@ -11,8 +11,9 @@
     "difficulty": "beginner",
     "featured": false,
     "readingTime": 18,
-    "publishedAt": "2026-09-11T16:00:00Z",
-    "updatedAt": "2026-10-02T13:00:00Z"
+    "publishedAt": "2026-08-10T10:00:00Z",
+    "updatedAt": null,
+    "lastUpdated": "2026-08-10"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -343,5 +344,8 @@
     "relatedGuides": [
       "dental-clinic-ai-visibility-checklist.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-10T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-10"
 }

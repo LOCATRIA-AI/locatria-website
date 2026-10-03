@@ -9,7 +9,7 @@
     "industry": "real-estate",
     "difficulty": "intermediate",
     "readingTimeMinutes": 25,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Real estate agents",
       "Brokers",
@@ -18,7 +18,9 @@
       "Small real estate teams",
       "Real estate marketing and operations professionals"
     ],
-    "primaryTopic": "AI Workflows for Real Estate Businesses: Practical Use Cases"
+    "primaryTopic": "AI Workflows for Real Estate Businesses: Practical Use Cases",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-workflows-real-estate-businesses-practical-use-cases.html",
@@ -794,5 +796,8 @@
     "relatedGuides": [
       "how-real-estate-professionals-can-use-ai-to-create-local-content.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

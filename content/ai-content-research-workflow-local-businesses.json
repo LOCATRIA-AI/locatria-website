@@ -9,7 +9,7 @@
     "industry": "general",
     "difficulty": "intermediate",
     "readingTimeMinutes": 25,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Local business owners",
       "Small business owners",
@@ -18,7 +18,9 @@
       "Content managers",
       "Founders using AI for content research"
     ],
-    "primaryTopic": "AI Content Research Workflow for Local Businesses"
+    "primaryTopic": "AI Content Research Workflow for Local Businesses",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-content-research-workflow-local-businesses.html",
@@ -851,5 +853,8 @@
       "ai-faq-research-workflow-local-businesses.html",
       "ai-competitor-content-gap-analysis-workflow.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

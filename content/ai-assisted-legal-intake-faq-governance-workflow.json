@@ -17,7 +17,9 @@
       "Legal Practice Managers",
       "Legal Marketing & Operations Leaders"
     ],
-    "primaryTopic": "AI-Assisted Legal Intake & FAQ Governance Workflow"
+    "primaryTopic": "AI-Assisted Legal Intake & FAQ Governance Workflow",
+    "publishedAt": "2026-09-07T10:00:00Z",
+    "updatedAt": null
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -470,5 +472,8 @@
       "type": "paragraph",
       "content": "For the broader entity-consistency foundation this workflow connects to, see <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">Article #31 — Local Entity Consistency & NAPE Audit Workflow</a>. For the underlying FAQ knowledge-organization concepts this article operationalizes, see <a href=\"how-law-firms-can-use-ai-organize-client-faq-content.html\" class=\"component-link\">Article #13 — How Law Firms Can Use AI to Organize Client FAQ Content</a>."
     }
-  ]
+  ],
+  "publishedAt": "2026-09-07T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-07"
 }

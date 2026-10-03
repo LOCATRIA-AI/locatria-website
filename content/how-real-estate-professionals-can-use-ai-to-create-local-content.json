@@ -9,7 +9,7 @@
     "industry": "real-estate",
     "difficulty": "beginner",
     "readingTimeMinutes": 22,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Real estate agents",
       "Brokers",
@@ -18,7 +18,9 @@
       "Small real estate teams",
       "Real estate marketing professionals"
     ],
-    "primaryTopic": "How Real Estate Professionals Can Use AI to Create Local Content"
+    "primaryTopic": "How Real Estate Professionals Can Use AI to Create Local Content",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/how-real-estate-professionals-can-use-ai-to-create-local-content.html",
@@ -644,5 +646,8 @@
     "relatedGuides": [
       "ai-content-repurposing-workflow-real-estate-businesses.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

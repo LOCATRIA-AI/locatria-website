@@ -9,7 +9,7 @@
     "industry": "general",
     "difficulty": "beginner",
     "readingTimeMinutes": 25,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-15",
     "audience": [
       "Solopreneurs",
       "Small business owners",
@@ -17,7 +17,9 @@
       "Independent professionals",
       "Small marketing teams"
     ],
-    "primaryTopic": "How to Build a Simple AI Marketing System as a Solopreneur"
+    "primaryTopic": "How to Build a Simple AI Marketing System as a Solopreneur",
+    "publishedAt": "2026-08-15T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/how-to-build-simple-ai-marketing-system-solopreneur.html",
@@ -638,5 +640,8 @@
       "ai-content-research-workflow-local-businesses.html",
       "ai-prompt-workflow-local-business-content-creation.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-15T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-15"
 }

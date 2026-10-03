@@ -9,7 +9,7 @@
     "industry": "real-estate",
     "difficulty": "beginner",
     "readingTimeMinutes": 20,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Real estate agents",
       "Brokers",
@@ -18,7 +18,9 @@
       "Small real estate teams",
       "Local real estate businesses"
     ],
-    "primaryTopic": "How Real Estate Businesses Can Use AI to Improve Local Visibility"
+    "primaryTopic": "How Real Estate Businesses Can Use AI to Improve Local Visibility",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html",
@@ -626,5 +628,8 @@
       "ai-workflows-real-estate-businesses-practical-use-cases.html",
       "ai-visibility-checklist-real-estate-businesses.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

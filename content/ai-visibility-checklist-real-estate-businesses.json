@@ -9,7 +9,7 @@
     "industry": "real-estate",
     "difficulty": "beginner",
     "readingTimeMinutes": 26,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Real estate agents",
       "Brokers",
@@ -18,7 +18,9 @@
       "Small real estate teams",
       "Real estate marketing professionals"
     ],
-    "primaryTopic": "AI Visibility Checklist for Real Estate Businesses"
+    "primaryTopic": "AI Visibility Checklist for Real Estate Businesses",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-visibility-checklist-real-estate-businesses.html",
@@ -905,5 +907,8 @@
     "relatedGuides": [
       "what-is-ai-visibility-practical-guide-local-businesses.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

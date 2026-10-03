@@ -16,7 +16,9 @@
       "Clinic Office Managers",
       "Dental Marketing Leaders"
     ],
-    "primaryTopic": "Dental Clinic Google Business Profile Entity Data Audit"
+    "primaryTopic": "Dental Clinic Google Business Profile Entity Data Audit",
+    "publishedAt": "2026-09-06T10:00:00Z",
+    "updatedAt": null
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -722,5 +724,8 @@
     ],
     "previous": "ai-local-entity-consistency-nape-audit-workflow",
     "next": "dental-clinic-ai-visibility-checklist"
-  }
+  },
+  "publishedAt": "2026-09-06T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-06"
 }

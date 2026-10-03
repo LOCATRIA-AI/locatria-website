@@ -9,7 +9,7 @@
     "industry": "real-estate",
     "difficulty": "intermediate",
     "readingTimeMinutes": 24,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Real estate agents",
       "Brokers",
@@ -19,7 +19,9 @@
       "Real estate marketing professionals",
       "Content and marketing staff supporting real estate businesses"
     ],
-    "primaryTopic": "AI Content Repurposing Workflow for Real Estate Businesses"
+    "primaryTopic": "AI Content Repurposing Workflow for Real Estate Businesses",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-content-repurposing-workflow-real-estate-businesses.html",
@@ -711,5 +713,8 @@
     "relatedGuides": [
       "ai-visibility-checklist-real-estate-businesses.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

@@ -1,50 +1,50 @@
 {
-  "timestamp": "2026-10-03T03:14:38.915Z",
-  "targetDirectory": "resource-data",
+  "timestamp": "2026-10-03T03:42:20.618Z",
+  "targetDirectory": "resource-data\\_fixtures",
   "summary": {
-    "total": 64,
-    "valid": 64,
+    "total": 8,
+    "valid": 8,
     "invalid": 0
   },
   "byEntityType": {
     "tool": {
-      "total": 10,
-      "valid": 10,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "resource": {
-      "total": 4,
-      "valid": 4,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "evidence": {
-      "total": 10,
-      "valid": 10,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "evaluation": {
-      "total": 10,
-      "valid": 10,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "recommendation": {
-      "total": 10,
-      "valid": 10,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "affiliate": {
-      "total": 10,
-      "valid": 10,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "review": {
-      "total": 0,
-      "valid": 0,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "relationship": {
-      "total": 10,
-      "valid": 10,
+      "total": 1,
+      "valid": 1,
       "invalid": 0
     },
     "measurement": {
@@ -60,450 +60,58 @@
   },
   "files": [
     {
-      "file": "resource-data\\affiliates\\aff-can-001.json",
+      "file": "resource-data\\_fixtures\\affiliate-001.json",
       "entityType": "affiliate",
-      "id": "TOOL-CAN-001",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\affiliates\\aff-can-002.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-003.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-003",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-004.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-004",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-005.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-005",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-006.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-006",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-007.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-007",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-008.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-008",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-010.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-010",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\affiliates\\aff-can-011.json",
-      "entityType": "affiliate",
-      "id": "TOOL-CAN-011",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-001.json",
+      "file": "resource-data\\_fixtures\\evaluation-001.json",
       "entityType": "evaluation",
-      "id": "TOOL-CAN-001",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\evaluations\\eval-can-002.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-003.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-003",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-004.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-004",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-005.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-005",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-006.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-006",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-007.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-007",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-008.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-008",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-010.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-010",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evaluations\\eval-can-011.json",
-      "entityType": "evaluation",
-      "id": "TOOL-CAN-011",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-001-01.json",
+      "file": "resource-data\\_fixtures\\evidence-001.json",
       "entityType": "evidence",
-      "id": "TOOL-CAN-001",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\evidence\\evd-can-002-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-003-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-003",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-004-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-004",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-005-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-005",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-006-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-006",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-007-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-007",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-008-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-008",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-010-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-010",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\evidence\\evd-can-011-01.json",
-      "entityType": "evidence",
-      "id": "TOOL-CAN-011",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-001.json",
+      "file": "resource-data\\_fixtures\\recommendation-001.json",
       "entityType": "recommendation",
-      "id": "TOOL-CAN-001",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\recommendations\\rec-can-002.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-003.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-003",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-004.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-004",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-005.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-005",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-006.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-006",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-007.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-007",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-008.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-008",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-010.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-010",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\recommendations\\rec-can-011.json",
-      "entityType": "recommendation",
-      "id": "TOOL-CAN-011",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-001.json",
+      "file": "resource-data\\_fixtures\\relationship-001.json",
       "entityType": "relationship",
-      "id": "REL-RES-001",
+      "id": "REL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\relationships\\rel-res-002.json",
-      "entityType": "relationship",
-      "id": "REL-RES-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-003.json",
-      "entityType": "relationship",
-      "id": "REL-RES-003",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-004.json",
-      "entityType": "relationship",
-      "id": "REL-RES-004",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-005.json",
-      "entityType": "relationship",
-      "id": "REL-RES-005",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-006.json",
-      "entityType": "relationship",
-      "id": "REL-RES-006",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-007.json",
-      "entityType": "relationship",
-      "id": "REL-RES-007",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-res-008.json",
-      "entityType": "relationship",
-      "id": "REL-RES-008",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-tool-rec-001.json",
-      "entityType": "relationship",
-      "id": "REL-TOOL-REC-001",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\relationships\\rel-tool-rec-002.json",
-      "entityType": "relationship",
-      "id": "REL-TOOL-REC-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\resources\\res-guide-001.json",
+      "file": "resource-data\\_fixtures\\resource-001.json",
       "entityType": "resource",
-      "id": "RES-GUIDE-001",
+      "id": "RES-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\resources\\res-profile-claude.json",
-      "entityType": "resource",
-      "id": "RES-PROFILE-CLAUDE",
+      "file": "resource-data\\_fixtures\\review-001.json",
+      "entityType": "review",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     },
     {
-      "file": "resource-data\\resources\\res-profile-notebooklm.json",
-      "entityType": "resource",
-      "id": "RES-PROFILE-NOTEBOOKLM",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\resources\\res-workflow-001.json",
-      "entityType": "resource",
-      "id": "RES-WORKFLOW-001",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-001.json",
+      "file": "resource-data\\_fixtures\\tool-001.json",
       "entityType": "tool",
-      "id": "TOOL-CAN-001",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-002.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-002",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-003.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-003",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-004.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-004",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-005.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-005",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-006.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-006",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-007.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-007",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-008.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-008",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-010.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-010",
-      "valid": true,
-      "errors": []
-    },
-    {
-      "file": "resource-data\\tools\\tool-can-011.json",
-      "entityType": "tool",
-      "id": "TOOL-CAN-011",
+      "id": "TOOL-001",
       "valid": true,
       "errors": []
     }

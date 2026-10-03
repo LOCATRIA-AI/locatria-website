@@ -11,8 +11,9 @@
     "difficulty": "beginner",
     "featured": false,
     "readingTime": 16,
-    "publishedAt": "2026-09-09T13:45:00Z",
-    "updatedAt": "2026-10-02T12:00:00Z"
+    "publishedAt": "2026-08-10T10:00:00Z",
+    "updatedAt": null,
+    "lastUpdated": "2026-08-10"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -271,5 +272,8 @@
     "relatedGuides": [
       "how-dental-clinics-can-use-ai-repurpose-educational-content.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-10T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-10"
 }

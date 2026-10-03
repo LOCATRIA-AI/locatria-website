@@ -11,8 +11,9 @@
     "difficulty": "beginner",
     "featured": true,
     "readingTime": 15,
-    "publishedAt": "2026-09-01T09:00:00Z",
-    "updatedAt": "2026-10-02T14:00:00Z"
+    "publishedAt": "2026-08-10T10:00:00Z",
+    "updatedAt": null,
+    "lastUpdated": "2026-08-10"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -435,5 +436,8 @@
       "what-is-ai-visibility-practical-guide-local-businesses.html",
       "how-to-build-simple-ai-content-workflow-local-business.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-10T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-10"
 }

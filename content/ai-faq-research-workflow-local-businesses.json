@@ -9,7 +9,7 @@
     "industry": "general",
     "difficulty": "intermediate",
     "readingTimeMinutes": 23,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Local business owners",
       "Small business owners",
@@ -18,7 +18,9 @@
       "Content managers",
       "Founders using AI for content research"
     ],
-    "primaryTopic": "AI FAQ Research Workflow for Local Businesses"
+    "primaryTopic": "AI FAQ Research Workflow for Local Businesses",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-faq-research-workflow-local-businesses.html",
@@ -800,5 +802,8 @@
         "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports Fair Housing evaluation criteria in real estate FAQs."
       ]
     }
-  ]
+  ],
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

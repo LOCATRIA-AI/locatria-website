@@ -10,14 +10,16 @@
     "industry": "general",
     "difficulty": "intermediate",
     "readingTimeMinutes": 24,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-09-25",
     "audience": [
       "Local Business Owners",
       "SMB Operators",
       "Marketing Managers",
       "Local SEO Practitioners"
     ],
-    "primaryTopic": "AI Visibility Prioritization"
+    "primaryTopic": "AI Visibility Prioritization",
+    "publishedAt": "2026-09-25T10:00:00Z",
+    "updatedAt": null
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -1192,5 +1194,8 @@
         "⁴ National Institute of Standards and Technology (NIST), Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, January 2023. <a href=\"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf</a>"
       ]
     }
-  ]
+  ],
+  "publishedAt": "2026-09-25T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-25"
 }

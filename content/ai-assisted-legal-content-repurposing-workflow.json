@@ -9,7 +9,7 @@
     "industry": "law-firms",
     "difficulty": "beginner",
     "readingTimeMinutes": 20,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-11",
     "audience": [
       "Law firm owners",
       "Managing partners",
@@ -18,7 +18,9 @@
       "Attorneys responsible for content",
       "Legal marketing and operations staff"
     ],
-    "primaryTopic": "AI-Assisted Legal Content Repurposing Workflow"
+    "primaryTopic": "AI-Assisted Legal Content Repurposing Workflow",
+    "publishedAt": "2026-08-11T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-assisted-legal-content-repurposing-workflow.html",
@@ -958,5 +960,8 @@
     "relatedGuides": [
       "ai-visibility-checklist-law-firms.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-11T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-11"
 }

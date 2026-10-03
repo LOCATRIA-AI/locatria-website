@@ -10,14 +10,16 @@
     "industry": "general",
     "difficulty": "intermediate",
     "readingTimeMinutes": 22,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-09-25",
     "audience": [
       "Local Business Owners",
       "SMB Operators",
       "Content Managers",
       "Operations Directors"
     ],
-    "primaryTopic": "AI Content Systems"
+    "primaryTopic": "AI Content Systems",
+    "publishedAt": "2026-09-25T10:00:00Z",
+    "updatedAt": null
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -1079,5 +1081,8 @@
         "² Google Search Central, \"AI Features and Your Website.\" <a href=\"https://developers.google.com/search/docs/appearance/ai-features\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"component-link\">https://developers.google.com/search/docs/appearance/ai-features</a>"
       ]
     }
-  ]
+  ],
+  "publishedAt": "2026-09-25T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-25"
 }

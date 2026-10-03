@@ -222,7 +222,7 @@
 
       // Sort articles
       if (this.currentSort === 'recent') {
-        displayArticles.sort((a, b) => new Date(b.pubDate || '2026-09-01') - new Date(a.pubDate || '2026-09-01'));
+        displayArticles.sort((a, b) => new Date(b.updatedDate || b.pubDate || '2026-08-10') - new Date(a.updatedDate || a.pubDate || '2026-08-10'));
       } else if (this.currentSort === 'readtime') {
         displayArticles.sort((a, b) => (parseInt(a.readTime, 10) || 10) - (parseInt(b.readTime, 10) || 10));
       } else if (this.currentSort === 'popular') {
@@ -267,6 +267,7 @@
       } else {
         // Featured 1st Article
         const feat = displayArticles[0];
+        const featDateLabel = feat.updatedDate ? `Updated ${this.formatMonthYear(feat.updatedDate)}` : `Published ${this.formatMonthYear(feat.pubDate)}`;
         contentHtml += `
           <article class="card card-article" style="margin-bottom: var(--space-8); background-color: var(--color-bg-subtle);">
             <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-6);">
@@ -286,7 +287,7 @@
                   <div class="author-avatar-sm">LET</div>
                   <div class="author-info-sm">
                     <div class="author-name-sm">${feat.authorName || 'Locatria Editorial Team'}</div>
-                    <div>Senior AI Architects • Updated ${this.formatMonthYear(feat.pubDate)}</div>
+                    <div>Senior AI Architects • ${featDateLabel}</div>
                   </div>
                   <a href="${feat.slugUrl}" class="btn btn-primary btn-sm" style="margin-left: auto;">Read Article →</a>
                 </div>
@@ -300,6 +301,7 @@
           for (let i = 1; i < displayArticles.length; i++) {
             const art = displayArticles[i];
             const indBadge = art.industry ? (art.industry.charAt(0).toUpperCase() + art.industry.slice(1)) : 'General';
+            const artDateLabel = art.updatedDate ? `Updated ${this.formatShortDate(art.updatedDate)}` : `Published ${this.formatShortDate(art.pubDate)}`;
             contentHtml += `
               <article class="card card-article">
                 <div class="card-article-meta">
@@ -316,7 +318,7 @@
                   <div class="author-avatar-sm">LET</div>
                   <div class="author-info-sm">
                     <div class="author-name-sm">${art.authorName || 'Locatria Editorial Team'}</div>
-                    <div>${art.readTime || '10 min read'} • ${this.formatShortDate(art.pubDate)}</div>
+                    <div>${art.readTime || '10 min read'} • ${artDateLabel}</div>
                   </div>
                 </div>
               </article>`;

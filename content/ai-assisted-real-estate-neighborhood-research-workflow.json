@@ -17,7 +17,9 @@
       "Brokerage Team Leaders",
       "Real Estate Marketing & Content Managers"
     ],
-    "primaryTopic": "AI-Assisted Real Estate Neighborhood Research Workflow"
+    "primaryTopic": "AI-Assisted Real Estate Neighborhood Research Workflow",
+    "publishedAt": "2026-09-07T10:00:00Z",
+    "updatedAt": null
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -308,21 +310,66 @@
         "Purpose"
       ],
       "rows": [
-        ["Neighborhood Name", "Entity identity"],
-        ["City / State", "Geographic context"],
-        ["Geographic Definition", "Scope"],
-        ["Research Purpose", "Why research is being done"],
-        ["Topic", "Information category"],
-        ["Claim", "What is being stated"],
-        ["Source", "Evidence"],
-        ["Source Type", "Official / Primary / Established Secondary"],
-        ["Publication / Update Date", "Freshness"],
-        ["Last Verified", "Maintenance"],
-        ["AI Interpretation", "AI assistance"],
-        ["Human Verification", "Final review"],
-        ["Claim Type", "Fact / Interpretation / Recommendation"],
-        ["Fair Housing Risk", "Low / Review / High"],
-        ["Status", "Verified / Review / Conflict / Outdated"]
+        [
+          "Neighborhood Name",
+          "Entity identity"
+        ],
+        [
+          "City / State",
+          "Geographic context"
+        ],
+        [
+          "Geographic Definition",
+          "Scope"
+        ],
+        [
+          "Research Purpose",
+          "Why research is being done"
+        ],
+        [
+          "Topic",
+          "Information category"
+        ],
+        [
+          "Claim",
+          "What is being stated"
+        ],
+        [
+          "Source",
+          "Evidence"
+        ],
+        [
+          "Source Type",
+          "Official / Primary / Established Secondary"
+        ],
+        [
+          "Publication / Update Date",
+          "Freshness"
+        ],
+        [
+          "Last Verified",
+          "Maintenance"
+        ],
+        [
+          "AI Interpretation",
+          "AI assistance"
+        ],
+        [
+          "Human Verification",
+          "Final review"
+        ],
+        [
+          "Claim Type",
+          "Fact / Interpretation / Recommendation"
+        ],
+        [
+          "Fair Housing Risk",
+          "Low / Review / High"
+        ],
+        [
+          "Status",
+          "Verified / Review / Conflict / Outdated"
+        ]
       ]
     },
     {
@@ -504,5 +551,8 @@
       "type": "paragraph",
       "content": "For the broader entity-accuracy principles this workflow builds on, see <a href=\"ai-local-entity-consistency-nape-audit-workflow.html\" class=\"component-link\">Article #31 — How to Audit Your Local Business Entity Consistency for AI and Local Search</a>."
     }
-  ]
+  ],
+  "publishedAt": "2026-09-07T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-07"
 }

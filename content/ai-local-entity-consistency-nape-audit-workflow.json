@@ -17,7 +17,9 @@
       "Local business founders",
       "Independent practice owners"
     ],
-    "primaryTopic": "How to Audit Your Local Business Entity Consistency for AI and Local Search"
+    "primaryTopic": "How to Audit Your Local Business Entity Consistency for AI and Local Search",
+    "publishedAt": "2026-09-06T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://www.locatria.com/ai-local-entity-consistency-nape-audit-workflow.html",
@@ -392,5 +394,8 @@
         "W3C Schema.org — \"LocalBusiness Organization Schema Specification\" — https://schema.org/LocalBusiness — Supports structured entity representation."
       ]
     }
-  ]
+  ],
+  "publishedAt": "2026-09-06T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-09-06"
 }

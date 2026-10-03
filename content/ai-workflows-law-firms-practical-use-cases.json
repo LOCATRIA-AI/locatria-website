@@ -11,8 +11,9 @@
     "difficulty": "beginner",
     "featured": false,
     "readingTime": 25,
-    "publishedAt": "2026-09-15T10:15:00Z",
-    "updatedAt": "2026-10-02T14:30:00Z"
+    "publishedAt": "2026-08-10T10:00:00Z",
+    "updatedAt": null,
+    "lastUpdated": "2026-08-10"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -346,5 +347,8 @@
     "relatedGuides": [
       "how-law-firms-can-use-ai-organize-client-faq-content.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-10T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-10"
 }

@@ -9,7 +9,7 @@
     "industry": "general",
     "difficulty": "intermediate",
     "readingTimeMinutes": 24,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-14",
     "audience": [
       "Small business owners",
       "Local business owners",
@@ -19,7 +19,9 @@
       "Business founders",
       "Local SEO practitioners"
     ],
-    "primaryTopic": "AI Local SEO Audit Workflow for Small Businesses"
+    "primaryTopic": "AI Local SEO Audit Workflow for Small Businesses",
+    "publishedAt": "2026-08-14T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/ai-local-seo-audit-workflow-small-businesses.html",
@@ -750,5 +752,8 @@
         "U.S. Department of Housing and Urban Development — \"HUD Issues Fair Housing Act Guidance on Applications of Artificial Intelligence\" (May 2, 2024) — https://archives.hud.gov/news/2024/pr24-098.cfm — Supports Fair Housing considerations in real estate local content audits."
       ]
     }
-  ]
+  ],
+  "publishedAt": "2026-08-14T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-14"
 }

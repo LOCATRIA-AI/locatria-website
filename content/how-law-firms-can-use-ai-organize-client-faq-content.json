@@ -9,7 +9,7 @@
     "industry": "law-firms",
     "difficulty": "beginner",
     "readingTimeMinutes": 18,
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-08-11",
     "audience": [
       "Law firm owners",
       "Managing partners",
@@ -18,7 +18,9 @@
       "Attorneys responsible for website content",
       "Legal marketing and operations staff"
     ],
-    "primaryTopic": "AI-Assisted Law Firm FAQ Knowledge Systems"
+    "primaryTopic": "AI-Assisted Law Firm FAQ Knowledge Systems",
+    "publishedAt": "2026-08-11T10:00:00Z",
+    "updatedAt": null
   },
   "seo": {
     "canonical": "https://locatria-website.vercel.app/how-law-firms-can-use-ai-organize-client-faq-content.html",
@@ -878,5 +880,8 @@
     "relatedGuides": [
       "ai-assisted-legal-content-repurposing-workflow.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-11T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-11"
 }

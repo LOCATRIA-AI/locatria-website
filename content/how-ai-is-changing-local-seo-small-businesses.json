@@ -11,8 +11,9 @@
     "difficulty": "intermediate",
     "featured": true,
     "readingTime": 16,
-    "publishedAt": "2026-09-03T11:00:00Z",
-    "updatedAt": "2026-10-02T15:00:00Z"
+    "publishedAt": "2026-08-10T10:00:00Z",
+    "updatedAt": null,
+    "lastUpdated": "2026-08-10"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -354,5 +355,8 @@
     "relatedGuides": [
       "ai-local-seo-audit-workflow-small-businesses.html"
     ]
-  }
+  },
+  "publishedAt": "2026-08-10T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-10"
 }

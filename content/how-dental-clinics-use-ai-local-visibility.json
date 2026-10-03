@@ -11,8 +11,9 @@
     "difficulty": "beginner",
     "featured": false,
     "readingTime": 12,
-    "publishedAt": "2026-09-07T09:15:00Z",
-    "updatedAt": "2026-10-02T11:00:00Z"
+    "publishedAt": "2026-08-10T10:00:00Z",
+    "updatedAt": null,
+    "lastUpdated": "2026-08-10"
   },
   "author": {
     "id": "locatria-editorial-team",
@@ -491,5 +492,8 @@
     ],
     "previous": "ai-patient-intake-dental-clinics",
     "next": null
-  }
+  },
+  "publishedAt": "2026-08-10T10:00:00Z",
+  "updatedAt": null,
+  "lastUpdated": "2026-08-10"
 }
