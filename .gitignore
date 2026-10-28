@@ -93,3 +93,8 @@ visibility-data/audit/*.json
 !visibility-data/audit/.gitkeep
 visibility-data/ingestions/ing-*.json
 !visibility-data/ingestions/.gitkeep
+
+# ==============================
+# Local Backups
+# ==============================
+.backup/

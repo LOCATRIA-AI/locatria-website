@@ -62,6 +62,46 @@
   let currentCategoryFilter = 'All';
   let lastFocusedElement = null;
 
+  // --- Safe Analytics & Parameter Allowlist ---
+  const ALLOWED_SEARCH_PARAMS = new Set([
+    'search_category',
+    'query_length_bucket',
+    'results_count',
+    'has_results',
+    'filter_active',
+    'selected_content_id',
+    'result_position'
+  ]);
+
+  function safeGtag(eventName, eventParams) {
+    const sanitized = {};
+    if (eventParams && typeof eventParams === 'object') {
+      for (const key of Object.keys(eventParams)) {
+        if (ALLOWED_SEARCH_PARAMS.has(key)) {
+          sanitized[key] = eventParams[key];
+        }
+      }
+    }
+
+    const isLocal = typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+    if (isLocal) {
+      if (typeof console !== 'undefined' && console.info) {
+        console.info('[Locatria Analytics Local Debug]', eventName, sanitized);
+      }
+      return;
+    }
+
+    if (typeof window.gtag === 'function') {
+      try {
+        window.gtag('event', eventName, sanitized);
+      } catch (err) {
+        console.warn('[GA4] Search event dispatch failed:', err);
+      }
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initSearchModal();
   });
@@ -152,9 +192,16 @@
       });
     });
 
+    let searchDebounceTimer = null;
+    let lastEmittedQuery = null;
+    let lastEmittedCategory = null;
+
     function renderResults(query, category) {
       // If query is empty, display Recent Searches & Default Hub Highlights
       if (query === '') {
+        if (searchDebounceTimer) {
+          clearTimeout(searchDebounceTimer);
+        }
         let recentHtml = '';
         if (recentSearches.length > 0) {
           recentHtml = `
@@ -219,6 +266,30 @@
         return matchesQuery && matchesCat;
       });
 
+      // --- Privacy-Safe Categorical Search Telemetry ---
+      if (query.length >= 3) {
+        if (searchDebounceTimer) {
+          clearTimeout(searchDebounceTimer);
+        }
+        searchDebounceTimer = setTimeout(function () {
+          // Deduplication: prevent duplicate dispatch within same debounce cycle or if user didn't change query
+          if (query === lastEmittedQuery && category === lastEmittedCategory) {
+            return;
+          }
+          lastEmittedQuery = query;
+          lastEmittedCategory = category;
+
+          const queryBucket = query.length < 5 ? 'short' : (query.length <= 15 ? 'medium' : 'long');
+          safeGtag('search', {
+            search_category: category,
+            query_length_bucket: queryBucket,
+            results_count: filtered.length,
+            has_results: filtered.length > 0,
+            filter_active: category !== 'All'
+          });
+        }, 600);
+      }
+
       if (filtered.length === 0) {
         resultsContainer.innerHTML = `
           <div style="padding: 32px 16px; text-align: center; color: var(--color-text-muted); font-size: 13px;">
@@ -238,6 +309,21 @@
           <span class="badge badge-blue" style="margin-left: 12px; flex-shrink: 0;">${item.type}</span>
         </a>
       `).join('');
+
+      // Track Search Result Selection
+      const resultLinks = resultsContainer.querySelectorAll('.search-result-item');
+      resultLinks.forEach((linkEl, idx) => {
+        linkEl.addEventListener('click', function () {
+          const href = this.getAttribute('href') || '';
+          const cleanSlug = href.split('?')[0].split('#')[0].replace(/\.html$/, '');
+          safeGtag('search_select', {
+            selected_content_id: cleanSlug || 'unknown',
+            result_position: idx + 1,
+            search_category: category,
+            results_count: filtered.length
+          });
+        });
+      });
     }
 
     function escapeHtml(str) {
