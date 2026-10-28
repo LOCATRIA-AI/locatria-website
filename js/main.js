@@ -223,10 +223,13 @@
     const hasArticleContainer = document.querySelector('.article-container') ||
                                 document.querySelector('.article-body') ||
                                 document.querySelector('article') ||
-                                document.querySelector('.guide-content');
+                                document.querySelector('.guide-content') ||
+                                document.querySelector('.article-prose') ||
+                                document.querySelector('.article-layout-grid');
     if (!hasArticleContainer) return;
 
     const metadata = resolveContentMetadata();
+    if (metadata.content_type === 'hub') return;
     // Milestone deduplication set scoped strictly to current pageview
     const recordedMilestones = new Set();
     const milestones = [25, 50, 75, 100];
