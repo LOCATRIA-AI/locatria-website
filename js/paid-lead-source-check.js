@@ -1260,6 +1260,207 @@
       if (window._updateStickySummaryForTab) window._updateStickySummaryForTab();
     };
 
+    function renderSummaryChips(totalEvaluated, needsInfoCount, onTargetCount, maturingCount, reviewCount, earlyCount) {
+      if (!summaryChipsContainer) return;
+      let chipsHtml = '';
+      if (totalEvaluated === 0) {
+        chipsHtml = `
+          <span class="compare-chip">
+            ${rowsData.length} source${rowsData.length > 1 ? 's' : ''} · ${needsInfoCount} need info
+          </span>`;
+      } else {
+        chipsHtml = `
+          <span class="compare-chip">
+            <strong>${totalEvaluated}</strong> of ${rowsData.length} evaluated${needsInfoCount > 0 ? ` · ${needsInfoCount} need${needsInfoCount === 1 ? 's' : ''} info` : ''}
+          </span>`;
+      }
+      if (onTargetCount > 0) chipsHtml += `<span class="compare-chip on-target">✓ ${onTargetCount} on target</span>`;
+      if (maturingCount > 0) chipsHtml += `<span class="compare-chip maturing">● ${maturingCount} maturing</span>`;
+      if (reviewCount > 0) chipsHtml += `<span class="compare-chip review">⚠ ${reviewCount} review</span>`;
+      if (earlyCount > 0) chipsHtml += `<span class="compare-chip early">⏱ ${earlyCount} too early</span>`;
+      summaryChipsContainer.innerHTML = chipsHtml;
+    }
+
+    function updateSummaryStats() {
+      const shared = getSharedSettings();
+      let totalEvaluated = 0;
+      let onTargetCount = 0;
+      let maturingCount = 0;
+      let reviewCount = 0;
+      let earlyCount = 0;
+      let needsInfoCount = 0;
+
+      rowsData.forEach(row => {
+        const missing = getRowMissingFields(row, shared);
+        if (missing.length === 0) {
+          const res = evaluateRow(row, shared);
+          if (res && res.statusCode !== 'INCOMPLETE') {
+            totalEvaluated++;
+            if (res.statusCode === 'WITHIN') onTargetCount++;
+            else if (res.statusCode === 'MATURING') maturingCount++;
+            else if (['FOLLOWUP', 'FIT', 'NO_CLIENTS', 'OVER', 'CHECK'].includes(res.statusCode)) reviewCount++;
+            else if (res.statusCode.startsWith('EARLY')) earlyCount++;
+          } else {
+            needsInfoCount++;
+          }
+        } else {
+          needsInfoCount++;
+        }
+      });
+
+      lastEvaluatedCount = totalEvaluated;
+      lastNeedsInfoCount = needsInfoCount;
+      lastOnTargetCount = onTargetCount;
+
+      renderSummaryChips(totalEvaluated, needsInfoCount, onTargetCount, maturingCount, reviewCount, earlyCount);
+
+      if (window._updateStickySummaryForTab) {
+        window._updateStickySummaryForTab();
+      }
+    }
+
+    function updateLiveRow(rowId) {
+      const row = rowsData.find(r => r.id === rowId);
+      if (!row) return;
+      const shared = getSharedSettings();
+      const curr = CURRENCIES[shared.currency] || CURRENCIES.USD;
+      const missing = getRowMissingFields(row, shared);
+      const res = evaluateRow(row, shared);
+
+      const inqNum = Number(row.inquiries) || 0;
+      const convNum = Number(row.conversations) || 0;
+      const apptNum = Number(row.appointments) || 0;
+      const signNum = Number(row.signed) || 0;
+
+      const hasSeqInqConv = row.inquiries !== '' && row.conversations !== '' && convNum > inqNum;
+      const hasSeqConvAppt = row.conversations !== '' && row.appointments !== '' && apptNum > convNum;
+      const hasSeqApptSign = row.appointments !== '' && row.signed !== '' && signNum > apptNum;
+
+      const inqConvPct = res && res.metrics.inqToConvRate !== null ? Math.min(100, Math.round(res.metrics.inqToConvRate * 100)) : 0;
+      const convApptPct = res && res.metrics.convToApptRate !== null ? Math.min(100, Math.round(res.metrics.convToApptRate * 100)) : 0;
+
+      let inqConvStr = '—';
+      if (res && res.metrics.inqToConvRate !== null) inqConvStr = formatPercent(res.metrics.inqToConvRate);
+      let convApptStr = '—';
+      if (res && res.metrics.convToApptRate !== null) convApptStr = formatPercent(res.metrics.convToApptRate);
+      let costSignedStr = '—';
+      if (res && res.metrics.costPerSigned !== null) costSignedStr = formatCurrency(res.metrics.costPerSigned, curr);
+
+      let statusLabel = '—';
+      let badgeType = 'neutral';
+      if (missing.length > 0) {
+        statusLabel = 'Needs info';
+        badgeType = 'neutral';
+      } else if (res) {
+        statusLabel = res.statusTitle;
+        if (res.statusCode === 'WITHIN') badgeType = 'on-target';
+        else if (res.statusCode === 'MATURING') badgeType = 'maturing';
+        else if (['FOLLOWUP', 'FIT', 'NO_CLIENTS', 'OVER', 'CHECK'].includes(res.statusCode)) badgeType = 'below-target';
+        else if (res.statusCode.startsWith('EARLY')) badgeType = 'maturing';
+      }
+
+      // 1. Update Desktop Row calculated cells without touching inputs
+      const dRow = tableBody.querySelector(`tr.compare-main-row[data-row-id="${row.id}"]`);
+      if (dRow) {
+        const convInp = dRow.querySelector('input[data-field="conversations"]');
+        if (convInp) {
+          const warn = convInp.parentElement.querySelector('.cell-warning-tag');
+          if (hasSeqInqConv && !warn) {
+            convInp.classList.add('has-error');
+            convInp.insertAdjacentHTML('afterend', '<span class="cell-warning-tag">⚠ > Inquiries</span>');
+          } else if (!hasSeqInqConv && warn) {
+            convInp.classList.remove('has-error');
+            warn.remove();
+          }
+        }
+
+        const apptInp = dRow.querySelector('input[data-field="appointments"]');
+        if (apptInp) {
+          const warn = apptInp.parentElement.querySelector('.cell-warning-tag');
+          if (hasSeqConvAppt && !warn) {
+            apptInp.classList.add('has-error');
+            apptInp.insertAdjacentHTML('afterend', '<span class="cell-warning-tag">⚠ > Convs</span>');
+          } else if (!hasSeqConvAppt && warn) {
+            apptInp.classList.remove('has-error');
+            warn.remove();
+          }
+        }
+
+        const signInp = dRow.querySelector('input[data-field="signed"]');
+        if (signInp) {
+          const warn = signInp.parentElement.querySelector('.cell-warning-tag');
+          if (hasSeqApptSign && !warn) {
+            signInp.classList.add('has-error');
+            signInp.insertAdjacentHTML('afterend', '<span class="cell-warning-tag">⚠ > Appts</span>');
+          } else if (!hasSeqApptSign && warn) {
+            signInp.classList.remove('has-error');
+            warn.remove();
+          }
+        }
+
+        const inqConvCell = dRow.querySelector('.cell-inq-conv');
+        if (inqConvCell) {
+          inqConvCell.innerHTML = `<div>${inqConvStr}</div>${inqConvPct > 0 ? `<div class="compare-mini-bar"><div class="compare-mini-bar-fill ${inqConvPct >= Number(shared.targetInqToConv) ? 'on-target' : ''}" style="width: ${inqConvPct}%;"></div></div>` : ''}`;
+        }
+        const convApptCell = dRow.querySelector('.cell-conv-appt');
+        if (convApptCell) {
+          convApptCell.innerHTML = `<div>${convApptStr}</div>${convApptPct > 0 ? `<div class="compare-mini-bar"><div class="compare-mini-bar-fill ${convApptPct >= Number(shared.targetConvToAppt) ? 'on-target' : ''}" style="width: ${convApptPct}%;"></div></div>` : ''}`;
+        }
+        const costSignedCell = dRow.querySelector('.cell-cost-signed');
+        if (costSignedCell) {
+          costSignedCell.innerHTML = `<div>${costSignedStr}</div>`;
+        }
+        const statusCell = dRow.querySelector('.cell-status');
+        if (statusCell) {
+          statusCell.innerHTML = `<span class="check-badge ${badgeType}">${statusLabel}</span>`;
+        }
+      }
+
+      // 2. Update Mobile Card Header
+      const mCard = mobileContainer.querySelector(`.compare-card-row[data-row-id="${row.id}"]`);
+      if (mCard) {
+        const headerStrong = mCard.querySelector('.compare-card-header strong');
+        if (headerStrong) {
+          const idx = rowsData.findIndex(r => r.id === row.id);
+          headerStrong.textContent = row.source.trim() || `Source #${idx + 1}`;
+        }
+        const mStatus = mCard.querySelector('.mobile-status-label');
+        if (mStatus) mStatus.textContent = statusLabel;
+        const mCost = mCard.querySelector('.mobile-cost-signed');
+        if (mCost) mCost.textContent = costSignedStr;
+      }
+
+      // 3. Update summary
+      updateSummaryStats();
+    }
+
+    function handleLiveFieldInput(inputEl) {
+      const rowEl = inputEl.closest('[data-row-id]');
+      if (!rowEl) return;
+      const rowId = parseInt(rowEl.getAttribute('data-row-id'), 10);
+      const field = inputEl.getAttribute('data-field');
+      const targetRow = rowsData.find(r => r.id === rowId);
+      if (!targetRow) return;
+
+      targetRow[field] = inputEl.value;
+
+      // Period dropdown switch needs full re-render (custom dates drawer appears/disappears)
+      if (field === 'period') {
+        renderCompare();
+        return;
+      }
+
+      // Sync counterpart input between desktop table & mobile cards
+      const isMobile = !!inputEl.closest('#compare-mobile-accordion');
+      const otherContainer = isMobile ? tableBody : mobileContainer;
+      const counterpart = otherContainer.querySelector(`[data-row-id="${rowId}"] [data-field="${field}"]`);
+      if (counterpart && counterpart.value !== inputEl.value) {
+        counterpart.value = inputEl.value;
+      }
+
+      updateLiveRow(rowId);
+    }
+
     function renderCompare() {
       const shared = getSharedSettings();
       const curr = CURRENCIES[shared.currency] || CURRENCIES.USD;
@@ -1305,33 +1506,7 @@
       lastNeedsInfoCount = needsInfoCount;
       lastOnTargetCount = onTargetCount;
 
-      if (summaryChipsContainer) {
-        let chipsHtml = '';
-        if (totalEvaluated === 0) {
-          chipsHtml = `
-            <span class="compare-chip">
-              ${rowsData.length} source${rowsData.length > 1 ? 's' : ''} · ${needsInfoCount} need info
-            </span>`;
-        } else {
-          chipsHtml = `
-            <span class="compare-chip">
-              <strong>${totalEvaluated}</strong> of ${rowsData.length} evaluated${needsInfoCount > 0 ? ` · ${needsInfoCount} need${needsInfoCount === 1 ? 's' : ''} info` : ''}
-            </span>`;
-        }
-        if (onTargetCount > 0) {
-          chipsHtml += `<span class="compare-chip on-target">✓ ${onTargetCount} on target</span>`;
-        }
-        if (maturingCount > 0) {
-          chipsHtml += `<span class="compare-chip maturing">● ${maturingCount} maturing</span>`;
-        }
-        if (reviewCount > 0) {
-          chipsHtml += `<span class="compare-chip review">⚠ ${reviewCount} review</span>`;
-        }
-        if (earlyCount > 0) {
-          chipsHtml += `<span class="compare-chip early">⏱ ${earlyCount} too early</span>`;
-        }
-        summaryChipsContainer.innerHTML = chipsHtml;
-      }
+      renderSummaryChips(totalEvaluated, needsInfoCount, onTargetCount, maturingCount, reviewCount, earlyCount);
 
       let tableHtml = '';
       let mobileHtml = '';
@@ -1406,18 +1581,18 @@
               <input type="number" min="0" class="compare-input-compact mono js-comp-field ${hasSeqApptSign ? 'has-error' : ''}" data-field="signed" value="${row.signed}" placeholder="0 if none">
               ${hasSeqApptSign ? '<span class="cell-warning-tag">⚠ > Appts</span>' : ''}
             </td>
-            <td style="text-align: right; font-weight: 600;">
+            <td style="text-align: right; font-weight: 600;" class="cell-inq-conv">
               <div>${inqConvStr}</div>
               ${inqConvPct > 0 ? `<div class="compare-mini-bar"><div class="compare-mini-bar-fill ${inqConvPct >= Number(shared.targetInqToConv) ? 'on-target' : ''}" style="width: ${inqConvPct}%;"></div></div>` : ''}
             </td>
-            <td style="text-align: right; font-weight: 600;">
+            <td style="text-align: right; font-weight: 600;" class="cell-conv-appt">
               <div>${convApptStr}</div>
               ${convApptPct > 0 ? `<div class="compare-mini-bar"><div class="compare-mini-bar-fill ${convApptPct >= Number(shared.targetConvToAppt) ? 'on-target' : ''}" style="width: ${convApptPct}%;"></div></div>` : ''}
             </td>
-            <td style="text-align: right; font-weight: 700; color: var(--color-primary-800);">
+            <td style="text-align: right; font-weight: 700; color: var(--color-primary-800);" class="cell-cost-signed">
               <div>${costSignedStr}</div>
             </td>
-            <td>
+            <td class="cell-status">
               <span class="check-badge ${badgeType}">${statusLabel}</span>
             </td>
             <td style="text-align: center;">
@@ -1498,10 +1673,10 @@
             <div class="compare-card-header js-toggle-mobile-header" data-row-id="${row.id}">
               <div>
                 <strong style="font-size: var(--text-sm);">${row.source || `Source #${idx + 1}`}</strong>
-                <div style="font-size: var(--text-xs); color: var(--color-text-muted);">${statusLabel}</div>
+                <div style="font-size: var(--text-xs); color: var(--color-text-muted);" class="mobile-status-label">${statusLabel}</div>
               </div>
               <div style="text-align: right;">
-                <div style="font-weight: 700; font-size: var(--text-sm);">${costSignedStr}</div>
+                <div style="font-weight: 700; font-size: var(--text-sm);" class="mobile-cost-signed">${costSignedStr}</div>
                 <span style="font-size: 11px; color: var(--color-primary-600);">${isExpanded ? 'Hide Details ▴' : 'Details ▾'}</span>
               </div>
             </div>
@@ -1580,6 +1755,23 @@
           </div>`;
       });
 
+      // Capture currently focused element & cursor selection before re-rendering
+      const activeEl = document.activeElement;
+      let activeFocus = null;
+      if (activeEl && (activeEl.classList.contains('js-comp-field') || activeEl.classList.contains('compare-input-compact'))) {
+        const rowEl = activeEl.closest('[data-row-id]');
+        if (rowEl) {
+          const isMobile = !!activeEl.closest('#compare-mobile-accordion');
+          activeFocus = {
+            isMobile,
+            rowId: rowEl.getAttribute('data-row-id'),
+            field: activeEl.getAttribute('data-field'),
+            start: activeEl.selectionStart,
+            end: activeEl.selectionEnd
+          };
+        }
+      }
+
       tableBody.innerHTML = tableHtml;
       mobileContainer.innerHTML = mobileHtml;
 
@@ -1587,28 +1779,33 @@
         window._updateStickySummaryForTab();
       }
 
+      // Restore focus and cursor selection seamlessly
+      if (activeFocus) {
+        const targetContainer = activeFocus.isMobile ? mobileContainer : tableBody;
+        const targetRowEl = targetContainer.querySelector(`[data-row-id="${activeFocus.rowId}"]`);
+        if (targetRowEl) {
+          const targetInput = targetRowEl.querySelector(`[data-field="${activeFocus.field}"]`);
+          if (targetInput) {
+            targetInput.focus();
+            if (typeof activeFocus.start === 'number' && typeof targetInput.setSelectionRange === 'function') {
+              try {
+                targetInput.setSelectionRange(activeFocus.start, activeFocus.end);
+              } catch (e) {}
+            }
+          }
+        }
+      }
+
       // Attach row input listeners
       tableBody.querySelectorAll('.js-comp-field').forEach(inputEl => {
         inputEl.addEventListener('input', function () {
-          const rowId = parseInt(this.closest('[data-row-id]').getAttribute('data-row-id'), 10);
-          const field = this.getAttribute('data-field');
-          const targetRow = rowsData.find(r => r.id === rowId);
-          if (targetRow) {
-            targetRow[field] = this.value;
-            renderCompare();
-          }
+          handleLiveFieldInput(this);
         });
       });
 
       mobileContainer.querySelectorAll('.js-comp-field').forEach(inputEl => {
         inputEl.addEventListener('input', function () {
-          const rowId = parseInt(this.closest('[data-row-id]').getAttribute('data-row-id'), 10);
-          const field = this.getAttribute('data-field');
-          const targetRow = rowsData.find(r => r.id === rowId);
-          if (targetRow) {
-            targetRow[field] = this.value;
-            renderCompare();
-          }
+          handleLiveFieldInput(this);
         });
       });
 
