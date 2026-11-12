@@ -9,6 +9,20 @@
 
   window.LocatriaPublishedArticles = [
   {
+    "id": "paid-lead-source-check",
+    "title": "Paid Lead Source Check: Real Estate & Local Lead Source Decision Aid",
+    "type": "resource",
+    "status": "published",
+    "industry": "real-estate",
+    "difficulty": "beginner",
+    "readTime": "Interactive Tool",
+    "authorName": "Locatria Systems Team",
+    "pubDate": "2026-11-12",
+    "description": "A free interactive decision aid for real estate and local service professionals to evaluate paid lead sources, diagnose funnel drop-offs, and compare cost per signed client against your own targets.",
+    "slugUrl": "paid-lead-source-check.html",
+    "updatedDate": null
+  },
+  {
     "id": "ai-assisted-legal-content-repurposing-workflow",
     "title": "AI-Assisted Legal Content Repurposing Workflow",
     "type": "workflow",

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "paid-lead-source-check",
+  "type": "resource",
+  "status": "published",
+  "metadata": {
+    "title": "Paid Lead Source Check: Real Estate & Local Business Lead ROI Calculator",
+    "subtitle": "A free interactive decision aid to evaluate real estate paid lead sources, diagnose funnel drop-offs, and compare cost per signed client against your own targets.",
+    "category": "Resources",
+    "industry": "real-estate",
+    "difficulty": "beginner",
+    "readingTimeMinutes": 10,
+    "lastUpdated": "2026-11-12",
+    "audience": [
+      "Real Estate Brokers",
+      "Solo Agents & Team Leaders",
+      "Local Business Marketers",
+      "Service Business Operators Testing Paid Leads"
+    ],
+    "primaryTopic": "Paid Lead Source Evaluation & Funnel Conversion Calculator",
+    "publishedAt": "2026-11-12T05:25:00Z",
+    "updatedAt": null
+  },
+  "author": {
+    "id": "locatria-systems-team",
+    "name": "Locatria Systems Team",
+    "role": "Real Estate AI & Growth Systems Specialist"
+  },
+  "seo": {
+    "title": "Paid Lead Source Check: Real Estate Lead ROI & Conversion Calculator | Locatria",
+    "description": "Evaluate paid real estate leads without guesswork. Calculate conversion rates, diagnose follow-up vs. lead fit, and test cost per signed client against your own targets.",
+    "canonical": "https://www.locatria.com/paid-lead-source-check.html",
+    "robots": "index,follow"
+  },
+  "geo": {
+    "market": "United States",
+    "primaryTopic": "Paid Lead Source Performance Calculator",
+    "industryFocus": "real-estate"
+  },
+  "relationships": {
+    "parentArticle": "how-real-estate-businesses-can-use-ai-to-improve-local-visibility",
+    "relatedArticles": [
+      "how-real-estate-professionals-can-use-ai-to-create-local-content",
+      "ai-workflows-real-estate-businesses-practical-use-cases"
+    ],
+    "learningPath": "lp06"
+  },
+  "featured": true,
+  "content": [
+    {
+      "sectionId": "overview",
+      "heading": "Paid Lead Source Check",
+      "body": "An interactive, browser-based decision tool for real estate and local business operators testing paid lead sources. Evaluates cohort lead age, conversion drop-offs, and cost per signed client against user-defined targets."
+    }
+  ]
+}

@@ -9,6 +9,13 @@
   // Sample Knowledge Hub Dataset
   const KNOWLEDGE_ITEMS = [
     {
+      title: "Paid Lead Source Check: Real Estate Lead ROI Calculator",
+      snippet: "Free interactive decision aid to test paid lead sources, diagnose funnel drop-offs, and compare cost per signed client.",
+      type: "Resources",
+      industry: "Real Estate",
+      url: "paid-lead-source-check.html"
+    },
+    {
       title: "AI Lead Capture Setup for Real Estate Agents",
       snippet: "Step-by-step guide to setting up automated 24/7 AI response agents for listing inquiries.",
       type: "Guides",
