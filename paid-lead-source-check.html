@@ -360,7 +360,9 @@
 
               <div class="form-row">
                 <div class="form-group">
-                  <label for="currency-select" class="form-label">Currency</label>
+                  <label for="currency-select" class="form-label">
+                    <span>Currency</span>
+                  </label>
                   <select id="currency-select" class="form-control">
                     <option value="USD" selected>USD ($)</option>
                     <option value="EUR">EUR (€)</option>
@@ -376,12 +378,13 @@
 
                 <div class="form-group">
                   <label for="total-spend" class="form-label">
-                    <span>Total spent on this source</span>
-                    <span class="form-label-opt">Optional — needed for cost results</span>
+                    <span>Total spend</span>
+                    <span class="form-label-opt">Optional</span>
                   </label>
                   <div class="form-input-wrap">
                     <input type="number" id="total-spend" class="form-control font-mono" placeholder="0" min="0" step="any">
                   </div>
+                  <span class="form-help">Needed for cost per appointment/client results.</span>
                   <div class="field-error-text" id="spend-error"></div>
                 </div>
               </div>
