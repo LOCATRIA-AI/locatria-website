@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paid Lead Source Check: Real Estate Lead ROI & Funnel Calculator — LOCATRIA</title>
+  <title>Paid Lead Source Check: Real Estate Lead Funnel & Cost Tracker — LOCATRIA</title>
   <meta name="description" content="A free interactive decision aid for real estate and local service businesses to evaluate paid lead sources, diagnose funnel drop-offs, and compare cost per signed client against your own targets.">
   <link rel="canonical" href="https://www.locatria.com/paid-lead-source-check.html">
 
@@ -21,7 +21,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Paid Lead Source Check",
+    "name": "Paid Lead Source Check: Real Estate Lead Funnel & Cost Tracker",
     "alternateName": "Paid Lead Pulse Check",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "All",
@@ -285,7 +285,7 @@
         <div class="article-meta-row">
           <div class="meta-item"><span>Published: <strong>November 12, 2026</strong></span></div>
           <div class="meta-divider"></div>
-          <div class="meta-item"><span>By <strong>Locatria Systems Team</strong></span></div>
+          <div class="meta-item"><span>By <strong>Locatria Editorial Team</strong></span></div>
           <div class="meta-divider"></div>
           <div class="meta-item"><span>Interactive Decision Aid</span></div>
         </div>
@@ -317,11 +317,16 @@
               <span>Download Excel (.xlsx)</span>
             </a>
             <button type="button" class="btn btn-secondary btn-sm" id="btn-load-example">
-              Load Example Data
+              Load Example
             </button>
-            <button type="button" class="btn btn-secondary btn-sm" id="btn-reset-calculator" style="color: #b91c1c;">
-              Reset
+            <button type="button" class="btn btn-text btn-sm" id="btn-reset-calculator" style="color: var(--color-danger); display: inline-flex; align-items: center; gap: 4px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+              <span>Reset</span>
             </button>
+            <div class="remember-device-info">
+              <span class="remember-info-icon" aria-hidden="true">ℹ</span>
+              <span>When enabled, inputs are saved only on this device/browser (localStorage) and never transmitted. Turn off or click Reset to erase. When disabled, data exists only during this browser session.</span>
+            </div>
           </div>
         </div>
       </div>
@@ -464,7 +469,7 @@
                 <label for="min-inquiries" class="form-label">
                   <span>Fewest inquiries before judging <span class="req" aria-hidden="true">*</span></span>
                 </label>
-                <input type="number" id="min-inquiries" class="form-control font-mono" placeholder="e.g. 20" min="1" step="1" required>
+                <input type="number" id="min-inquiries" class="form-control font-mono" value="20" min="1" step="1" required>
                 <span class="form-help">Minimum cohort size to avoid judging on too small a sample (must be at least 1).</span>
                 <div class="field-error-text" id="min-inquiries-error"></div>
               </div>
@@ -583,45 +588,48 @@
         <!-- RIGHT COLUMN: IMMEDIATE RESULTS DASHBOARD -->
         <div class="calc-results-col" aria-live="polite">
 
-          <!-- 1. LARGE STATUS DECISION CARD -->
-          <div class="status-decision-card status-card-incomplete" id="status-decision-card">
-            <span class="status-badge-pill" id="status-badge-pill">INCOMPLETE</span>
-            <h3 class="status-decision-title" id="status-decision-title">Not enough information yet</h3>
-            <p class="status-decision-reason" id="status-decision-reason">Some required fields (marked *) are still empty.</p>
-            <div class="status-action-box">
-              <div class="status-action-box-title">Suggested Next Step</div>
-              <p class="status-action-box-text" id="status-action-text">Fill in the fields marked * in steps ①, ②, and ③.</p>
+          <div class="results-sticky-head">
+            <!-- 1. LARGE STATUS DECISION CARD -->
+            <div class="status-decision-card status-card-incomplete" id="status-decision-card">
+              <span class="status-badge-pill" id="status-badge-pill">INCOMPLETE</span>
+              <h3 class="status-decision-title" id="status-decision-title">Not enough information yet</h3>
+              <p class="status-decision-reason" id="status-decision-reason">Some required fields (marked *) are still empty.</p>
+              <div class="status-action-box">
+                <div class="status-action-box-title">Suggested Next Step</div>
+                <p class="status-action-box-text" id="status-action-text">Fill in the fields marked * in steps ①, ②, and ③.</p>
+              </div>
+            </div>
+
+            <!-- 2. FOUR KPI CARDS -->
+            <div class="kpi-cards-grid">
+              <div class="kpi-card">
+                <div class="kpi-card-label">Cost / Inquiry</div>
+                <div class="kpi-card-value" id="kpi-cost-inquiry">—</div>
+                <div class="kpi-card-sub">Total spend ÷ inquiries</div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-card-label">Cost per appointment</div>
+                <div class="kpi-card-value" id="kpi-cost-appointment">—</div>
+                <div class="kpi-card-sub">Total spend ÷ appointments</div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-card-label">Cost / Signed Client</div>
+                <div class="kpi-card-value" id="kpi-cost-signed">—</div>
+                <div class="kpi-card-sub">Total spend ÷ signed clients</div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-card-label">Lead Age (Cohort)</div>
+                <div class="kpi-card-value" id="kpi-lead-age">—</div>
+                <div class="kpi-card-sub">Newest – Oldest lead age</div>
+              </div>
             </div>
           </div>
 
-          <!-- 2. FOUR KPI CARDS -->
-          <div class="kpi-cards-grid">
-            <div class="kpi-card">
-              <div class="kpi-card-label">Cost / Inquiry</div>
-              <div class="kpi-card-value" id="kpi-cost-inquiry">—</div>
-              <div class="kpi-card-sub">Total spend ÷ inquiries</div>
-            </div>
-
-            <div class="kpi-card">
-              <div class="kpi-card-label">Cost per appointment</div>
-              <div class="kpi-card-value" id="kpi-cost-appointment">—</div>
-              <div class="kpi-card-sub">Total spend ÷ appointments</div>
-            </div>
-
-            <div class="kpi-card">
-              <div class="kpi-card-label">Cost / Signed Client</div>
-              <div class="kpi-card-value" id="kpi-cost-signed">—</div>
-              <div class="kpi-card-sub">Total spend ÷ signed clients</div>
-            </div>
-
-            <div class="kpi-card">
-              <div class="kpi-card-label">Lead Age (Cohort)</div>
-              <div class="kpi-card-value" id="kpi-lead-age">—</div>
-              <div class="kpi-card-sub">Newest – Oldest lead age</div>
-            </div>
-          </div>
-
-          <!-- 3. LEAD AGE EXPLAINER BOX -->
+          <div class="results-flow-body">
+            <!-- 3. LEAD AGE EXPLAINER BOX -->
           <div class="lead-age-explainer-card">
             <strong>Why two numbers for lead age?</strong> Cohort results cover a date range:
             <ul style="margin: 6px 0 0 18px; padding: 0;">
@@ -718,7 +726,8 @@
             <strong>Decision Aid Notice:</strong> This calculator suggests where to look first based on your own targets. It does not prove that a source is or isn't profitable. Real estate and local business outcomes can take months, so update counts as leads mature. All calculations run strictly in your browser session; form inputs and financial figures are never tracked or transmitted to any server.
           </div>
 
-        </div>
+          </div> <!-- /.results-flow-body -->
+        </div> <!-- /.calc-results-col -->
       </div>
     </section>
 
@@ -754,13 +763,13 @@
 
           <div class="form-group">
             <label for="shared-days-appt" class="form-label">Days to 1st appointment *</label>
-            <input type="number" id="shared-days-appt" class="form-control font-mono" value="14" min="0">
+            <input type="number" id="shared-days-appt" class="form-control font-mono" placeholder="e.g. 14" min="0">
             <span class="form-help">Usual days to held meeting.</span>
           </div>
 
           <div class="form-group">
             <label for="shared-days-sign" class="form-label">Days to signed client *</label>
-            <input type="number" id="shared-days-sign" class="form-control font-mono" value="90" min="0">
+            <input type="number" id="shared-days-sign" class="form-control font-mono" placeholder="e.g. 90" min="0">
             <span class="form-help">Usual days to signed agreement.</span>
           </div>
 
@@ -773,7 +782,7 @@
           <div class="form-group">
             <label for="shared-inq-conv" class="form-label">Target: Inq → Conv (%) *</label>
             <div class="form-input-wrap">
-              <input type="number" id="shared-inq-conv" class="form-control font-mono has-affix-right" value="30" min="0" max="100">
+              <input type="number" id="shared-inq-conv" class="form-control font-mono has-affix-right" placeholder="e.g. 30" min="0" max="100">
               <span class="input-affix-right" aria-hidden="true">%</span>
             </div>
             <span class="form-help">Min. share becoming 2-way replies.</span>
@@ -782,7 +791,7 @@
           <div class="form-group">
             <label for="shared-conv-appt" class="form-label">Target: Conv → Appt (%) *</label>
             <div class="form-input-wrap">
-              <input type="number" id="shared-conv-appt" class="form-control font-mono has-affix-right" value="25" min="0" max="100">
+              <input type="number" id="shared-conv-appt" class="form-control font-mono has-affix-right" placeholder="e.g. 25" min="0" max="100">
               <span class="input-affix-right" aria-hidden="true">%</span>
             </div>
             <span class="form-help">Min. share becoming held meetings.</span>
@@ -790,7 +799,7 @@
 
           <div class="form-group">
             <label for="shared-max-cost" class="form-label">Max cost per signed client</label>
-            <input type="number" id="shared-max-cost" class="form-control font-mono" value="2000" min="0">
+            <input type="number" id="shared-max-cost" class="form-control font-mono" placeholder="e.g. 2000" min="0">
             <span class="form-help">Optional budget ceiling per client.</span>
           </div>
         </div>
@@ -863,11 +872,11 @@
     <!-- Post-Calculator Recommended Resources & Guides -->
     <section class="lead-check-container calc-recommended-section">
       <div class="calc-rec-header">
-        <h3 class="calc-rec-title">Next Steps & Related Growth Systems</h3>
-        <p class="calc-rec-desc">Once you have diagnosed your lead source performance, implement these proven workflows to optimize your pipeline.</p>
+        <h3 class="calc-rec-title">Next Steps & Related Operational Guides</h3>
+        <p class="calc-rec-desc">Once you have diagnosed your lead source performance, explore these related guides and checklists to structure your lead follow-up and local visibility.</p>
       </div>
       <div class="calc-rec-grid">
-        <a href="category.html?industry=real-estate" class="calc-rec-card">
+        <a href="how-real-estate-businesses-can-use-ai-to-improve-local-visibility.html" class="calc-rec-card">
           <div>
             <div class="calc-rec-tag">Guide #16 • Real Estate</div>
             <h3 class="calc-rec-heading">How Real Estate Businesses Use AI for Local Visibility</h3>
@@ -875,19 +884,19 @@
           </div>
           <span class="calc-rec-link-cta">Read Guide →</span>
         </a>
-        <a href="category.html?type=guides" class="calc-rec-card">
+        <a href="ai-workflows-real-estate-businesses-practical-use-cases.html" class="calc-rec-card">
           <div>
             <div class="calc-rec-tag">Blueprint #17 • Workflows</div>
             <h3 class="calc-rec-heading">AI Workflows for Real Estate: Practical Use Cases</h3>
-            <p class="calc-rec-snippet">Automate initial lead triage, speed up response times to under 5 minutes, and book more qualified listing appointments.</p>
+            <p class="calc-rec-snippet">Practical workflows for structuring inquiry triage, follow-up templates, and calendar routing.</p>
           </div>
           <span class="calc-rec-link-cta">Explore Workflows →</span>
         </a>
-        <a href="category.html?type=checklists" class="calc-rec-card">
+        <a href="ai-visibility-checklist-real-estate-businesses.html" class="calc-rec-card">
           <div>
             <div class="calc-rec-tag">Checklist #20 • Operations</div>
-            <h3 class="calc-rec-heading">Real Estate AI Visibility & Intake Checklist</h3>
-            <p class="calc-rec-snippet">A 12-point operational checklist to eliminate lead leakage between initial inquiry and signed representation.</p>
+            <h3 class="calc-rec-heading">Real Estate AI Visibility Checklist</h3>
+            <p class="calc-rec-snippet">A diagnostic audit checklist covering broker/agent consistency, local data structure, and public information clarity.</p>
           </div>
           <span class="calc-rec-link-cta">View Checklist →</span>
         </a>
@@ -900,7 +909,7 @@
     <div class="calc-modal-dialog">
       <h3 class="calc-modal-title" id="reset-modal-title">Reset Calculator Values?</h3>
       <p class="calc-modal-text">
-        This will clear all entered source names, timing targets, and conversion counts. This action cannot be undone.
+        This will clear all entered source names, timing targets, and conversion counts from this session and erase any saved data on this device. This action cannot be undone.
       </p>
       <div class="calc-modal-actions">
         <button type="button" class="btn btn-secondary btn-sm" id="btn-modal-cancel">Keep My Data</button>

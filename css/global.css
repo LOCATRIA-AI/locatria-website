@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   color-scheme: light;
+  overflow-x: clip;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
 }
 
 /* --- ACCESSIBILITY SKIP LINK --- */

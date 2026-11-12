@@ -4,7 +4,7 @@
   "type": "resource",
   "status": "published",
   "metadata": {
-    "title": "Paid Lead Source Check: Real Estate & Local Business Lead ROI Calculator",
+    "title": "Paid Lead Source Check: Real Estate Lead Funnel & Cost Tracker",
     "subtitle": "A free interactive decision aid to evaluate real estate paid lead sources, diagnose funnel drop-offs, and compare cost per signed client against your own targets.",
     "category": "Resources",
     "industry": "real-estate",
@@ -22,12 +22,12 @@
     "updatedAt": null
   },
   "author": {
-    "id": "locatria-systems-team",
-    "name": "Locatria Systems Team",
+    "id": "locatria-editorial-team",
+    "name": "Locatria Editorial Team",
     "role": "Real Estate AI & Growth Systems Specialist"
   },
   "seo": {
-    "title": "Paid Lead Source Check: Real Estate Lead ROI & Conversion Calculator | Locatria",
+    "title": "Paid Lead Source Check: Real Estate Lead Funnel & Cost Tracker | Locatria",
     "description": "Evaluate paid real estate leads without guesswork. Calculate conversion rates, diagnose follow-up vs. lead fit, and test cost per signed client against your own targets.",
     "canonical": "https://www.locatria.com/paid-lead-source-check.html",
     "robots": "index,follow"

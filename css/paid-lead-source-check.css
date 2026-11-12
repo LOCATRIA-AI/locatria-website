@@ -183,7 +183,33 @@
 .calc-quick-actions {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+}
+
+.remember-device-info {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.remember-info-icon {
+  font-size: 11px;
+  color: var(--color-primary-600);
+  background: var(--color-primary-50);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
 }
 
 /* Secondary Download Link */
@@ -222,22 +248,72 @@
   }
 }
 
-/* Sticky Right Results Column on Desktop */
+/* Results Column on Desktop (FIX-07: Unconstrained natural scroll, sticky top status & KPIs) */
+.calc-results-col {
+  position: static;
+  overflow: visible;
+}
+
 @media (min-width: 1025px) {
-  .calc-results-col {
+  .results-sticky-head {
     position: sticky;
     top: calc(var(--header-height) + var(--space-4));
-    max-height: calc(100vh - var(--header-height) - var(--space-8));
-    overflow-y: auto;
-    padding-right: var(--space-2);
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-border-subtle) transparent;
+    z-index: 10;
+    background: var(--color-bg-body);
+    padding-bottom: var(--space-2);
   }
 }
 
 @media (max-width: 1024px) {
-  .calc-results-col {
+  .results-sticky-head {
     position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .calc-mode-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+
+  .calc-mode-tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  .calc-tab-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: var(--text-xs);
+  }
+
+  .calc-quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    width: 100%;
+  }
+
+  .calc-quick-actions .btn {
+    flex: 1 1 auto;
+    font-size: var(--text-xs);
+    justify-content: center;
+    padding: 6px 10px;
+  }
+
+  .remember-device-toggle {
+    width: 100%;
+    margin-bottom: var(--space-1);
+  }
+
+  .calc-main-grid {
+    gap: var(--space-6);
+  }
+
+  .calc-step-card {
+    padding: var(--space-4);
   }
 }
 

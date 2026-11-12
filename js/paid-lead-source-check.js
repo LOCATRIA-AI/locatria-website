@@ -565,6 +565,9 @@
     const closeEl = document.getElementById('count-closed');
     const activeEl = document.getElementById('count-active');
 
+    let lastSingleResult = null;
+    let lastSingleCurrency = null;
+
     // Display elements
     const statusCard = document.getElementById('status-decision-card');
     const statusPill = document.getElementById('status-badge-pill');
@@ -685,11 +688,10 @@
       statusReasonEl.textContent = result.statusReason;
       actionTextEl.textContent = result.nextStep;
 
-      // Update Mobile Sticky Summary Bar
-      const mobileStickyTitle = document.getElementById('mobile-sticky-title');
-      const mobileStickyCost = document.getElementById('mobile-sticky-cost');
-      if (mobileStickyTitle) mobileStickyTitle.textContent = result.statusTitle;
-      if (mobileStickyCost) mobileStickyCost.textContent = formatCurrency(result.metrics.costPerSigned, curr);
+      // Cache last single evaluation & update mobile sticky bar
+      lastSingleResult = result;
+      lastSingleCurrency = curr;
+      updateStickySummaryForTab();
 
       // 3. 4 KPI Cards
       kpiCostInqEl.textContent = formatCurrency(result.metrics.costPerInquiry, curr);
@@ -888,7 +890,14 @@
     const btnScrollResults = document.getElementById('btn-scroll-results');
     if (btnScrollResults) {
       btnScrollResults.addEventListener('click', () => {
-        statusCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const compareTab = document.getElementById('tab-compare-mode');
+        if (compareTab && compareTab.classList.contains('is-active')) {
+          const compBar = document.getElementById('compare-summary-bar') || document.getElementById('compare-sources-section');
+          if (compBar) compBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          const resultsCol = document.getElementById('results-column') || statusCard;
+          if (resultsCol) resultsCol.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
     }
 
@@ -899,6 +908,37 @@
         window.print();
       });
     }
+
+    // Sticky Summary Synchronizer across Tabs (FIX-05)
+    function updateStickySummaryForTab() {
+      const mobileStickyTitle = document.getElementById('mobile-sticky-title');
+      const mobileStickyCost = document.getElementById('mobile-sticky-cost');
+      if (!mobileStickyTitle || !mobileStickyCost) return;
+
+      const compareTab = document.getElementById('tab-compare-mode');
+      if (compareTab && compareTab.classList.contains('is-active')) {
+        if (window._getCompareStats) {
+          const stats = window._getCompareStats();
+          mobileStickyTitle.textContent = stats.evaluated > 0 ? `${stats.evaluated} Sources Evaluated` : 'Compare Sources';
+          mobileStickyCost.textContent = stats.evaluated > 0
+            ? `${stats.evaluated} of ${stats.total} evaluated${stats.onTarget > 0 ? ` (${stats.onTarget} on target)` : ''}`
+            : `${stats.total} sources · ${stats.needsInfo} need info`;
+        } else {
+          mobileStickyTitle.textContent = 'Compare Sources';
+          mobileStickyCost.textContent = '2 sources · 2 need info';
+        }
+      } else {
+        if (lastSingleResult) {
+          mobileStickyTitle.textContent = lastSingleResult.statusTitle;
+          const curr = lastSingleCurrency || (CURRENCIES[currencyEl.value] || CURRENCIES.USD);
+          mobileStickyCost.textContent = formatCurrency(lastSingleResult.metrics.costPerSigned, curr);
+        } else {
+          mobileStickyTitle.textContent = 'Single Source Check';
+          mobileStickyCost.textContent = '—';
+        }
+      }
+    }
+    window._updateStickySummaryForTab = updateStickySummaryForTab;
 
     // Initial evaluation
     recalculate();
@@ -912,17 +952,23 @@
     if (singleTab && compareTab) {
       singleTab.addEventListener('click', function () {
         singleTab.classList.add('is-active');
+        singleTab.setAttribute('aria-selected', 'true');
         compareTab.classList.remove('is-active');
+        compareTab.setAttribute('aria-selected', 'false');
         singleSection.style.display = 'grid';
         compareSection.classList.remove('is-active');
+        updateStickySummaryForTab();
       });
 
       compareTab.addEventListener('click', function () {
         compareTab.classList.add('is-active');
+        compareTab.setAttribute('aria-selected', 'true');
         singleTab.classList.remove('is-active');
+        singleTab.setAttribute('aria-selected', 'false');
         singleSection.style.display = 'none';
         compareSection.classList.add('is-active');
         initCompareView();
+        updateStickySummaryForTab();
       });
     }
 
@@ -937,44 +983,56 @@
       resetCancel.addEventListener('click', () => resetModal.classList.remove('is-open'));
       resetConfirm.addEventListener('click', () => {
         form.reset();
+        minInquiriesEl.value = '20';
         try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
         if (rememberCheckbox) rememberCheckbox.checked = false;
         presetButtons[0].click();
         resetModal.classList.remove('is-open');
         recalculate();
+        if (window._resetCompareView) {
+          window._resetCompareView();
+        }
+        updateStickySummaryForTab();
       });
     }
 
-    // Example Loader (Portal Leads v3 workbook sample)
+    // Example Loader (FIX-02: Single vs Compare Mode Aware)
     const exampleBtn = document.getElementById('btn-load-example');
     if (exampleBtn) {
       exampleBtn.addEventListener('click', function () {
-        sourceNameEl.value = 'Portal leads (example)';
-        currencyEl.value = 'USD';
-        spendEl.value = '1500';
-        reviewDateEl.value = '2026-11-12';
+        if (compareTab && compareTab.classList.contains('is-active')) {
+          initCompareView();
+          if (window._loadCompareExample) {
+            window._loadCompareExample();
+          }
+        } else {
+          sourceNameEl.value = 'Portal leads (hypothetical example)';
+          currencyEl.value = 'USD';
+          spendEl.value = '1500';
+          reviewDateEl.value = '2026-11-12';
 
-        // Select custom dates Aug 1 - Aug 31
-        const customBtn = document.querySelector('.preset-chip-btn[data-preset="custom"]');
-        if (customBtn) customBtn.click();
-        customStartEl.value = '2026-08-01';
-        customEndEl.value = '2026-08-31';
+          // Select custom dates Aug 1 - Aug 31
+          const customBtn = document.querySelector('.preset-chip-btn[data-preset="custom"]');
+          if (customBtn) customBtn.click();
+          customStartEl.value = '2026-08-01';
+          customEndEl.value = '2026-08-31';
 
-        daysToApptEl.value = '14';
-        daysToSignEl.value = '90';
-        minInquiriesEl.value = '20';
-        targetInqConvEl.value = '30';
-        targetConvApptEl.value = '25';
-        maxCostTargetEl.value = '2000';
+          daysToApptEl.value = '14';
+          daysToSignEl.value = '90';
+          minInquiriesEl.value = '20';
+          targetInqConvEl.value = '30';
+          targetConvApptEl.value = '25';
+          maxCostTargetEl.value = '2000';
 
-        inqEl.value = '40';
-        convEl.value = '14';
-        apptEl.value = '4';
-        signEl.value = '0';
-        closeEl.value = '0';
-        activeEl.value = '6';
+          inqEl.value = '40';
+          convEl.value = '14';
+          apptEl.value = '4';
+          signEl.value = '0';
+          closeEl.value = '0';
+          activeEl.value = '6';
 
-        recalculate();
+          recalculate();
+        }
       });
     }
   }
@@ -1024,20 +1082,20 @@
     let rowsData = [
       {
         id: 1,
-        source: 'Portal leads (example)',
-        period: 'last-90',
-        customStart: '2026-08-01',
-        customEnd: '2026-08-31',
-        spend: '1500',
-        inquiries: '40',
-        conversations: '14',
-        appointments: '4',
-        signed: '0',
-        closed: '0'
+        source: '',
+        period: 'last-30',
+        customStart: '',
+        customEnd: '',
+        spend: '',
+        inquiries: '',
+        conversations: '',
+        appointments: '',
+        signed: '',
+        closed: ''
       },
       {
         id: 2,
-        source: 'Paid social ads',
+        source: '',
         period: 'last-30',
         customStart: '',
         customEnd: '',
@@ -1050,7 +1108,7 @@
       }
     ];
 
-    let expandedRows = new Set([1]); // Row 1 expanded by default
+    let expandedRows = new Set(); // Blank initial state (FIX-02)
     let sortColumn = null;
     let sortDirection = 'asc';
 
@@ -1058,20 +1116,32 @@
       return {
         currency: sharedCurrencyEl ? sharedCurrencyEl.value : 'USD',
         reviewDate: sharedReviewDateEl ? sharedReviewDateEl.value : '',
-        daysToAppt: sharedDaysApptEl ? sharedDaysApptEl.value : '14',
-        daysToSign: sharedDaysSignEl ? sharedDaysSignEl.value : '90',
-        minInquiries: sharedMinInqEl ? sharedMinInqEl.value : '20',
-        targetInqToConv: sharedInqConvEl ? sharedInqConvEl.value : '30',
-        targetConvToAppt: sharedConvApptEl ? sharedConvApptEl.value : '25',
-        maxCostTarget: sharedMaxCostEl ? sharedMaxCostEl.value : '2000'
+        daysToAppt: sharedDaysApptEl ? sharedDaysApptEl.value : '',
+        daysToSign: sharedDaysSignEl ? sharedDaysSignEl.value : '',
+        minInquiries: (sharedMinInqEl && sharedMinInqEl.value) ? sharedMinInqEl.value : '20',
+        targetInqToConv: sharedInqConvEl ? sharedInqConvEl.value : '',
+        targetConvToAppt: sharedConvApptEl ? sharedConvApptEl.value : '',
+        maxCostTarget: sharedMaxCostEl ? sharedMaxCostEl.value : ''
       };
     }
 
+    function getRowMissingFields(row, shared) {
+      const missing = [];
+      if (!row.source || !row.source.trim()) missing.push('Source name');
+      if (row.inquiries === '' || row.inquiries === null) missing.push('Inquiries');
+      if (row.conversations === '' || row.conversations === null) missing.push('Conversations');
+      if (row.appointments === '' || row.appointments === null) missing.push('Appointments');
+      if (row.signed === '' || row.signed === null) missing.push('Signed clients (0 if none)');
+      if (!shared.daysToAppt) missing.push('Target days to 1st appt');
+      if (!shared.daysToSign) missing.push('Target days to sign');
+      if (!shared.targetInqToConv) missing.push('Target Inq → Conv %');
+      if (!shared.targetConvToAppt) missing.push('Target Conv → Appt %');
+      return missing;
+    }
+
     function evaluateRow(row, shared) {
-      const hasAnyInput = (row.source && row.source.trim().length > 0) ||
-                          (row.spend !== '' && row.spend !== null) ||
-                          (row.inquiries !== '' && row.inquiries !== null);
-      if (!hasAnyInput) return null;
+      const missing = getRowMissingFields(row, shared);
+      if (missing.length > 0) return null;
 
       const evalInput = {
         sourceName: row.source || `Source #${row.id}`,
@@ -1096,6 +1166,100 @@
       return evaluateLeadSource(evalInput);
     }
 
+    let lastEvaluatedCount = 0;
+    let lastNeedsInfoCount = 0;
+    let lastOnTargetCount = 0;
+
+    window._getCompareStats = function() {
+      return {
+        total: rowsData.length,
+        evaluated: lastEvaluatedCount,
+        needsInfo: lastNeedsInfoCount,
+        onTarget: lastOnTargetCount
+      };
+    };
+
+    window._loadCompareExample = function() {
+      if (sharedDaysApptEl) sharedDaysApptEl.value = '14';
+      if (sharedDaysSignEl) sharedDaysSignEl.value = '90';
+      if (sharedMinInqEl) sharedMinInqEl.value = '20';
+      if (sharedInqConvEl) sharedInqConvEl.value = '30';
+      if (sharedConvApptEl) sharedConvApptEl.value = '25';
+      if (sharedMaxCostEl) sharedMaxCostEl.value = '2000';
+      rowsData = [
+        {
+          id: 1,
+          source: 'Portal A (hypothetical example)',
+          period: 'last-90',
+          customStart: '',
+          customEnd: '',
+          spend: '1500',
+          inquiries: '40',
+          conversations: '14',
+          appointments: '4',
+          signed: '0',
+          closed: '0'
+        },
+        {
+          id: 2,
+          source: 'Social Ads (hypothetical example)',
+          period: 'last-30',
+          customStart: '',
+          customEnd: '',
+          spend: '800',
+          inquiries: '25',
+          conversations: '8',
+          appointments: '2',
+          signed: '0',
+          closed: '0'
+        }
+      ];
+      expandedRows = new Set([1]);
+      renderCompare();
+      if (window._updateStickySummaryForTab) window._updateStickySummaryForTab();
+    };
+
+    window._resetCompareView = function() {
+      if (sharedCurrencyEl) sharedCurrencyEl.value = 'USD';
+      if (sharedDaysApptEl) sharedDaysApptEl.value = '';
+      if (sharedDaysSignEl) sharedDaysSignEl.value = '';
+      if (sharedMinInqEl) sharedMinInqEl.value = '20';
+      if (sharedInqConvEl) sharedInqConvEl.value = '';
+      if (sharedConvApptEl) sharedConvApptEl.value = '';
+      if (sharedMaxCostEl) sharedMaxCostEl.value = '';
+      rowsData = [
+        {
+          id: 1,
+          source: '',
+          period: 'last-30',
+          customStart: '',
+          customEnd: '',
+          spend: '',
+          inquiries: '',
+          conversations: '',
+          appointments: '',
+          signed: '',
+          closed: ''
+        },
+        {
+          id: 2,
+          source: '',
+          period: 'last-30',
+          customStart: '',
+          customEnd: '',
+          spend: '',
+          inquiries: '',
+          conversations: '',
+          appointments: '',
+          signed: '',
+          closed: ''
+        }
+      ];
+      expandedRows = new Set();
+      renderCompare();
+      if (window._updateStickySummaryForTab) window._updateStickySummaryForTab();
+    };
+
     function renderCompare() {
       const shared = getSharedSettings();
       const curr = CURRENCIES[shared.currency] || CURRENCIES.USD;
@@ -1112,26 +1276,48 @@
       let maturingCount = 0;
       let reviewCount = 0;
       let earlyCount = 0;
+      let needsInfoCount = 0;
 
       const evaluatedResults = new Map();
+      const rowMissingMap = new Map();
 
       rowsData.forEach(row => {
-        const res = evaluateRow(row, shared);
-        evaluatedResults.set(row.id, res);
-        if (res) {
-          totalEvaluated++;
-          if (res.statusCode === 'WITHIN') onTargetCount++;
-          else if (res.statusCode === 'MATURING') maturingCount++;
-          else if (['FOLLOWUP', 'FIT', 'NO_CLIENTS', 'OVER'].includes(res.statusCode)) reviewCount++;
-          else if (res.statusCode.startsWith('EARLY')) earlyCount++;
+        const missing = getRowMissingFields(row, shared);
+        rowMissingMap.set(row.id, missing);
+        if (missing.length === 0) {
+          const res = evaluateRow(row, shared);
+          evaluatedResults.set(row.id, res);
+          if (res && res.statusCode !== 'INCOMPLETE') {
+            totalEvaluated++;
+            if (res.statusCode === 'WITHIN') onTargetCount++;
+            else if (res.statusCode === 'MATURING') maturingCount++;
+            else if (['FOLLOWUP', 'FIT', 'NO_CLIENTS', 'OVER', 'CHECK'].includes(res.statusCode)) reviewCount++;
+            else if (res.statusCode.startsWith('EARLY')) earlyCount++;
+          } else {
+            needsInfoCount++;
+          }
+        } else {
+          needsInfoCount++;
         }
       });
 
+      lastEvaluatedCount = totalEvaluated;
+      lastNeedsInfoCount = needsInfoCount;
+      lastOnTargetCount = onTargetCount;
+
       if (summaryChipsContainer) {
-        let chipsHtml = `
-          <span class="compare-chip">
-            <strong>${totalEvaluated}</strong> of ${rowsData.length} evaluated
-          </span>`;
+        let chipsHtml = '';
+        if (totalEvaluated === 0) {
+          chipsHtml = `
+            <span class="compare-chip">
+              ${rowsData.length} source${rowsData.length > 1 ? 's' : ''} · ${needsInfoCount} need info
+            </span>`;
+        } else {
+          chipsHtml = `
+            <span class="compare-chip">
+              <strong>${totalEvaluated}</strong> of ${rowsData.length} evaluated${needsInfoCount > 0 ? ` · ${needsInfoCount} need${needsInfoCount === 1 ? 's' : ''} info` : ''}
+            </span>`;
+        }
         if (onTargetCount > 0) {
           chipsHtml += `<span class="compare-chip on-target">✓ ${onTargetCount} on target</span>`;
         }
@@ -1152,9 +1338,22 @@
 
       rowsData.forEach((row, idx) => {
         const res = evaluatedResults.get(row.id);
+        const missing = rowMissingMap.get(row.id) || [];
         const isExpanded = expandedRows.has(row.id);
 
-        const statusLabel = res ? res.statusTitle : '—';
+        let statusLabel = '—';
+        let badgeType = 'neutral';
+        if (missing.length > 0) {
+          statusLabel = 'Needs info';
+          badgeType = 'neutral';
+        } else if (res) {
+          statusLabel = res.statusTitle;
+          if (res.statusCode === 'WITHIN') badgeType = 'on-target';
+          else if (res.statusCode === 'MATURING') badgeType = 'maturing';
+          else if (['FOLLOWUP', 'FIT', 'NO_CLIENTS', 'OVER', 'CHECK'].includes(res.statusCode)) badgeType = 'below-target';
+          else if (res.statusCode.startsWith('EARLY')) badgeType = 'maturing';
+        }
+
         const costSignedStr = res && res.metrics.costPerSigned !== null ? formatCurrency(res.metrics.costPerSigned, curr) : '—';
         const inqConvStr = res && res.metrics.inqToConvRate !== null ? formatPercent(res.metrics.inqToConvRate) : '—';
         const convApptStr = res && res.metrics.convToApptRate !== null ? formatPercent(res.metrics.convToApptRate) : '—';
@@ -1170,14 +1369,6 @@
 
         const inqConvPct = res && res.metrics.inqToConvRate !== null ? Math.min(100, Math.round(res.metrics.inqToConvRate * 100)) : 0;
         const convApptPct = res && res.metrics.convToApptRate !== null ? Math.min(100, Math.round(res.metrics.convToApptRate * 100)) : 0;
-
-        let badgeType = 'neutral';
-        if (res) {
-          if (res.statusCode === 'WITHIN') badgeType = 'on-target';
-          else if (res.statusCode === 'MATURING') badgeType = 'maturing';
-          else if (['FOLLOWUP', 'FIT', 'NO_CLIENTS', 'OVER'].includes(res.statusCode)) badgeType = 'below-target';
-          else if (res.statusCode === 'CHECK') badgeType = 'below-target';
-        }
 
         // Desktop Row
         tableHtml += `
@@ -1251,21 +1442,30 @@
               <td colspan="13">
                 <div class="compare-details-content">
                   <div>
-                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                      <span class="status-badge-pill ${res ? res.badgeClass : 'status-card-incomplete'}">
-                        ${res ? res.statusCode : 'INCOMPLETE'}
-                      </span>
-                      <strong style="font-size: var(--text-sm); color: var(--color-text-main);">${statusLabel}</strong>
-                    </div>
-                    <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin: 0 0 8px 0; line-height: 1.5;">
-                      ${res ? res.statusReason : 'Enter your source spend and lead counts in the row above to generate diagnosis.'}
-                    </p>
-                    <div style="background: #ffffff; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-sm); padding: 8px 12px;">
-                      <strong style="font-size: 11px; text-transform: uppercase; color: var(--color-primary-700); letter-spacing: 0.04em;">Suggested Next Step</strong>
-                      <div style="font-size: var(--text-xs); color: var(--color-text-main); margin-top: 2px;">
-                        ${res ? res.nextStep : 'Fill in the required counts to receive custom recommendations.'}
+                    ${missing.length > 0 ? `
+                      <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 8px;">
+                        <strong style="font-size: 11px; text-transform: uppercase; color: #b45309; letter-spacing: 0.04em;">Required Information Missing</strong>
+                        <p style="font-size: var(--text-xs); color: #92400e; margin: 4px 0 0 0; line-height: 1.5;">
+                          To evaluate this source, please enter: <strong>${missing.join(', ')}</strong>.
+                        </p>
                       </div>
-                    </div>
+                    ` : (res ? `
+                      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+                        <span class="status-badge-pill ${res.badgeClass}">
+                          ${res.statusCode}
+                        </span>
+                        <strong style="font-size: var(--text-sm); color: var(--color-text-main);">${statusLabel}</strong>
+                      </div>
+                      <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin: 0 0 8px 0; line-height: 1.5;">
+                        ${res.statusReason}
+                      </p>
+                      <div style="background: #ffffff; border: 1px solid var(--color-border-subtle); border-radius: var(--radius-sm); padding: 8px 12px;">
+                        <strong style="font-size: 11px; text-transform: uppercase; color: var(--color-primary-700); letter-spacing: 0.04em;">Suggested Next Step</strong>
+                        <div style="font-size: var(--text-xs); color: var(--color-text-main); margin-top: 2px;">
+                          ${res.nextStep}
+                        </div>
+                      </div>
+                    ` : '')}
                     ${row.period === 'custom' ? `
                       <div style="display: flex; gap: 12px; margin-top: 10px; align-items: center; background: #fff; padding: 8px 12px; border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle);">
                         <strong style="font-size: var(--text-xs);">Custom Dates:</strong>
@@ -1362,12 +1562,16 @@
                   <input type="number" min="0" class="form-control font-mono js-comp-field" data-field="signed" value="${row.signed}" placeholder="0 if none">
                 </div>
               </div>
-              ${res ? `
+              ${missing.length > 0 ? `
+                <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px; font-size: 12px; margin-top: 10px; color: #92400e;">
+                  <strong>Required Information Missing:</strong> To evaluate, please enter ${missing.join(', ')}.
+                </div>
+              ` : (res ? `
                 <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 12px; margin-top: 10px; border: 1px solid var(--color-border-subtle);">
                   <div style="margin-bottom: 4px;"><strong>Diagnosis:</strong> ${res.statusReason}</div>
                   <div><strong>Next Step:</strong> ${res.nextStep}</div>
                 </div>
-              ` : ''}
+              ` : '')}
               <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px;">
                 <button type="button" class="btn btn-secondary btn-sm js-dup-row" data-row-id="${row.id}">Duplicate</button>
                 <button type="button" class="btn btn-secondary btn-sm js-del-row" data-row-id="${row.id}" style="color: #b91c1c;" ${rowsData.length <= 1 ? 'disabled' : ''}>Delete</button>
@@ -1378,6 +1582,10 @@
 
       tableBody.innerHTML = tableHtml;
       mobileContainer.innerHTML = mobileHtml;
+
+      if (window._updateStickySummaryForTab) {
+        window._updateStickySummaryForTab();
+      }
 
       // Attach row input listeners
       tableBody.querySelectorAll('.js-comp-field').forEach(inputEl => {
